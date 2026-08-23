@@ -74,8 +74,8 @@ npm run build
   `status: "rascunho"` e lista os buracos em `gaps`. Ausência de `status` significa revisto.
 - Build target ES2017 por opção, não por limitação: o tablet aguentaria ES2022, mas a app deve poder
   correr noutros Androids mais antigos e o custo medido é 1,3 kB em 154 kB.
-- Nunca commitar tokens, PATs ou credenciais. O token de escrita do GitHub vive só no `localStorage`
-  do tablet.
+- **Nunca commitar tokens, PATs ou credenciais.** O repositório é público (ADR 0005), portanto isto
+  não é higiene, é crítico. O token de escrita do GitHub vive só no `localStorage` do tablet.
 
 ## Ao trabalhar aqui
 

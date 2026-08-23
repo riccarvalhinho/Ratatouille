@@ -19,9 +19,19 @@ o que daria cerca de **1280×800** em horizontal. É a esse tamanho que as vista
 e testadas. Para confirmar, abrir a app no tablet e ler `window.innerWidth` — ou simplesmente
 comparar com um screenshot feito a 1280×800.
 
-## 2. Instalar a app
+## 2. Publicar a app
 
-A app é uma PWA publicada no GitHub Pages. Não há APK a instalar.
+A app é publicada automaticamente no GitHub Pages a cada push para `main`. O workflow liga o Pages
+sozinho na primeira execução.
+
+**Requisito:** o repositório tem de ser público — o Pages gratuito não publica de repositórios
+privados. Ver `docs/adr/0005-repositorio-publico.md`.
+
+O URL é `https://<utilizador>.github.io/Ratatouille/`.
+
+## 3. Instalar no tablet
+
+Não há APK a instalar.
 
 1. Abrir o browser Silk no tablet.
 2. Ir ao URL do GitHub Pages do repositório.
@@ -31,7 +41,7 @@ A app é uma PWA publicada no GitHub Pages. Não há APK a instalar.
 Na primeira abertura com rede, a app descarrega o bundle de receitas e guarda-o localmente. A partir
 daí funciona offline.
 
-## 3. Configurar o acesso de escrita
+## 4. Configurar o acesso de escrita
 
 Necessário só a partir de M2, para que favoritos e planeamento voltem ao repositório.
 
@@ -43,7 +53,7 @@ Necessário só a partir de M2, para que favoritos e planeamento voltem ao repos
 O token fica em `localStorage` no tablet. **Nunca é commitado.** Quem tiver o tablet na mão tem o
 token — risco aceite, é um tablet doméstico numa cozinha. Ver `docs/adr/0004-escrita-via-github-api.md`.
 
-## 4. Modo monitor de cozinha
+## 5. Modo monitor de cozinha
 
 Para o tablet se comportar como um painel na parede:
 
@@ -53,7 +63,7 @@ Para o tablet se comportar como um painel na parede:
 - Manter ligado à corrente permanentemente. O tablet vive na parede.
 - Opcional: uma app de kiosk da store da Amazon para impedir sair da app por toque acidental.
 
-## 5. Verificar que funciona offline
+## 6. Verificar que funciona offline
 
 O teste que interessa mesmo:
 

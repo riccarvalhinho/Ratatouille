@@ -42,7 +42,12 @@ jobs:
           # O Pages de um repositório de projeto serve em /<repo>/, não na raiz.
           VITE_BASE: /${{ github.event.repository.name }}/
 
+      # enablement liga o Pages na primeira execução, para não ser preciso ir às definições
+      # do repositório. Só funciona em repositórios públicos no plano gratuito —
+      # ver docs/adr/0005-repositorio-publico.md.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
