@@ -162,6 +162,40 @@ gravá-las no repositório, para reler noutro dispositivo. Não já. O campo `no
 
 **Escalar doses: só por múltiplos simples.** Nada de escalar para números arbitrários.
 
+### Sessão 5 — 2026-08-23
+
+**Nutri-Score cortado.** Sem substituto — o eixo de peso responde à pergunta que ele respondia.
+
+**Sub-preparações rejeitadas.** Argumento aceite: a lista de ingredientes é única, e as
+sub-preparações são partes da preparação total do prato. A proposta P1 fica cortada. Se um dia uma
+receita concreta forçar a separação, volta com um caso real à frente.
+
+**Dificuldade cortada.** Com método, tempo total, antecedência e número de ingredientes já no
+formato, não acrescentava informação — só mais um campo para preencher errado.
+
+**Passo a passo: já está na metadata, e a estrutura serve.** `steps[]` com `text`,
+`durationMinutes` e `ingredientRefs` é exatamente o que alimenta a interface descrita — um passo de
+cada vez, temporizador quando o passo tem duração, e os ingredientes do passo à mão.
+
+Duas coisas ficam claras a partir desta discussão:
+
+**Falta a temperatura, e a recomendação anterior estava errada.** A proposta P5 (temperatura
+estruturada) tinha sido recomendada como "não fazer", com o argumento de que o texto do passo já
+resolvia. Isso era verdade enquanto o passo era só para ler. Deixa de ser verdade quando a interface
+de execução tem de **mostrar a temperatura como dado** — "Forno a 200 °C, 25 min" — em vez de a
+esconder no meio de uma frase. **P5 passa a fazer-se.**
+
+**O estado de execução não vai para a metadata.** Em que passo se vai, o que já está concluído, o
+temporizador a correr — isso é estado efémero da aplicação, não faz parte da receita. Uma receita
+não sabe quantas vezes foi cozinhada a meio.
+
+## Em aberto no fim da sessão 5
+
+- Passos passivos versus ativos: distinguir "deixe levedar 1h", em que se sai da cozinha, de "mexa
+  5 min", em que se fica? Muda o comportamento do temporizador.
+- **Vocabulário completo das labels declaradas**, por categoria — é o que falta para fechar o tema.
+- Sódio em mg ou sal em g.
+
 ## Em aberto no fim da sessão 4
 
 - **Sub-preparações** (proposta P1): grupos de ingredientes e de passos, "para o béchamel", "para o
