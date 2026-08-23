@@ -3,8 +3,12 @@
 Temas que se decidem melhor a falar do que a escrever sozinho. Ficam registados aqui para poderem ser
 **iniciados e retomados** em qualquer sessão, sem recomeçar do zero.
 
-O método existe por uma razão prática: há tempos mortos — viagens, esperas — que dão para pensar mas
-não para implementar. São a altura certa para fechar decisões que depois poupam trabalho.
+O método existe por uma razão prática: há tempos mortos que dão para pensar mas não para
+implementar. São a altura certa para fechar decisões que depois poupam trabalho.
+
+**O contexto real é este:** viagens de carro ou de transportes públicos, com internet. Não é alguém
+sentado a uma secretária com dois monitores. Isso condiciona a forma da conversa mais do que parece —
+ver "Como isto acontece na prática".
 
 ## Como se usa
 
@@ -15,6 +19,24 @@ Basta dizer, em linguagem normal:
 > "que conversas estão abertas?"
 
 A sessão lê o ficheiro do tema, vê onde ficou, e continua daí.
+
+## Como isto acontece na prática
+
+Quem está do outro lado vai a andar. Isso implica quatro coisas, e ignorá-las estraga o método:
+
+1. **Mensagens curtas.** Nada de tabelas longas nem documentos a meio da conversa. Duas ou três
+   perguntas que se leiam de relance ou se ouçam, e uma proposta concreta por ronda.
+2. **Respostas curtas, provavelmente ditadas.** Espera texto sem pontuação, com erros de transcrição
+   e frases a meio. Não corrigir, não implicar com a forma. Se o sentido for ambíguo, confirmar numa
+   frase — mas assumir a leitura mais provável em vez de travar a conversa.
+3. **A sessão pode acabar a qualquer momento.** Chegou, mudou de comboio, entrou alguém. Por isso
+   **escrever no ficheiro a cada ronda**, não só no fim. Uma decisão tomada e não registada perde-se.
+4. **Não há como olhar para nada.** Cores, layouts e maquetas não se avaliam a conduzir. Temas
+   visuais podem ser *explorados* em movimento — o porquê, as referências, o que incomoda — mas a
+   escolha final fica para um ecrã.
+
+Como há internet, dá para consultar, verificar e commitar durante a conversa. A escrita no repo
+acontece ao vivo, não fica para depois.
 
 ## Como estas conversas têm de correr
 
@@ -49,14 +71,14 @@ O ficheiro da conversa é o rascunho, não o destino. Uma decisão fechada muda-
 
 ## Temas
 
-| # | Tema | Estado | Quem conduz |
-|---|---|---|---|
-| 1 | [Metadata das receitas](01-metadata-receitas.md) | Por começar | Ricardo |
-| 2 | [Catálogo de receitas](02-ui-catalogo.md) | Por começar | Claude |
-| 3 | [Detalhe da receita](03-ui-detalhe.md) | Por começar | Claude |
-| 4 | [Modo cozinha](04-ui-modo-cozinha.md) | Por começar | Claude |
-| 5 | [Planeamento semanal](05-ui-planeamento.md) | Por começar | Claude |
-| 6 | [Direção visual](06-direcao-visual.md) | Por começar | Claude |
+| # | Tema | Estado | Quem conduz | Em movimento? |
+|---|---|---|---|---|
+| 1 | [Metadata das receitas](01-metadata-receitas.md) | Por começar | Ricardo | Sim — é tudo conceito |
+| 2 | [Catálogo de receitas](02-ui-catalogo.md) | Por começar | Claude | Sim |
+| 3 | [Detalhe da receita](03-ui-detalhe.md) | Por começar | Claude | Sim — o que se decide é comportamento, não aspeto |
+| 4 | [Modo cozinha](04-ui-modo-cozinha.md) | Por começar | Claude | Sim — é o que melhor se discute a falar |
+| 5 | [Planeamento semanal](05-ui-planeamento.md) | Por começar | Claude | Sim — depende de hábitos, e hábitos contam-se |
+| 6 | [Direção visual](06-direcao-visual.md) | Por começar | Claude | Só metade — explorar sim, escolher não |
 
 "Quem conduz" é só quem traz o material de partida. O tema 1 é do Ricardo porque há uma visão da
 estrutura para explicar; os outros partem de propostas concretas para contrariar.

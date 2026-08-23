@@ -5,6 +5,8 @@
 **Destino das decisões:** `docs/design/design-system.md`
 **Fecha:** Q2 e Q10
 **A falar depois de:** conversas 2 e 3, com os ecrãs frescos
+**Em movimento:** só metade. As perguntas 1, 2, 5 e 6 são conversa e discutem-se a andar. As 3 e 4, e
+a escolha final entre direções, precisam de um ecrã à frente — ficam para uma sessão sentada.
 
 ## Porque existe
 
