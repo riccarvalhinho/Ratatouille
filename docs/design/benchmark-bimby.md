@@ -11,6 +11,16 @@ software que está integrado nas Bimby". É o benchmark mais próximo do que se 
 > texto — como escrito na regra deste ficheiro, o que conta não é a imagem, é o que dela se aproveita
 > e porquê. Se um dia forem precisas, ficam fora do Git.
 
+### Material por recolher
+
+Uma página de detalhe do Cookidoo web, apontada como tendo disposição interessante:
+`https://cookidoo.pt/recipes/recipe/pt-PT/r915889`
+
+Não é acessível a partir das sessões de Claude Code — o proxy bloqueia o domínio. Precisa de
+screenshots, como os quatro ecrãs analisados abaixo. Interessa sobretudo a **ordem das secções** e
+como distribuem tempos, doses, utensílios e nutrição na largura, já que a versão web tem mais espaço
+do que o tablet da Bimby.
+
 ---
 
 ## Ecrã 1 — Pesquisar (catálogo)

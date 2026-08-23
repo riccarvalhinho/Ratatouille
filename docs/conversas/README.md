@@ -121,12 +121,13 @@ O ficheiro da conversa é o rascunho, não o destino. Uma decisão fechada muda-
 
 | # | Tema | Estado | Quem conduz |
 |---|---|---|---|
-| 1 | [Metadata das receitas](01-metadata-receitas.md) | Por começar | Ricardo |
+| 1 | [Metadata das receitas](01-metadata-receitas.md) | Aplicada | Ricardo |
 | 2 | [Catálogo de receitas](02-ui-catalogo.md) | Por começar | Claude |
 | 3 | [Detalhe da receita](03-ui-detalhe.md) | Por começar | Claude |
 | 4 | [Modo cozinha](04-ui-modo-cozinha.md) | Por começar | Claude |
 | 5 | [Planeamento semanal](05-ui-planeamento.md) | Por começar | Claude |
 | 6 | [Direção visual](06-direcao-visual.md) | Por começar | Claude — só a parte de explorar |
+| 7 | [Vocabulário das labels](07-vocabulario-labels.md) | Por começar | Claude |
 
 "Quem conduz" é só quem traz o material de partida. O tema 1 é do Ricardo porque há uma visão da
 estrutura para explicar; os outros partem de propostas concretas para contrariar.

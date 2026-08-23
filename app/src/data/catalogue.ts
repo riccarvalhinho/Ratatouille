@@ -6,7 +6,6 @@
  */
 import type {
   DataBundle,
-  Difficulty,
   Equipment,
   Ingredient,
   Label,
@@ -50,11 +49,20 @@ export function isDraft(recipe: Recipe): boolean {
   return recipe.status === 'rascunho';
 }
 
-export const DIFFICULTY_NAMES: Record<Difficulty, string> = {
-  facil: 'Fácil',
-  medio: 'Médio',
-  dificil: 'Difícil',
-};
+/** Só o equipamento que pode impedir alguém de cozinhar. Tachos e facas não interessam a ninguém. */
+export function notableEquipment(recipe: Recipe, catalogue: Catalogue): Equipment[] {
+  return (recipe.equipment ?? [])
+    .map((id) => catalogue.equipmentById.get(id))
+    .filter((item): item is Equipment => item !== undefined && !item.comum);
+}
+
+/** "4 pessoas", "30 bolachas", ou ambos quando a receita declara os dois. */
+export function formatYield(recipe: Recipe): string {
+  const parts: string[] = [];
+  if (recipe.servings !== undefined) parts.push(`${recipe.servings} pessoas`);
+  if (recipe.yield) parts.push(recipe.yield);
+  return parts.join(' · ');
+}
 
 /** Tempo total ativo: preparação mais confeção. A antecedência não entra, porque não é tempo ativo. */
 export function activeMinutes(recipe: Recipe): number {

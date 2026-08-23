@@ -33,17 +33,19 @@ ao topo.
 
 1. Imagem e nome da receita
 2. Todas as labels da receita, sem o limite de 3 do cartão
-3. Dificuldade, tempo de preparação, tempo de confeção e antecedência necessária
+3. Método de confeção, peso, tempo de preparação, tempo de confeção e antecedência necessária
 4. Última vez que foi feita — a data mais recente em que foi planeada. Se nunca foi, di-lo
    explicitamente ("nunca cozinhada")
-5. Para quantas pessoas dá a dose
+5. Rendimento — para quantas pessoas dá, ou quantas unidades rende, ou ambos
 6. Eletrodomésticos e utensílios necessários, **em dois blocos separados** — os aparelhos
    condicionam se a receita é sequer possível, os utensílios são detalhe (`kind` da taxonomia)
 7. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser
    percorrível, e a `note` do ingrediente em texto secundário por baixo do nome
-8. Passo a passo, em bullets curtos
-9. Informação nutricional: calorias, macros e Nutri-Score aproximado, marcada como estimada quando
-   `nutrition.method` for `estimado`
+8. Passo a passo, em bullets curtos, com a temperatura em destaque quando o passo a exige
+9. A transcrição em texto corrido, para quem prefere ler a receita seguida
+10. Informação nutricional por dose: energia, proteína, gordura, gordura saturada, hidratos, fibra e
+    sal — marcada como estimada quando `nutrition.method` for `estimado`. O mínimo aceitável são só
+    as calorias
 
 ### Planear a partir do detalhe
 
@@ -69,11 +71,10 @@ e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a
 ## Fora de âmbito
 
 - Editar a receita (M2)
-- Escalar as doses para outro número de pessoas — questão Q3, previsto para M5
+- Escalar as doses — decidido que se faz, só por múltiplos simples; previsto para M5
 - Modo de execução passo a passo — é a spec 005
 
 ## Questões em aberto
 
-- Q3 — escalar doses
 - Q4 — rigor da informação nutricional
 - Q6 — que blocos do dia oferecer na seleção

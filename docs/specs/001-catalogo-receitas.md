@@ -32,7 +32,9 @@ da grelha.
 Barra de filtros no topo, sempre visível:
 
 - **Duração** — intervalos (até 30min, 30–60min, mais de 1h)
-- **Dificuldade** — fácil, médio, difícil
+- **Método** — forno, tacho, frigideira, grelhador, air fryer, micro-ondas, sem confeção.
+  "Hoje não me apetece ligar o forno" é uma coisa que se pensa mesmo
+- **Peso** — leve, equilibrado, substancial
 - **Labels** — seleção múltipla a partir de `data/taxonomies/labels.json`
 
 Os filtros combinam-se entre si: dentro do mesmo tipo somam-se (OU), entre tipos restringem-se (E).
@@ -54,9 +56,9 @@ do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo s
 ## Critérios de aceitação
 
 - [ ] A grelha mostra todas as receitas de `data/recipes/` sem alterações de código
-- [ ] Um cartão mostra thumbnail, nome, duração, dificuldade e até 3 labels
+- [ ] Um cartão mostra thumbnail, nome, duração, rendimento e até 3 labels
 - [ ] Uma receita com antecedência de preparação mostra-o no cartão; uma sem, não mostra nada
-- [ ] Filtrar por duração, dificuldade e labels devolve o subconjunto correto
+- [ ] Filtrar por duração, método, peso e labels devolve o subconjunto correto
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
 - [ ] Existe estado de "sem resultados" com ação de limpar filtros
 - [ ] A subtab de favoritos mostra só receitas marcadas

@@ -5,7 +5,38 @@
  * significa alterar o schema primeiro e este ficheiro depois, nunca ao contrário.
  */
 
-export type Difficulty = 'facil' | 'medio' | 'dificil';
+/** Como se confeciona. Responde a "tenho de ligar o forno?" e alimenta a estimativa de `weight`. */
+export type CookingMethod =
+  | 'forno'
+  | 'tacho'
+  | 'frigideira'
+  | 'grelhador'
+  | 'airfryer'
+  | 'micro-ondas'
+  | 'sem-confecao';
+
+export const COOKING_METHOD_NAMES: Record<CookingMethod, string> = {
+  forno: 'Forno',
+  tacho: 'Tacho',
+  frigideira: 'Frigideira',
+  grelhador: 'Grelhador',
+  airfryer: 'Air fryer',
+  'micro-ondas': 'Micro-ondas',
+  'sem-confecao': 'Sem confeção',
+};
+
+/**
+ * Quão substancial é a refeição, sempre comparada com outras do mesmo tipo de prato — uma sobremesa
+ * compara-se com sobremesas. Substitui a ideia de uma etiqueta "saudável", que é um juízo que convida
+ * à discussão e não muda o que se cozinha hoje.
+ */
+export type Weight = 'leve' | 'equilibrado' | 'substancial';
+
+export const WEIGHT_NAMES: Record<Weight, string> = {
+  leve: 'Leve',
+  equilibrado: 'Equilibrado',
+  substancial: 'Substancial',
+};
 
 export type MealBlock = 'pequeno-almoco' | 'almoco' | 'lanche' | 'jantar';
 
@@ -57,6 +88,8 @@ export interface Equipment {
   id: string;
   name: string;
   kind?: 'eletrodomestico' | 'utensilio';
+  /** Pressupõe-se em qualquer cozinha. A app não o mostra — só interessa o que pode impedir alguém. */
+  comum?: boolean;
 }
 
 export interface RecipeIngredient {
@@ -70,6 +103,10 @@ export interface RecipeIngredient {
 export interface RecipeStep {
   text: string;
   durationMinutes?: number;
+  /** Estruturada e não enterrada no texto: o modo cozinha mostra-a como dado ao lado do temporizador. */
+  temperatureC?: number;
+  /** Passo em que se sai da cozinha. Um passo passivo avisa quando acaba; um ativo não precisa. */
+  passive?: boolean;
   ingredientRefs?: string[];
 }
 
@@ -91,9 +128,10 @@ export interface Nutrition {
   proteinGrams?: number;
   carbsGrams?: number;
   fatGrams?: number;
+  saturatedFatGrams?: number;
   fibreGrams?: number;
+  /** Sal em gramas, como nos rótulos portugueses. */
   saltGrams?: number;
-  nutriScore?: 'A' | 'B' | 'C' | 'D' | 'E';
 }
 
 export interface RecipeSource {
@@ -114,13 +152,19 @@ export interface Recipe {
   id: string;
   name: string;
   description?: string;
+  /** A receita em texto corrido, numa transcrição nossa. Nunca o texto original de outra pessoa. */
+  narrative?: string;
   status?: RecipeStatus;
   /** Campos que o importador não conseguiu determinar — as perguntas que a revisão vai fazer. */
   gaps?: string[];
   image?: string;
-  servings: number;
-  difficulty: Difficulty;
+  /** Opcional: há receitas que rendem unidades e não pessoas. Existe sempre `servings` ou `yield`. */
+  servings?: number;
+  /** Rendimento que não são pessoas: "30 bolachas", "1 bolo de 24 cm". */
+  yield?: string;
   labels: string[];
+  methods: CookingMethod[];
+  weight?: Weight;
   timing: RecipeTiming;
   equipment?: string[];
   ingredients: RecipeIngredient[];

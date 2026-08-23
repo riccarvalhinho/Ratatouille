@@ -1,6 +1,6 @@
 import type { Recipe } from '../domain/types.ts';
 import type { Catalogue } from '../data/catalogue.ts';
-import { DIFFICULTY_NAMES, activeMinutes, formatMinutes, formatPrepAhead } from '../data/catalogue.ts';
+import { activeMinutes, formatMinutes, formatPrepAhead, formatYield } from '../data/catalogue.ts';
 import { LabelChip } from './LabelChip.tsx';
 import styles from './RecipeCard.module.css';
 
@@ -33,14 +33,13 @@ export function RecipeCard({ recipe, catalogue, onOpen }: RecipeCardProps) {
 
         <span className={styles.meta}>
           <span>{formatMinutes(activeMinutes(recipe))}</span>
-          <span>{recipe.servings} pessoas</span>
+          <span>{formatYield(recipe)}</span>
           {recipe.timing.prepAhead && (
             <span className={styles.ahead}>{formatPrepAhead(recipe.timing.prepAhead.minutes)}</span>
           )}
         </span>
 
         <span className={styles.labels}>
-          <LabelChip accent>{DIFFICULTY_NAMES[recipe.difficulty]}</LabelChip>
           {labels.map((label) => (
             <LabelChip key={label}>{label}</LabelChip>
           ))}

@@ -27,7 +27,15 @@ Um botão "Cozinhar" no detalhe da receita. Entra em ecrã inteiro, sem navegaç
 
 ### Timers
 
-Passos com duração declarada (`durationMinutes`) mostram um botão de temporizador. Ao ser iniciado:
+Passos com duração declarada (`durationMinutes`) mostram um botão de temporizador. Quando o passo
+declara `temperatureC`, a temperatura aparece **como dado** junto ao temporizador — "Forno a 200 °C,
+25 min" — e não enterrada no meio da frase.
+
+Passos marcados como `passive` são aqueles em que se sai da cozinha: levedar, arrefecer, assar sem
+mexer. Esses **avisam** quando acabam. Um passo ativo, em que se está a olhar para o tacho, não
+precisa de alarme e não deve interromper.
+
+Ao ser iniciado:
 
 - Conta decrescente visível no ecrã
 - Continua a contar ao avançar para o passo seguinte — pode haver mais do que um timer a correr
@@ -47,6 +55,8 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 - [ ] Os ingredientes do passo aparecem junto ao passo
 - [ ] O ecrã não adormece durante a execução
 - [ ] Passos com duração oferecem temporizador
+- [ ] A temperatura aparece em destaque quando o passo a declara
+- [ ] Passos passivos avisam ao terminar; passos ativos não interrompem
 - [ ] Vários temporizadores podem correr ao mesmo tempo
 - [ ] O fim de um temporizador avisa visual e sonoramente
 - [ ] Terminar oferece marcar como cozinhada
@@ -60,6 +70,6 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 
 ## Questões em aberto
 
-- Q3 — escalar doses antes de começar a cozinhar
+- Escalar doses antes de começar a cozinhar — só por múltiplos simples
 - Q5 — como o histórico é alimentado
 - Q1 — a Wake Lock API pode não existir num Fire OS antigo
