@@ -3,36 +3,146 @@
   "name": "Arroz doce",
   "description": "Arroz cozido em leite com casca de limão e canela, ligado com gemas. Servido frio, com canela por cima.",
   "servings": 6,
-  "difficulty": "medio",
-  "labels": ["sobremesa", "conforto", "fim-de-semana", "vegetariano"],
+  "labels": [
+    "sobremesa",
+    "conforto",
+    "fim-de-semana",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
   "timing": {
     "prepMinutes": 10,
     "cookMinutes": 40,
-    "prepAhead": { "minutes": 120, "description": "Arrefecer pelo menos 2 horas antes de servir" }
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Arrefecer pelo menos 2 horas antes de servir"
+    }
   },
-  "equipment": ["placa", "tacho", "taca", "descascador"],
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca",
+    "descascador"
+  ],
   "ingredients": [
-    { "ref": "arroz-carolino", "quantity": 250, "unit": "g" },
-    { "ref": "leite", "quantity": 1, "unit": "l" },
-    { "ref": "acucar", "quantity": 200, "unit": "g" },
-    { "ref": "ovo", "quantity": 3, "unit": "un", "note": "só as gemas" },
-    { "ref": "limao", "quantity": 1, "unit": "un", "note": "só a casca, sem a parte branca" },
-    { "ref": "pau-de-canela", "quantity": 1, "unit": "un" },
-    { "ref": "manteiga", "quantity": 20, "unit": "g" },
-    { "ref": "canela-em-po", "unit": "qb", "note": "para polvilhar" },
-    { "ref": "sal", "unit": "pitada" },
-    { "ref": "agua", "quantity": 400, "unit": "ml" }
+    {
+      "ref": "arroz-carolino",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un",
+      "note": "só as gemas"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca, sem a parte branca"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb",
+      "note": "para polvilhar"
+    },
+    {
+      "ref": "sal",
+      "unit": "pitada"
+    },
+    {
+      "ref": "agua",
+      "quantity": 400,
+      "unit": "ml"
+    }
   ],
   "steps": [
-    { "text": "Leve o arroz ao lume com a água, a casca de limão, o pau de canela e a pitada de sal.", "ingredientRefs": ["arroz-carolino", "agua", "limao", "pau-de-canela", "sal"] },
-    { "text": "Deixe cozer em lume brando até a água estar quase toda absorvida.", "durationMinutes": 12, "ingredientRefs": ["arroz-carolino"] },
-    { "text": "Aqueça o leite à parte e junte-o ao arroz aos poucos, mexendo sempre.", "durationMinutes": 20, "ingredientRefs": ["leite"] },
-    { "text": "Junte o açúcar e a manteiga e continue a mexer até o arroz ficar cremoso.", "durationMinutes": 6, "ingredientRefs": ["acucar", "manteiga"] },
-    { "text": "Retire a casca de limão e o pau de canela.", "ingredientRefs": ["limao", "pau-de-canela"] },
-    { "text": "Bata as gemas numa taça e junte-lhes duas colheres do arroz quente, para temperar." , "ingredientRefs": ["ovo"] },
-    { "text": "Fora do lume, envolva as gemas no arroz. Nunca deixe voltar a ferver ou talha.", "ingredientRefs": ["ovo"] },
-    { "text": "Distribua por travessas e deixe arrefecer completamente.", "durationMinutes": 120 },
-    { "text": "Polvilhe com canela em pó antes de servir.", "ingredientRefs": ["canela-em-po"] }
+    {
+      "text": "Leve o arroz ao lume com a água, a casca de limão, o pau de canela e a pitada de sal.",
+      "ingredientRefs": [
+        "arroz-carolino",
+        "agua",
+        "limao",
+        "pau-de-canela",
+        "sal"
+      ]
+    },
+    {
+      "text": "Deixe cozer em lume brando até a água estar quase toda absorvida.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "arroz-carolino"
+      ]
+    },
+    {
+      "text": "Aqueça o leite à parte e junte-o ao arroz aos poucos, mexendo sempre.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "leite"
+      ]
+    },
+    {
+      "text": "Junte o açúcar e a manteiga e continue a mexer até o arroz ficar cremoso.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "acucar",
+        "manteiga"
+      ]
+    },
+    {
+      "text": "Retire a casca de limão e o pau de canela.",
+      "ingredientRefs": [
+        "limao",
+        "pau-de-canela"
+      ]
+    },
+    {
+      "text": "Bata as gemas numa taça e junte-lhes duas colheres do arroz quente, para temperar.",
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "text": "Fora do lume, envolva as gemas no arroz. Nunca deixe voltar a ferver ou talha.",
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "text": "Distribua por travessas e deixe arrefecer completamente.",
+      "durationMinutes": 120,
+      "passive": true
+    },
+    {
+      "text": "Polvilhe com canela em pó antes de servir.",
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
   ],
   "nutrition": {
     "method": "estimado",
@@ -41,10 +151,11 @@
     "carbsGrams": 62,
     "fatGrams": 8,
     "fibreGrams": 1,
-    "saltGrams": 0.2,
-    "nutriScore": "D"
+    "saltGrams": 0.2
   },
-  "source": { "kind": "familia" },
+  "source": {
+    "kind": "familia"
+  },
   "createdAt": "2026-08-23",
   "updatedAt": "2026-08-23"
 }

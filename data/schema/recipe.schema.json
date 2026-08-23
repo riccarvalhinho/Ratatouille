@@ -2,10 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/riccarvalhinho/Ratatouille/data/schema/recipe.schema.json",
   "title": "Receita",
-  "description": "Uma receita. Um ficheiro por receita em data/recipes/<id>.json.",
+  "description": "Uma receita. Um ficheiro por receita em data/recipes/<id>.json. As decisões por trás de cada campo estão em docs/product/metadata-receitas.md e em docs/conversas/01-metadata-receitas.md.",
   "type": "object",
-  "required": ["id", "name", "servings", "difficulty", "timing", "labels", "ingredients", "steps"],
+  "required": ["id", "name", "labels", "methods", "timing", "ingredients", "steps"],
   "additionalProperties": false,
+  "anyOf": [
+    { "required": ["servings"] },
+    { "required": ["yield"] }
+  ],
   "properties": {
     "id": {
       "description": "Slug único. Tem de ser igual ao nome do ficheiro sem extensão.",
@@ -15,6 +19,10 @@
     "name": { "type": "string", "minLength": 1 },
     "description": {
       "description": "Uma ou duas frases. Opcional.",
+      "type": "string"
+    },
+    "narrative": {
+      "description": "A receita em texto corrido, numa transcrição nossa. Nunca o texto original de outra pessoa — ver docs/ops/importar-receitas.md. Serve de rede de segurança da importação e de leitura corrida.",
       "type": "string"
     },
     "status": {
@@ -33,18 +41,35 @@
       "pattern": "^media/recipes/[a-z0-9-]+\\.(jpg|jpeg|png|webp)$"
     },
     "servings": {
-      "description": "Para quantas pessoas dá a dose declarada.",
+      "description": "Para quantas pessoas dá a dose declarada. Opcional: há receitas que rendem unidades e não pessoas — nesse caso usa-se yield. Tem de existir servings ou yield.",
       "type": "integer",
       "minimum": 1,
       "maximum": 50
     },
-    "difficulty": { "enum": ["facil", "medio", "dificil"] },
+    "yield": {
+      "description": "Rendimento que não são pessoas: \"30 bolachas\", \"1 bolo de 24 cm\", \"1 kg de compota\". Complementa ou substitui servings.",
+      "type": "string",
+      "minLength": 1
+    },
     "labels": {
-      "description": "Referências a data/taxonomies/labels.json.",
+      "description": "Referências a data/taxonomies/labels.json. O vocabulário está por rever — ver docs/conversas/07-vocabulario-labels.md.",
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
       "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "methods": {
+      "description": "Como se confeciona. Responde a \"tenho de ligar o forno?\", que é dos primeiros filtros mentais, e alimenta a estimativa do campo weight. Uma receita pode ter mais do que um.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["forno", "tacho", "frigideira", "grelhador", "airfryer", "micro-ondas", "sem-confecao"]
+      }
+    },
+    "weight": {
+      "description": "Quão substancial é a refeição, comparada com outras do mesmo tipo de prato. Atribuído pelo importador a partir de uma rubrica escrita (ver docs/product/metadata-receitas.md), nunca calculado a partir de nutrição estimada. Substitui a ideia de uma etiqueta \"saudável\".",
+      "enum": ["leve", "equilibrado", "substancial"]
     },
     "timing": {
       "type": "object",
@@ -52,17 +77,17 @@
       "additionalProperties": false,
       "properties": {
         "prepMinutes": {
-          "description": "Tempo ativo de preparação.",
+          "description": "Tempo ativo de preparação. Entra no total. Se a fonte não o trouxer, o importador estima.",
           "type": "integer",
           "minimum": 0
         },
         "cookMinutes": {
-          "description": "Tempo de confeção.",
+          "description": "Tempo de confeção. Entra no total.",
           "type": "integer",
           "minimum": 0
         },
         "prepAhead": {
-          "description": "Antecedência necessária que não é tempo ativo: marinar, demolhar, levedar, arrefecer. Não se soma aos outros tempos.",
+          "description": "Antecedência necessária que não é tempo ativo: marinar, demolhar, levedar, arrefecer. NÃO entra no total, porque não é tempo passado na cozinha.",
           "type": "object",
           "required": ["minutes", "description"],
           "additionalProperties": false,
@@ -74,12 +99,13 @@
       }
     },
     "equipment": {
-      "description": "Referências a data/taxonomies/equipment.json.",
+      "description": "Referências a data/taxonomies/equipment.json. A app mostra só os que lá estão marcados como não comuns.",
       "type": "array",
       "uniqueItems": true,
       "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
     },
     "ingredients": {
+      "description": "Lista única. Não há grupos: as sub-preparações são partes da preparação total do prato.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -98,7 +124,7 @@
             "enum": ["g", "kg", "ml", "l", "un", "csopa", "ccha", "pitada", "qb"]
           },
           "note": {
-            "description": "Preparação ou qualificador, ex.: 'picada', 'em cubos', 'à temperatura ambiente'.",
+            "description": "Preparação ou qualificador, ex.: 'picada', 'em cubos'. Mostrado subordinado ao nome, não a competir com ele.",
             "type": "string"
           },
           "optional": { "type": "boolean", "default": false }
@@ -118,7 +144,7 @@
       }
     },
     "steps": {
-      "description": "Passos curtos, uma ação por passo. Nada de parágrafos.",
+      "description": "Passos curtos, uma ação por passo. É esta estrutura que alimenta o modo cozinha: um passo de cada vez, temporizador quando há duração, ingredientes à mão. O estado de execução — em que passo se vai, o que está concluído — NÃO vive aqui: é estado efémero da aplicação.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -132,6 +158,17 @@
             "type": "integer",
             "minimum": 1
           },
+          "temperatureC": {
+            "description": "Temperatura em graus Celsius, quando o passo a exige. Estruturada e não enterrada no texto, porque o modo cozinha tem de a mostrar como dado ao lado do temporizador.",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 300
+          },
+          "passive": {
+            "description": "Passo em que se sai da cozinha — levedar, arrefecer, marinar, assar sem mexer. Um passo passivo deve avisar quando acabar; um ativo não precisa, porque já se está a olhar.",
+            "type": "boolean",
+            "default": false
+          },
           "ingredientRefs": {
             "description": "Ingredientes usados neste passo, para os mostrar junto ao passo no modo cozinha.",
             "type": "array",
@@ -142,7 +179,7 @@
       }
     },
     "nutrition": {
-      "description": "Por dose. O campo method existe para não fingirmos rigor que não temos.",
+      "description": "Por dose. O ideal é o painel completo; o mínimo aceitável é só as calorias. O campo method existe para não fingirmos rigor que não temos.",
       "type": "object",
       "required": ["method"],
       "additionalProperties": false,
@@ -152,9 +189,13 @@
         "proteinGrams": { "type": "number", "minimum": 0 },
         "carbsGrams": { "type": "number", "minimum": 0 },
         "fatGrams": { "type": "number", "minimum": 0 },
+        "saturatedFatGrams": { "type": "number", "minimum": 0 },
         "fibreGrams": { "type": "number", "minimum": 0 },
-        "saltGrams": { "type": "number", "minimum": 0 },
-        "nutriScore": { "enum": ["A", "B", "C", "D", "E"] }
+        "saltGrams": {
+          "description": "Sal em gramas, como nos rótulos portugueses. O Cookidoo mostra sódio em mg; sal = sódio × 2,5.",
+          "type": "number",
+          "minimum": 0
+        }
       }
     },
     "source": {
@@ -171,7 +212,10 @@
         "url": { "type": "string", "format": "uri" }
       }
     },
-    "notes": { "type": "string" },
+    "notes": {
+      "description": "Notas pessoais: 'a avó fazia com mais alho', 'da última vez ficou salgado'. Sem interface por agora — escrevem-se à mão.",
+      "type": "string"
+    },
     "createdAt": { "type": "string", "format": "date" },
     "updatedAt": { "type": "string", "format": "date" }
   }

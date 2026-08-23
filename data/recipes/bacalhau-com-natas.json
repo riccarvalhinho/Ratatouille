@@ -3,42 +3,186 @@
   "name": "Bacalhau com natas",
   "description": "Bacalhau desfiado com batata frita em palitos e cebola, ligado com béchamel e natas, gratinado no forno.",
   "servings": 4,
-  "difficulty": "medio",
-  "labels": ["prato-principal", "peixe", "conforto", "fim-de-semana"],
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "conforto",
+    "fim-de-semana"
+  ],
+  "methods": [
+    "forno",
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
   "timing": {
     "prepMinutes": 40,
     "cookMinutes": 25,
-    "prepAhead": { "minutes": 1440, "description": "Demolhar o bacalhau 24 horas, mudando a água 3 a 4 vezes" }
+    "prepAhead": {
+      "minutes": 1440,
+      "description": "Demolhar o bacalhau 24 horas, mudando a água 3 a 4 vezes"
+    }
   },
-  "equipment": ["forno", "placa", "tacho", "frigideira", "pirex", "faca-de-chef", "tabua-de-cozinha"],
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "frigideira",
+    "pirex",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
   "ingredients": [
-    { "ref": "bacalhau-salgado", "quantity": 600, "unit": "g", "note": "demolhado" },
-    { "ref": "batata", "quantity": 800, "unit": "g", "note": "em palitos finos" },
-    { "ref": "cebola", "quantity": 2, "unit": "un", "note": "em meias-luas" },
-    { "ref": "dente-de-alho", "quantity": 2, "unit": "un", "note": "picados" },
-    { "ref": "natas", "quantity": 400, "unit": "ml" },
-    { "ref": "leite", "quantity": 500, "unit": "ml" },
-    { "ref": "manteiga", "quantity": 50, "unit": "g" },
-    { "ref": "farinha-de-trigo", "quantity": 50, "unit": "g" },
-    { "ref": "queijo-ralado", "quantity": 80, "unit": "g" },
-    { "ref": "azeite", "quantity": 3, "unit": "csopa" },
-    { "ref": "noz-moscada", "unit": "qb" },
-    { "ref": "sal", "unit": "qb" },
-    { "ref": "pimenta-preta", "unit": "qb" }
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 600,
+      "unit": "g",
+      "note": "demolhado"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em palitos finos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "picados"
+    },
+    {
+      "ref": "natas",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "leite",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
   ],
   "steps": [
-    { "text": "Coza o bacalhau demolhado em água a ferver e desligue o lume.", "durationMinutes": 10, "ingredientRefs": ["bacalhau-salgado"] },
-    { "text": "Escorra, retire peles e espinhas e desfie o bacalhau em lascas.", "ingredientRefs": ["bacalhau-salgado"] },
-    { "text": "Frite as batatas em palitos até ficarem douradas mas ainda macias. Escorra em papel.", "durationMinutes": 10, "ingredientRefs": ["batata"] },
-    { "text": "Aloure a cebola e o alho no azeite até ficarem translúcidos.", "durationMinutes": 8, "ingredientRefs": ["cebola", "dente-de-alho", "azeite"] },
-    { "text": "Junte o bacalhau à cebola e envolva. Reserve.", "ingredientRefs": ["bacalhau-salgado"] },
-    { "text": "Para o béchamel: derreta a manteiga, junte a farinha e mexa até formar uma pasta.", "durationMinutes": 2, "ingredientRefs": ["manteiga", "farinha-de-trigo"] },
-    { "text": "Adicione o leite aos poucos, sempre a mexer, até engrossar.", "durationMinutes": 6, "ingredientRefs": ["leite"] },
-    { "text": "Tempere o béchamel com sal, pimenta e noz-moscada.", "ingredientRefs": ["sal", "pimenta-preta", "noz-moscada"] },
-    { "text": "Envolva as natas no béchamel.", "ingredientRefs": ["natas"] },
-    { "text": "Num pirex, misture as batatas, o bacalhau e metade do molho.", "ingredientRefs": ["batata", "bacalhau-salgado"] },
-    { "text": "Cubra com o restante molho e polvilhe com o queijo ralado.", "ingredientRefs": ["queijo-ralado"] },
-    { "text": "Leve ao forno a 200 °C até gratinar.", "durationMinutes": 25 }
+    {
+      "text": "Coza o bacalhau demolhado em água a ferver e desligue o lume.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "bacalhau-salgado"
+      ]
+    },
+    {
+      "text": "Escorra, retire peles e espinhas e desfie o bacalhau em lascas.",
+      "ingredientRefs": [
+        "bacalhau-salgado"
+      ]
+    },
+    {
+      "text": "Frite as batatas em palitos até ficarem douradas mas ainda macias. Escorra em papel.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "text": "Aloure a cebola e o alho no azeite até ficarem translúcidos.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "text": "Junte o bacalhau à cebola e envolva. Reserve.",
+      "ingredientRefs": [
+        "bacalhau-salgado"
+      ]
+    },
+    {
+      "text": "Para o béchamel: derreta a manteiga, junte a farinha e mexa até formar uma pasta.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "manteiga",
+        "farinha-de-trigo"
+      ]
+    },
+    {
+      "text": "Adicione o leite aos poucos, sempre a mexer, até engrossar.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "leite"
+      ]
+    },
+    {
+      "text": "Tempere o béchamel com sal, pimenta e noz-moscada.",
+      "ingredientRefs": [
+        "sal",
+        "pimenta-preta",
+        "noz-moscada"
+      ]
+    },
+    {
+      "text": "Envolva as natas no béchamel.",
+      "ingredientRefs": [
+        "natas"
+      ]
+    },
+    {
+      "text": "Num pirex, misture as batatas, o bacalhau e metade do molho.",
+      "ingredientRefs": [
+        "batata",
+        "bacalhau-salgado"
+      ]
+    },
+    {
+      "text": "Cubra com o restante molho e polvilhe com o queijo ralado.",
+      "ingredientRefs": [
+        "queijo-ralado"
+      ]
+    },
+    {
+      "text": "Leve ao forno a 200 °C até gratinar.",
+      "durationMinutes": 25,
+      "temperatureC": 200
+    }
   ],
   "nutrition": {
     "method": "estimado",
@@ -47,10 +191,11 @@
     "carbsGrams": 55,
     "fatGrams": 42,
     "fibreGrams": 4,
-    "saltGrams": 3.5,
-    "nutriScore": "D"
+    "saltGrams": 3.5
   },
-  "source": { "kind": "familia" },
+  "source": {
+    "kind": "familia"
+  },
   "createdAt": "2026-08-23",
   "updatedAt": "2026-08-23"
 }

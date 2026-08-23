@@ -1,6 +1,6 @@
 # Conversa 1 — Metadata das receitas
 
-**Estado:** Em curso
+**Estado:** Aplicada · sobra o vocabulário das labels, que passou à conversa 7
 **Conduz:** Ricardo — há uma visão da estrutura para explicar
 **Destino das decisões:** `data/schema/recipe.schema.json`, `docs/product/metadata-receitas.md`
 **Prioridade:** Primeiro. A metadata determina o que a interface pode mostrar; desenhar ecrãs sobre

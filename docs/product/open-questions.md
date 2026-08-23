@@ -41,22 +41,26 @@ escolher uma. Recolher inspirações em `docs/design/inspiracoes.md` antes.
 
 ---
 
-## Q3 — As doses escalam?
+## Q3 — As doses escalam? ✅
 
-**Estado:** A decidir em M5
+**Estado:** Fechada · 2026-08-23 · conversa 1
 
-Uma receita declara para quantas pessoas dá. Deve dar para recalcular ingredientes para 2 ou 6 pessoas?
+**Resposta:** Sim, é uma feature assumida, mas **só por múltiplos simples**. As quantidades escalam;
+os tempos de forno e de cozedura não. Nada de escalar para números arbitrários, precisamente por
+causa dos ovos, das formas de bolo e do "q.b.".
 
-Tecnicamente é simples para quantidades numéricas, mas quebra em ingredientes a gosto, em unidades
-discretas (1 ovo × 1,5) e em tempos de confeção que não escalam linearmente.
-
-**Proposta:** suportar escalar por múltiplos simples, com aviso de que tempos não escalam.
-
----
+Registado em `docs/specs/005-modo-cozinha.md`.
 
 ## Q4 — Que rigor para a informação nutricional?
 
-**Estado:** Aberta
+**Estado:** Parcialmente respondida · conversa 1
+
+O **âmbito** já está decidido: o ideal é o painel completo por dose — energia, proteína, gordura,
+gordura saturada, hidratos, fibra e sal — e o mínimo aceitável são só as calorias. O Nutri-Score foi
+cortado: existia para responder a "isto é saudável", pergunta que o campo `weight` passou a responder
+melhor.
+
+Fica por decidir só o **método**: calcular a partir dos ingredientes ou estimar.
 
 Duas abordagens:
 
@@ -172,9 +176,12 @@ decisões de layout, portanto vale a pena ter uma resposta antes de M1 fechar o 
 
 ---
 
-## Q12 — A metadata das receitas está completa?
+## Q12 — A metadata das receitas está completa? ✅
 
-**Estado:** Em revisão · conversa aberta em `docs/conversas/01-metadata-receitas.md`
+**Estado:** Fechada · 2026-08-23 · conversa 1, aplicada ao schema
+
+Sobra um pedaço, que ganhou tema próprio: o **vocabulário das labels declaradas** — ver
+`docs/conversas/07-vocabulario-labels.md`.
 
 O formato das receitas foi definido em M0 e está a ser revisto agora, antes de haver receitas a
 sério e antes de o importador (spec 007) começar a produzir ficheiros — mudar o formato depois é

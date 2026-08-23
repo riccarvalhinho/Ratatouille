@@ -85,7 +85,8 @@ Regras:
 3. **Doses** — quantas pessoas. Raramente vem em vídeos.
 4. **Tempos** — preparação e confeção separados, mais a antecedência (marinar, demolhar, levedar).
 5. **Equipamento** — normalmente inferível dos passos ("leve ao forno" → forno).
-6. **Labels e dificuldade** — inferíveis, mas confirmar.
+6. **Labels e método** — inferíveis, mas confirmar. O tipo de cozinha pergunta-se sempre, e "não
+   tem origem própria" é resposta válida, não um buraco.
 7. **Nutrição** — estimada por omissão, marcada como tal.
 8. **Imagem** — descarregada da fonte quando existe, senão fica por preencher.
 
@@ -117,6 +118,9 @@ registada em `source`, agora com `kind: "video"` e `author` para dar crédito ao
 - [ ] Todos os ingredientes ficam mapeados para ingredientes canónicos, ou é criado um novo
 - [ ] Instruções reescritas em passos curtos, uma ação por passo
 - [ ] Tempo de preparação, de confeção e antecedência ficam em campos separados
+- [ ] Se a fonte não trouxer tempo de preparação, é estimado e entra no total
+- [ ] O eixo de peso é atribuído pela rubrica, não inventado caso a caso
+- [ ] Perguntado sempre se a receita tem origem de cozinha, aceitando "não tem" como resposta
 - [ ] Nutrição estimada fica marcada com `method: "estimado"`
 - [ ] Cada lacuna gera uma pergunta, com sugestão pré-preenchida
 - [ ] Adiar uma pergunta deixa a receita em `status: "rascunho"` com o campo em `gaps`

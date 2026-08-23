@@ -1,188 +1,182 @@
-# Metadata das receitas — para revisão
+# Metadata das receitas
 
-O formato das receitas foi definido em M0 e está aqui para ser revisto **antes** de existirem
-receitas a sério e antes de o importador (spec 007) começar a produzir ficheiros. A altura de mudar
-o formato é agora, com cinco receitas seed. Depois de haver duzentas, mudar o formato é migrar dados.
+O formato das receitas, e o porquê de cada decisão. O contrato executável é
+`data/schema/recipe.schema.json`, validado em CI; este documento explica-o.
 
-O contrato executável é `data/schema/recipe.schema.json`, validado em CI. Este documento explica o
-**porquê** de cada campo e lista o que ainda está por decidir.
+**Estado:** fechado na conversa 1 (`docs/conversas/01-metadata-receitas.md`) e aplicado ao schema.
+Sobra um pedaço com tema próprio: o vocabulário das labels declaradas
+(`docs/conversas/07-vocabulario-labels.md`).
+
+O princípio que orientou tudo foi **exaustividade**: prefere-se um formato rico a um formato mínimo,
+desde que cada campo ganhe o seu lugar.
 
 ---
 
-## O que já está definido
+## Identidade
 
-### Identidade
+`id` (slug, igual ao nome do ficheiro), `name`, `description` opcional, `image`.
 
-| Campo | Tipo | Notas |
+**`narrative`** — a receita em texto corrido, numa **transcrição nossa**. Nasceu de uma necessidade de
+segurança do processo de importação: não perder informação ao converter para passos estruturados.
+Como é texto escrito por nós e não copiado, não há questão de direitos de autor — e serve também para
+quem prefira ler a receita seguida em vez de aos bocados.
+
+> Renomear uma receita implica renomear o ficheiro **e** atualizar as referências em `data/planning/`
+> e `data/state/`. O validador apanha referências órfãs, portanto o erro nunca passa despercebido.
+> Foi uma troca deliberada: ids legíveis tornam os diffs do Git compreensíveis.
+
+## Rendimento
+
+`servings` (pessoas) e `yield` (texto livre: "30 bolachas", "1 bolo de 24 cm"). **Tem de existir pelo
+menos um dos dois** — validado pelo schema.
+
+`servings` deixou de ser obrigatório porque há receitas que rendem unidades e não pessoas. Uma caixa
+de bolachas não se serve a quatro pessoas.
+
+**As doses escalam, mas só por múltiplos simples.** As quantidades escalam; os tempos de forno e de
+cozedura não. A restrição a múltiplos simples existe por causa dos ovos, que são discretos, das formas
+de bolo, que têm o tamanho que têm, e do "q.b.", que não escala de todo.
+
+## Classificação
+
+**`labels`** — vocabulário fechado em `data/taxonomies/labels.json`. Dividem-se em duas famílias:
+
+- **Derivadas** dos próprios dados — carne, peixe, leguminosas saem dos ingredientes
+- **Declaradas** à mão — tipo de cozinha (italiano, indiano), ocasião, tipo de prato
+
+A distinção importa porque tudo o que for declarado à mão acaba errado mais cedo ou mais tarde. O
+vocabulário completo está por fechar.
+
+**`methods`** — como se confeciona: forno, tacho, frigideira, grelhador, air fryer, micro-ondas, sem
+confeção. Uma receita pode ter mais do que um.
+
+Este campo nasceu de uma pergunta sobre equipamento — "o forno devia aparecer na lista?". A resposta
+foi que o forno não interessa por se poder não ter um, interessa porque **salta à vista se se vai
+usá-lo**. Isso é método, não equipamento. Resolve três coisas ao mesmo tempo: responde à pergunta sem
+distorcer a lista de equipamento, alimenta a estimativa do peso, e torna-se filtrável — "hoje não me
+apetece ligar o forno" é uma coisa que se pensa mesmo.
+
+**`weight`** — `leve`, `equilibrado` ou `substancial`. Ver a rubrica mais abaixo.
+
+**Não há campo de dificuldade.** Foi cortado: com método, tempo total, antecedência e número de
+ingredientes já no formato, "médio" não acrescentava informação — era só mais um campo para preencher
+errado.
+
+## O eixo de peso
+
+Responde à pergunta que se faz mesmo às sete da tarde: "hoje apetece-me algo leve".
+
+**Não é Nutri-Score.** O Nutri-Score é um algoritmo para produtos embalados, medido por 100 g, e
+responde a "isto é nutricionalmente bom?". Numa refeição dá resultados absurdos: uma salada com azeite
+pontua mal pela gordura por 100 g, um refrigerante de dieta pontua bem.
+
+**Não é uma fórmula sobre a nutrição.** Enquanto os valores nutricionais forem estimativas (Q4), uma
+fórmula assente neles dá falsa precisão.
+
+**É uma rubrica escrita, aplicada pelo importador.** O que torna isto sistemático não é ser calculado,
+é serem os mesmos critérios todas as vezes, escritos e auditáveis. Critérios:
+
+- **Método de confeção** — frito, gratinado ou com creme puxa para cima; grelhado, cozido a vapor ou
+  cru puxa para baixo
+- **Veículos de gordura e a sua quantidade** — natas, manteiga, queijo, banha, fritura
+- **Proteína** — carne vermelha e enchidos para cima; peixe, leguminosas e ovos para baixo
+- **Proporção de legumes** no total dos ingredientes
+- **Calorias por dose**, quando existirem, como aferição e não como motor
+
+**Sempre relativo ao tipo de prato.** Uma sobremesa compara-se com sobremesas. Sem isto, todas as
+sobremesas ficam substanciais e o eixo deixa de informar.
+
+**Três valores e não cinco**, porque com cinco os do meio viram ruído.
+
+**Chama-se peso e não saúde.** "Saudável" é um juízo que convida à discussão — a manteiga é saudável?
+— e não muda o que se cozinha hoje.
+
+## Tempos
+
+`prepMinutes` e `cookMinutes` entram no total. **A duração total inclui a preparação**, não só a parte
+cronometrável: se a receita manda cortar os legumes, esse tempo conta. Quando a fonte não o traz, o
+importador estima.
+
+`prepAhead` é a antecedência que **não** é tempo ativo — marinar, demolhar, levedar, arrefecer — e por
+isso **não entra no total**. Somá-la faria o bacalhau com natas parecer uma receita de 25 horas.
+
+## Ingredientes
+
+Lista única de `{ ref, quantity, unit, note, optional }`, onde `ref` aponta para um ingrediente
+canónico. **Nunca texto livre** — é o que permite à lista de compras somar "2 cebolas" com "200 g de
+cebola".
+
+**Não há grupos de ingredientes.** Foi considerado e rejeitado: a lista é única, e as sub-preparações
+são partes da preparação total do prato.
+
+## Equipamento
+
+Referências a `data/taxonomies/equipment.json`, onde cada item está marcado **uma vez** como `comum`
+ou não. A app mostra só os não comuns.
+
+O critério é "o que me pode impedir de fazer isto agora". Um tacho, uma faca e uma tábua não impedem
+ninguém de nada. Um espiralizador, uma mandolina ou uma forma de silicone, sim. Marcar na taxonomia em
+vez de decidir receita a receita evita repetir o mesmo juízo dezenas de vezes.
+
+## Passos
+
+`{ text, durationMinutes, temperatureC, passive, ingredientRefs }`. Texto curto, uma ação por passo.
+
+É esta estrutura que alimenta o modo cozinha: um passo de cada vez, temporizador quando há duração,
+ingredientes do passo à mão.
+
+**`temperatureC` é estruturada e não enterrada no texto** porque a interface de execução tem de a
+mostrar como dado — "Forno a 200 °C, 25 min" — ao lado do temporizador.
+
+**`passive` distingue os passos em que se sai da cozinha** — levedar, arrefecer, assar sem mexer — dos
+passos em que se fica a olhar. Um passo passivo deve avisar quando acaba; um ativo não precisa, e um
+alarme só incomoda.
+
+**O estado de execução não vive aqui.** Em que passo se vai, o que está concluído, o temporizador a
+correr — isso é estado efémero da aplicação. Uma receita não sabe que ficou a meio na quinta passada.
+
+## Nutrição
+
+Por dose. O ideal é o painel completo — energia, proteína, gordura, gordura saturada, hidratos, fibra
+e sal. O mínimo aceitável são só as calorias.
+
+`method` distingue `calculado` de `estimado`, para a app poder dizer "aproximado" em vez de fingir
+precisão. Qual usar por omissão é a questão Q4, ainda aberta.
+
+O sal está em gramas, como nos rótulos portugueses. O Cookidoo mostra sódio em mg; sal = sódio × 2,5.
+
+**Não há Nutri-Score.** Existia para responder a "isto é saudável", pergunta que o campo `weight`
+passou a responder melhor e de forma mais útil.
+
+## Estado e proveniência
+
+`status` (`rascunho` ou `revisto`, ausente significa revisto) e `gaps` — o que o importador não
+conseguiu determinar. Nada fica em branco em silêncio.
+
+`source` com `kind` (incluindo `video`), `title`, `author` e `url`. As instruções são sempre
+reescritas, nunca copiadas.
+
+`notes` para notas pessoais: "a avó fazia com mais alho", "da última vez ficou salgado". Sem interface
+por agora — escrevem-se à mão.
+
+---
+
+## Propostas rejeitadas
+
+Ficam registadas para não voltarem sem argumento novo.
+
+| | Proposta | Porquê não |
 |---|---|---|
-| `id` | slug | Tem de ser igual ao nome do ficheiro. Validado. |
-| `name` | texto | |
-| `description` | texto | Uma ou duas frases. Opcional. |
-| `image` | caminho | `media/recipes/<id>.jpg`. O validador confirma que o nome bate certo. |
+| P1 | Grupos de ingredientes e de passos | A lista é única; as sub-preparações são partes da preparação total |
+| P4 | Conservação e sobras (congela? dura quanto?) | Demasiado para esta fase. Arquivada, não eliminada — se o planeamento semanal fizer sentir a falta, volta |
+| — | Campo de dificuldade | Não acrescentava nada a método, tempo, antecedência e número de ingredientes |
+| — | Nutri-Score | Substituído pelo eixo de peso, que responde melhor à pergunta real |
+| — | Etiqueta "saudável" | Juízo que convida à discussão e não muda o que se cozinha hoje |
 
-> **Regra a ter presente:** renomear uma receita implica renomear o ficheiro **e** atualizar todas as
-> referências em `data/planning/` e `data/state/`. O validador apanha referências órfãs, portanto o
-> erro nunca passa despercebido — mas é trabalho manual. Foi uma troca deliberada: ids legíveis
-> tornam os diffs do Git compreensíveis, o que vale mais do que ids opacos que nunca mudam.
+## Ainda por decidir
 
-### Classificação
-
-| Campo | Tipo | Notas |
-|---|---|---|
-| `servings` | inteiro | Para quantas pessoas dá a dose declarada. |
-| `difficulty` | `facil` · `medio` · `dificil` | |
-| `labels` | lista de refs | Vocabulário fechado em `data/taxonomies/labels.json`, agrupado em tipo de prato, proteína, regime e ocasião. |
-
-### Tempos
-
-| Campo | Notas |
-|---|---|
-| `timing.prepMinutes` | Tempo ativo de preparação. |
-| `timing.cookMinutes` | Tempo de confeção. |
-| `timing.prepAhead` | Antecedência que **não** é tempo ativo: marinar, demolhar, levedar, arrefecer. Deliberadamente separada, porque somá-la aos outros tempos faria o bacalhau com natas parecer uma receita de 25 horas. |
-
-### Ingredientes
-
-Cada ingrediente é `{ ref, quantity, unit, note, optional }`, onde `ref` aponta para um ingrediente
-canónico em `data/taxonomies/ingredients.json`. **Nunca texto livre.**
-
-Esta é a decisão mais consequente de todo o formato. "2 cebolas", "1 cebola média" e "200 g de
-cebola" têm de ser o mesmo ingrediente para a lista de compras conseguir somar. O ingrediente
-canónico carrega o que torna essa soma possível: zona do supermercado, peso médio por unidade,
-densidade, e se é coisa de despensa.
-
-Unidades: `g`, `kg`, `ml`, `l`, `un`, `csopa`, `ccha`, `pitada`, `qb`.
-
-### Passos
-
-`{ text, durationMinutes, ingredientRefs }`. Texto curto, uma ação por passo — o planeamento
-original é explícito: "por bullets e simplificado, nada de grandes parágrafos".
-
-`durationMinutes` alimenta os temporizadores do modo cozinha. `ingredientRefs` permite mostrar os
-ingredientes ao lado do passo, para não ser preciso voltar atrás a meio da confeção.
-
-### Nutrição e proveniência
-
-`nutrition` guarda calorias, macros e Nutri-Score, sempre com um campo `method` que distingue
-`calculado` de `estimado` — para a app poder dizer "aproximado" em vez de fingir precisão.
-
-`source` regista de onde veio a receita. As instruções são sempre reescritas, nunca copiadas: uma
-lista de ingredientes é facto e não tem direitos de autor, o texto das instruções de outra pessoa tem.
-
----
-
-## Alterações já feitas para suportar o importador
-
-Estas duas decorrem diretamente do que o importador precisa de fazer, portanto foram implementadas
-sem esperar por revisão.
-
-### `status` e `gaps`
-
-Uma receita importada raramente vem completa. Sem uma forma de o dizer, um ficheiro com buracos fica
-em `data/recipes/` com o aspeto de estar pronto.
-
-```json
-"status": "rascunho",
-"gaps": ["nutrition", "equipment", "timing.prepMinutes"]
-```
-
-- `status` — `rascunho` (importada, por rever) ou `revisto`. **Ausente significa `revisto`**: uma
-  receita escrita à mão está revista por definição, por quem a escreveu.
-- `gaps` — que campos o importador não conseguiu determinar. É a lista de perguntas que o processo
-  de revisão vai fazer.
-
-`npm run validate` conta os rascunhos e diz quantos são, sem chumbar — um rascunho é um estado
-legítimo, não um erro.
-
-### `source` para vídeo
-
-`source.kind` passa a aceitar `video`, e ganha `author` para o canal ou autor. Um link de vídeo com
-timestamp funciona no `url` tal como está.
-
----
-
-## Propostas por decidir
-
-Estão por implementar de propósito: são o meu palpite sobre o que vai faltar, e é isso que está em
-revisão.
-
-### P1 — Grupos de ingredientes e de passos
-
-**Problema:** receitas com sub-preparações. No bacalhau com natas, o béchamel está lá dentro como
-"Para o béchamel: derreta a manteiga…" escrito no meio do texto de um passo. Funciona por acaso.
-Numa receita com massa e recheio, ou molho e prato, deixa de funcionar.
-
-**Proposta:** um campo `group` opcional em cada ingrediente e em cada passo.
-
-```json
-{ "ref": "manteiga", "quantity": 50, "unit": "g", "group": "Béchamel" }
-```
-
-**Impacto:** o modo cozinha ganha secções, e a lista de ingredientes no detalhe deixa de ser uma
-lista corrida de dezoito linhas. Custo baixo, ganho real. **Recomendo fazer.**
-
-### P2 — `prepAhead` como lista
-
-**Problema:** hoje é um objeto só. Uma receita pode precisar de duas antecedências independentes —
-demolhar o bacalhau de véspera **e** deixar arrefecer duas horas depois de feito.
-
-**Proposta:** passar a lista.
-
-**Impacto:** baixo, e o cartão de receita já só mostra a maior. **Recomendo fazer**, é mais barato
-agora do que depois.
-
-### P3 — Rendimento que não são pessoas
-
-**Problema:** `servings` é um inteiro de pessoas. "12 bolinhos", "1 bolo de 24 cm" ou "1 kg de
-compota" não cabem lá. Sobremesas e pão partem isto quase sempre.
-
-**Proposta:** manter `servings` como está, para o planeamento saber contar pessoas, e acrescentar um
-`yield` de texto livre, opcional, para o que se mostra no detalhe.
-
-**Impacto:** baixo. **Recomendo fazer**, porque o arroz doce já é um caso destes — e porque o
-Cookidoo, com milhares de receitas, mostra "16 unidades" no ecrã de detalhe. Quem já enfrentou o
-problema resolveu-o assim. Ver `docs/design/benchmark-bimby.md`.
-
-### P4 — Conservação e sobras
-
-**Problema:** planear refeições para uma semana precisa de saber o que aguenta. "Congela bem",
-"3 dias no frigorífico", "come-se no próprio dia".
-
-**Proposta:** `keeps: { fridgeDays, freezes, note }`.
-
-**Impacto:** é a única destas propostas que abre uma funcionalidade nova em vez de arrumar uma
-existente — cozinhar uma vez e comer duas vezes é metade do valor de planear a semana.
-**Recomendo fazer**, mas é o que mais merece discussão.
-
-### P5 — Temperatura de forno estruturada
-
-**Problema:** "Leve ao forno a 200 °C" está dentro do texto do passo.
-
-**Proposta:** um campo `temperatureC` no passo.
-
-**Impacto:** só serviria para o modo cozinha mostrar a temperatura em destaque. O texto já resolve.
-**Recomendo não fazer** — é estrutura a mais para benefício a menos.
-
-### P6 — Alergénios
-
-**Problema:** saber se um prato leva glúten, lactose ou frutos secos.
-
-**Proposta:** **não** pôr na receita. Pôr no ingrediente canónico, em
-`data/taxonomies/ingredients.json`, e derivar. Uma receita que leva farinha leva glúten, sem alguém
-ter de se lembrar de o marcar.
-
-**Impacto:** as labels de regime (`sem-gluten`, `sem-lactose`) passariam a ser calculadas em vez de
-declaradas — hoje são declaradas à mão e por isso vão ficar erradas mais cedo ou mais tarde.
-**Recomendo fazer, mas depois**: só vale a pena quando houver receitas que cheguem.
-
----
-
-## Decisões a tomar
-
-1. P1 a P4 entram? (a minha recomendação é sim para as quatro)
-2. P4 em particular: interessa mesmo saber o que congela e quanto dura?
-3. P6 fica para quando?
-4. Falta algum campo que dês por ti a querer e não esteja aqui?
-
-Depois de decididas, as alterações são feitas de uma vez: schema, tipos em `app/src/domain/types.ts`,
-validador, e as cinco receitas seed.
+- **Vocabulário das labels declaradas** — `docs/conversas/07-vocabulario-labels.md`
+- **Q4** — calcular a nutrição a partir dos ingredientes ou estimá-la
+- **P2** — `prepAhead` como lista, para receitas que precisam de duas antecedências independentes.
+  Levantada, nunca discutida
+- **P6** — alergénios derivados do ingrediente canónico em vez de declarados na receita
