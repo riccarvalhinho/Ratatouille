@@ -84,10 +84,7 @@ npm run build
 aproveitar viagens de carro ou de transportes, com internet — tempo que dá para pensar mas não para
 implementar.
 
-**Quem está do outro lado vai a andar.** Mensagens curtas, sem tabelas longas. As respostas vêm
-provavelmente ditadas, com erros de transcrição e sem pontuação — não implicar com a forma, assumir a
-leitura mais provável. A sessão pode ser cortada a qualquer momento, portanto **escrever no ficheiro
-a cada ronda**, não só no fim. E nada que exija olhar para uma imagem: temas visuais exploram-se em
+Quem está do outro lado vai a andar e não pode olhar para nada: temas visuais exploram-se em
 movimento, mas escolhem-se a uma secretária.
 
 Quando o utilizador disser "vamos falar de X", "continua a conversa de Y" ou "que conversas estão
