@@ -1,6 +1,6 @@
 # Conversa 1 — Metadata das receitas
 
-**Estado:** Por começar
+**Estado:** Em curso
 **Conduz:** Ricardo — há uma visão da estrutura para explicar
 **Destino das decisões:** `data/schema/recipe.schema.json`, `docs/product/metadata-receitas.md`
 **Prioridade:** Primeiro. A metadata determina o que a interface pode mostrar; desenhar ecrãs sobre
@@ -65,9 +65,48 @@ As cinco propostas de `docs/product/metadata-receitas.md`, com a minha recomenda
 
 ## Registo da conversa
 
-_(por começar)_
+### Sessão 1 — 2026-08-23
+
+O Ricardo abriu com a visão do que a metadata tem de cobrir. O princípio geral é **exaustividade**:
+prefere um formato rico a um formato mínimo.
+
+O que enumerou:
+
+- **Thumbnail** da receita, como asset.
+- **Ingredientes** com quantidade, unidade de medida, e que ingrediente é.
+- **Utensílios, mas só os que valem a pena.** Panelas, tachos e colheres de pau não contam — são
+  pressupostos. Contam um passador, um forno, um espiralizador, formas de silicone. O critério é "o
+  que me pode impedir de fazer isto agora".
+- **A receita em bruto, em texto corrido**, além dos passos estruturados.
+- **Para quantas pessoas é**, com as quantidades correspondentes — porque uma das features é
+  **ajustar as doses** para mais ou menos pessoas. As quantidades escalam; os tempos de forno e de
+  cozedura, não.
+- **Duração total**, que não é só o que é cronometrável (forno, cozedura) mas inclui a preparação
+  toda. Se a receita de origem não trouxer esse tempo, estima-se na importação e entra no total.
+- **Dificuldade.**
+- **Labels muito para além do que existe hoje**, com o objetivo explícito de filtrar e agrupar mais
+  tarde. Deu como exemplos: carne, peixe, saudável, pesado, fresco, "para grupos", sobremesa, doce, e
+  **tipo de cozinha** — indiano, italiano, etc.
 
 ## Decisões tomadas
 
-| Decisão | Onde ficou registada |
-|---|---|
+| Decisão | Estado | Onde vai parar |
+|---|---|---|
+| Escalar doses é uma feature, não um extra. Quantidades escalam, tempos não | Fechada — resolve a Q3 | `docs/product/open-questions.md`, spec 005 |
+| A duração total inclui o tempo de preparação estimado, não só o cronometrável | Fechada | `recipe.schema.json` |
+| Se a fonte não trouxer tempo de preparação, o importador estima | Fechada | spec 007 |
+| Utensílios: só os que podem impedir de cozinhar, não os básicos | Fechada no princípio, mecanismo por decidir | `data/taxonomies/equipment.json` |
+| Taxonomia de labels muito mais rica, incluindo tipo de cozinha | Fechada no princípio, vocabulário por decidir | `data/taxonomies/labels.json` |
+| Guardar a receita em bruto em texto corrido | **Em conflito** — ver abaixo | — |
+
+## Em aberto no fim da sessão 1
+
+1. **Texto em bruto vs. direitos de autor.** Guardar o texto original de uma receita de outra pessoa
+   num repositório público é exatamente o que o ADR sobre importação diz para não fazer. Falta
+   perceber para que serve o texto corrido, para escolher a solução certa.
+2. **Mecanismo para "utensílio que conta".** Proposta: uma marca `comum` na taxonomia de equipamento,
+   em vez de uma decisão por receita.
+3. **Vocabulário das labels.** Algumas das propostas são deriváveis dos dados (carne, peixe,
+   saudável) e outras têm de ser declaradas (tipo de cozinha, "para grupos"). Falta separar.
+4. **Escalar doses**: por qualquer número ou só por múltiplos simples? E o que fazer com ovos e
+   com "q.b.".
