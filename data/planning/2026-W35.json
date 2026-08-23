@@ -1,0 +1,41 @@
+{
+  "week": "2026-W35",
+  "days": [
+    {
+      "date": "2026-08-24",
+      "blocks": {
+        "jantar": [
+          {
+            "recipeId": "caldo-verde"
+          },
+          {
+            "recipeId": "salada-de-grao-com-atum"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-26",
+      "blocks": {
+        "jantar": [
+          {
+            "recipeId": "arroz-de-frango"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "blocks": {
+        "almoco": [
+          {
+            "recipeId": "bacalhau-com-natas"
+          },
+          {
+            "recipeId": "arroz-doce"
+          }
+        ]
+      }
+    }
+  ]
+}

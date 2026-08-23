@@ -1,0 +1,23 @@
+{
+  "name": "ratatouille",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Assistente de cozinha para tablet. Ferramentas de dados na raiz; a app vive em app/.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "validate": "tsx tools/validate-data.ts",
+    "bundle": "tsx tools/build-bundle.ts",
+    "build": "npm run validate && npm run bundle && npm --prefix app run build",
+    "dev": "npm run bundle && npm --prefix app run dev",
+    "typecheck": "tsc --noEmit -p tsconfig.json && npm --prefix app run typecheck",
+    "lint": "npm --prefix app run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

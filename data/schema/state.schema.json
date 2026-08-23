@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/riccarvalhinho/Ratatouille/data/schema/state.schema.json",
+  "title": "Estado do utilizador",
+  "description": "Favoritos e histórico. Ficheiros únicos em data/state/.",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/definitions/favourites" },
+    { "$ref": "#/definitions/history" }
+  ],
+  "definitions": {
+    "favourites": {
+      "type": "object",
+      "required": ["kind", "recipeIds"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "favourites" },
+        "recipeIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        }
+      }
+    },
+    "history": {
+      "type": "object",
+      "required": ["kind", "entries"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "history" },
+        "entries": {
+          "description": "Receitas cozinhadas, mais recentes primeiro.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["recipeId", "date"],
+            "additionalProperties": false,
+            "properties": {
+              "recipeId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "date": { "type": "string", "format": "date" },
+              "block": { "enum": ["pequeno-almoco", "almoco", "lanche", "jantar"] },
+              "rating": {
+                "description": "Correu bem? 1 a 5. Opcional.",
+                "type": "integer", "minimum": 1, "maximum": 5
+              },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/riccarvalhinho/Ratatouille/data/schema/plan.schema.json",
+  "title": "Plano semanal",
+  "description": "Uma semana ISO de refeições planeadas. Um ficheiro por semana em data/planning/<AAAA-Www>.json.",
+  "type": "object",
+  "required": ["week", "days"],
+  "additionalProperties": false,
+  "properties": {
+    "week": {
+      "description": "Semana ISO 8601, ex.: 2026-W35. Tem de ser igual ao nome do ficheiro.",
+      "type": "string",
+      "pattern": "^\\d{4}-W\\d{2}$"
+    },
+    "days": {
+      "type": "array",
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["date", "blocks"],
+        "additionalProperties": false,
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "blocks": {
+            "description": "Blocos do dia. Um bloco aceita várias receitas, incluindo a mesma repetida para dobrar a quantidade.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pequeno-almoco": { "$ref": "#/definitions/blockEntries" },
+              "almoco": { "$ref": "#/definitions/blockEntries" },
+              "lanche": { "$ref": "#/definitions/blockEntries" },
+              "jantar": { "$ref": "#/definitions/blockEntries" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "blockEntries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["recipeId"],
+        "additionalProperties": false,
+        "properties": {
+          "recipeId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "servings": {
+            "description": "Doses a fazer, se diferente do valor por omissão da receita.",
+            "type": "integer",
+            "minimum": 1
+          },
+          "cooked": {
+            "description": "Marcado como efetivamente cozinhado. Ver questão Q5.",
+            "type": "boolean"
+          },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

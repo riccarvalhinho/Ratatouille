@@ -1,0 +1,42 @@
+{
+  "id": "salada-de-grao-com-atum",
+  "name": "Salada de grão com atum",
+  "description": "Salada fria de grão-de-bico com atum, tomate e cebola roxa. Sem lume, pronta em dez minutos.",
+  "servings": 2,
+  "difficulty": "facil",
+  "labels": ["salada", "peixe", "leguminosas", "rapido", "dia-de-semana", "sem-gluten", "sem-lactose"],
+  "timing": { "prepMinutes": 10, "cookMinutes": 0 },
+  "equipment": ["taca", "faca-de-chef", "tabua-de-cozinha", "coador"],
+  "ingredients": [
+    { "ref": "grao-de-bico-cozido", "quantity": 400, "unit": "g", "note": "escorrido e passado por água" },
+    { "ref": "atum-em-conserva", "quantity": 160, "unit": "g", "note": "escorrido" },
+    { "ref": "tomate", "quantity": 2, "unit": "un", "note": "em cubos" },
+    { "ref": "cebola-roxa", "quantity": 0.5, "unit": "un", "note": "em meias-luas finas" },
+    { "ref": "ovo", "quantity": 2, "unit": "un", "note": "cozidos, em quartos", "optional": true },
+    { "ref": "salsa", "unit": "qb", "note": "picada" },
+    { "ref": "azeite", "quantity": 3, "unit": "csopa" },
+    { "ref": "vinagre-de-vinho", "quantity": 1, "unit": "csopa" },
+    { "ref": "sal", "unit": "qb" },
+    { "ref": "pimenta-preta", "unit": "qb" }
+  ],
+  "steps": [
+    { "text": "Escorra e passe o grão por água fria, para tirar o sabor a conserva.", "ingredientRefs": ["grao-de-bico-cozido"] },
+    { "text": "Deixe a cebola roxa cinco minutos em água fria, para perder o picante.", "durationMinutes": 5, "ingredientRefs": ["cebola-roxa"] },
+    { "text": "Numa taça, junte o grão, o tomate, a cebola escorrida e o atum às lascas.", "ingredientRefs": ["grao-de-bico-cozido", "tomate", "cebola-roxa", "atum-em-conserva"] },
+    { "text": "Tempere com azeite, vinagre, sal e pimenta e envolva sem esmagar.", "ingredientRefs": ["azeite", "vinagre-de-vinho", "sal", "pimenta-preta"] },
+    { "text": "Polvilhe com salsa e decore com os ovos cozidos, se usar.", "ingredientRefs": ["salsa", "ovo"] }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 32,
+    "carbsGrams": 38,
+    "fatGrams": 22,
+    "fibreGrams": 11,
+    "saltGrams": 1.4,
+    "nutriScore": "A"
+  },
+  "source": { "kind": "propria" },
+  "createdAt": "2026-08-23",
+  "updatedAt": "2026-08-23"
+}

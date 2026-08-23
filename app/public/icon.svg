@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ratatouille">
+  <rect width="512" height="512" rx="112" fill="#2f6b3f"/>
+  <!-- vapor -->
+  <g stroke="#e3efe4" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M196 150c0-26 24-26 24-52s-24-26-24-52"/>
+    <path d="M256 150c0-26 24-26 24-52s-24-26-24-52"/>
+    <path d="M316 150c0-26 24-26 24-52s-24-26-24-52"/>
+  </g>
+  <!-- tacho -->
+  <path d="M92 214h328v52c0 90-73 163-164 163S92 356 92 266z" fill="#ffffff"/>
+  <!-- asas -->
+  <rect x="36" y="236" width="64" height="34" rx="17" fill="#ffffff"/>
+  <rect x="412" y="236" width="64" height="34" rx="17" fill="#ffffff"/>
+  <!-- legumes -->
+  <circle cx="196" cy="300" r="26" fill="#2f6b3f"/>
+  <circle cx="268" cy="336" r="22" fill="#2f6b3f" opacity="0.72"/>
+  <circle cx="322" cy="288" r="18" fill="#2f6b3f" opacity="0.55"/>
+</svg>

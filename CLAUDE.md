@@ -1,0 +1,79 @@
+# CLAUDE.md — contexto do projeto Ratatouille
+
+Este ficheiro é carregado automaticamente em sessões de Claude Code. Serve para que qualquer sessão
+comece já a saber o que é este projeto, sem precisar de contexto externo.
+
+## O produto
+
+App assistente de cozinha, para uso pessoal, inspirada no software das Bimby mas **sem integração com
+qualquer robot de cozinha**. Quatro funções: catálogo de receitas, planeamento semanal de refeições,
+guia passo a passo durante a confeção, e lista de compras derivada do plano.
+
+Alvo de hardware: **tablet Amazon Fire suspenso na parede da cozinha**, usado só por toque, muitas
+vezes com as mãos sujas e a um braço de distância. Isto não é um detalhe decorativo — condiciona
+tamanhos de toque, contraste, e o facto de tudo ter de funcionar offline.
+
+Idioma de todo o conteúdo e da interface: **português de Portugal**.
+
+## Regras não negociáveis
+
+1. **O GitHub é a source of truth.** Não existe Drive, Notion ou documento externo. Se uma decisão não
+   está no repo, não foi tomada.
+2. **Sem servidor e sem base de dados gerida.** Os dados são ficheiros JSON em `data/`. Foi uma escolha
+   deliberada para o projeto nunca depender de um serviço que adormeça por inatividade ou que custe
+   dinheiro. Ver `docs/adr/0002-dados-json-versionados.md` antes de propor uma DB.
+3. **Offline-first.** A app tem de abrir e funcionar na cozinha sem rede.
+4. **Toque, não rato.** Nada de hover como única forma de descobrir uma ação; alvos de toque grandes.
+
+## Onde está o quê
+
+| Área | Caminho |
+|---|---|
+| Visão, PRD, roadmap, perguntas em aberto | `docs/product/` |
+| Specs por feature (com critérios de aceitação) | `docs/specs/` |
+| Decisões de arquitetura | `docs/adr/` |
+| Design system e tokens | `docs/design/design-system.md` |
+| Setup do tablet | `docs/ops/tablet-setup.md` |
+| Schemas dos dados (o contrato) | `data/schema/` |
+| Receitas, taxonomias, planeamento, estado | `data/` |
+| Scripts de dados (validar, gerar bundle, importar) | `tools/` |
+| A PWA | `app/` |
+
+## Comandos
+
+Na raiz:
+
+```bash
+npm run validate    # valida data/**/*.json contra data/schema/*.json
+npm run bundle      # gera app/public/data/bundle.json a partir de data/
+npm run build       # bundle + build da app
+```
+
+Em `app/`:
+
+```bash
+npm run dev
+npm run typecheck
+npm run lint
+npm run build
+```
+
+## Convenções
+
+- **Tipos do domínio derivam dos schemas JSON**, não o contrário. Alterar um campo significa alterar
+  `data/schema/*.json` primeiro e depois `app/src/domain/`.
+- **Uma receita = um ficheiro**, nome do ficheiro igual ao `id` (slug). **Uma semana de plano = um
+  ficheiro** `data/planning/YYYY-Www.json`. Isto mantém os diffs legíveis e evita conflitos de escrita.
+- **Ingredientes são referências**, não texto livre: apontam para `data/taxonomies/ingredients.json`.
+  Sem isto a lista de compras nunca consegue agregar quantidades.
+- Build target conservador (ES2017) enquanto o modelo do tablet não estiver confirmado — o WebView dos
+  Fire antigos é muito datado.
+- Nunca commitar tokens, PATs ou credenciais. O token de escrita do GitHub vive só no `localStorage`
+  do tablet.
+
+## Ao trabalhar aqui
+
+- Antes de implementar uma feature, ler a spec correspondente em `docs/specs/`.
+- Ao tomar uma decisão estrutural, escrever um ADR (`docs/adr/template.md`).
+- Ao descobrir uma questão por responder, acrescentá-la a `docs/product/open-questions.md` em vez de
+  assumir em silêncio.
