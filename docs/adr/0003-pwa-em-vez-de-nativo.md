@@ -3,22 +3,28 @@
 **Data:** 2026-08-23
 **Estado:** Aceite
 
+> **Nota de 2026-08-23:** o tablet foi entretanto confirmado como Fire HD 10 de 9.ª geração
+> (Fire OS 7, Chromium moderno). A incerteza sobre o WebView que motivava o plano de contingência
+> desapareceu — a PWA é o caminho, sem plano B. O empacotamento com Capacitor deixa de ser
+> contingência e passa a ser uma opção de distribuição noutros Androids (questão Q11).
+
 ## Contexto
 
 O alvo é um tablet Amazon Fire antigo, suspenso na parede da cozinha. Os tablets Fire correm Fire OS,
 um derivado do Android sem serviços Google e com a sua própria loja de aplicações. Publicar na
 Amazon Appstore para uma app de uso doméstico não faz sentido, o que deixa sideload de APK ou web.
 
-Uma incógnita relevante: o modelo do tablet ainda não está confirmado (questão Q1). Fire OS 5 e 6
-trazem um WebView bastante datado.
+Quando esta decisão foi tomada, o modelo do tablet ainda não estava confirmado, e Fire OS 5 e 6
+trazem um WebView bastante datado — daí o cuidado que se segue.
 
 ## Decisão
 
 A app é uma progressive web app, compilada com Vite e publicada em GitHub Pages, instalada no tablet
 através de "Adicionar ao ecrã inicial".
 
-Para acomodar a incerteza sobre o WebView, o build usa target ES2017 e evita APIs recentes de browser
-enquanto a Q1 não estiver respondida.
+O build usa target ES2017. Começou por ser precaução perante um WebView desconhecido; agora que o
+tablet está confirmado como capaz, mantém-se por outra razão — cobrir Androids mais antigos custa
+1,3 kB em 154 kB.
 
 ## Alternativas consideradas
 
@@ -42,9 +48,8 @@ viva, contra o mesmo princípio de autonomia do ADR 0002.
 atualizado. O mesmo código serve tablet, telemóvel e computador, o que resolve de graça a "versão
 complementar para telemóvel" prevista no PRD.
 
-**Fica difícil:** dependemos do WebView do tablet, uma incógnita até a Q1 fechar. O modo kiosk e o
-"manter o ecrã ligado" ficam por conta das definições do dispositivo e da Wake Lock API, que pode não
-existir num Fire OS antigo.
+**Fica difícil:** o modo kiosk fica por conta das definições do dispositivo. O "manter o ecrã ligado"
+resolve-se com a Wake Lock API, que existe neste Fire OS.
 
 **A vigiar:** que o service worker faça mesmo o que promete. Uma app de cozinha que não abre offline
 falhou no essencial — está no critério de verificação do M0.

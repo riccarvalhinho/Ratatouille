@@ -7,21 +7,27 @@ Estado: `Aberta` · `A decidir em <milestone>` · `Fechada`
 
 ---
 
-## Q1 — Que modelo de tablet Amazon Fire?
+## Q1 — Que modelo de tablet Amazon Fire? ✅
 
-**Estado:** Aberta · bloqueia validação em M0
+**Estado:** Fechada · 2026-08-23
 
-Determina que WebView temos e, portanto, que sintaxe de CSS e JS podemos usar. Fire OS 5/6 (tablets
-de 2014–2018) traz um WebView muito datado; Fire OS 7/8 (2019+) é Chromium moderno.
+**Resposta:** Fire HD 10 de 9.ª geração (2019). Fire OS 7, baseado em Android 9. Ecrã de 10,1"
+a 1920×1200 (224 ppi), 2 GB de RAM, MediaTek MT8183.
 
-Enquanto não estiver respondida, o build usa target conservador (ES2017) e evita sintaxe recente.
+**Consequências:**
 
-**Como responder:** Definições → Sobre o Tablet Fire → modelo e versão do Fire OS.
-
-**Consequências:** se for um Fire antigo, as opções são (a) instalar Firefox for Android via APK,
-(b) empacotar a app como APK com WebView próprio, ou (c) baixar ainda mais o target de build.
-
----
+- O browser Silk é Chromium moderno. A PWA instalada no ecrã inicial é o caminho, sem plano B —
+  cai o cenário de sideload do Firefox ou de empacotar como APK que estava previsto no ADR 0003.
+- A Wake Lock API existe, portanto o modo cozinha pode manter o ecrã ligado sem depender das
+  definições do sistema.
+- O build **mantém-se em ES2017**, agora por opção e não por precaução: o objetivo passou a ser
+  correr também noutros Androids mais antigos (questão Q11), e medimos que subir para ES2022 só
+  poupa 1,3 kB em 154 kB. Compatibilidade essencialmente de graça.
+- 2 GB de RAM não é muito. Filtrar centenas de receitas em memória continua confortável; dezenas
+  de milhares não seria. Já estava previsto no ADR 0002.
+- Por confirmar no aparelho: o viewport em pixels CSS. A 224 ppi o mais provável é uma densidade
+  de 1,5×, o que daria cerca de 1280×800 em horizontal — é a esse tamanho que as vistas devem ser
+  desenhadas e testadas. Ver `docs/ops/tablet-setup.md`.
 
 ## Q2 — Qual é a direção visual?
 
@@ -126,3 +132,53 @@ funciona se for mantido religiosamente.
 **Proposta:** não manter inventário. Em vez disso, marcar certos ingredientes canónicos como
 "despensa" (`staple: true`) e agrupá-los à parte na lista, para se ignorar de relance. 90% do
 benefício, 5% do esforço.
+
+---
+
+## Q10 — Onde é que o design é feito?
+
+**Estado:** Aberta · a decidir antes de M1
+
+Duas hipóteses para fechar a direção visual (Q2) e desenhar os ecrãs:
+
+- **Direto em código**, iterando sobre a app real com screenshots. O que se vê é o que existe, e não
+  há tradução do desenho para a implementação. Mas explorar três direções visuais em paralelo é
+  lento, e ajustar um espaçamento implica editar CSS.
+- **Numa tela do Claude Design**, com os ecrãs como artboards editáveis à mão, e só depois traduzir
+  a direção escolhida para código. Muito mais rápido para comparar alternativas e mexer sem pedir.
+  Em contrapartida, vive fora do repositório e o que produz não é código de produção.
+
+A recomendação está na conversa e o essencial é: usar a tela para **decidir**, e o código para
+**construir**. Seja qual for o caminho, a direção escolhida acaba escrita em
+`docs/design/design-system.md` — a tela é oficina, não source of truth.
+
+---
+
+## Q11 — Que Androids além do tablet da cozinha?
+
+**Estado:** Aberta
+
+O tablet está resolvido (Q1). Mas há intenção de a app correr também noutros Androids, o que levanta
+duas perguntas distintas:
+
+1. **Que versão mínima de Android?** Determina o target de build e que APIs se podem usar. Hoje
+   ES2017 cobre confortavelmente Android 7 e acima.
+2. **PWA ou APK?** Noutros Androids há Play Store, portanto um APK empacotado com Capacitor passa a
+   ser distribuível de forma normal. Muda a resposta do ADR 0003, que decidiu PWA num contexto em
+   que a única alternativa era sideload.
+
+Enquanto não houver um aparelho concreto e um caso de uso, isto não é acionável — mas condiciona
+decisões de layout, portanto vale a pena ter uma resposta antes de M1 fechar o design.
+
+---
+
+## Q12 — A metadata das receitas está completa?
+
+**Estado:** Em revisão · ver `docs/product/metadata-receitas.md`
+
+O formato das receitas foi definido em M0 e está a ser revisto agora, antes de haver receitas a
+sério e antes de o importador (spec 007) começar a produzir ficheiros — mudar o formato depois é
+migrar dados.
+
+As decisões concretas em cima da mesa estão em `docs/product/metadata-receitas.md`.
+

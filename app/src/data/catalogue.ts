@@ -45,6 +45,11 @@ export function buildCatalogue(bundle: DataBundle): Catalogue {
   };
 }
 
+/** Uma receita sem `status` conta como revista: quem a escreveu à mão já a reviu. */
+export function isDraft(recipe: Recipe): boolean {
+  return recipe.status === 'rascunho';
+}
+
 export const DIFFICULTY_NAMES: Record<Difficulty, string> = {
   facil: 'Fácil',
   medio: 'Médio',

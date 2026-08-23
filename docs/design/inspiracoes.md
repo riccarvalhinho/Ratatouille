@@ -2,10 +2,11 @@
 
 Recolha de referências visuais e de interação, para fechar a direção visual em M1 (questão Q2).
 
+> A Bimby tem ficheiro próprio: [`benchmark-bimby.md`](benchmark-bimby.md). É o benchmark principal
+> e merece uma análise estruturada, não uma linha numa lista.
+
 ## Por recolher
 
-- [ ] Screenshots dos ecrãs da Bimby — a referência de origem do projeto. Interessa sobretudo o modo
-      de execução passo a passo e a densidade de informação no detalhe da receita.
 - [ ] Outras apps de receitas para tablet, com foco em como resolvem a grelha de catálogo com filtros.
 - [ ] Apps de planeamento semanal de refeições — como representam um dia com vários pratos.
 - [ ] Dashboards de cozinha e painéis domóticos — resolvem o mesmo problema de legibilidade à distância.

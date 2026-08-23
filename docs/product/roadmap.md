@@ -18,23 +18,38 @@ Nada de features do produto. O objetivo é o alicerce.
 - Tooling: validação de dados e geração do bundle
 - App shell (Vite + React + TS) a correr e a ler o bundle
 - CI a validar dados e a compilar; deploy automático para GitHub Pages
+- Tablet confirmado: Fire HD 10 de 9.ª geração (questão Q1 fechada)
 
 **Feito quando:** o URL do GitHub Pages abre no tablet e mostra as receitas seed.
 
 ---
 
-## M1 — Catálogo e detalhe
+## M1 — Catálogo, detalhe e importador
 
-O primeiro milestone com valor real de utilização.
+O primeiro milestone com valor real de utilização. Três frentes que avançam em paralelo.
+
+**Frente A — metadata e importador** (spec 007). É o que enche o catálogo, e por isso vem primeiro:
+sem receitas, um catálogo bonito não serve de nada.
+
+- Fechar a revisão da metadata (`docs/product/metadata-receitas.md`, questão Q12)
+- Aplicar as alterações ao schema, aos tipos, ao validador e às receitas seed
+- `tools/import-recipe.ts`: link de site, link de vídeo, texto ou foto → ficheiro validado
+- Preenchimento interativo de lacunas — nada fica em branco em silêncio
+
+**Frente B — design** (questões Q2 e Q10).
+
+- Recolher o benchmark da companion app da Bimby (`docs/design/benchmark-bimby.md`)
+- Fechar a direção visual e escrevê-la em `docs/design/design-system.md`
+
+**Frente C — os ecrãs** (specs 001 e 002).
 
 - Grelha de receitas com thumbnails, tempos e labels
 - Filtros por duração, dificuldade e labels
 - Pop-up de detalhe completo: ingredientes, passo a passo, utensílios, nutrição
 - Subtabs de favoritos e histórico (só leitura nesta fase)
-- Direção visual fechada e aplicada (resolve Q2)
-- Em paralelo: `tools/import-recipe.ts` para encher o catálogo depressa
 
-**Feito quando:** dá para descobrir e ler uma receita no tablet sem tocar num teclado.
+**Feito quando:** dá para descobrir e ler uma receita no tablet sem tocar num teclado, e o catálogo
+tem receitas que chegue para isso ser útil.
 
 ---
 

@@ -9,9 +9,11 @@ App assistente de cozinha, para uso pessoal, inspirada no software das Bimby mas
 qualquer robot de cozinha**. Quatro funções: catálogo de receitas, planeamento semanal de refeições,
 guia passo a passo durante a confeção, e lista de compras derivada do plano.
 
-Alvo de hardware: **tablet Amazon Fire suspenso na parede da cozinha**, usado só por toque, muitas
-vezes com as mãos sujas e a um braço de distância. Isto não é um detalhe decorativo — condiciona
-tamanhos de toque, contraste, e o facto de tudo ter de funcionar offline.
+Alvo de hardware: **Amazon Fire HD 10 de 9.ª geração** (Fire OS 7 / Android 9, ecrã de 10,1" a
+1920×1200) suspenso na parede da cozinha, usado só por toque, muitas vezes com as mãos sujas e a um
+braço de distância. Isto não é um detalhe decorativo — condiciona tamanhos de toque, contraste, e o
+facto de tudo ter de funcionar offline. Desenhar e testar as vistas a **1280×800**, que é o viewport
+em pixels CSS mais provável.
 
 Idioma de todo o conteúdo e da interface: **português de Portugal**.
 
@@ -34,6 +36,8 @@ Idioma de todo o conteúdo e da interface: **português de Portugal**.
 | Decisões de arquitetura | `docs/adr/` |
 | Design system e tokens | `docs/design/design-system.md` |
 | Setup do tablet | `docs/ops/tablet-setup.md` |
+| Metadata das receitas, em revisão | `docs/product/metadata-receitas.md` |
+| Benchmark da companion app da Bimby | `docs/design/benchmark-bimby.md` |
 | Schemas dos dados (o contrato) | `data/schema/` |
 | Receitas, taxonomias, planeamento, estado | `data/` |
 | Scripts de dados (validar, gerar bundle, importar) | `tools/` |
@@ -66,8 +70,10 @@ npm run build
   ficheiro** `data/planning/YYYY-Www.json`. Isto mantém os diffs legíveis e evita conflitos de escrita.
 - **Ingredientes são referências**, não texto livre: apontam para `data/taxonomies/ingredients.json`.
   Sem isto a lista de compras nunca consegue agregar quantidades.
-- Build target conservador (ES2017) enquanto o modelo do tablet não estiver confirmado — o WebView dos
-  Fire antigos é muito datado.
+- **Nada fica em branco em silêncio.** Uma receita cujos campos não se conseguiram determinar leva
+  `status: "rascunho"` e lista os buracos em `gaps`. Ausência de `status` significa revisto.
+- Build target ES2017 por opção, não por limitação: o tablet aguentaria ES2022, mas a app deve poder
+  correr noutros Androids mais antigos e o custo medido é 1,3 kB em 154 kB.
 - Nunca commitar tokens, PATs ou credenciais. O token de escrita do GitHub vive só no `localStorage`
   do tablet.
 

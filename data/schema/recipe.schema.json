@@ -17,6 +17,16 @@
       "description": "Uma ou duas frases. Opcional.",
       "type": "string"
     },
+    "status": {
+      "description": "Ausente significa \"revisto\": uma receita escrita à mão está revista por quem a escreveu. O importador escreve sempre \"rascunho\".",
+      "enum": ["rascunho", "revisto"]
+    },
+    "gaps": {
+      "description": "Campos que o importador não conseguiu determinar. É a lista de perguntas que a revisão vai fazer.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
     "image": {
       "description": "Caminho relativo à raiz do repositório, ex.: media/recipes/<id>.jpg",
       "type": "string",
@@ -152,8 +162,12 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "kind": { "enum": ["propria", "familia", "livro", "web", "importada"] },
+        "kind": { "enum": ["propria", "familia", "livro", "web", "video", "importada"] },
         "title": { "type": "string" },
+        "author": {
+          "description": "Autor, canal ou publicação de origem.",
+          "type": "string"
+        },
         "url": { "type": "string", "format": "uri" }
       }
     },

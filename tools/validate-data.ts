@@ -64,6 +64,7 @@ const equipmentIds = new Set((data.equipment.data as WithItems).items.map((item)
 
 interface RecipeShape {
   id: string;
+  status?: string;
   labels?: string[];
   equipment?: string[];
   image?: string;
@@ -72,6 +73,7 @@ interface RecipeShape {
 }
 
 const recipeIds = new Set<string>();
+let drafts = 0;
 
 for (const entry of data.recipes) {
   const recipe = entry.data as RecipeShape;
@@ -82,6 +84,9 @@ for (const entry of data.recipes) {
   }
   if (recipeIds.has(recipe.id)) fail(entry.name, `id duplicado: ${recipe.id}`);
   recipeIds.add(recipe.id);
+
+  // Um rascunho é um estado legítimo, não um erro — conta-se, não se chumba.
+  if (recipe.status === 'rascunho') drafts += 1;
 
   for (const label of recipe.labels ?? []) {
     if (!labelIds.has(label)) fail(entry.name, `label desconhecida "${label}" — acrescentar a data/taxonomies/labels.json`);
@@ -179,3 +184,7 @@ console.log(
   `✓ dados válidos — ${data.recipes.length} receita(s), ${data.plans.length} semana(s), ` +
     `${ingredientIds.size} ingrediente(s), ${labelIds.size} label(s), ${equipmentIds.size} equipamento(s)`,
 );
+
+if (drafts > 0) {
+  console.log(`  ${drafts} receita(s) por rever — ver o campo gaps de cada uma`);
+}

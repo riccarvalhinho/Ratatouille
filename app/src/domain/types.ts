@@ -97,15 +97,26 @@ export interface Nutrition {
 }
 
 export interface RecipeSource {
-  kind?: 'propria' | 'familia' | 'livro' | 'web' | 'importada';
+  kind?: 'propria' | 'familia' | 'livro' | 'web' | 'video' | 'importada';
   title?: string;
+  /** Autor, canal ou publicação de origem. */
+  author?: string;
   url?: string;
 }
+
+/**
+ * Estado de revisão. Ausente significa `revisto` — uma receita escrita à mão está revista por quem
+ * a escreveu. O importador escreve sempre `rascunho`, com os buracos listados em `gaps`.
+ */
+export type RecipeStatus = 'rascunho' | 'revisto';
 
 export interface Recipe {
   id: string;
   name: string;
   description?: string;
+  status?: RecipeStatus;
+  /** Campos que o importador não conseguiu determinar — as perguntas que a revisão vai fazer. */
+  gaps?: string[];
   image?: string;
   servings: number;
   difficulty: Difficulty;

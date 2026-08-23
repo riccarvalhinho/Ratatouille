@@ -2,22 +2,22 @@
 
 Como pôr a app a correr no tablet Amazon Fire suspenso na cozinha.
 
-> **Pendente:** o modelo exato do tablet ainda não está confirmado (questão Q1). As instruções abaixo
-> assumem Fire OS 7 ou superior. Se for um Fire de 2014–2018, ver a secção "Tablets antigos".
-
-## 1. Identificar o tablet
-
-Definições → Opções do dispositivo → Sobre o Tablet Fire. Anotar aqui:
+## 1. O tablet
 
 | Campo | Valor |
 |---|---|
-| Modelo | _por preencher_ |
-| Geração | _por preencher_ |
-| Versão do Fire OS | _por preencher_ |
-| Resolução | _por preencher_ |
+| Modelo | Fire HD 10 (9.ª geração, 2019) |
+| Sistema | Fire OS 7, baseado em Android 9 |
+| Ecrã | 10,1", 1920×1200, 224 ppi |
+| Memória | 2 GB |
+| Processador | MediaTek MT8183 |
 
-Assim que estiver preenchido, fechar a Q1 em `docs/product/open-questions.md` e ajustar o target de
-build em `app/vite.config.ts` se der para relaxar.
+O Silk é Chromium moderno, portanto a PWA instalada no ecrã inicial funciona sem truques.
+
+**Por confirmar no aparelho:** o viewport em pixels CSS. A 224 ppi o mais provável é densidade 1,5×,
+o que daria cerca de **1280×800** em horizontal. É a esse tamanho que as vistas devem ser desenhadas
+e testadas. Para confirmar, abrir a app no tablet e ler `window.innerWidth` — ou simplesmente
+comparar com um screenshot feito a 1280×800.
 
 ## 2. Instalar a app
 
@@ -64,14 +64,11 @@ O teste que interessa mesmo:
 Tem de abrir e mostrar as receitas na mesma. Se não mostrar, o service worker ou a cache em IndexedDB
 não estão a funcionar e é um bug bloqueante.
 
-## Tablets antigos (Fire OS 5 ou 6)
+## Outros Androids
 
-Se o tablet for de 2014–2018, o WebView do Silk pode ser velho demais para a app. Por ordem de
-preferência:
+O build está em ES2017, o que cobre confortavelmente Android 7 e acima — não por limitação deste
+tablet, que aguentaria muito mais, mas porque a app deve poder correr noutros aparelhos e o custo
+medido de ser conservador é 1,3 kB em 154 kB.
 
-1. **Instalar o Firefox for Android** via APK (sideload) e usar a PWA nesse browser. O Firefox traz o
-   seu próprio motor, independente do WebView do sistema. É a solução mais barata.
-2. **Baixar o target de build** em `app/vite.config.ts` e evitar APIs recentes. Já estamos em ES2017
-   por precaução.
-3. **Empacotar como APK** com Capacitor e um WebView atualizado embutido. É a solução mais robusta e
-   a mais cara — só se as duas anteriores falharem.
+Em Androids com Play Store, empacotar como APK com Capacitor passa a ser uma opção real de
+distribuição, ao contrário do que acontece no Fire OS. Ver questão Q11 antes de investir nisso.

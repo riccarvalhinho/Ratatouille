@@ -44,9 +44,11 @@ mostrar "offline · dados guardados" em vez de mentir e dizer "atualizado".
 
 ## Notas de compatibilidade
 
-O build usa target **ES2017** de propósito. O tablet alvo é um Amazon Fire de modelo ainda não
-confirmado (questão Q1) e os Fire mais antigos trazem um WebView datado. Relaxar o target quando o
-modelo estiver confirmado — está registado em `docs/product/open-questions.md`.
+O build usa target **ES2017** de propósito. O tablet é um Fire HD 10 de 9.ª geração (Fire OS 7,
+Chromium moderno) e aguentaria ES2022 — mas a app deve poder correr noutros Androids mais antigos, e
+medimos que subir o target só poupa 1,3 kB em 154 kB. Compatibilidade de graça.
+
+Desenhar e testar a **1280×800**, o viewport em pixels CSS mais provável do tablet.
 
 Sem webfonts: o tablet pode estar offline, e uma fonte que não carrega é pior do que a fonte do
 sistema.
