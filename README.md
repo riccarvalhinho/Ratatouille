@@ -66,3 +66,13 @@ npm run build     # a partir da raiz
 
 Sem servidor, sem base de dados gerida, sem custo, sem nada que adormeça por inatividade.
 Detalhe em [`docs/adr/0001-github-como-source-of-truth.md`](docs/adr/0001-github-como-source-of-truth.md).
+
+---
+
+## Nota sobre visibilidade
+
+Este repositório é **público**, porque o GitHub Pages gratuito não publica de repositórios privados
+— ver [`docs/adr/0005-repositorio-publico.md`](docs/adr/0005-repositorio-publico.md). As receitas e o
+planeamento são legíveis por qualquer pessoa; escrever exige um token que **nunca** vive aqui.
+
+Por isso, e sem exceções: nada de tokens, PATs ou credenciais em ficheiros commitados.
