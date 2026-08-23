@@ -99,7 +99,12 @@
             "properties": {
               "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
               "name": { "type": "string", "minLength": 1 },
-              "kind": { "enum": ["eletrodomestico", "utensilio"] }
+              "kind": { "enum": ["eletrodomestico", "utensilio"] },
+              "comum": {
+                "description": "Pressupõe-se que existe em qualquer cozinha. A app não o mostra — só interessa listar o que pode impedir alguém de fazer a receita.",
+                "type": "boolean",
+                "default": false
+              }
             }
           }
         }

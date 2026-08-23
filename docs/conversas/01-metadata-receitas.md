@@ -99,14 +99,66 @@ O que enumerou:
 | Taxonomia de labels muito mais rica, incluindo tipo de cozinha | Fechada no princípio, vocabulário por decidir | `data/taxonomies/labels.json` |
 | Guardar a receita em bruto em texto corrido | **Em conflito** — ver abaixo | — |
 
-## Em aberto no fim da sessão 1
+### Sessão 2 — 2026-08-23
 
-1. **Texto em bruto vs. direitos de autor.** Guardar o texto original de uma receita de outra pessoa
-   num repositório público é exatamente o que o ADR sobre importação diz para não fazer. Falta
-   perceber para que serve o texto corrido, para escolher a solução certa.
-2. **Mecanismo para "utensílio que conta".** Proposta: uma marca `comum` na taxonomia de equipamento,
-   em vez de uma decisão por receita.
-3. **Vocabulário das labels.** Algumas das propostas são deriváveis dos dados (carne, peixe,
-   saudável) e outras têm de ser declaradas (tipo de cozinha, "para grupos"). Falta separar.
+Respostas às três perguntas da sessão 1.
+
+**Texto corrido — resolvido, sem conflito.** A necessidade era segurança do processo de importação,
+não leitura. A solução é uma **transcrição nossa**, escrita por nós, com o grau de detalhe que
+acharmos importante manter, e que também serve para ser lida. Como é texto nosso, não há questão de
+direitos de autor.
+
+**Equipamento — aceite.** Marcar cada equipamento uma vez na taxonomia em vez de decidir receita a
+receita. Pedido um primeiro esboço quase exaustivo, para categorizar um a um.
+
+**Labels — aceite a divisão entre derivadas e declaradas.** As declaradas passam a ter categorias.
+Uma delas é o **tipo ou origem de cozinha** (italiano, indiano). O importador deve **perguntar** se a
+receita tem uma origem própria ou se ela está ausente — a ausência é uma resposta válida, não um
+buraco.
+
+Sobre saudável versus pesado: aceite que é **um eixo, não duas etiquetas**, posicionável à maneira de
+um Nutri-Score se houver informação. Pedida proposta de como o fazer de forma sistemática, para não
+ter de ser julgado à mão receita a receita.
+
+## Em aberto no fim da sessão 2
+
+1. **O eixo de peso**: proposta em cima da mesa, por validar. Ver abaixo.
+2. **Categorização do equipamento**: primeiro esboço feito com 65 entradas, 34 marcadas como comuns e
+   31 como notáveis. Por rever um a um. O caso do **forno** foi levantado e está marcado como comum —
+   é o mais discutível da lista.
+3. **Vocabulário completo das labels declaradas**, por categoria.
 4. **Escalar doses**: por qualquer número ou só por múltiplos simples? E o que fazer com ovos e
    com "q.b.".
+
+## Proposta em aberto — o eixo de peso
+
+O objetivo é responder à pergunta que se faz mesmo às sete da tarde: "hoje apetece-me algo leve".
+
+**Não usar Nutri-Score.** É um algoritmo desenhado para produtos embalados, por 100 g, e responde a
+"isto é nutricionalmente bom?" e não a "isto é pesado?". Numa refeição dá resultados absurdos: uma
+salada com azeite pontua mal pela gordura por 100 g, um refrigerante de dieta pontua bem.
+
+**Não construir uma fórmula sobre a nutrição.** Enquanto a Q4 não estiver fechada, os valores
+nutricionais são estimativas. Uma fórmula sobre estimativas dá falsa precisão.
+
+**Proposta: uma rubrica escrita, aplicada pelo importador.** O que torna isto sistemático não é ser
+calculado, é serem os mesmos critérios todas as vezes, escritos e auditáveis. O importador atribui,
+e só se corrige quando estiver errado — não há julgamento manual receita a receita.
+
+Critérios observáveis, sem depender de nutrição:
+
+- **Método de confeção** — frito, gratinado ou com creme puxa para cima; grelhado, cozido a vapor ou
+  cru puxa para baixo
+- **Veículos de gordura e a sua quantidade** — natas, manteiga, queijo, banha, fritura
+- **Proteína** — carne vermelha e enchidos para cima; peixe, leguminosas e ovos para baixo
+- **Proporção de legumes** no total dos ingredientes
+- **Calorias por dose**, quando existirem, como aferição e não como motor
+
+**Relativo ao tipo de prato.** Uma sobremesa compara-se com sobremesas, não com sopas. Sem isto,
+todas as sobremesas ficam pesadas e o eixo deixa de informar.
+
+**Três valores, não cinco:** `leve`, `equilibrado`, `substancial`. Com cinco, os do meio viram ruído.
+
+**Chamar-lhe peso e não saúde.** "Saudável" é um juízo moral que convida à discussão — a manteiga é
+saudável? — e não muda o que se cozinha hoje. "Pesado" responde a uma pergunta real e concreta.
+Consequência: a label `saudável` deixa de existir.
