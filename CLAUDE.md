@@ -92,6 +92,15 @@ prosa e perguntas numeradas: tabelas e listas encaixadas não sobrevivem a ser l
 Quem está do outro lado vai a andar: temas visuais exploram-se em movimento, mas escolhem-se a uma
 secretária.
 
+Estas conversas podem acontecer no Cowork em vez de aqui. Nesse caso escrevem só em
+`docs/conversas/` — que é a pasta das conversas do Cowork, e não se cria uma segunda para o mesmo
+fim. Uma decisão que mude schema, spec ou ADR fica **anotada** na tabela do tema com o destino
+indicado, e o tema é marcado com estado `Decisões por aplicar`.
+
+**Um tema nesse estado é um brief.** Lê-se, aplicam-se as decisões ao código, aos dados ou às specs,
+corre-se `npm run validate`, e muda-se o estado para `Aplicada`. Se alguma decisão estiver ambígua,
+perguntar antes de mexer — aplicar a interpretação errada custa mais do que uma pergunta.
+
 Quando o utilizador disser "vamos falar de X", "continua a conversa de Y" ou "que conversas estão
 abertas?", ler `docs/conversas/README.md` e o ficheiro do tema, e continuar de onde ficou.
 
