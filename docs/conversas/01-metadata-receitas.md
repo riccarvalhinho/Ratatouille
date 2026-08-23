@@ -137,6 +137,40 @@ O forno fica portanto marcado como `comum` no equipamento.
 **O método aparece só no detalhe, não no cartão.** O cartão já tem informação a mais, e o que lá
 entra é assunto para a conversa 2.
 
+### Sessão 4 — 2026-08-23
+
+**Nutrição: fica, com o painel do Cookidoo como referência.** Mostrado um exemplo real, por dose:
+sódio em mg, proteína, energia em kJ e kcal, gordura, fibra, gordura saturada, hidratos de carbono.
+É o ideal; o mínimo aceitável é só calorias por dose.
+
+Consequências para o schema:
+- falta **gordura saturada**, que o painel tem e nós não
+- o painel usa **sódio em mg**, o nosso schema tem **sal em g** — são grandezas diferentes
+- **energia em kJ** não precisa de ser guardada, deriva-se das calorias
+- o **Nutri-Score** fica órfão: existia para responder a "isto é saudável", pergunta que o eixo de
+  peso passou a responder melhor
+
+**Conservação e sobras: rejeitada por agora.** "Too much" nesta fase. A proposta P4 fica arquivada,
+não eliminada — se o planeamento semanal fizer sentir a falta, volta.
+
+**Rendimento: complementa ou substitui as doses.** Por vezes é "x pessoas", por vezes "x unidades",
+e por vezes é só "30 bolachas" sem pessoas nenhumas. Consequência importante: `servings` **deixa de
+ser obrigatório** no schema.
+
+**Notas pessoais: campo aceite, sem interface por agora.** Eventualmente poder escrevê-las na app e
+gravá-las no repositório, para reler noutro dispositivo. Não já. O campo `notes` já existe no schema.
+
+**Escalar doses: só por múltiplos simples.** Nada de escalar para números arbitrários.
+
+## Em aberto no fim da sessão 4
+
+- **Sub-preparações** (proposta P1): grupos de ingredientes e de passos, "para o béchamel", "para o
+  recheio". Levantada duas vezes, ainda sem resposta.
+- **Dificuldade**: continua sem definição. Levantada duas vezes. Com método, tempo total, antecedência
+  e número de ingredientes já no formato, falta perceber o que é que ela ainda acrescenta.
+- **Vocabulário completo das labels declaradas**, por categoria.
+- **Sódio em mg ou sal em g**, e se o Nutri-Score se mantém.
+
 ## Em aberto no fim da sessão 2
 
 1. **O eixo de peso**: proposta em cima da mesa, por validar. Ver abaixo.
