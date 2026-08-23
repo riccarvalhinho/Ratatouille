@@ -41,6 +41,10 @@ lint, typecheck e CI. É aqui que se mexe em schema, specs, ADRs e dados.
 **No Cowork**, em modo conversacional durante uma viagem. Lê o repositório — que é público, portanto
 basta o URL, e com o conector do GitHub ligado também escreve.
 
+> **Esta é a pasta das conversas do Cowork.** Não criar uma segunda — `/cowork-conversations` ou
+> parecido — para o mesmo fim. Duas pastas para a mesma coisa é a fragmentação que o ADR 0001 existe
+> para evitar, e partia a continuidade: um tema com metade da história aqui e metade lá.
+
 ### Regras para uma conversa conduzida no Cowork
 
 1. **Ler primeiro este README e o ficheiro do tema.** É o que dá o contexto e o protocolo.
@@ -50,6 +54,27 @@ basta o URL, e com o conector do GitHub ligado também escreve.
 4. **As decisões estruturais ficam anotadas, não aplicadas.** Uma decisão que muda o schema, uma spec
    ou um ADR escreve-se na tabela do tema com o destino indicado, e é aplicada depois numa sessão de
    Claude Code.
+5. **Marcar o estado como `Decisões por aplicar`** no cabeçalho do ficheiro. É o sinal de que há
+   trabalho à espera — sem ele, a sessão seguinte não tem como saber que a conversa avançou.
+
+### O ficheiro do tema é um brief
+
+Quando um tema está marcado com `Decisões por aplicar`, a sessão de Claude Code trata-o como
+especificação: lê, aplica as decisões ao código, aos dados ou às specs, corre `npm run validate`, e
+muda o estado para `Aplicada`.
+
+**Se alguma decisão estiver ambígua, perguntar antes de mexer.** Uma conversa resumida perde contexto,
+e aplicar a interpretação errada custa mais do que uma pergunta.
+
+### Estados de um tema
+
+| Estado | Significa |
+|---|---|
+| `Por começar` | Ainda não se falou disto |
+| `Em curso` | Conversa começada, sem decisões fechadas |
+| `Decisões por aplicar` | Há decisões fechadas à espera de irem para o código, os dados ou as specs |
+| `Aplicada` | Tudo o que se decidiu já está no sítio certo |
+| `Fechada` | Tema esgotado, não há mais a decidir |
 
 O porquê da regra 4: uma escrita direta ao `main` salta a validação toda. Para Markdown de conversa
 isso é inofensivo; para o schema ou para os dados não é — um ingrediente que não existe passa no
