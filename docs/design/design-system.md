@@ -65,6 +65,18 @@ do que uma fonte genérica.
 
 `--radius-sm` (8px), `--radius-md` (16px), `--radius-lg` (24px). Sombras suaves, duas variantes só.
 
+## Decisões de layout vindas do benchmark
+
+Do Cookidoo (`benchmark-bimby.md`), já decididas:
+
+- **Navegação vertical à esquerda**, só ícones. Em horizontal, a altura é a dimensão escassa; uma
+  barra em baixo comeria espaço ao conteúdo.
+- **Quatro cartões por linha** no catálogo a 1280×800.
+- **Ação principal como círculo grande e destacado**, persistente. É o "Cozinhar".
+- **O acento só na ação e no estado ativo.** Tudo o resto é texto escuro sobre claro. É isto que faz
+  o botão principal saltar sem a interface parecer um semáforo.
+- **Ecrãs de detalhe em duas colunas**, aproveitando a largura, em vez de empilhar tudo num scroll.
+
 ## Componentes previstos
 
 - `RecipeCard` — thumbnail, nome, duração, antecedência, até 3 labels
@@ -73,6 +85,9 @@ do que uma fonte genérica.
 - `Modal` — pop-up de detalhe, com "x" no canto superior direito
 - `DayBlock` — bloco do dia na vista de planeamento
 - `Stepper` — passo a passo do modo cozinha
+- `NavRail` — navegação vertical à esquerda, só ícones
+- `IngredientList` — nome, nota subordinada, quantidade alinhada à direita
+- `MetaRow` — ícone + texto, para tempos, doses e rendimento
 
 ## O que fica por decidir em M1
 
