@@ -37,6 +37,7 @@ Idioma de todo o conteúdo e da interface: **português de Portugal**.
 | Design system e tokens | `docs/design/design-system.md` |
 | Setup do tablet | `docs/ops/tablet-setup.md` |
 | Metadata das receitas, em revisão | `docs/product/metadata-receitas.md` |
+| Conversas em aberto, para decidir a falar | `docs/conversas/` |
 | Benchmark da companion app da Bimby | `docs/design/benchmark-bimby.md` |
 | Schemas dos dados (o contrato) | `data/schema/` |
 | Receitas, taxonomias, planeamento, estado | `data/` |
@@ -76,6 +77,23 @@ npm run build
   correr noutros Androids mais antigos e o custo medido é 1,3 kB em 154 kB.
 - **Nunca commitar tokens, PATs ou credenciais.** O repositório é público (ADR 0005), portanto isto
   não é higiene, é crítico. O token de escrita do GitHub vive só no `localStorage` do tablet.
+
+## Conversas
+
+`docs/conversas/` guarda temas que se decidem melhor a falar do que a escrever sozinho. Existem para
+aproveitar tempos mortos — viagens, esperas — em que dá para pensar mas não para implementar.
+
+Quando o utilizador disser "vamos falar de X", "continua a conversa de Y" ou "que conversas estão
+abertas?", ler `docs/conversas/README.md` e o ficheiro do tema, e continuar de onde ficou.
+
+**Estas conversas são debates, não entrevistas.** Ler o protocolo completo no README, mas o essencial:
+propor respostas concretas em vez de perguntar no vazio, discordar com o argumento à frente, duas ou
+três perguntas de cada vez e não um questionário, perguntar pelo concreto ("na última vez que
+planeaste a semana, como começaste?") e não pelo abstrato, e dizer quando uma escolha tem custo.
+
+**No fim de cada sessão, escrever no ficheiro** o que ficou decidido, o que ficou em aberto e por
+onde continuar — e mudar as decisões fechadas para onde pertencem (spec, ADR, schema). Uma conversa
+que não deixa rasto foi tempo deitado fora.
 
 ## Ao trabalhar aqui
 

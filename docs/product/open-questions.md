@@ -31,7 +31,7 @@ a 1920×1200 (224 ppi), 2 GB de RAM, MediaTek MT8183.
 
 ## Q2 — Qual é a direção visual?
 
-**Estado:** A decidir em M1
+**Estado:** A decidir em M1 · conversa aberta em `docs/conversas/06-direcao-visual.md`
 
 O documento original dizia "Verdes, assim com aspeto saudável?" e "Minimalista? Decorada?" — ambas com
 ponto de interrogação, ou seja, nunca foram decididas.
@@ -72,7 +72,7 @@ O schema já distingue os dois através do campo `nutrition.method`, para que a 
 
 ## Q5 — O histórico é automático ou manual?
 
-**Estado:** A decidir em M3
+**Estado:** A decidir em M3 · resolve-se dentro de `docs/conversas/05-ui-planeamento.md`
 
 Quando uma refeição planeada passa a estar no passado, entra automaticamente no histórico? Ou é
 preciso marcar "feito"?
@@ -86,7 +86,7 @@ exige disciplina e o histórico acaba vazio.
 
 ## Q6 — Que blocos do dia no planeamento?
 
-**Estado:** A decidir em M3
+**Estado:** A decidir em M3 · resolve-se dentro de `docs/conversas/05-ui-planeamento.md`
 
 O documento original propunha "manhã/tarde" e marcava explicitamente "MELHORAR".
 
@@ -137,7 +137,7 @@ benefício, 5% do esforço.
 
 ## Q10 — Onde é que o design é feito?
 
-**Estado:** Aberta · a decidir antes de M1
+**Estado:** Aberta · a decidir antes de M1 · conversa aberta em `docs/conversas/06-direcao-visual.md`
 
 Duas hipóteses para fechar a direção visual (Q2) e desenhar os ecrãs:
 
@@ -174,7 +174,7 @@ decisões de layout, portanto vale a pena ter uma resposta antes de M1 fechar o 
 
 ## Q12 — A metadata das receitas está completa?
 
-**Estado:** Em revisão · ver `docs/product/metadata-receitas.md`
+**Estado:** Em revisão · conversa aberta em `docs/conversas/01-metadata-receitas.md`
 
 O formato das receitas foi definido em M0 e está a ser revisto agora, antes de haver receitas a
 sério e antes de o importador (spec 007) começar a produzir ficheiros — mudar o formato depois é
