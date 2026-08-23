@@ -1,0 +1,27 @@
+{
+  "kind": "equipment",
+  "items": [
+    { "id": "forno", "name": "Forno", "kind": "eletrodomestico" },
+    { "id": "placa", "name": "Placa / fogão", "kind": "eletrodomestico" },
+    { "id": "micro-ondas", "name": "Micro-ondas", "kind": "eletrodomestico" },
+    { "id": "varinha-magica", "name": "Varinha mágica", "kind": "eletrodomestico" },
+    { "id": "liquidificadora", "name": "Liquidificadora", "kind": "eletrodomestico" },
+    { "id": "batedeira", "name": "Batedeira", "kind": "eletrodomestico" },
+    { "id": "airfryer", "name": "Air fryer", "kind": "eletrodomestico" },
+    { "id": "panela-de-pressao", "name": "Panela de pressão", "kind": "eletrodomestico" },
+
+    { "id": "tacho", "name": "Tacho", "kind": "utensilio" },
+    { "id": "panela-grande", "name": "Panela grande", "kind": "utensilio" },
+    { "id": "frigideira", "name": "Frigideira", "kind": "utensilio" },
+    { "id": "tabuleiro-de-forno", "name": "Tabuleiro de forno", "kind": "utensilio" },
+    { "id": "pirex", "name": "Pirex", "kind": "utensilio" },
+    { "id": "taca", "name": "Taça", "kind": "utensilio" },
+    { "id": "tabua-de-cozinha", "name": "Tábua de cozinha", "kind": "utensilio" },
+    { "id": "faca-de-chef", "name": "Faca de chef", "kind": "utensilio" },
+    { "id": "coador", "name": "Coador", "kind": "utensilio" },
+    { "id": "balanca", "name": "Balança de cozinha", "kind": "utensilio" },
+    { "id": "descascador", "name": "Descascador", "kind": "utensilio" },
+    { "id": "ralador", "name": "Ralador", "kind": "utensilio" },
+    { "id": "papel-vegetal", "name": "Papel vegetal", "kind": "utensilio" }
+  ]
+}

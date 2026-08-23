@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Gerado por tools/build-bundle.ts a partir de data/. Nunca editar à mão.
+app/public/data/

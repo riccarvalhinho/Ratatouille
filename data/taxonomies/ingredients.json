@@ -1,0 +1,44 @@
+{
+  "kind": "ingredients",
+  "items": [
+    { "id": "agua", "name": "Água", "aisle": "outros", "staple": true, "density": 1 },
+    { "id": "sal", "name": "Sal", "aisle": "mercearia", "staple": true },
+    { "id": "pimenta-preta", "name": "Pimenta preta", "aisle": "mercearia", "staple": true },
+    { "id": "azeite", "name": "Azeite", "aisle": "mercearia", "staple": true, "density": 0.92 },
+    { "id": "vinagre-de-vinho", "name": "Vinagre de vinho", "aisle": "mercearia", "staple": true, "density": 1.01 },
+    { "id": "farinha-de-trigo", "name": "Farinha de trigo", "aisle": "mercearia", "staple": true },
+    { "id": "acucar", "name": "Açúcar", "aisle": "mercearia", "staple": true },
+    { "id": "noz-moscada", "name": "Noz-moscada", "aisle": "mercearia", "staple": true },
+    { "id": "canela-em-po", "name": "Canela em pó", "aisle": "mercearia", "staple": true },
+    { "id": "pau-de-canela", "name": "Pau de canela", "plural": "Paus de canela", "aisle": "mercearia", "staple": true },
+    { "id": "folha-de-louro", "name": "Folha de louro", "plural": "Folhas de louro", "aisle": "mercearia", "staple": true },
+    { "id": "arroz-carolino", "name": "Arroz carolino", "aisle": "mercearia" },
+    { "id": "arroz-agulha", "name": "Arroz agulha", "aisle": "mercearia" },
+    { "id": "atum-em-conserva", "name": "Atum em conserva", "aisle": "mercearia" },
+    { "id": "grao-de-bico-cozido", "name": "Grão-de-bico cozido", "aisle": "mercearia" },
+    { "id": "vinho-branco", "name": "Vinho branco", "aisle": "bebidas", "density": 0.99 },
+
+    { "id": "batata", "name": "Batata", "plural": "Batatas", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 150 },
+    { "id": "cebola", "name": "Cebola", "plural": "Cebolas", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 120 },
+    { "id": "cebola-roxa", "name": "Cebola roxa", "plural": "Cebolas roxas", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 110 },
+    { "id": "dente-de-alho", "name": "Dente de alho", "plural": "Dentes de alho", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 5 },
+    { "id": "couve-galega", "name": "Couve galega", "aisle": "frutas-e-legumes" },
+    { "id": "tomate", "name": "Tomate", "plural": "Tomates", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 130 },
+    { "id": "cenoura", "name": "Cenoura", "plural": "Cenouras", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 90 },
+    { "id": "salsa", "name": "Salsa", "aisle": "frutas-e-legumes" },
+    { "id": "limao", "name": "Limão", "plural": "Limões", "aisle": "frutas-e-legumes", "unitGramsPerUnit": 100 },
+
+    { "id": "ervilhas-congeladas", "name": "Ervilhas congeladas", "aisle": "congelados" },
+
+    { "id": "chourico", "name": "Chouriço", "aisle": "talho" },
+    { "id": "coxa-de-frango", "name": "Coxa de frango", "plural": "Coxas de frango", "aisle": "talho", "unitGramsPerUnit": 200 },
+
+    { "id": "bacalhau-salgado", "name": "Bacalhau salgado", "aisle": "peixaria" },
+
+    { "id": "natas", "name": "Natas", "aisle": "laticinios-e-ovos", "density": 1 },
+    { "id": "leite", "name": "Leite", "aisle": "laticinios-e-ovos", "staple": true, "density": 1.03 },
+    { "id": "manteiga", "name": "Manteiga", "aisle": "laticinios-e-ovos", "staple": true },
+    { "id": "queijo-ralado", "name": "Queijo ralado", "aisle": "laticinios-e-ovos" },
+    { "id": "ovo", "name": "Ovo", "plural": "Ovos", "aisle": "laticinios-e-ovos", "staple": true, "unitGramsPerUnit": 60 }
+  ]
+}

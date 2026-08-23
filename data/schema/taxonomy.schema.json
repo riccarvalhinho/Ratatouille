@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/riccarvalhinho/Ratatouille/data/schema/taxonomy.schema.json",
+  "title": "Taxonomias",
+  "description": "Vocabulários fechados: labels, ingredientes canónicos e equipamento.",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/definitions/labels" },
+    { "$ref": "#/definitions/ingredients" },
+    { "$ref": "#/definitions/equipment" }
+  ],
+  "definitions": {
+    "labels": {
+      "type": "object",
+      "required": ["kind", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "labels" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "group"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "name": { "type": "string", "minLength": 1 },
+              "group": {
+                "description": "Agrupa as labels para a barra de filtros.",
+                "enum": ["tipo-de-prato", "proteina", "regime", "ocasiao"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "ingredients": {
+      "type": "object",
+      "required": ["kind", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "ingredients" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "aisle"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "name": { "type": "string", "minLength": 1 },
+              "plural": { "type": "string" },
+              "aisle": {
+                "description": "Zona do supermercado, para agrupar a lista de compras.",
+                "enum": [
+                  "frutas-e-legumes",
+                  "talho",
+                  "peixaria",
+                  "laticinios-e-ovos",
+                  "mercearia",
+                  "congelados",
+                  "padaria",
+                  "bebidas",
+                  "outros"
+                ]
+              },
+              "staple": {
+                "description": "Coisas que se têm sempre em casa. Vão para um grupo à parte na lista de compras.",
+                "type": "boolean",
+                "default": false
+              },
+              "unitGramsPerUnit": {
+                "description": "Peso médio de uma unidade, para converter '2 cebolas' em gramas ao agregar a lista de compras.",
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "density": {
+                "description": "g por ml, para converter volume em peso quando preciso.",
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "required": ["kind", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "equipment" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "name": { "type": "string", "minLength": 1 },
+              "kind": { "enum": ["eletrodomestico", "utensilio"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

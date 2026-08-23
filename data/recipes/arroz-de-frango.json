@@ -1,0 +1,51 @@
+{
+  "id": "arroz-de-frango",
+  "name": "Arroz de frango",
+  "description": "Arroz malandrinho cozido no próprio caldo do frango, com tomate, cenoura e ervilhas. Prato único de dia de semana.",
+  "servings": 4,
+  "difficulty": "facil",
+  "labels": ["prato-principal", "carne", "dia-de-semana", "conforto"],
+  "timing": { "prepMinutes": 15, "cookMinutes": 45 },
+  "equipment": ["placa", "tacho", "faca-de-chef", "tabua-de-cozinha"],
+  "ingredients": [
+    { "ref": "coxa-de-frango", "quantity": 4, "unit": "un" },
+    { "ref": "arroz-carolino", "quantity": 300, "unit": "g" },
+    { "ref": "cebola", "quantity": 1, "unit": "un", "note": "picada" },
+    { "ref": "dente-de-alho", "quantity": 3, "unit": "un", "note": "picados" },
+    { "ref": "tomate", "quantity": 2, "unit": "un", "note": "maduros, em cubos" },
+    { "ref": "cenoura", "quantity": 1, "unit": "un", "note": "em rodelas" },
+    { "ref": "ervilhas-congeladas", "quantity": 150, "unit": "g" },
+    { "ref": "vinho-branco", "quantity": 100, "unit": "ml" },
+    { "ref": "azeite", "quantity": 3, "unit": "csopa" },
+    { "ref": "folha-de-louro", "quantity": 1, "unit": "un" },
+    { "ref": "salsa", "unit": "qb", "note": "picada, para servir" },
+    { "ref": "agua", "quantity": 900, "unit": "ml" },
+    { "ref": "sal", "unit": "qb" },
+    { "ref": "pimenta-preta", "unit": "qb" }
+  ],
+  "steps": [
+    { "text": "Tempere as coxas de frango com sal e pimenta.", "ingredientRefs": ["coxa-de-frango", "sal", "pimenta-preta"] },
+    { "text": "Aloure o frango no azeite, de todos os lados. Retire e reserve.", "durationMinutes": 8, "ingredientRefs": ["coxa-de-frango", "azeite"] },
+    { "text": "No mesmo tacho, refogue a cebola, o alho e o louro.", "durationMinutes": 5, "ingredientRefs": ["cebola", "dente-de-alho", "folha-de-louro"] },
+    { "text": "Junte o tomate e deixe apurar até desfazer.", "durationMinutes": 5, "ingredientRefs": ["tomate"] },
+    { "text": "Refresque com o vinho branco e deixe evaporar o álcool.", "durationMinutes": 2, "ingredientRefs": ["vinho-branco"] },
+    { "text": "Volte a pôr o frango no tacho, junte a cenoura e a água. Tempere.", "ingredientRefs": ["coxa-de-frango", "cenoura", "agua", "sal"] },
+    { "text": "Deixe cozer tapado até o frango estar tenro.", "durationMinutes": 20, "ingredientRefs": ["coxa-de-frango"] },
+    { "text": "Junte o arroz e as ervilhas. Mexa uma vez.", "ingredientRefs": ["arroz-carolino", "ervilhas-congeladas"] },
+    { "text": "Coza destapado até o arroz estar pronto e o caldo malandro.", "durationMinutes": 14, "ingredientRefs": ["arroz-carolino"] },
+    { "text": "Retifique o sal, polvilhe com salsa e sirva de imediato.", "ingredientRefs": ["salsa", "sal"] }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 35,
+    "carbsGrams": 68,
+    "fatGrams": 20,
+    "fibreGrams": 5,
+    "saltGrams": 1.8,
+    "nutriScore": "B"
+  },
+  "source": { "kind": "propria" },
+  "createdAt": "2026-08-23",
+  "updatedAt": "2026-08-23"
+}

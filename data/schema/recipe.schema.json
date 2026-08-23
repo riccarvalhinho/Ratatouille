@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/riccarvalhinho/Ratatouille/data/schema/recipe.schema.json",
+  "title": "Receita",
+  "description": "Uma receita. Um ficheiro por receita em data/recipes/<id>.json.",
+  "type": "object",
+  "required": ["id", "name", "servings", "difficulty", "timing", "labels", "ingredients", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "description": "Slug único. Tem de ser igual ao nome do ficheiro sem extensão.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "description": {
+      "description": "Uma ou duas frases. Opcional.",
+      "type": "string"
+    },
+    "status": {
+      "description": "Ausente significa \"revisto\": uma receita escrita à mão está revista por quem a escreveu. O importador escreve sempre \"rascunho\".",
+      "enum": ["rascunho", "revisto"]
+    },
+    "gaps": {
+      "description": "Campos que o importador não conseguiu determinar. É a lista de perguntas que a revisão vai fazer.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "image": {
+      "description": "Caminho relativo à raiz do repositório, ex.: media/recipes/<id>.jpg",
+      "type": "string",
+      "pattern": "^media/recipes/[a-z0-9-]+\\.(jpg|jpeg|png|webp)$"
+    },
+    "servings": {
+      "description": "Para quantas pessoas dá a dose declarada.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "difficulty": { "enum": ["facil", "medio", "dificil"] },
+    "labels": {
+      "description": "Referências a data/taxonomies/labels.json.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "timing": {
+      "type": "object",
+      "required": ["prepMinutes", "cookMinutes"],
+      "additionalProperties": false,
+      "properties": {
+        "prepMinutes": {
+          "description": "Tempo ativo de preparação.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "cookMinutes": {
+          "description": "Tempo de confeção.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "prepAhead": {
+          "description": "Antecedência necessária que não é tempo ativo: marinar, demolhar, levedar, arrefecer. Não se soma aos outros tempos.",
+          "type": "object",
+          "required": ["minutes", "description"],
+          "additionalProperties": false,
+          "properties": {
+            "minutes": { "type": "integer", "minimum": 1 },
+            "description": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "equipment": {
+      "description": "Referências a data/taxonomies/equipment.json.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ref"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": {
+            "description": "Ingrediente canónico em data/taxonomies/ingredients.json. Nunca texto livre — é o que torna a lista de compras possível.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "quantity": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": {
+            "description": "qb = quanto baste. csopa = colher de sopa. ccha = colher de chá.",
+            "enum": ["g", "kg", "ml", "l", "un", "csopa", "ccha", "pitada", "qb"]
+          },
+          "note": {
+            "description": "Preparação ou qualificador, ex.: 'picada', 'em cubos', 'à temperatura ambiente'.",
+            "type": "string"
+          },
+          "optional": { "type": "boolean", "default": false }
+        },
+        "allOf": [
+          {
+            "description": "Se há quantidade tem de haver unidade.",
+            "if": { "required": ["quantity"] },
+            "then": { "required": ["unit"] }
+          },
+          {
+            "description": "A unidade qb não leva quantidade.",
+            "if": { "properties": { "unit": { "const": "qb" } }, "required": ["unit"] },
+            "then": { "not": { "required": ["quantity"] } }
+          }
+        ]
+      }
+    },
+    "steps": {
+      "description": "Passos curtos, uma ação por passo. Nada de parágrafos.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 280 },
+          "durationMinutes": {
+            "description": "Alimenta o temporizador do modo cozinha.",
+            "type": "integer",
+            "minimum": 1
+          },
+          "ingredientRefs": {
+            "description": "Ingredientes usados neste passo, para os mostrar junto ao passo no modo cozinha.",
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+          }
+        }
+      }
+    },
+    "nutrition": {
+      "description": "Por dose. O campo method existe para não fingirmos rigor que não temos.",
+      "type": "object",
+      "required": ["method"],
+      "additionalProperties": false,
+      "properties": {
+        "method": { "enum": ["calculado", "estimado"] },
+        "calories": { "type": "number", "minimum": 0 },
+        "proteinGrams": { "type": "number", "minimum": 0 },
+        "carbsGrams": { "type": "number", "minimum": 0 },
+        "fatGrams": { "type": "number", "minimum": 0 },
+        "fibreGrams": { "type": "number", "minimum": 0 },
+        "saltGrams": { "type": "number", "minimum": 0 },
+        "nutriScore": { "enum": ["A", "B", "C", "D", "E"] }
+      }
+    },
+    "source": {
+      "description": "De onde veio a receita. As instruções são sempre reescritas, nunca copiadas.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["propria", "familia", "livro", "web", "video", "importada"] },
+        "title": { "type": "string" },
+        "author": {
+          "description": "Autor, canal ou publicação de origem.",
+          "type": "string"
+        },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "notes": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" }
+  }
+}
