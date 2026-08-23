@@ -120,6 +120,23 @@ Sobre saudável versus pesado: aceite que é **um eixo, não duas etiquetas**, p
 um Nutri-Score se houver informação. Pedida proposta de como o fazer de forma sistemática, para não
 ter de ser julgado à mão receita a receita.
 
+### Sessão 3 — 2026-08-23
+
+**Label "saudável" eliminada.** Fica só o eixo de peso, que passa a mensagem sem depender de
+interpretações do que é saudável.
+
+**O forno deixa de ser um caso especial de equipamento.** O que interessava não era poder não ter
+forno — era ver, ao olhar para a receita, se ia usá-lo. Isso é **método de confeção**, não
+equipamento. Passa a ser um campo próprio, com valores como forno, tacho ou placa, frigideira, air
+fryer, grelhador, e sem confeção. Resolve três coisas de uma vez: responde à pergunta original sem
+distorcer a lista de equipamento, alimenta a rubrica do eixo de peso, e torna-se filtrável — "hoje
+não me apetece ligar o forno" é uma coisa que se pensa mesmo.
+
+O forno fica portanto marcado como `comum` no equipamento.
+
+**O método aparece só no detalhe, não no cartão.** O cartão já tem informação a mais, e o que lá
+entra é assunto para a conversa 2.
+
 ## Em aberto no fim da sessão 2
 
 1. **O eixo de peso**: proposta em cima da mesa, por validar. Ver abaixo.
