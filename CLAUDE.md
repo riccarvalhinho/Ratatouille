@@ -84,8 +84,13 @@ npm run build
 aproveitar viagens de carro ou de transportes, com internet — tempo que dá para pensar mas não para
 implementar.
 
-Quem está do outro lado vai a andar e não pode olhar para nada: temas visuais exploram-se em
-movimento, mas escolhem-se a uma secretária.
+O formato é por turnos: áudio de um lado, resposta escrita do outro, lida ou ouvida mais tarde. Cada
+ronda custa uma gravação e uma espera, portanto tem de valer a pena — uma proposta concreta e duas ou
+três perguntas que se respondam de seguida num único áudio. E como a resposta é ouvida e não vista,
+prosa e perguntas numeradas: tabelas e listas encaixadas não sobrevivem a ser lidas em voz alta.
+
+Quem está do outro lado vai a andar: temas visuais exploram-se em movimento, mas escolhem-se a uma
+secretária.
 
 Quando o utilizador disser "vamos falar de X", "continua a conversa de Y" ou "que conversas estão
 abertas?", ler `docs/conversas/README.md` e o ficheiro do tema, e continuar de onde ficou.

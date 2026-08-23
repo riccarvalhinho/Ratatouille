@@ -6,9 +6,20 @@ Temas que se decidem melhor a falar do que a escrever sozinho. Ficam registados 
 O método existe por uma razão prática: viagens de carro ou de transportes dão tempo para pensar mas
 não para implementar. São a altura certa para fechar decisões que depois poupam trabalho.
 
-Uma só limitação a ter em conta: quem está do outro lado vai a andar e não pode olhar para nada.
-Temas visuais exploram-se em movimento — o porquê, as referências, o que incomoda — mas a escolha
-entre alternativas desenhadas fica para uma sessão sentada.
+Duas limitações do formato, que valem mais do que parecem:
+
+**É por turnos, não é uma conversa a fluir.** O Ricardo grava um áudio, o Claude responde por escrito,
+e essa resposta é lida ou ouvida mais tarde. Cada ronda custa uma gravação e uma espera, portanto tem
+de valer a pena: uma proposta concreta e duas ou três perguntas que se respondam todas de seguida num
+único áudio. Nada de esperar ping-pong rápido.
+
+**As respostas são ouvidas, não vistas.** Prosa e perguntas numeradas. Tabelas, listas encaixadas e
+blocos de código não sobrevivem a ser lidos em voz alta — guardar isso para o ficheiro, não para a
+resposta.
+
+E como quem está do outro lado vai a andar: temas visuais exploram-se em movimento — o porquê, as
+referências, o que incomoda — mas a escolha entre alternativas desenhadas fica para uma sessão
+sentada.
 
 ## Como se usa
 
