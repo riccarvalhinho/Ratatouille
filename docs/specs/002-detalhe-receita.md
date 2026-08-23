@@ -8,6 +8,11 @@
 
 Ver tudo sobre uma receita antes de decidir cozinhá-la ou planeá-la, sem sair do ecrã onde se estava.
 
+> **Em revisão:** o benchmark do Cookidoo (`docs/design/benchmark-bimby.md`) usa **abas** dentro do
+> detalhe — Visão geral, Ingredientes, Preparação — em vez do scroll único descrito abaixo. Com abas
+> nunca se perde o sítio e cada uma pode usar duas colunas. A decidir com as duas hipóteses
+> desenhadas, em M1.
+
 ## Comportamento
 
 Pop-up sobre o ecrã atual. Abre a partir do catálogo, do histórico ou da vista de planeamento semanal,
@@ -32,8 +37,10 @@ ao topo.
 4. Última vez que foi feita — a data mais recente em que foi planeada. Se nunca foi, di-lo
    explicitamente ("nunca cozinhada")
 5. Para quantas pessoas dá a dose
-6. Eletrodomésticos e utensílios necessários
-7. Lista de ingredientes, com quantidade e unidade
+6. Eletrodomésticos e utensílios necessários, **em dois blocos separados** — os aparelhos
+   condicionam se a receita é sequer possível, os utensílios são detalhe (`kind` da taxonomia)
+7. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser
+   percorrível, e a `note` do ingrediente em texto secundário por baixo do nome
 8. Passo a passo, em bullets curtos
 9. Informação nutricional: calorias, macros e Nutri-Score aproximado, marcada como estimada quando
    `nutrition.method` for `estimado`
@@ -50,7 +57,9 @@ e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a
 - [ ] Coração, "+" e "x" ficam visíveis durante o scroll
 - [ ] Marcar favorito reflete-se de imediato no catálogo
 - [ ] Mostra "última vez feita" com data, ou "nunca cozinhada"
-- [ ] Mostra utensílios, ingredientes com quantidades, e passos
+- [ ] Mostra aparelhos e utensílios em blocos separados
+- [ ] Mostra ingredientes com a quantidade numa coluna alinhada à direita
+- [ ] A nota de um ingrediente aparece subordinada ao nome, não a competir com ele
 - [ ] Os passos são bullets curtos, nunca parágrafos corridos
 - [ ] Nutrição estimada aparece marcada como aproximada
 - [ ] O "+" permite escolher dia e bloco, e adiciona ao plano

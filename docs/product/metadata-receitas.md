@@ -139,7 +139,9 @@ compota" não cabem lá. Sobremesas e pão partem isto quase sempre.
 **Proposta:** manter `servings` como está, para o planeamento saber contar pessoas, e acrescentar um
 `yield` de texto livre, opcional, para o que se mostra no detalhe.
 
-**Impacto:** baixo. **Recomendo fazer**, porque o arroz doce já é um caso destes.
+**Impacto:** baixo. **Recomendo fazer**, porque o arroz doce já é um caso destes — e porque o
+Cookidoo, com milhares de receitas, mostra "16 unidades" no ecrã de detalhe. Quem já enfrentou o
+problema resolveu-o assim. Ver `docs/design/benchmark-bimby.md`.
 
 ### P4 — Conservação e sobras
 

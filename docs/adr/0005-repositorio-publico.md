@@ -21,8 +21,13 @@ escrita vive só no `localStorage` do tablet).
 
 O repositório é público.
 
-O workflow de deploy passa a usar `actions/configure-pages@v5` com `enablement: true`, de forma a
-ligar o Pages sozinho na primeira execução, sem ninguém ter de ir às definições.
+O workflow de deploy usa `actions/configure-pages@v5` com `enablement: true`.
+
+**Isto não chega, e vale a pena registar porquê:** tentámos e o `GITHUB_TOKEN` não tem permissão
+para criar o site do Pages — devolve "Resource not accessible by integration", mesmo com
+`pages: write` declarado no workflow. O Pages continua a precisar de ser ligado uma vez à mão em
+Settings → Pages → Source: GitHub Actions. O `enablement` fica na mesma: é inofensivo depois de o
+site existir, e cobre o caso de alguém o desligar por engano.
 
 ## Alternativas consideradas
 

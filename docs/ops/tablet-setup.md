@@ -21,13 +21,17 @@ comparar com um screenshot feito a 1280×800.
 
 ## 2. Publicar a app
 
-A app é publicada automaticamente no GitHub Pages a cada push para `main`. O workflow liga o Pages
-sozinho na primeira execução.
+A app é publicada automaticamente no GitHub Pages a cada push para `main`.
 
-**Requisito:** o repositório tem de ser público — o Pages gratuito não publica de repositórios
-privados. Ver `docs/adr/0005-repositorio-publico.md`.
+**Dois requisitos, uma vez só:**
 
-O URL é `https://<utilizador>.github.io/Ratatouille/`.
+1. **O repositório tem de ser público.** O Pages gratuito não publica de repositórios privados.
+   Ver `docs/adr/0005-repositorio-publico.md`.
+2. **O Pages tem de ser ligado à mão**, em Settings → Pages → Source: **GitHub Actions**. O workflow
+   tenta ligá-lo sozinho, mas o `GITHUB_TOKEN` não tem permissão para criar o site — devolve
+   "Resource not accessible by integration". É um clique, uma vez na vida do repositório.
+
+Feito isso, o URL é `https://<utilizador>.github.io/Ratatouille/` e cada push para `main` republica.
 
 ## 3. Instalar no tablet
 

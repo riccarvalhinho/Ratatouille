@@ -42,9 +42,11 @@ jobs:
           # O Pages de um repositório de projeto serve em /<repo>/, não na raiz.
           VITE_BASE: /${{ github.event.repository.name }}/
 
-      # enablement liga o Pages na primeira execução, para não ser preciso ir às definições
-      # do repositório. Só funciona em repositórios públicos no plano gratuito —
-      # ver docs/adr/0005-repositorio-publico.md.
+      # O Pages tem de ser ligado uma vez à mão, em Settings → Pages → Source: GitHub Actions.
+      # O enablement abaixo tenta criá-lo sozinho, mas o GITHUB_TOKEN não tem permissão para o
+      # fazer ("Resource not accessible by integration") — fica na mesma porque é inofensivo
+      # depois de o Pages existir, e cobre o caso de alguém o desligar.
+      # Ver docs/adr/0005-repositorio-publico.md.
       - uses: actions/configure-pages@v5
         with:
           enablement: true

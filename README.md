@@ -24,6 +24,7 @@ Não há Drive, não há documento Word, não há Notion. **Tudo o que define o 
 | Specs por feature | [`docs/specs/`](docs/specs/) |
 | Decisões de arquitetura | [`docs/adr/`](docs/adr/) |
 | Design system | [`docs/design/design-system.md`](docs/design/design-system.md) |
+| Conversas em aberto | [`docs/conversas/`](docs/conversas/) |
 | Receitas e planeamento | [`data/`](data/) — ficheiros JSON, não uma base de dados |
 | A aplicação | [`app/`](app/) |
 
@@ -33,6 +34,7 @@ Regras de manutenção:
 - Uma **feature** nova → uma spec em `docs/specs/` antes de código.
 - Uma **tarefa** → uma GitHub Issue.
 - Uma **receita** nova → um ficheiro em `data/recipes/`.
+- Um **tema que se decide melhor a falar** → uma conversa em `docs/conversas/`.
 
 Se uma informação sobre este produto só existe na cabeça de alguém ou num chat, ainda não existe.
 
