@@ -31,6 +31,36 @@ Basta dizer, em linguagem normal:
 
 A sessão lê o ficheiro do tema, vê onde ficou, e continua daí.
 
+## Onde estas conversas acontecem
+
+Em duas superfícies, com regras diferentes.
+
+**Nesta sessão (Claude Code).** Acesso direto ao repositório, com validação: `npm run validate`,
+lint, typecheck e CI. É aqui que se mexe em schema, specs, ADRs e dados.
+
+**No Cowork**, em modo conversacional durante uma viagem. Lê o repositório — que é público, portanto
+basta o URL, e com o conector do GitHub ligado também escreve.
+
+### Regras para uma conversa conduzida no Cowork
+
+1. **Ler primeiro este README e o ficheiro do tema.** É o que dá o contexto e o protocolo.
+2. **Escrever só dentro de `docs/conversas/`.** Nada de tocar em `data/`, `app/`, `docs/specs/` ou
+   `docs/adr/` a partir do Cowork.
+3. **Atualizar o ficheiro do tema no fim**: o registo da conversa, e a tabela de decisões tomadas.
+4. **As decisões estruturais ficam anotadas, não aplicadas.** Uma decisão que muda o schema, uma spec
+   ou um ADR escreve-se na tabela do tema com o destino indicado, e é aplicada depois numa sessão de
+   Claude Code.
+
+O porquê da regra 4: uma escrita direta ao `main` salta a validação toda. Para Markdown de conversa
+isso é inofensivo; para o schema ou para os dados não é — um ingrediente que não existe passa no
+schema e parte a lista de compras, e é o validador que apanha isso. O ficheiro da conversa é o
+rascunho, a spec e o schema são o destino.
+
+### Sem conector do GitHub
+
+Funciona na mesma, com um passo manual: o Cowork lê pelo URL público e no fim escreve o resumo da
+conversa. Cola-se numa sessão de Claude Code, que o regista no ficheiro certo com a verificação toda.
+
 ## Como estas conversas têm de correr
 
 Isto não é uma entrevista, é um debate. Quem conduz a conversa do lado do Claude tem de:

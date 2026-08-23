@@ -92,6 +92,11 @@ prosa e perguntas numeradas: tabelas e listas encaixadas não sobrevivem a ser l
 Quem está do outro lado vai a andar: temas visuais exploram-se em movimento, mas escolhem-se a uma
 secretária.
 
+Estas conversas podem acontecer no Cowork em vez de aqui. Nesse caso escrevem só em
+`docs/conversas/`: uma decisão que mude schema, spec ou ADR fica **anotada** na tabela do tema com o
+destino indicado, e é aplicada depois numa sessão de Claude Code, onde há validação. Ao encontrar
+decisões por aplicar num ficheiro de conversa, aplicá-las e correr `npm run validate`.
+
 Quando o utilizador disser "vamos falar de X", "continua a conversa de Y" ou "que conversas estão
 abertas?", ler `docs/conversas/README.md` e o ficheiro do tema, e continuar de onde ficou.
 
