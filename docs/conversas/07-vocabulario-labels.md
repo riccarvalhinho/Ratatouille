@@ -22,6 +22,10 @@ Falta o vocabulário: que categorias existem, e que valores cada uma tem.
 - Não há etiqueta de dificuldade — o campo foi cortado
 - O objetivo é filtrar e agrupar, portanto cada valor tem de ganhar o seu lugar
 
+> **Já aplicado, para desbloquear uma importação:** o grupo `origem` existe no schema e tem **um**
+> valor, `portuguesa`. Foi o mínimo para marcar as receitas que já cá estão. O vocabulário completo
+> das origens — e das outras categorias — continua a ser esta conversa.
+
 ## O que está hoje em `labels.json`
 
 24 labels em quatro grupos: tipo de prato, proteína, regime e ocasião. Foram escritas em M0 por

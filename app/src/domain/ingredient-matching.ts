@@ -159,7 +159,12 @@ export function parseIngredientLine(raw: string): ParsedIngredientLine {
     rest = rest.replace(parens[0], ' ');
   }
 
-  let name = rest.replace(/\s+/g, ' ').trim().replace(/^de\s+/i, '');
+  // Tirar o "q.b." deixa pontuação pendurada: vinha "orégãos frescos ." de uma página real.
+  let name = rest
+    .replace(/\s+/g, ' ')
+    .replace(/[\s.,;:]+$/, '')
+    .trim()
+    .replace(/^de\s+/i, '');
 
   // Muitas receitas escrevem a preparação sem vírgula: "1 cebola picada", "batatas descascadas".
   // Enquanto a última palavra for claramente uma preparação, passa para a nota.

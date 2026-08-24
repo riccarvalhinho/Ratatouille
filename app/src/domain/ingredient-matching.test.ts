@@ -91,6 +91,12 @@ describe('parseIngredientLine', () => {
     });
   });
 
+  it('não deixa pontuação pendurada depois de tirar o "q.b."', () => {
+    // apanhado a importar uma página real: vinha "orégãos frescos ."
+    expect(parseIngredientLine('orégãos frescos q.b.').name).toBe('orégãos frescos');
+    expect(parseIngredientLine('pimenta q.b.').name).toBe('pimenta');
+  });
+
   it('guarda sempre o texto original', () => {
     expect(parseIngredientLine('2 cebolas grandes').raw).toBe('2 cebolas grandes');
   });

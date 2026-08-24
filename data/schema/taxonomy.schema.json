@@ -26,8 +26,8 @@
               "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
               "name": { "type": "string", "minLength": 1 },
               "group": {
-                "description": "Agrupa as labels para a barra de filtros.",
-                "enum": ["tipo-de-prato", "proteina", "regime", "ocasiao"]
+                "description": "Agrupa as labels para a barra de filtros. O vocabulário completo está por fechar — ver docs/conversas/07-vocabulario-labels.md.",
+                "enum": ["tipo-de-prato", "proteina", "regime", "ocasiao", "origem"]
               }
             }
           }

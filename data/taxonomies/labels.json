@@ -1,32 +1,130 @@
 {
   "kind": "labels",
   "items": [
-    { "id": "sopa", "name": "Sopa", "group": "tipo-de-prato" },
-    { "id": "entrada", "name": "Entrada", "group": "tipo-de-prato" },
-    { "id": "prato-principal", "name": "Prato principal", "group": "tipo-de-prato" },
-    { "id": "acompanhamento", "name": "Acompanhamento", "group": "tipo-de-prato" },
-    { "id": "salada", "name": "Salada", "group": "tipo-de-prato" },
-    { "id": "sobremesa", "name": "Sobremesa", "group": "tipo-de-prato" },
-    { "id": "pequeno-almoco", "name": "Pequeno-almoço", "group": "tipo-de-prato" },
-    { "id": "snack", "name": "Snack", "group": "tipo-de-prato" },
-    { "id": "pao-e-massas", "name": "Pão e massas", "group": "tipo-de-prato" },
-
-    { "id": "carne", "name": "Carne", "group": "proteina" },
-    { "id": "peixe", "name": "Peixe", "group": "proteina" },
-    { "id": "marisco", "name": "Marisco", "group": "proteina" },
-    { "id": "ovos", "name": "Ovos", "group": "proteina" },
-    { "id": "leguminosas", "name": "Leguminosas", "group": "proteina" },
-
-    { "id": "vegetariano", "name": "Vegetariano", "group": "regime" },
-    { "id": "vegan", "name": "Vegan", "group": "regime" },
-    { "id": "sem-gluten", "name": "Sem glúten", "group": "regime" },
-    { "id": "sem-lactose", "name": "Sem lactose", "group": "regime" },
-
-    { "id": "rapido", "name": "Rápido", "group": "ocasiao" },
-    { "id": "dia-de-semana", "name": "Dia de semana", "group": "ocasiao" },
-    { "id": "fim-de-semana", "name": "Fim de semana", "group": "ocasiao" },
-    { "id": "festa", "name": "Festa", "group": "ocasiao" },
-    { "id": "conforto", "name": "Conforto", "group": "ocasiao" },
-    { "id": "aproveitamento", "name": "Aproveitamento", "group": "ocasiao" }
+    {
+      "id": "sopa",
+      "name": "Sopa",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "entrada",
+      "name": "Entrada",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "prato-principal",
+      "name": "Prato principal",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "acompanhamento",
+      "name": "Acompanhamento",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "salada",
+      "name": "Salada",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "sobremesa",
+      "name": "Sobremesa",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "pequeno-almoco",
+      "name": "Pequeno-almoço",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "snack",
+      "name": "Snack",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "pao-e-massas",
+      "name": "Pão e massas",
+      "group": "tipo-de-prato"
+    },
+    {
+      "id": "carne",
+      "name": "Carne",
+      "group": "proteina"
+    },
+    {
+      "id": "peixe",
+      "name": "Peixe",
+      "group": "proteina"
+    },
+    {
+      "id": "marisco",
+      "name": "Marisco",
+      "group": "proteina"
+    },
+    {
+      "id": "ovos",
+      "name": "Ovos",
+      "group": "proteina"
+    },
+    {
+      "id": "leguminosas",
+      "name": "Leguminosas",
+      "group": "proteina"
+    },
+    {
+      "id": "vegetariano",
+      "name": "Vegetariano",
+      "group": "regime"
+    },
+    {
+      "id": "vegan",
+      "name": "Vegan",
+      "group": "regime"
+    },
+    {
+      "id": "sem-gluten",
+      "name": "Sem glúten",
+      "group": "regime"
+    },
+    {
+      "id": "sem-lactose",
+      "name": "Sem lactose",
+      "group": "regime"
+    },
+    {
+      "id": "rapido",
+      "name": "Rápido",
+      "group": "ocasiao"
+    },
+    {
+      "id": "dia-de-semana",
+      "name": "Dia de semana",
+      "group": "ocasiao"
+    },
+    {
+      "id": "fim-de-semana",
+      "name": "Fim de semana",
+      "group": "ocasiao"
+    },
+    {
+      "id": "festa",
+      "name": "Festa",
+      "group": "ocasiao"
+    },
+    {
+      "id": "conforto",
+      "name": "Conforto",
+      "group": "ocasiao"
+    },
+    {
+      "id": "aproveitamento",
+      "name": "Aproveitamento",
+      "group": "ocasiao"
+    },
+    {
+      "id": "portuguesa",
+      "name": "Portuguesa",
+      "group": "origem"
+    }
   ]
 }
