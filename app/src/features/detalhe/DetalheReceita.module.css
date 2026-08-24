@@ -48,7 +48,20 @@
 }
 
 .close {
+  margin-left: var(--space-2);
+}
+
+/* A ação principal destacada, conforme o benchmark do Cookidoo. É a razão de o tablet estar na parede. */
+.cook {
   margin-left: auto;
+  min-height: var(--touch-target);
+  padding: 0 var(--space-6);
+  border: none;
+  border-radius: var(--radius-lg);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-size: var(--text-lg);
+  font-weight: 700;
 }
 
 .body {

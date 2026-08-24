@@ -1,7 +1,7 @@
 # Spec 005 — Modo cozinha
 
 **Milestone:** M5
-**Estado:** Rascunho
+**Estado:** Primeira versão construída — ver "O que já existe" 
 **Depende de:** spec 002 (detalhe)
 
 ## Objetivo
@@ -49,18 +49,19 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 
 ## Critérios de aceitação
 
-- [ ] "Cozinhar" abre o modo em ecrã inteiro
-- [ ] Um passo de cada vez, com progresso visível
-- [ ] Avançar e recuar têm alvos de toque de pelo menos 56×56px
-- [ ] Os ingredientes do passo aparecem junto ao passo
-- [ ] O ecrã não adormece durante a execução
-- [ ] Passos com duração oferecem temporizador
-- [ ] A temperatura aparece em destaque quando o passo a declara
-- [ ] Passos passivos avisam ao terminar; passos ativos não interrompem
-- [ ] Vários temporizadores podem correr ao mesmo tempo
-- [ ] O fim de um temporizador avisa visual e sonoramente
-- [ ] Terminar oferece marcar como cozinhada
-- [ ] Tudo funciona offline
+- [x] "Cozinhar" abre o modo em ecrã inteiro
+- [x] Um passo de cada vez, com progresso visível
+- [x] Avançar e recuar têm alvos de toque de pelo menos 56×56px — são de 72px
+- [x] Os ingredientes do passo aparecem junto ao passo
+- [x] O ecrã não adormece durante a execução
+- [x] Passos com duração oferecem temporizador
+- [x] A temperatura aparece em destaque quando o passo a declara
+- [x] Passos passivos avisam ao terminar; passos ativos não interrompem
+- [x] Vários temporizadores podem correr ao mesmo tempo, e continuam visíveis ao mudar de passo
+- [x] O fim de um temporizador avisa visual e sonoramente
+- [ ] Terminar oferece marcar como cozinhada — depende do M2
+- [x] Tudo funciona offline
+- [x] Sair a meio e voltar não perde o sítio: o passo vive no URL
 
 ## Fora de âmbito
 

@@ -12,6 +12,7 @@ import { activeMinutes } from '../../domain/filters.ts';
 import { formatLastCooked } from '../../domain/planning.ts';
 import { COOKING_METHOD_NAMES, WEIGHT_NAMES, type Recipe } from '../../domain/types.ts';
 import { formatPrepAhead } from '../../data/catalogue.ts';
+import { navigate } from '../../data/router.ts';
 import { LabelChip } from '../../ui/LabelChip.tsx';
 import styles from './DetalheReceita.module.css';
 
@@ -53,6 +54,13 @@ export function DetalheReceita({ recipe, catalogue, onClose }: DetalheReceitaPro
           </button>
           <button type="button" className={styles.action} disabled title="Planear chega no M3">
             +
+          </button>
+          <button
+            type="button"
+            className={styles.cook}
+            onClick={() => navigate({ screen: 'receitas', recipeId: recipe.id, cooking: true })}
+          >
+            Cozinhar
           </button>
           <button type="button" className={`${styles.action} ${styles.close}`} onClick={onClose} aria-label="Fechar">
             ✕

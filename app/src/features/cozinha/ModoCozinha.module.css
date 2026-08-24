@@ -1,0 +1,194 @@
+/* Ecrã inteiro, sem navegação à volta: durante a confeção não se navega. */
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.recipeName { font-size: var(--text-lg); font-weight: 600; }
+.progressText { color: var(--color-text-muted); font-size: var(--text-base); }
+
+.leave {
+  margin-left: auto;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+}
+
+.progressBar { height: 4px; background: var(--color-surface-raised); }
+.progressFill { height: 100%; background: var(--color-accent); transition: width 200ms ease-out; }
+
+/* Faixa dos temporizadores: visível em todos os passos, senão perde-se um a correr. */
+.timers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--touch-target);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.timerDone {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.timerLabel { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.timerValue {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  min-width: 4.5ch;
+}
+
+.timerAction {
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+  font-size: var(--text-base);
+}
+
+.body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-7);
+  padding: var(--space-7) var(--space-6);
+  overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  .body { grid-template-columns: 1fr; }
+}
+
+/* O passo ocupa o ecrã. 32px e não os 24 do mínimo: aqui há espaço e lê-se de longe. */
+.stepText { font-size: 32px; line-height: 1.4; margin: 0; }
+
+.stepBadges { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.startTimer {
+  min-height: var(--touch-target);
+  padding: var(--space-3) var(--space-5);
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+/* O passo seguinte em pequeno: "enquanto isto coze, vou cortando". */
+.next {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.nextLabel { display: block; font-size: var(--text-sm); margin-bottom: var(--space-2); }
+
+.aside { border-left: 1px solid var(--color-border); padding-left: var(--space-6); }
+
+@media (max-width: 900px) {
+  .aside {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: var(--space-5);
+  }
+}
+
+.asideTitle { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4); }
+.asideList { margin: 0; padding: 0; list-style: none; font-size: var(--text-lg); }
+
+.asideItem {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.asideAmount { color: var(--color-text-muted); white-space: nowrap; }
+
+/* Barra de baixo: alvos de toque grandes, longe um do outro. */
+.bottom {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6) var(--space-6);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.navButton {
+  flex: 1;
+  min-height: 72px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.navButton:disabled { opacity: 0.35; }
+
+.primary { flex: 2; border-color: transparent; background: var(--color-accent); color: var(--color-accent-text); }
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  flex: 1;
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.doneTitle { font-size: var(--text-2xl); }
+.doneNote { color: var(--color-text-muted); max-width: 48ch; }
