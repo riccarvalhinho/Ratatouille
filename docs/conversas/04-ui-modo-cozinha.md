@@ -87,14 +87,14 @@ A barra retangular da ronda 1 durou pouco. Ficou decidido que **recuar e avança
 círculos**, sem palavra, e que o temporizador é o círculo do meio. As setas dispensam legenda por
 serem universais; o temporizador não, e por isso traz o número por baixo do símbolo.
 
-Duas coisas que vieram com a decisão e que não estavam na pergunta:
+**Onde ficam.** A primeira tentativa foi espalhá-los pelos extremos — recuar à esquerda, avançar à
+direita — a pensar que a distância era mais uma camada de proteção contra o toque errado. Foi
+recusado, e com razão: menos intuitivo, e faz da barra uma faixa pesada de canto a canto. Ficaram
+**juntos ao centro, com 48px entre eles**, que é o dobro do mínimo do design system e chega para o
+dedo não escorregar de um para o outro. Agrupados, olha-se para um sítio só.
 
-- **Extremos opostos.** Recuar à esquerda, avançar à direita, o temporizador ao centro. Recuar e
-  avançar passam a ser dois movimentos de braço diferentes num tablet na parede, o que é mais uma
-  camada de proteção contra o toque errado.
-- **O último passo troca de forma.** "Terminar" não pode ser mais um círculo verde no mesmo sítio,
-  ou ao fim de doze passos iguais o dedo faz aquilo em piloto automático. É uma pastilha com
-  palavra.
+**O último passo troca de forma.** "Terminar" não pode ser mais um círculo verde no mesmo sítio, ou
+ao fim de doze passos iguais o dedo faz aquilo em piloto automático. É uma pastilha com palavra.
 
 E isto fechou a pergunta 2 por consequência: **a variante B deixou de ser possível**. Não cabe uma
 linha de pré-visualização dentro de um botão redondo com uma seta. Fica a A, o cartão no canto.
@@ -124,6 +124,7 @@ a pena riscar ingredientes já usados, e o que o ecrã faz no fim.
 | Terceiro botão ao meio para o temporizador, só quando o passo tem duração | `docs/specs/005-modo-cozinha.md` |
 | Fora dos botões o ecrã é área morta — é essa a proteção contra toque acidental | `docs/specs/005-modo-cozinha.md` |
 | O passo seguinte é um cartão pequeno no canto inferior direito | `docs/specs/005-modo-cozinha.md` |
-| Recuar e avançar são setas em círculos, sem palavra, em extremos opostos | `docs/specs/005-modo-cozinha.md` |
+| Recuar e avançar são setas em círculos, sem palavra | `docs/specs/005-modo-cozinha.md` |
+| Os alvos ficam agrupados ao centro, com 48px entre eles, e não nos cantos | `docs/specs/005-modo-cozinha.md` |
 | "Terminar" muda de forma — pastilha e não círculo | `docs/specs/005-modo-cozinha.md` |
 | Símbolos em SVG desenhado, nunca em caracteres | `app/src/ui/icons.tsx` |

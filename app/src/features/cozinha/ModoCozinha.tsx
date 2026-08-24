@@ -219,11 +219,7 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
         )}
       </div>
 
-      {/*
-        Três alvos afastados ao máximo, um em cada extremo e o do temporizador ao meio. Recuar e
-        avançar ficam em cantos opostos de propósito: são dois movimentos de braço diferentes, e
-        assim não se toca num a querer o outro.
-      */}
+      {/* Os três alvos juntos ao centro. O do temporizador ao meio, quando existe. */}
       <div className={styles.bottom}>
         <button
           type="button"
@@ -235,7 +231,7 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
           <IconPrev />
         </button>
 
-        {step?.durationMinutes !== undefined ? (
+        {step?.durationMinutes !== undefined && (
           <TimerButton
             className={`${styles.navButton} ${styles.timerButton}`}
             timer={stepTimer}
@@ -245,8 +241,6 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
             onToggle={() => stepTimer && updateTimer(stepTimer.id, isRunning(stepTimer) ? pause : resume)}
             onRepeat={() => stepTimer && updateTimer(stepTimer.id, reset)}
           />
-        ) : (
-          <span aria-hidden="true" />
         )}
 
         {/*

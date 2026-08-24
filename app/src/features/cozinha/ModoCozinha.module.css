@@ -184,18 +184,21 @@
  * Barra de baixo: os únicos alvos de toque do ecrã, tirando o "Sair" e os controlos dos
  * temporizadores. Tudo o resto é área morta de propósito — ver a nota no topo do componente.
  */
+/*
+ * Os três alvos juntos ao centro, com 48px entre eles. Espalhá-los pelos cantos separava mais o
+ * recuar do avançar, mas fazia da barra uma faixa pesada de canto a canto e obrigava a procurar
+ * onde estão. Agrupados, olha-se para um sítio só. Os 48px chegam para o dedo não escorregar de um
+ * para o outro — são o dobro do mínimo do design system.
+ */
 .bottom {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  gap: var(--space-5);
-  padding: var(--space-4) var(--space-7) var(--space-5);
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-4) var(--space-6) var(--space-5);
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
 }
-
-.bottom > :first-child { justify-self: start; }
-.bottom > :last-child { justify-self: end; }
 
 /*
  * Alvos redondos. Um círculo de 96px tem menos área do que um retângulo de 96px, mas o dedo acerta

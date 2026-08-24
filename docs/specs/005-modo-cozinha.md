@@ -40,19 +40,20 @@ um toque em cada passo para evitar um erro raro.
 A barra de baixo tem **dois ou três alvos redondos**, com relevo de 3px que os faz parecer premíveis
 e que afunda ao toque:
 
-| Alvo | Forma | Posição | Quando existe |
-|---|---|---|---|
-| Recuar | Círculo de 96px, seta ← | Extremo esquerdo | Sempre (inativo no primeiro passo) |
-| Temporizador | Círculo de 112px | Centro do ecrã | Só quando o passo declara `durationMinutes` |
-| Avançar | Círculo de 112px, seta → | Extremo direito | Todos os passos menos o último |
-| Terminar | Pastilha de 220px com palavra | Extremo direito | Só no último passo |
+| Alvo | Forma | Quando existe |
+|---|---|---|
+| Recuar | Círculo de 96px, seta ← | Sempre (inativo no primeiro passo) |
+| Temporizador | Círculo de 112px | Só quando o passo declara `durationMinutes` |
+| Avançar | Círculo de 112px, seta → | Todos os passos menos o último |
+| Terminar | Pastilha de 220px com palavra | Só no último passo |
 
 Um círculo tem menos área do que um retângulo da mesma altura, mas o dedo acerta melhor: o alvo tem
 centro, e não cantos que não se alcançam com o braço esticado.
 
-Recuar e avançar ficam em **extremos opostos** de propósito — são dois movimentos de braço
-diferentes, e assim não se toca num a querer o outro. O do meio fica centrado no ecrã mesmo quando o
-da direita é a pastilha larga.
+Os alvos ficam **juntos ao centro**, com 48px entre eles — o dobro do mínimo do design system.
+Espalhá-los pelos cantos separaria mais o recuar do avançar, mas fazia da barra uma faixa pesada de
+canto a canto e obrigava a procurar onde estão. Agrupados, olha-se para um sítio só. Quando o passo
+não tem duração, o alvo do meio desaparece e os outros dois voltam a centrar-se.
 
 **Terminar muda de forma**, e não só de palavra. Ao fim de doze passos iguais, um círculo verde no
 mesmo sítio seria tocado em piloto automático; uma pastilha não.
@@ -107,7 +108,7 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 - [x] "Cozinhar" abre o modo em ecrã inteiro
 - [x] Um passo de cada vez, com progresso visível
 - [x] Avançar e recuar têm alvos de toque de pelo menos 56×56px — são círculos de 96 e 112px
-- [x] Recuar e avançar estão em extremos opostos do ecrã
+- [x] Os alvos estão agrupados ao centro, com pelo menos 24px entre eles — são 48px
 - [x] O último passo troca o círculo de avançar por uma pastilha "Terminar"
 - [x] Fora dos botões, do "Sair" e dos controlos de temporizador, nada no ecrã reage ao toque
 - [x] Os ingredientes do passo aparecem junto ao passo
