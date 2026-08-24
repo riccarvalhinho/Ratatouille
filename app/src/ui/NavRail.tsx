@@ -26,19 +26,37 @@ const DESTINATIONS: Destination[] = [
   { screen: 'compras', label: 'Compras', path: 'M4 5h2l2.5 10h9L20 8H7M9 19h.01M17 19h.01' },
 ];
 
+/*
+ * As Definições ficam em baixo, separadas das quatro do produto. É onde vive o token do GitHub e o
+ * estado da sincronização — coisas de que só se lembra quando alguma coisa corre mal.
+ */
+const SETTINGS: Destination = {
+  screen: 'definicoes',
+  label: 'Definições',
+  path: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 8.9 19a1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 5 8.9a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9.5a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z',
+};
+
 interface NavRailProps {
   current: Screen;
+  /** Quantas alterações estão à espera de sair para o GitHub. Marca as Definições quando não é zero. */
+  pending?: number;
 }
 
-export function NavRail({ current }: NavRailProps) {
+export function NavRail({ current, pending = 0 }: NavRailProps) {
   return (
     <nav className={styles.rail} aria-label="Navegação principal">
-      {DESTINATIONS.map((destination) => {
+      {[...DESTINATIONS, SETTINGS].map((destination) => {
         const active = destination.screen === current;
         return (
           <a
             key={destination.screen}
-            className={active ? `${styles.item} ${styles.active}` : styles.item}
+            className={[
+              styles.item,
+              active ? styles.active : '',
+              destination.screen === 'definicoes' ? styles.settings : '',
+            ]
+              .filter(Boolean)
+              .join(' ')}
             href={toHash({ screen: destination.screen })}
             aria-current={active ? 'page' : undefined}
           >
@@ -55,6 +73,11 @@ export function NavRail({ current }: NavRailProps) {
               <path d={destination.path} />
             </svg>
             {destination.label}
+            {destination.screen === 'definicoes' && pending > 0 && (
+              <span className={styles.badge} aria-label={`${pending} por enviar`}>
+                {pending}
+              </span>
+            )}
           </a>
         );
       })}

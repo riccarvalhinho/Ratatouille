@@ -47,12 +47,20 @@ daí funciona offline.
 
 ## 4. Configurar o acesso de escrita
 
-Necessário só a partir de M2, para que favoritos e planeamento voltem ao repositório.
+Sem isto a app funciona, mas o que planeares, favoritares ou marcares como cozinhado fica só neste
+tablet. A app avisa disso no cabeçalho e nas Definições.
 
 1. No GitHub: Settings → Developer settings → Personal access tokens → Fine-grained tokens.
 2. Criar um token com acesso **só ao repositório `Ratatouille`** e permissão **Contents: Read and write**.
 3. Definir uma validade e anotar quando expira.
-4. Na app: Definições → colar o token.
+4. Na app: Definições → colar o token → **Guardar e confirmar**.
+
+O botão confirma o token contra o GitHub antes de o guardar. Se disser que não tem permissão de
+escrita, o token está errado — guardá-lo à mesma dava uma app que parece configurada e falha em
+silêncio na primeira escrita.
+
+Depois de guardado, a fila que estiver à espera sai sozinha. As Definições mostram quantas
+alterações faltam, há quanto tempo estão à espera e qual foi a última falha.
 
 O token fica em `localStorage` no tablet. **Nunca é commitado.** Quem tiver o tablet na mão tem o
 token — risco aceite, é um tablet doméstico numa cozinha. Ver `docs/adr/0004-escrita-via-github-api.md`.

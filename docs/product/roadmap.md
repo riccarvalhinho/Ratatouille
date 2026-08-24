@@ -53,26 +53,30 @@ tem receitas que chegue para isso ser útil.
 
 ---
 
-## M2 — Escrita de volta para o GitHub
+## M2 — Escrita de volta para o GitHub · construído
 
-- Ecrã de definições com introdução do token de acesso
-- Camada de outbox: escritas otimistas em IndexedDB, sincronizadas como commits
-- Favoritos e histórico passam a persistir
-- Indicador de estado de sincronização e resolução de falhas
+- [x] Ecrã de definições com introdução do token de acesso
+- [x] Camada de outbox: escritas otimistas em IndexedDB, sincronizadas como commits
+- [x] Favoritos e histórico passam a persistir
+- [x] Indicador de estado de sincronização e resolução de falhas
 
-**Feito quando:** marcar um favorito no tablet cria um commit no repositório.
+**Feito quando:** marcar um favorito no tablet cria um commit no repositório. Falta só a
+confirmação em cima do tablet, com um token a sério — o código está feito e testado, mas o único
+teste que conta é ver o commit aparecer no repositório.
+
+Entrou também o "marcar como cozinhada" no fim do modo cozinha, que estava à espera desta escrita.
 
 ---
 
-## M3 — Planeamento semanal
+## M3 — Planeamento semanal · quase
 
-- Vista de semana por blocos do dia
-- Navegação entre semanas
-- Planear e desplanear receitas
-- Várias receitas por bloco
-- Home screen ligada ao plano real, com CTA quando a semana está vazia
+- [x] Vista de semana por blocos do dia
+- [x] Navegação entre semanas
+- [x] Planear e desplanear receitas
+- [x] Várias receitas por bloco
+- [ ] Home screen ligada ao plano real, com CTA quando a semana está vazia
 
-**Feito quando:** dá para montar a semana toda no tablet.
+**Feito quando:** dá para montar a semana toda no tablet. Falta a home (spec 006).
 
 ---
 

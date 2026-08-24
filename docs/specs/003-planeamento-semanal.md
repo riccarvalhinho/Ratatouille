@@ -89,8 +89,8 @@ filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
 - [x] Adicionar abre o seletor de receitas
 - [ ] O seletor tem os filtros do catálogo — dependem da spec 001, que também ainda não os tem
 - [x] Um bloco vazio na semana toda encolhe e dá o espaço aos outros
-- [ ] Cada semana persiste em `data/planning/<AAAA-Www>.json` — falta a escrita do M2
-- [x] Planear offline funciona; **sincronizar quando houver rede é o M2**
+- [x] Cada semana persiste em `data/planning/<AAAA-Www>.json`
+- [x] Planear offline funciona, e sincroniza quando houver rede
 - [ ] A home screen reflete o plano da semana atual — a home é a spec 006
 
 ## O que já existe
@@ -104,15 +104,14 @@ só a primeira existe.
 | Metade | Estado |
 |---|---|
 | Gravar já em IndexedDB, para a interface responder no instante e o plano sobreviver a fechar a app | Feito |
-| Mandar as alterações para o GitHub como commit, com uma outbox que faz retry | M2 |
-
-Ou seja: **o plano editado na cozinha vive só nesse tablet** até o M2 chegar. Isso está escrito no pé
-do ecrã e não escondido — um plano que se julga guardado e não está é pior do que um plano que se
-sabe local.
+| Mandar as alterações para o GitHub como commit, com uma outbox que faz retry | Feito no M2 |
 
 A sobreposição local é por semana inteira e não por receita, que é o mesmo grão do ficheiro
-`data/planning/AAAA-Www.json`. Faz com que a sincronização do M2 seja um PUT por semana e não uma
-fusão campo a campo.
+`data/planning/AAAA-Www.json`. Faz da sincronização um PUT por semana e não uma fusão campo a campo,
+e deixa a outbox juntar várias alterações à mesma semana num commit só.
+
+Falta pôr o token nas Definições para a sincronização arrancar; sem ele a app avisa, no cabeçalho e
+nas Definições, que o que se planeia fica só no tablet.
 
 ## Fora de âmbito
 

@@ -9,7 +9,7 @@
  */
 import { useEffect, useState } from 'react';
 
-export type Screen = 'home' | 'receitas' | 'planeamento' | 'compras';
+export type Screen = 'home' | 'receitas' | 'planeamento' | 'compras' | 'definicoes';
 
 export interface Route {
   screen: Screen;
@@ -19,7 +19,7 @@ export interface Route {
   cooking?: boolean;
 }
 
-const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras'];
+const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras', 'definicoes'];
 
 /**
  * Onde a app abre quando não há rota no URL.

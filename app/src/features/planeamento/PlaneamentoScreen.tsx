@@ -12,7 +12,7 @@
  */
 import { Fragment, useState } from 'react';
 import type { Catalogue } from '../../data/catalogue.ts';
-import type { PlanStore } from '../../data/plan-store.ts';
+import type { LocalStore } from '../../data/local-store.ts';
 import { navigate } from '../../data/router.ts';
 import { countEntries, emptyBlocksOfWeek } from '../../domain/plan-edit.ts';
 import {
@@ -30,7 +30,7 @@ import styles from './PlaneamentoScreen.module.css';
 
 interface PlaneamentoScreenProps {
   catalogue: Catalogue;
-  plans: PlanStore;
+  store: LocalStore;
   /** Data de hoje em ISO. Vem de fora para o destaque do dia ser testável. */
   today: string;
 }
@@ -52,12 +52,12 @@ function isSameEntry(a: SelectedEntry | undefined, b: SelectedEntry): boolean {
   return a?.date === b.date && a?.block === b.block && a?.index === b.index;
 }
 
-export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreenProps) {
+export function PlaneamentoScreen({ catalogue, store, today }: PlaneamentoScreenProps) {
   const [week, setWeek] = useState(() => isoWeekOf(today));
   const [pending, setPending] = useState<PendingSlot | undefined>();
   const [selected, setSelected] = useState<SelectedEntry | undefined>();
 
-  const plan = plans.weekPlan(week);
+  const plan = store.weekPlan(week);
   const dates = datesOfIsoWeek(week);
   const empty = emptyBlocksOfWeek(plan);
   const total = countEntries(plan);
@@ -206,7 +206,7 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
                                 onClick={(event) => {
                                   event.stopPropagation();
                                   setSelected(undefined);
-                                  plans.removeRecipe(week, date, block, index);
+                                  store.removeRecipe(week, date, block, index);
                                 }}
                                 aria-label={`Desplanear ${recipe?.name ?? entry.recipeId}`}
                               >
@@ -243,20 +243,13 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
         })}
       </div>
 
-      <p className={styles.footnote}>
-        O plano editado aqui fica guardado neste tablet e sobrevive a fechar a app, mas ainda não é
-        enviado para o GitHub — isso é a outra metade da ADR 0004 e chega com o M2.
-        {plans.localWeeks > 0 &&
-          ` ${plans.localWeeks === 1 ? '1 semana está' : `${plans.localWeeks} semanas estão`} só aqui.`}
-      </p>
-
       {pending && (
         <SeletorReceitas
           catalogue={catalogue}
           block={pending.block}
           date={pending.date}
           onPick={(recipeId) => {
-            plans.addRecipe(week, pending.date, pending.block, { recipeId });
+            store.addRecipe(week, pending.date, pending.block, { recipeId });
             setPending(undefined);
           }}
           onClose={() => setPending(undefined)}

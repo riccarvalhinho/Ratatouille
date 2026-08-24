@@ -100,8 +100,14 @@ Ao ser iniciado:
 
 ### Saída
 
-Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, alimentando o histórico
-(depende de como a Q5 for resolvida).
+Terminar a receita oferece **marcar como cozinhada**, o que entra no histórico e alimenta o "última
+vez que fiz isto" do detalhe.
+
+É deliberado e não automático. A Q5 continua aberta, mas de um lado já está decidida: chegar ao
+último passo não prova que se comeu. Um histórico que se enche sozinho de refeições que não
+aconteceram não serve para responder à pergunta que existe para responder — "já chega para repetir?".
+
+Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas refeições.
 
 ## Critérios de aceitação
 
@@ -119,7 +125,7 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 - [x] Passos passivos avisam ao terminar; passos ativos não interrompem
 - [x] Vários temporizadores podem correr ao mesmo tempo, e continuam visíveis ao mudar de passo
 - [x] O fim de um temporizador avisa visual e sonoramente
-- [ ] Terminar oferece marcar como cozinhada — depende do M2
+- [x] Terminar oferece marcar como cozinhada
 - [x] Tudo funciona offline
 - [x] Sair a meio e voltar não perde o sítio: o passo vive no URL
 

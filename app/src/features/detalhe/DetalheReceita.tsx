@@ -7,6 +7,7 @@
  */
 import { useEffect } from 'react';
 import type { Catalogue } from '../../data/catalogue.ts';
+import type { LocalStore } from '../../data/local-store.ts';
 import { describeIngredient, formatMinutes, formatYield, notableEquipment } from '../../data/catalogue.ts';
 import { activeMinutes } from '../../domain/filters.ts';
 import { formatLastCooked } from '../../domain/planning.ts';
@@ -14,15 +15,19 @@ import { COOKING_METHOD_NAMES, WEIGHT_NAMES, type Recipe } from '../../domain/ty
 import { formatPrepAhead } from '../../data/catalogue.ts';
 import { navigate } from '../../data/router.ts';
 import { LabelChip } from '../../ui/LabelChip.tsx';
+import { IconHeart } from '../../ui/icons.tsx';
 import styles from './DetalheReceita.module.css';
 
 interface DetalheReceitaProps {
   recipe: Recipe;
   catalogue: Catalogue;
+  store: LocalStore;
+  /** Data de hoje em ISO, para o "última vez que fiz isto". */
+  today: string;
   onClose: () => void;
 }
 
-export function DetalheReceita({ recipe, catalogue, onClose }: DetalheReceitaProps) {
+export function DetalheReceita({ recipe, catalogue, store, today, onClose }: DetalheReceitaProps) {
   // Escape fecha. Não é para o tablet — é para quem estiver a mexer nisto de um computador.
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -35,8 +40,9 @@ export function DetalheReceita({ recipe, catalogue, onClose }: DetalheReceitaPro
   const equipment = notableEquipment(recipe, catalogue);
   const appliances = equipment.filter((item) => item.kind === 'eletrodomestico');
   const utensils = equipment.filter((item) => item.kind !== 'eletrodomestico');
-  const lastCooked = catalogue.lastCookedByRecipe.get(recipe.id);
-  const today = new Date().toISOString().slice(0, 10);
+  // Do store e não do catálogo: o histórico local já inclui o que ainda não chegou ao GitHub.
+  const lastCooked = store.lastCooked.get(recipe.id);
+  const favourite = store.isFavourite(recipe.id);
 
   return (
     <div className={styles.backdrop} onClick={onClose} role="presentation">
@@ -48,12 +54,14 @@ export function DetalheReceita({ recipe, catalogue, onClose }: DetalheReceitaPro
         aria-label={recipe.name}
       >
         <div className={styles.bar}>
-          {/* Favoritos e planear precisam de escrita para o repositório — é o M2. */}
-          <button type="button" className={styles.action} disabled title="Favoritos chegam no M2">
-            ♡
-          </button>
-          <button type="button" className={styles.action} disabled title="Planear chega no M3">
-            +
+          <button
+            type="button"
+            className={favourite ? `${styles.action} ${styles.favourite}` : styles.action}
+            onClick={() => store.toggleFavourite(recipe.id)}
+            aria-pressed={favourite}
+            aria-label={favourite ? 'Tirar dos favoritos' : 'Favoritar'}
+          >
+            <IconHeart filled={favourite} />
           </button>
           <button
             type="button"

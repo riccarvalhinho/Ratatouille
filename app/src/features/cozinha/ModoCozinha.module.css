@@ -255,6 +255,7 @@
 .finish {
   width: auto;
   min-width: 220px;
+  padding: 0 var(--space-6);
   border-radius: var(--radius-lg);
   font-size: var(--text-lg);
 }
@@ -272,3 +273,11 @@
 
 .doneTitle { font-size: var(--text-2xl); }
 .doneNote { color: var(--color-text-muted); max-width: 48ch; }
+
+/* No fim há duas saídas; só uma é a principal. */
+.secondary {
+  background: transparent;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+  box-shadow: none;
+}
