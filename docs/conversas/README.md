@@ -128,6 +128,7 @@ O ficheiro da conversa é o rascunho, não o destino. Uma decisão fechada muda-
 | 5 | [Planeamento semanal](05-ui-planeamento.md) | Por começar | Claude |
 | 6 | [Direção visual](06-direcao-visual.md) | Por começar | Claude — só a parte de explorar |
 | 7 | [Vocabulário das labels](07-vocabulario-labels.md) | Por começar | Claude |
+| 8 | [Navegação entre ecrãs](08-navegacao.md) | Por começar | Claude |
 
 "Quem conduz" é só quem traz o material de partida. O tema 1 é do Ricardo porque há uma visão da
 estrutura para explicar; os outros partem de propostas concretas para contrariar.

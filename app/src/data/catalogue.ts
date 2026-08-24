@@ -113,6 +113,34 @@ export function formatIngredient(item: RecipeIngredient, ingredient: Ingredient 
   return item.note ? `${head}, ${item.note}` : head;
 }
 
+/**
+ * Nome e quantidade **separados**, para a lista de ingredientes os poder alinhar em colunas.
+ *
+ * Construídos a partir dos dados e não partindo a frase do `formatIngredient`: o nome canónico pode
+ * conter "de" — "Coxa de frango", "Dente de alho" — e partir pela preposição dava "frango" com
+ * quantidade "4 Coxas".
+ */
+export function describeIngredient(
+  item: RecipeIngredient,
+  ingredient: Ingredient | undefined,
+): { name: string; amount: string } {
+  const singular = ingredient?.name ?? item.ref;
+  const { quantity, unit } = item;
+
+  if (unit === 'qb' || quantity === undefined || unit === undefined) {
+    return { name: singular, amount: 'q.b.' };
+  }
+
+  const amount = String(quantity).replace('.', ',');
+  const plural = quantity > 1 ? (ingredient?.plural ?? singular) : singular;
+
+  // À unidade, o número chega — o nome já diz o que se conta.
+  if (unit === 'un') return { name: plural, amount };
+
+  const unitLabel = UNIT_NAMES[unit] ?? unit;
+  return { name: singular, amount: `${amount} ${unitLabel}`.trim() };
+}
+
 export function formatDate(isoDate: string): string {
   const date = new Date(`${isoDate}T00:00:00`);
   return date.toLocaleDateString('pt-PT', { day: 'numeric', month: 'long', year: 'numeric' });

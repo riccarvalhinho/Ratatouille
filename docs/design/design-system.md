@@ -76,6 +76,12 @@ Do Cookidoo (`benchmark-bimby.md`), já decididas:
 - **O acento só na ação e no estado ativo.** Tudo o resto é texto escuro sobre claro. É isto que faz
   o botão principal saltar sem a interface parecer um semáforo.
 - **Ecrãs de detalhe em duas colunas**, aproveitando a largura, em vez de empilhar tudo num scroll.
+- **Quatro destinos no painel:** Hoje, Receitas, Semana, Compras. O detalhe da receita abre por cima
+  do ecrã de onde veio, e o "x" devolve lá.
+- **A rota vive no URL**, com encaminhamento por hash. Sobrevive a um recarregamento, que num tablet
+  ligado horas acontece por acidente. Hash e não history API porque o GitHub Pages não reescreve URLs.
+
+O que continua por decidir sobre navegação está na conversa 8.
 
 ## Componentes previstos
 
