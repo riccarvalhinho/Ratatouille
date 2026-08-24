@@ -85,9 +85,13 @@ O "x" sempre à vista saiu. Tocar no cartão passa a revelar dois alvos por cima
 detalhe, cruz para desplanear — e um toque noutro sítio devolve tudo ao normal.
 
 Ganha-se nas duas pontas: o nome fica com a largura toda do cartão (a "Salada de grão com atum"
-passou a caber sem reticências), e o toque destrutivo deixa de estar exposto a um cotovelo. É a
-mesma lógica do ecrã morto da conversa 4 — reduzir o que reage ao toque — mas aplicada a um ecrã
-onde os alvos têm de ser pequenos.
+passou a caber sem reticências), e desplanear deixa de ser um toque único numa grelha de células
+vizinhas.
+
+E ficou clara uma distinção que não estava escrita: **este ecrã não é o modo cozinha.** Planeia-se
+sentado e com as mãos limpas, antes de haver comida em cima da bancada. As regras da conversa 4 —
+alvos de 72px, ecrã morto à volta — nasceram de cozinhar com as mãos ocupadas e não se transportam
+para cá. O que manda aqui é a densidade, porque a semana toda tem de caber num ecrã.
 
 ### Por onde continuar
 

@@ -52,9 +52,13 @@ cima dele: uma lupa que abre o detalhe e uma cruz que desplaneia. Um toque em qu
 o fundo, outro cartão, um "+" — devolve o cartão ao normal.
 
 Duas razões. Num cartão de ~122px de largura, um "x" permanente rouba a largura ao nome, que é a
-única informação lá. E um alvo de remoção sempre exposto, num ecrã ao alcance de um cotovelo e de
-mãos molhadas, é o pior alvo para deixar acessível — assim o toque destrutivo custa dois toques, e o
-primeiro é o cartão inteiro, muito maior do que os 36px que o "x" tinha.
+única informação lá. E numa grelha de 14 células encostadas umas às outras, uma ação destrutiva a um
+toque acerta-se por engano — assim desplanear custa dois toques, e o primeiro é o cartão inteiro,
+muito maior do que os 36px que o "x" tinha.
+
+**Este ecrã não é o modo cozinha.** Planeia-se sentado e com as mãos limpas, antes de haver comida
+em cima da bancada. As regras de toque agressivo da spec 005 — alvos de 72px, ecrã morto à volta —
+não se aplicam aqui: o que manda neste ecrã é a densidade, porque a semana toda tem de caber.
 
 **As labels ficam de fora.** A 1280×800, tirando o painel de navegação, as margens e a coluna dos
 nomes dos blocos, cada dia fica com ~140px de largura. Uma label legível a 70cm comeria a linha do

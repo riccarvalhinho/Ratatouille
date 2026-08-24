@@ -210,10 +210,10 @@
  * e desplanear. Um toque em qualquer outro sítio devolve o cartão ao normal.
  *
  * Porquê e não um "x" sempre à vista: num cartão de ~122px de largura, um "x" permanente rouba a
- * largura ao nome — e um alvo de remoção sempre exposto, num ecrã que se usa com o cotovelo e com
- * as mãos molhadas, é o pior alvo para deixar acessível. Assim o toque destrutivo custa dois
- * toques, e o cartão inteiro passa a ser o alvo do primeiro, que é muito maior do que os 36px que
- * o "x" tinha.
+ * largura ao nome, que é a única informação lá. E numa grelha densa, onde 14 células se tocam umas
+ * nas outras, uma ação destrutiva a um toque é fácil de acertar por engano — não por se estar a
+ * cozinhar, que aqui não se está, mas por os alvos serem pequenos e vizinhos. Assim desplanear
+ * custa dois toques, e o primeiro é o cartão inteiro, muito maior do que os 36px do "x".
  */
 .cardActions {
   position: absolute;

@@ -172,8 +172,8 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
                           {/*
                             O cartão inteiro é o alvo, e o primeiro toque só revela as ações. Num
                             cartão de 122px de largura não cabia um "x" permanente sem roubar o
-                            nome — e um "x" sempre à vista, ao alcance de um cotovelo, é o alvo que
-                            menos se quer acertar por engano.
+                            nome, e numa grelha de células vizinhas uma remoção a um toque acerta-se
+                            por engano.
                           */}
                           <button
                             type="button"
