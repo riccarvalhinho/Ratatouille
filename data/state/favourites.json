@@ -1,4 +1,6 @@
 {
   "kind": "favourites",
-  "recipeIds": ["caldo-verde"]
+  "recipeIds": [
+    "caldo-verde"
+  ]
 }

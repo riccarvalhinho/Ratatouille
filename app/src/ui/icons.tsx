@@ -79,6 +79,18 @@ export function IconRepeat(props: IconProps) {
   );
 }
 
+/** O coração dos favoritos. Cheio ou só o contorno — a forma é a mesma, muda o preenchimento. */
+export function IconHeart({ filled, ...props }: IconProps & { filled?: boolean }) {
+  return (
+    <Svg {...props}>
+      <path
+        d="M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20z"
+        fill={filled ? 'currentColor' : 'none'}
+      />
+    </Svg>
+  );
+}
+
 export function IconSearch(props: IconProps) {
   return (
     <Svg {...props}>

@@ -1,7 +1,15 @@
 {
   "kind": "history",
   "entries": [
-    { "recipeId": "arroz-de-frango", "date": "2026-08-19", "block": "jantar" },
-    { "recipeId": "caldo-verde", "date": "2026-08-17", "block": "jantar" }
+    {
+      "recipeId": "arroz-de-frango",
+      "date": "2026-08-19",
+      "block": "jantar"
+    },
+    {
+      "recipeId": "caldo-verde",
+      "date": "2026-08-17",
+      "block": "jantar"
+    }
   ]
 }

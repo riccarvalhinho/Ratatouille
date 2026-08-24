@@ -255,3 +255,6 @@
   color: var(--color-text-muted);
   font-size: var(--text-sm);
 }
+
+/* Favorito ativo: a única cor fora do acento, porque é um estado e não uma ação. */
+.favourite { color: var(--color-favorite); }

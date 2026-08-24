@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import { loadBundle, type BundleOrigin } from './data/bundle.ts';
 import { buildCatalogue, type Catalogue } from './data/catalogue.ts';
-import { usePlanStore } from './data/plan-store.ts';
+import { useLocalStore } from './data/local-store.ts';
+import { useOutbox } from './data/outbox-store.ts';
 import { navigate, useRoute } from './data/router.ts';
 import { todayIso } from './domain/planning.ts';
 import type { DataBundle } from './domain/types.ts';
 import { CatalogoScreen } from './features/catalogo/CatalogoScreen.tsx';
 import { ModoCozinha } from './features/cozinha/ModoCozinha.tsx';
 import { DetalheReceita } from './features/detalhe/DetalheReceita.tsx';
+import { DefinicoesScreen } from './features/definicoes/DefinicoesScreen.tsx';
 import { PlaneamentoScreen } from './features/planeamento/PlaneamentoScreen.tsx';
 import { NavRail } from './ui/NavRail.tsx';
 import { PorConstruir } from './ui/PorConstruir.tsx';
@@ -40,7 +42,8 @@ export function App() {
     };
   }, []);
 
-  const plans = usePlanStore(state.status === 'ready' ? state.bundle : undefined);
+  const outbox = useOutbox();
+  const store = useLocalStore(state.status === 'ready' ? state.bundle : undefined, outbox);
 
   // Recalculado a cada render em vez de memorizado: o tablet fica horas ligado e um "hoje" fixado
   // no arranque destacaria o dia errado depois da meia-noite.
@@ -81,6 +84,8 @@ export function App() {
       <ModoCozinha
         recipe={openRecipe}
         catalogue={catalogue}
+        store={store}
+        today={today}
         onLeave={() => navigate({ screen: 'receitas', recipeId: openRecipe.id })}
       />
     );
@@ -88,7 +93,7 @@ export function App() {
 
   return (
     <div className={styles.app}>
-      <NavRail current={route.screen} />
+      <NavRail current={route.screen} pending={outbox.status.pending} />
 
       <div className={styles.main}>
         <header className={styles.header}>
@@ -96,6 +101,14 @@ export function App() {
           <span className={styles.origin}>
             {state.origin === 'cache' ? 'offline · dados guardados' : 'atualizado'}
           </span>
+          {/* O que está por enviar é informação de estado, não um alarme: fica ao lado da origem. */}
+          {outbox.status.pending > 0 && (
+            <span className={styles.pending}>
+              {outbox.syncing
+                ? 'a enviar…'
+                : `${outbox.status.pending} por enviar${outbox.hasToken ? '' : ' · sem token'}`}
+            </span>
+          )}
         </header>
 
         <main className={styles.content}>
@@ -113,9 +126,11 @@ export function App() {
             </PorConstruir>
           )}
 
-          {route.screen === 'planeamento' && catalogue && plans.ready && (
-            <PlaneamentoScreen catalogue={catalogue} plans={plans} today={today} />
+          {route.screen === 'planeamento' && catalogue && store.ready && (
+            <PlaneamentoScreen catalogue={catalogue} store={store} today={today} />
           )}
+
+          {route.screen === 'definicoes' && <DefinicoesScreen outbox={outbox} />}
 
           {route.screen === 'compras' && (
             <PorConstruir title="Compras" spec="docs/specs/004-lista-de-compras.md" milestone="M4">
@@ -131,6 +146,8 @@ export function App() {
         <DetalheReceita
           recipe={openRecipe}
           catalogue={catalogue}
+          store={store}
+          today={today}
           onClose={() => navigate({ screen: route.screen })}
         />
       )}

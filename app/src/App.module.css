@@ -69,3 +69,13 @@
   font-size: var(--text-sm);
   max-width: 44ch;
 }
+
+/* Alterações por enviar. Ao lado da origem dos dados, porque é a mesma família de informação. */
+.pending {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}

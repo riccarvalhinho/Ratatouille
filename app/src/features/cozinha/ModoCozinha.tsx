@@ -13,6 +13,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { playAlarm } from '../../data/alarm.ts';
 import { describeIngredient, formatMinutes } from '../../data/catalogue.ts';
 import type { Catalogue } from '../../data/catalogue.ts';
+import type { LocalStore } from '../../data/local-store.ts';
 import { useKeepAwake } from '../../data/wake-lock.ts';
 import type { Recipe } from '../../domain/types.ts';
 import { IconDismiss, IconNext, IconPause, IconPlay, IconPrev, IconRepeat } from '../../ui/icons.tsx';
@@ -33,10 +34,13 @@ import styles from './ModoCozinha.module.css';
 interface ModoCozinhaProps {
   recipe: Recipe;
   catalogue: Catalogue;
+  store: LocalStore;
+  /** Data de hoje em ISO. É a data que entra no histórico ao marcar como cozinhada. */
+  today: string;
   onLeave: () => void;
 }
 
-export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
+export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCozinhaProps) {
   const [index, setIndex] = useState(0);
   const [timers, setTimers] = useState<Timer[]>([]);
   const [now, setNow] = useState(() => Date.now());
@@ -94,17 +98,39 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
   };
 
   if (finished) {
+    const alreadyCooked = store.wasCookedOn(recipe.id, today);
+
     return (
       <div className={styles.screen}>
         <div className={styles.done}>
           <h2 className={styles.doneTitle}>Feito.</h2>
-          <p className={styles.doneNote}>
-            Marcar como cozinhada, para entrar no histórico, precisa de escrita para o repositório —
-            é o M2. Por agora fica só o bom apetite.
-          </p>
+
+          {/*
+            Marcar é deliberado e não automático.
+            A Q5 continua aberta, mas de um lado só: chegar ao último passo não prova que se comeu.
+            Um histórico que se enche sozinho de refeições que não aconteceram não serve para
+            responder à pergunta que existe para responder — "já chega para repetir?".
+          */}
+          {alreadyCooked ? (
+            <p className={styles.doneNote}>Já está no histórico de hoje. Bom apetite.</p>
+          ) : (
+            <>
+              <p className={styles.doneNote}>
+                Marcar entra no histórico e alimenta o "última vez que fiz isto" no detalhe.
+              </p>
+              <button
+                type="button"
+                className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
+                onClick={() => store.markCooked(recipe.id, today)}
+              >
+                Marcar como cozinhada
+              </button>
+            </>
+          )}
+
           <button
             type="button"
-            className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
+            className={`${styles.navButton} ${styles.finish} ${styles.secondary}`}
             onClick={onLeave}
           >
             Voltar à receita
