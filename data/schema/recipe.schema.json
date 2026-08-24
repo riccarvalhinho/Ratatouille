@@ -52,6 +52,22 @@
       "type": "string",
       "pattern": "^media/recipes/[a-z0-9-]+\\.(jpg|jpeg|png|webp)$"
     },
+    "imageCredit": {
+      "description": "Atribuição da imagem, obrigatória quando a imagem vem de uma fonte de licença livre. Sem isto a licença não é cumprida e o repositório é público.",
+      "type": "object",
+      "required": ["license"],
+      "additionalProperties": false,
+      "properties": {
+        "author": { "type": "string" },
+        "license": {
+          "description": "Ex.: \"CC BY 4.0\", \"CC0 1.0\", \"PDM 1.0\", ou \"própria\" para fotografia nossa.",
+          "type": "string",
+          "minLength": 1
+        },
+        "licenseUrl": { "type": "string", "format": "uri" },
+        "sourceUrl": { "type": "string", "format": "uri" }
+      }
+    },
     "servings": {
       "description": "Para quantas pessoas dá a dose declarada. Opcional: há receitas que rendem unidades e não pessoas — nesse caso usa-se yield. Tem de existir servings ou yield.",
       "type": "integer",

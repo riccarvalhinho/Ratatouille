@@ -13,12 +13,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { paths, rel } from '../paths.ts';
+import { fetchVideo } from './video.ts';
 
 export interface FetchedSource {
   url: string;
   fetchedAt: string;
   /** Como é que o conteúdo foi obtido, para se saber quanta confiança lhe dar. */
-  via: 'json-ld' | 'oembed' | 'meta' | 'texto';
+  via: 'json-ld' | 'video' | 'oembed' | 'meta' | 'texto';
   title?: string;
   author?: string;
   description?: string;
@@ -27,13 +28,20 @@ export interface FetchedSource {
   recipe?: Record<string, unknown>;
   /** Texto legível da página, quando não há estrutura. */
   text?: string;
+  /** Transcrição das legendas, quando a fonte é vídeo. */
+  transcript?: string;
+  transcriptLanguage?: string;
+  durationSeconds?: number;
   notes: string[];
 }
 
 const USER_AGENT =
   'Mozilla/5.0 (compatible; RatatouilleImporter/1.0; +https://github.com/riccarvalhinho/Ratatouille)';
 
-/** Plataformas de vídeo com oEmbed público. O Instagram exige token desde 2020 e fica de fora. */
+/** Plataformas onde vale a pena tentar o yt-dlp antes de tratar a página como HTML. */
+const VIDEO = /(?:youtube\.com|youtu\.be|tiktok\.com|instagram\.com\/(?:reel|p|tv))/i;
+
+/** Plataformas de vídeo com oEmbed público, usado como rede de segurança se o yt-dlp falhar. */
 const OEMBED: { test: RegExp; endpoint: (url: string) => string }[] = [
   {
     test: /(?:youtube\.com|youtu\.be)/i,
@@ -130,6 +138,24 @@ function readableText(html: string): string {
 
 export async function fetchSource(url: string): Promise<FetchedSource> {
   const result: FetchedSource = { url, fetchedAt: new Date().toISOString(), via: 'texto', notes: [] };
+
+  if (VIDEO.test(url)) {
+    const video = fetchVideo(url);
+    result.notes.push(...video.notes);
+
+    if (video.transcript || video.description) {
+      result.via = 'video';
+      result.title = video.title;
+      result.author = video.uploader;
+      result.description = video.description;
+      result.imageUrl = video.thumbnailUrl;
+      result.transcript = video.transcript;
+      result.transcriptLanguage = video.transcriptLanguage;
+      result.durationSeconds = video.durationSeconds;
+      return result;
+    }
+    // Sem transcrição nem descrição, ainda vale a pena o oEmbed para o título e o autor.
+  }
 
   const oembed = OEMBED.find((o) => o.test.test(url));
   if (oembed) {

@@ -21,10 +21,22 @@ com `curl` e com WebFetch. Isso muda o primeiro passo consoante a fonte:
 | Áudio a descrever a receita | Já chega transcrito. É a fonte mais fácil — começar por aqui |
 | Texto colado | Direto |
 | Fotografia de livro ou caderno | Ler a imagem diretamente |
-| **Link de site ou de vídeo** | **Pedir ao utilizador que cole o conteúdo da página**, ou que corra as ferramentas no computador dele, onde há rede |
+| **Link de site ou de vídeo** | **Actions → "Importar receita de um link"**, com o URL. O runner tem internet, recolhe, e faz commit em `data/inbox/`. Depois é só ler o ficheiro |
 
-Nunca fingir que se leu uma página que não se conseguiu abrir. Se o link não abrir, dizer e pedir o
-texto.
+Nunca fingir que se leu uma página que não se conseguiu abrir. Se o link não abrir, dizer e usar o
+workflow.
+
+### Vídeo
+
+O workflow instala o `yt-dlp` e traz **metadados, descrição e transcrição das legendas**. Em vídeos
+de cozinha a receita está quase sempre num dos dois: escrita na descrição, ou dita em voz alta e
+apanhada pelas legendas automáticas.
+
+Cuidado com as legendas automáticas: **quantidades mal ouvidas são o erro típico** — "cento e
+cinquenta" pode vir "150" ou "cinquenta". Confirmar sempre as quantidades de uma transcrição.
+
+O Instagram é o caso mais difícil: bloqueia leitura anónima. Se falhar, pedir a legenda copiada ou um
+áudio a descrever.
 
 ## O processo
 
@@ -90,11 +102,23 @@ Uma receita nova é um commit. Dizer ao utilizador o que ficou por preencher.
 
 ## Imagens
 
-**Não descarregar fotografias de outras pessoas para o repositório.** É público, e vale a mesma
-regra que se aplica ao texto das instruções. Questão Q8 em aberto.
+**Não copiar a fotografia da fonte.** Uma foto de receita num site é obra protegida como o texto, e
+este repositório é público. O `imageUrl` do que foi recolhido serve de referência, não de origem.
 
-Enquanto não estiver decidido: deixar `image` por preencher e perguntar se o utilizador tem uma
-fotografia própria. Uma receita sem imagem funciona — a app mostra um marcador.
+Há duas vias legítimas:
+
+```bash
+npm run import:image -- "caldo verde"
+```
+
+Procura no **Openverse**, que só devolve conteúdo Creative Commons ou de domínio público, com a
+licença e o autor em cada resultado. Escolhida uma, **a atribuição tem de ir para `imageCredit`** —
+sem isso a licença não é cumprida.
+
+A outra via, e a melhor: fotografia própria, tirada quando se cozinha. Aí `imageCredit` leva
+`{ "license": "própria" }`.
+
+Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena forçar.
 
 ## O que já é decidido e não se volta a discutir
 

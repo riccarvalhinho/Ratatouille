@@ -81,8 +81,14 @@ const UNIT_PATTERNS: [RegExp, Unit][] = [
   [/^(c\.?\s*sopa|colheres?\s+de\s+sopa|csopa)$/, 'csopa'],
   [/^(c\.?\s*cha|colheres?\s+de\s+cha|ccha)$/, 'ccha'],
   [/^(pitadas?)$/, 'pitada'],
-  [/^(un|unidades?|uns?|umas?)$/, 'un'],
+  [/^(un|unid|unidades?|uns?|umas?)$/, 'un'],
 ];
+
+/**
+ * Medidas de volume que as receitas portuguesas usam mas que o schema não tem, porque seriam ruído.
+ * Convertem-se para mililitros logo na leitura: "2,5 dl de leite" fica 250 ml.
+ */
+const TO_ML: Record<string, number> = { dl: 100, cl: 10, decilitros: 100, decilitro: 100 };
 
 /** Preparações que aparecem depois de vírgula e pertencem ao campo `note`, não ao nome. */
 const PREP_HINT =
@@ -117,11 +123,19 @@ export function parseIngredientLine(raw: string): ParsedIngredientLine {
   if (!unit) {
     const unitMatch = /^([a-zA-Zç.]+(?:\s+de\s+(?:sopa|cha|chá))?)\s+(?:de\s+)?/.exec(rest);
     const candidate = unitMatch?.[1] ? normalise(unitMatch[1]) : '';
-    for (const [pattern, value] of UNIT_PATTERNS) {
-      if (pattern.test(candidate)) {
-        unit = value;
-        rest = rest.slice(unitMatch![0].length);
-        break;
+
+    const toMl = TO_ML[candidate];
+    if (toMl !== undefined) {
+      unit = 'ml';
+      if (quantity !== undefined) quantity *= toMl;
+      rest = rest.slice(unitMatch![0].length);
+    } else {
+      for (const [pattern, value] of UNIT_PATTERNS) {
+        if (pattern.test(candidate)) {
+          unit = value;
+          rest = rest.slice(unitMatch![0].length);
+          break;
+        }
       }
     }
   }

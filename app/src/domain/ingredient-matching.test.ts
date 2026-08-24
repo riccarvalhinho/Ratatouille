@@ -39,6 +39,13 @@ describe('parseIngredientLine', () => {
     });
   });
 
+  it('percebe as abreviaturas que os sites portugueses usam mesmo', () => {
+    // apanhado a importar uma página real: "2 unid. cebola" e "2,5 dl leite"
+    expect(parseIngredientLine('2 unid. cebola')).toMatchObject({ quantity: 2, unit: 'un', name: 'cebola' });
+    expect(parseIngredientLine('2,5 dl leite')).toMatchObject({ quantity: 250, unit: 'ml', name: 'leite' });
+    expect(parseIngredientLine('5 cl vinho')).toMatchObject({ quantity: 50, unit: 'ml' });
+  });
+
   it('percebe frações', () => {
     expect(parseIngredientLine('1/2 cebola roxa')).toMatchObject({ quantity: 0.5, unit: 'un' });
   });

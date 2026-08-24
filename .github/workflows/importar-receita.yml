@@ -33,6 +33,12 @@ jobs:
 
       - run: npm ci
 
+      # Só para metadados e legendas — o vídeo em si nunca é descarregado.
+      - name: Instalar o yt-dlp, para transcrições de vídeo
+        run: |
+          python3 -m pip install --quiet --upgrade yt-dlp
+          yt-dlp --version
+
       - name: Recolher o conteúdo do link
         run: npm run import:fetch -- "${{ inputs.url }}"
 
