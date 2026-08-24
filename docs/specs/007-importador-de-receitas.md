@@ -24,15 +24,34 @@ e ninguém escreve JSON à mão vezes suficientes para ter cem receitas.
 | Protocolo de importação ponta a ponta | `.claude/skills/importar-receita/` | Feito |
 | Obter conteúdo de um link | — | **Bloqueado**, ver abaixo |
 
-### A limitação de rede
+### A limitação de rede, e como se contorna
 
 **As sessões de Claude Code não conseguem abrir sites de receitas** — o proxy de saída bloqueia-os,
-confirmado com `curl` e com WebFetch. Não é limitação do código: as mesmas ferramentas correm bem
-num computador com rede normal.
+confirmado com `curl` e com WebFetch. Não é limitação do código.
 
-Consequência prática: para links, o conteúdo tem de ser colado pelo utilizador, ou as ferramentas
-corridas localmente. Áudio, texto e fotografia não são afetados — chegam diretamente à sessão, e o
-áudio é aliás a fonte mais fácil de todas.
+**Os runners do GitHub Actions conseguem.** Verificado: o workflow
+`.github/workflows/importar-receita.yml` abriu uma página de receita portuguesa e trouxe o conteúdo
+completo — ingredientes com quantidades, doses, tempo e a secção do béchamel. O resultado fica em
+`data/inbox/`, que uma sessão já consegue ler.
+
+O caminho passa portanto a ser: Actions → executar o workflow com o link → o conteúdo aparece no
+repositório → uma sessão normaliza, pergunta o que falta, e grava.
+
+Áudio, texto e fotografia não passam por aqui — chegam diretamente à sessão, e o áudio é aliás a
+fonte mais fácil de todas.
+
+### O que se aprendeu a recolher uma página a sério
+
+Nem todos os sites publicam `schema.org/Recipe` — o que foi testado não publicava, e o conteúdo veio
+como texto. Serviu na mesma, mas com o formato desalinhado: quantidade e nome em linhas separadas,
+"2 unid." em vez de "2 unidades", "2,5 dl" em vez de mililitros, e nomes com marca comercial pelo
+meio. Isto confirma a razão de haver interpretação com revisão humana em vez de só expressões
+regulares.
+
+Duas correções vieram daqui, e estão testadas: `unid.` passa a ser reconhecido como unidade, e `dl`
+e `cl` convertem-se para mililitros na leitura. Num teste com as onze linhas reais da página, isso
+passou os casos por confirmar de cinco para dois — e os dois que sobram devem mesmo ser confirmados,
+porque um é bacalhau que pode ser fresco ou salgado e o outro traz marca comercial.
 
 ## Fontes aceites
 
