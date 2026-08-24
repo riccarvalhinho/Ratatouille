@@ -1,14 +1,12 @@
 # Conversa 4 — Modo cozinha
 
-**Estado:** Por começar
+**Estado:** Em curso — perguntas 1, 2 e 3 fechadas
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/005-modo-cozinha.md`
 **Prioridade:** Pode esperar — é M5. Mas é o ecrã que justifica o tablet estar na parede.
 
-> **Já existe uma primeira versão construída**, com escolhas provisórias tomadas por mim para não
-> ficar parado: dois botões grandes em baixo para avançar e recuar, o passo seguinte em pequeno por
-> baixo, e nenhuma proteção contra toque acidental. Nada disto está decidido — a conversa continua a
-> ser esta, e agora tens uma coisa concreta para contrariar em vez de imaginares.
+> **Já existe uma versão construída.** As perguntas 1, 2 e 3 foram respondidas em áudio e estão
+> aplicadas no código — ver o registo abaixo. As perguntas 4 a 7 continuam por responder.
 
 ## Porque existe
 
@@ -52,9 +50,81 @@ molhadas. Todas as regras de interface normais são suspeitas aqui.
 
 ## Registo da conversa
 
-_(por começar)_
+### Ronda 1 — como se avança, o passo seguinte, e o toque acidental
+
+Respondidas as perguntas 1, 2 e 3, e as três apontam para o mesmo sítio: **só os botões reagem ao
+toque**.
+
+**Pergunta 1 — como se avança.** Dois botões grandes em baixo, com aspeto físico de "carrega em
+mim", e um terceiro ao meio para o temporizador quando o passo tem duração. Ficou aplicado assim: o
+"Anterior" com um terço da largura, o "Seguinte" com dois terços porque é o que se toca quase
+sempre, e o botão do meio estreito a 132px para não competir com eles. Todos com 72px de altura e um
+relevo de 2px por baixo, que é o que os faz parecer premíveis sem os desenhar a três dimensões.
+
+**Pergunta 3 — proteção contra toque acidental.** Resolvida por consequência da 1: **fora dos botões
+o ecrã é área morta**. O texto do passo, os ingredientes e a barra de progresso não reagem a nada, e
+isso cobre a maior parte da superfície do ecrã. Um cotovelo ou um salpico não avançam a receita. Não
+há confirmação extra, que custaria um toque em cada passo para evitar um erro raro.
+
+As exceções continuam a ser alvos: o "Sair" no canto superior direito, e os controlos dos
+temporizadores que já estão a correr (pausar, repetir, dispensar).
+
+**Pergunta 2 — o passo seguinte.** Sim, mas pequeno e num canto, não como um bloco por baixo do
+passo atual. Foram desenhadas duas variantes para escolher:
+
+- **A — cartão no canto inferior direito**, por cima do fundo da lista de ingredientes. Sítio fixo,
+  duas linhas, não rouba largura ao passo atual.
+- **B — segunda linha dentro do próprio botão "Seguinte"**, sem cartão nenhum.
+
+Está aplicada a **A**. O argumento contra a B é o contraste: 16px sobre o verde forte, a 70cm de
+distância e com vapor pelo meio, não se lê — e o passo seguinte serve para planear enquanto se
+cozinha, não no instante em que se toca no botão. Se a preferência for a outra, é uma troca de vinte
+linhas de CSS.
+
+### Ronda 2 — os alvos passam a redondos
+
+A barra retangular da ronda 1 durou pouco. Ficou decidido que **recuar e avançar são setas em
+círculos**, sem palavra, e que o temporizador é o círculo do meio. As setas dispensam legenda por
+serem universais; o temporizador não, e por isso traz o número por baixo do símbolo.
+
+**Onde ficam.** A primeira tentativa foi espalhá-los pelos extremos — recuar à esquerda, avançar à
+direita — a pensar que a distância era mais uma camada de proteção contra o toque errado. Foi
+recusado, e com razão: menos intuitivo, e faz da barra uma faixa pesada de canto a canto. Ficaram
+**juntos ao centro, com 48px entre eles**, que é o dobro do mínimo do design system e chega para o
+dedo não escorregar de um para o outro. Agrupados, olha-se para um sítio só.
+
+**O último passo troca de forma.** "Terminar" não pode ser mais um círculo verde no mesmo sítio, ou
+ao fim de doze passos iguais o dedo faz aquilo em piloto automático. É uma pastilha com palavra.
+
+E isto fechou a pergunta 2 por consequência: **a variante B deixou de ser possível**. Não cabe uma
+linha de pré-visualização dentro de um botão redondo com uma seta. Fica a A, o cartão no canto.
+
+Os símbolos passaram a SVG desenhado em vez de caracteres — o "▶" tem variante de emoji e em Android
+há fontes que o desenham a cores. Num botão onde o símbolo é a única legenda, isso não podia ficar à
+sorte da fonte do tablet.
+
+### O que mudou por arrasto
+
+O botão "Iniciar 8 min" que estava no corpo do ecrã desapareceu: passou a ser o botão do meio. A
+duração continua visível no corpo, mas como etiqueta e não como alvo. E a faixa de temporizadores no
+topo passou a mostrar só os temporizadores de **outros** passos — o do passo atual vive no botão do
+meio, e ter o mesmo número em dois sítios é ruído.
+
+### Por onde continuar
+
+Perguntas 4 a 7, que são todas sobre o que acontece quando há mais do que uma coisa ao lume:
+quantos temporizadores em simultâneo são realistas, o que fazer quando um toca noutro passo, se vale
+a pena riscar ingredientes já usados, e o que o ecrã faz no fim.
 
 ## Decisões tomadas
 
 | Decisão | Onde ficou registada |
 |---|---|
+| Avança-se por botões na barra de baixo, nunca por zonas do ecrã | `docs/specs/005-modo-cozinha.md` |
+| Terceiro botão ao meio para o temporizador, só quando o passo tem duração | `docs/specs/005-modo-cozinha.md` |
+| Fora dos botões o ecrã é área morta — é essa a proteção contra toque acidental | `docs/specs/005-modo-cozinha.md` |
+| O passo seguinte é um cartão pequeno no canto inferior direito | `docs/specs/005-modo-cozinha.md` |
+| Recuar e avançar são setas em círculos, sem palavra | `docs/specs/005-modo-cozinha.md` |
+| Os alvos ficam agrupados ao centro, com 48px entre eles, e não nos cantos | `docs/specs/005-modo-cozinha.md` |
+| "Terminar" muda de forma — pastilha e não círculo | `docs/specs/005-modo-cozinha.md` |
+| Símbolos em SVG desenhado, nunca em caracteres | `app/src/ui/icons.tsx` |
