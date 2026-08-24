@@ -39,11 +39,22 @@ O cartão tem duas variantes, e o motivo é o espaço:
 
 | Receita | Cartão |
 |---|---|
-| Com imagem | Thumbnail de 64px, nome por baixo, "x" sobre o canto da fotografia. 116px de altura |
-| Sem imagem | Só o nome, com o "x" numa coluna à direita. 56px de altura |
+| Com imagem | Thumbnail de 64px com o nome por baixo. 116px de altura |
+| Sem imagem | Só o nome. 56px de altura |
 
 Uma receita sem imagem não leva marcador cinzento: meia grelha cheia de emojis iguais lê-se pior do
 que meia grelha só com nomes.
+
+### Ações de um cartão
+
+**Não há "x" permanente.** O primeiro toque no cartão troca-o por dois alvos, no mesmo sítio e por
+cima dele: uma lupa que abre o detalhe e uma cruz que desplaneia. Um toque em qualquer outro sítio —
+o fundo, outro cartão, um "+" — devolve o cartão ao normal.
+
+Duas razões. Num cartão de ~122px de largura, um "x" permanente rouba a largura ao nome, que é a
+única informação lá. E um alvo de remoção sempre exposto, num ecrã ao alcance de um cotovelo e de
+mãos molhadas, é o pior alvo para deixar acessível — assim o toque destrutivo custa dois toques, e o
+primeiro é o cartão inteiro, muito maior do que os 36px que o "x" tinha.
 
 **As labels ficam de fora.** A 1280×800, tirando o painel de navegação, as margens e a coluna dos
 nomes dos blocos, cada dia fica com ~140px de largura. Uma label legível a 70cm comeria a linha do
@@ -51,8 +62,8 @@ nome. As labels vêem-se no detalhe, a um toque.
 
 Um bloco com mais de duas receitas faz scroll dentro da própria célula.
 
-- Tocar num cartão abre o detalhe da receita (spec 002)
-- Cada cartão tem um "x" que desplaneia com um toque
+- Tocar num cartão revela as ações; a lupa abre o detalhe da receita (spec 002)
+- A cruz desplaneia
 - Um bloco aceita **várias receitas** — para uma sopa mais um prato mais uma sobremesa, ou para
   duplicar a mesma receita e dobrar a quantidade
 - A mesma receita pode aparecer duas vezes no mesmo bloco
@@ -69,8 +80,8 @@ filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
 - [x] O dia de hoje está destacado — coluna com o fundo do acento e o cabeçalho sublinhado
 - [x] Um bloco aceita várias receitas, incluindo a mesma repetida
 - [x] Um cartão no plano mostra thumbnail e nome — sem labels, ver acima
-- [x] Tocar num cartão abre o detalhe
-- [x] O "x" desplaneia com um toque
+- [x] Tocar num cartão revela as ações, e a lupa abre o detalhe
+- [x] A cruz desplaneia, e não está sempre à vista
 - [x] Adicionar abre o seletor de receitas
 - [ ] O seletor tem os filtros do catálogo — dependem da spec 001, que também ainda não os tem
 - [x] Um bloco vazio na semana toda encolhe e dá o espaço aos outros

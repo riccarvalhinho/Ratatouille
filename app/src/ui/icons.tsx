@@ -79,6 +79,15 @@ export function IconRepeat(props: IconProps) {
   );
 }
 
+export function IconSearch(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <circle cx="11" cy="11" r="6.5" />
+      <path d="M16 16l4.5 4.5" />
+    </Svg>
+  );
+}
+
 export function IconPlus(props: IconProps) {
   return (
     <Svg {...props}>

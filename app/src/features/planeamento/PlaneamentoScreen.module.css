@@ -134,11 +134,11 @@
  */
 
 /*
- * Duas variantes, porque o "x" tem de caber sem tapar nada.
+ * Duas variantes: sem imagem o cartão é uma linha com a altura de um alvo de toque; com imagem é
+ * uma coluna, com a fotografia por cima do nome.
  *
- * Sem imagem, o cartão é uma linha — nome à esquerda, "x" numa coluna à direita — e tem a altura de
- * um alvo de toque. Com imagem, é uma coluna, e o "x" passa a viver sobre o canto da fotografia,
- * onde não rouba largura ao nome.
+ * Não há "x" permanente em nenhuma das duas. O primeiro toque no cartão revela as ações por cima
+ * dele — ver `.cardActions`.
  */
 .card {
   position: relative;
@@ -173,7 +173,8 @@
 .cardText {
   flex: 1;
   min-width: 0;
-  padding: var(--space-2) var(--space-1) var(--space-2) var(--space-2);
+  /* Padding simétrico: sem "x" permanente, o nome tem o cartão todo. */
+  padding: var(--space-2);
   font-size: var(--text-sm);
   line-height: 1.25;
 }
@@ -203,36 +204,42 @@
 }
 
 /*
- * 36px de largura é menos do que os 56 do design system, e é uma exceção assumida: numa célula de
- * ~140px, um alvo de 56 deixava o nome sem espaço para duas palavras. A altura acompanha o cartão.
- * Desplanear é reversível com dois toques, portanto o custo de errar é baixo.
+ * --- ações do cartão ---
  *
- * Vem depois do `.cardOpen` no DOM, portanto pinta-se por cima dele sem precisar de z-index.
+ * O primeiro toque no cartão troca-o por dois alvos, no mesmo sítio e por cima dele: ver o detalhe,
+ * e desplanear. Um toque em qualquer outro sítio devolve o cartão ao normal.
+ *
+ * Porquê e não um "x" sempre à vista: num cartão de ~122px de largura, um "x" permanente rouba a
+ * largura ao nome — e um alvo de remoção sempre exposto, num ecrã que se usa com o cotovelo e com
+ * as mãos molhadas, é o pior alvo para deixar acessível. Assim o toque destrutivo custa dois
+ * toques, e o cartão inteiro passa a ser o alvo do primeiro, que é muito maior do que os 36px que
+ * o "x" tinha.
  */
-.cardRemove {
-  position: relative;
+.cardActions {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  gap: 1px;
+  background: var(--color-border);
+}
+
+.cardAction {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 36px;
+  flex: 1;
   border: none;
-  border-left: 1px solid var(--color-border);
-  background: transparent;
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
+  font-size: var(--text-lg);
 }
 
-/* Com imagem, sai do fluxo e assenta no canto da fotografia, com fundo próprio para se ver. */
-.cardWithImage .cardRemove {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  border-left: none;
-  border-radius: 0 0 0 var(--radius-sm);
-  background: rgb(0 0 0 / 50%);
+.cardDetail {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+.cardRemove {
+  background: var(--color-danger);
   color: #fff;
 }
 

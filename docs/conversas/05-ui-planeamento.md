@@ -79,6 +79,16 @@ e a imagem voltou. As labels continuam de fora, porque a largura de cada dia nã
 Aplicado no schema primeiro e depois nos tipos, como manda o CLAUDE.md. Nada no código sabe quantos
 blocos há: tudo deriva de `MEAL_BLOCKS`, portanto voltar a quatro é uma linha em cada sítio.
 
+### Ronda 2 — as ações de um cartão
+
+O "x" sempre à vista saiu. Tocar no cartão passa a revelar dois alvos por cima dele — lupa para o
+detalhe, cruz para desplanear — e um toque noutro sítio devolve tudo ao normal.
+
+Ganha-se nas duas pontas: o nome fica com a largura toda do cartão (a "Salada de grão com atum"
+passou a caber sem reticências), e o toque destrutivo deixa de estar exposto a um cotovelo. É a
+mesma lógica do ecrã morto da conversa 4 — reduzir o que reage ao toque — mas aplicada a um ecrã
+onde os alvos têm de ser pequenos.
+
 ### Por onde continuar
 
 As perguntas 1 e 3 a 7. A mais urgente continua a ser a 4 (Q5, histórico automático ou manual),
@@ -90,3 +100,4 @@ porque decide o que acontece quando uma semana passa.
 |---|---|
 | Blocos do dia: só almoço e jantar (Q6) | `data/schema/plan.schema.json`, `app/src/domain/types.ts` |
 | O cartão do plano tem thumbnail e nome, sem labels | `docs/specs/003-planeamento-semanal.md` |
+| Sem "x" permanente: tocar no cartão revela lupa e cruz por cima dele | `docs/specs/003-planeamento-semanal.md` |

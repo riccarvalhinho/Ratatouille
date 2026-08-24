@@ -24,7 +24,7 @@ import {
   weekdayShort,
 } from '../../domain/planning.ts';
 import { MEAL_BLOCKS, MEAL_BLOCK_NAMES, type MealBlock } from '../../domain/types.ts';
-import { IconDismiss, IconNext, IconPlus, IconPrev } from '../../ui/icons.tsx';
+import { IconDismiss, IconNext, IconPlus, IconPrev, IconSearch } from '../../ui/icons.tsx';
 import { SeletorReceitas } from './SeletorReceitas.tsx';
 import styles from './PlaneamentoScreen.module.css';
 
@@ -41,9 +41,21 @@ interface PendingSlot {
   block: MealBlock;
 }
 
+/** A receita planeada que está com as ações à vista. */
+interface SelectedEntry {
+  date: string;
+  block: MealBlock;
+  index: number;
+}
+
+function isSameEntry(a: SelectedEntry | undefined, b: SelectedEntry): boolean {
+  return a?.date === b.date && a?.block === b.block && a?.index === b.index;
+}
+
 export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreenProps) {
   const [week, setWeek] = useState(() => isoWeekOf(today));
   const [pending, setPending] = useState<PendingSlot | undefined>();
+  const [selected, setSelected] = useState<SelectedEntry | undefined>();
 
   const plan = plans.weekPlan(week);
   const dates = datesOfIsoWeek(week);
@@ -51,8 +63,12 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
   const total = countEntries(plan);
   const isCurrentWeek = week === isoWeekOf(today);
 
+  /*
+   * Tocar em qualquer sítio fecha as ações do cartão aberto. Os toques que têm significado próprio
+   * — outro cartão, um "+" — param a propagação e tratam disso eles mesmos.
+   */
   return (
-    <div className={styles.screen}>
+    <div className={styles.screen} onClick={() => setSelected(undefined)}>
       <div className={styles.header}>
         <div>
           <h2 className={styles.title}>{formatWeekRange(week)}</h2>
@@ -153,22 +169,51 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
                             <span className={styles.cardName}>{recipe?.name ?? entry.recipeId}</span>
                           </div>
 
-                          {/* Camada de toque por cima do cartão. Ver a nota no CSS. */}
+                          {/*
+                            O cartão inteiro é o alvo, e o primeiro toque só revela as ações. Num
+                            cartão de 122px de largura não cabia um "x" permanente sem roubar o
+                            nome — e um "x" sempre à vista, ao alcance de um cotovelo, é o alvo que
+                            menos se quer acertar por engano.
+                          */}
                           <button
                             type="button"
                             className={styles.cardOpen}
-                            onClick={() => navigate({ screen: 'planeamento', recipeId: entry.recipeId })}
-                            aria-label={`Abrir ${recipe?.name ?? entry.recipeId}`}
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              const here = { date, block, index };
+                              setSelected((current) => (isSameEntry(current, here) ? undefined : here));
+                            }}
+                            aria-label={`Ações de ${recipe?.name ?? entry.recipeId}`}
+                            aria-expanded={isSameEntry(selected, { date, block, index })}
                           />
 
-                          <button
-                            type="button"
-                            className={styles.cardRemove}
-                            onClick={() => plans.removeRecipe(week, date, block, index)}
-                            aria-label={`Desplanear ${recipe?.name ?? entry.recipeId}`}
-                          >
-                            <IconDismiss />
-                          </button>
+                          {isSameEntry(selected, { date, block, index }) && (
+                            <div className={styles.cardActions}>
+                              <button
+                                type="button"
+                                className={`${styles.cardAction} ${styles.cardDetail}`}
+                                onClick={(event) => {
+                                  event.stopPropagation();
+                                  navigate({ screen: 'planeamento', recipeId: entry.recipeId });
+                                }}
+                                aria-label={`Ver ${recipe?.name ?? entry.recipeId}`}
+                              >
+                                <IconSearch />
+                              </button>
+                              <button
+                                type="button"
+                                className={`${styles.cardAction} ${styles.cardRemove}`}
+                                onClick={(event) => {
+                                  event.stopPropagation();
+                                  setSelected(undefined);
+                                  plans.removeRecipe(week, date, block, index);
+                                }}
+                                aria-label={`Desplanear ${recipe?.name ?? entry.recipeId}`}
+                              >
+                                <IconDismiss />
+                              </button>
+                            </div>
+                          )}
                         </div>
                       );
                     })}
@@ -181,7 +226,11 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
                     <button
                       type="button"
                       className={entries.length === 0 ? styles.addWhole : styles.addStrip}
-                      onClick={() => setPending({ date, block })}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        setSelected(undefined);
+                        setPending({ date, block });
+                      }}
                       aria-label={`Planear ${MEAL_BLOCK_NAMES[block].toLowerCase()} de ${weekdayShort(date)} ${dayOfMonth(date)}`}
                     >
                       <IconPlus />
