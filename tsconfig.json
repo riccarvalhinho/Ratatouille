@@ -14,5 +14,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["tools/**/*.ts", "app/src/domain/planning.ts", "app/src/domain/types.ts"]
+  "include": ["tools/**/*.ts", "app/src/domain/*.ts"],
+  "exclude": ["app/src/domain/*.test.ts"]
 }
