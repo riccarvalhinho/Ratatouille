@@ -1,0 +1,150 @@
+{
+  "id": "pao-recheado-com-chourico-e-queijo",
+  "name": "Pão recheado com chouriço e queijo",
+  "description": "Pão rústico oco, recheado com uma pasta de chouriço e queijos, e gratinado no forno. Para entrada ou para petiscos a partilhar.",
+  "narrative": "Comece por pré-aquecer o forno a 200 graus. Corte a tampa do pão e retire o miolo num bloco só, que depois se corta em cubos e se reserva — vão ao forno com o pão e servem para molhar. Tire a pele ao chouriço e triture-o até virar pasta. Passe a pasta para uma taça e junte-lhe a maionese, o queijo creme e a mozzarella, temperando com alho em pó, orégãos e pimenta. Recheie o pão com a mistura, tape com folha de alumínio e leve ao forno num tabuleiro forrado, com os cubos de miolo e a tampa em tiras à volta. Ao fim de vinte minutos tire o alumínio e deixe gratinar mais cinco. Serve-se quente, para as pessoas irem tirando à mão.",
+  "servings": 6,
+  "labels": [
+    "entrada",
+    "carne",
+    "festa",
+    "conforto",
+    "fim-de-semana"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "forno",
+    "processador-de-alimentos",
+    "tabuleiro-de-forno",
+    "taca",
+    "papel-vegetal",
+    "folha-de-aluminio"
+  ],
+  "ingredients": [
+    {
+      "ref": "pao-rustico",
+      "quantity": 1,
+      "unit": "un",
+      "note": "de cerca de 400 g"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 150,
+      "unit": "g",
+      "note": "sem pele"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-creme",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-mozzarella",
+      "quantity": 150,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "alho-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pré-aqueça o forno.",
+      "temperatureC": 200
+    },
+    {
+      "text": "Corte a tampa do pão e retire o miolo num bloco só.",
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "text": "Corte o miolo em cubos e reserve.",
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "text": "Retire a pele ao chouriço e triture até obter uma pasta.",
+      "ingredientRefs": [
+        "chourico"
+      ]
+    },
+    {
+      "text": "Numa taça, junte à pasta a maionese, o queijo creme e a mozzarella.",
+      "ingredientRefs": [
+        "maionese",
+        "queijo-creme",
+        "queijo-mozzarella"
+      ]
+    },
+    {
+      "text": "Tempere com alho em pó, orégãos e pimenta.",
+      "ingredientRefs": [
+        "alho-em-po",
+        "oregaos",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "text": "Recheie o pão com a mistura e tape com folha de alumínio.",
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "text": "Disponha o pão num tabuleiro forrado, com os cubos de miolo e a tampa em tiras à volta."
+    },
+    {
+      "text": "Leve ao forno.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true
+    },
+    {
+      "text": "Retire o alumínio e deixe gratinar até dourar.",
+      "durationMinutes": 5,
+      "temperatureC": 200,
+      "passive": true
+    },
+    {
+      "text": "Sirva quente."
+    }
+  ],
+  "nutrition": {
+    "method": "calculado",
+    "calories": 485,
+    "fatGrams": 28,
+    "saturatedFatGrams": 10
+  },
+  "source": {
+    "kind": "web",
+    "title": "Pão recheado com chouriço e queijo",
+    "author": "Equipa Pingo Doce",
+    "url": "https://www.pingodoce.pt/receitas/pao-recheado-com-chourico-e-queijo/"
+  },
+  "createdAt": "2026-08-24",
+  "updatedAt": "2026-08-24"
+}
