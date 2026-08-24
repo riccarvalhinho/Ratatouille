@@ -8,10 +8,16 @@ describe('parseHash', () => {
     expect(parseHash('#/compras')).toEqual({ screen: 'compras' });
   });
 
-  it('cai na home quando o hash está vazio ou é desconhecido', () => {
-    expect(parseHash('')).toEqual({ screen: 'home' });
-    expect(parseHash('#/')).toEqual({ screen: 'home' });
-    expect(parseHash('#/inventado')).toEqual({ screen: 'home' });
+  it('abre nas receitas quando não há rota — é o ecrã que tem conteúdo', () => {
+    // Abrir no "Hoje", que é só um marcador até ao M3, deixava a app pior do que era
+    // antes de haver navegação.
+    expect(parseHash('')).toEqual({ screen: 'receitas' });
+    expect(parseHash('#/')).toEqual({ screen: 'receitas' });
+    expect(parseHash('#/inventado')).toEqual({ screen: 'receitas' });
+  });
+
+  it('continua a saber ir ao "Hoje" quando pedido', () => {
+    expect(parseHash('#/home')).toEqual({ screen: 'home' });
   });
 
   it('lê a receita aberta por cima do ecrã', () => {
