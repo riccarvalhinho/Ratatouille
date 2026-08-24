@@ -153,6 +153,12 @@ passou a responder melhor e de forma mais útil.
 `status` (`rascunho` ou `revisto`, ausente significa revisto) e `gaps` — o que o importador não
 conseguiu determinar. Nada fica em branco em silêncio.
 
+**O schema trata os dois estados de forma diferente**, e é isso que permite gravar uma receita
+incompleta sem abrir a mão da validação: uma receita **revista** tem de estar completa — nome,
+labels, método, tempos, rendimento, ingredientes e passos; um **rascunho** pode ter buracos, mas é
+obrigado a declará-los em `gaps`, que não pode estar vazio. Um ficheiro incompleto nunca passa por
+pronto.
+
 `source` com `kind` (incluindo `video`), `title`, `author` e `url`. As instruções são sempre
 reescritas, nunca copiadas.
 

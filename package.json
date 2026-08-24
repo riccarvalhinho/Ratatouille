@@ -15,7 +15,10 @@
     "typecheck": "tsc --noEmit -p tsconfig.json && npm --prefix app run typecheck",
     "lint": "npm --prefix app run lint",
     "test": "npm --prefix app run test",
-    "check": "npm run validate && npm run lint && npm run typecheck && npm run test"
+    "check": "npm run validate && npm run lint && npm run typecheck && npm run test",
+    "import:match": "tsx tools/import/match.ts",
+    "import:save": "tsx tools/import/save-draft.ts",
+    "import:fetch": "tsx tools/import/fetch-source.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

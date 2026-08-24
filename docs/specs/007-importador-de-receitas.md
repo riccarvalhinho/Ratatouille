@@ -1,7 +1,7 @@
 # Spec 007 — Importador de receitas
 
 **Milestone:** M1
-**Estado:** Pronta
+**Estado:** Parcialmente implementada — ver "O que já existe" 
 **Depende de:** `docs/product/metadata-receitas.md`, `data/schema/recipe.schema.json`
 
 ## Objetivo
@@ -13,6 +13,27 @@ perguntado, não inventado nem deixado em branco.
 É esta a feature que torna o catálogo possível. Sem ela, encher o catálogo é escrever JSON à mão,
 e ninguém escreve JSON à mão vezes suficientes para ter cem receitas.
 
+## O que já existe
+
+| Peça | Onde | Estado |
+|---|---|---|
+| Correspondência de ingredientes ao vocabulário canónico | `app/src/domain/ingredient-matching.ts` | Feito, 21 testes |
+| Deteção de lacunas e perguntas por ordem de impacto | `app/src/domain/gaps.ts` | Feito, 16 testes |
+| CLI de correspondência | `npm run import:match` | Feito |
+| CLI de gravação validada | `npm run import:save` | Feito |
+| Protocolo de importação ponta a ponta | `.claude/skills/importar-receita/` | Feito |
+| Obter conteúdo de um link | — | **Bloqueado**, ver abaixo |
+
+### A limitação de rede
+
+**As sessões de Claude Code não conseguem abrir sites de receitas** — o proxy de saída bloqueia-os,
+confirmado com `curl` e com WebFetch. Não é limitação do código: as mesmas ferramentas correm bem
+num computador com rede normal.
+
+Consequência prática: para links, o conteúdo tem de ser colado pelo utilizador, ou as ferramentas
+corridas localmente. Áudio, texto e fotografia não são afetados — chegam diretamente à sessão, e o
+áudio é aliás a fonte mais fácil de todas.
+
 ## Fontes aceites
 
 | Fonte | Como se extrai |
@@ -20,7 +41,8 @@ e ninguém escreve JSON à mão vezes suficientes para ter cem receitas.
 | Link de site de receitas | JSON-LD `schema.org/Recipe` quando existe — é estruturado e fiável. Senão, o HTML. |
 | Link de vídeo | Transcrição/legendas, mais o título e a descrição, que é onde os ingredientes costumam estar. |
 | Texto colado | Direto. |
-| Fotografia de um livro ou caderno | OCR. |
+| Fotografia de um livro ou caderno | Leitura direta da imagem. |
+| Áudio a descrever a receita | Chega transcrito à sessão. É a fonte mais fácil: não tem HTML para limpar nem direitos de autor de permeio. |
 
 O `schema.org/Recipe` merece nota à parte: a maior parte dos sites de receitas publica-o, e traz
 ingredientes, passos, tempos e por vezes nutrição já estruturados. Quando existe, é a diferença

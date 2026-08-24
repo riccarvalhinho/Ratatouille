@@ -4,11 +4,23 @@
   "title": "Receita",
   "description": "Uma receita. Um ficheiro por receita em data/recipes/<id>.json. As decisões por trás de cada campo estão em docs/product/metadata-receitas.md e em docs/conversas/01-metadata-receitas.md.",
   "type": "object",
-  "required": ["id", "name", "labels", "methods", "timing", "ingredients", "steps"],
   "additionalProperties": false,
-  "anyOf": [
-    { "required": ["servings"] },
-    { "required": ["yield"] }
+  "allOf": [
+    {
+      "description": "Uma receita revista tem de estar completa. Um rascunho pode ter buracos, mas tem de os declarar em gaps — é o que impede um ficheiro incompleto de passar por pronto.",
+      "if": {
+        "properties": { "status": { "const": "rascunho" } },
+        "required": ["status"]
+      },
+      "then": {
+        "required": ["id", "name", "labels", "ingredients", "steps", "gaps"],
+        "properties": { "gaps": { "minItems": 1 } }
+      },
+      "else": {
+        "required": ["id", "name", "labels", "methods", "timing", "ingredients", "steps"],
+        "anyOf": [{ "required": ["servings"] }, { "required": ["yield"] }]
+      }
+    }
   ],
   "properties": {
     "id": {

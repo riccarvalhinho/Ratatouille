@@ -9,6 +9,8 @@ export const paths = {
   taxonomies: path.join(repoRoot, 'data', 'taxonomies'),
   planning: path.join(repoRoot, 'data', 'planning'),
   state: path.join(repoRoot, 'data', 'state'),
+  /** Receitas recolhidas de links, à espera de serem normalizadas e revistas. */
+  inbox: path.join(repoRoot, 'data', 'inbox'),
   media: path.join(repoRoot, 'media'),
   bundleDir: path.join(repoRoot, 'app', 'public', 'data'),
 } as const;
