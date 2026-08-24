@@ -1,27 +1,27 @@
 .app {
+  display: flex;
   min-height: 100vh;
+}
+
+.main {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .header {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
-  gap: var(--space-3) var(--space-5);
-  padding: var(--space-5) var(--space-6);
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
   border-bottom: 1px solid var(--color-border);
   background: var(--color-surface);
 }
 
-.title {
-  font-size: var(--text-xl);
+.brand {
+  font-size: var(--text-lg);
   font-weight: 700;
-}
-
-.subtitle {
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
 }
 
 .origin {
@@ -33,19 +33,9 @@
   font-size: var(--text-xs);
 }
 
-.main {
+.content {
   flex: 1;
   padding: var(--space-6);
-}
-
-/* auto-fill com minmax mantém os cartões legíveis do telemóvel ao tablet sem media queries. */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--space-5);
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .state {
@@ -54,7 +44,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-3);
-  min-height: 60vh;
+  min-height: 100vh;
   padding: var(--space-6);
   text-align: center;
   color: var(--color-text-muted);
@@ -68,11 +58,4 @@
 .stateDetail {
   font-size: var(--text-sm);
   max-width: 44ch;
-}
-
-.footer {
-  padding: var(--space-5) var(--space-6) var(--space-8);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
 }
