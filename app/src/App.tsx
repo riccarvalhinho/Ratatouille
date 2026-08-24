@@ -3,12 +3,14 @@ import { loadBundle, type BundleOrigin } from './data/bundle.ts';
 import { buildCatalogue, type Catalogue } from './data/catalogue.ts';
 import { useLocalStore } from './data/local-store.ts';
 import { useOutbox } from './data/outbox-store.ts';
+import { useShoppingChecks } from './data/shopping-checks.ts';
 import { navigate, useRoute } from './data/router.ts';
 import { todayIso } from './domain/planning.ts';
 import type { DataBundle } from './domain/types.ts';
 import { CatalogoScreen } from './features/catalogo/CatalogoScreen.tsx';
 import { ModoCozinha } from './features/cozinha/ModoCozinha.tsx';
 import { DetalheReceita } from './features/detalhe/DetalheReceita.tsx';
+import { ComprasScreen } from './features/compras/ComprasScreen.tsx';
 import { DefinicoesScreen } from './features/definicoes/DefinicoesScreen.tsx';
 import { PlaneamentoScreen } from './features/planeamento/PlaneamentoScreen.tsx';
 import { NavRail } from './ui/NavRail.tsx';
@@ -44,6 +46,7 @@ export function App() {
 
   const outbox = useOutbox();
   const store = useLocalStore(state.status === 'ready' ? state.bundle : undefined, outbox);
+  const checks = useShoppingChecks();
 
   // Recalculado a cada render em vez de memorizado: o tablet fica horas ligado e um "hoje" fixado
   // no arranque destacaria o dia errado depois da meia-noite.
@@ -132,13 +135,10 @@ export function App() {
 
           {route.screen === 'definicoes' && <DefinicoesScreen outbox={outbox} />}
 
-          {route.screen === 'compras' && (
-            <PorConstruir title="Compras" spec="docs/specs/004-lista-de-compras.md" milestone="M4">
-              A lista sai sozinha do plano da semana, agrupada por zona do supermercado. A agregação
-              já está feita e testada — soma o mesmo ingrediente entre receitas e converte unidades.
-              Falta o ecrã e um plano com receitas suficientes para valer a pena.
-            </PorConstruir>
+          {route.screen === 'compras' && catalogue && store.ready && checks.ready && (
+            <ComprasScreen catalogue={catalogue} store={store} checks={checks} today={today} />
           )}
+
         </main>
       </div>
 

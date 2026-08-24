@@ -1,0 +1,144 @@
+/*
+ * Uma coluna só, com largura de leitura.
+ *
+ * Ao contrário dos outros ecrãs, este não tenta ocupar os 1280px do tablet: a lista lê-se de cima
+ * para baixo e uma coluna larga só afastava o nome da quantidade.
+ */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 640px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.headerText { display: flex; flex-direction: column; }
+.title { font-size: var(--text-xl); margin: 0; }
+.count { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.weekNav { display: flex; gap: var(--space-3); margin-left: auto; }
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-xl);
+}
+
+.empty { color: var(--color-text-muted); max-width: 44ch; }
+
+.groups,
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.groups { display: flex; flex-direction: column; gap: var(--space-6); }
+
+.groupTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.items {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.items > li + li { border-top: 1px solid var(--color-border); }
+
+/*
+ * A linha inteira é o alvo, e tem a altura de um alvo de toque. Num corredor de supermercado, com o
+ * telemóvel numa mão, acertar numa caixa de 24px é pedir demasiado.
+ */
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: var(--touch-target);
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+}
+
+/* Marcado atenua-se mas não sai da lista: o sítio dele é a referência para o seguinte. */
+.itemDone { opacity: 0.45; }
+.itemDone .itemName { text-decoration: line-through; }
+
+.checkbox {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  accent-color: var(--color-accent);
+}
+
+.itemText { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+.itemName {
+  font-size: var(--text-base);
+  line-height: 1.25;
+}
+
+/* De onde vem: a resposta ao "só uso isto numa receita, vale a pena?". */
+.itemFrom {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemAmount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.itemExtra { font-size: var(--text-xs); font-weight: 400; color: var(--color-text-muted); }
+
+.clear {
+  align-self: flex-start;
+  min-height: var(--touch-target);
+  padding: 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.note {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  max-width: 56ch;
+}
+
+/* No telemóvel o título da semana não precisa do tamanho de um cabeçalho de tablet. */
+@media (max-width: 640px) {
+  .title { font-size: var(--text-lg); }
+  .screen { gap: var(--space-4); }
+}

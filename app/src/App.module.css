@@ -79,3 +79,17 @@
   font-size: var(--text-xs);
   font-weight: 600;
 }
+
+/*
+ * Telemóvel: o painel passa para baixo.
+ *
+ * Não é contradizer o design system, é aplicar a mesma razão a um ecrã com a forma oposta. A regra
+ * era "vertical porque num tablet em horizontal a altura é a dimensão escassa"; num telemóvel em
+ * vertical é a largura que escasseia, e 72px de painel comem um quinto do ecrã.
+ *
+ * O único ecrã que se usa assim é a lista de compras, dentro do supermercado — ver a spec 004.
+ */
+@media (max-width: 640px) {
+  .app { flex-direction: column; }
+  .content { padding: var(--space-4); }
+}
