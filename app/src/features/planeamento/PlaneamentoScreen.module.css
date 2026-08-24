@@ -1,0 +1,276 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  height: 100%;
+  min-height: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.title { font-size: var(--text-xl); margin: 0; }
+.count { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.weekNav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-left: auto;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-xl);
+}
+
+.todayButton {
+  min-height: var(--touch-target);
+  padding: 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.todayButton:disabled { opacity: 0.4; }
+
+/*
+ * A grelha do horário.
+ *
+ * Sete colunas iguais e sem scroll horizontal, que é o requisito da spec. A coluna dos nomes dos
+ * blocos é fixa a 104px; o resto divide-se em partes iguais, o que a 1280 dá ~140px por dia.
+ *
+ * As linhas vêm do componente em `grid-template-rows`, porque só ele sabe quais é que estão vazias
+ * na semana toda: essas ficam `auto` e encolhem, e as restantes dividem entre si a altura que sobra.
+ * É isto que faz a semana caber nos 800px sem scroll vertical — que a spec não exige, mas que num
+ * tablet na parede é a mesma coisa que caber.
+ */
+.grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 88px repeat(7, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.dayHead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+}
+
+.dayName { font-size: var(--text-sm); }
+.dayNumber { font-size: var(--text-lg); font-weight: 700; color: var(--color-text); }
+
+/* Hoje: sublinhado com o acento. Só a cor não chegava com o ecrã ao sol. */
+.dayToday {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.dayToday .dayNumber { color: var(--color-accent); }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--space-3);
+}
+
+.blockName {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.2;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: 0;
+  padding: var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow-y: auto;
+}
+
+/* Bloco sem nada em sete dias: fica uma tira, e o espaço vai para o almoço e o jantar. */
+.rowCompact { padding-top: var(--space-2); }
+.cellCompact { height: var(--touch-target); }
+
+/* A coluna de hoje fica com o fundo do acento, para a semana se ler de relance. */
+.cellToday { background: var(--color-accent-soft); border-color: var(--color-accent); }
+
+/*
+ * --- cartão de receita no plano ---
+ *
+ * Com dois blocos em vez de quatro (Q6), cada célula passou de ~130 para ~265px de altura, e a
+ * thumbnail voltou a caber — foi exatamente a revisão que a spec previa se as células crescessem.
+ *
+ * Mas só quando a receita **tem** imagem. Uma receita sem imagem fica com o cartão só de nome, em
+ * vez de 64px de marcador cinzento: metade da grelha cheia de emojis iguais lê-se pior do que
+ * metade da grelha só com nomes.
+ *
+ * As labels continuam de fora. A largura não mudou — cada dia tem ~140px — e uma label legível a
+ * 70cm ainda comeria a linha do nome.
+ */
+
+/*
+ * Duas variantes: sem imagem o cartão é uma linha com a altura de um alvo de toque; com imagem é
+ * uma coluna, com a fotografia por cima do nome.
+ *
+ * Não há "x" permanente em nenhuma das duas. O primeiro toque no cartão revela as ações por cima
+ * dele — ver `.cardActions`.
+ */
+.card {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  height: var(--touch-target);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.cardWithImage {
+  flex-direction: column;
+  height: 116px;
+}
+
+.thumb {
+  display: block;
+  width: 100%;
+  height: 64px;
+  object-fit: cover;
+}
+
+/*
+ * O nome fica fora do botão, e o botão é uma camada transparente por cima do cartão.
+ *
+ * Assim a área de toque cobre o cartão inteiro, incluindo o padding — num alvo estreito cada pixel
+ * conta — e o texto fica num bloco normal, onde o corte a duas linhas se comporta de forma
+ * previsível. O botão continua a ser um `<button>` a sério: leva `aria-label` em vez de texto.
+ */
+.cardText {
+  flex: 1;
+  min-width: 0;
+  /* Padding simétrico: sem "x" permanente, o nome tem o cartão todo. */
+  padding: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.25;
+}
+
+/* Na variante com imagem o texto tem altura fixa: duas linhas a 16px mais o padding. */
+.cardWithImage .cardText {
+  flex: none;
+  height: 52px;
+  padding: var(--space-2);
+}
+
+/* Duas linhas e reticências. O corte vive num filho normal do bloco do texto. */
+.cardName {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Cobre o cartão todo. O "x" fica por cima, pela ordem no DOM e pelo `position`. */
+.cardOpen {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: transparent;
+}
+
+/*
+ * --- ações do cartão ---
+ *
+ * O primeiro toque no cartão troca-o por dois alvos, no mesmo sítio e por cima dele: ver o detalhe,
+ * e desplanear. Um toque em qualquer outro sítio devolve o cartão ao normal.
+ *
+ * Porquê e não um "x" sempre à vista: num cartão de ~122px de largura, um "x" permanente rouba a
+ * largura ao nome, que é a única informação lá. E numa grelha densa, onde 14 células se tocam umas
+ * nas outras, uma ação destrutiva a um toque é fácil de acertar por engano — não por se estar a
+ * cozinhar, que aqui não se está, mas por os alvos serem pequenos e vizinhos. Assim desplanear
+ * custa dois toques, e o primeiro é o cartão inteiro, muito maior do que os 36px do "x".
+ */
+.cardActions {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  gap: 1px;
+  background: var(--color-border);
+}
+
+.cardAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border: none;
+  font-size: var(--text-lg);
+}
+
+.cardDetail {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+.cardRemove {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+/* --- adicionar --- */
+
+.addWhole,
+.addStrip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+}
+
+/* Bloco vazio: o alvo é a célula toda, que é o maior que este layout permite. */
+.addWhole { flex: 1; min-height: 44px; border-color: transparent; }
+
+/* Bloco com receitas: uma tira por baixo delas. */
+.addStrip { min-height: 44px; flex-shrink: 0; }
+
+.footnote {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  max-width: 92ch;
+}
+
+/* Em ecrãs estreitos a grelha de sete colunas não cabe: passa a uma coluna por dia, empilhada. */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 88px repeat(7, minmax(64px, 1fr)); }
+  .cardName { font-size: var(--text-xs); }
+}

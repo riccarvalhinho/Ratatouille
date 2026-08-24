@@ -38,7 +38,7 @@
             "properties": {
               "recipeId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
               "date": { "type": "string", "format": "date" },
-              "block": { "enum": ["pequeno-almoco", "almoco", "lanche", "jantar"] },
+              "block": { "enum": ["almoco", "jantar"] },
               "rating": {
                 "description": "Correu bem? 1 a 5. Opcional.",
                 "type": "integer", "minimum": 1, "maximum": 5
