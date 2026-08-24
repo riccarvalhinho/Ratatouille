@@ -141,12 +141,19 @@ export function PlaneamentoScreen({ catalogue, plans, today }: PlaneamentoScreen
                     {entries.map((entry, index) => {
                       const recipe = catalogue.recipes.find((r) => r.id === entry.recipeId);
                       return (
-                        <div key={`${entry.recipeId}-${index}`} className={styles.card}>
+                        <div
+                          key={`${entry.recipeId}-${index}`}
+                          className={recipe?.image ? `${styles.card} ${styles.cardWithImage}` : styles.card}
+                        >
+                          {recipe?.image && (
+                            <img className={styles.thumb} src={recipe.image} alt="" loading="lazy" />
+                          )}
+
                           <div className={styles.cardText}>
                             <span className={styles.cardName}>{recipe?.name ?? entry.recipeId}</span>
                           </div>
 
-                          {/* Camada de toque por cima do cartão, tirando o "x". Ver a nota no CSS. */}
+                          {/* Camada de toque por cima do cartão. Ver a nota no CSS. */}
                           <button
                             type="button"
                             className={styles.cardOpen}

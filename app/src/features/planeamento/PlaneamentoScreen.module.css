@@ -122,35 +122,52 @@
 /*
  * --- cartão de receita no plano ---
  *
- * Só o nome, sem thumbnail, ao contrário do que a spec dizia. A conta é simples: numa célula de
- * ~140×130px, uma imagem de 56px de altura deixava o nome a 14px, que está abaixo do mínimo do
- * design system e não se lê a 70cm. Sem imagem, o nome fica a 16px, cabem duas receitas por bloco
- * sem cortar nenhuma, e continua a reconhecer-se o prato — que é para o que o cartão serve aqui.
+ * Com dois blocos em vez de quatro (Q6), cada célula passou de ~130 para ~265px de altura, e a
+ * thumbnail voltou a caber — foi exatamente a revisão que a spec previa se as células crescessem.
  *
- * A imagem não desapareceu do produto: está no catálogo, no detalhe e no seletor, onde há largura
- * para ela. Se um dia as células crescerem (menos blocos, ou um tablet maior), isto revê-se.
+ * Mas só quando a receita **tem** imagem. Uma receita sem imagem fica com o cartão só de nome, em
+ * vez de 64px de marcador cinzento: metade da grelha cheia de emojis iguais lê-se pior do que
+ * metade da grelha só com nomes.
+ *
+ * As labels continuam de fora. A largura não mudou — cada dia tem ~140px — e uma label legível a
+ * 70cm ainda comeria a linha do nome.
  */
 
+/*
+ * Duas variantes, porque o "x" tem de caber sem tapar nada.
+ *
+ * Sem imagem, o cartão é uma linha — nome à esquerda, "x" numa coluna à direita — e tem a altura de
+ * um alvo de toque. Com imagem, é uma coluna, e o "x" passa a viver sobre o canto da fotografia,
+ * onde não rouba largura ao nome.
+ */
 .card {
   position: relative;
   display: flex;
   align-items: stretch;
   flex-shrink: 0;
-  /*
-   * Altura fixa, e não dada pelo conteúdo: um nome de três linhas empurraria a receita seguinte
-   * para fora da célula. 56px são duas linhas a 16px mais o padding.
-   */
-  height: 56px;
+  height: var(--touch-target);
   border-radius: var(--radius-sm);
   background: var(--color-bg);
   overflow: hidden;
 }
 
+.cardWithImage {
+  flex-direction: column;
+  height: 116px;
+}
+
+.thumb {
+  display: block;
+  width: 100%;
+  height: 64px;
+  object-fit: cover;
+}
+
 /*
  * O nome fica fora do botão, e o botão é uma camada transparente por cima do cartão.
  *
- * Assim a área de toque cobre o cartão inteiro, incluindo o padding — num alvo de 94×56px cada
- * pixel conta — e o texto fica num bloco normal, onde o corte a duas linhas se comporta de forma
+ * Assim a área de toque cobre o cartão inteiro, incluindo o padding — num alvo estreito cada pixel
+ * conta — e o texto fica num bloco normal, onde o corte a duas linhas se comporta de forma
  * previsível. O botão continua a ser um `<button>` a sério: leva `aria-label` em vez de texto.
  */
 .cardText {
@@ -161,7 +178,14 @@
   line-height: 1.25;
 }
 
-/* Duas linhas e reticências. O corte vive num filho normal do bloco do texto, não no item de flex. */
+/* Na variante com imagem o texto tem altura fixa: duas linhas a 16px mais o padding. */
+.cardWithImage .cardText {
+  flex: none;
+  height: 52px;
+  padding: var(--space-2);
+}
+
+/* Duas linhas e reticências. O corte vive num filho normal do bloco do texto. */
 .cardName {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -170,18 +194,20 @@
   overflow: hidden;
 }
 
-/* Cobre o cartão todo menos o "x". */
+/* Cobre o cartão todo. O "x" fica por cima, pela ordem no DOM e pelo `position`. */
 .cardOpen {
   position: absolute;
-  inset: 0 36px 0 0;
+  inset: 0;
   border: none;
   background: transparent;
 }
 
 /*
  * 36px de largura é menos do que os 56 do design system, e é uma exceção assumida: numa célula de
- * ~140px, um alvo de 56 deixava o nome sem espaço para duas palavras. A altura acompanha o cartão,
- * o que dá 36×56, e desplanear é reversível com dois toques.
+ * ~140px, um alvo de 56 deixava o nome sem espaço para duas palavras. A altura acompanha o cartão.
+ * Desplanear é reversível com dois toques, portanto o custo de errar é baixo.
+ *
+ * Vem depois do `.cardOpen` no DOM, portanto pinta-se por cima dele sem precisar de z-index.
  */
 .cardRemove {
   position: relative;
@@ -195,6 +221,19 @@
   background: transparent;
   color: var(--color-text-muted);
   font-size: var(--text-sm);
+}
+
+/* Com imagem, sai do fluxo e assenta no canto da fotografia, com fundo próprio para se ver. */
+.cardWithImage .cardRemove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-left: none;
+  border-radius: 0 0 0 var(--radius-sm);
+  background: rgb(0 0 0 / 50%);
+  color: #fff;
 }
 
 /* --- adicionar --- */

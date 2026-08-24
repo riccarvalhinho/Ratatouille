@@ -17,11 +17,12 @@ Semana inteira num ecrã, em forma de horário: os dias como colunas, os blocos 
 Nenhum scroll horizontal — a semana toda cabe na largura do tablet em horizontal. E, na prática,
 também sem scroll vertical: as linhas repartem entre si a altura que sobra.
 
-Blocos do dia: pequeno-almoço, almoço, lanche, jantar (questão Q6).
+Blocos do dia: **almoço e jantar** (Q6, fechada). São as refeições que se decidem de véspera. O
+pequeno-almoço e o lanche acrescentam-se se a necessidade aparecer — é uma linha no schema e outra
+em `MEAL_BLOCKS`.
 
-**Um bloco vazio na semana toda encolhe.** As quatro linhas estão sempre lá — não se esconde um
-bloco só porque está vazio, ou nunca se planeava um pequeno-almoço — mas o espaço vertical vai para
-as linhas que têm receitas. É o que faz a diferença entre um cartão legível e um cartão cortado.
+**Um bloco vazio na semana toda encolhe.** As linhas estão sempre lá — não se esconde um bloco só
+porque está vazio — mas o espaço vertical vai para as que têm receitas.
 
 ### Navegação
 
@@ -32,17 +33,21 @@ Semanas passadas são navegáveis e mostram o que foi planeado — é assim que 
 
 ### Receitas no plano
 
-Cada receita planeada aparece como um cartão pequeno, **só com o nome**.
+Cada receita planeada aparece como um cartão pequeno, com **thumbnail e nome**. Sem labels.
 
-A thumbnail e as labels saíram daqui, e a razão é uma medida e não uma preferência: a 1280×800,
-tirando o painel de navegação, as margens e a coluna dos nomes dos blocos, cada dia fica com ~140px
-de largura e cada bloco com ~130px de altura. Nesse espaço, uma imagem de 56px deixava o nome a 14px
-— abaixo do mínimo do design system, e ilegível a 70cm. Sem imagem, o nome fica a 16px, cabem duas
-receitas por bloco sem cortar nenhuma, e continua a reconhecer-se o prato, que é para o que o cartão
-serve aqui.
+O cartão tem duas variantes, e o motivo é o espaço:
 
-A imagem e as labels não desapareceram do produto: estão no catálogo, no detalhe e no seletor, onde
-há largura para elas. Se as células crescerem — menos blocos, ou um tablet maior — isto revê-se.
+| Receita | Cartão |
+|---|---|
+| Com imagem | Thumbnail de 64px, nome por baixo, "x" sobre o canto da fotografia. 116px de altura |
+| Sem imagem | Só o nome, com o "x" numa coluna à direita. 56px de altura |
+
+Uma receita sem imagem não leva marcador cinzento: meia grelha cheia de emojis iguais lê-se pior do
+que meia grelha só com nomes.
+
+**As labels ficam de fora.** A 1280×800, tirando o painel de navegação, as margens e a coluna dos
+nomes dos blocos, cada dia fica com ~140px de largura. Uma label legível a 70cm comeria a linha do
+nome. As labels vêem-se no detalhe, a um toque.
 
 Um bloco com mais de duas receitas faz scroll dentro da própria célula.
 
@@ -63,7 +68,7 @@ filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
 - [x] Dá para navegar para semanas anteriores e seguintes, e voltar à atual
 - [x] O dia de hoje está destacado — coluna com o fundo do acento e o cabeçalho sublinhado
 - [x] Um bloco aceita várias receitas, incluindo a mesma repetida
-- [x] Um cartão no plano mostra o nome — sem thumbnail nem labels, ver acima
+- [x] Um cartão no plano mostra thumbnail e nome — sem labels, ver acima
 - [x] Tocar num cartão abre o detalhe
 - [x] O "x" desplaneia com um toque
 - [x] Adicionar abre o seletor de receitas

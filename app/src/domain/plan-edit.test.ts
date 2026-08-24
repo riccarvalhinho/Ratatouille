@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { addToBlock, countEntries, emptyBlocksOfWeek, removeFromBlock } from './plan-edit.ts';
-import type { WeekPlan } from './types.ts';
+import { MEAL_BLOCKS, type WeekPlan } from './types.ts';
 
 const WEEK = '2026-W35';
 
@@ -87,10 +87,15 @@ describe('countEntries', () => {
 
 describe('emptyBlocksOfWeek', () => {
   it('devolve os blocos sem nada em sete dias', () => {
-    expect([...emptyBlocksOfWeek(plan)]).toEqual(['pequeno-almoco', 'lanche']);
+    const onlyDinner: WeekPlan = { week: WEEK, days: [plan.days[0]!] };
+    expect([...emptyBlocksOfWeek(onlyDinner)]).toEqual(['almoco']);
+  });
+
+  it('com almoço e jantar ocupados, não sobra nenhum vazio', () => {
+    expect(emptyBlocksOfWeek(plan).size).toBe(0);
   });
 
   it('numa semana por planear, estão todos vazios', () => {
-    expect(emptyBlocksOfWeek(undefined).size).toBe(4);
+    expect(emptyBlocksOfWeek(undefined).size).toBe(MEAL_BLOCKS.length);
   });
 });

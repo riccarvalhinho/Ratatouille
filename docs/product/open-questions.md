@@ -90,13 +90,23 @@ exige disciplina e o histórico acaba vazio.
 
 ## Q6 — Que blocos do dia no planeamento?
 
-**Estado:** A decidir em M3 · resolve-se dentro de `docs/conversas/05-ui-planeamento.md`
+**Estado:** ✅ Fechada — **almoço e jantar**
 
-O documento original propunha "manhã/tarde" e marcava explicitamente "MELHORAR".
+O documento original propunha "manhã/tarde" e marcava explicitamente "MELHORAR". A proposta seguinte
+foram quatro blocos: pequeno-almoço, almoço, lanche, jantar.
 
-**Proposta:** quatro blocos — pequeno-almoço, almoço, lanche, jantar. É o que corresponde a como se
-come em Portugal e chega para o objetivo. Já está refletido em `data/schema/plan.schema.json` e é
-trivial de mudar enquanto não houver planos guardados.
+**Decisão: só almoço e jantar.** São as refeições que se decidem de véspera; o pequeno-almoço e o
+lanche não têm decisão que valha um bloco na grelha. Acrescentam-se se a necessidade aparecer.
+
+O ganho não foi só de arrumação. Com quatro blocos, cada célula da grelha ficava com ~140×130px a
+1280×800 e o cartão teve de perder a imagem para o nome caber legível. Com dois, as células passaram
+a ~140×265px e a thumbnail voltou.
+
+Aplicado em `data/schema/plan.schema.json`, `data/schema/state.schema.json` e
+`app/src/domain/types.ts`. Nada mais no código sabe quantos blocos há — tudo deriva de `MEAL_BLOCKS`.
+
+Nota para não confundir: "Pequeno-almoço" continua a existir como **label** de tipo de prato. Uma
+receita pode ser de pequeno-almoço sem haver um bloco onde a planear.
 
 ---
 

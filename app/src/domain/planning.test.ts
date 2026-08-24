@@ -14,7 +14,7 @@ import {
   recipesOfDay,
   shiftIsoWeek,
 } from './planning.ts';
-import type { WeekPlan } from './types.ts';
+import { MEAL_BLOCKS, type WeekPlan } from './types.ts';
 
 describe('semanas ISO', () => {
   it('calcula a semana de uma data', () => {
@@ -65,7 +65,7 @@ describe('fullWeek', () => {
   it('devolve a grelha inteira, mesmo com um dia só preenchido', () => {
     const week = fullWeek('2026-W35', plan);
     expect(week).toHaveLength(7);
-    expect(week.every((d) => Object.keys(d.blocks).length === 4)).toBe(true);
+    expect(week.every((d) => Object.keys(d.blocks).length === MEAL_BLOCKS.length)).toBe(true);
   });
 
   it('mantém o que estava planeado no dia certo', () => {

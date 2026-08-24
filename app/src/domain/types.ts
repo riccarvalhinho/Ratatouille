@@ -38,15 +38,23 @@ export const WEIGHT_NAMES: Record<Weight, string> = {
   substancial: 'Substancial',
 };
 
-export type MealBlock = 'pequeno-almoco' | 'almoco' | 'lanche' | 'jantar';
+/*
+ * Só almoço e jantar (Q6, decidida).
+ *
+ * O pequeno-almoço e o lanche não se planeiam — não há decisão a tomar sobre eles de véspera, e
+ * duas linhas mortas na grelha custavam metade da altura útil de cada célula. Acrescentam-se ao
+ * schema e a esta lista no dia em que isso mudar; nada mais no código sabe quantos blocos há.
+ *
+ * Nota para não confundir: "Pequeno-almoço" continua a existir como **label** de tipo de prato em
+ * data/taxonomies/labels.json. Uma receita pode ser de pequeno-almoço sem haver um bloco para ela.
+ */
+export type MealBlock = 'almoco' | 'jantar';
 
 /** Ordem por que os blocos aparecem no dia. */
-export const MEAL_BLOCKS: readonly MealBlock[] = ['pequeno-almoco', 'almoco', 'lanche', 'jantar'];
+export const MEAL_BLOCKS: readonly MealBlock[] = ['almoco', 'jantar'];
 
 export const MEAL_BLOCK_NAMES: Record<MealBlock, string> = {
-  'pequeno-almoco': 'Pequeno-almoço',
   almoco: 'Almoço',
-  lanche: 'Lanche',
   jantar: 'Jantar',
 };
 

@@ -1,10 +1,10 @@
 # Conversa 5 — Planeamento semanal
 
-**Estado:** Por começar — mas já há uma versão construída para contrariar
+**Estado:** Em curso — Q6 fechada, o resto por decidir
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/003-planeamento-semanal.md`, `docs/specs/006-home.md`
 **Prioridade:** Pode esperar — é M3
-**Resolve de caminho:** Q5 (histórico automático ou manual) e Q6 (que blocos do dia)
+**Resolve de caminho:** Q5 (histórico automático ou manual). Q6 (que blocos do dia) já está fechada.
 
 > **Já existe uma primeira versão construída**, com escolhas provisórias tomadas por mim para não
 > ficar parado — nomeadamente os quatro blocos, o cartão só com o nome, e a semana a começar à
@@ -14,9 +14,9 @@
 > Duas coisas que a construção descobriu e que mudam as perguntas abaixo:
 >
 > 1. **O espaço não chega para quatro blocos com cartões ricos.** A 1280×800 cada célula fica com
->    ~140×130px. A thumbnail e as labels tiveram de sair do cartão para o nome caber legível. A
->    pergunta 1 deixou de ser teórica: se dois dos blocos raramente forem usados, o cartão pode
->    voltar a ter imagem.
+>    ~140×130px. A thumbnail e as labels tiveram de sair do cartão para o nome caber legível.
+>    **Resolvido:** ficaram só almoço e jantar, as células duplicaram de altura e a thumbnail voltou.
+>    As labels continuam de fora, porque a largura não mudou.
 > 2. **Planear já funciona, mas o plano fica só no tablet** até o M2 trazer a escrita para o GitHub.
 >    Vale a pena confirmar se isso chega para experimentares uma semana a sério.
 
@@ -66,9 +66,27 @@ por dedução.
 
 ## Registo da conversa
 
-_(por começar — mas ver a nota do topo sobre o que a construção já descobriu)_
+### Ronda 1 — quantos blocos (pergunta 2)
+
+**Só almoço e jantar**, e acrescenta-se o resto se a necessidade aparecer. A razão é a que a
+pergunta suspeitava: são as refeições que se decidem de véspera, e o pequeno-almoço e o lanche não
+têm decisão que valha uma linha na grelha.
+
+O efeito de lado foi maior do que a decisão: com quatro blocos cada célula ficava com ~140×130px e o
+cartão tinha perdido a thumbnail para o nome caber legível. Com dois, as células passaram a ~140×265
+e a imagem voltou. As labels continuam de fora, porque a largura de cada dia não mudou.
+
+Aplicado no schema primeiro e depois nos tipos, como manda o CLAUDE.md. Nada no código sabe quantos
+blocos há: tudo deriva de `MEAL_BLOCKS`, portanto voltar a quatro é uma linha em cada sítio.
+
+### Por onde continuar
+
+As perguntas 1 e 3 a 7. A mais urgente continua a ser a 4 (Q5, histórico automático ou manual),
+porque decide o que acontece quando uma semana passa.
 
 ## Decisões tomadas
 
 | Decisão | Onde ficou registada |
 |---|---|
+| Blocos do dia: só almoço e jantar (Q6) | `data/schema/plan.schema.json`, `app/src/domain/types.ts` |
+| O cartão do plano tem thumbnail e nome, sem labels | `docs/specs/003-planeamento-semanal.md` |

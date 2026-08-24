@@ -22,13 +22,11 @@
         "properties": {
           "date": { "type": "string", "format": "date" },
           "blocks": {
-            "description": "Blocos do dia. Um bloco aceita várias receitas, incluindo a mesma repetida para dobrar a quantidade.",
+            "description": "Blocos do dia. Um bloco aceita várias receitas, incluindo a mesma repetida para dobrar a quantidade. Só almoço e jantar: o pequeno-almoço e o lanche não se planeiam, e acrescentam-se aqui no dia em que isso mudar (Q6).",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "pequeno-almoco": { "$ref": "#/definitions/blockEntries" },
               "almoco": { "$ref": "#/definitions/blockEntries" },
-              "lanche": { "$ref": "#/definitions/blockEntries" },
               "jantar": { "$ref": "#/definitions/blockEntries" }
             }
           }
