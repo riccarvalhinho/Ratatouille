@@ -80,15 +80,19 @@ Entrou também o "marcar como cozinhada" no fim do modo cozinha, que estava à e
 
 ---
 
-## M4 — Lista de compras
+## M4 — Lista de compras · construído
 
-- Agregação de ingredientes das receitas planeadas da semana
-- Normalização de unidades e soma de quantidades
-- Agrupamento por zona de supermercado
-- Marcar itens como comprados
-- Ajustes manuais à lista
+- [x] Agregação de ingredientes das receitas planeadas da semana
+- [x] Normalização de unidades e soma de quantidades
+- [x] Agrupamento por zona de supermercado
+- [x] Marcar itens como comprados
+- [ ] Ajustes manuais à lista — adiado, ver a spec 004
 
-**Feito quando:** dá para ir ao supermercado com o tablet ou telemóvel e não esquecer nada.
+**Feito quando:** dá para ir ao supermercado com o telemóvel e não esquecer nada.
+
+Trouxe consigo a **primeira vista de telemóvel** do projeto. É o único ecrã que se usa fora da
+cozinha, e é onde o painel de navegação passa a uma barra em baixo — a mesma razão do design system
+aplicada a um ecrã com a forma oposta.
 
 ---
 
@@ -103,12 +107,55 @@ Entrou também o "marcar como cozinhada" no fim do modo cozinha, que estava à e
 
 ---
 
-## M6 — Visão distante (sem recursos alocados)
+## Explorações futuras (sem recursos alocados)
 
-Registado para não se perder. Não investigar até M4 estar entregue.
+Duas direções para a lista de compras, registadas para não se perderem. A lista atual foi construída
+**sem nenhuma delas** de propósito: uma lista com um check funciona hoje e não fica presa a nenhuma
+decisão que estas explorações venham a tomar.
 
-- Investigar apps de lista de compras gratuitas com API pública, para exportar a lista
-- Integração com um retalhista português para comprar a lista diretamente da app
+Nenhuma é um compromisso. São estudos, e o resultado de qualquer uma pode perfeitamente ser "não
+vale a pena".
+
+### E1 — Exportar para uma app de listas de compras
+
+**Estado:** por começar
+
+O Bring! é o que está a ser usado hoje. A pergunta é se dá para a lista da semana ir lá parar sem
+copiar à mão.
+
+O que o estudo tem de responder:
+
+1. O Bring! tem API pública documentada, ou só a API interna da app? Se for interna, qual é o risco
+   de partir a cada atualização, e há termos de serviço que a proíbam?
+2. Que alternativas existem com API pública e gratuita — e com utilizador em Portugal?
+3. Há um caminho que evite API nenhuma: um link de partilha, um `.txt` para a folha de partilha do
+   Android, um formato que a app de destino saiba importar?
+4. O que é que isso obriga a mudar do lado do Ratatouille? Provavelmente pouco: a lista já sai da
+   agregação, e exportar é uma transformação do que já existe.
+
+A hipótese barata a testar primeiro é a 3. Uma partilha de texto para o Android resolve metade do
+problema sem depender da API de ninguém.
+
+### E2 — Comprar diretamente num retalhista
+
+**Estado:** por começar
+
+O salto grande: a lista da semana vira uma encomenda no Continente, Pingo Doce ou Auchan.
+
+O que o estudo tem de responder:
+
+1. Algum destes tem API pública para clientes? A resposta provável é não — a seguinte é se existe
+   uma API interna estável o suficiente, e o que dizem os termos de serviço sobre a usar.
+2. Sem API, sobra automação de navegador. Isso quer dizer credenciais do supermercado guardadas em
+   algum lado e sessões que expiram — um problema de segurança de outra ordem, e que a ADR 0004 não
+   cobre.
+3. **O problema mais difícil não é técnico**: é o mapeamento. "2 cebolas" tem de virar um produto
+   concreto com marca, calibre e embalagem. Esse mapeamento é por retalhista e envelhece sozinho.
+4. Faz sentido parar a meio? Preencher o carrinho e deixar a confirmação para a pessoa evita a parte
+   pior — pagamentos e enganos caros — e talvez entregue a maior parte do valor.
+
+Antes de qualquer código, medir a coisa simples: quanto tempo custa mesmo passar a lista para o site
+do supermercado à mão. Se forem cinco minutos por semana, o estudo pode acabar aí.
 
 ---
 
