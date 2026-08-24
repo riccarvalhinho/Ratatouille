@@ -42,6 +42,11 @@ Do benchmark do Cookidoo, e agora implementado:
 1. **Dos quatro destinos, qual é o que abres primeiro nove vezes em dez?** Se for sempre o mesmo,
    é esse que devia ser a home, e não o "Hoje" por ser o primeiro da lista.
 
+   > Provisoriamente a app abre nas **Receitas**, e não no "Hoje". Não por decisão de produto, mas
+   > porque o "Hoje" só tem conteúdo a partir do M3 e abrir num marcador deixava a app pior do que
+   > era antes de haver navegação. Quando o "Hoje" mostrar o plano do dia, esta pergunta volta a
+   > estar em aberto.
+
 2. **"Hoje" e "Semana" são dois destinos ou um?** A home mostra o dia, o planeamento mostra a semana,
    e ambos mostram refeições planeadas. Suspeito que sejam duas vistas da mesma coisa, e que um
    destino com um seletor de dia ou semana chegue — o que liberta espaço no painel.

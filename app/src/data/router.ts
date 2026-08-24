@@ -19,11 +19,23 @@ export interface Route {
 
 const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras'];
 
+/**
+ * Onde a app abre quando não há rota no URL.
+ *
+ * É `receitas` e não `home` por uma razão simples: a app deve abrir num ecrã que tem conteúdo. O
+ * "Hoje" é a home natural do produto, mas só existe a partir do M3 — até lá, abrir nele significa
+ * receber um marcador em vez das receitas, o que é pior do que a app era antes de haver navegação.
+ *
+ * Quando o "Hoje" mostrar mesmo o plano do dia, isto passa a `home`. A escolha definitiva é a
+ * conversa 8, pergunta 1.
+ */
+const DEFAULT_SCREEN: Screen = 'receitas';
+
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   const [first, second] = parts;
 
-  const screen = SCREENS.find((s) => s === first) ?? 'home';
+  const screen = SCREENS.find((s) => s === first) ?? DEFAULT_SCREEN;
   return second ? { screen, recipeId: second } : { screen };
 }
 
