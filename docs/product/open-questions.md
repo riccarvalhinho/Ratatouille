@@ -39,6 +39,14 @@ ponto de interrogação, ou seja, nunca foram decididas.
 **Como responder:** produzir 2–3 direções visuais concretas aplicadas ao mesmo ecrã de catálogo e
 escolher uma. Recolher inspirações em `docs/design/inspiracoes.md` antes.
 
+Esta questão cresceu: passou de "que paleta" para **N1 — Revisão visual** no roadmap, que é a app
+inteira a ganhar um aspeto intencional em vez de "primeiro que funcione". A resposta à Q2 é a
+primeira parte de N1, e as três armadilhas estão lá listadas — valores fixos fora dos tokens,
+tipografia contra o offline, e o tema escuro a contar em dobro.
+
+E há uma condição de calendário: a paleta tem de ser escolhida com o tablet na parede, com a luz da
+cozinha e a um braço de distância. Escolhida num portátil, é escolhida para o sítio errado.
+
 ---
 
 ## Q3 — As doses escalam? ✅

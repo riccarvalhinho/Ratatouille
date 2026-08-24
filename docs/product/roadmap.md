@@ -107,6 +107,52 @@ aplicada a um ecrã com a forma oposta.
 
 ---
 
+## Nice to have
+
+Coisas que valem a pena e que não bloqueiam nada. Vêm depois do que falta dos milestones e antes das
+explorações.
+
+### N1 — Revisão visual
+
+**Estado:** por começar
+**Relacionado:** Q2 (direção visual), `docs/design/design-system.md`, conversa 6
+
+Dar à app um aspeto intencional e acabado, em vez de "primeiro que funcione". Tema, esquema de
+cores, eventualmente fundos subtis. O objetivo é não parecer amadora.
+
+**A boa notícia: quase nada disto é retrabalho.** Foi construído a pensar nisto — as cores, os
+raios, o espaçamento e a escala tipográfica vivem todos em `app/src/styles/tokens.css`, e nenhum
+componente escreve um valor de cor à mão. Trocar a paleta é editar um ficheiro.
+
+E as decisões de interface que fomos tomando não são decisões visuais: alvos redondos ao centro no
+modo cozinha, ecrã morto à volta, ações reveladas ao toque no planeamento, barra em baixo no
+telemóvel. Todas essas nascem de ergonomia — distância, mãos ocupadas, densidade — e sobrevivem a
+qualquer paleta.
+
+**Três sítios onde não é de graça**, para não haver surpresas:
+
+1. **Há valores fixos fora dos tokens.** Cerca de 38 medidas em px escritas diretamente nos
+   componentes (a altura do cartão com imagem, os 64px da thumbnail, os 32px do passo, os relevos
+   dos botões), mais quatro cores literais — dois véus de `rgb(0 0 0 / 45%)` e um `#fff`. A
+   preparação mais barata para esta tarefa é promovê-los a tokens **antes** de mexer no tema, e isso
+   pode ser feito a qualquer momento sem mudar nada visualmente.
+
+2. **Tipografia colide com o offline.** O design system escolheu a font stack do sistema de
+   propósito: o tablet pode estar sem rede, e uma fonte que não carrega é pior do que uma fonte
+   genérica. Um tipo de letra próprio é o que mais muda o aspeto de uma app, mas obriga a
+   auto-hospedá-lo e a metê-lo na cache do service worker — não é um `<link>` para o Google Fonts.
+   Decisão a tomar de olhos abertos, não por arrasto.
+
+3. **O tema escuro conta em dobro.** Já existe e é usado, e a cozinha tem luz muito diferente de dia
+   e de noite. Qualquer paleta nova tem de funcionar nos dois, com o contraste mínimo AA que o
+   design system exige — não vale inverter e esperar o melhor.
+
+**Quando:** depois de o tablet estar mesmo na parede em uso. A paleta tem de ser julgada no ecrã
+real, com a luz real da cozinha e a um braço de distância. Escolher cores num portátil a 50cm é
+escolher para o sítio errado — e isso é a única parte disto que gera mesmo retrabalho.
+
+---
+
 ## Explorações futuras (sem recursos alocados)
 
 Duas direções para a lista de compras, registadas para não se perderem. A lista atual foi construída
