@@ -13,7 +13,8 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { paths, rel } from './paths.ts';
 import { readJson, loadAll, type LoadedFile } from './load-data.ts';
-import { isoWeekOf } from './iso-week.ts';
+// Uma implementação só, testada uma vez: app/src/domain/planning.test.ts.
+import { isoWeekOf } from '../app/src/domain/planning.ts';
 
 const problems: string[] = [];
 function fail(where: string, message: string) {
