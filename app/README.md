@@ -3,6 +3,30 @@
 Progressive web app em React + TypeScript, compilada com Vite e publicada no GitHub Pages.
 Ver [`docs/adr/0003-pwa-em-vez-de-nativo.md`](../docs/adr/0003-pwa-em-vez-de-nativo.md).
 
+## A camada de domínio
+
+`src/domain/` não sabe que existe uma interface. É lógica pura, testada, e é onde está a parte
+difícil do produto:
+
+| Ficheiro | O que resolve |
+|---|---|
+| `units.ts` | Somar "2 cebolas" com "200 g de cebola" e devolver "4 cebolas" |
+| `shopping-list.ts` | Agregar os ingredientes da semana por zona de supermercado |
+| `scaling.ts` | Escalar doses por múltiplos simples, marcando o que fica esquisito |
+| `filters.ts` | Filtrar o catálogo: dentro do mesmo tipo soma, entre tipos restringe |
+| `planning.ts` | Semanas ISO, a grelha da semana, e "há 3 semanas" em vez de uma data |
+
+Foi construída antes da interface de propósito: não depende de decisões visuais, e é onde os erros
+silenciosos vivem. Um total de compras errado não dá erro nenhum — dá um jantar sem cebolas.
+
+```bash
+npm test          # 58 testes
+npm run test:watch
+```
+
+O validador de dados (`tools/validate-data.ts`) importa `planning.ts` para as semanas ISO, para não
+haver duas implementações da mesma regra.
+
 ## Correr localmente
 
 ```bash
@@ -16,7 +40,7 @@ Ou, a partir da raiz do repositório, `npm run dev` — que gera o bundle e arra
 
 | Pasta | O que é |
 |---|---|
-| `src/domain/` | Tipos do domínio, espelho de `data/schema/*.json` |
+| `src/domain/` | Tipos e **lógica pura**: conversão de unidades, lista de compras, escalar doses, filtros, semanas ISO. Sem React, sem DOM, testado |
 | `src/data/` | Carregamento do bundle, cache offline, índices derivados |
 | `src/ui/` | Componentes partilhados |
 | `src/features/` | Um ecrã por feature (a partir de M1) |

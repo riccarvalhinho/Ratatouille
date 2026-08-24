@@ -43,5 +43,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      # A lógica de agregação de quantidades e de semanas ISO é onde os erros silenciosos vivem.
+      - name: Testes
+        run: npm run test
+
       - name: Compilar a app
         run: npm run build --prefix app
