@@ -79,6 +79,15 @@ export function IconRepeat(props: IconProps) {
   );
 }
 
+export function IconPlus(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M12 5v14" />
+      <path d="M5 12h14" />
+    </Svg>
+  );
+}
+
 export function IconDismiss(props: IconProps) {
   return (
     <Svg {...props}>

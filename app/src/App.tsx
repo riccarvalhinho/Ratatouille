@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import { loadBundle, type BundleOrigin } from './data/bundle.ts';
 import { buildCatalogue, type Catalogue } from './data/catalogue.ts';
+import { usePlanStore } from './data/plan-store.ts';
 import { navigate, useRoute } from './data/router.ts';
+import { todayIso } from './domain/planning.ts';
 import type { DataBundle } from './domain/types.ts';
 import { CatalogoScreen } from './features/catalogo/CatalogoScreen.tsx';
 import { ModoCozinha } from './features/cozinha/ModoCozinha.tsx';
 import { DetalheReceita } from './features/detalhe/DetalheReceita.tsx';
+import { PlaneamentoScreen } from './features/planeamento/PlaneamentoScreen.tsx';
 import { NavRail } from './ui/NavRail.tsx';
 import { PorConstruir } from './ui/PorConstruir.tsx';
 import styles from './App.module.css';
@@ -36,6 +39,12 @@ export function App() {
       cancelled = true;
     };
   }, []);
+
+  const plans = usePlanStore(state.status === 'ready' ? state.bundle : undefined);
+
+  // Recalculado a cada render em vez de memorizado: o tablet fica horas ligado e um "hoje" fixado
+  // no arranque destacaria o dia errado depois da meia-noite.
+  const today = todayIso();
 
   const catalogue: Catalogue | undefined = useMemo(
     () => (state.status === 'ready' ? buildCatalogue(state.bundle) : undefined),
@@ -104,17 +113,8 @@ export function App() {
             </PorConstruir>
           )}
 
-          {route.screen === 'planeamento' && (
-            <PorConstruir
-              title="Semana"
-              spec="docs/specs/003-planeamento-semanal.md"
-              milestone="M3"
-              conversa="docs/conversas/05-ui-planeamento.md"
-            >
-              A semana inteira num ecrã, em blocos do dia, para arrastar receitas para os dias. A
-              lógica das semanas já está feita e testada; falta decidir quantos blocos e como se
-              adiciona.
-            </PorConstruir>
+          {route.screen === 'planeamento' && catalogue && plans.ready && (
+            <PlaneamentoScreen catalogue={catalogue} plans={plans} today={today} />
           )}
 
           {route.screen === 'compras' && (

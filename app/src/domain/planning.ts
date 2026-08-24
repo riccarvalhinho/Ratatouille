@@ -112,3 +112,56 @@ export function formatLastCooked(isoDate: string | undefined, today: string): st
   if (days < 365) return `há ${Math.floor(days / 30)} meses`;
   return days < 730 ? 'há mais de 1 ano' : `há ${Math.floor(days / 365)} anos`;
 }
+
+/*
+ * Nomes de dias e meses à mão, em vez de `Intl.DateTimeFormat`.
+ *
+ * O Intl existe no Android 9, mas as WebViews antigas vêm muitas vezes com os dados ICU reduzidos a
+ * inglês — e um cabeçalho de semana a dizer "Mon" no meio de uma app em português é o tipo de coisa
+ * que só se descobre com o tablet na parede. São 19 palavras; não vale o risco.
+ */
+const WEEKDAYS_SHORT = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
+
+const MONTHS = [
+  'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro',
+];
+
+/** "Seg", "Ter"… a partir de uma data ISO. Segunda é o primeiro dia, como na semana ISO. */
+export function weekdayShort(isoDate: string): string {
+  const date = new Date(`${isoDate}T00:00:00Z`);
+  return WEEKDAYS_SHORT[(date.getUTCDay() + 6) % 7]!;
+}
+
+/** O dia do mês, sem zero à frente: "3", "24". */
+export function dayOfMonth(isoDate: string): string {
+  return String(new Date(`${isoDate}T00:00:00Z`).getUTCDate());
+}
+
+/**
+ * O intervalo de uma semana em linguagem corrente: "24 a 30 de agosto".
+ * Quando a semana atravessa meses ou anos, ambos aparecem — senão lê-se mal.
+ */
+export function formatWeekRange(week: string): string {
+  const dates = datesOfIsoWeek(week);
+  const first = new Date(`${dates[0]}T00:00:00Z`);
+  const last = new Date(`${dates[6]}T00:00:00Z`);
+
+  const month = (d: Date) => MONTHS[d.getUTCMonth()]!;
+  const start = String(first.getUTCDate());
+  const end = String(last.getUTCDate());
+
+  if (first.getUTCFullYear() !== last.getUTCFullYear()) {
+    return `${start} de ${month(first)} de ${first.getUTCFullYear()} a ${end} de ${month(last)} de ${last.getUTCFullYear()}`;
+  }
+  if (first.getUTCMonth() !== last.getUTCMonth()) {
+    return `${start} de ${month(first)} a ${end} de ${month(last)}`;
+  }
+  return `${start} a ${end} de ${month(last)}`;
+}
+
+/** A data de hoje em ISO, no fuso do tablet — e não em UTC, que às 23h daria o dia errado. */
+export function todayIso(now: Date = new Date()): string {
+  const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+  return local.toISOString().slice(0, 10);
+}

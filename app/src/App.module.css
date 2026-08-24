@@ -1,6 +1,13 @@
+/*
+ * A app ocupa o ecrã e não o documento: `height` e não `min-height`.
+ *
+ * Num tablet de parede o cabeçalho e a navegação não devem sair de vista quando o conteúdo cresce —
+ * quem faz scroll é o conteúdo, dentro de `.content`. É também o que permite ao planeamento repartir
+ * a altura que sobra pelas linhas da semana em vez de empurrar a página para baixo.
+ */
 .app {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .main {
@@ -8,6 +15,7 @@
   flex-direction: column;
   flex: 1;
   min-width: 0;
+  min-height: 0;
 }
 
 .header {
@@ -35,7 +43,9 @@
 
 .content {
   flex: 1;
+  min-height: 0;
   padding: var(--space-6);
+  overflow-y: auto;
 }
 
 .state {

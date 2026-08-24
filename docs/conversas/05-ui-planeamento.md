@@ -1,10 +1,24 @@
 # Conversa 5 — Planeamento semanal
 
-**Estado:** Por começar
+**Estado:** Por começar — mas já há uma versão construída para contrariar
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/003-planeamento-semanal.md`, `docs/specs/006-home.md`
 **Prioridade:** Pode esperar — é M3
 **Resolve de caminho:** Q5 (histórico automático ou manual) e Q6 (que blocos do dia)
+
+> **Já existe uma primeira versão construída**, com escolhas provisórias tomadas por mim para não
+> ficar parado — nomeadamente os quatro blocos, o cartão só com o nome, e a semana a começar à
+> segunda. Nada disto está decidido: a conversa continua a ser esta, e agora tens uma coisa concreta
+> no ecrã em vez de uma descrição.
+>
+> Duas coisas que a construção descobriu e que mudam as perguntas abaixo:
+>
+> 1. **O espaço não chega para quatro blocos com cartões ricos.** A 1280×800 cada célula fica com
+>    ~140×130px. A thumbnail e as labels tiveram de sair do cartão para o nome caber legível. A
+>    pergunta 1 deixou de ser teórica: se dois dos blocos raramente forem usados, o cartão pode
+>    voltar a ter imagem.
+> 2. **Planear já funciona, mas o plano fica só no tablet** até o M2 trazer a escrita para o GitHub.
+>    Vale a pena confirmar se isso chega para experimentares uma semana a sério.
 
 ## Porque existe
 
@@ -52,7 +66,7 @@ por dedução.
 
 ## Registo da conversa
 
-_(por começar)_
+_(por começar — mas ver a nota do topo sobre o que a construção já descobriu)_
 
 ## Decisões tomadas
 

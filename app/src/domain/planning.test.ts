@@ -1,11 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import {
   datesOfIsoWeek,
+  dayOfMonth,
   formatLastCooked,
+  formatWeekRange,
   fullWeek,
   isWeekEmpty,
   isoWeekOf,
   lastCookedByRecipe,
+  todayIso,
+  weekdayShort,
   mondayOfIsoWeek,
   recipesOfDay,
   shiftIsoWeek,
@@ -128,5 +132,35 @@ describe('histórico', () => {
     expect(formatLastCooked('2026-08-03', hoje)).toBe('há 3 semanas');
     expect(formatLastCooked('2026-05-24', hoje)).toBe('há 3 meses');
     expect(formatLastCooked('2025-01-01', hoje)).toBe('há mais de 1 ano');
+  });
+});
+
+describe('formatadores de data', () => {
+  it('dá o dia da semana em português, com segunda como primeiro dia', () => {
+    expect(weekdayShort('2026-08-24')).toBe('Seg');
+    expect(weekdayShort('2026-08-30')).toBe('Dom');
+  });
+
+  it('dá o dia do mês sem zero à frente', () => {
+    expect(dayOfMonth('2026-08-03')).toBe('3');
+    expect(dayOfMonth('2026-08-24')).toBe('24');
+  });
+
+  it('escreve o intervalo dentro do mesmo mês', () => {
+    expect(formatWeekRange('2026-W35')).toBe('24 a 30 de agosto');
+  });
+
+  it('nomeia os dois meses quando a semana os atravessa', () => {
+    expect(formatWeekRange('2026-W36')).toBe('31 de agosto a 6 de setembro');
+  });
+
+  it('nomeia os dois anos na semana da passagem de ano', () => {
+    expect(formatWeekRange('2026-W53')).toBe('28 de dezembro de 2026 a 3 de janeiro de 2027');
+  });
+
+  it('hoje é a data local do tablet e não a UTC', () => {
+    // Construída em hora local: às 23h30 de 24 de agosto, o dia continua a ser 24 seja qual for o
+    // fuso. Com `toISOString()` directo, num fuso a leste do meridiano já seria dia 25.
+    expect(todayIso(new Date(2026, 7, 24, 23, 30))).toBe('2026-08-24');
   });
 });
