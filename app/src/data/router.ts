@@ -15,6 +15,8 @@ export interface Route {
   screen: Screen;
   /** Receita aberta em detalhe, por cima do ecrã atual. */
   recipeId?: string;
+  /** Modo cozinha, em ecrã inteiro. Está no URL para sobreviver a um recarregamento a meio. */
+  cooking?: boolean;
 }
 
 const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras'];
@@ -35,11 +37,15 @@ export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   const [first, second] = parts;
 
+  // O modo cozinha não pertence a nenhum ecrã: é o ecrã todo.
+  if (first === 'cozinhar' && second) return { screen: 'receitas', recipeId: second, cooking: true };
+
   const screen = SCREENS.find((s) => s === first) ?? DEFAULT_SCREEN;
   return second ? { screen, recipeId: second } : { screen };
 }
 
 export function toHash(route: Route): string {
+  if (route.cooking && route.recipeId) return `#/cozinhar/${route.recipeId}`;
   return route.recipeId ? `#/${route.screen}/${route.recipeId}` : `#/${route.screen}`;
 }
 

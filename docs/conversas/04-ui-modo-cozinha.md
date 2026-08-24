@@ -5,6 +5,11 @@
 **Destino das decisões:** `docs/specs/005-modo-cozinha.md`
 **Prioridade:** Pode esperar — é M5. Mas é o ecrã que justifica o tablet estar na parede.
 
+> **Já existe uma primeira versão construída**, com escolhas provisórias tomadas por mim para não
+> ficar parado: dois botões grandes em baixo para avançar e recuar, o passo seguinte em pequeno por
+> baixo, e nenhuma proteção contra toque acidental. Nada disto está decidido — a conversa continua a
+> ser esta, e agora tens uma coisa concreta para contrariar em vez de imaginares.
+
 ## Porque existe
 
 É o que mais se aproxima da experiência Bimby, e o único ecrã usado com as mãos ocupadas, sujas ou

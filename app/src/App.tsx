@@ -4,6 +4,7 @@ import { buildCatalogue, type Catalogue } from './data/catalogue.ts';
 import { navigate, useRoute } from './data/router.ts';
 import type { DataBundle } from './domain/types.ts';
 import { CatalogoScreen } from './features/catalogo/CatalogoScreen.tsx';
+import { ModoCozinha } from './features/cozinha/ModoCozinha.tsx';
 import { DetalheReceita } from './features/detalhe/DetalheReceita.tsx';
 import { NavRail } from './ui/NavRail.tsx';
 import { PorConstruir } from './ui/PorConstruir.tsx';
@@ -64,6 +65,17 @@ export function App() {
   const openRecipe = route.recipeId
     ? catalogue?.recipes.find((r) => r.id === route.recipeId)
     : undefined;
+
+  // O modo cozinha ocupa o ecrã todo — sem painel de navegação, porque a cozinhar não se navega.
+  if (route.cooking && openRecipe && catalogue) {
+    return (
+      <ModoCozinha
+        recipe={openRecipe}
+        catalogue={catalogue}
+        onLeave={() => navigate({ screen: 'receitas', recipeId: openRecipe.id })}
+      />
+    );
+  }
 
   return (
     <div className={styles.app}>
