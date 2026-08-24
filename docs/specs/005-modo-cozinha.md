@@ -37,16 +37,35 @@ Isso é, ao mesmo tempo, a proteção contra o toque acidental. Um cotovelo, um 
 caem quase sempre em zona morta, e portanto não é preciso confirmar nada: uma confirmação custaria
 um toque em cada passo para evitar um erro raro.
 
-A barra de baixo tem **dois ou três alvos**, todos com 72px de altura e um relevo de 2px que os faz
-parecer premíveis:
+A barra de baixo tem **dois ou três alvos redondos**, com relevo de 3px que os faz parecer premíveis
+e que afunda ao toque:
 
-| Alvo | Largura | Quando existe |
-|---|---|---|
-| Anterior | 1 parte | Sempre (inativo no primeiro passo) |
-| Temporizador | 132px fixos | Só quando o passo declara `durationMinutes` |
-| Seguinte / Terminar | 2 partes | Sempre |
+| Alvo | Forma | Posição | Quando existe |
+|---|---|---|---|
+| Recuar | Círculo de 96px, seta ← | Extremo esquerdo | Sempre (inativo no primeiro passo) |
+| Temporizador | Círculo de 112px | Centro do ecrã | Só quando o passo declara `durationMinutes` |
+| Avançar | Círculo de 112px, seta → | Extremo direito | Todos os passos menos o último |
+| Terminar | Pastilha de 220px com palavra | Extremo direito | Só no último passo |
 
-O "Seguinte" tem o dobro da largura do "Anterior" porque é o que se toca quase sempre.
+Um círculo tem menos área do que um retângulo da mesma altura, mas o dedo acerta melhor: o alvo tem
+centro, e não cantos que não se alcançam com o braço esticado.
+
+Recuar e avançar ficam em **extremos opostos** de propósito — são dois movimentos de braço
+diferentes, e assim não se toca num a querer o outro. O do meio fica centrado no ecrã mesmo quando o
+da direita é a pastilha larga.
+
+**Terminar muda de forma**, e não só de palavra. Ao fim de doze passos iguais, um círculo verde no
+mesmo sítio seria tocado em piloto automático; uma pastilha não.
+
+### Símbolos
+
+As setas dispensam palavra por serem universais. O temporizador não dispensaria — por isso traz
+sempre um número por baixo do símbolo, que faz de legenda e é ao mesmo tempo a informação que se
+quer ler.
+
+Todos os símbolos são **SVG desenhado, não caracteres**. O "▶" é U+25B6 e tem variante de emoji: em
+Android há fontes que o desenham a cores e a outro tamanho, e num botão onde o símbolo é a única
+legenda isso não é aceitável. Ficam em `app/src/ui/icons.tsx`.
 
 ### Timers
 
@@ -56,10 +75,10 @@ sozinho obrigava a descobrir o que faz, e aqui não há hover que ajude:
 
 | Estado | Mostra | O toque faz |
 |---|---|---|
-| Por iniciar | ▶ + a duração ("8 min") | Inicia |
-| A correr | ❚❚ + a conta decrescente | Pausa |
-| Em pausa | ▶ + a conta decrescente | Retoma |
-| Terminado | ↺ + "pronto" | Repete |
+| Por iniciar | Play + a duração ("8 min") | Inicia |
+| A correr | Pausa + a conta decrescente | Pausa |
+| Em pausa | Play + a conta decrescente | Retoma |
+| Terminado | Repetir + "pronto" | Repete |
 
 A faixa de temporizadores no topo mostra só os temporizadores de **outros** passos. O do passo atual
 vive no botão, e ter o mesmo número em dois sítios é ruído num ecrã que se lê a 70cm.
@@ -87,7 +106,9 @@ Terminar a receita fecha o modo cozinha e oferece marcar como cozinhada, aliment
 
 - [x] "Cozinhar" abre o modo em ecrã inteiro
 - [x] Um passo de cada vez, com progresso visível
-- [x] Avançar e recuar têm alvos de toque de pelo menos 56×56px — são de 72px
+- [x] Avançar e recuar têm alvos de toque de pelo menos 56×56px — são círculos de 96 e 112px
+- [x] Recuar e avançar estão em extremos opostos do ecrã
+- [x] O último passo troca o círculo de avançar por uma pastilha "Terminar"
 - [x] Fora dos botões, do "Sair" e dos controlos de temporizador, nada no ecrã reage ao toque
 - [x] Os ingredientes do passo aparecem junto ao passo
 - [x] O passo seguinte aparece em pequeno, sem roubar largura ao passo atual

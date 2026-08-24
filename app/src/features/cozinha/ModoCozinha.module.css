@@ -71,13 +71,16 @@
 }
 
 .timerAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 44px;
   min-height: 44px;
   border: none;
   border-radius: var(--radius-sm);
   background: transparent;
   color: inherit;
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
 }
 
 .body {
@@ -182,53 +185,75 @@
  * temporizadores. Tudo o resto é área morta de propósito — ver a nota no topo do componente.
  */
 .bottom {
-  display: flex;
-  gap: var(--space-4);
-  padding: var(--space-4) var(--space-6) var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-4) var(--space-7) var(--space-5);
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
 }
 
+.bottom > :first-child { justify-self: start; }
+.bottom > :last-child { justify-self: end; }
+
+/*
+ * Alvos redondos. Um círculo de 96px tem menos área do que um retângulo de 96px, mas o dedo acerta
+ * melhor: o alvo tem centro, e não cantos que não se alcançam. As setas dispensam palavra — são
+ * universais, ao contrário de um ícone de temporizador.
+ */
 .navButton {
-  flex: 1;
-  min-height: 72px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  /* Relevo de 2px: com as mãos ocupadas, um botão que parece premível vale mais do que um contorno. */
-  box-shadow: 0 2px 0 var(--color-border);
-}
-
-.navButton:disabled { opacity: 0.35; }
-.navButton:active { transform: translateY(2px); box-shadow: none; }
-
-/* O terceiro alvo, ao meio. Estreito, para não competir com o "Seguinte". */
-.timerButton {
-  flex: 0 0 132px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-1);
+  width: 96px;
+  height: 96px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  /* Relevo de 3px: com as mãos ocupadas, um botão que parece premível vale mais do que um contorno. */
+  box-shadow: 0 3px 0 var(--color-border);
+}
+
+.navButton:disabled { opacity: 0.3; }
+.navButton:active:not(:disabled) { transform: translateY(3px); box-shadow: none; }
+
+/* O alvo do meio: maior, porque tem de mostrar um número e não só um símbolo. */
+.timerButton {
+  flex-direction: column;
+  gap: 2px;
+  width: 112px;
+  height: 112px;
   border-color: var(--color-accent);
   background: var(--color-accent-soft);
   color: var(--color-accent);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-variant-numeric: tabular-nums;
-  line-height: 1.1;
 }
 
-.timerButton > span:first-child { font-size: var(--text-lg); }
+.timerButton > svg { font-size: var(--text-xl); }
 
+/* Avançar é o que se toca quase sempre: maior e cheio, contra o contorno das outras. */
 .primary {
-  flex: 2;
+  width: 112px;
+  height: 112px;
   border-color: transparent;
   background: var(--color-accent);
   color: var(--color-accent-text);
-  box-shadow: 0 3px 0 rgb(0 0 0 / 18%);
+  box-shadow: 0 3px 0 rgb(0 0 0 / 20%);
+}
+
+/* Terminar muda de forma de propósito: uma pastilha não se toca em piloto automático. */
+.finish {
+  width: auto;
+  min-width: 220px;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-lg);
 }
 
 .done {

@@ -15,6 +15,7 @@ import { describeIngredient, formatMinutes } from '../../data/catalogue.ts';
 import type { Catalogue } from '../../data/catalogue.ts';
 import { useKeepAwake } from '../../data/wake-lock.ts';
 import type { Recipe } from '../../domain/types.ts';
+import { IconDismiss, IconNext, IconPause, IconPlay, IconPrev, IconRepeat } from '../../ui/icons.tsx';
 import {
   createTimer,
   formatCountdown,
@@ -101,7 +102,11 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
             Marcar como cozinhada, para entrar no histórico, precisa de escrita para o repositório —
             é o M2. Por agora fica só o bom apetite.
           </p>
-          <button type="button" className={`${styles.navButton} ${styles.primary}`} onClick={onLeave}>
+          <button
+            type="button"
+            className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
+            onClick={onLeave}
+          >
             Voltar à receita
           </button>
         </div>
@@ -149,7 +154,7 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
                     onClick={() => setTimers((c) => c.filter((t) => t.id !== timer.id))}
                     aria-label="Dispensar"
                   >
-                    ✕
+                    <IconDismiss />
                   </button>
                 ) : (
                   <>
@@ -159,7 +164,7 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
                       onClick={() => updateTimer(timer.id, isRunning(timer) ? pause : resume)}
                       aria-label={isRunning(timer) ? 'Pausar' : 'Retomar'}
                     >
-                      {isRunning(timer) ? '❚❚' : '▶'}
+                      {isRunning(timer) ? <IconPause /> : <IconPlay />}
                     </button>
                     <button
                       type="button"
@@ -167,7 +172,7 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
                       onClick={() => updateTimer(timer.id, reset)}
                       aria-label="Reiniciar"
                     >
-                      ↺
+                      <IconRepeat />
                     </button>
                   </>
                 )}
@@ -214,16 +219,23 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
         )}
       </div>
 
+      {/*
+        Três alvos afastados ao máximo, um em cada extremo e o do temporizador ao meio. Recuar e
+        avançar ficam em cantos opostos de propósito: são dois movimentos de braço diferentes, e
+        assim não se toca num a querer o outro.
+      */}
       <div className={styles.bottom}>
         <button
           type="button"
           className={styles.navButton}
           onClick={() => setIndex((i) => Math.max(0, i - 1))}
           disabled={index === 0}
+          aria-label="Passo anterior"
         >
-          Anterior
+          <IconPrev />
         </button>
-        {step?.durationMinutes !== undefined && (
+
+        {step?.durationMinutes !== undefined ? (
           <TimerButton
             className={`${styles.navButton} ${styles.timerButton}`}
             timer={stepTimer}
@@ -233,23 +245,42 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
             onToggle={() => stepTimer && updateTimer(stepTimer.id, isRunning(stepTimer) ? pause : resume)}
             onRepeat={() => stepTimer && updateTimer(stepTimer.id, reset)}
           />
+        ) : (
+          <span aria-hidden="true" />
         )}
-        <button
-          type="button"
-          className={`${styles.navButton} ${styles.primary}`}
-          onClick={() => (isLast ? setFinished(true) : setIndex((i) => i + 1))}
-        >
-          {isLast ? 'Terminar' : 'Seguinte'}
-        </button>
+
+        {/*
+          O último passo troca o círculo por uma pastilha com palavra: terminar não é a mesma coisa
+          que avançar, e a mudança de forma é o que impede o dedo de o fazer em piloto automático.
+        */}
+        {isLast ? (
+          <button
+            type="button"
+            className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
+            onClick={() => setFinished(true)}
+          >
+            Terminar
+          </button>
+        ) : (
+          <button
+            type="button"
+            className={`${styles.navButton} ${styles.primary}`}
+            onClick={() => setIndex((i) => i + 1)}
+            aria-label="Passo seguinte"
+          >
+            <IconNext />
+          </button>
+        )}
       </div>
     </div>
   );
 }
 
 /**
- * O terceiro alvo da barra de baixo, entre o "Anterior" e o "Seguinte". Só existe quando o passo
- * tem duração. Mostra sempre um ícone e uma palavra: um ícone sozinho obrigava a descobrir o que
- * faz, e aqui não há hover que ajude.
+ * O terceiro alvo da barra de baixo, ao meio entre as duas setas. Só existe quando o passo tem
+ * duração. Mostra o ícone e, por baixo, o número — que é a razão de se olhar para ele. As setas
+ * dispensam palavra por serem universais; um ícone de temporizador sozinho não dispensaria, e por
+ * isso o número faz de legenda.
  */
 interface TimerButtonProps {
   className: string;
@@ -263,18 +294,18 @@ interface TimerButtonProps {
 
 function TimerButton({ className, timer, now, minutes, onStart, onToggle, onRepeat }: TimerButtonProps) {
   const state = !timer
-    ? { icon: '▶', label: formatMinutes(minutes), action: onStart, hint: 'Iniciar temporizador' }
+    ? { icon: <IconPlay />, label: formatMinutes(minutes), action: onStart, hint: 'Iniciar temporizador' }
     : isDone(timer, now)
-      ? { icon: '↺', label: 'pronto', action: onRepeat, hint: 'Repetir temporizador' }
+      ? { icon: <IconRepeat />, label: 'pronto', action: onRepeat, hint: 'Repetir temporizador' }
       : isRunning(timer)
         ? {
-            icon: '❚❚',
+            icon: <IconPause />,
             label: formatCountdown(remainingMs(timer, now)),
             action: onToggle,
             hint: 'Pausar temporizador',
           }
         : {
-            icon: '▶',
+            icon: <IconPlay />,
             label: formatCountdown(remainingMs(timer, now)),
             action: onToggle,
             hint: 'Retomar temporizador',
@@ -282,7 +313,7 @@ function TimerButton({ className, timer, now, minutes, onStart, onToggle, onRepe
 
   return (
     <button type="button" className={className} onClick={state.action} aria-label={state.hint}>
-      <span aria-hidden="true">{state.icon}</span>
+      {state.icon}
       <span>{state.label}</span>
     </button>
   );
