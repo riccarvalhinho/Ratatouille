@@ -5,8 +5,9 @@
  * sempre visíveis. É o ecrã que justifica o tablet estar na parede, e o único usado com as mãos
  * ocupadas — daí os alvos de toque de 72px e a tipografia a 32px.
  *
- * O que ainda não está decidido está na conversa 4: como se avança com as mãos sujas, se um toque
- * acidental merece proteção, e o que acontece no fim.
+ * Da conversa 4 ficou decidido que só os botões da barra de baixo e os controlos dos temporizadores
+ * reagem ao toque. Todo o resto do ecrã é área morta — é essa a proteção contra o cotovelo e o
+ * salpico, e não uma confirmação extra que custaria um toque em cada passo.
  */
 import { useCallback, useEffect, useState } from 'react';
 import { playAlarm } from '../../data/alarm.ts';
@@ -63,6 +64,10 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
   const step = recipe.steps[index];
   const nextStep = recipe.steps[index + 1];
   const isLast = index === recipe.steps.length - 1;
+  // O botão do meio controla o temporizador deste passo. Se houver mais do que um (o passo foi
+  // repetido), manda o último, que é o que se acabou de mexer.
+  const stepTimer = [...timers].reverse().find((t) => t.stepIndex === index);
+  const otherTimers = timers.filter((t) => t !== stepTimer);
 
   const startTimer = useCallback(() => {
     if (!step?.durationMinutes) return;
@@ -127,9 +132,9 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
         />
       </div>
 
-      {timers.length > 0 && (
+      {otherTimers.length > 0 && (
         <div className={styles.timers}>
-          {timers.map((timer) => {
+          {otherTimers.map((timer) => {
             const done = isDone(timer, now);
             return (
               <div key={timer.id} className={done ? `${styles.timer} ${styles.timerDone}` : styles.timer}>
@@ -179,19 +184,17 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
           <div className={styles.stepBadges}>
             {step?.temperatureC && <span className={styles.badge}>{step.temperatureC} °C</span>}
             {step?.durationMinutes && (
-              <button type="button" className={styles.startTimer} onClick={startTimer}>
-                Iniciar {formatMinutes(step.durationMinutes)}
-              </button>
+              <span className={styles.badge}>{formatMinutes(step.durationMinutes)}</span>
             )}
           </div>
-
-          {nextStep && (
-            <div className={styles.next}>
-              <span className={styles.nextLabel}>A seguir</span>
-              {nextStep.text}
-            </div>
-          )}
         </div>
+
+        {nextStep && (
+          <div className={styles.next}>
+            <span className={styles.nextLabel}>A seguir</span>
+            <span className={styles.nextText}>{nextStep.text}</span>
+          </div>
+        )}
 
         {stepIngredients.length > 0 && (
           <aside className={styles.aside}>
@@ -220,6 +223,17 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
         >
           Anterior
         </button>
+        {step?.durationMinutes !== undefined && (
+          <TimerButton
+            className={`${styles.navButton} ${styles.timerButton}`}
+            timer={stepTimer}
+            now={now}
+            minutes={step.durationMinutes}
+            onStart={startTimer}
+            onToggle={() => stepTimer && updateTimer(stepTimer.id, isRunning(stepTimer) ? pause : resume)}
+            onRepeat={() => stepTimer && updateTimer(stepTimer.id, reset)}
+          />
+        )}
         <button
           type="button"
           className={`${styles.navButton} ${styles.primary}`}
@@ -229,5 +243,47 @@ export function ModoCozinha({ recipe, catalogue, onLeave }: ModoCozinhaProps) {
         </button>
       </div>
     </div>
+  );
+}
+
+/**
+ * O terceiro alvo da barra de baixo, entre o "Anterior" e o "Seguinte". Só existe quando o passo
+ * tem duração. Mostra sempre um ícone e uma palavra: um ícone sozinho obrigava a descobrir o que
+ * faz, e aqui não há hover que ajude.
+ */
+interface TimerButtonProps {
+  className: string;
+  timer: Timer | undefined;
+  now: number;
+  minutes: number;
+  onStart: () => void;
+  onToggle: () => void;
+  onRepeat: () => void;
+}
+
+function TimerButton({ className, timer, now, minutes, onStart, onToggle, onRepeat }: TimerButtonProps) {
+  const state = !timer
+    ? { icon: '▶', label: formatMinutes(minutes), action: onStart, hint: 'Iniciar temporizador' }
+    : isDone(timer, now)
+      ? { icon: '↺', label: 'pronto', action: onRepeat, hint: 'Repetir temporizador' }
+      : isRunning(timer)
+        ? {
+            icon: '❚❚',
+            label: formatCountdown(remainingMs(timer, now)),
+            action: onToggle,
+            hint: 'Pausar temporizador',
+          }
+        : {
+            icon: '▶',
+            label: formatCountdown(remainingMs(timer, now)),
+            action: onToggle,
+            hint: 'Retomar temporizador',
+          };
+
+  return (
+    <button type="button" className={className} onClick={state.action} aria-label={state.hint}>
+      <span aria-hidden="true">{state.icon}</span>
+      <span>{state.label}</span>
+    </button>
   );
 }

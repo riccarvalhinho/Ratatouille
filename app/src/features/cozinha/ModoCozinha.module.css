@@ -81,6 +81,7 @@
 }
 
 .body {
+  position: relative;
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -91,6 +92,12 @@
 
 @media (max-width: 900px) {
   .body { grid-template-columns: 1fr; }
+
+  .next {
+    position: static;
+    width: auto;
+    box-shadow: none;
+  }
 }
 
 /* O passo ocupa o ecrã. 32px e não os 24 do mínimo: aqui há espaço e lê-se de longe. */
@@ -110,26 +117,41 @@
   font-weight: 600;
 }
 
-.startTimer {
-  min-height: var(--touch-target);
-  padding: var(--space-3) var(--space-5);
-  border: none;
-  border-radius: var(--radius-md);
-  background: var(--color-accent);
-  color: var(--color-accent-text);
-  font-size: var(--text-lg);
-  font-weight: 600;
-}
-
-/* O passo seguinte em pequeno: "enquanto isto coze, vou cortando". */
+/*
+ * O passo seguinte em pequeno: "enquanto isto aloura, vou desfiando o bacalhau". Cartão fixo no
+ * canto inferior direito — sítio previsível, e não rouba largura ao passo atual. Fica por cima do
+ * fundo da lista de ingredientes, que é o custo aceite desta escolha.
+ */
 .next {
-  margin-top: var(--space-7);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-border);
+  position: absolute;
+  right: var(--space-6);
+  bottom: var(--space-6);
+  width: 320px;
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-raised);
   color: var(--color-text-muted);
 }
 
-.nextLabel { display: block; font-size: var(--text-sm); margin-bottom: var(--space-2); }
+.nextLabel {
+  display: block;
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-1);
+}
+
+/* Duas linhas e reticências: o cartão nunca cresce ao ponto de tapar a lista toda. */
+.nextText {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
 
 .aside { border-left: 1px solid var(--color-border); padding-left: var(--space-6); }
 
@@ -155,7 +177,10 @@
 
 .asideAmount { color: var(--color-text-muted); white-space: nowrap; }
 
-/* Barra de baixo: alvos de toque grandes, longe um do outro. */
+/*
+ * Barra de baixo: os únicos alvos de toque do ecrã, tirando o "Sair" e os controlos dos
+ * temporizadores. Tudo o resto é área morta de propósito — ver a nota no topo do componente.
+ */
 .bottom {
   display: flex;
   gap: var(--space-4);
@@ -173,11 +198,38 @@
   color: var(--color-text);
   font-size: var(--text-lg);
   font-weight: 600;
+  /* Relevo de 2px: com as mãos ocupadas, um botão que parece premível vale mais do que um contorno. */
+  box-shadow: 0 2px 0 var(--color-border);
 }
 
 .navButton:disabled { opacity: 0.35; }
+.navButton:active { transform: translateY(2px); box-shadow: none; }
 
-.primary { flex: 2; border-color: transparent; background: var(--color-accent); color: var(--color-accent-text); }
+/* O terceiro alvo, ao meio. Estreito, para não competir com o "Seguinte". */
+.timerButton {
+  flex: 0 0 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.timerButton > span:first-child { font-size: var(--text-lg); }
+
+.primary {
+  flex: 2;
+  border-color: transparent;
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  box-shadow: 0 3px 0 rgb(0 0 0 / 18%);
+}
 
 .done {
   display: flex;
