@@ -1,6 +1,6 @@
 # Conversa 4 — Modo cozinha
 
-**Estado:** Em curso — perguntas 1, 2 e 3 fechadas; a 8 é a próxima a decidir
+**Estado:** Em curso — perguntas 1, 2 e 3 fechadas; a 8 é a próxima a decidir e mexe no schema
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/005-modo-cozinha.md`
 **Prioridade:** Pode esperar — é M5. Mas é o ecrã que justifica o tablet estar na parede.
@@ -48,42 +48,90 @@ molhadas. Todas as regras de interface normais são suspeitas aqui.
 7. **Como sabes que acabaste?** O último passo é "sirva". Depois disso, o que devia o ecrã fazer —
    perguntar se correu bem, voltar à receita, ou apagar-se e deixar-te comer?
 
-8. **Um título por cima do passo?** Veio do modo cozinha do Claude, que põe "Preparar o marisco" a
-   negrito e o texto do passo por baixo. A favor: dá foco e diz de relance em que ponto da receita se
-   está, sem obrigar a ler a frase toda. Contra, e é o receio certo: nos passos curtos o título só
-   repete o verbo — "Temperar o frango" por cima de "Tempere as coxas de frango com sal e pimenta" é
-   ruído com ar de estrutura. Ver a proposta abaixo, que tenta ficar com o lado bom sem o mau.
+8. **Um título por passo?** Veio do modo cozinha do Claude, que põe "Preparar o marisco" a negrito e
+   o detalhe a seguir. A favor: dá foco e diz de relance o que se está a fazer, sem obrigar a ler a
+   frase toda. Contra: nos passos curtos o título arrisca-se a repetir o verbo — "Temperar o frango"
+   por cima de "Tempere as coxas de frango com sal e pimenta" é ruído com ar de estrutura. Ver a
+   proposta abaixo, que é onde está a saída para isso.
 
-## Proposta para a pergunta 8 — fase, não título
+## Proposta para a pergunta 8 — título por passo, com o texto reescrito para completar
 
-A minha posição: **um título por passo não compensa; um nome de fase que dura vários passos
-compensa.**
+### Uma correção, primeiro
 
-O raciocínio é o dos números. Os passos do seed têm entre 65 e 90 caracteres e fazem uma ação cada —
-temperar, alourar, juntar, deixar cozer. Um título por cima de uma frase dessas só pode ser a mesma
-frase mais curta, e é precisamente a redundância que preocupa. O exemplo do Claude não tem esse
-problema porque os títulos dele não são por passo: "Preparar o marisco" cobre três ou quatro passos
-seguidos. O que ali está a fazer trabalho não é o título, é a **fase**.
+A minha primeira leitura do exemplo foi errada e vale a pena ficar registada, porque foi ela que quase
+levou a proposta para o sítio errado. Li "Preparar o marisco" como o nome de uma **fase** que cobria
+três ou quatro passos, e propus um campo `phase` em vez de um título. Não é isso: no exemplo os
+títulos são **1 para 1 com os passos** — "Preparar o marisco", "Fazer o caldo base", "Enriquecer o
+caldo", "Fazer o refogado", um por cada número. A relação é próxima, e a fase não é a saída.
 
-Concretamente: um campo opcional `phase` no passo, preenchido só no passo em que a fase começa, e o
-nome fica visível — pequeno, em maiúsculas discretas, por cima do texto — enquanto essa fase durar.
-Assim uma receita de arroz de marisco lê "PREPARAR O MARISCO" durante os passos 1 a 3, "FAZER O
-REFOGADO" durante os 4 a 6, e por aí. Uma receita simples não preenche nada e o ecrã fica como está
-hoje.
+### Onde está a diferença que interessa
 
-O que isto ganha sobre o título por passo: nunca duplica, porque uma fase e um passo dizem coisas de
-tamanhos diferentes. E dá o que o título prometia — saber onde se está sem ler a frase.
+Está no comprimento do texto, e é grande. Os passos do exemplo têm à volta de **200 caracteres** — são
+parágrafos, com quantidades e técnica lá dentro. Os nossos 55 passos do seed têm mediana de **57
+caracteres** e máximo de 90. Ou seja, o nosso passo já tem quase o tamanho de um título.
 
-O que custa: é mudança de schema, portanto `data/schema/recipe.schema.json` primeiro e depois os
-tipos. Preencher as seis receitas do seed é meia hora, e o importador passa a ter de decidir onde
-começa cada fase — que é a parte que pode correr mal, e vale a pena perguntar-lhe em vez de adivinhar.
+É isso que explica por que ali não há redundância e aqui haveria: um título por cima de um parágrafo
+resume; um título por cima de uma frase de sete palavras repete-a.
 
-Duas perguntas para responderes de seguida, se concordares com o caminho:
+### A saída é a que apontaste
 
-1. Nas receitas que fazes mais vezes, as fases aparecem-te naturalmente ("agora é a parte do molho")
-   ou é uma arrumação que eu estou a inventar por cima de uma lista de passos?
-2. Se uma receita tiver quatro ou cinco fases, queres vê-las todas em algum sítio — uma linha no
-   topo com a fase atual assinalada — ou basta o nome da fase em que estás?
+Não é escolher entre título e texto — é **escrever os dois a saber que o outro existe**. O título fica
+com o verbo e o objeto, o texto fica só com o que o título não diz: o como, o até quando, a ressalva.
+Nenhum dos dois repete o outro, e a soma até fica mais curta do que a frase de hoje.
+
+O caldo verde inteiro, reescrito assim, para se ver se pega:
+
+| # | Título | Texto |
+|---|---|---|
+| 1 | Refogar a base | Metade do azeite, a cebola e o alho. Amolecer sem alourar. |
+| 2 | Juntar as batatas e a água | Temperar com sal. |
+| 3 | Cozer | Até a batata se desfazer com o garfo. |
+| 4 | Passar a puré | Com a varinha mágica, até ficar liso. |
+| 5 | Alourar o chouriço | Em rodelas, numa frigideira à parte, sem gordura extra. |
+| 6 | Juntar a couve | Voltar a pôr o caldo a ferver primeiro. |
+| 7 | Cozer a couve | Destapado, para não perder a cor. |
+| 8 | Servir | Uma rodela de chouriço e um fio do restante azeite em cada prato. |
+
+Oito passos, nenhuma repetição, e o texto encolheu. O padrão sai sozinho: **o título é o que se faz, o
+texto é o que é preciso saber para não o fazer mal.**
+
+### O que isto custa
+
+Três coisas, e a segunda é a que pode correr mal.
+
+**Os 55 passos do seed são para reescrever**, não só para lhes acrescentar um título por cima. É o
+trabalho todo desta decisão — uma a duas horas — e é o que faz a diferença entre a coisa funcionar e
+ser ruído.
+
+**O importador passa a ter de fazer a separação sozinho**, e o modo de falhar é óbvio: um modelo
+produz de bom grado "Temperar o frango" seguido de "Tempere o frango com sal e pimenta". É
+exatamente o receio, gerado em série. A spec 007 precisa da regra escrita — *o texto não repete o
+título; se o título já disser tudo, o texto fica vazio* — e de um exemplo mau ao lado do bom.
+
+**A tipografia do modo cozinha volta à mesa**, uma semana depois de ter sido arrumada. Dois níveis
+não cabem os dois a 44px. Proponho o título a 44px e o texto a 30px por baixo, o que mantém o que se
+ganhou: quem olha de longe lê o título, quem precisa do detalhe baixa os olhos uma linha.
+
+E um efeito lateral que é bónus e não custo: **o ecrã de detalhe também melhora.** Doze títulos em
+lista lêem-se de relance; doze frases não.
+
+### O que fica de fora, e porquê
+
+A fase que propus antes fica **de reserva, não descartada**. Há um sítio no seed onde ela já anda
+disfarçada: o bacalhau com natas tem "Para o béchamel: derreta a manteiga…", e esse prefixo está a
+fazer trabalho de fase dentro do texto do passo. Com títulos, os passos 6 a 9 passam a "Fazer a
+pasta", "Engrossar", "Temperar", "Juntar as natas" — e perde-se a informação de que os quatro são o
+mesmo molho. Pode não fazer falta. Se fizer, acrescenta-se depois; título e fase não competem.
+
+### Três perguntas para responderes de seguida
+
+1. Reescrever os 55 passos do seed agora, ou só pôr títulos nas receitas novas daqui para a frente? A
+   segunda é mais barata mas deixa o catálogo com dois formatos ao mesmo tempo, e isso nota-se no
+   ecrã de detalhe.
+2. No modo cozinha, qual dos dois é o grande — o título ou o texto? Eu ponho o título a 44px porque é
+   o que se lê de longe, mas o detalhe é que te impede de errar, e admito que seja ao contrário.
+3. Aquele "Para o béchamel" do bacalhau: quando estás a cozinhar, dá-te jeito saber que quatro passos
+   seguidos são todos o mesmo molho, ou basta-te o passo em que estás?
 
 ## Registo da conversa
 
@@ -166,7 +214,8 @@ passa a reservar-lhe a faixa de baixo, mesmo no último passo onde o cartão nã
 espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
 
 **O que ficou por decidir foi o título a negrito** que o exemplo tinha por cima do passo. É a
-pergunta 8, e a proposta está lá em cima: fase em vez de título.
+pergunta 8, e a proposta está lá em cima: título por passo, com o texto reescrito para o completar
+em vez de o repetir.
 
 ### O que mudou por arrasto
 
