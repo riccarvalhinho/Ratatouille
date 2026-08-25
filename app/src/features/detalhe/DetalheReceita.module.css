@@ -258,3 +258,18 @@
 
 /* Favorito ativo: a única cor fora do acento, porque é um estado e não uma ação. */
 .favourite { color: var(--color-favorite); }
+
+/*
+ * Crédito da fotografia. Pequeno e discreto, mas presente — é obrigação da licença e não cortesia.
+ * Vive debaixo da imagem, que é onde faz sentido para quem a está a ver.
+ */
+.figure { margin: 0; }
+
+.credit {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  line-height: 1.4;
+}
+
+.credit a { color: inherit; }

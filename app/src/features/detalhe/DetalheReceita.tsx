@@ -78,7 +78,34 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
         <div className={styles.body}>
           <div className={styles.top}>
             {recipe.image ? (
-              <img className={styles.thumb} src={recipe.image} alt="" />
+              <figure className={styles.figure}>
+                <img className={styles.thumb} src={recipe.image} alt="" />
+                {/*
+                  A atribuição é obrigação da licença, não cortesia. As imagens CC BY e CC BY-SA
+                  exigem crédito ao autor, e as APIs do Pexels e do Pixabay pedem que se diga de onde
+                  veio. Guardar isto só no JSON não chega: quem vê a fotografia tem de ver o crédito.
+                */}
+                {recipe.imageCredit && (
+                  <figcaption className={styles.credit}>
+                    {recipe.imageCredit.author ?? 'Autor não indicado'} ·{' '}
+                    {recipe.imageCredit.licenseUrl ? (
+                      <a href={recipe.imageCredit.licenseUrl} target="_blank" rel="noreferrer noopener">
+                        {recipe.imageCredit.license}
+                      </a>
+                    ) : (
+                      recipe.imageCredit.license
+                    )}
+                    {recipe.imageCredit.sourceUrl && (
+                      <>
+                        {' · '}
+                        <a href={recipe.imageCredit.sourceUrl} target="_blank" rel="noreferrer noopener">
+                          fonte
+                        </a>
+                      </>
+                    )}
+                  </figcaption>
+                )}
+              </figure>
             ) : (
               <div className={styles.thumbFallback} aria-hidden="true">
                 🍲

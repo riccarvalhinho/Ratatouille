@@ -14,15 +14,40 @@ com o nome certo.
 
 ## De onde vêm
 
-`.github/workflows/buscar-imagens.yml` procura em dois bancos de licença livre, **nenhum deles com
-chave de API**: o Wikimedia Commons primeiro e o Openverse a seguir. Corre no GitHub Actions e não
-numa sessão de Claude Code, porque o proxy dessas sessões bloqueia os bancos todos.
+`.github/workflows/buscar-imagens.yml` procura em quatro bancos. Corre no GitHub Actions e não numa
+sessão de Claude Code, porque o proxy dessas sessões bloqueia os bancos todos.
 
-O Pexels, o Unsplash e o Pixabay ficaram de fora apesar de terem melhor fotografia de comida:
-exigem conta e um segredo no repositório, e a licença própria de cada um é mais difícil de cumprir
-num repositório público do que um CC com atribuição.
+| Banco | Chave? | Papel |
+|---|---|---|
+| **Pexels** | sim, grátis | Primeiro quando há chave. É o que tem fotografia de estúdio |
+| **Pixabay** | sim, grátis | Segundo com chave |
+| **Wikimedia Commons** | não | Sempre. Cobre pratos com nome próprio |
+| **Openverse** | não | Sempre, por último |
 
 Nunca licenças **ND**: a app recorta com `object-fit: cover`, e recortar é uma derivação.
+
+O **Unsplash** ficou de fora. A fotografia é a melhor das quatro, mas os termos da API pedem que as
+imagens sejam servidas a partir deles e que cada descarga seja notificada — o que não combina com uma
+app que tem de funcionar offline numa cozinha.
+
+### Para ligar o Pexels e o Pixabay
+
+Faz-se uma vez e são três minutos:
+
+1. Conta gratuita em [pexels.com/api](https://www.pexels.com/api/) e em
+   [pixabay.com/api/docs](https://pixabay.com/api/docs/).
+2. No GitHub: Settings → Secrets and variables → Actions → New repository secret.
+3. `PEXELS_API_KEY` e `PIXABAY_API_KEY`.
+
+**A chave nunca vai para o repositório**, vai para os segredos, que é onde os segredos vivem. Sem
+elas o workflow corre à mesma, só com os outros dois bancos.
+
+### A atribuição tem de aparecer no ecrã
+
+As licenças CC BY e CC BY-SA **exigem** crédito, e os termos das APIs do Pexels e do Pixabay pedem
+que se diga de onde a imagem veio. Guardar isso só no JSON não era cumprir — desde a versão em que
+os bancos curados entraram, o `imageCredit` é **mostrado por baixo da fotografia no detalhe da
+receita**. Se alguma vez alguém tirar essa linha, tira também o direito de usar as imagens.
 
 ### O que aprendemos ao correr isto a sério
 
@@ -42,12 +67,28 @@ A regra final é uma só linha: **o título tem de conter o nome da receita inte
 custo é haver menos receitas com fotografia, e é o custo certo — a app mostra bem uma receita sem
 fotografia, e uma fotografia errada mente.
 
+### Duas regras, porque há dois tipos de banco
+
+O Commons e o Openverse são **arquivos**: cada ficheiro tem um nome que alguém escolheu para
+identificar o que lá está. A regra acima aplica-se a eles.
+
+O Pexels e o Pixabay são **bancos curados**: a legenda descreve a fotografia ("Cooked Food on White
+Ceramic Plate"), não identifica o prato. Aí a afirmação sobre o prato é a **consulta**, e aceita-se a
+ordem de relevância deles.
+
+Isso tem um custo que vale a pena dizer em voz alta: para "bacalhau com natas" não vem bacalhau com
+natas — vem **um belo gratinado**. É a troca que se faz por fotografia de estúdio. Quem quiser
+apertar a pontaria dá a consulta à mão, e em inglês, que é como estes bancos indexam:
+
+```bash
+npm run imagens -- bacalhau-com-natas --query "cod gratin potatoes casserole"
+```
+
 ### O que isto quer dizer na prática
 
-Funciona bem para pratos com **nome próprio** — bacalhau com natas, caldo verde, arroz doce. Não
-funciona para nomes descritivos que são só ingredientes juntos: "arroz de frango", "salada de grão
-com atum", "pão recheado com chouriço e queijo". Para esses, ou se tira uma fotografia, ou se
-escolhe uma à mão com `npm run import:image -- "o que procurar"`.
+Sem chaves, funciona para pratos com **nome próprio** — bacalhau com natas, caldo verde, arroz doce
+— e não funciona para nomes que são só ingredientes juntos. Com chaves, há sempre uma fotografia
+bonita, mas é preciso decidir se uma imagem representativa serve, ou se só serve o prato exato.
 
 ## Se o volume crescer
 
