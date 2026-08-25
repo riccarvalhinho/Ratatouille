@@ -15,9 +15,16 @@
  * programa diz no fim o que escolheu e de onde.
  *
  * Uso:
- *   npx tsx tools/buscar-imagens.ts                  # todas as que não têm imagem
- *   npx tsx tools/buscar-imagens.ts caldo-verde      # só esta
- *   npx tsx tools/buscar-imagens.ts --force          # substitui as que já têm
+ *   npx tsx tools/buscar-imagens.ts                                          # as que não têm imagem
+ *   npx tsx tools/buscar-imagens.ts caldo-verde                              # só esta
+ *   npx tsx tools/buscar-imagens.ts caldo-verde --query "kale potato soup"   # com outro termo
+ *   npx tsx tools/buscar-imagens.ts --force                                  # substitui as que há
+ *
+ * ## As chaves
+ *
+ * `PEXELS_API_KEY` e `PIXABAY_API_KEY` são opcionais. Sem elas ficam só o Commons e o Openverse, que
+ * cobrem pratos com nome próprio mas não dão fotografia de estúdio. Com elas, os bancos curados vêm
+ * primeiro. Ver o cabeçalho de `tools/import/images.ts`.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,34 +48,45 @@ function normalise(text: string): string {
 }
 
 /**
+ * Bancos onde a legenda descreve a fotografia, não identifica o prato.
+ *
+ * O Pexels devolve `alt` como "Cooked Food on White Ceramic Plate" e o Pixabay devolve etiquetas
+ * como "soup, food, bowl". Nenhum diz "bacalhau com natas" — nem tem de dizer: **a afirmação sobre
+ * o prato é a consulta que se fez**, e a ordem em que respondem é o juízo deles sobre ela.
+ */
+const CURATED = new Set(['pexels', 'pixabay']);
+
+/**
  * Decide se uma candidata serve, e quanto.
  *
- * **O título tem de conter o nome da receita inteiro e seguido.** Mais nada serve.
+ * Há duas regras, porque há dois tipos de banco.
  *
- * A regra chegou aqui por duas tentativas falhadas, as duas no "Arroz de frango". Contar palavras
- * do nome no título trouxe um biryani indiano de "Paparis, apas, achares e arroz biriani de
- * frango". Exigir todas as palavras e no máximo três a mais trouxe um prato africano de "Arroz,
- * frango, ovo, salsichas et mayonnaise" — passou por uma palavra.
+ * **Commons e Openverse** são arquivos: cada ficheiro tem um nome que alguém escolheu para
+ * identificar o que lá está. Aí o título é uma afirmação, e exige-se que **contenha o nome da
+ * receita inteiro e seguido**. Foi o que se aprendeu à força: contar palavras soltas trouxe um
+ * biryani indiano para o "Arroz de frango", e um prato africano à segunda tentativa. "Arroz" e
+ * "frango" separados são um sinal fraco; seguidos, são uma afirmação.
  *
- * Podia ter apertado o limiar para duas, mas isso era ajustar a regra a dois exemplos. O problema
- * real é outro: "arroz" e "frango" soltos são um sinal fraco, porque metade da cozinha lusófona os
- * tem. Um nome que aparece **seguido** é uma afirmação sobre o prato; as mesmas palavras espalhadas
- * por uma legenda não são.
- *
- * O custo é haver menos receitas com fotografia, e é o custo certo: **nenhuma imagem é melhor do
- * que a errada.** A app mostra bem uma receita sem fotografia; uma fotografia errada mente.
+ * **Pexels e Pixabay** são bancos curados: aceita-se a ordem deles e confia-se na consulta. Isso
+ * tem um custo que vale a pena dizer em voz alta — para "bacalhau com natas" não vem bacalhau com
+ * natas, vem **um belo gratinado**. É a troca que se faz por fotografia de estúdio, e é por isso
+ * que a consulta se pode dar à mão com `--query`.
  */
 export function scoreCandidate(
   candidate: ImageCandidate,
   position: number,
   recipeName: string,
 ): number | undefined {
+  const bigEnough = (candidate.width ?? 0) >= 800 ? 3 : 0;
+
+  if (candidate.provider && CURATED.has(candidate.provider)) {
+    return 20 + bigEnough - position;
+  }
+
   const title = normalise(candidate.title ?? '');
   const name = normalise(recipeName);
-
   if (!title || !name || !title.includes(name)) return undefined;
 
-  const bigEnough = (candidate.width ?? 0) >= 800 ? 3 : 0;
   // Entre as que passam, ganha a mais próxima: título curto e alta na relevância do banco.
   const extraWords = title.split(' ').length - name.split(' ').length;
   return 25 + bigEnough - position - extraWords;
@@ -131,8 +149,8 @@ export function withImage(recipe: RecipeFile, candidate: ImageCandidate): Recipe
   return updated;
 }
 
-async function findAndSave(recipe: RecipeFile): Promise<ImageCandidate | undefined> {
-  const candidates = await searchFreeImages(recipe.name);
+async function findAndSave(recipe: RecipeFile, query: string): Promise<ImageCandidate | undefined> {
+  const candidates = await searchFreeImages(query);
   if (candidates.length === 0) return undefined;
 
   const ranked = candidates
@@ -167,7 +185,21 @@ async function findAndSave(recipe: RecipeFile): Promise<ImageCandidate | undefin
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const force = args.includes('--force');
-  const only = args.filter((arg) => !arg.startsWith('-'));
+
+  /*
+   * `--query` troca o termo de procura, e é o que torna os bancos curados úteis: eles indexam em
+   * inglês, e "cod gratin with potatoes" traz muito melhor fotografia do que "bacalhau com natas".
+   * Só faz sentido com uma receita de cada vez.
+   */
+  const queryAt = args.indexOf('--query');
+  const query = queryAt >= 0 ? args[queryAt + 1] : undefined;
+
+  const only = args.filter((arg, index) => !arg.startsWith('-') && index !== queryAt + 1);
+
+  if (query && only.length !== 1) {
+    console.error('O --query serve para uma receita de cada vez. Diz qual.');
+    process.exit(1);
+  }
 
   const files = fs
     .readdirSync(paths.recipes)
@@ -188,8 +220,8 @@ async function main(): Promise<void> {
       continue;
     }
 
-    console.log(`\n${recipe.name}`);
-    const candidate = await findAndSave(recipe);
+    console.log(`\n${recipe.name}${query ? `  (a procurar "${query}")` : ''}`);
+    const candidate = await findAndSave(recipe, query ?? recipe.name);
 
     if (!candidate) {
       console.log('  nada aproveitável em nenhum banco');

@@ -5,18 +5,40 @@
  * Uma imagem CC é usável — desde que a atribuição seja guardada, e é para isso que existe o campo
  * `imageCredit` no schema.
  *
- * ## Os dois bancos, e porquê estes
+ * ## Os quatro bancos
  *
- * | Banco | Chave? | Licenças | Papel |
+ * | Banco | Chave? | Licença | Papel |
  * |---|---|---|---|
- * | **Wikimedia Commons** | não | CC BY, CC BY-SA, CC0, domínio público | Primeiro. Licença explícita por ficheiro e boa cobertura de pratos com nome próprio |
- * | **Openverse** | não | Só CC e domínio público, por construção | Segundo. Agrega Flickr e outros; apanha o que ao Commons falta |
+ * | **Pexels** | sim, grátis | Pexels License: usar, modificar, alojar, sem pagar | Primeiro **quando há chave**. É de longe o que tem fotografia de estúdio |
+ * | **Pixabay** | sim, grátis | Pixabay Content License, semelhante | Segundo com chave |
+ * | **Wikimedia Commons** | não | CC BY, CC BY-SA, CC0, domínio público | Sempre. Cobre pratos com nome próprio |
+ * | **Openverse** | não | Só CC e domínio público | Sempre, por último. Agrega Flickr |
  *
- * Ficaram de fora o Pexels, o Unsplash e o Pixabay. Têm melhor fotografia de comida, mas **exigem
- * uma chave de API** — ou seja, uma conta e um segredo no repositório. Um projeto que existe para
- * não depender de serviços que adormecem (ADR 0002) não deve ganhar uma dependência dessas para ter
- * thumbnails. E a licença própria de cada um deles é mais difícil de cumprir num repositório
- * público do que um CC com atribuição.
+ * ### Porque é que os dois primeiros entraram, depois de eu os ter excluído
+ *
+ * Excluí-os na primeira versão com o argumento de que "um segredo no repositório" contraria o
+ * espírito do projeto. **Estava errado em duas coisas.**
+ *
+ * A chave não vai para o repositório: vai para os *repository secrets* do GitHub, que é onde os
+ * segredos devem estar e nunca aparecem no código. Confundi as duas coisas.
+ *
+ * E a ADR 0002 — não depender de serviços que adormecem — não se aplica aqui. Estes bancos são
+ * consultados **uma vez por receita, ao importar**, não em tempo de execução. Se o Pexels fechar
+ * amanhã, as fotografias já descarregadas continuam no repositório e a app nem dá por isso.
+ *
+ * O custo verdadeiro é outro, e é pequeno: uma conta gratuita e uma chave colada nos segredos do
+ * repositório, uma vez. Sem chave, o programa salta estes bancos e usa só os outros dois.
+ *
+ * ### A obrigação que vem com eles
+ *
+ * As duas licenças dispensam atribuição para uso normal, **mas os termos das APIs pedem que se diga
+ * de onde a imagem veio**. Por isso o crédito é guardado em `imageCredit` e — desde esta versão —
+ * **mostrado no ecrã de detalhe**. Vale para os quatro bancos: as licenças CC BY e CC BY-SA exigem
+ * crédito de qualquer maneira, e guardá-lo só no JSON não era cumprir.
+ *
+ * O Unsplash continua de fora. A fotografia é a melhor das quatro, mas os termos da API pedem que as
+ * imagens sejam servidas a partir deles e que cada descarga seja notificada — o que não combina com
+ * uma app que tem de funcionar offline numa cozinha.
  */
 export interface ImageCandidate {
   title?: string;
@@ -167,14 +189,125 @@ export async function searchCommons(query: string, limit = 12): Promise<ImageCan
   });
 }
 
+/** Chaves opcionais. Sem elas, o banco correspondente é simplesmente saltado. */
+const PEXELS_KEY = process.env.PEXELS_API_KEY;
+const PIXABAY_KEY = process.env.PIXABAY_API_KEY;
+
 /**
- * Procura nos dois bancos, Commons primeiro.
+ * Pexels. É o que tem fotografia de estúdio a sério.
+ *
+ * `orientation=landscape` porque todos os sítios onde a imagem aparece são mais largos do que altos:
+ * o cartão do catálogo é 4:3, a thumbnail do plano é 320×64, e o detalhe é 4:3. Uma fotografia
+ * vertical seria recortada até não sobrar prato.
+ */
+export async function searchPexels(query: string, limit = 12): Promise<ImageCandidate[]> {
+  if (!PEXELS_KEY) return [];
+
+  const params = new URLSearchParams({
+    query,
+    per_page: String(limit),
+    orientation: 'landscape',
+  });
+
+  const response = await fetch(`https://api.pexels.com/v1/search?${params.toString()}`, {
+    headers: { Authorization: PEXELS_KEY, 'User-Agent': USER_AGENT },
+  });
+
+  if (!response.ok) throw new Error(`O Pexels respondeu ${response.status}.`);
+
+  const data = (await response.json()) as {
+    photos?: {
+      alt?: string;
+      photographer?: string;
+      url?: string;
+      width?: number;
+      height?: number;
+      src?: { large?: string; medium?: string };
+    }[];
+  };
+
+  return (data.photos ?? []).flatMap((photo): ImageCandidate[] => {
+    const url = photo.src?.large ?? photo.src?.medium;
+    if (!url) return [];
+
+    const candidate: ImageCandidate = {
+      url,
+      license: 'Pexels License',
+      licenseUrl: 'https://www.pexels.com/license/',
+      provider: 'pexels',
+      // O `alt` do Pexels descreve a fotografia; serve de título e alimenta a verificação.
+      title: photo.alt ?? query,
+    };
+    if (photo.photographer) candidate.creator = photo.photographer;
+    if (photo.url) candidate.sourceUrl = photo.url;
+    if (photo.width) candidate.width = photo.width;
+    if (photo.height) candidate.height = photo.height;
+    return [candidate];
+  });
+}
+
+/** Pixabay. Segundo dos bancos com chave; produção mais irregular do que a do Pexels. */
+export async function searchPixabay(query: string, limit = 12): Promise<ImageCandidate[]> {
+  if (!PIXABAY_KEY) return [];
+
+  const params = new URLSearchParams({
+    key: PIXABAY_KEY,
+    q: query,
+    per_page: String(limit),
+    image_type: 'photo',
+    orientation: 'horizontal',
+    category: 'food',
+    safesearch: 'true',
+  });
+
+  const response = await fetch(`https://pixabay.com/api/?${params.toString()}`, {
+    headers: { 'User-Agent': USER_AGENT },
+  });
+
+  if (!response.ok) throw new Error(`O Pixabay respondeu ${response.status}.`);
+
+  const data = (await response.json()) as {
+    hits?: {
+      tags?: string;
+      user?: string;
+      pageURL?: string;
+      largeImageURL?: string;
+      webformatURL?: string;
+      imageWidth?: number;
+      imageHeight?: number;
+    }[];
+  };
+
+  return (data.hits ?? []).flatMap((hit): ImageCandidate[] => {
+    const url = hit.webformatURL ?? hit.largeImageURL;
+    if (!url) return [];
+
+    const candidate: ImageCandidate = {
+      url,
+      license: 'Pixabay Content License',
+      licenseUrl: 'https://pixabay.com/service/license-summary/',
+      provider: 'pixabay',
+      // O Pixabay não dá título; as tags são o que mais se aproxima de uma descrição.
+      title: hit.tags ?? query,
+    };
+    if (hit.user) candidate.creator = hit.user;
+    if (hit.pageURL) candidate.sourceUrl = hit.pageURL;
+    if (hit.imageWidth) candidate.width = hit.imageWidth;
+    if (hit.imageHeight) candidate.height = hit.imageHeight;
+    return [candidate];
+  });
+}
+
+/**
+ * Procura nos quatro bancos.
  *
  * Um banco em baixo não faz falhar o outro: se um deitar erro, fica um aviso e continua-se. Vale
  * mais uma thumbnail do que nenhuma.
  */
 export async function searchFreeImages(query: string, limit = 12): Promise<ImageCandidate[]> {
   const banks: [string, () => Promise<ImageCandidate[]>][] = [
+    ['Pexels', () => searchPexels(query, limit)],
+    ['Pixabay', () => searchPixabay(query, limit)],
     ['Commons', () => searchCommons(query, limit)],
     ['Openverse', () => searchImages(query, limit)],
   ];

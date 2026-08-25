@@ -10,6 +10,10 @@ on:
         description: 'Ids separados por espaços, ou vazio para todas as que não têm imagem'
         required: false
         type: string
+      consulta:
+        description: 'Termo de procura alternativo, em inglês. Só com uma receita de cada vez'
+        required: false
+        type: string
       forcar:
         description: 'Substituir imagens que já existem'
         required: false
@@ -45,9 +49,16 @@ jobs:
 
       - run: npm ci
 
+      # As chaves são opcionais: sem elas o programa usa só o Commons e o Openverse. Vivem nos
+      # segredos do repositório e nunca no código — ver tools/import/images.ts.
       - name: Procurar as imagens
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
-          npx tsx tools/buscar-imagens.ts ${{ inputs.receitas }} ${{ inputs.forcar && '--force' || '' }}
+          npx tsx tools/buscar-imagens.ts ${{ inputs.receitas }} \
+            ${{ inputs.consulta && format('--query "{0}"', inputs.consulta) || '' }} \
+            ${{ inputs.forcar && '--force' || '' }}
 
       # Se a atribuição ficar mal formada, o schema apanha isso aqui e não depois de estar no main.
       - name: Validar os dados

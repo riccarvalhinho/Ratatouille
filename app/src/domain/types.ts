@@ -166,6 +166,17 @@ export interface Recipe {
   /** Campos que o importador não conseguiu determinar — as perguntas que a revisão vai fazer. */
   gaps?: string[];
   image?: string;
+  /**
+   * Atribuição da imagem. Obrigatória quando a fotografia vem de um banco de licença livre — as
+   * licenças CC BY e CC BY-SA exigem crédito, e as APIs do Pexels e do Pixabay pedem que se diga de
+   * onde veio. Ver `data/schema/recipe.schema.json` e `media/README.md`.
+   */
+  imageCredit?: {
+    author?: string;
+    license: string;
+    licenseUrl?: string;
+    sourceUrl?: string;
+  };
   /** Opcional: há receitas que rendem unidades e não pessoas. Existe sempre `servings` ou `yield`. */
   servings?: number;
   /** Rendimento que não são pessoas: "30 bolachas", "1 bolo de 24 cm". */
