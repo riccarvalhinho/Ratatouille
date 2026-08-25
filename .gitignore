@@ -6,5 +6,6 @@ dist/
 .env.*
 !.env.example
 
-# Gerado por tools/build-bundle.ts a partir de data/. Nunca editar à mão.
+# Gerados por tools/build-bundle.ts a partir de data/ e media/. Nunca editar à mão.
 app/public/data/
+app/public/media/

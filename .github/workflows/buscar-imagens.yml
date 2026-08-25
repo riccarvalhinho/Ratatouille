@@ -1,0 +1,85 @@
+name: Buscar imagens de licença livre
+
+# Existe pela mesma razão que o "Importar receita de um link": as sessões de Claude Code não têm
+# saída para bancos de imagens, e os runners do GitHub têm internet normal. Ver o cabeçalho de
+# tools/buscar-imagens.ts para os bancos usados e porquê.
+on:
+  workflow_dispatch:
+    inputs:
+      receitas:
+        description: 'Ids separados por espaços, ou vazio para todas as que não têm imagem'
+        required: false
+        type: string
+      forcar:
+        description: 'Substituir imagens que já existem'
+        required: false
+        type: boolean
+        default: false
+      ramo:
+        description: 'Ramo onde commitar'
+        required: false
+        type: string
+        default: claude/kitchen-app-planning-o8v0b5
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-imagens
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    name: Procurar, validar e commitar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ramo }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+
+      - name: Procurar as imagens
+        run: |
+          npx tsx tools/buscar-imagens.ts ${{ inputs.receitas }} ${{ inputs.forcar && '--force' || '' }}
+
+      # Se a atribuição ficar mal formada, o schema apanha isso aqui e não depois de estar no main.
+      - name: Validar os dados
+        run: npm run validate
+
+      - name: Commitar o que apareceu
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          if git diff --quiet && git diff --staged --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "Nada encontrado — nenhuma alteração para commitar."
+            exit 0
+          fi
+
+          git add media/recipes data/recipes
+          git commit -m "Imagens de licença livre para as receitas
+
+          Descarregadas por .github/workflows/buscar-imagens.yml. A atribuição de
+          cada uma ficou em imageCredit, como o schema exige.
+
+          Falta a parte que uma máquina não faz: confirmar que cada fotografia
+          mostra mesmo o prato certo."
+          git push origin HEAD:${{ inputs.ramo }}
+
+      - name: Resumo
+        if: always()
+        run: |
+          echo '### Imagens em `media/recipes/`' >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          if [ -d media/recipes ]; then
+            ls -lh media/recipes | tail -n +2 | awk '{print "- `" $9 "` — " $5}' >> $GITHUB_STEP_SUMMARY
+          else
+            echo '_Nenhuma._' >> $GITHUB_STEP_SUMMARY
+          fi
