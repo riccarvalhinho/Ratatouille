@@ -46,6 +46,9 @@ fonte (link, foto, texto colado, ou de cabeça)
 - **Unidades do sistema métrico**, em português: `g`, `kg`, `ml`, `l`, `un`, `csopa`, `cchá`, `qb`.
 - **Passos curtos.** Uma ação por passo. Um passo que precisa de vírgulas a mais são dois passos.
   O documento original é explícito: "text por bullets e simplificado, nada de grandes parágrafos".
+  ⚠️ A parte das vírgulas está a ser rediscutida na conversa 4, pergunta 8, que propõe agregar ao
+  nível de tarefa — "juntar as batatas e a água, temperar com sal e deixar até se desfazerem com o
+  garfo" seria um passo só. Até estar decidido, vale o que está escrito acima.
 - **Tempos separados.** Preparação e confeção são campos distintos, e a antecedência de preparação
   (marinar de véspera, demolhar bacalhau, levedar massa) é um terceiro campo — não se soma aos outros
   porque não é tempo ativo.

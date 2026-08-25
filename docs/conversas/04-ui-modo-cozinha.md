@@ -2,7 +2,9 @@
 
 **Estado:** Em curso — perguntas 1, 2 e 3 fechadas; a 8 é a próxima a decidir e mexe no schema
 **Conduz:** Claude
-**Destino das decisões:** `docs/specs/005-modo-cozinha.md`
+**Destino das decisões:** `docs/specs/005-modo-cozinha.md` — e, para a pergunta 8, muito mais do que
+isso: ver o inventário na proposta. A regra da granularidade é uma regra de **como se escrevem
+receitas**, portanto vai também para a skill `importar-receita`.
 **Prioridade:** Pode esperar — é M5. Mas é o ecrã que justifica o tablet estar na parede.
 
 > **Já existe uma versão construída.** As perguntas 1, 2 e 3 foram respondidas em áudio e estão
@@ -154,6 +156,32 @@ vez de 57 — mas a 30px isso são duas linhas, e há espaço.
 
 E um efeito lateral que é bónus e não custo: **o ecrã de detalhe também melhora.** Sete títulos em
 lista lêem-se de relance; doze frases não.
+
+### Onde isto vai bater — o inventário
+
+A regra da granularidade não é uma decisão de interface, é uma **regra de como se escrevem receitas**.
+E "uma ação por passo" está escrito em **nove sítios**. Se a decisão for tomada, é esta a lista a
+percorrer, e é por isso que ela está aqui e não na cabeça de ninguém:
+
+| Onde | O que diz hoje |
+|---|---|
+| `.claude/skills/importar-receita/SKILL.md` | "Passos em bullets curtos, uma ação por passo" — e está debaixo de "o que já é decidido e não se volta a discutir" |
+| `docs/ops/importar-receitas.md` | "Um passo que precisa de vírgulas a mais são dois passos" — **contradiz frontalmente a regra nova** |
+| `docs/specs/007-importador-de-receitas.md` | Critério de aceitação: "passos curtos, uma ação por passo" |
+| `docs/specs/002-detalhe-receita.md` | Duas vezes: bullets curtos, nunca parágrafos |
+| `docs/specs/005-modo-cozinha.md` | O ecrã e a tipografia dos dois níveis |
+| `docs/product/metadata-receitas.md` | "Texto curto, uma ação por passo" |
+| `data/schema/recipe.schema.json` | O campo `title` novo, e a descrição do `steps` |
+| `docs/conversas/01-metadata-receitas.md` | Registo de onde a regra antiga foi decidida |
+| `docs/conversas/03-ui-detalhe.md` | O mesmo, para o ecrã de detalhe |
+
+A que interessa mais é a **skill**. É ela que escreve as receitas novas, e uma regra que fique só na
+spec não muda nada do que se produz a partir de amanhã. E é ela que tem o problema mais feio: a regra
+antiga está lá listada como fechada, o que é precisamente o sítio onde um julgamento destes se perde.
+
+A linha do `docs/ops` é a que fica pior: "um passo que precisa de vírgulas a mais são dois passos"
+manda partir exatamente o passo que a regra nova manda juntar. O "Cozer as batatas" do caldo verde
+tem duas vírgulas e está certo.
 
 ### Três perguntas para responderes de seguida
 

@@ -109,11 +109,17 @@ Isto não é uma entrevista, é um debate. Quem conduz a conversa do lado do Cla
 
 O ficheiro da conversa é o rascunho, não o destino. Uma decisão fechada muda-se para onde pertence:
 
+**A skill é um destino a sério, e é o mais fácil de esquecer.** Uma decisão sobre *como uma receita
+deve estar escrita* — granularidade dos passos, o que vai em que campo, o que se pergunta — só muda o
+que se produz a partir de amanhã se entrar na skill. Ficar só na spec deixa-a a descrever um formato
+que o importador não segue.
+
 | Tipo de decisão | Destino |
 |---|---|
 | Comportamento de uma feature | `docs/specs/` |
 | Estrutural, com alternativas | `docs/adr/` |
 | Formato dos dados | `data/schema/` e `docs/product/metadata-receitas.md` |
+| Como se escrevem receitas novas | `.claude/skills/importar-receita/SKILL.md` — e só depois as specs |
 | Visual | `docs/design/design-system.md` |
 | Âmbito | `docs/product/roadmap.md` |
 

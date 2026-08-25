@@ -122,7 +122,11 @@ Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena f
 
 ## O que já é decidido e não se volta a discutir
 
-- Passos em bullets curtos, uma ação por passo. Nunca parágrafos
+- Passos em bullets curtos, uma ação por passo. Nunca parágrafos.
+  > ⚠️ **Esta é a única linha desta secção que está a ser rediscutida.** A conversa 4, pergunta 8,
+  > propõe passos ao nível de tarefa — uma ação **e a espera que lhe pertence** — mais um título por
+  > passo. Enquanto não estiver decidido, continuar a aplicar a regra como está; não improvisar a
+  > nova a meio. Ver `docs/conversas/04-ui-modo-cozinha.md`.
 - Tempo total inclui a preparação estimada; a antecedência (marinar, demolhar) é campo à parte e
   **não** entra no total
 - `weight` atribui-se pela rubrica em `docs/product/metadata-receitas.md`, não a olho
