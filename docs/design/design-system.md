@@ -95,8 +95,21 @@ O que continua por decidir sobre navegação está na conversa 8.
 - `IngredientList` — nome, nota subordinada, quantidade alinhada à direita
 - `MetaRow` — ícone + texto, para tempos, doses e rendimento
 
-## O que fica por decidir em M1
+## O que fica por decidir
 
 - Paleta final e nível de decoração (minimalista vs. mais rica)
 - Tratamento das thumbnails: recortadas em quadrado ou proporção fixa 4:3
 - Se as labels têm ícone além de cor
+
+Estão todas dentro de **N1 — Revisão visual** no roadmap, que é onde a app deixa de ter cores
+provisórias. Duas notas para quem lá chegar:
+
+**Promover os valores fixos a tokens é a preparação mais barata.** Há cerca de 38 medidas em px
+escritas diretamente nos componentes e quatro cores literais (dois véus de `rgb(0 0 0 / 45%)`, um
+`#fff` e uma sombra). Podem ser promovidos a qualquer momento sem mudar nada visualmente, e isso
+torna a revisão do tema numa edição de um ficheiro em vez de uma caça.
+
+**A font stack do sistema não é preguiça.** Está aqui porque o tablet pode estar sem rede e uma
+fonte que não carrega é pior do que uma genérica. Trocar por um tipo de letra próprio obriga a
+auto-hospedá-lo e a metê-lo na cache do service worker — é possível, mas é uma decisão a tomar de
+propósito e não por arrasto.
