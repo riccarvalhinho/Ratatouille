@@ -327,6 +327,28 @@ tecto de um temporizador por passo fica como está. Se alguma delas incomodar ao
 molho ficaram dois, e deixou de haver o que agrupar. A fase era um penso para um problema de
 granularidade.
 
+### Ronda 5 — o cartão "A seguir" muda-se para a barra de baixo
+
+Primeira observação vinda do tablet a sério, e não de um screenshot: o conteúdo estava empurrado
+para cima e o ecrã ficava assimétrico, com metade de baixo vazia.
+
+A causa era o cartão. Estava num canto do corpo, e por isso o corpo tinha de lhe reservar a faixa de
+baixo inteira — 160px que ninguém usava, e que existiam só para os dois não se sobreporem. O passo
+centrava-se no que sobrava, portanto ficava sempre acima do meio.
+
+Mudou-se para **dentro da barra de baixo, na mesma linha dos botões**. Ali não custa altura nenhuma,
+porque a barra já tem a altura dos círculos e o cartão cabe lá dentro. A faixa reservada desapareceu
+e o passo passou a centrar-se na altura toda do corpo — medido em todos os passos das seis receitas,
+a diferença entre o espaço acima e abaixo do bloco é **zero**.
+
+Fica em posição absoluta dentro da barra, e não em linha com os botões, por uma razão que não é
+estética: assim os círculos continuam centrados no ecrã em vez de centrados no espaço que sobra ao
+lado do cartão. Um passo com cartão e o último passo, que não tem, têm os botões no mesmo sítio.
+
+Vale a pena notar o que isto diz sobre a ronda anterior: a faixa reservada era uma solução correta
+para o problema errado. Andei a apertar textos e espaçamentos para caber numa restrição que eu
+próprio tinha criado ao pôr o cartão dentro do corpo.
+
 ### Por onde continuar
 
 Perguntas 4 a 7, que são todas sobre o que acontece quando há mais do que uma coisa ao lume: quantos
@@ -358,4 +380,5 @@ do que a pergunta pedia.
 | Numa receita revista o título é obrigatório; num rascunho não | `data/schema/recipe.schema.json` |
 | O modo cozinha mostra título a 44px e detalhe a 28px | `docs/specs/005-modo-cozinha.md`, `docs/design/design-system.md` |
 | O cartão "A seguir" e os temporizadores dizem o título do passo, não o número | `docs/specs/005-modo-cozinha.md` |
+| O cartão "A seguir" vive na barra de baixo, na mesma linha dos botões, e não num canto do corpo | `docs/specs/005-modo-cozinha.md` |
 | O ecrã de detalhe mostra o título a negrito com o detalhe por baixo | `docs/specs/002-detalhe-receita.md` |

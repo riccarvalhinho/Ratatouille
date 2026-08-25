@@ -267,17 +267,14 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
             })}
           </ul>
         )}
-
-        {nextStep && (
-          <div className={styles.next}>
-            <span className={styles.nextLabel}>A seguir</span>
-            {/* O título, que é o que se lê de canto de olho. A frase inteira não se lê a 16px daqui. */}
-            <span className={styles.nextText}>{nextStep.title ?? nextStep.text}</span>
-          </div>
-        )}
       </div>
 
-      {/* Os três alvos juntos ao centro. O do temporizador ao meio, quando existe. */}
+      {/*
+        Os três alvos juntos ao centro, e o cartão "A seguir" na mesma faixa, encostado à direita.
+        Estava num canto do corpo, e obrigava o corpo a reservar-lhe a faixa de baixo inteira — o que
+        empurrava o passo para cima e deixava o ecrã assimétrico. Aqui não rouba altura nenhuma: a
+        barra já tem a altura dos círculos e o cartão cabe lá dentro.
+      */}
       <div className={styles.bottom}>
         <button
           type="button"
@@ -322,6 +319,14 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           >
             <IconNext />
           </button>
+        )}
+
+        {nextStep && (
+          <div className={styles.next}>
+            <span className={styles.nextLabel}>A seguir</span>
+            {/* O título, que é o que se lê de canto de olho. A frase inteira não se lê a 16px daqui. */}
+            <span className={styles.nextText}>{nextStep.title ?? nextStep.text}</span>
+          </div>
         )}
       </div>
     </div>
