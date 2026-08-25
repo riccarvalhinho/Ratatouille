@@ -35,12 +35,20 @@ Um botão "Cozinhar" no detalhe da receita. Entra em ecrã inteiro, sem navegaç
 - Os ingredientes desse passo visíveis junto ao passo, para não ser preciso voltar atrás — em linha
   por baixo do texto, e não numa coluna à direita, que roubava largura ao passo para ficar quase
   sempre meia vazia
-- **O passo seguinte em pequeno**, num cartão fixo no canto inferior direito, cortado às duas linhas,
-  e mostrando o **título** e não a frase — a 16px e de canto de olho, a frase não se lê.
-  Serve para planear enquanto se cozinha ("enquanto isto aloura, vou desfiando o bacalhau") e não
-  para saber o que vem a seguir no instante em que se toca no botão. O corpo reserva-lhe a faixa de
-  baixo (176px) e não escreve lá, mesmo no último passo onde o cartão não existe — assim o texto do
-  passo não salta de sítio ao mudar de passo.
+- **O passo seguinte em pequeno**, num cartão **dentro da barra de baixo**, encostado à direita e na
+  mesma linha dos botões. Mostra o **título** e não a frase — a 16px e de canto de olho, a frase não
+  se lê. Serve para planear enquanto se cozinha ("enquanto isto aloura, vou desfiando o bacalhau") e
+  não para saber o que vem a seguir no instante em que se toca no botão.
+
+  Esteve num canto do corpo, e isso custava caro: o corpo tinha de lhe reservar a faixa de baixo
+  inteira para os dois não se sobreporem, o que empurrava o passo para cima e deixava metade do ecrã
+  vazia por baixo dele. Na barra não rouba altura nenhuma — ela já tem a altura dos círculos — e o
+  passo volta a centrar-se na altura toda do corpo.
+
+  O cartão é posicionado em absoluto e fica **fora do fluxo da barra**, para os círculos continuarem
+  centrados no ecrã e não no espaço que sobra ao lado dele: um passo com cartão e outro sem cartão
+  têm os botões exatamente no mesmo sítio, que é o que o dedo espera ao fim de doze passos. Abaixo
+  dos 900px não cabe ao lado deles e passa para uma linha própria, por baixo.
 - Ecrã mantido ligado durante toda a execução (Wake Lock API, com recuo para as definições do tablet)
 
 ### Toque (conversa 4)

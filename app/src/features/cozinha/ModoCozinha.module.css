@@ -133,17 +133,6 @@
  */
 .stepTitle + .stepText { margin-top: calc(var(--space-4) - var(--space-5)); }
 
-/*
- * O canto de baixo à direita é do cartão "A seguir", e o corpo não escreve lá.
- *
- * Sem isto o passo com mais ingredientes do seed passava a 8px do cartão — cabia por sorte, e um
- * ingrediente a mais ou uma linha a mais de texto punha os dois em cima um do outro.
- *
- * A conta é o cartão na sua altura máxima (duas linhas, 112px), mais os 32px a que está do fundo,
- * mais 16 de folga. E a faixa fica reservada mesmo no último passo, onde não há cartão: 160px de
- * espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
- */
-.body { padding-bottom: calc(var(--space-10) + var(--space-9) + var(--space-4)); }
 
 /*
  * O título a 44px, com a medida travada em 30ch. Os dois andam juntos: sem limite de largura, uma
@@ -200,31 +189,38 @@
  * canto inferior direito — sítio previsível, e não rouba largura ao passo atual. Fica por cima do
  * fundo da lista de ingredientes, que é o custo aceite desta escolha.
  */
+/*
+ * Encostado à direita da barra de baixo, e absoluto de propósito: fora do fluxo, os círculos ficam
+ * centrados no ecrã e não no espaço que sobra ao lado dele. Um passo com cartão e outro sem cartão
+ * têm os botões exatamente no mesmo sítio — que é o que o dedo espera ao fim de doze passos.
+ *
+ * Sem sombra e sem fundo próprio: aqui está pousado na barra, não a flutuar por cima do conteúdo.
+ */
 .next {
   position: absolute;
   right: var(--space-6);
-  bottom: var(--space-6);
+  top: 50%;
+  transform: translateY(-50%);
   width: 320px;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-3) var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-raised);
   color: var(--color-text-muted);
-  /* O corpo é centrado; este cartão não. Duas linhas de texto corrido leem-se alinhadas à esquerda. */
+  /* O corpo é centrado; este cartão não. Texto corrido lê-se alinhado à esquerda. */
   text-align: left;
 }
 
-/* Em ecrãs estreitos deixa de caber no canto e volta ao fluxo, por baixo do passo. */
+/* Estreito de mais para caber ao lado dos círculos: passa para uma linha própria, por baixo deles. */
 @media (max-width: 900px) {
+  .bottom { flex-wrap: wrap; }
+
   .next {
     position: static;
-    width: auto;
-    box-shadow: none;
+    transform: none;
+    order: 1;
+    width: 100%;
+    margin-top: var(--space-4);
   }
-
-  /* E aí a faixa reservada deixa de ter para quem a guardar. */
-  .body { padding-bottom: var(--space-5); }
 }
 
 .nextLabel {
@@ -287,6 +283,7 @@
  * para o outro — são o dobro do mínimo do design system.
  */
 .bottom {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
