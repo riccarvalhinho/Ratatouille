@@ -51,8 +51,9 @@ molhadas. Todas as regras de interface normais são suspeitas aqui.
 8. **Um título por passo?** Veio do modo cozinha do Claude, que põe "Preparar o marisco" a negrito e
    o detalhe a seguir. A favor: dá foco e diz de relance o que se está a fazer, sem obrigar a ler a
    frase toda. Contra: nos passos curtos o título arrisca-se a repetir o verbo — "Temperar o frango"
-   por cima de "Tempere as coxas de frango com sal e pimenta" é ruído com ar de estrutura. Ver a
-   proposta abaixo, que é onde está a saída para isso.
+   por cima de "Tempere as coxas de frango com sal e pimenta" é ruído com ar de estrutura. A saída
+   está na proposta abaixo, e obriga a mexer também na **granularidade** dos passos — que é a
+   decisão maior que estava escondida atrás desta.
 
 ## Proposta para a pergunta 8 — título por passo, com o texto reescrito para completar
 
@@ -77,61 +78,93 @@ resume; um título por cima de uma frase de sete palavras repete-a.
 
 Não é escolher entre título e texto — é **escrever os dois a saber que o outro existe**. O título fica
 com o verbo e o objeto, o texto fica só com o que o título não diz: o como, o até quando, a ressalva.
-Nenhum dos dois repete o outro, e a soma até fica mais curta do que a frase de hoje.
 
-O caldo verde inteiro, reescrito assim, para se ver se pega:
+Mas isso sozinho não chega, e a primeira tentativa mostrou porquê. Escrita passo a passo como o seed
+está hoje, saía isto:
 
-| # | Título | Texto |
-|---|---|---|
-| 1 | Refogar a base | Metade do azeite, a cebola e o alho. Amolecer sem alourar. |
-| 2 | Juntar as batatas e a água | Temperar com sal. |
-| 3 | Cozer | Até a batata se desfazer com o garfo. |
-| 4 | Passar a puré | Com a varinha mágica, até ficar liso. |
-| 5 | Alourar o chouriço | Em rodelas, numa frigideira à parte, sem gordura extra. |
-| 6 | Juntar a couve | Voltar a pôr o caldo a ferver primeiro. |
-| 7 | Cozer a couve | Destapado, para não perder a cor. |
-| 8 | Servir | Uma rodela de chouriço e um fio do restante azeite em cada prato. |
+> **Juntar as batatas e a água** — Temperar com sal.
+> **Cozer** — Até a batata se desfazer com o garfo.
 
-Oito passos, nenhuma repetição, e o texto encolheu. O padrão sai sozinho: **o título é o que se faz, o
-texto é o que é preciso saber para não o fazer mal.**
+Dois passos sem valor nenhum, e o problema não é a escrita: **é a granularidade.** Aqueles dois são o
+mesmo trabalho — pôr as batatas ao lume e esperar. Separá-los obriga a um toque no meio de uma coisa
+que não tem meio.
+
+### A regra da granularidade, que é o que faltava
+
+**Um passo é uma ação e a espera que lhe pertence.**
+
+O piso sai do próprio título, e é este o teste prático: **se o título diz tudo o que o texto diz, o
+passo é pequeno demais** — junta-se ao vizinho. O padrão a caçar é o par "junte X" seguido de "coza",
+que estava a separar uma ação da sua própria espera. O seed está cheio deles.
+
+O teto não é de gosto, é do schema: **um passo tem um temporizador só e um `passive` só.** Duas
+esperas não cabem no mesmo passo — "aloure 5 minutos e depois coza 20" tem de ser dois. É o limite
+superior da agregação e não se mexe nele sem mexer no modelo dos temporizadores.
+
+Entre os dois cabe o que interessa: uma tarefa que se diria em voz alta a alguém na cozinha.
+
+### O caldo verde, refeito com a regra
+
+De oito passos para seis, e os que sobraram têm todos porquê de existir:
+
+| # | Título | Texto | Timer |
+|---|---|---|---|
+| 1 | Refogar a base | Metade do azeite, a cebola e o alho ao lume. Amolecer sem alourar. | 5 min |
+| 2 | Cozer as batatas | Juntar as batatas e a água, temperar com sal e deixar até se desfazerem com o garfo. | 20 min, passivo |
+| 3 | Passar a puré | Com a varinha mágica, até ficar liso. | — |
+| 4 | Alourar o chouriço | Em rodelas, numa frigideira à parte, sem gordura extra. | 3 min |
+| 5 | Cozer a couve | Voltar a pôr o caldo a ferver, juntar a couve e cozer destapado para não perder a cor. | 5 min |
+| 6 | Servir | Uma rodela de chouriço e um fio do restante azeite em cada prato. | — |
+
+Os dois passos que desapareceram são exatamente os que a regra manda desaparecer: o "junte as batatas
+e a água" foi para dentro do "cozer as batatas", e o "junte a couve" para dentro do "cozer a couve".
+Nenhum temporizador se perdeu, porque em cada par só um dos dois o tinha.
+
+O bacalhau com natas faz o mesmo caminho de 12 para 7: cozer e desfiar o bacalhau passam a um só,
+alourar a cebola e juntar-lhe o bacalhau também, e o béchamel — que hoje são quatro passos — fica em
+dois, o roux e o engrossar.
+
+**E isto fecha, de borla, a pergunta do "Para o béchamel".** Com a granularidade certa, os quatro
+passos do molho passam a dois e deixa de haver o que agrupar. A fase não é precisa; era um penso para
+um problema de granularidade.
+
+### O ganho que não estava à vista
+
+O seed tem **55 passos**. Com esta regra fica à volta de **35**. São vinte toques a menos com as mãos
+sujas, e um "Passo 3 de 6" que quer dizer alguma coisa — hoje o "Passo 3 de 12" do bacalhau conta
+metade de passos que são meias-ações.
 
 ### O que isto custa
 
 Três coisas, e a segunda é a que pode correr mal.
 
-**Os 55 passos do seed são para reescrever**, não só para lhes acrescentar um título por cima. É o
-trabalho todo desta decisão — uma a duas horas — e é o que faz a diferença entre a coisa funcionar e
-ser ruído.
+**Os 55 passos do seed são para reescrever e reagrupar**, não só para lhes acrescentar um título. É o
+trabalho todo desta decisão — duas a três horas com o reagrupamento — e é o que faz a diferença entre
+a coisa funcionar e ser ruído.
 
-**O importador passa a ter de fazer a separação sozinho**, e o modo de falhar é óbvio: um modelo
-produz de bom grado "Temperar o frango" seguido de "Tempere o frango com sal e pimenta". É
-exatamente o receio, gerado em série. A spec 007 precisa da regra escrita — *o texto não repete o
-título; se o título já disser tudo, o texto fica vazio* — e de um exemplo mau ao lado do bom.
+**O importador passa a ter de decidir a granularidade**, que é mais difícil do que separar título de
+texto. As receitas na internet vêm escritas com a granularidade que o autor quis, e muitas vêm no
+formato mau — uma linha por gesto. A spec 007 precisa das duas regras escritas, com um exemplo mau ao
+lado do bom, e provavelmente de uma pergunta ao utilizador quando a fonte vier com passos a mais.
 
-**A tipografia do modo cozinha volta à mesa**, uma semana depois de ter sido arrumada. Dois níveis
-não cabem os dois a 44px. Proponho o título a 44px e o texto a 30px por baixo, o que mantém o que se
-ganhou: quem olha de longe lê o título, quem precisa do detalhe baixa os olhos uma linha.
+**A tipografia do modo cozinha volta à mesa**, uma semana depois de arrumada. Dois níveis não cabem os
+dois a 44px. Proponho o título a 44px e o texto a 30px por baixo: quem olha de longe lê o título, quem
+precisa do detalhe baixa os olhos uma linha. Os textos agora são maiores — cerca de 100 caracteres em
+vez de 57 — mas a 30px isso são duas linhas, e há espaço.
 
-E um efeito lateral que é bónus e não custo: **o ecrã de detalhe também melhora.** Doze títulos em
+E um efeito lateral que é bónus e não custo: **o ecrã de detalhe também melhora.** Sete títulos em
 lista lêem-se de relance; doze frases não.
-
-### O que fica de fora, e porquê
-
-A fase que propus antes fica **de reserva, não descartada**. Há um sítio no seed onde ela já anda
-disfarçada: o bacalhau com natas tem "Para o béchamel: derreta a manteiga…", e esse prefixo está a
-fazer trabalho de fase dentro do texto do passo. Com títulos, os passos 6 a 9 passam a "Fazer a
-pasta", "Engrossar", "Temperar", "Juntar as natas" — e perde-se a informação de que os quatro são o
-mesmo molho. Pode não fazer falta. Se fizer, acrescenta-se depois; título e fase não competem.
 
 ### Três perguntas para responderes de seguida
 
-1. Reescrever os 55 passos do seed agora, ou só pôr títulos nas receitas novas daqui para a frente? A
-   segunda é mais barata mas deixa o catálogo com dois formatos ao mesmo tempo, e isso nota-se no
-   ecrã de detalhe.
+1. Reescrever e reagrupar os 55 passos do seed agora, ou só aplicar isto às receitas novas daqui para
+   a frente? A segunda é mais barata mas deixa o catálogo com dois formatos ao mesmo tempo, e num
+   ecrã de detalhe isso nota-se logo.
 2. No modo cozinha, qual dos dois é o grande — o título ou o texto? Eu ponho o título a 44px porque é
-   o que se lê de longe, mas o detalhe é que te impede de errar, e admito que seja ao contrário.
-3. Aquele "Para o béchamel" do bacalhau: quando estás a cozinhar, dá-te jeito saber que quatro passos
-   seguidos são todos o mesmo molho, ou basta-te o passo em que estás?
+   o que se lê de longe, mas é o detalhe que te impede de errar, e admito que seja ao contrário.
+3. O teto que o schema impõe — um temporizador por passo — chega-te? A pergunta a sério é se há
+   receitas tuas onde uma tarefa só tem naturalmente duas esperas seguidas e ficaria mal partida em
+   duas. Se houver, isso é uma decisão maior e vale a pena saber já.
 
 ## Registo da conversa
 
@@ -214,8 +247,8 @@ passa a reservar-lhe a faixa de baixo, mesmo no último passo onde o cartão nã
 espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
 
 **O que ficou por decidir foi o título a negrito** que o exemplo tinha por cima do passo. É a
-pergunta 8, e a proposta está lá em cima: título por passo, com o texto reescrito para o completar
-em vez de o repetir.
+pergunta 8, e a proposta está lá em cima: título por passo, texto reescrito para o completar em vez
+de o repetir, e passos agregados ao nível de tarefa.
 
 ### O que mudou por arrasto
 
