@@ -2,6 +2,13 @@
   "id": "arroz-de-frango",
   "name": "Arroz de frango",
   "description": "Arroz malandrinho cozido no próprio caldo do frango, com tomate, cenoura e ervilhas. Prato único de dia de semana.",
+  "image": "media/recipes/arroz-de-frango.jpg",
+  "imageCredit": {
+    "author": "Nima Sareh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paparis,_apas,_achares_e_arroz_biriani_de_frango.jpg"
+  },
   "servings": 4,
   "labels": [
     "prato-principal",
