@@ -56,7 +56,8 @@ Escala de 4px: `--space-1` (4px) até `--space-10` (80px). Nada fora da escala.
 | `--text-xl` | 28px | Títulos de secção |
 | `--text-2xl` | 36px | Título de receita no detalhe |
 | `--text-3xl` | 56px | Marcador de receita sem imagem |
-| `--text-step` | 24px | Passos no modo cozinha |
+| `--text-step` | 24px | Mínimo aceitável para um passo do modo cozinha |
+| `--text-step-lg` | 44px | O tamanho a que os passos aparecem mesmo, com a medida travada em 30ch |
 
 Font stack de sistema. Sem webfonts: o tablet pode estar offline e uma fonte que não carrega é pior
 do que uma fonte genérica.

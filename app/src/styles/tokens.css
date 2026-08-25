@@ -45,6 +45,8 @@
   --text-2xl: 36px;
   --text-3xl: 56px;
   --text-step: 24px;
+  /* O tamanho a que os passos aparecem mesmo. O --text-step é o mínimo aceitável, não o alvo. */
+  --text-step-lg: 44px;
   --leading-tight: 1.25;
   --leading-normal: 1.5;
 

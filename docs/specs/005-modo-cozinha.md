@@ -19,12 +19,22 @@ Um botão "Cozinhar" no detalhe da receita. Entra em ecrã inteiro, sem navegaç
 
 ### Ecrã de execução
 
-- **Um passo de cada vez**, ocupando o ecrã, com tipografia grande (`--text-step`, 24px mínimo)
+- **Um passo de cada vez, ao centro do ecrã**, numa coluna só: o texto do passo, o que ele exige
+  (temperatura, duração) e os ingredientes que leva, por essa ordem — que é a de quem lê. A
+  tipografia é `--text-step-lg` (44px) com a medida travada em 30ch: as duas coisas andam juntas,
+  porque texto grande sem limite de largura dá linhas que o olho perde ao voltar ao início.
+- O nome da receita no canto superior esquerdo leva a **miniatura do prato ao lado**, num quadrado de
+  48px. Num ecrã que só mostra um passo é a única coisa que diz qual é o prato, e reconhece-se uma
+  fotografia mais depressa do que se lê um nome. Sem imagem, fica o marcador 🍲.
 - Indicação de progresso: passo 3 de 9
-- Os ingredientes desse passo visíveis junto ao passo, para não ser preciso voltar atrás
+- Os ingredientes desse passo visíveis junto ao passo, para não ser preciso voltar atrás — em linha
+  por baixo do texto, e não numa coluna à direita, que roubava largura ao passo para ficar quase
+  sempre meia vazia
 - **O passo seguinte em pequeno**, num cartão fixo no canto inferior direito, cortado às duas linhas.
   Serve para planear enquanto se cozinha ("enquanto isto aloura, vou desfiando o bacalhau") e não
-  para saber o que vem a seguir no instante em que se toca no botão.
+  para saber o que vem a seguir no instante em que se toca no botão. O corpo reserva-lhe a faixa de
+  baixo (176px) e não escreve lá, mesmo no último passo onde o cartão não existe — assim o texto do
+  passo não salta de sítio ao mudar de passo.
 - Ecrã mantido ligado durante toda a execução (Wake Lock API, com recuo para as definições do tablet)
 
 ### Toque (conversa 4)
