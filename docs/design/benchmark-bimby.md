@@ -3,8 +3,9 @@
 A Bimby é a referência de origem deste projeto: o planeamento original diz "app semelhante ao
 software que está integrado nas Bimby". É o benchmark mais próximo do que se quer construir.
 
-**Material analisado:** quatro fotografias do Cookidoo a correr num tablet, em horizontal, tiradas em
-2026-05-03. Cobrem pesquisa/catálogo e as três abas do detalhe da receita.
+**Material analisado:** quinze fotografias do Cookidoo a correr num tablet, em horizontal — quatro
+de 2026-05-03 (pesquisa/catálogo e as três abas do detalhe) e mais onze de 2026-08-25 (modo cozinha
+ao vivo, abas "Dicas" e "Mais", filtros, ecrã inicial e "As minhas receitas").
 
 > **As fotografias não estão no repositório.** São capturas da interface e da fotografia de comida de
 > um produto comercial, e este repositório é público desde o ADR 0005. O que interessa está aqui em
@@ -12,6 +13,10 @@ software que está integrado nas Bimby". É o benchmark mais próximo do que se 
 > e porquê. Se um dia forem precisas, ficam fora do Git.
 
 ### Material por recolher
+
+> **Atualização de 2026-08-25:** chegaram mais onze fotografias, que cobrem o modo cozinha ao vivo,
+> as abas "Dicas" e "Mais", os filtros da pesquisa, o ecrã inicial e "As minhas receitas". Estão
+> analisadas na secção "Segunda ronda". Falta só a página web abaixo.
 
 Uma página de detalhe do Cookidoo web, apontada como tendo disposição interessante:
 `https://cookidoo.pt/recipes/recipe/pt-PT/r915889`
@@ -154,6 +159,209 @@ dentro do texto: "pique **10 seg/vel 4**".
 
 ---
 
+## Segunda ronda — mais onze ecrãs (2026-08-25)
+
+Fotografias do mesmo tablet, desta vez cobrindo o que faltava: **o modo cozinha ao vivo**, as abas
+"Dicas" e "Mais" do detalhe, os filtros da pesquisa, o ecrã inicial (incluindo offline) e "As minhas
+receitas". Continuam fora do repositório, pela mesma razão do ADR 0005.
+
+Isto fecha o "material por recolher" que estava em aberto no topo deste ficheiro, exceto a página web.
+
+---
+
+### Ecrã 5 — Modo cozinha ao vivo
+
+O ecrã que mais interessava, e o mais surpreendente: **não se parece nada com o nosso, e na maior
+parte das escolhas o nosso é que está certo para o nosso caso.**
+
+**Como está montado:** o passo é um **cartão pequeno a flutuar sobre um fundo vivo** — uma imagem da
+máquina a trabalhar. O cartão ocupa talvez um sexto do ecrã, no canto superior esquerdo. Lá dentro:
+"Passo 1" em pequeno, o texto do passo, um "…" e um botão verde "Seguinte" dentro do próprio cartão.
+À esquerda, meio tapado e esbatido, está o cartão do "Passo 2" — os passos são um **baralho
+horizontal**, não uma coisa de cada vez. Em baixo, um "20" com uma linha: é o estado da máquina.
+
+**Porque não copiamos quase nada disto:**
+
+- O ecrã deles está montado na máquina, a 40cm, e **a máquina é que está a fazer o trabalho**. O
+  nosso está na parede, a 70cm, e quem faz o trabalho é uma pessoa com as mãos ocupadas. O texto
+  deles é pequeno porque não precisa de ser lido a distância nenhuma.
+- O botão "Seguinte" **vive dentro do cartão**, portanto muda de sítio conforme o cartão. O nosso
+  está sempre no mesmo ponto da barra de baixo, que foi decisão explícita da conversa 4.
+- O fundo vivo por trás do texto custa contraste. Numa cozinha com vapor e a um braço de distância,
+  não trocávamos legibilidade por isso.
+- O baralho horizontal convida a deslizar — e deslizar é precisamente o que a nossa regra de "só os
+  botões reagem ao toque" existe para evitar.
+
+**O que há mesmo a levar, e é uma coisa só:**
+
+- **O passo seguinte é o cartão a seguir, não um resumo num canto.** Eles dizem a posição pela
+  forma: vê-se meio cartão à esquerda, portanto há um passo antes. Nós dizemos a posição por texto
+  ("Passo 3 de 6") e por uma barra de progresso. Vale a pena perguntar se a nossa é suficiente, mas
+  não vale a pena trocar por um baralho que pede gestos.
+
+**E uma nota sobre o que eles não têm:** naquele ecrã não há controlo de temporizador nenhum, porque
+o tempo é da máquina. **Toda a parte dos temporizadores é nossa e não tem benchmark** — o desenho dos
+três círculos e da faixa do topo não tem com que ser comparado, e as perguntas 4 e 5 da conversa 4
+vão ter de se decidir sem referência.
+
+---
+
+### Ecrã 6 — Preparação, com grupos
+
+O achado mais valioso das onze fotografias, e o que mexe com uma decisão que julgámos fechada ontem.
+
+Os passos da receita das almôndegas estão **agrupados por componente do prato**, com subtítulo:
+
+```
+Almôndegas
+  1 … 2 … 3 … 4
+Molho de tomate
+  5 … 6
+```
+
+E o mesmo grupo aparece **também na lista de ingredientes** (ecrã 4): "Almôndegas" é lá um cabeçalho
+com os ingredientes daquele componente por baixo.
+
+**Porque isto interessa:** na conversa 4 propus um campo `phase` para agrupar passos, e descartei-o
+quando percebi que os títulos do exemplo do Claude eram 1 para 1 com os passos. **Descartei a coisa
+certa pela razão certa, mas o conceito existe mesmo — e não é o que eu tinha proposto.** A diferença:
+
+| | O que eu propus | O que o Cookidoo faz |
+|---|---|---|
+| O que agrupa | Fases de trabalho ("preparar", "refogar") | **Componentes do prato** ("almôndegas", "molho de tomate") |
+| Onde aparece | Só nos passos | **Nos passos e nos ingredientes** |
+| O que resolve | Orientação dentro de uma lista longa | "Que parte do prato estou a fazer, e o que leva" |
+
+O deles é melhor, e por uma razão concreta: um componente é uma coisa que existe fora da receita —
+faz-se o molho, prova-se o molho, o molho pode sobrar. Uma fase de trabalho é uma invenção da
+interface. E porque atravessa ingredientes e passos, **uma só ideia arruma dois ecrãs**.
+
+Onde isto bateria em nós: o bacalhau com natas tem béchamel, e o "Para o béchamel:" que estava
+enfiado dentro do texto do passo era exatamente isto a pedir um campo. Depois do reagrupamento de
+ontem ficou em dois passos e deixou de doer, mas o conceito continua de pé para receitas com duas
+preparações a sério.
+
+**Não aplicar agora.** É mudança de schema, atravessa `ingredients` e `steps`, e a maior parte das
+receitas do seed não tem componentes nenhuns. Fica como material para a conversa 4 ou 1.
+
+**Uma coisa a não copiar:** as regulações da máquina aparecem a negrito dentro da frase — "triture
+**5 seg/vel 7**". Nós tiramos temperatura e duração para fora do texto, como etiquetas. O deles é
+inevitável (é um comando); o nosso lê-se melhor de relance, e é para manter.
+
+---
+
+### Ecrã 7 — Detalhe, aba "Dicas" e as notas pessoais
+
+Duas coisas diferentes no mesmo ecrã, e nós não temos nenhuma das duas.
+
+**"Dicas"** são do autor da receita: substituições ("pode substituir a carne bovina por vitela, porco
+ou frango"), variantes ("sirva as almôndegas com arroz ou batatas ao vapor"), e ajustes
+("se usar tomates frescos, adicione-os no passo 6"). É conhecimento que não cabe num passo porque não
+é uma ação — é uma alternativa.
+
+**"As minhas notas"** são pessoais, com um "Adicionar nota" e o aviso "esta nota só é visível para
+si". É onde fica "da última vez ficou salgado".
+
+**A levar, as duas, mas com pesos diferentes:**
+
+- As **notas pessoais** são a mais valiosa para nós e a mais barata: escrevem-se como os favoritos e
+  o histórico já se escrevem, pela outbox. Numa app de uso pessoal, "menos 10 minutos no forno do que
+  diz" é a informação que mais se perde e mais falta faz.
+- As **dicas** são um campo de schema e trabalho para o importador.
+
+**E um aviso que vale mais do que as duas:** as dicas deles **referem passos pelo número** — "adicione
+no passo 6". Nós renumerámos 55 passos para 38 ontem. Se tivéssemos dicas escritas assim, tinham
+partido todas em silêncio. Se algum dia adotarmos dicas, ou não referem números, ou referem o
+**título** do passo, que é estável.
+
+---
+
+### Ecrã 8 — Filtros da pesquisa
+
+Três coisas, e duas são para copiar já.
+
+**Os filtros são chips que abrem um modal**, não um painel sempre visível. "Tempo" e "Porções" são
+dois chips; tocar abre uma caixa com as opções. Poupa a altura que em horizontal é escassa.
+
+**O botão de confirmar diz o resultado antes de o aplicar:** "Mostrar 1863 resultados". Muda enquanto
+se escolhe. É o melhor detalhe das onze fotografias — vê-se a consequência antes de a assumir, e
+evita o filtro que devolve zero e obriga a voltar atrás. Barato para nós.
+
+**"Repor"** dentro do modal, para limpar aquele filtro sem o fechar.
+
+**Uma decisão de dados que confirma a nossa:** o filtro de tempo tem **dois eixos separados** — "tempo
+de preparação" e "tempo total", cada um com ≤15/≤30/≤45. É a distinção que o nosso `timing` já faz
+entre `prep`, `cook` e `total`, e é sinal de que separar valeu a pena. A spec 001 filtra por duração;
+vale a pena decidir por qual das duas, ou pelas duas.
+
+**A não copiar:** as abas de resultados ("Receitas 1863 / Modos e ingredientes 74 / Dispositivos &
+Definições 11 / Suporte"). São a resposta a um catálogo com milhares de coisas de naturezas
+diferentes. Nós temos receitas e mais nada.
+
+---
+
+### Ecrã 9 — Detalhe, aba "Mais"
+
+**Nutrição** por porção, com a base declarada ("Por 1 porção") e a ordem: valor energético em kJ **e**
+kcal, hidratos, fibra, gordura, proteína. Declarar a base é o detalhe a copiar — um número nutricional
+sem dizer a que quantidade se refere não quer dizer nada. Liga-se à Q4, que continua aberta.
+
+**"Também apresentado em"** — coleções a que a receita pertence, com contagem ("15 Anos de Thermomix
+Brasil, 22 receitas"). Não adotar: coleções curadas fazem sentido numa biblioteca comercial, não numa
+casa com algumas dezenas de receitas. As nossas labels fazem outro trabalho.
+
+**"Procurar receitas semelhantes"**, com chips das categorias da própria receita ("Comida para
+crianças", "Para todos os dias"). **Isto sim, e é quase de graça:** é saltar do detalhe para o
+catálogo já filtrado por uma label desta receita. Nós temos as labels e temos os filtros; falta só o
+atalho. Resolve o "apeteceu-me sopa" sem obrigar a voltar e filtrar à mão.
+
+---
+
+### Ecrã 10 — Ecrã inicial, e o offline como desenho e não como erro
+
+Interessa porque a spec 006 está por escrever e a Q5 está aberta.
+
+**A ordem do que lá está**, de cima para baixo: "Receitas planeadas" primeiro e a ocupar metade da
+largura; ao lado, um quadrante de quatro atalhos; por baixo, "Marcadores"; depois "Cozinhadas
+recentemente", com **a data de cada uma**; e por fim "Tendências".
+
+Que o planeamento venha primeiro confirma o que já assumimos. Que as receitas recentes tragam a data
+é gratuito para nós — é o que o `history.json` guarda.
+
+**O offline é uma vista desenhada, não uma mensagem de erro.** Sem rede, o painel das receitas
+planeadas mostra uma nuvem cortada, "Sem ligação", uma explicação, e um link "Verifique as definições
+de Wi-Fi". **O resto do ecrã continua a funcionar.** Degrada-se um painel, não a aplicação.
+
+**A levar:** o princípio de degradar por painel, e a de um estado sem rede ter texto escrito à mão em
+vez de um erro genérico.
+
+**A não levar — e é aqui que estamos à frente:** o painel que lhes falha offline é precisamente o
+planeamento, porque vive no servidor deles. **O nosso plano da semana é um ficheiro em IndexedDB e
+funciona sem rede.** A única coisa que a nossa app não consegue fazer offline é *sincronizar*, e essa
+já tem a sua própria vista nas Definições. Vale a pena ser deliberado sobre isto: a nossa página
+inicial não precisa de estado offline nenhum, e isso é consequência do ADR 0002, não sorte.
+
+---
+
+### Ecrã 11 — "As minhas receitas"
+
+Cinco abas: **Recentemente confecionadas / Marcadores / As minhas listas / Coleções / Receitas
+criadas.**
+
+Duas delas já temos os dados: "recentemente confecionadas" é o `history.json` e "marcadores" é o
+`favourites.json`. Hoje ambos estão espalhados pelo catálogo (o coração) em vez de terem um sítio
+onde se veem juntos.
+
+**A pergunta que isto levanta**, e que é de arrumação e não de features: o nosso catálogo já é "as
+minhas receitas", porque não há outras. Faz sentido uma vista à parte para favoritos e histórico, ou
+bastam dois filtros no catálogo que já existe? Inclino-me para os filtros — uma vista nova para um
+catálogo de dezenas é mobília a mais. Fica para a conversa 8, que é a da navegação.
+
+**"As minhas listas"** é o equivalente às listas de compras, e eles têm-nas no plural. A nossa é uma
+por semana, derivada do plano. Não mudar.
+
+---
+
 ## Cor
 
 O Cookidoo usa um verde forte e saturado sobre branco e cinzentos muito claros. O verde aparece só em
@@ -179,6 +387,23 @@ o tom exato — é o que faz o botão principal saltar sem a interface parecer u
 | Passos em parágrafo | Confirma a nossa regra de bullets curtos. Não mudar nada |
 | Avaliações e pesquisa em primeiro plano | Não adotar; são respostas a um catálogo de milhares |
 | Miniaturas por ingrediente | Não adotar; custo alto, benefício nulo |
+| **Segunda ronda (2026-08-25)** | |
+| Passos e ingredientes agrupados por **componente do prato** | **Candidato forte, não aplicado.** Mudança de schema que atravessa `steps` e `ingredients`. Ver ecrã 6 — é melhor do que a "fase" que propus na conversa 4 |
+| Contagem de resultados no botão do filtro | Adotar. Barato, e evita o filtro que devolve zero |
+| Filtros como chips que abrem modal, com "Repor" | Adotar. Poupa altura, que é o que falta em horizontal |
+| Filtro de tempo com dois eixos (preparação e total) | Confirma a separação que o `timing` já faz. A spec 001 tem de escolher por qual filtra |
+| Notas pessoais por receita | Adotar quando houver espaço. Escreve-se pela outbox como os favoritos; é a informação que mais se perde |
+| Dicas do autor (substituições, variantes) | Candidato, com uma ressalva: **nunca referir passos por número**, que renumeram. Referir o título |
+| Base da nutrição declarada ("Por 1 porção") | Adotar quando a Q4 fechar |
+| Atalho do detalhe para o catálogo filtrado por uma label | Adotar. Temos labels e filtros; falta o atalho |
+| Offline degradado por painel, com texto escrito à mão | Adotar o princípio. Mas o nosso ecrã inicial não precisa dele — ver ecrã 10 |
+| Data na lista de receitas recentes | Adotar; o `history.json` já a guarda |
+| Modo cozinha em cartão pequeno sobre fundo vivo | **Não adotar.** Ver ecrã 5 — o ecrã deles está na máquina a 40cm e a máquina faz o trabalho |
+| Botão "Seguinte" dentro do cartão do passo | Não adotar. Muda de sítio; a conversa 4 fixou-o na barra |
+| Baralho horizontal de passos | Não adotar. Convida ao gesto, que a regra do toque exclui |
+| Regulações a negrito dentro da frase | Não adotar. Etiquetas fora do texto leem-se melhor de relance |
+| Abas de resultados por tipo na pesquisa | Não adotar; resposta a um catálogo de milhares |
+| Coleções curadas | Não adotar; as labels fazem o trabalho numa casa |
 
 ### Decisão em aberto: abas ou scroll no detalhe?
 
