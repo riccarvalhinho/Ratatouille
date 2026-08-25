@@ -80,7 +80,8 @@
   ],
   "steps": [
     {
-      "text": "Leve ao lume a panela com metade do azeite, a cebola e o alho. Deixe amolecer sem alourar.",
+      "title": "Refogar a base",
+      "text": "Metade do azeite, a cebola e o alho ao lume. Amolecer sem alourar.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "azeite",
@@ -89,7 +90,10 @@
       ]
     },
     {
-      "text": "Junte as batatas e a água. Tempere com sal.",
+      "title": "Cozer as batatas",
+      "text": "Juntar as batatas e a água, temperar com sal e deixar até se desfazerem com o garfo.",
+      "durationMinutes": 20,
+      "passive": true,
       "ingredientRefs": [
         "batata",
         "agua",
@@ -97,38 +101,28 @@
       ]
     },
     {
-      "text": "Deixe cozer até a batata desfazer com o garfo.",
-      "durationMinutes": 20,
-      "ingredientRefs": [
-        "batata"
-      ],
-      "passive": true
+      "title": "Passar a puré",
+      "text": "Com a varinha mágica, até ficar liso."
     },
     {
-      "text": "Reduza tudo a puré com a varinha mágica, até ficar liso."
-    },
-    {
-      "text": "Numa frigideira à parte, aloure as rodelas de chouriço sem gordura extra.",
+      "title": "Alourar o chouriço",
+      "text": "Em rodelas, numa frigideira à parte, sem gordura extra.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "chourico"
       ]
     },
     {
-      "text": "Volte a pôr o caldo a ferver e junte a couve.",
-      "ingredientRefs": [
-        "couve-galega"
-      ]
-    },
-    {
-      "text": "Coza a couve destapado, para não perder a cor.",
+      "title": "Cozer a couve",
+      "text": "Voltar a pôr o caldo a ferver, juntar a couve e cozer destapado, para não perder a cor.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "couve-galega"
       ]
     },
     {
-      "text": "Sirva com uma rodela de chouriço e um fio do restante azeite em cada prato.",
+      "title": "Servir",
+      "text": "Uma rodela de chouriço e um fio do restante azeite em cada prato.",
       "ingredientRefs": [
         "chourico",
         "azeite"

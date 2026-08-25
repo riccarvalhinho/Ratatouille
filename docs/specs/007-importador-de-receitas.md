@@ -157,7 +157,7 @@ registada em `source`, agora com `kind: "video"` e `author` para dar crédito ao
 - [ ] Importa de link de site, link de vídeo, texto colado e foto
 - [ ] Usa `schema.org/Recipe` quando o site o publica
 - [ ] Todos os ingredientes ficam mapeados para ingredientes canónicos, ou é criado um novo
-- [ ] Instruções reescritas em passos curtos, uma ação por passo
+- [ ] Instruções reescritas em passos ao nível de tarefa — uma ação e a espera que lhe pertence — cada um com título que não repete o texto
 - [ ] Tempo de preparação, de confeção e antecedência ficam em campos separados
 - [ ] Se a fonte não trouxer tempo de preparação, é estimado e entra no total
 - [ ] O eixo de peso é atribuído pela rubrica, não inventado caso a caso

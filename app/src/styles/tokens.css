@@ -47,6 +47,8 @@
   --text-step: 24px;
   /* O tamanho a que os passos aparecem mesmo. O --text-step é o mínimo aceitável, não o alvo. */
   --text-step-lg: 44px;
+  /* O detalhe por baixo do título, no modo cozinha. Um degrau claro, não um sussurro. */
+  --text-step-detail: 28px;
   --leading-tight: 1.25;
   --leading-normal: 1.5;
 

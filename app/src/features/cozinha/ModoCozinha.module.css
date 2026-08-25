@@ -120,11 +120,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-6);
-  padding: var(--space-7) var(--space-6);
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-6);
   overflow-y: auto;
   text-align: center;
 }
+
+/*
+ * O título e o seu texto são um bloco, não dois irmãos com o mesmo espaço entre tudo. A margem é
+ * negativa de propósito: soma-se ao `gap` do corpo, e sem ela o par ficava mais afastado do que o
+ * bloco está das etiquetas — exatamente ao contrário do que a hierarquia quer dizer.
+ */
+.stepTitle + .stepText { margin-top: calc(var(--space-4) - var(--space-5)); }
 
 /*
  * O canto de baixo à direita é do cartão "A seguir", e o corpo não escreve lá.
@@ -133,23 +140,39 @@
  * ingrediente a mais ou uma linha a mais de texto punha os dois em cima um do outro.
  *
  * A conta é o cartão na sua altura máxima (duas linhas, 112px), mais os 32px a que está do fundo,
- * mais outros 32 de folga. E a faixa fica reservada mesmo no último passo, onde não há cartão: 176px
- * de espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
+ * mais 16 de folga. E a faixa fica reservada mesmo no último passo, onde não há cartão: 160px de
+ * espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
  */
-.body { padding-bottom: calc(var(--space-10) + var(--space-9) + var(--space-6)); }
+.body { padding-bottom: calc(var(--space-10) + var(--space-9) + var(--space-4)); }
 
 /*
- * 44px, com a medida travada em 30ch. Os dois andam juntos: sem limite de largura, uma linha de
- * 1216px a 44px daria umas cinquenta palavras e o olho perdia-se ao voltar ao início. 30ch dão duas
- * ou três linhas ao passo mais comprido do seed (90 caracteres) — o formato que se lê de relance a
- * um braço de distância.
+ * O título a 44px, com a medida travada em 30ch. Os dois andam juntos: sem limite de largura, uma
+ * linha de 1216px a 44px daria umas cinquenta palavras e o olho perdia-se ao voltar ao início.
  */
-.stepText {
+.stepTitle {
   margin: 0;
   max-width: 30ch;
   font-size: var(--text-step-lg);
-  line-height: 1.3;
+  font-weight: 700;
+  line-height: 1.2;
   /* Equilibra as linhas onde houver suporte; onde não houver, ignora-se e nada se perde. */
+  text-wrap: balance;
+}
+
+/*
+ * O detalhe a 30px, e a medida mais larga porque o texto é mais comprido — desde que se agregou ao
+ * nível de tarefa anda pelos 100 caracteres em vez dos 57 de antes. A 30px, 40ch são duas linhas.
+ *
+ * A hierarquia é deliberada e não decorativa: quem passa e olha lê o título; quem está a fazer baixa
+ * os olhos uma linha e tem o como, o até quando e a ressalva. Ler os dois seguidos nunca deve dar a
+ * mesma informação duas vezes — se der, o que está mal é o texto da receita, não o ecrã.
+ */
+.stepText {
+  margin: 0;
+  max-width: 44ch;
+  font-size: var(--text-step-detail);
+  line-height: 1.35;
+  color: var(--color-text-muted);
   text-wrap: balance;
 }
 
@@ -201,7 +224,7 @@
   }
 
   /* E aí a faixa reservada deixa de ter para quem a guardar. */
-  .body { padding-bottom: var(--space-7); }
+  .body { padding-bottom: var(--space-5); }
 }
 
 .nextLabel {

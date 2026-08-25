@@ -100,23 +100,19 @@
   ],
   "steps": [
     {
-      "text": "Tempere as coxas de frango com sal e pimenta.",
-      "ingredientRefs": [
-        "coxa-de-frango",
-        "sal",
-        "pimenta-preta"
-      ]
-    },
-    {
-      "text": "Aloure o frango no azeite, de todos os lados. Retire e reserve.",
+      "title": "Temperar e alourar o frango",
+      "text": "Sal e pimenta nas coxas, depois alourar no azeite de todos os lados. Retirar e reservar.",
       "durationMinutes": 8,
       "ingredientRefs": [
         "coxa-de-frango",
+        "sal",
+        "pimenta-preta",
         "azeite"
       ]
     },
     {
-      "text": "No mesmo tacho, refogue a cebola, o alho e o louro.",
+      "title": "Refogar a base",
+      "text": "No mesmo tacho, a cebola, o alho e o louro.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "cebola",
@@ -125,21 +121,26 @@
       ]
     },
     {
-      "text": "Junte o tomate e deixe apurar até desfazer.",
+      "title": "Apurar o tomate",
+      "text": "Juntar ao refogado e deixar até desfazer.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "tomate"
       ]
     },
     {
-      "text": "Refresque com o vinho branco e deixe evaporar o álcool.",
+      "title": "Refrescar com o vinho",
+      "text": "Deixar evaporar o álcool antes de seguir.",
       "durationMinutes": 2,
       "ingredientRefs": [
         "vinho-branco"
       ]
     },
     {
-      "text": "Volte a pôr o frango no tacho, junte a cenoura e a água. Tempere.",
+      "title": "Cozer o frango",
+      "text": "Voltar a pôr o frango no tacho com a cenoura e a água, temperar, e deixar tapado até ficar tenro.",
+      "durationMinutes": 20,
+      "passive": true,
       "ingredientRefs": [
         "coxa-de-frango",
         "cenoura",
@@ -148,29 +149,17 @@
       ]
     },
     {
-      "text": "Deixe cozer tapado até o frango estar tenro.",
-      "durationMinutes": 20,
-      "ingredientRefs": [
-        "coxa-de-frango"
-      ],
-      "passive": true
-    },
-    {
-      "text": "Junte o arroz e as ervilhas. Mexa uma vez.",
+      "title": "Cozer o arroz",
+      "text": "Juntar o arroz e as ervilhas, mexer uma vez e cozer destapado até o caldo ficar malandro.",
+      "durationMinutes": 14,
       "ingredientRefs": [
         "arroz-carolino",
         "ervilhas-congeladas"
       ]
     },
     {
-      "text": "Coza destapado até o arroz estar pronto e o caldo malandro.",
-      "durationMinutes": 14,
-      "ingredientRefs": [
-        "arroz-carolino"
-      ]
-    },
-    {
-      "text": "Retifique o sal, polvilhe com salsa e sirva de imediato.",
+      "title": "Servir",
+      "text": "Retificar o sal, polvilhar com salsa e levar à mesa de imediato.",
       "ingredientRefs": [
         "salsa",
         "sal"

@@ -109,6 +109,13 @@ export interface RecipeIngredient {
 }
 
 export interface RecipeStep {
+  /**
+   * O que se faz, em duas ou três palavras. Opcional porque um rascunho pode não o ter — numa
+   * receita revista o schema exige-o. Escrito a saber que o `text` existe: um leva o verbo e o
+   * objeto, o outro leva só o que o primeiro não diz.
+   */
+  title?: string;
+  /** O que é preciso saber para não fazer mal o que o título anuncia. Nunca repete o título. */
   text: string;
   durationMinutes?: number;
   /** Estruturada e não enterrada no texto: o modo cozinha mostra-a como dado ao lado do temporizador. */
