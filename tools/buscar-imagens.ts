@@ -29,25 +29,49 @@ const MAX_BYTES = 300 * 1024;
 
 const USER_AGENT = 'RatatouilleImporter/1.0 (https://github.com/riccarvalhinho/Ratatouille)';
 
-/**
- * Pontua uma candidata.
- *
- * A ordem em que o banco a devolveu já é relevância, portanto a posição pesa. O resto são sinais
- * baratos de que a fotografia é do prato e não de outra coisa qualquer: o título repetir palavras
- * do nome da receita, e a imagem ser grande o suficiente para não ser um ícone.
- *
- * Palavras de três letras ou menos não contam — "com", "de" e "e" apareceriam em tudo.
- */
-export function scoreCandidate(candidate: ImageCandidate, position: number, terms: string[]): number {
-  const title = (candidate.title ?? '').toLowerCase();
-  const matches = terms.filter((term) => term.length > 3 && title.includes(term)).length;
-  const bigEnough = (candidate.width ?? 0) >= 800 ? 1 : 0;
-  return matches * 10 + bigEnough * 3 - position;
+/** Tira acentos e pontuação, para comparar títulos sem depender de como foram escritos. */
+function normalise(text: string): string {
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-/** As palavras do nome da receita que valem a pena procurar num título. */
-export function termsOf(name: string): string[] {
-  return name.toLowerCase().split(/\s+/).filter((term) => term.length > 3);
+/**
+ * Decide se uma candidata serve, e quanto.
+ *
+ * **O título tem de conter o nome da receita inteiro e seguido.** Mais nada serve.
+ *
+ * A regra chegou aqui por duas tentativas falhadas, as duas no "Arroz de frango". Contar palavras
+ * do nome no título trouxe um biryani indiano de "Paparis, apas, achares e arroz biriani de
+ * frango". Exigir todas as palavras e no máximo três a mais trouxe um prato africano de "Arroz,
+ * frango, ovo, salsichas et mayonnaise" — passou por uma palavra.
+ *
+ * Podia ter apertado o limiar para duas, mas isso era ajustar a regra a dois exemplos. O problema
+ * real é outro: "arroz" e "frango" soltos são um sinal fraco, porque metade da cozinha lusófona os
+ * tem. Um nome que aparece **seguido** é uma afirmação sobre o prato; as mesmas palavras espalhadas
+ * por uma legenda não são.
+ *
+ * O custo é haver menos receitas com fotografia, e é o custo certo: **nenhuma imagem é melhor do
+ * que a errada.** A app mostra bem uma receita sem fotografia; uma fotografia errada mente.
+ */
+export function scoreCandidate(
+  candidate: ImageCandidate,
+  position: number,
+  recipeName: string,
+): number | undefined {
+  const title = normalise(candidate.title ?? '');
+  const name = normalise(recipeName);
+
+  if (!title || !name || !title.includes(name)) return undefined;
+
+  const bigEnough = (candidate.width ?? 0) >= 800 ? 3 : 0;
+  // Entre as que passam, ganha a mais próxima: título curto e alta na relevância do banco.
+  const extraWords = title.split(' ').length - name.split(' ').length;
+  return 25 + bigEnough - position - extraWords;
 }
 
 /** Descarrega, confirma que é mesmo uma imagem, e recusa o que for grande de mais. */
@@ -111,10 +135,15 @@ async function findAndSave(recipe: RecipeFile): Promise<ImageCandidate | undefin
   const candidates = await searchFreeImages(recipe.name);
   if (candidates.length === 0) return undefined;
 
-  const terms = termsOf(recipe.name);
   const ranked = candidates
-    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, terms) }))
+    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, recipe.name) }))
+    .filter((entry): entry is { candidate: ImageCandidate; points: number } => entry.points !== undefined)
     .sort((a, b) => b.points - a.points);
+
+  if (ranked.length === 0) {
+    console.log(`  ${candidates.length} candidata(s), nenhuma convincente`);
+    return undefined;
+  }
 
   const target = path.join(paths.media, 'recipes', `${recipe.id}.jpg`);
 

@@ -2,6 +2,13 @@
   "id": "arroz-doce",
   "name": "Arroz doce",
   "description": "Arroz cozido em leite com casca de limão e canela, ligado com gemas. Servido frio, com canela por cima.",
+  "image": "media/recipes/arroz-doce.jpg",
+  "imageCredit": {
+    "author": "Therese C",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arroz_doce_-_Jul_2008.jpg"
+  },
   "servings": 6,
   "labels": [
     "sobremesa",

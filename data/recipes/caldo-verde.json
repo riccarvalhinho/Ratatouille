@@ -2,6 +2,13 @@
   "id": "caldo-verde",
   "name": "Caldo verde",
   "description": "A sopa portuguesa por excelência: puré de batata e cebola com couve galega cortada muito fina e uma rodela de chouriço.",
+  "image": "media/recipes/caldo-verde.jpg",
+  "imageCredit": {
+    "author": "Mateus Hidalgo",
+    "license": "CC BY-SA 2.5 br",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/br/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caldo_verde.jpg"
+  },
   "narrative": "Comece por estufar a cebola e o alho em metade do azeite, sem deixar ganhar cor. Junte as batatas descascadas e a água, tempere de sal, e deixe ferver até a batata se desfazer ao toque do garfo. Reduza tudo a puré com a varinha, até não sobrar nenhum pedaço. Entretanto, aloure as rodelas de chouriço numa frigideira, sem gordura nenhuma além da que elas próprias largam. Volte a pôr o caldo ao lume e, quando levantar fervura, junte a couve cortada muito fina. Coza-a destapada e pouco tempo, porque é assim que fica verde em vez de amarelada. Sirva com uma rodela de chouriço e um fio do azeite que sobrou.",
   "servings": 4,
   "labels": [
