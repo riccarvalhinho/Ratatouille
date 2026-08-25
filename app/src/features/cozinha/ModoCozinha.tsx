@@ -81,7 +81,11 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
       createTimer(
         {
           stepIndex: index,
-          label: `Passo ${index + 1}`,
+          /*
+           * O título, quando existe. Com dois temporizadores a correr, "Cozer as batatas" diz qual
+           * é a panela e "Passo 3" não diz nada — é para isso que a faixa do topo serve.
+           */
+          label: step.title ?? `Passo ${index + 1}`,
           minutes: step.durationMinutes!,
           passive: step.passive ?? false,
         },
@@ -225,7 +229,19 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
         leva. A ordem é a de quem lê — primeiro o que fazer, depois com quê.
       */}
       <div className={styles.body}>
-        <p className={styles.stepText}>{step?.text}</p>
+        {/*
+          Dois níveis: o título é o que se lê de longe, o texto é o detalhe que impede o erro. Uma
+          receita em rascunho pode não ter título — aí o texto sobe para o lugar dele e fica grande,
+          que é melhor do que deixar o ecrã a começar por um vazio.
+        */}
+        {step?.title ? (
+          <>
+            <h2 className={styles.stepTitle}>{step.title}</h2>
+            <p className={styles.stepText}>{step.text}</p>
+          </>
+        ) : (
+          <p className={styles.stepTitle}>{step?.text}</p>
+        )}
 
         {(step?.temperatureC !== undefined || step?.durationMinutes !== undefined) && (
           <div className={styles.stepBadges}>
@@ -255,7 +271,8 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
         {nextStep && (
           <div className={styles.next}>
             <span className={styles.nextLabel}>A seguir</span>
-            <span className={styles.nextText}>{nextStep.text}</span>
+            {/* O título, que é o que se lê de canto de olho. A frase inteira não se lê a 16px daqui. */}
+            <span className={styles.nextText}>{nextStep.title ?? nextStep.text}</span>
           </div>
         )}
       </div>

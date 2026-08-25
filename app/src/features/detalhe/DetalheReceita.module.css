@@ -206,6 +206,12 @@
   color: var(--color-text-muted);
 }
 
+/* Em bloco e não em linha: é o que faz a lista de passos ler-se como índice e não como parágrafos. */
+.stepTitle {
+  display: block;
+  font-weight: 700;
+}
+
 .stepMeta {
   display: flex;
   gap: var(--space-3);

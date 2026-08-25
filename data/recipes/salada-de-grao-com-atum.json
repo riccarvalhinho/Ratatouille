@@ -84,21 +84,24 @@
   ],
   "steps": [
     {
-      "text": "Escorra e passe o grão por água fria, para tirar o sabor a conserva.",
+      "title": "Escorrer o grão",
+      "text": "Passar por água fria, para tirar o sabor a conserva.",
       "ingredientRefs": [
         "grao-de-bico-cozido"
       ]
     },
     {
-      "text": "Deixe a cebola roxa cinco minutos em água fria, para perder o picante.",
+      "title": "Adoçar a cebola roxa",
+      "text": "Cinco minutos em água fria, para perder o picante.",
       "durationMinutes": 5,
+      "passive": true,
       "ingredientRefs": [
         "cebola-roxa"
-      ],
-      "passive": true
+      ]
     },
     {
-      "text": "Numa taça, junte o grão, o tomate, a cebola escorrida e o atum às lascas.",
+      "title": "Juntar na taça",
+      "text": "O grão, o tomate, a cebola escorrida e o atum às lascas.",
       "ingredientRefs": [
         "grao-de-bico-cozido",
         "tomate",
@@ -107,7 +110,8 @@
       ]
     },
     {
-      "text": "Tempere com azeite, vinagre, sal e pimenta e envolva sem esmagar.",
+      "title": "Temperar",
+      "text": "Azeite, vinagre, sal e pimenta, envolvendo sem esmagar o grão.",
       "ingredientRefs": [
         "azeite",
         "vinagre-de-vinho",
@@ -116,7 +120,8 @@
       ]
     },
     {
-      "text": "Polvilhe com salsa e decore com os ovos cozidos, se usar.",
+      "title": "Rematar",
+      "text": "Polvilhar com salsa e decorar com os ovos cozidos, se usar.",
       "ingredientRefs": [
         "salsa",
         "ovo"

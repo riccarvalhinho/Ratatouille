@@ -44,11 +44,12 @@ fonte (link, foto, texto colado, ou de cabeça)
   quantidade e a preparação em campos separados. Se o ingrediente não existir na taxonomia, acrescentar
   primeiro à taxonomia — nunca inventar uma referência.
 - **Unidades do sistema métrico**, em português: `g`, `kg`, `ml`, `l`, `un`, `csopa`, `cchá`, `qb`.
-- **Passos curtos.** Uma ação por passo. Um passo que precisa de vírgulas a mais são dois passos.
-  O documento original é explícito: "text por bullets e simplificado, nada de grandes parágrafos".
-  ⚠️ A parte das vírgulas está a ser rediscutida na conversa 4, pergunta 8, que propõe agregar ao
-  nível de tarefa — "juntar as batatas e a água, temperar com sal e deixar até se desfazerem com o
-  garfo" seria um passo só. Até estar decidido, vale o que está escrito acima.
+- **Passos ao nível de tarefa, com título.** Uma ação e a espera que lhe pertence. O título é o
+  teste do tamanho: se disser tudo o que o texto diz, junta-se ao vizinho. O tecto é o temporizador —
+  um por passo, portanto duas esperas seguidas são dois passos. O documento original pedia "text por
+  bullets e simplificado, nada de grandes parágrafos", e isso mantém-se: um passo ao nível de tarefa
+  continua a ser uma ou duas frases, não um parágrafo. A regra completa, com exemplo mau ao lado do
+  bom, está em `.claude/skills/importar-receita/SKILL.md`.
 - **Tempos separados.** Preparação e confeção são campos distintos, e a antecedência de preparação
   (marinar de véspera, demolhar bacalhau, levedar massa) é um terceiro campo — não se soma aos outros
   porque não é tempo ativo.

@@ -110,42 +110,35 @@
   ],
   "steps": [
     {
-      "text": "Coza o bacalhau demolhado em água a ferver e desligue o lume.",
+      "title": "Cozer e desfiar o bacalhau",
+      "text": "Em água a ferver, depois escorrer, tirar peles e espinhas e desfiar em lascas.",
       "durationMinutes": 10,
       "ingredientRefs": [
         "bacalhau-salgado"
       ]
     },
     {
-      "text": "Escorra, retire peles e espinhas e desfie o bacalhau em lascas.",
-      "ingredientRefs": [
-        "bacalhau-salgado"
-      ]
-    },
-    {
-      "text": "Frite as batatas em palitos até ficarem douradas mas ainda macias. Escorra em papel.",
+      "title": "Fritar as batatas",
+      "text": "Em palitos, até douradas mas ainda macias por dentro. Escorrer em papel.",
       "durationMinutes": 10,
       "ingredientRefs": [
         "batata"
       ]
     },
     {
-      "text": "Aloure a cebola e o alho no azeite até ficarem translúcidos.",
+      "title": "Refogar a cebola com o bacalhau",
+      "text": "Alourar a cebola e o alho no azeite até ficarem translúcidos, juntar o bacalhau e envolver. Reservar.",
       "durationMinutes": 8,
       "ingredientRefs": [
         "cebola",
         "dente-de-alho",
-        "azeite"
-      ]
-    },
-    {
-      "text": "Junte o bacalhau à cebola e envolva. Reserve.",
-      "ingredientRefs": [
+        "azeite",
         "bacalhau-salgado"
       ]
     },
     {
-      "text": "Para o béchamel: derreta a manteiga, junte a farinha e mexa até formar uma pasta.",
+      "title": "Fazer o roux",
+      "text": "Derreter a manteiga, juntar a farinha e mexer até formar uma pasta.",
       "durationMinutes": 2,
       "ingredientRefs": [
         "manteiga",
@@ -153,41 +146,29 @@
       ]
     },
     {
-      "text": "Adicione o leite aos poucos, sempre a mexer, até engrossar.",
+      "title": "Engrossar o molho",
+      "text": "Leite aos poucos, sempre a mexer. Temperar com sal, pimenta e noz-moscada e envolver as natas.",
       "durationMinutes": 6,
       "ingredientRefs": [
-        "leite"
-      ]
-    },
-    {
-      "text": "Tempere o béchamel com sal, pimenta e noz-moscada.",
-      "ingredientRefs": [
+        "leite",
         "sal",
         "pimenta-preta",
-        "noz-moscada"
-      ]
-    },
-    {
-      "text": "Envolva as natas no béchamel.",
-      "ingredientRefs": [
+        "noz-moscada",
         "natas"
       ]
     },
     {
-      "text": "Num pirex, misture as batatas, o bacalhau e metade do molho.",
+      "title": "Montar no pirex",
+      "text": "Misturar as batatas, o bacalhau e metade do molho. Cobrir com o restante e polvilhar com o queijo.",
       "ingredientRefs": [
         "batata",
-        "bacalhau-salgado"
-      ]
-    },
-    {
-      "text": "Cubra com o restante molho e polvilhe com o queijo ralado.",
-      "ingredientRefs": [
+        "bacalhau-salgado",
         "queijo-ralado"
       ]
     },
     {
-      "text": "Leve ao forno a 200 °C até gratinar.",
+      "title": "Gratinar",
+      "text": "No forno, até a superfície ficar dourada.",
       "durationMinutes": 25,
       "temperatureC": 200
     }

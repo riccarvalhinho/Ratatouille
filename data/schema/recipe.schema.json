@@ -18,7 +18,13 @@
       },
       "else": {
         "required": ["id", "name", "labels", "methods", "timing", "ingredients", "steps"],
-        "anyOf": [{ "required": ["servings"] }, { "required": ["yield"] }]
+        "anyOf": [{ "required": ["servings"] }, { "required": ["yield"] }],
+        "properties": {
+          "steps": {
+            "description": "Numa receita revista, todos os passos têm título. Um rascunho pode não ter — e é isso que o distingue.",
+            "items": { "required": ["title", "text"] }
+          }
+        }
       }
     }
   ],
@@ -172,7 +178,7 @@
       }
     },
     "steps": {
-      "description": "Passos curtos, uma ação por passo. É esta estrutura que alimenta o modo cozinha: um passo de cada vez, temporizador quando há duração, ingredientes à mão. O estado de execução — em que passo se vai, o que está concluído — NÃO vive aqui: é estado efémero da aplicação.",
+      "description": "Passos ao nível de tarefa: uma ação e a espera que lhe pertence. Dois limites governam a granularidade. Em baixo, o título é o teste — se o título disser tudo o que o texto diz, o passo é pequeno de mais e junta-se ao vizinho ('junte as batatas' seguido de 'coza' é um passo, não dois). Em cima, manda o temporizador: um passo tem uma duração e um passive, portanto duas esperas seguidas nunca cabem no mesmo passo. O estado de execução — em que passo se vai, o que está concluído — NÃO vive aqui: é estado efémero da aplicação.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -180,7 +186,18 @@
         "required": ["text"],
         "additionalProperties": false,
         "properties": {
-          "text": { "type": "string", "minLength": 1, "maxLength": 280 },
+          "title": {
+            "description": "O que se faz, em duas ou três palavras: \"Cozer as batatas\", \"Fazer o roux\". O modo cozinha mostra-o em grande e o detalhe usa-o para a lista se ler de relance. Escreve-se a saber que o texto existe: o título leva o verbo e o objeto, o texto leva só o que o título não diz. Se der para ler os dois seguidos e ouvir a mesma coisa duas vezes, um dos dois está mal escrito.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "text": {
+            "description": "O que é preciso saber para não fazer mal o que o título anuncia: o como, o até quando, a ressalva. Nunca repete o título.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 280
+          },
           "durationMinutes": {
             "description": "Alimenta o temporizador do modo cozinha.",
             "type": "integer",

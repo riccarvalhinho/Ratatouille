@@ -19,18 +19,24 @@ Um botão "Cozinhar" no detalhe da receita. Entra em ecrã inteiro, sem navegaç
 
 ### Ecrã de execução
 
-- **Um passo de cada vez, ao centro do ecrã**, numa coluna só: o texto do passo, o que ele exige
-  (temperatura, duração) e os ingredientes que leva, por essa ordem — que é a de quem lê. A
-  tipografia é `--text-step-lg` (44px) com a medida travada em 30ch: as duas coisas andam juntas,
-  porque texto grande sem limite de largura dá linhas que o olho perde ao voltar ao início.
+- **Um passo de cada vez, ao centro do ecrã**, numa coluna só: o título do passo, o detalhe, o que
+  ele exige (temperatura, duração) e os ingredientes que leva, por essa ordem — que é a de quem lê.
+- **Dois níveis de tipografia, e a hierarquia é deliberada.** O título a `--text-step-lg` (44px, 30ch)
+  é o que se lê de longe; o detalhe a `--text-step-detail` (28px, 44ch) é o que impede o erro. Quem
+  passa e olha lê o título; quem está a fazer baixa os olhos uma linha. A medida travada anda junto
+  com o tamanho: texto grande sem limite de largura dá linhas que o olho perde ao voltar ao início.
+  Um passo sem título — só um rascunho — mostra o texto no lugar do título, para o ecrã não começar
+  por um vazio.
 - O nome da receita no canto superior esquerdo leva a **miniatura do prato ao lado**, num quadrado de
   48px. Num ecrã que só mostra um passo é a única coisa que diz qual é o prato, e reconhece-se uma
   fotografia mais depressa do que se lê um nome. Sem imagem, fica o marcador 🍲.
-- Indicação de progresso: passo 3 de 9
+- Indicação de progresso: passo 3 de 9. Conta alguma coisa porque os passos são tarefas — quando
+  eram meias-ações, "passo 3 de 12" não dizia onde se estava
 - Os ingredientes desse passo visíveis junto ao passo, para não ser preciso voltar atrás — em linha
   por baixo do texto, e não numa coluna à direita, que roubava largura ao passo para ficar quase
   sempre meia vazia
-- **O passo seguinte em pequeno**, num cartão fixo no canto inferior direito, cortado às duas linhas.
+- **O passo seguinte em pequeno**, num cartão fixo no canto inferior direito, cortado às duas linhas,
+  e mostrando o **título** e não a frase — a 16px e de canto de olho, a frase não se lê.
   Serve para planear enquanto se cozinha ("enquanto isto aloura, vou desfiando o bacalhau") e não
   para saber o que vem a seguir no instante em que se toca no botão. O corpo reserva-lhe a faixa de
   baixo (176px) e não escreve lá, mesmo no último passo onde o cartão não existe — assim o texto do

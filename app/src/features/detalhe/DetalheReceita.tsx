@@ -190,6 +190,8 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
               {recipe.steps.map((step, index) => (
                 <li key={index} className={styles.step}>
                   <span>
+                    {/* Com título, a lista lê-se de relance; sem ele — um rascunho — fica o texto só. */}
+                    {step.title && <span className={styles.stepTitle}>{step.title}</span>}
                     {step.text}
                     {(step.durationMinutes || step.temperatureC) && (
                       <span className={styles.stepMeta}>

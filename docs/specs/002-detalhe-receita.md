@@ -41,7 +41,7 @@ ao topo.
    condicionam se a receita é sequer possível, os utensílios são detalhe (`kind` da taxonomia)
 7. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser
    percorrível, e a `note` do ingrediente em texto secundário por baixo do nome
-8. Passo a passo, em bullets curtos, com a temperatura em destaque quando o passo a exige
+8. Passo a passo, cada um com o título a negrito e o detalhe por baixo, com a temperatura em destaque quando o passo a exige. É o título que faz a lista ler-se de relance em vez de como parágrafos
 9. A transcrição em texto corrido, para quem prefere ler a receita seguida
 10. Informação nutricional por dose: energia, proteína, gordura, gordura saturada, hidratos, fibra e
     sal — marcada como estimada quando `nutrition.method` for `estimado`. O mínimo aceitável são só
@@ -62,7 +62,7 @@ e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a
 - [ ] Mostra aparelhos e utensílios em blocos separados
 - [ ] Mostra ingredientes com a quantidade numa coluna alinhada à direita
 - [ ] A nota de um ingrediente aparece subordinada ao nome, não a competir com ele
-- [ ] Os passos são bullets curtos, nunca parágrafos corridos
+- [ ] Cada passo mostra o título a negrito e o detalhe por baixo, e nenhum dos dois repete o outro
 - [ ] Nutrição estimada aparece marcada como aproximada
 - [ ] O "+" permite escolher dia e bloco, e adiciona ao plano
 - [ ] Planear dá confirmação visível sem fechar o pop-up

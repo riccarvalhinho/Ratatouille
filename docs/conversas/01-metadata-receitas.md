@@ -22,6 +22,8 @@ Não se rediscute sem motivo novo:
 - Ingredientes são **referências** a `data/taxonomies/ingredients.json`, nunca texto livre. É o que
   torna a lista de compras possível (ADR 0002).
 - Passos são bullets curtos, uma ação por passo. O benchmark do Cookidoo confirmou pela negativa.
+  **Revisto na conversa 4, ronda 4:** continuam curtos, mas a unidade passou a ser a tarefa — uma
+  ação **e a espera que lhe pertence** — e cada passo ganhou título.
 - `status` e `gaps` existem para o importador nunca deixar buracos em silêncio.
 - Nutrição traz sempre `method`, para distinguir calculado de estimado.
 

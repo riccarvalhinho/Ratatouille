@@ -16,7 +16,8 @@ Cookidoo usa **abas** dentro do detalhe, a nossa spec descreve um **scroll únic
 - Coração (favorito), "+" (planear) e "x" (fechar) sempre visíveis
 - Aparelhos e utensílios em blocos separados
 - Quantidade do ingrediente alinhada à direita, numa coluna; a nota subordinada ao nome
-- Passos em bullets curtos, nunca parágrafos
+- Passos em bullets curtos, nunca parágrafos. **Revisto na conversa 4, ronda 4:** cada passo passou
+  a ter título a negrito com o detalhe por baixo, e a lista lê-se como índice
 
 ## As minhas perguntas de arranque
 

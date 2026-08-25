@@ -1,14 +1,14 @@
 # Conversa 4 — Modo cozinha
 
-**Estado:** Em curso — perguntas 1, 2 e 3 fechadas; a 8 é a próxima a decidir e mexe no schema
+**Estado:** Em curso — perguntas 1, 2, 3 e 8 fechadas e aplicadas. Faltam a 4, a 5, a 6 e a 7
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/005-modo-cozinha.md` — e, para a pergunta 8, muito mais do que
 isso: ver o inventário na proposta. A regra da granularidade é uma regra de **como se escrevem
 receitas**, portanto vai também para a skill `importar-receita`.
 **Prioridade:** Pode esperar — é M5. Mas é o ecrã que justifica o tablet estar na parede.
 
-> **Já existe uma versão construída.** As perguntas 1, 2 e 3 foram respondidas em áudio e estão
-> aplicadas no código — ver o registo abaixo. As perguntas 4 a 7 continuam por responder.
+> **Já existe uma versão construída.** As perguntas 1, 2, 3 e 8 estão respondidas e aplicadas no
+> código, nos dados, no schema e na skill — ver o registo abaixo. As 4 a 7 continuam por responder.
 
 ## Porque existe
 
@@ -285,14 +285,57 @@ duração continua visível no corpo, mas como etiqueta e não como alvo. E a fa
 topo passou a mostrar só os temporizadores de **outros** passos — o do passo atual vive no botão do
 meio, e ter o mesmo número em dois sítios é ruído.
 
+### Ronda 4 — título por passo, e a granularidade a reboque
+
+Fechada a pergunta 8, e aplicada por inteiro. Chegou lá por três correções seguidas, e as três valem
+mais do que o resultado.
+
+**A primeira foi minha e estava errada.** Li os títulos do exemplo como nomes de fase a cobrir vários
+passos, e propus um campo `phase`. São 1 para 1 com os passos. A fase não era a saída.
+
+**A segunda foi o Ricardo a apontar o que faltava:** o próprio texto do passo pode ser escrito para
+completar o título em vez de o repetir. É isso que resolve a redundância, e não a estrutura.
+
+**A terceira apanhou o que ainda estava mal.** O primeiro teste dessa escrita produziu "Juntar as
+batatas e a água — Temperar com sal" seguido de "Cozer — Até a batata se desfazer com o garfo": dois
+passos sem valor. O problema já não era a escrita, era a granularidade — aqueles dois são o mesmo
+trabalho, e separá-los obriga a um toque no meio de uma coisa que não tem meio.
+
+Daí a regra, com dois lados: **um passo é uma ação e a espera que lhe pertence.** O piso é o próprio
+título — se ele diz tudo o que o texto diz, o passo junta-se ao vizinho. O tecto é o temporizador: um
+por passo, portanto duas esperas seguidas nunca cabem no mesmo.
+
+**O que ficou feito.** Os 55 passos do seed foram reagrupados e reescritos: são agora **38**. Nenhum
+temporizador, temperatura ou ingrediente se perdeu no caminho — foi verificado ficheiro a ficheiro,
+porque um refogado que perca o "5 min" não dá erro nenhum, só sai mal. O `title` entrou no schema como
+opcional, mas **obrigatório numa receita revista**: um rascunho pode não o ter, e é isso que o
+distingue. O modo cozinha ganhou os dois níveis, o detalhe passou a ler-se como índice, e o cartão "A
+seguir" e os temporizadores passaram a dizer o título — "Cozer as batatas" diz qual é a panela que
+está a apitar, "Passo 3" não dizia nada.
+
+A regra foi para os nove sítios do inventário, e o principal é a **skill**: é ela que escreve as
+receitas novas, e uma regra que ficasse só na spec não mudava nada do que se produz a partir de
+amanhã. Ficou lá com o exemplo mau ao lado do bom, e com a instrução de perguntar quando a junção não
+for óbvia em vez de decidir sozinha.
+
+**O que se decidiu sem perguntar**, porque o Ricardo deu a decisão por fechada com as considerações
+que eu tinha proposto: reescrever o seed todo agora em vez de só as receitas novas — dois formatos ao
+mesmo tempo notam-se logo no ecrã de detalhe; o título é o nível grande e o detalhe o pequeno; e o
+tecto de um temporizador por passo fica como está. Se alguma delas incomodar ao usar, muda-se.
+
+**E fechou também a pergunta do "Para o béchamel".** Com a granularidade certa os quatro passos do
+molho ficaram dois, e deixou de haver o que agrupar. A fase era um penso para um problema de
+granularidade.
+
 ### Por onde continuar
 
-A pergunta 8 primeiro, que é a que está em cima da mesa e mexe no schema — quanto mais tarde se
-decidir, mais receitas há para preencher à mão.
+Perguntas 4 a 7, que são todas sobre o que acontece quando há mais do que uma coisa ao lume: quantos
+temporizadores em simultâneo são realistas, o que fazer quando um toca noutro passo, se vale a pena
+riscar ingredientes já usados, e o que o ecrã faz no fim.
 
-Depois as perguntas 4 a 7, que são todas sobre o que acontece quando há mais do que uma coisa ao
-lume: quantos temporizadores em simultâneo são realistas, o que fazer quando um toca noutro passo, se
-vale a pena riscar ingredientes já usados, e o que o ecrã faz no fim.
+Uma nota para quando lá se chegar: a pergunta 4 ficou mais fácil de responder agora. Com os passos ao
+nível de tarefa, os temporizadores dizem o nome da tarefa em vez do número do passo, e isso é metade
+do que a pergunta pedia.
 
 ## Decisões tomadas
 
@@ -310,3 +353,9 @@ vale a pena riscar ingredientes já usados, e o que o ecrã faz no fim.
 | Os ingredientes do passo vêm em linha por baixo do texto, não numa coluna lateral | `docs/specs/005-modo-cozinha.md` |
 | O nome da receita leva a miniatura do prato ao lado, em 48px | `docs/specs/005-modo-cozinha.md` |
 | O corpo reserva a faixa de baixo ao cartão "A seguir", mesmo no último passo | `docs/specs/005-modo-cozinha.md` |
+| Cada passo tem título; o texto escreve-se para o completar, nunca para o repetir | `data/schema/recipe.schema.json`, `.claude/skills/importar-receita/SKILL.md` |
+| Um passo é uma ação e a espera que lhe pertence — o título é o teste do piso, o temporizador é o tecto | `.claude/skills/importar-receita/SKILL.md`, `docs/ops/importar-receitas.md` |
+| Numa receita revista o título é obrigatório; num rascunho não | `data/schema/recipe.schema.json` |
+| O modo cozinha mostra título a 44px e detalhe a 28px | `docs/specs/005-modo-cozinha.md`, `docs/design/design-system.md` |
+| O cartão "A seguir" e os temporizadores dizem o título do passo, não o número | `docs/specs/005-modo-cozinha.md` |
+| O ecrã de detalhe mostra o título a negrito com o detalhe por baixo | `docs/specs/002-detalhe-receita.md` |

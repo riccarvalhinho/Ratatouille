@@ -120,13 +120,36 @@ A outra via, e a melhor: fotografia própria, tirada quando se cozinha. Aí `ima
 
 Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena forçar.
 
+## Como se escrevem os passos
+
+**Passos ao nível de tarefa: uma ação e a espera que lhe pertence.** Dois limites, e nenhum é de
+gosto. Em baixo, **o título é o teste**: se o título disser tudo o que o texto diz, o passo é pequeno
+de mais e junta-se ao vizinho — "junte as batatas e a água" seguido de "deixe cozer" é um passo, não
+dois. Em cima manda o temporizador: um passo tem **uma** duração e **um** `passive`, portanto duas
+esperas seguidas nunca cabem no mesmo passo.
+
+**O título e o texto escrevem-se um a saber do outro.** O título leva o verbo e o objeto; o texto leva
+só o que o título não diz — o como, o até quando, a ressalva. Se der para ler os dois seguidos e ouvir
+a mesma coisa duas vezes, um dos dois está mal escrito.
+
+| | Mau | Bom |
+|---|---|---|
+| Título | Temperar o frango | Temperar e alourar o frango |
+| Texto | Tempere o frango com sal e pimenta. | Sal e pimenta nas coxas, depois alourar no azeite de todos os lados. Retirar e reservar. |
+
+O mau repete o título e parte em dois uma coisa que é uma. O bom diz coisas diferentes em cada linha.
+
+Uma receita da internet vem com a granularidade que o autor quis, e muitas vêm no formato mau — uma
+linha por gesto. **Reagrupar faz parte do trabalho de importar**, não é liberdade que se toma: sem
+isso, o modo cozinha fica com o dobro dos passos e metade deles não diz nada.
+
+Quando a fonte vier com passos a mais e a junção não for óbvia — dois que talvez sejam um, ou uma
+espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É barato agora e caro depois.
+
 ## O que já é decidido e não se volta a discutir
 
-- Passos em bullets curtos, uma ação por passo. Nunca parágrafos.
-  > ⚠️ **Esta é a única linha desta secção que está a ser rediscutida.** A conversa 4, pergunta 8,
-  > propõe passos ao nível de tarefa — uma ação **e a espera que lhe pertence** — mais um título por
-  > passo. Enquanto não estiver decidido, continuar a aplicar a regra como está; não improvisar a
-  > nova a meio. Ver `docs/conversas/04-ui-modo-cozinha.md`.
+- Passos ao nível de tarefa, com título. Nunca parágrafos, nunca um passo por gesto. Ver a secção
+  "Como se escrevem os passos" — é a regra mais fácil de aplicar mal.
 - Tempo total inclui a preparação estimada; a antecedência (marinar, demolhar) é campo à parte e
   **não** entra no total
 - `weight` atribui-se pela rubrica em `docs/product/metadata-receitas.md`, não a olho

@@ -120,7 +120,7 @@ vez de decidir receita a receita evita repetir o mesmo juízo dezenas de vezes.
 
 ## Passos
 
-`{ text, durationMinutes, temperatureC, passive, ingredientRefs }`. Texto curto, uma ação por passo.
+`{ title, text, durationMinutes, temperatureC, passive, ingredientRefs }`. Passos ao nível de tarefa: uma ação e a espera que lhe pertence. O `title` leva o verbo e o objeto, o `text` leva só o que o título não diz. Numa receita revista o `title` é obrigatório; num rascunho não.
 
 É esta estrutura que alimenta o modo cozinha: um passo de cada vez, temporizador quando há duração,
 ingredientes do passo à mão.

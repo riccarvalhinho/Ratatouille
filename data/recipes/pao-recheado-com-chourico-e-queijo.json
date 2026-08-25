@@ -72,66 +72,56 @@
   ],
   "steps": [
     {
-      "text": "Pré-aqueça o forno.",
+      "title": "Pré-aquecer o forno",
+      "text": "Fica a aquecer enquanto se prepara o recheio.",
       "temperatureC": 200
     },
     {
-      "text": "Corte a tampa do pão e retire o miolo num bloco só.",
+      "title": "Abrir o pão",
+      "text": "Cortar a tampa, retirar o miolo num bloco só e cortá-lo em cubos. Reservar tudo.",
       "ingredientRefs": [
         "pao-rustico"
       ]
     },
     {
-      "text": "Corte o miolo em cubos e reserve.",
-      "ingredientRefs": [
-        "pao-rustico"
-      ]
-    },
-    {
-      "text": "Retire a pele ao chouriço e triture até obter uma pasta.",
+      "title": "Triturar o chouriço",
+      "text": "Sem pele, até ficar uma pasta.",
       "ingredientRefs": [
         "chourico"
       ]
     },
     {
-      "text": "Numa taça, junte à pasta a maionese, o queijo creme e a mozzarella.",
+      "title": "Fazer o recheio",
+      "text": "Juntar à pasta a maionese, o queijo creme e a mozzarella, e temperar com alho em pó, orégãos e pimenta.",
       "ingredientRefs": [
         "maionese",
         "queijo-creme",
-        "queijo-mozzarella"
-      ]
-    },
-    {
-      "text": "Tempere com alho em pó, orégãos e pimenta.",
-      "ingredientRefs": [
+        "queijo-mozzarella",
         "alho-em-po",
         "oregaos",
         "pimenta-preta"
       ]
     },
     {
-      "text": "Recheie o pão com a mistura e tape com folha de alumínio.",
+      "title": "Montar no tabuleiro",
+      "text": "Rechear o pão e tapar com alumínio. Num tabuleiro forrado, com os cubos de miolo e a tampa em tiras à volta.",
       "ingredientRefs": [
         "pao-rustico"
       ]
     },
     {
-      "text": "Disponha o pão num tabuleiro forrado, com os cubos de miolo e a tampa em tiras à volta."
-    },
-    {
-      "text": "Leve ao forno.",
+      "title": "Levar ao forno",
+      "text": "Ainda tapado com o alumínio.",
       "durationMinutes": 20,
       "temperatureC": 200,
       "passive": true
     },
     {
-      "text": "Retire o alumínio e deixe gratinar até dourar.",
+      "title": "Gratinar",
+      "text": "Retirar o alumínio e deixar dourar. Servir quente.",
       "durationMinutes": 5,
       "temperatureC": 200,
       "passive": true
-    },
-    {
-      "text": "Sirva quente."
     }
   ],
   "nutrition": {
