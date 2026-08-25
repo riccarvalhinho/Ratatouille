@@ -40,29 +40,23 @@ function normalise(text: string): string {
     .trim();
 }
 
-/** Palavras do nome que valem a pena procurar. "com", "de" e "e" apareceriam em tudo. */
-export function termsOf(name: string): string[] {
-  return normalise(name).split(' ').filter((term) => term.length > 3);
-}
-
 /**
  * Decide se uma candidata serve, e quanto.
  *
- * A primeira versão só contava palavras do nome no título, e trouxe um **biryani indiano** para o
- * "Arroz de frango": o ficheiro chamava-se "Paparis, apas, achares e arroz biriani de frango" e
- * casou "arroz" e "frango". Duas palavras certas, prato errado.
+ * **O título tem de conter o nome da receita inteiro e seguido.** Mais nada serve.
  *
- * A regra que isso ensinou: o que distingue um acerto de uma coincidência é o nome aparecer
- * **inteiro e seguido**, ou o título ser curto o suficiente para não estar a falar de outra coisa.
- * Daí as duas portas:
+ * A regra chegou aqui por duas tentativas falhadas, as duas no "Arroz de frango". Contar palavras
+ * do nome no título trouxe um biryani indiano de "Paparis, apas, achares e arroz biriani de
+ * frango". Exigir todas as palavras e no máximo três a mais trouxe um prato africano de "Arroz,
+ * frango, ovo, salsichas et mayonnaise" — passou por uma palavra.
  *
- * 1. o título contém o nome da receita como frase — "Arroz doce - Jul 2008" entra por aqui;
- * 2. ou tem todas as palavras significativas **e** não mais de três palavras a mais.
+ * Podia ter apertado o limiar para duas, mas isso era ajustar a regra a dois exemplos. O problema
+ * real é outro: "arroz" e "frango" soltos são um sinal fraco, porque metade da cozinha lusófona os
+ * tem. Um nome que aparece **seguido** é uma afirmação sobre o prato; as mesmas palavras espalhadas
+ * por uma legenda não são.
  *
- * O biryani falha as duas: não tem "arroz de frango" seguido, e traz cinco palavras a mais.
- *
- * Quem não passa é recusado, não é despromovido. **Nenhuma imagem é melhor do que a errada** — a app
- * já mostra bem uma receita sem fotografia, e uma fotografia errada mente.
+ * O custo é haver menos receitas com fotografia, e é o custo certo: **nenhuma imagem é melhor do
+ * que a errada.** A app mostra bem uma receita sem fotografia; uma fotografia errada mente.
  */
 export function scoreCandidate(
   candidate: ImageCandidate,
@@ -70,20 +64,14 @@ export function scoreCandidate(
   recipeName: string,
 ): number | undefined {
   const title = normalise(candidate.title ?? '');
-  if (!title) return undefined;
-
   const name = normalise(recipeName);
-  const terms = termsOf(recipeName);
 
-  const hasPhrase = title.includes(name);
-  const present = terms.filter((term) => title.includes(term)).length;
-  const extraWords = title.split(' ').length - name.split(' ').length;
-
-  const complete = terms.length > 0 && present === terms.length;
-  if (!hasPhrase && !(complete && extraWords <= 3)) return undefined;
+  if (!title || !name || !title.includes(name)) return undefined;
 
   const bigEnough = (candidate.width ?? 0) >= 800 ? 3 : 0;
-  return (hasPhrase ? 25 : 0) + present * 5 + bigEnough - position - Math.max(0, extraWords);
+  // Entre as que passam, ganha a mais próxima: título curto e alta na relevância do banco.
+  const extraWords = title.split(' ').length - name.split(' ').length;
+  return 25 + bigEnough - position - extraWords;
 }
 
 /** Descarrega, confirma que é mesmo uma imagem, e recusa o que for grande de mais. */

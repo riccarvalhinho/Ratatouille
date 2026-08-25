@@ -26,18 +26,28 @@ Nunca licenças **ND**: a app recorta com `object-fit: cover`, e recortar é uma
 
 ### O que aprendemos ao correr isto a sério
 
-Na primeira passagem apanhou três em quatro. A quarta — "Arroz de frango" — trouxe um **biryani
-indiano**, de um ficheiro chamado "Paparis, apas, achares e arroz biriani de frango": casou "arroz"
-e "frango", duas palavras certas e prato errado.
+Duas passagens, e as duas erraram no mesmo sítio.
 
-A regra que isso ensinou está em `tools/buscar-imagens.ts`: uma candidata só é aceite se o título
-contiver o nome da receita **inteiro e seguido**, ou tiver todas as palavras significativas e não
-mais de três palavras a mais. Quem não passa é recusado, não despromovido — **nenhuma imagem é
-melhor do que a errada**, porque a app mostra bem uma receita sem fotografia e uma fotografia errada
-mente.
+A primeira contava palavras do nome no título e trouxe um **biryani indiano** para o "Arroz de
+frango", de um ficheiro chamado "Paparis, apas, achares e arroz biriani de frango". A segunda passou
+a exigir todas as palavras significativas e no máximo três a mais, e trouxe um **prato africano com
+banana e salsichas**, de "Arroz, frango, ovo, salsichas et mayonnaise" — passou por uma palavra.
 
-Pratos compostos e sem nome próprio ("salada de grão com atum") não costumam ter nada nestes bancos.
-É o resultado esperado, não uma falha.
+Apertar o limiar para duas teria resolvido esses dois casos e mais nenhum: era ajustar a regra aos
+exemplos. O problema real é outro. **"Arroz" e "frango" soltos são um sinal fraco**, porque metade
+da cozinha lusófona os tem. Um nome que aparece *seguido* no título é uma afirmação sobre o prato;
+as mesmas palavras espalhadas por uma legenda não são.
+
+A regra final é uma só linha: **o título tem de conter o nome da receita inteiro e seguido.** O
+custo é haver menos receitas com fotografia, e é o custo certo — a app mostra bem uma receita sem
+fotografia, e uma fotografia errada mente.
+
+### O que isto quer dizer na prática
+
+Funciona bem para pratos com **nome próprio** — bacalhau com natas, caldo verde, arroz doce. Não
+funciona para nomes descritivos que são só ingredientes juntos: "arroz de frango", "salada de grão
+com atum", "pão recheado com chouriço e queijo". Para esses, ou se tira uma fotografia, ou se
+escolhe uma à mão com `npm run import:image -- "o que procurar"`.
 
 ## Se o volume crescer
 
