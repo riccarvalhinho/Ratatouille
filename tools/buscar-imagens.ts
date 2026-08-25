@@ -29,25 +29,61 @@ const MAX_BYTES = 300 * 1024;
 
 const USER_AGENT = 'RatatouilleImporter/1.0 (https://github.com/riccarvalhinho/Ratatouille)';
 
-/**
- * Pontua uma candidata.
- *
- * A ordem em que o banco a devolveu já é relevância, portanto a posição pesa. O resto são sinais
- * baratos de que a fotografia é do prato e não de outra coisa qualquer: o título repetir palavras
- * do nome da receita, e a imagem ser grande o suficiente para não ser um ícone.
- *
- * Palavras de três letras ou menos não contam — "com", "de" e "e" apareceriam em tudo.
- */
-export function scoreCandidate(candidate: ImageCandidate, position: number, terms: string[]): number {
-  const title = (candidate.title ?? '').toLowerCase();
-  const matches = terms.filter((term) => term.length > 3 && title.includes(term)).length;
-  const bigEnough = (candidate.width ?? 0) >= 800 ? 1 : 0;
-  return matches * 10 + bigEnough * 3 - position;
+/** Tira acentos e pontuação, para comparar títulos sem depender de como foram escritos. */
+function normalise(text: string): string {
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-/** As palavras do nome da receita que valem a pena procurar num título. */
+/** Palavras do nome que valem a pena procurar. "com", "de" e "e" apareceriam em tudo. */
 export function termsOf(name: string): string[] {
-  return name.toLowerCase().split(/\s+/).filter((term) => term.length > 3);
+  return normalise(name).split(' ').filter((term) => term.length > 3);
+}
+
+/**
+ * Decide se uma candidata serve, e quanto.
+ *
+ * A primeira versão só contava palavras do nome no título, e trouxe um **biryani indiano** para o
+ * "Arroz de frango": o ficheiro chamava-se "Paparis, apas, achares e arroz biriani de frango" e
+ * casou "arroz" e "frango". Duas palavras certas, prato errado.
+ *
+ * A regra que isso ensinou: o que distingue um acerto de uma coincidência é o nome aparecer
+ * **inteiro e seguido**, ou o título ser curto o suficiente para não estar a falar de outra coisa.
+ * Daí as duas portas:
+ *
+ * 1. o título contém o nome da receita como frase — "Arroz doce - Jul 2008" entra por aqui;
+ * 2. ou tem todas as palavras significativas **e** não mais de três palavras a mais.
+ *
+ * O biryani falha as duas: não tem "arroz de frango" seguido, e traz cinco palavras a mais.
+ *
+ * Quem não passa é recusado, não é despromovido. **Nenhuma imagem é melhor do que a errada** — a app
+ * já mostra bem uma receita sem fotografia, e uma fotografia errada mente.
+ */
+export function scoreCandidate(
+  candidate: ImageCandidate,
+  position: number,
+  recipeName: string,
+): number | undefined {
+  const title = normalise(candidate.title ?? '');
+  if (!title) return undefined;
+
+  const name = normalise(recipeName);
+  const terms = termsOf(recipeName);
+
+  const hasPhrase = title.includes(name);
+  const present = terms.filter((term) => title.includes(term)).length;
+  const extraWords = title.split(' ').length - name.split(' ').length;
+
+  const complete = terms.length > 0 && present === terms.length;
+  if (!hasPhrase && !(complete && extraWords <= 3)) return undefined;
+
+  const bigEnough = (candidate.width ?? 0) >= 800 ? 3 : 0;
+  return (hasPhrase ? 25 : 0) + present * 5 + bigEnough - position - Math.max(0, extraWords);
 }
 
 /** Descarrega, confirma que é mesmo uma imagem, e recusa o que for grande de mais. */
@@ -111,10 +147,15 @@ async function findAndSave(recipe: RecipeFile): Promise<ImageCandidate | undefin
   const candidates = await searchFreeImages(recipe.name);
   if (candidates.length === 0) return undefined;
 
-  const terms = termsOf(recipe.name);
   const ranked = candidates
-    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, terms) }))
+    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, recipe.name) }))
+    .filter((entry): entry is { candidate: ImageCandidate; points: number } => entry.points !== undefined)
     .sort((a, b) => b.points - a.points);
+
+  if (ranked.length === 0) {
+    console.log(`  ${candidates.length} candidata(s), nenhuma convincente`);
+    return undefined;
+  }
 
   const target = path.join(paths.media, 'recipes', `${recipe.id}.jpg`);
 
