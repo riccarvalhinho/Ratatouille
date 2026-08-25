@@ -17,6 +17,28 @@
 }
 
 .recipeName { font-size: var(--text-lg); font-weight: 600; }
+
+/*
+ * A miniatura do prato ao lado do nome. Um quadrado de 48px não se olha para ver detalhe — olha-se
+ * para reconhecer, e é tudo o que faz falta a quem já escolheu a receita e vai no passo sete.
+ */
+.recipeThumb,
+.recipeThumbFallback {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: var(--color-surface-raised);
+}
+
+.recipeThumbFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-soft);
+  font-size: var(--text-lg);
+}
 .progressText { color: var(--color-text-muted); font-size: var(--text-base); }
 
 .leave {
@@ -83,30 +105,60 @@
   font-size: var(--text-lg);
 }
 
+/*
+ * O passo ao centro, e não numa coluna à esquerda com o resto à volta.
+ *
+ * Antes isto era uma grelha de `1fr 320px`: texto encostado à esquerda, ingredientes numa coluna à
+ * direita. Lia-se, mas deixava o meio do ecrã vazio e obrigava o olho a começar num canto. Ao
+ * centro, o texto está onde se olha primeiro — e pode crescer, que é o que se ganha em troca dos
+ * 320px que a coluna ocupava quase sempre meia vazia.
+ */
 .body {
   position: relative;
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
   padding: var(--space-7) var(--space-6);
   overflow-y: auto;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .body { grid-template-columns: 1fr; }
+/*
+ * O canto de baixo à direita é do cartão "A seguir", e o corpo não escreve lá.
+ *
+ * Sem isto o passo com mais ingredientes do seed passava a 8px do cartão — cabia por sorte, e um
+ * ingrediente a mais ou uma linha a mais de texto punha os dois em cima um do outro.
+ *
+ * A conta é o cartão na sua altura máxima (duas linhas, 112px), mais os 32px a que está do fundo,
+ * mais outros 32 de folga. E a faixa fica reservada mesmo no último passo, onde não há cartão: 176px
+ * de espaço vazio custam menos do que o texto saltar de sítio ao mudar de passo.
+ */
+.body { padding-bottom: calc(var(--space-10) + var(--space-9) + var(--space-6)); }
 
-  .next {
-    position: static;
-    width: auto;
-    box-shadow: none;
-  }
+/*
+ * 44px, com a medida travada em 30ch. Os dois andam juntos: sem limite de largura, uma linha de
+ * 1216px a 44px daria umas cinquenta palavras e o olho perdia-se ao voltar ao início. 30ch dão duas
+ * ou três linhas ao passo mais comprido do seed (90 caracteres) — o formato que se lê de relance a
+ * um braço de distância.
+ */
+.stepText {
+  margin: 0;
+  max-width: 30ch;
+  font-size: var(--text-step-lg);
+  line-height: 1.3;
+  /* Equilibra as linhas onde houver suporte; onde não houver, ignora-se e nada se perde. */
+  text-wrap: balance;
 }
 
-/* O passo ocupa o ecrã. 32px e não os 24 do mínimo: aqui há espaço e lê-se de longe. */
-.stepText { font-size: 32px; line-height: 1.4; margin: 0; }
-
-.stepBadges { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+.stepBadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
 
 .badge {
   display: inline-flex;
@@ -136,6 +188,20 @@
   background: var(--color-surface);
   box-shadow: var(--shadow-raised);
   color: var(--color-text-muted);
+  /* O corpo é centrado; este cartão não. Duas linhas de texto corrido leem-se alinhadas à esquerda. */
+  text-align: left;
+}
+
+/* Em ecrãs estreitos deixa de caber no canto e volta ao fluxo, por baixo do passo. */
+@media (max-width: 900px) {
+  .next {
+    position: static;
+    width: auto;
+    box-shadow: none;
+  }
+
+  /* E aí a faixa reservada deixa de ter para quem a guardar. */
+  .body { padding-bottom: var(--space-7); }
 }
 
 .nextLabel {
@@ -156,29 +222,36 @@
   line-height: 1.4;
 }
 
-.aside { border-left: 1px solid var(--color-border); padding-left: var(--space-6); }
-
-@media (max-width: 900px) {
-  .aside {
-    border-left: none;
-    border-top: 1px solid var(--color-border);
-    padding-left: 0;
-    padding-top: var(--space-5);
-  }
-}
-
-.asideTitle { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4); }
-.asideList { margin: 0; padding: 0; list-style: none; font-size: var(--text-lg); }
-
-.asideItem {
+/*
+ * Os ingredientes do passo, em linha por baixo do texto e já não numa coluna à direita.
+ *
+ * O que a conversa 4 decidiu — tê-los à mão neste passo — mantém-se; muda o sítio. Nenhum passo do
+ * seed usa mais do que cinco, portanto uma linha que quebra chega, e o texto do passo passa a ter o
+ * ecrã todo em vez de o dividir com uma coluna fixa.
+ */
+.ingredients {
   display: flex;
-  justify-content: space-between;
-  gap: var(--space-4);
-  padding: var(--space-3) 0;
-  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.asideAmount { color: var(--color-text-muted); white-space: nowrap; }
+.ingredient {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-lg);
+}
+
+.ingredientAmount { color: var(--color-text-muted); white-space: nowrap; }
 
 /*
  * Barra de baixo: os únicos alvos de toque do ecrã, tirando o "Sair" e os controlos dos

@@ -3,7 +3,7 @@
  *
  * Um passo de cada vez em ecrã inteiro, com os ingredientes desse passo à mão e os temporizadores
  * sempre visíveis. É o ecrã que justifica o tablet estar na parede, e o único usado com as mãos
- * ocupadas — daí os alvos de toque de 72px e a tipografia a 32px.
+ * ocupadas — daí os alvos de toque grandes e o passo a 44px, ao centro do ecrã.
  *
  * Da conversa 4 ficou decidido que só os botões da barra de baixo e os controlos dos temporizadores
  * reagem ao toque. Todo o resto do ecrã é área morta — é essa a proteção contra o cotovelo e o
@@ -147,6 +147,18 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
   return (
     <div className={styles.screen}>
       <div className={styles.top}>
+        {/*
+          A miniatura ao lado do nome. Num ecrã que só mostra um passo, é a única coisa que diz qual
+          é o prato — e reconhece-se uma fotografia mais depressa do que se lê um nome.
+        */}
+        {recipe.image ? (
+          <img className={styles.recipeThumb} src={recipe.image} alt="" />
+        ) : (
+          <span className={styles.recipeThumbFallback} aria-hidden="true">
+            🍲
+          </span>
+        )}
+
         <span className={styles.recipeName}>{recipe.name}</span>
         <span className={styles.progressText}>
           Passo {index + 1} de {recipe.steps.length}
@@ -208,40 +220,43 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
         </div>
       )}
 
+      {/*
+        Tudo o que diz respeito ao passo numa coluna só, ao centro: o texto, o que ele exige, e o que
+        leva. A ordem é a de quem lê — primeiro o que fazer, depois com quê.
+      */}
       <div className={styles.body}>
-        <div>
-          <p className={styles.stepText}>{step?.text}</p>
+        <p className={styles.stepText}>{step?.text}</p>
 
+        {(step?.temperatureC !== undefined || step?.durationMinutes !== undefined) && (
           <div className={styles.stepBadges}>
-            {step?.temperatureC && <span className={styles.badge}>{step.temperatureC} °C</span>}
-            {step?.durationMinutes && (
+            {step?.temperatureC !== undefined && (
+              <span className={styles.badge}>{step.temperatureC} °C</span>
+            )}
+            {step?.durationMinutes !== undefined && (
               <span className={styles.badge}>{formatMinutes(step.durationMinutes)}</span>
             )}
           </div>
-        </div>
+        )}
+
+        {stepIngredients.length > 0 && (
+          <ul className={styles.ingredients}>
+            {stepIngredients.map((item) => {
+              const { name, amount } = describeIngredient(item, catalogue.ingredientsById.get(item.ref));
+              return (
+                <li key={item.ref} className={styles.ingredient}>
+                  <span>{name}</span>
+                  <span className={styles.ingredientAmount}>{amount}</span>
+                </li>
+              );
+            })}
+          </ul>
+        )}
 
         {nextStep && (
           <div className={styles.next}>
             <span className={styles.nextLabel}>A seguir</span>
             <span className={styles.nextText}>{nextStep.text}</span>
           </div>
-        )}
-
-        {stepIngredients.length > 0 && (
-          <aside className={styles.aside}>
-            <h3 className={styles.asideTitle}>Neste passo</h3>
-            <ul className={styles.asideList}>
-              {stepIngredients.map((item) => {
-                const { name, amount } = describeIngredient(item, catalogue.ingredientsById.get(item.ref));
-                return (
-                  <li key={item.ref} className={styles.asideItem}>
-                    <span>{name}</span>
-                    <span className={styles.asideAmount}>{amount}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </aside>
         )}
       </div>
 
