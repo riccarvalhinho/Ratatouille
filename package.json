@@ -20,7 +20,8 @@
     "import:save": "tsx tools/import/save-draft.ts",
     "import:fetch": "tsx tools/import/fetch-source.ts",
     "import:image": "tsx tools/import/images.ts",
-    "import:video": "tsx tools/import/fetch-source.ts"
+    "import:video": "tsx tools/import/fetch-source.ts",
+    "imagens": "tsx tools/buscar-imagens.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

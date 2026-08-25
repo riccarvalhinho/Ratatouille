@@ -31,7 +31,6 @@ Ingredientes com quantidade "q.b." não somam; aparecem sem quantidade.
 - Marcar itens como comprados, com o item a atenuar-se sem desaparecer
 - Ver de que receitas vem cada item — para decidir se vale a pena se só se usa numa
 - Desmarcar tudo de uma vez, para a ida seguinte
-- ~~Acrescentar e remover itens manuais~~ — adiado, ver abaixo
 
 A lista tem de funcionar bem num telemóvel: é aí que se usa, dentro do supermercado. É o primeiro
 ecrã que justifica a "versão complementar para telemóvel" prevista no PRD.
@@ -44,7 +43,6 @@ ecrã que justifica a "versão complementar para telemóvel" prevista no PRD.
 - [x] Os itens agrupam-se por categoria de supermercado
 - [x] Ingredientes de despensa aparecem num grupo separado no fim
 - [x] Dá para marcar comprado
-- [ ] Dá para acrescentar e remover itens manuais — adiado
 - [x] Cada item mostra de que receitas vem
 - [x] A lista é usável num ecrã de telemóvel
 - [x] Funciona offline dentro do supermercado
@@ -77,14 +75,11 @@ quinto do ecrã. É a mesma razão aplicada a um ecrã com a forma oposta.
 As linhas têm 56px e o alvo de toque é a linha inteira, não a caixa: num corredor de supermercado,
 com o telemóvel numa mão, acertar numa caixa de 24px é pedir demasiado.
 
-### Itens manuais, adiados
-
-O pedido foi uma lista com um simples check, e é isso que está feito. Acrescentar itens obriga a um
-campo de texto num ecrã que se usa de mão cheia, e a decidir se esses itens são estado de uma compra
-(local) ou dados do projeto (sincronizados). Merece ser desenhado quando a falta se sentir.
-
 ## Fora de âmbito
 
+- **Acrescentar e remover itens manuais.** Estava na primeira versão desta spec e foi cortado: a
+  lista serve o plano da semana, e um campo de texto num ecrã que se usa de mão cheia no
+  supermercado não é o sítio para fazer listas de outras coisas.
 - Inventário de despensa com stock real — ver questão Q9
 - Preços e comparação entre lojas
 - Exportação para apps de compras (Bring! e afins) — exploração E1 no roadmap

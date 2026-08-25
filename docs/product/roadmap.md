@@ -80,13 +80,13 @@ Entrou também o "marcar como cozinhada" no fim do modo cozinha, que estava à e
 
 ---
 
-## M4 — Lista de compras · construído
+## M4 — Lista de compras · feito
 
 - [x] Agregação de ingredientes das receitas planeadas da semana
 - [x] Normalização de unidades e soma de quantidades
 - [x] Agrupamento por zona de supermercado
 - [x] Marcar itens como comprados
-- [ ] Ajustes manuais à lista — adiado, ver a spec 004
+- ~~Ajustes manuais à lista~~ — cortado, ver a spec 004
 
 **Feito quando:** dá para ir ao supermercado com o telemóvel e não esquecer nada.
 

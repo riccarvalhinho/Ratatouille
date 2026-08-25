@@ -32,3 +32,24 @@ fs.writeFileSync(target, `${JSON.stringify(bundle)}\n`, 'utf8');
 
 const sizeKb = (fs.statSync(target).size / 1024).toFixed(1);
 console.log(`✓ ${rel(target)} — ${bundle.recipes.length} receita(s), ${sizeKb} KB`);
+
+/*
+ * As imagens vivem em `media/` na raiz e o campo `image` da receita é um caminho relativo à raiz do
+ * repositório. Para a app as servir, têm de estar debaixo do seu `public/` — daí a cópia.
+ *
+ * Copiadas e não referenciadas por link simbólico: o Vite segue links no `public/`, mas o build do
+ * GitHub Pages e o service worker lidam melhor com ficheiros a sério.
+ */
+const mediaSource = path.join(paths.media, 'recipes');
+const mediaTarget = path.join(paths.bundleDir, '..', 'media', 'recipes');
+
+fs.rmSync(mediaTarget, { recursive: true, force: true });
+
+if (fs.existsSync(mediaSource)) {
+  fs.mkdirSync(mediaTarget, { recursive: true });
+  const images = fs.readdirSync(mediaSource).filter((file) => !file.startsWith('.'));
+  for (const image of images) {
+    fs.copyFileSync(path.join(mediaSource, image), path.join(mediaTarget, image));
+  }
+  if (images.length > 0) console.log(`✓ ${rel(mediaTarget)} — ${images.length} imagem(ns)`);
+}
