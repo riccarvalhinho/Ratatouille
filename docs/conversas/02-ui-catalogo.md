@@ -1,6 +1,6 @@
 # Conversa 2 — Catálogo de receitas
 
-**Estado:** Em curso — perguntas 1 e 4 respondidas. Faltam a 2, a 3, a 5 e a 6
+**Estado:** Em curso — perguntas 1 e 4 fechadas e aplicadas. Faltam a 2, a 3, a 5 e a 6
 **Conduz:** Claude — parto de propostas concretas para contrariares
 **Destino das decisões:** `docs/specs/001-catalogo-receitas.md`, `docs/design/design-system.md`
 **Depende de:** conversa 1 (metadata), porque o cartão só pode mostrar o que existe
@@ -117,28 +117,90 @@ cozinhar, e uma semana em que se foi jantar fora não devia mentir no registo.
 
 Perguntas 2, 3, 5 e 6 — e as três que ficaram abaixo, que saíram desta ronda.
 
-## Perguntas desta ronda, para a próxima resposta
+### Ronda 2 — as três confirmadas
 
-1. **"Marcados como concluídos" é o "Terminar" do modo cozinha, ou um gesto à parte?** Se for o
-   "Terminar", o histórico escreve-se sozinho para tudo o que cozinhas com o tablet e só precisas do
-   gesto manual para o resto. É a hipótese que proponho, e fecha a Q5.
+**1. O "Terminar" é o sinal de conclusão. Sim.** Fecha a **Q5**, que estava a bloquear a spec 006 e
+era a pergunta mais urgente que tínhamos em aberto.
 
-2. **As imagens: cortar o tamanho, ou cortar a quantidade?** Com cem receitas, ou baixamos o limite
-   de 300 kB para uns 60 — o que obriga a redimensionar as três que já lá estão e a mudar a regra do
-   importador — ou aceitamos que só algumas receitas têm fotografia. Inclino-me para cortar o
-   tamanho: uma grelha com metade dos cartões sem imagem fica pior do que uma grelha com imagens mais
-   comprimidas, e a 70 cm ninguém vê a diferença.
+Aplicado assim:
 
-3. **"Favoritos são marcados automaticamente" — automaticamente por ti num toque, ou pela app a
-   partir do que fazes mais vezes?** Estou a assumir o primeiro, que é o coração que já existe. Se
-   for o segundo, o favorito passa a ser derivado do histórico e volta a ser a mesma coisa — e aí a
-   minha pergunta original não estava assim tão errada.
+- O "Terminar" do modo cozinha **escreve o histórico**, sem pedir nada.
+- O ecrã do fim deixou de ter um botão a pedir a marcação e passou a **confirmar** o que ficou
+  registado, com um "Afinal não cozinhei" ao lado.
+- O detalhe da receita ganhou **"Já fiz isto hoje"**, para o que se cozinha de cabeça sem acender o
+  tablet. Sem ele, o "última vez" mentia precisamente nas receitas que se sabem de cor.
+- O plano da semana continua a **não** escrever histórico nenhum.
+
+O código tinha lá um argumento contra isto, escrito por mim: chegar ao último passo não prova que se
+comeu. **O argumento não caiu, mudou de sítio.** Em vez de um toque em cada refeição para evitar um
+erro raro, há um desfazer para quando o erro acontece — a mesma troca que a spec 005 já tinha feito
+ao decidir não confirmar cada mudança de passo.
+
+**3. Os favoritos são manuais, pelo coração.** Confirma o que já estava construído, e confirma que
+são mesmo duas coisas: se fossem marcados pela app a partir do que se faz mais vezes, seriam
+derivados do histórico e a minha pergunta original teria razão. Não são.
+
+**2. As imagens ficam como estão, por agora.** *"No reason to solve before it becomes clear it needs
+solving. Fica como nota."*
+
+Aceite, e a nota está abaixo. Mas fica registada uma assimetria que eu não tinha dito quando fiz a
+pergunta, e que muda um bocado o cálculo: **isto não é dívida de código, é dívida de dados.** Um
+limite errado num ficheiro corrige-se num minuto; as fotografias que forem importadas entretanto
+ficam no histórico do Git, e apagá-las depois não encolhe o repositório nem os clones. Cada receita
+importada a 300 kB é uma decisão que não se desfaz de graça.
+
+Isso não muda a decisão — muda só o momento em que ela deixa de ser barata. Não é "quando o tablet
+ficar lento", é **antes da primeira importação em série**.
+
+## Nota em aberto — o orçamento das imagens
+
+**Estado:** decidido não resolver agora. A rever antes de importar receitas em série.
+
+O limite de hoje é 300 kB por fotografia (`MAX_BYTES` em `tools/buscar-imagens.ts`, e "~200 kB" no
+`media/README.md`), escrito quando havia três imagens no repositório. As contas a cem receitas estão
+na ronda 1: **~21 MB**, que é o que a app teria de descarregar e guardar em cache para funcionar
+offline num tablet de 2 GB.
+
+Quando for para resolver, a mudança é pequena e já está pensada:
+
+- baixar `MAX_BYTES` para uns **60 kB**, que chega para 640×480 — o cartão do catálogo só mostra
+  423×317 pixels reais no Fire;
+- redimensionar as que já lá estiverem;
+- atualizar a regra no `media/README.md` e na skill do importador.
+
+**O gatilho não é o tablet ficar lento**, é a primeira importação em série. Depois disso, cada
+fotografia grande já está no histórico do Git e não sai de lá.
+
+## Perguntas para a próxima resposta
+
+Sobram as perguntas 2, 3, 5 e 6 do arranque. As duas que mais mudam o ecrã:
+
+1. **O que te faz descartar uma receita primeiro?** (pergunta 2) Aposto no tempo — "hoje não tenho
+   hora e meia". Se for isso, o tempo não é um filtro entre três iguais, é o filtro, e devia estar
+   sempre à vista em vez de dentro de um menu.
+
+2. **Ordenar por "há mais tempo sem fazer"?** (pergunta 3) Com cento e cinquenta receitas, cabem oito
+   cartões sem rolar e o primeiro ecrã é quase sempre o único ecrã — o que lá estiver é o que vais
+   cozinhar. Ordenar por alfabeto desperdiça isso; pôr à frente o que não fazes há três meses ataca
+   directamente o "repetir sempre os mesmos pratos" da visão. O custo é as receitas não estarem
+   sempre no mesmo sítio.
 
 
 
 _(por começar)_
 
 ## Decisões tomadas
+
+| Decisão | Onde ficou registada |
+|---|---|
+| O catálogo desenha-se para **uma centena de receitas ou mais** | `docs/specs/001-catalogo-receitas.md` |
+| A pesquisa por texto entra — mas não como primeira coisa do ecrã | `docs/specs/001-catalogo-receitas.md` |
+| Favoritos e histórico são duas coisas: um é um juízo, o outro é um facto | `docs/specs/001-catalogo-receitas.md` |
+| Os favoritos marcam-se à mão, pelo coração do detalhe | já construído |
+| O histórico escreve-se no "Terminar" do modo cozinha, com desfazer | `docs/product/open-questions.md` (Q5), `docs/specs/005-modo-cozinha.md` |
+| O detalhe tem um "Já fiz isto hoje" para o que se cozinha sem o tablet | `docs/specs/002-detalhe-receita.md` |
+| O plano da semana nunca escreve histórico sozinho | `docs/product/open-questions.md` (Q5) |
+| O orçamento das imagens fica como está, a rever antes da primeira importação em série | nota neste ficheiro |
 
 | Decisão | Onde ficou registada |
 |---|---|

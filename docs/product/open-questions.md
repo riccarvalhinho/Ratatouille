@@ -84,7 +84,7 @@ O schema já distingue os dois através do campo `nutrition.method`, para que a 
 
 ## Q5 — O histórico é automático ou manual?
 
-**Estado:** A decidir em M3 · resolve-se dentro de `docs/conversas/05-ui-planeamento.md`
+**Estado:** **Fechada** na conversa 2, ronda 1 · aplicada
 
 Quando uma refeição planeada passa a estar no passado, entra automaticamente no histórico? Ou é
 preciso marcar "feito"?
@@ -92,7 +92,23 @@ preciso marcar "feito"?
 **Trade-off:** automático não dá trabalho mas mente (planeou-se e não se cozinhou); manual é fiel mas
 exige disciplina e o histórico acaba vazio.
 
-**Proposta:** automático, com possibilidade de remover do histórico. Optimiza para não dar trabalho.
+**A proposta era:** o plano a virar histórico sozinho quando a semana passa.
+
+**A decisão foi outra, e melhor:** o sinal de conclusão **não é o plano, é o "Terminar" do modo
+cozinha**. Planear não é cozinhar — uma semana em que se foi jantar fora não devia mentir no
+registo — mas chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de
+que alguém cozinhou mesmo.
+
+Fica assim:
+
+- **O "Terminar" do modo cozinha escreve o histórico**, sem pedir nada. O ecrã do fim confirma o que
+  ficou registado e oferece "Afinal não cozinhei".
+- **O detalhe da receita tem um "Já fiz isto hoje"**, para o que se cozinha de cabeça sem acender o
+  tablet. Sem ele, o "última vez" mentia precisamente nas receitas que se sabem de cor.
+- **O plano da semana nunca escreve histórico sozinho.**
+
+Isto resolve o trade-off em vez de escolher um dos lados: não dá trabalho no caminho normal, e é
+fiel porque só regista o que teve um gesto por trás.
 
 ---
 

@@ -102,7 +102,7 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
   };
 
   if (finished) {
-    const alreadyCooked = store.wasCookedOn(recipe.id, today);
+    const registada = store.wasCookedOn(recipe.id, today);
 
     return (
       <div className={styles.screen}>
@@ -110,17 +110,30 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           <h2 className={styles.doneTitle}>Feito.</h2>
 
           {/*
-            Marcar é deliberado e não automático.
-            A Q5 continua aberta, mas de um lado só: chegar ao último passo não prova que se comeu.
-            Um histórico que se enche sozinho de refeições que não aconteceram não serve para
-            responder à pergunta que existe para responder — "já chega para repetir?".
+            O histórico escreve-se sozinho ao terminar — decisão da conversa 2, que fechou a Q5.
+            Chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de que
+            alguém cozinhou mesmo: não é uma intenção, como o plano da semana é.
+
+            Isto tinha aqui antes um botão "Marcar como cozinhada", com o argumento de que chegar ao
+            fim não prova que se comeu. O argumento não caiu, mudou de sítio: em vez de um toque em
+            cada refeição para evitar um erro raro, há um desfazer para quando o erro acontece. É a
+            mesma troca que a spec 005 já fez ao decidir não confirmar cada mudança de passo.
           */}
-          {alreadyCooked ? (
-            <p className={styles.doneNote}>Já está no histórico de hoje. Bom apetite.</p>
+          {registada ? (
+            <>
+              <p className={styles.doneNote}>Ficou no histórico de hoje. Bom apetite.</p>
+              <button
+                type="button"
+                className={`${styles.navButton} ${styles.finish} ${styles.secondary}`}
+                onClick={() => store.unmarkCooked(recipe.id, today)}
+              >
+                Afinal não cozinhei
+              </button>
+            </>
           ) : (
             <>
               <p className={styles.doneNote}>
-                Marcar entra no histórico e alimenta o "última vez que fiz isto" no detalhe.
+                Não ficou no histórico. Marca aqui se a tiveres mesmo feito.
               </p>
               <button
                 type="button"
@@ -306,7 +319,11 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           <button
             type="button"
             className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
-            onClick={() => setFinished(true)}
+            onClick={() => {
+              // Terminar é o sinal de conclusão: escreve o histórico e só depois mostra o fim.
+              store.markCooked(recipe.id, today);
+              setFinished(true);
+            }}
           >
             Terminar
           </button>

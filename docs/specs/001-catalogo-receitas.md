@@ -43,10 +43,16 @@ Um estado de "sem resultados" explica que filtros estão ativos e oferece limpá
 ### Subtabs
 
 - **Todas** — o catálogo completo
-- **Favoritos** — só as receitas marcadas com coração
+- **Favoritos** — só as receitas marcadas com coração, à mão, no detalhe
 - **Histórico** — receitas já cozinhadas, mais recentes primeiro, com a data
 
 Os filtros aplicam-se dentro de qualquer subtab.
+
+**Não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
+caduca. O histórico é um **facto** — "fiz isto a 12 de agosto", e acumula-se. Um existe sem o outro:
+há receitas que se adoram e nunca se fizeram, e coisas que se fazem todas as semanas por hábito sem
+gostar particularmente delas. Por isso são ficheiros separados, com formas diferentes, e não uma
+lista com um sinalizador.
 
 ### Abrir uma receita
 
@@ -67,9 +73,23 @@ do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo s
 - [ ] Todos os alvos de toque têm pelo menos 56×56px
 - [ ] A grelha funciona offline depois da primeira carga
 
+## A escala para que isto é desenhado
+
+**Uma centena de receitas ou mais** (conversa 2). Não é detalhe: com trinta, a grelha inteira cabe em
+dois ecrãs e os filtros quase não fazem falta; com cento e cinquenta, sem filtros não se encontra
+nada. Duas consequências:
+
+- **A pesquisa por texto entra.** Esteve fora de âmbito com o argumento de que quem sabe o nome já
+  sabe o que quer cozinhar. Isso aguenta-se com trinta receitas e não com cento e cinquenta — quem se
+  lembra que existe um arroz de pato não percorre vinte e cinco linhas de grelha para lá chegar.
+  **Mas não é a primeira coisa do ecrã:** a pesquisa resolve *ir buscar* o que já se tem na cabeça, e
+  os filtros resolvem *decidir* quando não se tem. Na cozinha é quase sempre a segunda.
+- **A ordenação por omissão passa a decidir quase tudo.** Cabem oito cartões sem rolar, e na maior
+  parte das vezes o primeiro ecrã é o único ecrã. Por que critério ordena continua por decidir —
+  perguntas 2 e 3 da conversa 2.
+
 ## Fora de âmbito
 
-- Pesquisa por texto (a decidir se é preciso depois de o catálogo crescer)
 - Ordenação manual
 - Criar ou editar receitas a partir da app (M2)
 
