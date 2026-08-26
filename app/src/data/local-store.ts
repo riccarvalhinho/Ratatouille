@@ -99,6 +99,11 @@ export interface LocalStore {
   lastCooked: Map<string, string>;
   /** Regista que uma receita foi mesmo cozinhada. Sem duplicar o mesmo prato no mesmo dia. */
   markCooked: (recipeId: string, date: string, block?: MealBlock) => void;
+  /**
+   * Tira do histórico. Existe porque o modo cozinha passou a marcar sozinho ao terminar: sem forma
+   * de desfazer, um passeio pelos passos até ao fim ficava registado como uma refeição que não houve.
+   */
+  unmarkCooked: (recipeId: string, date: string) => void;
   wasCookedOn: (recipeId: string, date: string) => boolean;
 
   ready: boolean;
@@ -238,6 +243,25 @@ export function useLocalStore(bundle: DataBundle | undefined, outbox: Outbox): L
     [apply, history, wasCookedOn],
   );
 
+  const unmarkCooked = useCallback(
+    (recipeId: string, date: string) => {
+      const entries = history.filter(
+        (entry) => !(entry.recipeId === recipeId && entry.date === date),
+      );
+      if (entries.length === history.length) return;
+
+      apply((current) => ({
+        edits: { ...current, history: entries },
+        file: {
+          path: repoPaths.history,
+          content: serializeHistory(entries),
+          message: `Afinal não foi cozinhado: ${recipeId} em ${date}`,
+        },
+      }));
+    },
+    [apply, history],
+  );
+
   return {
     weekPlan,
     addRecipe,
@@ -246,6 +270,7 @@ export function useLocalStore(bundle: DataBundle | undefined, outbox: Outbox): L
     toggleFavourite,
     lastCooked,
     markCooked,
+    unmarkCooked,
     wasCookedOn,
     ready,
   };

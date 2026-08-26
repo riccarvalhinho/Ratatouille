@@ -1,6 +1,6 @@
 # Conversa 5 — Planeamento semanal
 
-**Estado:** Em curso — Q6 fechada, o resto por decidir
+**Estado:** Em curso — Q6 fechada, e a pergunta 4 (Q5) fechada na conversa 2. Faltam 1, 3, 5, 6 e 7
 **Conduz:** Claude
 **Destino das decisões:** `docs/specs/003-planeamento-semanal.md`, `docs/specs/006-home.md`
 **Prioridade:** Pode esperar — é M3
@@ -95,8 +95,12 @@ para cá. O que manda aqui é a densidade, porque a semana toda tem de caber num
 
 ### Por onde continuar
 
-As perguntas 1 e 3 a 7. A mais urgente continua a ser a 4 (Q5, histórico automático ou manual),
-porque decide o que acontece quando uma semana passa.
+As perguntas 1, 3, 5, 6 e 7.
+
+**A 4 já não está aqui.** A Q5 — histórico automático ou manual — fechou-se na conversa 2, quando a
+pergunta sobre favoritos e histórico obrigou a dizer o que cada um é. A resposta não veio deste
+ecrã: o sinal de conclusão é o "Terminar" do modo cozinha, e o plano da semana **nunca** escreve
+histórico sozinho. Ver `docs/product/open-questions.md`.
 
 ## Decisões tomadas
 

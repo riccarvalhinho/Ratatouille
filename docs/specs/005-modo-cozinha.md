@@ -124,12 +124,19 @@ Ao ser iniciado:
 
 ### Saída
 
-Terminar a receita oferece **marcar como cozinhada**, o que entra no histórico e alimenta o "última
-vez que fiz isto" do detalhe.
+**Terminar escreve o histórico**, sem pedir nada. É o sinal de conclusão da app inteira — decisão da
+conversa 2, que fechou a Q5 — e alimenta o "última vez que fiz isto" do detalhe.
 
-É deliberado e não automático. A Q5 continua aberta, mas de um lado já está decidida: chegar ao
-último passo não prova que se comeu. Um histórico que se enche sozinho de refeições que não
-aconteceram não serve para responder à pergunta que existe para responder — "já chega para repetir?".
+Chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de que alguém
+cozinhou mesmo: ao contrário do plano da semana, não é uma intenção. **O plano nunca escreve
+histórico sozinho**, precisamente por isso.
+
+O ecrã do fim **confirma** o que ficou registado e oferece **"Afinal não cozinhei"**.
+
+Isto esteve ao contrário — um botão a pedir a marcação — com o argumento de que chegar ao fim não
+prova que se comeu. O argumento não caiu, mudou de sítio: em vez de um toque em cada refeição para
+evitar um erro raro, há um desfazer para quando o erro acontece. É a mesma troca que este ecrã já
+fez ao decidir não confirmar cada mudança de passo.
 
 Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas refeições.
 
@@ -149,7 +156,7 @@ Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas
 - [x] Passos passivos avisam ao terminar; passos ativos não interrompem
 - [x] Vários temporizadores podem correr ao mesmo tempo, e continuam visíveis ao mudar de passo
 - [x] O fim de um temporizador avisa visual e sonoramente
-- [x] Terminar oferece marcar como cozinhada
+- [x] Terminar escreve o histórico, e o ecrã do fim oferece desfazer
 - [x] Tudo funciona offline
 - [x] Sair a meio e voltar não perde o sítio: o passo vive no URL
 
@@ -162,5 +169,4 @@ Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas
 ## Questões em aberto
 
 - Escalar doses antes de começar a cozinhar — só por múltiplos simples
-- Q5 — como o histórico é alimentado
 - Q1 — a Wake Lock API pode não existir num Fire OS antigo

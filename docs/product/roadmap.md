@@ -112,6 +112,28 @@ aplicada a um ecrã com a forma oposta.
 Coisas que valem a pena e que não bloqueiam nada. Vêm depois do que falta dos milestones e antes das
 explorações.
 
+### N0 — "Apetece-me algo"
+
+**Estado:** proposta em discussão · `docs/conversas/02-ui-catalogo.md`
+**Relacionado:** conversa 7 (vocabulário das labels), spec 001, spec 006 por escrever
+
+Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de oito
+quadrantes — tipo de refeição, ingrediente principal, método, tempo de confeção, cultura, apetite,
+ocasião, regime — em que se toca no critério, ele abre as opções em mini-ícones, e se vai tocando e
+prosseguindo. Os eixos estão fechados em `docs/conversas/07-vocabulario-labels.md` e o handover ao Claude Design, com as
+52 peças de ícone e o fluxo todo, em `docs/design/icones-triagem.md`. **Aterra de volta no catálogo já filtrado**, sem vista
+nova para os resultados.
+
+**Não substitui os filtros à mão nem é o ponto de entrada da app** — a lista completa continua a ser
+o ecrã principal. A única regra que impõe é escrever **no mesmo estado de filtro** que a barra mostra:
+duas entradas para o mesmo estado não fazem mal, dois estados fariam.
+
+**Porque não está num milestone:** com seis receitas a triagem devolveria sempre as mesmas duas. Faz
+sentido a partir de umas dezenas, e a escala alvo é uma centena ou mais. **Mas desenha-se antes de se
+construir**, porque é o primeiro teste a sério que a taxonomia de labels vai ter — e é melhor
+descobrir que a família `ocasiao` mistura vibe, tempo e sobras antes de haver cento e cinquenta
+receitas etiquetadas com ela.
+
 ### N1 — Revisão visual
 
 **Estado:** por começar

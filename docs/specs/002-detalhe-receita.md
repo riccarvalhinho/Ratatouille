@@ -34,16 +34,20 @@ ao topo.
 1. Imagem e nome da receita
 2. Todas as labels da receita, sem o limite de 3 do cartão
 3. Método de confeção, peso, tempo de preparação, tempo de confeção e antecedência necessária
-4. Última vez que foi feita — a data mais recente em que foi planeada. Se nunca foi, di-lo
+4. Última vez que foi feita — a data mais recente do **histórico**, não do plano. Se nunca foi, di-lo
    explicitamente ("nunca cozinhada")
-5. Rendimento — para quantas pessoas dá, ou quantas unidades rende, ou ambos
-6. Eletrodomésticos e utensílios necessários, **em dois blocos separados** — os aparelhos
+5. **"Já fiz isto hoje"**, um botão discreto ao lado. O modo cozinha escreve o histórico sozinho ao
+   terminar; isto é para o resto — o que se cozinha de cabeça, sem sequer acender o tablet. Sem ele,
+   o "última vez" mentia precisamente nas receitas que se sabem de cor. Marcado, muda de cor e não só
+   de texto, e volta a tocar-se para desfazer
+6. Rendimento — para quantas pessoas dá, ou quantas unidades rende, ou ambos
+7. Eletrodomésticos e utensílios necessários, **em dois blocos separados** — os aparelhos
    condicionam se a receita é sequer possível, os utensílios são detalhe (`kind` da taxonomia)
-7. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser
+8. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser
    percorrível, e a `note` do ingrediente em texto secundário por baixo do nome
-8. Passo a passo, cada um com o título a negrito e o detalhe por baixo, com a temperatura em destaque quando o passo a exige. É o título que faz a lista ler-se de relance em vez de como parágrafos
-9. A transcrição em texto corrido, para quem prefere ler a receita seguida
-10. Informação nutricional por dose: energia, proteína, gordura, gordura saturada, hidratos, fibra e
+9. Passo a passo, cada um com o título a negrito e o detalhe por baixo, com a temperatura em destaque quando o passo a exige. É o título que faz a lista ler-se de relance em vez de como parágrafos
+10. A transcrição em texto corrido, para quem prefere ler a receita seguida
+11. Informação nutricional por dose: energia, proteína, gordura, gordura saturada, hidratos, fibra e
     sal — marcada como estimada quando `nutrition.method` for `estimado`. O mínimo aceitável são só
     as calorias
 

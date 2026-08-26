@@ -42,6 +42,7 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
   const utensils = equipment.filter((item) => item.kind !== 'eletrodomestico');
   // Do store e não do catálogo: o histórico local já inclui o que ainda não chegou ao GitHub.
   const lastCooked = store.lastCooked.get(recipe.id);
+  const cookedToday = store.wasCookedOn(recipe.id, today);
   const favourite = store.isFavourite(recipe.id);
 
   return (
@@ -132,6 +133,21 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
                 {recipe.weight && <MetaRow label="Peso">{WEIGHT_NAMES[recipe.weight]}</MetaRow>}
                 <MetaRow label="Última vez">{formatLastCooked(lastCooked, today)}</MetaRow>
               </ul>
+
+              {/*
+                O modo cozinha marca sozinho ao terminar. Isto é para o resto: o que se cozinha de
+                cabeça, sem sequer acender o tablet, e que sem este botão nunca entrava no histórico —
+                deixando o "última vez" a mentir precisamente nas receitas que se sabem de cor.
+              */}
+              <button
+                type="button"
+                className={cookedToday ? `${styles.markCooked} ${styles.markCookedDone}` : styles.markCooked}
+                onClick={() =>
+                  cookedToday ? store.unmarkCooked(recipe.id, today) : store.markCooked(recipe.id, today)
+                }
+              >
+                {cookedToday ? 'Feita hoje ✓' : 'Já fiz isto hoje'}
+              </button>
 
               <div className={styles.chips}>
                 {recipe.labels.map((id) => (
