@@ -117,9 +117,10 @@ explorações.
 **Estado:** proposta em discussão · `docs/conversas/02-ui-catalogo.md`
 **Relacionado:** conversa 7 (vocabulário das labels), spec 001, spec 006 por escrever
 
-Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de quadrantes
-— tipo de prato, alimento, tempo, vibe — em que se toca no critério, ele abre as opções em
-mini-ícones, e se vai tocando e prosseguindo. **Aterra de volta no catálogo já filtrado**, sem vista
+Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de oito
+quadrantes — tipo de refeição, ingrediente principal, método, tempo de confeção, cultura, apetite,
+ocasião, regime — em que se toca no critério, ele abre as opções em mini-ícones, e se vai tocando e
+prosseguindo. Os eixos e os 45 ícones estão fechados em `docs/conversas/07-vocabulario-labels.md`. **Aterra de volta no catálogo já filtrado**, sem vista
 nova para os resultados.
 
 **Não substitui os filtros à mão nem é o ponto de entrada da app** — a lista completa continua a ser

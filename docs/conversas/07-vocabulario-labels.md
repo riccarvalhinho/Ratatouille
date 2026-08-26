@@ -45,115 +45,141 @@ dedução, sem discussão — servem de ponto de partida para contrariar, não d
 
 Escrita para se decidir e depois passar ao Claude Design como encomenda de ícones.
 
-### A regra que decide tudo o resto
+### As duas regras que decidem o resto
 
-**Um quadrante precisa de 4 a 8 opções.** Menos do que quatro não justifica um quadrante — é uma
-pergunta de sim ou não disfarçada. Mais do que oito deixa de se ver de relance e volta a ser uma
-lista, que é precisamente o que esta feature existe para não ser.
+**Um quadrante tem 4 a 8 opções — salvo se as opções forem uma escala.** Menos de quatro é uma
+pergunta de sim ou não disfarçada; mais de oito deixa de se ver de relance e volta a ser uma lista,
+que é o que esta feature existe para não ser. A exceção da escala é real e não é conveniência: três
+opções **ordenadas** (leve → equilibrado → substancial) leem-se como um selector; três opções soltas
+leem-se como um quadrante meio vazio.
 
-E a segunda: **um eixo só entra se já houver dados para ele.** Um quadrante bonito que obrigue a
-reetiquetar cento e cinquenta receitas não é um quadrante, é um projeto.
+**Um eixo só entra se já houver dados ou vocabulário para ele.** Não é o mesmo que "já haver receitas
+etiquetadas" — ver a correção abaixo.
 
-### O que se descobre ao aplicar a regra
+### Uma correção: a "Cultura" não devia ter caído
 
-**A "vibe" é o eixo mais difícil, e pela razão contrária à que eu esperava.** Não é por faltarem
-dados — é porque **quase tudo o que parece vibe já está dito por outro eixo, e melhor.** "Rápido" é
-tempo, e o tempo tem minutos. "Saudável" é peso, e o peso tem uma rubrica. "Guloso" é sobremesa, e
-isso é o tipo de prato. Depois de tirar tudo o que já está dito noutro sítio, sobram três: *Conforto*,
-*Festa*, *Aproveitamento*. Três não chega para um quadrante.
+Tinha-a cortado com o argumento de que a família `origem` só tem uma entrada, "Portuguesa". **O
+argumento estava errado, e vê-se pelo próprio ficheiro:** quatro das nove entradas de `tipo-de-prato`
+também têm zero receitas — *acompanhamento*, *pequeno-almoço*, *snack*, *pão e massas* — e essas
+mantive-as sem hesitar.
 
-**E "dia de semana" e "fim de semana" deixam de fazer sentido.** São as duas labels mais usadas do
-seed, e são taquigrafia para "pouco tempo e pouco trabalho" contra "tenho a tarde toda". Com um eixo
-de tempo em minutos e um eixo de método, dizem o mesmo pior. **Proponho apagá-las.**
+A taxonomia é o **vocabulário do que aí vem**, não o censo das seis receitas do seed. Julgar um eixo
+pelo que está etiquetado hoje é julgar o catálogo pelo seu estado mais pobre. A `origem` não estava
+fraca: estava **por escrever**.
 
-### Os seis quadrantes
+### Os oito quadrantes
+
+Nomes diretos, substantivos, sem interrogações.
 
 | # | Quadrante | De onde vem | Opções |
 |---|---|---|---|
-| 1 | **O que é** | `labels.tipo-de-prato` | 8 |
-| 2 | **Com quê** | `labels.proteina`, alargada | 7 |
-| 3 | **Como se faz** | `methods` (já no schema) | 7 |
-| 4 | **Quanto tempo** | `timing`, em escalões | 5 |
-| 5 | **Que refeição** | `weight` + `ocasiao` limpa | 6 |
-| 6 | **Regime** | `labels.regime` | 4 |
+| 1 | **Tipo de refeição** | `labels.tipo-de-prato` | 8 |
+| 2 | **Ingrediente principal** | `labels.proteina`, alargada | 7 |
+| 3 | **Método** | `methods` — já no schema | 7 |
+| 4 | **Tempo de confeção** | `timing`, em escalões | 4 + 1 |
+| 5 | **Cultura** | `labels.origem`, por escrever | 8 |
+| 6 | **Apetite** | `weight` — já no schema | 3 (escala) |
+| 7 | **Ocasião** | `labels.ocasiao`, limpa | 4 |
+| 8 | **Regime** | `labels.regime` | 4 |
 
-**1. O que é** — Sopa · Salada · Prato principal · Acompanhamento · Sobremesa · Pequeno-almoço ·
-Snack · Pão e bolos.
+Oito dá uma grelha de **4 × 2**, que a 1280 são uns 280px por mosaico — o mesmo alvo que um cartão do
+catálogo, e portanto já sabemos que funciona a 70 cm.
 
-Muda pouco: hoje são nove, e junta-se *Entrada* a *Snack* (pratos pequenos antes ou fora da refeição —
-a diferença é a hora, não a comida) e troca-se *Pão e massas* por *Pão e bolos*, porque massa é prato
-principal e estava ali por ser farinha, o que é uma arrumação de despensa e não de refeição.
+---
 
-**2. Com quê** — Carne · Aves · Peixe · Marisco · Ovos · Leguminosas · Legumes.
+**1. Tipo de refeição** — Sopa · Salada · Prato principal · Acompanhamento · Sobremesa ·
+Pequeno-almoço · Snack · Pão e bolos
 
-Duas mudanças. **Separar *Aves* de *Carne*,** porque "apetece-me frango" é uma frase que se diz e
-"apetece-me carne" é vaga. E **acrescentar *Legumes*** para os pratos em que o vegetal é o assunto —
-que não é o mesmo que vegetariano: o arroz doce é vegetariano e não tem nada a ver com isto. Um é
-apetência, o outro é regra.
+Junta-se *Entrada* a *Snack*: pratos pequenos fora da refeição principal, e a diferença entre os dois
+é a hora e não a comida. E *Pão e massas* passa a *Pão e bolos*, porque massa é prato principal e
+estava ali por ser farinha — arrumação de despensa, não de refeição.
 
-**3. Como se faz** — Tacho · Forno · Frigideira · Grelhador · Airfryer · Micro-ondas · Sem cozinhar.
+**2. Ingrediente principal** — Carne · Aves · Peixe · Marisco · Ovos · Leguminosas · Legumes
 
-**Este eixo não estava na proposta e é o que sai mais barato: já existe no schema, em `methods`, sem
-tocar em nada.** E a descrição do próprio campo já diz que responde a *"tenho de ligar o forno?", que
-é dos primeiros filtros mentais*. É também o mais fácil de desenhar — sete objetos concretos, sem uma
-abstração pelo meio.
+Separar *Aves* de *Carne*, porque "apetece-me frango" é uma frase que se diz e "apetece-me carne" é
+vaga. E acrescentar *Legumes*, para os pratos em que o vegetal é o assunto — que **não** é o mesmo que
+vegetariano: o arroz doce é vegetariano e não tem nada a ver com isto. Um é apetência, o outro é regra.
 
-Vale ainda mais do que parece, porque é o mais perto que temos de um eixo de **esforço**: forno é pôr
-lá dentro e ir embora, tacho é estar ao lume a mexer. Num dia de semana é essa a pergunta a sério.
+**3. Método** — Tacho · Forno · Frigideira · Grelhador · Airfryer · Micro-ondas · Sem cozinhar
 
-**4. Quanto tempo** — Até 20 min · Até 40 min · Até 1 h · Mais de 1 h · **Sem precisar de véspera**.
+Não estava na proposta original e é o que sai mais barato: **já existe em `methods`, sem tocar em
+nada**. A descrição do próprio campo no schema já diz que responde a *"tenho de ligar o forno?", que é
+dos primeiros filtros mentais*.
 
-Escalões calculados de `timing`, sem labels nenhumas. O quinto não é um escalão: é o filtro que salva
-jantares, e sai do `prepAhead` que já existe. Descobrir às sete da tarde que o bacalhau precisava de
-vinte e quatro horas de molho é o pior momento possível.
+É também o mais perto que temos de um eixo de **esforço** — forno é pôr lá dentro e ir embora, tacho é
+estar ao lume a mexer — e o mais fácil de desenhar: sete objetos concretos, sem uma abstração pelo
+meio.
 
-**Isto mata a label *Rápido*.** Duplicava um eixo inteiro com uma palavra vaga.
+**4. Tempo de confeção** — Até 20 min · Até 40 min · Até 1 h · Mais de 1 h
 
-**5. Que refeição** — Leve · Equilibrado · Substancial · Conforto · Festa · Sobras.
+Escalões calculados de `timing`, sem labels nenhumas. **Isto mata a label *Rápido*,** que duplicava um
+eixo inteiro com uma palavra vaga.
 
-É a "vibe", e é uma fusão deliberada de `weight` com o que sobra de `ocasiao`. Fundir soa a contradizer
-o que escrevi acima sobre `ocasiao` misturar conceitos — mas a diferença é real: **o que ali estava
-mal era misturar tempo com carácter**, e o tempo tem um eixo próprio com números. *Leve*, *Conforto* e
-*Festa* são todos carácter da refeição, e escolhe-se um.
+**Mais um interruptor, e não uma quinta opção: "sem precisar de véspera".** Sai do `prepAhead`, e não
+pode ser um escalão porque não está na mesma escala — não é uma duração, é um sim ou não sobre outro
+tipo de tempo. Descobrir às sete da tarde que o bacalhau precisava de vinte e quatro horas de molho é
+o pior momento possível, e por isso merece estar no mosaico, visualmente à parte dos escalões.
 
-*Sobras* é o *Aproveitamento* renomeado. Merece ficar porque é um modo de decidir a sério — "tenho
-meio frango do almoço" — e não tinha outro sítio.
+**5. Cultura** — Portuguesa · Italiana · Asiática · Mediterrânica · Indiana · Mexicana · Francesa ·
+Americana
 
-**6. Regime** — Vegetariano · Vegan · Sem glúten · Sem lactose.
+Oito para começar, e **é a única lista que se deve esperar que mude** à medida que o catálogo cresce.
+Errar aqui é barato: uma label sem receitas é invisível no ecrã, como as quatro de `tipo-de-prato`
+provam hoje.
 
-Está no painel mas **não é da mesma natureza que os outros cinco**: não estreita por apetência, corta
-por regra. Duas consequências no desenho: fica visualmente separado dos outros, e **é pegajoso** —
-quem não come glúten não volta a escolher isso de cada vez, escolhe uma vez e fica. Os outros cinco
-limpam-se ao fechar; este não.
+*Asiática* fica larga de propósito — chinesa, japonesa, tailandesa. Numa casa, separá-las antes de
+haver receitas que o justifiquem é precisão a fingir.
+
+**6. Apetite** — Leve · Equilibrado · Substancial
+
+Vem de `weight`, que já está no schema e é atribuído por rubrica escrita, nunca calculado de nutrição
+estimada. É a exceção da escala: três opções ordenadas leem-se como um selector.
+
+**7. Ocasião** — Dia a dia · Conforto · Festa · Sobras
+
+O que sobra de `ocasiao` depois de lhe tirar o que outros eixos dizem melhor. *Sobras* é o
+*Aproveitamento* renomeado, e fica porque é um modo de decidir a sério — "tenho meio frango do almoço".
+
+**As duas labels mais usadas do seed morrem aqui:** *Dia de semana* e *Fim de semana* são taquigrafia
+para "pouco tempo e pouco trabalho" contra "tenho a tarde toda". Com um eixo de tempo em minutos e um
+de método, dizem o mesmo pior. Fica *Dia a dia*, que não é tempo — é o contrário de *Festa*.
+
+**8. Regime** — Vegetariano · Vegan · Sem glúten · Sem lactose
+
+Está no painel mas **não é da mesma natureza que os outros sete**: não estreita por apetência, corta
+por regra. Duas consequências no desenho: fica visualmente separado, e **é pegajoso** — quem não come
+glúten escolhe uma vez e fica, não volta a escolher de cada vez. Os outros sete limpam-se ao fechar;
+este não.
 
 ### O que muda nos dados
 
-- **Apagar** `rapido`, `dia-de-semana`, `fim-de-semana` — três labels que outros eixos dizem melhor.
-- **Renomear** `aproveitamento` → *Sobras*, `entrada` funde em `snack`, `pao-e-massas` → *Pão e bolos*.
-- **Criar** `aves` e `legumes`.
-- **Reetiquetar as seis receitas do seed**, que é meia hora.
-- `origem` deixa de ser eixo de triagem — fica label, para o dia em que houver cozinhas a sério.
-- **Zero mudanças de schema.** `methods`, `weight` e `timing` já lá estão; só as labels mexem, e labels
-  são dados.
+- **Apagar** `rapido`, `dia-de-semana`, `fim-de-semana`.
+- **Fundir** `entrada` em `snack`. **Renomear** `aproveitamento` → *Sobras*, `pao-e-massas` → *Pão e
+  bolos*, e acrescentar `dia-a-dia`.
+- **Criar** `aves`, `legumes`, e sete culturas novas.
+- **Reetiquetar as seis receitas do seed** — meia hora.
+- **Zero mudanças de schema.** `methods`, `weight` e `timing` já lá estão; só as labels mexem, e
+  labels são dados.
 
-Total: **37 ícones**, e a contagem por quadrante está na tabela.
+### Os ícones: 45, em SVG
 
-### Os ícones
+**SVG e não emoji.** Há precedente nos dois sentidos, mas o que pesa é este: os símbolos do modo
+cozinha **passaram de caracteres a SVG** porque o "▶" tem variante de emoji e há fontes de Android que
+o desenham a cores. Num painel onde o ícone **é o alvo**, isso não pode ficar à sorte da fonte do
+tablet — e, gerados no Claude Design, fazê-los à medida custa o mesmo.
 
-**SVG, não emoji.** Já há precedente nos dois sentidos — o 🍲 do marcador de receita sem imagem, e os
-símbolos do modo cozinha que **passaram de caracteres a SVG** porque o "▶" tem variante de emoji e há
-fontes de Android que o desenham a cores. Num ecrã onde o ícone **é o alvo**, isso não pode ficar à
-sorte da fonte do tablet. E como vão ser gerados no Claude Design, o custo de os fazer à medida é o
-mesmo.
+Três regras para a encomenda, ou o conjunto sai inconsistente:
 
-A encomenda tem de dizer três coisas, ou o conjunto sai inconsistente:
-
-1. **Um só nível de abstração.** Ou são todos objetos, ou são todos símbolos. Um ícone de panela ao
-   lado de um ícone de "conforto" desenhado como um coração são duas linguagens no mesmo painel.
-2. **Legíveis a 24px e a 70 cm**, monocromáticos, `currentColor`, traço uniforme — como o
+1. **Um só nível de abstração.** Uma panela ao lado de um coração são duas linguagens no mesmo painel.
+2. **Legíveis a 24px e a 70 cm**: monocromáticos, `currentColor`, traço uniforme — como o
    `app/src/ui/icons.tsx` já faz.
-3. **O quadrante 5 é o difícil.** *Leve*, *Conforto* e *Festa* não são objetos. É aí que o conjunto
-   se parte, e é a parte que vale a pena desenhar primeiro para ver se pega.
+3. **Começar pelos quadrantes 6 e 7.** *Leve*, *Conforto* e *Festa* não são objetos, e é aí que o
+   conjunto se parte. Se esses quatro ou cinco funcionarem, os outros quarenta são trabalho.
+
+**A Cultura é o segundo sítio onde isto pode correr mal**, e por outra razão: bandeiras não servem —
+uma receita mediterrânica não tem bandeira, e uma bandeira italiana num painel de comida é um clichê
+que envelhece mal. Um prato ou um ingrediente-assinatura por cultura é mais difícil de desenhar e
+muito melhor de olhar.
 
 ## As minhas perguntas de arranque
 
