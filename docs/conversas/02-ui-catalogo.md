@@ -274,6 +274,11 @@ as mesmas duas. Com cento e cinquenta é o ecrã principal. Mas desenhar agora n
 é o que dá critério à conversa 7: **é o primeiro teste a sério que a taxonomia vai ter**, e é melhor
 descobrir que `ocasiao` mistura três conceitos antes de haver cento e cinquenta receitas etiquetadas.
 
+> **Os eixos já têm proposta fechada.** Está em `docs/conversas/07-vocabulario-labels.md`: seis
+> quadrantes, 37 ícones, zero mudanças de schema. As três perguntas abaixo foram respondidas lá —
+> a vibe funde-se com o peso, "alimento" é a proteína alargada, e apareceu um sexto quadrante que
+> não estava na proposta e não custa nada: **como se faz**, que já existe em `methods`.
+
 ### Perguntas
 
 1. **"Vibe" é uma família de labels nova, ou é a `ocasiao` limpa?** Inclino-me para a segunda: tirar
