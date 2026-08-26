@@ -1,6 +1,7 @@
 # Conversa 2 — Catálogo de receitas
 
-**Estado:** Em curso — perguntas 1 e 4 fechadas e aplicadas. Faltam a 2, a 3, a 5 e a 6
+**Estado:** Em curso — perguntas 1 e 4 fechadas e aplicadas. As 2 e 3 recusadas: o Ricardo trouxe
+uma proposta que as reformula, "Apetece-me algo". Faltam a 5 e a 6
 **Conduz:** Claude — parto de propostas concretas para contrariares
 **Destino das decisões:** `docs/specs/001-catalogo-receitas.md`, `docs/design/design-system.md`
 **Depende de:** conversa 1 (metadata), porque o cartão só pode mostrar o que existe
@@ -151,6 +152,116 @@ importada a 300 kB é uma decisão que não se desfaz de graça.
 
 Isso não muda a decisão — muda só o momento em que ela deixa de ser barata. Não é "quando o tablet
 ficar lento", é **antes da primeira importação em série**.
+
+## Proposta em cima da mesa — "Apetece-me algo"
+
+Trazida pelo Ricardo depois de recusar as perguntas 2 e 3, e com razão: **elas não eram boas porque
+assumiam a coisa errada.** A pergunta 2 partia do princípio de que um dos filtros domina os outros; a
+3, de que uma ordenação por omissão resolve o problema de o primeiro ecrã ser o único. Ambas tratam o
+catálogo como uma lista que se ordena e se afunila. A proposta diz outra coisa: **o ponto de entrada
+não é uma grelha, é uma triagem.**
+
+### O que é
+
+Um ecrã de descoberta com vários eixos, cada um num quadrado grande com as suas opções:
+
+- Tipo de cozinha?
+- Alimento em mente?
+- Tempo de cozinha?
+- Vibe?
+
+Escolhe-se por toque, cada resposta estreita, e no fim **cai-se de volta na lista de sempre, já
+filtrada**. Sem ecrã novo para os resultados.
+
+### Porque acho que está certa
+
+**Ataca o momento certo.** O catálogo responde a "o que posso cozinhar" mostrando tudo, o que serve
+quando se sabe o que se quer. Isto responde a "não sei o que me apetece", que a cento e cinquenta
+receitas é o caso mais frequente e o que a grelha resolve pior.
+
+**Os alvos são honestos para um tablet na parede.** Um chip de filtro é um alvo de rato disfarçado. Um
+quadrado grande é o que a regra do toque deste projeto sempre pediu, e nunca chegou aos filtros.
+
+**Cair de volta na lista é a decisão mais acertada da proposta.** Já tinha argumentado no benchmark
+que uma vista nova para os resultados era mobília a mais; isto evita-a sem eu ter de a defender.
+
+**E responde à minha pergunta 3 por outro caminho.** Se se chega à lista já com oito receitas em vez
+de cento e cinquenta, a ordenação por omissão deixa de decidir quase tudo. A pergunta não era má por
+estar errada — era má por ser prematura.
+
+### Onde discordo, ou onde vejo problema
+
+**1. Três dos quatro eixos são restrições. Só um é apetência — e é o que dá o nome à feature.**
+
+Tempo, ingrediente e tipo de cozinha respondem a "o que é possível hoje". A vibe responde a "o que me
+apetece". A feature chama-se "apetece-me algo", e o eixo que lhe dá o nome é o único que não tem dados
+nenhuns por trás. Escreveste-o com um "ahah" — acho que é ao contrário: **é o mais importante dos
+quatro e o que merece mais trabalho.**
+
+**2. "Tipo de cozinha" é hoje o eixo mais fraco, e talvez seja a pergunta errada.** A família `origem`
+da taxonomia tem **uma** entrada: "Portuguesa". Como eixo de triagem não segrega nada, e mesmo a cento
+e cinquenta receitas numa casa portuguesa vai ser desequilibrado. Proponho trocá-lo por **tipo de
+prato** — sopa, salada, sobremesa, prato principal — que tem nove entradas e provavelmente decide
+mais: "apetece-me uma sopa" é uma frase que se diz; "apetece-me cozinha portuguesa" não.
+
+**3. "Alimento em mente" são duas perguntas diferentes disfarçadas de uma.**
+
+- *"Apetece-me peixe"* é a família `proteina`: cinco opções, lista fechada, cabe num quadrado.
+- *"Tenho beringelas"* é a taxonomia de ingredientes: quarenta e a crescer, não cabe em quadrados, e é
+  pesquisa e não triagem.
+
+São ambas legítimas e a segunda encosta à Q9 (a lista de compras conhecer a despensa). Mas num
+quadrado só cabe a primeira.
+
+**4. O risco de virar um formulário.** Quatro perguntas antes de ver alguma coisa é muito quando a
+resposta muitas vezes é "sopa". Duas defesas, e acho as duas obrigatórias:
+
+- **nenhum eixo é obrigatório** — um toque num quadrado e vai-se, sem passar pelos outros três;
+- **a contagem está sempre à vista e a descer.** É o padrão do Cookidoo que registei no benchmark há
+  duas horas: o botão diz "Mostrar 23 receitas" e o número muda enquanto se escolhe. Aqui vale ainda
+  mais, porque impede a combinação que devolve zero **antes** de se investir quatro toques nela — que
+  é a minha pergunta 6, e que esta feature tornaria mais aguda e não menos.
+
+**5. Convive com a barra de filtros, ou substitui-a?** Duas maneiras de filtrar a mesma lista é pior
+do que qualquer uma delas sozinha. Proponho que **esta seja a interface de filtros**, e que o catálogo
+guarde só um resumo do que está aplicado, com um toque para reabrir a triagem onde ficou — voltar
+atrás para alargar tem de ser barato, senão fecha-se tudo e recomeça-se.
+
+### O que isto mexe fora de si
+
+**A conversa 7, do vocabulário das labels, deixa de ser arrumação e passa a ser desenho.** Se os eixos
+da triagem forem as famílias das labels, então as famílias **são** o ecrã. E a olhar para elas hoje,
+`ocasiao` mistura três coisas: *Conforto* e *Festa* são vibe, *Rápido* é tempo outra vez (duplica um
+eixo inteiro), e *Aproveitamento* é sobras, que não é nem uma coisa nem outra. Isso não se nota numa
+lista de chips e nota-se muito num quadrado.
+
+Há ainda uma família que não está nos quatro eixos e que provavelmente merece o seu: **`regime`** —
+vegetariano, vegan, sem glúten, sem lactose. É de outra natureza: não é apetência, é **exclusão**. Um
+eixo destes não estreita por gosto, corta por regra, e talvez nem devesse estar no mesmo ecrã.
+
+**E a spec 006, do ecrã inicial, que ainda não existe.** "Apetece-me algo" é, provavelmente, *a* ação
+da página inicial — o tablet está na parede e a pergunta que se lhe faz é essa. Disseste "pop-up", o
+que faz do catálogo o sítio de onde se parte. A alternativa é ser o ecrã inicial, e o catálogo o sítio
+onde se aterra. Muda bastante e vale a pena decidir antes de escrever a spec 006.
+
+### Quando
+
+**Desenhar agora, construir depois.** Com seis receitas isto é absurdo — a triagem devolveria sempre
+as mesmas duas. Com cento e cinquenta é o ecrã principal. Mas desenhar agora não é prematuro, porque
+é o que dá critério à conversa 7: **é o primeiro teste a sério que a taxonomia vai ter**, e é melhor
+descobrir que `ocasiao` mistura três conceitos antes de haver cento e cinquenta receitas etiquetadas.
+
+### Perguntas
+
+1. **"Vibe" é uma família de labels nova, ou é a `ocasiao` limpa?** Inclino-me para a segunda: tirar
+   de lá o *Rápido* (que é tempo) e o *Aproveitamento* (que é sobras), e fica *Conforto*, *Festa*,
+   *Dia de semana*, *Fim de semana* — que já é uma vibe decente. O que lhe falta, se falta?
+
+2. **Pop-up sobre o catálogo, ou o ecrã inicial?** Muda a spec 006, que está por escrever.
+
+3. **"Alimento em mente" é a proteína (cinco quadrados) ou o ingrediente (quarenta e a crescer)?** Se
+   for o ingrediente, não é um quadrado, é uma pesquisa — e aí talvez seja essa a pesquisa por texto
+   que decidimos hoje que entra.
 
 ## Nota em aberto — o orçamento das imagens
 

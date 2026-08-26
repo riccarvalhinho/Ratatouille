@@ -112,6 +112,23 @@ aplicada a um ecrã com a forma oposta.
 Coisas que valem a pena e que não bloqueiam nada. Vêm depois do que falta dos milestones e antes das
 explorações.
 
+### N0 — "Apetece-me algo"
+
+**Estado:** proposta em discussão · `docs/conversas/02-ui-catalogo.md`
+**Relacionado:** conversa 7 (vocabulário das labels), spec 001, spec 006 por escrever
+
+Um ecrã de triagem com vários eixos em quadrados grandes — tipo de prato, alimento, tempo, vibe — que
+estreita por toque e **aterra de volta no catálogo já filtrado**, sem vista nova para os resultados.
+
+Substitui a barra de filtros em vez de conviver com ela: duas maneiras de filtrar a mesma lista é pior
+do que qualquer uma sozinha.
+
+**Porque não está num milestone:** com seis receitas a triagem devolveria sempre as mesmas duas. Faz
+sentido a partir de umas dezenas, e a escala alvo é uma centena ou mais. **Mas desenha-se antes de se
+construir**, porque é o primeiro teste a sério que a taxonomia de labels vai ter — e é melhor
+descobrir que a família `ocasiao` mistura vibe, tempo e sobras antes de haver cento e cinquenta
+receitas etiquetadas com ela.
+
 ### N1 — Revisão visual
 
 **Estado:** por começar

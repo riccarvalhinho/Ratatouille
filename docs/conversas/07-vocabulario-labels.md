@@ -1,6 +1,7 @@
 # Conversa 7 — Vocabulário das labels
 
-**Estado:** Por começar
+**Estado:** Por começar — mas subiu de prioridade: a proposta "Apetece-me algo" (conversa 2) faz
+das famílias de labels o próprio ecrã de triagem
 **Conduz:** Claude
 **Destino das decisões:** `data/taxonomies/labels.json`
 **Vem de:** conversa 1, que fechou tudo o resto da metadata
@@ -30,6 +31,15 @@ Falta o vocabulário: que categorias existem, e que valores cada uma tem.
 
 24 labels em quatro grupos: tipo de prato, proteína, regime e ocasião. Foram escritas em M0 por
 dedução, sem discussão — servem de ponto de partida para contrariar, não de base a preservar.
+
+> **A proposta "Apetece-me algo", na conversa 2, muda o que esta conversa é.** Se os eixos de um ecrã
+> de triagem forem as famílias das labels, então as famílias deixam de ser arrumação e passam a ser
+> desenho — cada família é um quadrado que se toca. E a olhar para elas com esses olhos, `ocasiao`
+> mistura três conceitos: *Conforto* e *Festa* são vibe, *Rápido* é tempo (e duplica um eixo inteiro
+> da triagem), *Aproveitamento* é sobras. Numa lista de chips não se nota; num quadrado nota-se muito.
+>
+> Fica também a pergunta de `regime` — vegetariano, vegan, sem glúten, sem lactose — ser de outra
+> natureza que as restantes: não estreita por apetência, **corta por regra**.
 
 ## As minhas perguntas de arranque
 
