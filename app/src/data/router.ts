@@ -17,6 +17,12 @@ export interface Route {
   recipeId?: string;
   /** Modo cozinha, em ecrã inteiro. Está no URL para sobreviver a um recarregamento a meio. */
   cooking?: boolean;
+  /**
+   * O painel "Apetece-me algo" aberto por cima do catálogo. Está no URL pela mesma razão que o modo
+   * cozinha: o tablet fica horas ligado e é recarregado por acidente. E porque assim a navegação
+   * consegue abri-lo com um link, sem estado global.
+   */
+  triagem?: boolean;
 }
 
 const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras', 'definicoes'];
@@ -40,12 +46,16 @@ export function parseHash(hash: string): Route {
   // O modo cozinha não pertence a nenhum ecrã: é o ecrã todo.
   if (first === 'cozinhar' && second) return { screen: 'receitas', recipeId: second, cooking: true };
 
+  // O painel de triagem pertence ao catálogo: abre-se por cima dele e fecha-se de volta para lá.
+  if (first === 'apetece') return { screen: 'receitas', triagem: true };
+
   const screen = SCREENS.find((s) => s === first) ?? DEFAULT_SCREEN;
   return second ? { screen, recipeId: second } : { screen };
 }
 
 export function toHash(route: Route): string {
   if (route.cooking && route.recipeId) return `#/cozinhar/${route.recipeId}`;
+  if (route.triagem) return '#/apetece';
   return route.recipeId ? `#/${route.screen}/${route.recipeId}` : `#/${route.screen}`;
 }
 

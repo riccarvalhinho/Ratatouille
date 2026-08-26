@@ -7,8 +7,8 @@
       "group": "tipo-de-prato"
     },
     {
-      "id": "entrada",
-      "name": "Entrada",
+      "id": "salada",
+      "name": "Salada",
       "group": "tipo-de-prato"
     },
     {
@@ -19,11 +19,6 @@
     {
       "id": "acompanhamento",
       "name": "Acompanhamento",
-      "group": "tipo-de-prato"
-    },
-    {
-      "id": "salada",
-      "name": "Salada",
       "group": "tipo-de-prato"
     },
     {
@@ -42,34 +37,109 @@
       "group": "tipo-de-prato"
     },
     {
-      "id": "pao-e-massas",
-      "name": "Pão e massas",
+      "id": "pao-e-bolos",
+      "name": "Pão e bolos",
       "group": "tipo-de-prato"
     },
     {
       "id": "carne",
       "name": "Carne",
-      "group": "proteina"
+      "group": "ingrediente"
+    },
+    {
+      "id": "aves",
+      "name": "Aves",
+      "group": "ingrediente"
     },
     {
       "id": "peixe",
       "name": "Peixe",
-      "group": "proteina"
+      "group": "ingrediente"
     },
     {
       "id": "marisco",
       "name": "Marisco",
-      "group": "proteina"
+      "group": "ingrediente"
     },
     {
       "id": "ovos",
       "name": "Ovos",
-      "group": "proteina"
+      "group": "ingrediente"
     },
     {
       "id": "leguminosas",
       "name": "Leguminosas",
-      "group": "proteina"
+      "group": "ingrediente"
+    },
+    {
+      "id": "legumes",
+      "name": "Legumes",
+      "group": "ingrediente"
+    },
+    {
+      "id": "massa-e-arroz",
+      "name": "Massa e arroz",
+      "group": "ingrediente"
+    },
+    {
+      "id": "portuguesa",
+      "name": "Portuguesa",
+      "group": "cultura"
+    },
+    {
+      "id": "italiana",
+      "name": "Italiana",
+      "group": "cultura"
+    },
+    {
+      "id": "asiatica",
+      "name": "Asiática",
+      "group": "cultura"
+    },
+    {
+      "id": "mediterranica",
+      "name": "Mediterrânica",
+      "group": "cultura"
+    },
+    {
+      "id": "indiana",
+      "name": "Indiana",
+      "group": "cultura"
+    },
+    {
+      "id": "mexicana",
+      "name": "Mexicana",
+      "group": "cultura"
+    },
+    {
+      "id": "francesa",
+      "name": "Francesa",
+      "group": "cultura"
+    },
+    {
+      "id": "americana",
+      "name": "Americana",
+      "group": "cultura"
+    },
+    {
+      "id": "dia-a-dia",
+      "name": "Dia a dia",
+      "group": "ocasiao"
+    },
+    {
+      "id": "conforto",
+      "name": "Conforto",
+      "group": "ocasiao"
+    },
+    {
+      "id": "festa",
+      "name": "Festa",
+      "group": "ocasiao"
+    },
+    {
+      "id": "sobras",
+      "name": "Sobras",
+      "group": "ocasiao"
     },
     {
       "id": "vegetariano",
@@ -90,41 +160,6 @@
       "id": "sem-lactose",
       "name": "Sem lactose",
       "group": "regime"
-    },
-    {
-      "id": "rapido",
-      "name": "Rápido",
-      "group": "ocasiao"
-    },
-    {
-      "id": "dia-de-semana",
-      "name": "Dia de semana",
-      "group": "ocasiao"
-    },
-    {
-      "id": "fim-de-semana",
-      "name": "Fim de semana",
-      "group": "ocasiao"
-    },
-    {
-      "id": "festa",
-      "name": "Festa",
-      "group": "ocasiao"
-    },
-    {
-      "id": "conforto",
-      "name": "Conforto",
-      "group": "ocasiao"
-    },
-    {
-      "id": "aproveitamento",
-      "name": "Aproveitamento",
-      "group": "ocasiao"
-    },
-    {
-      "id": "portuguesa",
-      "name": "Portuguesa",
-      "group": "origem"
     }
   ]
 }
