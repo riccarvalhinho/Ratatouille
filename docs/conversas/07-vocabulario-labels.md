@@ -161,7 +161,23 @@ este não.
 - **Zero mudanças de schema.** `methods`, `weight` e `timing` já lá estão; só as labels mexem, e
   labels são dados.
 
-### Os ícones: 45, em SVG
+### Os ícones
+
+**O inventário completo está em `docs/design/icones-triagem.md`** — as 44 peças uma a uma, com o que
+cada uma tem de comunicar, e as regras do conjunto. É esse ficheiro que vai para o Claude Design.
+
+Duas coisas mudaram ao fazer a lista exaustiva, e ambas para menos:
+
+- **O Tempo de confeção deixou de ter um ícone por escalão.** O tempo é uma quantidade, e uma
+  quantidade lê-se melhor num número. Quatro relógios com ponteiros diferentes é a pior maneira de
+  dizer 20, 40 e 60. Fica um relógio partilhado, quatro numerais, e um ícone para o "sem véspera".
+- **O Apetite é um desenho e não três.** O mesmo prato com três enchimentos: o olho vê a progressão
+  antes de ler as palavras, que é o que faz uma escala funcionar sem legenda.
+
+Apareceu uma opção nova ao percorrer o Ingrediente principal: **Massa e arroz**. "Apetece-me uma
+massa" é das apetências mais comuns que existem, e não tinha onde cair.
+
+### Os ícones: notas de origem
 
 **SVG e não emoji.** Há precedente nos dois sentidos, mas o que pesa é este: os símbolos do modo
 cozinha **passaram de caracteres a SVG** porque o "▶" tem variante de emoji e há fontes de Android que
