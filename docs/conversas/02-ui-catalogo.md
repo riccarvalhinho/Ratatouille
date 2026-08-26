@@ -163,15 +163,22 @@ não é uma grelha, é uma triagem.**
 
 ### O que é
 
-Um ecrã de descoberta com vários eixos, cada um num quadrado grande com as suas opções:
+Um **assistente de filtro**, em pop-up, aberto por um botão no topo da lista.
 
-- Tipo de cozinha?
-- Alimento em mente?
-- Tempo de cozinha?
-- Vibe?
+Não é um questionário. É um painel de **quadrantes**, um por critério — tipo de prato, alimento,
+tempo, vibe — em que se toca no critério e ele **abre as opções em mini-ícones**, e se vai tocando e
+prosseguindo. É navegação visual, não perguntas e respostas.
 
-Escolhe-se por toque, cada resposta estreita, e no fim **cai-se de volta na lista de sempre, já
-filtrada**. Sem ecrã novo para os resultados.
+No fim **cai-se de volta na lista de sempre, já filtrada**. Sem ecrã novo para os resultados.
+
+**Três coisas que isto não é**, e que eu tinha percebido mal à primeira:
+
+- **Não é um interrogatório.** Ninguém responde a "tempo de cozinha?" — toca-se num quadrante e
+  escolhe-se um ícone. A diferença não é de forma, é de esforço: um formulário pede-te que penses
+  antes de mostrar, um painel mostra-te para pensares.
+- **Não substitui os filtros normais.** Continua a poder filtrar-se à mão como hoje.
+- **Não é o ponto de entrada da app.** A **lista completa continua a ser o ecrã principal**; isto é
+  uma porta lateral que se abre a partir dela.
 
 ### Porque acho que está certa
 
@@ -222,10 +229,26 @@ resposta muitas vezes é "sopa". Duas defesas, e acho as duas obrigatórias:
   mais, porque impede a combinação que devolve zero **antes** de se investir quatro toques nela — que
   é a minha pergunta 6, e que esta feature tornaria mais aguda e não menos.
 
-**5. Convive com a barra de filtros, ou substitui-a?** Duas maneiras de filtrar a mesma lista é pior
-do que qualquer uma delas sozinha. Proponho que **esta seja a interface de filtros**, e que o catálogo
-guarde só um resumo do que está aplicado, com um toque para reabrir a triagem onde ficou — voltar
-atrás para alargar tem de ser barato, senão fecha-se tudo e recomeça-se.
+**5. Os mini-ícones são a parte cara, e é a única coisa nova que a proposta pede ao projeto.** Tudo o
+resto — labels, tempos, proteínas — já existe nos dados. Ícones não. São vinte e cinco labels para
+desenhar ou escolher, em SVG como o `app/src/ui/icons.tsx` já faz, e o risco não é o esforço: é a
+consistência. Um conjunto onde metade dos ícones se percebe e a outra metade obriga a ler a legenda
+por baixo é pior do que só texto, porque ocupa o dobro do espaço para dizer o mesmo.
+
+Vale a pena notar que isto reabre uma decisão do benchmark. Escrevi lá "miniaturas por ingrediente:
+não adotar, custo alto, benefício nulo" — e mantenho-a **para uma lista**, onde o ícone acompanha um
+nome que já se lê. Num quadrante é outra coisa: **o ícone é o alvo**, e a 70 cm um alvo com forma
+acerta-se melhor do que uma palavra.
+
+**6. O que me preocupava era duas verdades, não duas portas — e isso resolve-se.** Ia escrever que
+ter o assistente e a barra de filtros ao mesmo tempo é pior do que qualquer um sozinho. Estava a
+confundir duas coisas: o problema seria dois **estados de filtro** independentes, em que o que se
+escolhe num não aparece no outro. Duas **entradas** para o mesmo estado não têm problema nenhum.
+
+Portanto a única regra que isto impõe: **o assistente escreve nos mesmos filtros que a barra mostra.**
+Ao aterrar na lista, a barra reflete o que o assistente escolheu, e alarga-se ou tira-se de lá à mão
+sem reabrir nada. É também o que torna barato voltar atrás quando a triagem devolveu três receitas e
+nenhuma serve.
 
 ### O que isto mexe fora de si
 
@@ -239,10 +262,10 @@ Há ainda uma família que não está nos quatro eixos e que provavelmente merec
 vegetariano, vegan, sem glúten, sem lactose. É de outra natureza: não é apetência, é **exclusão**. Um
 eixo destes não estreita por gosto, corta por regra, e talvez nem devesse estar no mesmo ecrã.
 
-**E a spec 006, do ecrã inicial, que ainda não existe.** "Apetece-me algo" é, provavelmente, *a* ação
-da página inicial — o tablet está na parede e a pergunta que se lhe faz é essa. Disseste "pop-up", o
-que faz do catálogo o sítio de onde se parte. A alternativa é ser o ecrã inicial, e o catálogo o sítio
-onde se aterra. Muda bastante e vale a pena decidir antes de escrever a spec 006.
+**A spec 006 não é afetada, e isso ficou decidido.** Cheguei a propor que isto fosse *a* ação da
+página inicial. Não é: a lista completa continua a ser o ecrã principal e o assistente é uma porta
+lateral que se abre a partir dela. Fica registado porque é uma tentação que volta — um ecrã bonito
+puxa para a frente da app, e a decisão foi deixá-lo onde é preciso e não onde luz.
 
 ### Quando
 
@@ -257,7 +280,10 @@ descobrir que `ocasiao` mistura três conceitos antes de haver cento e cinquenta
    de lá o *Rápido* (que é tempo) e o *Aproveitamento* (que é sobras), e fica *Conforto*, *Festa*,
    *Dia de semana*, *Fim de semana* — que já é uma vibe decente. O que lhe falta, se falta?
 
-2. **Pop-up sobre o catálogo, ou o ecrã inicial?** Muda a spec 006, que está por escrever.
+2. **Os ícones: vinte e cinco desenhados à mão, ou emoji?** O projeto já usa 🍲 como marcador de
+   receita sem imagem, portanto o precedente existe e é barato. Contra: os emoji desenham-se de forma
+   diferente conforme a fonte do sistema — foi por isso que os símbolos dos botões do modo cozinha
+   passaram a SVG. Num ecrã onde o ícone é o alvo, isso pesa.
 
 3. **"Alimento em mente" é a proteína (cinco quadrados) ou o ingrediente (quarenta e a crescer)?** Se
    for o ingrediente, não é um quadrado, é uma pesquisa — e aí talvez seja essa a pesquisa por texto

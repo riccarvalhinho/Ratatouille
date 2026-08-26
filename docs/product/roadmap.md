@@ -117,11 +117,14 @@ explorações.
 **Estado:** proposta em discussão · `docs/conversas/02-ui-catalogo.md`
 **Relacionado:** conversa 7 (vocabulário das labels), spec 001, spec 006 por escrever
 
-Um ecrã de triagem com vários eixos em quadrados grandes — tipo de prato, alimento, tempo, vibe — que
-estreita por toque e **aterra de volta no catálogo já filtrado**, sem vista nova para os resultados.
+Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de quadrantes
+— tipo de prato, alimento, tempo, vibe — em que se toca no critério, ele abre as opções em
+mini-ícones, e se vai tocando e prosseguindo. **Aterra de volta no catálogo já filtrado**, sem vista
+nova para os resultados.
 
-Substitui a barra de filtros em vez de conviver com ela: duas maneiras de filtrar a mesma lista é pior
-do que qualquer uma sozinha.
+**Não substitui os filtros à mão nem é o ponto de entrada da app** — a lista completa continua a ser
+o ecrã principal. A única regra que impõe é escrever **no mesmo estado de filtro** que a barra mostra:
+duas entradas para o mesmo estado não fazem mal, dois estados fariam.
 
 **Porque não está num milestone:** com seis receitas a triagem devolveria sempre as mesmas duas. Faz
 sentido a partir de umas dezenas, e a escala alvo é uma centena ou mais. **Mas desenha-se antes de se
