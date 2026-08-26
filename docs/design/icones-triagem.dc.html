@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { margin:0; background:#f4f5f0; color:#22261f; -webkit-font-smoothing:antialiased; }
+  #folha { stroke-width:2.5; }
+  a { color:#2f6b3f; }
+  a:hover { color:#22261f; }
+</style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <symbol id="ic-frigideira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 10.5h13"></path>
+    <path d="M4 10.5v2.5a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4v-2.5"></path>
+    <path d="M15.5 10.5 21.5 8"></path>
+  </symbol>
+  <symbol id="ic-tacho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.5 10.5h15"></path>
+    <path d="M12 7.5v3"></path>
+    <path d="M6 10.5v6a2.5 2.5 0 0 0 2.5 2.5h7a2.5 2.5 0 0 0 2.5-2.5v-6"></path>
+    <path d="M6 12.5H3.5"></path>
+    <path d="M18 12.5h2.5"></path>
+  </symbol>
+  <symbol id="ic-forno" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="3.5" width="19" height="17" rx="2"></rect>
+    <path d="M2.5 8.5h19"></path>
+    <path d="M6 6h.01"></path>
+    <path d="M9.5 6h.01"></path>
+    <path d="M6.5 12.5h11"></path>
+  </symbol>
+  <symbol id="ic-grelhador" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 6.5h19"></path>
+    <path d="M2.5 12h19"></path>
+    <path d="M2.5 17.5h19"></path>
+    <path d="M7 6.5v11"></path>
+    <path d="M17 6.5v11"></path>
+  </symbol>
+  <symbol id="ic-airfryer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="2.5" width="14" height="19" rx="3"></rect>
+    <path d="M5 14.5h14"></path>
+    <path d="M9.5 18h5"></path>
+  </symbol>
+  <symbol id="ic-micro-ondas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1.5" y="6" width="21" height="12" rx="2"></rect>
+    <rect x="4.5" y="9" width="10.5" height="6" rx="1"></rect>
+    <path d="M18.5 9.5h.01"></path>
+    <path d="M18.5 12h.01"></path>
+    <path d="M17.5 14.5h2"></path>
+  </symbol>
+  <symbol id="ic-sem-confecao-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="16.5" width="19" height="4.5" rx="2"></rect>
+    <path d="M8 11 18.5 3c.7 4.3-4.3 9.6-9.6 10z"></path>
+    <path d="M8 11 4.5 14.5"></path>
+  </symbol>
+  <symbol id="ic-leve" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 8.5h19"></path>
+    <path d="M4.5 8.5a7.5 8.5 0 0 0 15 0"></path>
+    <path d="M10.5 14.8h3"></path>
+  </symbol>
+  <symbol id="ic-equilibrado" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 8.5h19"></path>
+    <path d="M4.5 8.5a7.5 8.5 0 0 0 15 0"></path>
+    <path d="M7 12.6h10"></path>
+  </symbol>
+  <symbol id="ic-substancial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 8.5h5"></path>
+    <path d="M16.5 8.5h5"></path>
+    <path d="M4.5 8.5a7.5 8.5 0 0 0 15 0"></path>
+    <path d="M7.5 8.5c1-5 8-5 9 0"></path>
+  </symbol>
+  <symbol id="ic-festa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-13 6 11)">
+      <path d="M2.5 4h7l-1.25 5h-4.5z"></path>
+      <path d="M6 9v7.5"></path>
+      <path d="M4 16.5h4"></path>
+    </g>
+    <g transform="rotate(13 18 11)">
+      <path d="M14.5 4h7l-1.25 5h-4.5z"></path>
+      <path d="M18 9v7.5"></path>
+      <path d="M16 16.5h4"></path>
+    </g>
+  </symbol>
+  <symbol id="ic-dia-a-dia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="15" cy="12" r="7"></circle>
+    <path d="M2.5 3.5v5"></path>
+    <path d="M6.5 3.5v5"></path>
+    <path d="M2.5 8.5h4"></path>
+    <path d="M4.5 8.5v12"></path>
+  </symbol>
+  <symbol id="ic-conforto-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 5h19"></path>
+    <path d="M4.5 5v15"></path>
+    <path d="M19.5 5v15"></path>
+    <path d="M2.5 20h19"></path>
+    <path d="M12 17.8c-2.7-1.3-3.6-4.2-1.9-6.5.7 1.9 2.6 1.8 2.8-.4 2.4 1.6 3.5 4.8 1.2 6.9"></path>
+  </symbol>
+  <symbol id="ic-sobras" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12v8h14v-8"></path>
+    <path d="M21 12h-9L2.5 6"></path>
+    <path d="M12 12V6.6"></path>
+  </symbol>
+  <symbol id="ic-tipo-refeicao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 5.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z"></path>
+    <path d="M2.5 3.5v4"></path>
+    <path d="M5.5 3.5v4"></path>
+    <path d="M2.5 7.5h3"></path>
+    <path d="M4 7.5v13"></path>
+    <path d="M21 3.5c1.4 2 1.4 5 0 7v10"></path>
+  </symbol>
+  <symbol id="ic-sopa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.5 10h15"></path>
+    <path d="M5.5 10a6.5 8.5 0 0 0 13 0"></path>
+    <path d="M9.5 7c0-1.3 1.6-1.9 1.6-3.2"></path>
+    <path d="M14 7c0-1.3 1.6-1.9 1.6-3.2"></path>
+  </symbol>
+  <symbol id="ic-salada" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1.5 14h21"></path>
+    <path d="M3.5 14a9 4.5 0 0 0 17 0"></path>
+    <path d="M8.6 12.6C6 12.2 4.6 10.5 5 8.1c2.5.4 4 2 3.6 4.5z"></path>
+    <path d="M12 12.4c-1.8-2.3-1.6-4.7.5-6.6 1.8 2.2 1.6 4.6-.5 6.6z"></path>
+    <path d="M15.6 12.8c-.7-2.5.4-4.5 2.9-5.1.7 2.4-.4 4.4-2.9 5.1z"></path>
+  </symbol>
+  <symbol id="ic-prato-principal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 19.5h20"></path>
+    <path d="M4.5 19.5a7.5 7.5 0 0 1 15 0"></path>
+    <path d="M12 12V9.5"></path>
+    <path d="M12 6.5a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z"></path>
+  </symbol>
+  <symbol id="ic-acompanhamento" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 9.5h9.5"></path>
+    <path d="M1.5 9.5a4 3 0 0 0 8 0"></path>
+    <path d="M12.5 13.5h10"></path>
+    <path d="M14 13.5a4.25 3 0 0 0 8 0"></path>
+  </symbol>
+  <symbol id="ic-sobremesa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19 12 6.5 20 19z"></path>
+    <path d="M7.6 14h8.8"></path>
+    <path d="M9.7 10.8h4.6"></path>
+  </symbol>
+  <symbol id="ic-pequeno-almoco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5.5 7.5h11v3.5a5.5 5 0 0 1-11 0z"></path>
+    <path d="M16.5 8.5c2.1 0 3.2 1 3.2 2.5s-1.1 2.5-3.2 2.5"></path>
+    <path d="M2.5 18.5h17"></path>
+  </symbol>
+  <symbol id="ic-snack" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6.5 5.5h11a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"></path>
+    <path d="M9 9.5h.01"></path>
+    <path d="M15 9.5h.01"></path>
+    <path d="M9 14.5h.01"></path>
+    <path d="M15 14.5h.01"></path>
+  </symbol>
+  <symbol id="ic-pao-e-bolos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 20.5v-8.8c0-1.4.7-2.6 1.9-3.5C8.3 7 10 6.4 12 6.4s3.7.6 5.1 1.8c1.2.9 1.9 2.1 1.9 3.5v8.8z"></path>
+    <path d="M5 20.5h14"></path>
+    <path d="M6.5 11.5h11"></path>
+  </symbol>
+  <symbol id="ic-carne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7.6 5c4.4-1.9 9.5.6 10.7 5.3 1.2 4.6-1.9 8.6-6.6 8.9-4.4.3-7.9-2.4-8.2-6.2-.3-3.4 1.1-6.4 4.1-8z"></path>
+    <path d="M11.5 9.5a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8z"></path>
+    <path d="M13.9 11.9h4.4"></path>
+  </symbol>
+  <symbol id="ic-aves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17.5 3.5c2.8 2.2 3.4 6.2 1.3 9.1-2.2 3-6.2 3.6-9 1.5-1.4-1-2-2.4-1.9-4 .1-1.7-.2-2.9-1.1-3.7 2.4-2.6 7.4-4.8 10.7-2.9z"></path>
+    <path d="M9.8 14.1 6.2 17.7"></path>
+    <path d="M6.2 17.7c-1 1-2.4 1-3.2.2-.8-.8-.8-2.2.2-3.2"></path>
+  </symbol>
+  <symbol id="ic-peixe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 12c-2.5 3.6-6 5.6-9.5 5.6S5 15.6 3.5 12C5 8.4 7.5 6.4 11 6.4s7 2 9.5 5.6z"></path>
+    <path d="M20.5 12 23.5 8.4"></path>
+    <path d="M20.5 12 23.5 15.6"></path>
+    <path d="M7.5 11h.01"></path>
+  </symbol>
+  <symbol id="ic-marisco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18.5 5.5c-5.4-.6-10 2.4-11.5 6.6-1.1 3.2.6 6 3.9 6.4 3.2.4 5.9-1.4 6.4-4.1.4-2.4-1.1-4.1-3.6-4.5 1.8-2 3.2-3.4 4.8-4.4z"></path>
+    <path d="M18.5 5.5 21.8 3.4"></path>
+    <path d="M18.5 5.5 21 7.8"></path>
+    <path d="M9.6 11.8 12.4 13.4"></path>
+    <path d="M8.4 15 11.2 16.3"></path>
+  </symbol>
+  <symbol id="ic-ovos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 14c0 3.6 3.1 6.2 7 6.2s7-2.6 7-6.2"></path>
+    <path d="M5 14l2.3-1.5L9.6 14l2.4-1.5L14.4 14l2.3-1.5L19 14"></path>
+    <path d="M12 8a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2z"></path>
+  </symbol>
+  <symbol id="ic-leguminosas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6.2 18.2c-2.1-2.1-1.5-6.2 1.5-9.2s7.1-3.6 9.2-1.5c2.1 2.1 1.5 6.2-1.5 9.2s-7.1 3.6-9.2 1.5z"></path>
+    <path d="M9.6 14.4h.01"></path>
+    <path d="M12 12h.01"></path>
+    <path d="M14.4 9.6h.01"></path>
+  </symbol>
+  <symbol id="ic-legumes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7.5 9.5h9l-3.1 10.4c-.4 1.4-2.4 1.4-2.8 0z"></path>
+    <path d="M12 9.5V6"></path>
+    <path d="M12 6c-.4-2-1.9-3-3.9-2.9.1 1.9 1.4 3.1 3.9 2.9z"></path>
+    <path d="M12 6c.4-2 1.9-3 3.9-2.9-.1 1.9-1.4 3.1-3.9 2.9z"></path>
+    <path d="M9.2 14h5.6"></path>
+  </symbol>
+  <symbol id="ic-massa-e-arroz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 7.5c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0"></path>
+    <path d="M2.5 12c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0"></path>
+    <path d="M2.5 16.5c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0"></path>
+  </symbol>
+  <symbol id="ic-cultura" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z"></path>
+    <path d="M3 12h18"></path>
+    <path d="M12 3c3.1 2.6 3.1 15.4 0 18"></path>
+    <path d="M12 3c-3.1 2.6-3.1 15.4 0 18"></path>
+  </symbol>
+  <symbol id="ic-portuguesa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11.5h16"></path>
+    <path d="M4.5 11.5c0 4 3.2 7.2 7.5 7.2s7.5-3.2 7.5-7.2"></path>
+    <path d="M4.5 13H2.4"></path>
+    <path d="M19.5 13h2.1"></path>
+    <path d="M12 9v2.5"></path>
+  </symbol>
+  <symbol id="ic-italiana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.5 6.5h15L12 20.5z"></path>
+    <path d="M10 10.5h.01"></path>
+    <path d="M14 11.5h.01"></path>
+    <path d="M12 15.5h.01"></path>
+  </symbol>
+  <symbol id="ic-asiatica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 13.5h13"></path>
+    <path d="M4 13.5a5.75 5.5 0 0 0 10 0"></path>
+    <path d="M12 11.5 21.5 4"></path>
+    <path d="M14 13.5 22.5 7"></path>
+  </symbol>
+  <symbol id="ic-mediterranica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5c6-1 10.5-5 12.5-11"></path>
+    <path d="M9.5 15.2c-1.7-2-1.2-4.3.9-5.4 1.1 2.1.6 4.3-.9 5.4z"></path>
+    <path d="M14.6 8.2a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2z"></path>
+  </symbol>
+  <symbol id="ic-indiana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 12h12"></path>
+    <path d="M3.5 12a5.25 5 0 0 0 9 0"></path>
+    <path d="M6 8.5c1.5-1.5 4-1.5 5.5 0"></path>
+    <path d="M15.5 14.5c0-2.2 1.7-4 3.7-4s3.7 1.8 3.7 4z"></path>
+    <path d="M15 14.5h8"></path>
+  </symbol>
+  <symbol id="ic-mexicana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 8.5c0 5.6 3.8 9.5 8.5 9.5s8.5-3.9 8.5-9.5"></path>
+    <path d="M3.5 8.5c1.5-2.2 4.4-3.4 8.5-3.4s7 1.2 8.5 3.4"></path>
+    <path d="M8 6.2c1.4-1.8 3.4-2.6 5.6-2.2"></path>
+    <path d="M15 4.7c1.9.4 3.4 1.4 4.4 2.9"></path>
+  </symbol>
+  <symbol id="ic-francesa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.5 20c-1.6-1.6-1.6-4.2.8-6.6l8.4-8.4c2.4-2.4 5-2.4 6.6-.8 1.6 1.6 1.6 4.2-.8 6.6l-8.4 8.4c-2.4 2.4-5 2.4-6.6.8z"></path>
+    <path d="M8.6 10.4 11 12.8"></path>
+    <path d="M11.8 7.2 14.2 9.6"></path>
+    <path d="M5.4 13.6 7.8 16"></path>
+  </symbol>
+  <symbol id="ic-americana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 10.5c0-3.6 4-6.2 9-6.2s9 2.6 9 6.2z"></path>
+    <path d="M3 13.5h18"></path>
+    <path d="M3 16.5h18c0 2.1-1.6 3.7-3.7 3.7H6.7C4.6 20.2 3 18.6 3 16.5z"></path>
+  </symbol>
+  <symbol id="ic-relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z"></path>
+    <path d="M12 7v5.3l3.6 2.1"></path>
+  </symbol>
+  <symbol id="ic-sem-vespera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15.8 3.6A9 9 0 1 0 20.9 15 7 7 0 0 1 15.8 3.6z"></path>
+    <path d="M4 20 20 4"></path>
+  </symbol>
+  <symbol id="ic-vegetariano" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 4C10 4 4 9.6 4 16c0 2.5 1.6 4 4 4 6.5 0 12-6.1 12-16z"></path>
+    <path d="M6.5 19.5 17 8"></path>
+  </symbol>
+  <symbol id="ic-vegan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 20.5v-7"></path>
+    <path d="M12 13.5c-4 0-6.5-2.6-6.5-6.6 4 0 6.5 2.6 6.5 6.6z"></path>
+    <path d="M12 13.5c4 0 6.5-2.6 6.5-6.6-4 0-6.5 2.6-6.5 6.6z"></path>
+  </symbol>
+  <symbol id="ic-sem-gluten" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21v-6"></path>
+    <path d="M12 15c-3.2 0-5-2-5-5 3.2 0 5 2 5 5z"></path>
+    <path d="M12 15c3.2 0 5-2 5-5-3.2 0-5 2-5 5z"></path>
+    <path d="M4 20 20 4"></path>
+  </symbol>
+  <symbol id="ic-sem-lactose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3.6c4 5.1 6 8.4 6 10.6a6 6 0 0 1-12 0c0-2.2 2-5.5 6-10.6z"></path>
+    <path d="M4 20 20 4"></path>
+  </symbol>
+</svg>
+
+<div id="folha" style="stroke-width: {{ traco }}; max-width:1240px; margin:0 auto; padding:56px 40px 96px; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+
+  <header style="display:flex; flex-direction:column; gap:14px; padding-bottom:28px; border-bottom:1px solid #dcded4">
+    <div style="font:600 12px/1 ui-monospace,Menlo,monospace; letter-spacing:.14em; text-transform:uppercase; color:#5f6659">Ratatouille · Apetece-me algo</div>
+    <h1 style="margin:0; font:600 40px/1.1 'Helvetica Neue',Helvetica,Arial,sans-serif; letter-spacing:-.02em">As 52 peças do painel, em 46 desenhos</h1>
+    <p style="margin:0; max-width:62ch; font:400 17px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">Os oito critérios e as quarenta e quatro opções, em quarenta e seis desenhos: cinco critérios reutilizam uma das suas opções (frigideira, coxa, prato a meio, taças, folha) e o Tempo partilha um só relógio. Cada peça em traço de 2.5 num viewBox de 24, só <span style="font-family:ui-monospace,Menlo,monospace; font-size:15px">currentColor</span>. Vista aos três tamanhos reais e em claro e escuro; o painel no fim é para julgar o conjunto, não a peça.</p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; padding-top:6px">
+      <span style="font:500 13px/1 ui-monospace,Menlo,monospace; color:#22261f; background:#e6e9df; border-radius:999px; padding:9px 13px">72px · mosaico de opção</span>
+      <span style="font:500 13px/1 ui-monospace,Menlo,monospace; color:#22261f; background:#e6e9df; border-radius:999px; padding:9px 13px">48px · mosaico de critério</span>
+      <span style="font:500 13px/1 ui-monospace,Menlo,monospace; color:#22261f; background:#e6e9df; border-radius:999px; padding:9px 13px">24px · pastilha de filtro</span>
+    </div>
+  </header>
+
+  <section style="padding-top:44px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Método</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">7 opções · o critério reutiliza a frigideira</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">Quatro dos sete são recipientes, por isso a separação é toda de silhueta: alta com asas, caixa quadrada com painel e puxador, baixa e larga com cabo, alta e estreita com gaveta, deitada com janela. O grelhador não tem recipiente nenhum.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-tacho"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-tacho"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-tacho"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-tacho"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-tacho"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Tacho</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">tacho</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Corpo alto, duas asas laterais curtas, tampa com pega. Mais alto do que largo.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-forno"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-forno"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-forno"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-forno"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-forno"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Forno</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">forno</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Caixa quadrada, painel em cima com dois botões e o puxador da porta. Nada mais lá dentro.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-frigideira"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-frigideira"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-frigideira"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-frigideira"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-frigideira"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Frigideira</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">frigideira · também o ícone do critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Baixa e larga, sem tampa, um só cabo longo a subir. O oposto do tacho na silhueta.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-grelhador"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-grelhador"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-grelhador"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-grelhador"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-grelhador"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Grelhador</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">grelhador</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Só grade: três barras e dois travessões. Sem contorno de recipiente — é o que o tira da fileira das caixas.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-airfryer"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-airfryer"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-airfryer"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-airfryer"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-airfryer"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Airfryer</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">airfryer</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Vertical e estreita, cantos redondos, gaveta em baixo com pega frontal. A única caixa mais alta do que larga.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-micro-ondas"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-micro-ondas"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-micro-ondas"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-micro-ondas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-micro-ondas"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Micro-ondas</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">micro-ondas</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Deitada, janela grande à esquerda e painel de botões à direita. A janela dentro da caixa é a marca.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-confecao-a"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sem-confecao-a"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sem-confecao-a"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sem-confecao-a"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sem-confecao-a"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sem cozinhar</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sem-confecao</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Faca de chef, com a barriga da lâmina curva, sobre a tábua.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Apetite</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">3 opções · um desenho, três enchimentos</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">A taça é literalmente a mesma em todos: o que muda é a altura e a largura do conteúdo. Em <span style="font-family:ui-monospace,Menlo,monospace;font-size:14px">substancial</span> o conteúdo sai acima do bordo, o que dá a progressão baixo → médio → transborda mesmo a 24px.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-leve"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-leve"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-leve"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-leve"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-leve"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Leve</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">leve</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Conteúdo curto e fundo, longe do bordo.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-equilibrado"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-equilibrado"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-equilibrado"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-equilibrado"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-equilibrado"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Equilibrado</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">equilibrado · também o ícone do critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Conteúdo a meia altura e mais largo. O meio da escala.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-substancial"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-substancial"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-substancial"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-substancial"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-substancial"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Substancial</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">substancial</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Monte estreito assente no bordo, que se interrompe por baixo dele. O único da escala com massa fora da taça.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Ocasião</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">4 opções · o critério reutiliza as taças</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px; margin-top:22px">
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-dia-a-dia"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-dia-a-dia"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-dia-a-dia"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-dia-a-dia"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-dia-a-dia"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Dia a dia</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">dia-a-dia</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Garfo à esquerda, prato à direita — a ordem da mesa.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-conforto-a"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-conforto-a"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-conforto-a"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-conforto-a"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-conforto-a"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Conforto</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">conforto</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Lareira: soleira em cima, duas ombreiras, base fechada e uma chama alta na boca. A silhueta mais distinta do conjunto.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-festa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-festa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-festa"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-festa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-festa"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Festa</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">festa · também o ícone do critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Duas taças inclinadas uma para a outra, a tocar-se no bordo.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sobras"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sobras"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sobras"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sobras"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sobras"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sobras</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sobras</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Caixa de cantos retos com a tampa levantada para a esquerda. Sobe do lado contrário ao cabo da frigideira, para não haver confusão na pastilha.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Tipo de refeição</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">1 + 8 peças</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">O momento da refeição não tem objeto próprio, por isso a separação é feita pelo recipiente e pela composição: taça funda com vapor, taça larga a transbordar, prato raso, prato pequeno ao lado de um cortado pela margem.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-tipo-refeicao"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-tipo-refeicao"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-tipo-refeicao"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-tipo-refeicao"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-tipo-refeicao"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Tipo de refeição</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Prato ao centro, garfo fora dele à esquerda e faca com lâmina à direita. O único do painel com dois talheres.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sopa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sopa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sopa"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sopa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sopa"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sopa</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sopa</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Taça funda e estreita, com dois fios de vapor. Funda contra a taça rasa da salada.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-salada"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-salada"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-salada"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-salada"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-salada"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Salada</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">salada</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Taça muito rasa com três folhas pontiagudas separadas a sair do bordo. Separadas, para não fecharem em cúpula.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-prato-principal"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-prato-principal"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-prato-principal"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-prato-principal"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-prato-principal"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Prato principal</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">prato-principal</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Cloche com pega sobre o prato. A única peça do conjunto com pega em cima.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-acompanhamento"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-acompanhamento"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-acompanhamento"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-acompanhamento"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-acompanhamento"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Acompanhamento</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">acompanhamento</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Prato pequeno inteiro ao lado de um maior cortado pela margem. A escala resolve-se por composição, não por tamanho.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sobremesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sobremesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sobremesa"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sobremesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sobremesa"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sobremesa</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sobremesa</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Fatia de perfil com duas camadas. Nenhum outro ícone do conjunto é triangular.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-pequeno-almoco"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-pequeno-almoco"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-pequeno-almoco"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-pequeno-almoco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-pequeno-almoco"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Pequeno-almoço</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">pequeno-almoco</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Chávena com asa e pires. O único momento do dia com objeto próprio.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-snack"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-snack"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-snack"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-snack"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-snack"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Snack</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">snack</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Bolacha quadrada e picada, de mão, sem prato por baixo. A única peça quadrada pequena.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-pao-e-bolos"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-pao-e-bolos"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-pao-e-bolos"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-pao-e-bolos"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-pao-e-bolos"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Pão e bolos</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">pao-e-bolos</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Fatia de pão: ombros redondos, lados retos e base plana. Os lados retos são o que a tiram de nuvem.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Ingrediente principal</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">8 peças · o critério reutiliza a coxa</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">A fileira vive de silhuetas opostas: costeleta com osso, coxa, peixe de perfil, camarão, ovo partido, vagem, raiz com rama e fios de massa. Nenhuma repete o contorno de outra, aqui ou nos outros critérios.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-carne"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-carne"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-carne"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-carne"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-carne"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Carne</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">carne</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Costeleta com o osso à vista por dentro: massa inclinada, sem bordo horizontal em cima. Já não faz a silhueta de uma panela com tampa.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-aves"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-aves"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-aves"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-aves"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-aves"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Aves</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">aves · também o ícone do critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Coxa: bolbo de massa em cima, osso curto e nó em baixo. A massa e não a vara é o que a afasta de uma lupa.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-peixe"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-peixe"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-peixe"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-peixe"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-peixe"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Peixe</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">peixe</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Peixe inteiro de perfil com cauda em V e olho. Horizontal, ponta a ponta.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-marisco"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-marisco"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-marisco"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-marisco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-marisco"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Marisco</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">marisco</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Camarão de corpo fechado, com dois segmentos e a cauda em leque. Tem massa, não é só uma curva.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-ovos"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-ovos"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-ovos"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-ovos"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-ovos"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Ovos</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">ovos</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ovo partido: casca com a quebra em ziguezague e a gema por cima. O inteiro leria-se como uma elipse qualquer.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-leguminosas"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-leguminosas"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-leguminosas"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-leguminosas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-leguminosas"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Leguminosas</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">leguminosas</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Vagem inclinada com três grãos alinhados lá dentro.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-legumes"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-legumes"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-legumes"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-legumes"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-legumes"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Legumes</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">legumes</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Raiz de massa cheia com a rama em duas folhas. É um objeto, não dois traços — e não é o mesmo que vegetariano.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-massa-e-arroz"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-massa-e-arroz"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-massa-e-arroz"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-massa-e-arroz"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-massa-e-arroz"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Massa e arroz</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">massa-e-arroz</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Três fios de massa ondulados a atravessar. Nenhuma outra peça do conjunto é feita só de ondas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Cultura</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">1 + 8 peças</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">Cada cultura é um prato dela, nunca uma bandeira. É o critério que se espera que cresça: acima de dez opções, o nível 2 deixa de ser grelha fixa e passa a folha que rola.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-cultura"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-cultura"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-cultura"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-cultura"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-cultura"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Cultura</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Globo com meridiano e equador. A única peça circular com linhas por dentro.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-portuguesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-portuguesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-portuguesa"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-portuguesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-portuguesa"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Portuguesa</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">portuguesa</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Panela de barro: fundo redondo e duas asas curtas. Não é o tacho — esse tem parede reta.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-italiana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-italiana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-italiana"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-italiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-italiana"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Italiana</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">italiana</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Fatia de pizza com ingredientes. Triângulo apontado para baixo.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-asiatica"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-asiatica"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-asiatica"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-asiatica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-asiatica"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Asiática</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">asiatica</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Tigela baixa com dois pauzinhos a entrar pela direita.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-mediterranica"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-mediterranica"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-mediterranica"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-mediterranica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-mediterranica"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Mediterrânica</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">mediterranica</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ramo de oliveira: haste curva, uma folha e uma azeitona. Sem recipiente, ao contrário da Portuguesa e da Italiana.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-indiana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-indiana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-indiana"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-indiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-indiana"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Indiana</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">indiana</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Tigela de caril a fumegar com o monte de arroz ao lado. São dois volumes, e é isso que a marca.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-mexicana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-mexicana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-mexicana"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-mexicana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-mexicana"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Mexicana</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">mexicana</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Casca em U aberta em cima, com o recheio a sair por dois montes. Nada a fechar por dentro — é o que a separa de um símbolo de informação.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-francesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-francesa"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-francesa"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-francesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-francesa"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Francesa</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">francesa</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Baguete na diagonal com três cortes. A peça mais alongada do conjunto.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-americana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-americana"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-americana"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-americana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-americana"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Americana</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">americana</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Hambúrguer em camadas: pão de cima, recheio, base. Só horizontais.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Tempo de confeção</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">2 peças · os escalões são numerais em HTML</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">O tempo é uma quantidade e lê-se melhor num número: 20, 40, 1 h, 1 h +. O relógio é só o motivo do mosaico, partilhado. Quatro relógios com ponteiros diferentes seriam a pior maneira de dizer isto.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-relogio"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-relogio"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-relogio"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-relogio"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-relogio"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Relógio</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">critério · motivo partilhado</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Mostrador com dois ponteiros. Não representa nenhum escalão.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-vespera"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sem-vespera"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sem-vespera"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sem-vespera"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sem-vespera"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sem véspera</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sem-vespera</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Lua em quarto crescente riscada. É um interruptor, não um escalão — daí ser o único do critério com traço a cortar.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:52px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Regime</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">4 peças · o critério reutiliza a folha</span>
+    </div>
+    <p style="margin:0 0 22px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">Este critério não estreita por apetência, corta por regra: fica separado no ecrã e é pegajoso. Duas peças afirmam (folha, rebento) e duas negam (espiga e gota riscadas) — o traço diagonal só existe aqui.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px">
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-vegetariano"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-vegetariano"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-vegetariano"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-vegetariano"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-vegetariano"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Vegetariano</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">vegetariano · também o ícone do critério</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Folha única com nervura.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-vegan"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-vegan"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-vegan"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-vegan"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-vegan"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Vegan</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">vegan</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Rebento com duas folhas simétricas a sair de um caule. Duas folhas contra uma.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-gluten"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sem-gluten"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sem-gluten"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sem-gluten"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sem-gluten"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sem glúten</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sem-gluten</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Espiga reduzida a um par de grãos e o caule, com o traço diagonal. Menos peças para caber a 24px.</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #e0e2d8; border-radius:14px; background:#fff; padding:18px; display:flex; flex-direction:column; gap:16px">
+        <div style="display:flex; align-items:center; gap:20px">
+          <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-lactose"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:48px;height:48px;color:#22261f"><use href="#ic-sem-lactose"></use></svg>
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f"><use href="#ic-sem-lactose"></use></svg>
+          <div style="margin-left:auto; display:flex; align-items:center; gap:12px; background:#1f2219; border-radius:10px; padding:10px 12px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#eceee5"><use href="#ic-sem-lactose"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#7fb98c"><use href="#ic-sem-lactose"></use></svg>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:5px">
+          <div style="display:flex; align-items:baseline; gap:10px"><span style="font:600 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Sem lactose</span><span style="font:400 13px/1 ui-monospace,Menlo,monospace; color:#5f6659">sem-lactose</span></div>
+          <div style="font:400 14px/1.45 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Gota com traço diagonal. Mesma negação, objeto oposto.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:60px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:6px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Tira de 24px</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">as 46 peças ao tamanho da pastilha</span>
+    </div>
+    <p style="margin:0 0 20px; max-width:60ch; font:400 15px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-wrap:pretty">O tamanho onde as peças falham primeiro, lado a lado por critério e em claro e escuro. Ler as silhuetas em conjunto, de olhos semicerrados: se duas peças da mesma linha se confundem, é aí que se corrige.</p>
+    <div style="background:#e6e9df; border-radius:18px; padding:8px 24px 20px">
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Método <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">7</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-frigideira"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-tacho"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-forno"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-grelhador"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-airfryer"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-micro-ondas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sem-confecao-a"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-frigideira"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-tacho"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-forno"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-grelhador"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-airfryer"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-micro-ondas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sem-confecao-a"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Apetite <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">3</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-leve"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-equilibrado"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-substancial"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-leve"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-equilibrado"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-substancial"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ocasião <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">4</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-dia-a-dia"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-conforto-a"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-festa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sobras"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-dia-a-dia"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-conforto-a"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-festa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sobras"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Tipo de refeição <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">9</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-tipo-refeicao"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sopa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-salada"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-prato-principal"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-acompanhamento"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sobremesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-pequeno-almoco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-snack"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-pao-e-bolos"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-tipo-refeicao"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sopa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-salada"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-prato-principal"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-acompanhamento"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sobremesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-pequeno-almoco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-snack"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-pao-e-bolos"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ingrediente <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">8</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-carne"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-aves"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-peixe"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-marisco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-ovos"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-leguminosas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-legumes"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-massa-e-arroz"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-carne"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-aves"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-peixe"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-marisco"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-ovos"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-leguminosas"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-legumes"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-massa-e-arroz"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Cultura <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">9</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-cultura"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-portuguesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-italiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-asiatica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-mediterranica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-indiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-mexicana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-francesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-americana"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-cultura"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-portuguesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-italiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-asiatica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-mediterranica"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-indiana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-mexicana"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-francesa"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-americana"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Tempo <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">2</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-relogio"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sem-vespera"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-relogio"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sem-vespera"></use></svg>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:190px 1fr 1fr; gap:24px; align-items:center; padding:14px 0; border-top:1px solid #dcded4">
+          <div style="font:500 15px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Regime <span style="font-family:ui-monospace,Menlo,monospace; font-size:13px">4</span></div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#fff; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-vegetariano"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-vegan"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sem-gluten"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#22261f;flex:0 0 auto"><use href="#ic-sem-lactose"></use></svg>
+          </div>
+          <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#1f2219; border-radius:10px; padding:12px 14px">
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-vegetariano"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-vegan"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sem-gluten"></use></svg>
+            <svg viewBox="0 0 24 24" style="width:24px;height:24px;color:#eceee5;flex:0 0 auto"><use href="#ic-sem-lactose"></use></svg>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section style="padding-top:60px">
+    <div style="display:flex; align-items:baseline; gap:14px; padding-bottom:22px">
+      <h2 style="margin:0; font:600 26px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif">Em contexto</h2>
+      <span style="font:400 15px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">níveis 1 e 2 do painel, à escala do tablet</span>
+    </div>
+
+    <div style="background:#e6e9df; border-radius:18px; padding:28px; overflow:auto">
+      <div style="width:1120px; background:#fff; border-radius:20px; box-shadow:0 24px 60px rgba(34,38,31,.18); padding:32px; display:flex; flex-direction:column; gap:24px; color:#22261f; margin-bottom:24px">
+        <div style="display:flex; align-items:center; gap:16px">
+          <div style="font:600 30px/1.1 'Helvetica Neue',Helvetica,Arial,sans-serif">Apetece-me algo</div>
+          <div style="margin-left:auto; font:500 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ver 23 receitas</div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(4,246px); gap:24px">
+          <div style="height:296px; border:2px solid #dcded4; color:#22261f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-tipo-refeicao"></use></svg>
+            <div style="font:500 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Tipo de refeição</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-align:center">—</div>
+          </div>
+          <div style="height:296px; border:2px solid #dcded4; color:#22261f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-aves"></use></svg>
+            <div style="font:500 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Ingrediente</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-align:center">—</div>
+          </div>
+          <div style="height:296px; border:2px solid #2f6b3f; background:#eef3ec; color:#2f6b3f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-frigideira"></use></svg>
+            <div style="font:600 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Método</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#2f6b3f; text-align:center">Frigideira</div>
+          </div>
+          <div style="height:296px; border:2px solid #dcded4; color:#22261f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-relogio"></use></svg>
+            <div style="font:500 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Tempo</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-align:center">—</div>
+          </div>
+          <div style="height:296px; border:2px solid #dcded4; color:#22261f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-cultura"></use></svg>
+            <div style="font:500 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Cultura</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-align:center">—</div>
+          </div>
+          <div style="height:296px; border:2px solid #2f6b3f; background:#eef3ec; color:#2f6b3f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-equilibrado"></use></svg>
+            <div style="font:600 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Apetite</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#2f6b3f; text-align:center">Leve</div>
+          </div>
+          <div style="height:296px; border:2px solid #2f6b3f; background:#eef3ec; color:#2f6b3f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-festa"></use></svg>
+            <div style="font:600 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Ocasião</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#2f6b3f; text-align:center">Conforto</div>
+          </div>
+          <div style="height:296px; border:2px solid #dcded4; color:#22261f; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:16px">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px"><use href="#ic-vegetariano"></use></svg>
+            <div style="font:500 22px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Regime</div>
+            <div style="font:400 17px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659; text-align:center">—</div>
+          </div>
+        </div>
+      </div>
+      <div style="width:1120px; background:#fff; border-radius:20px; box-shadow:0 24px 60px rgba(34,38,31,.18); padding:32px; display:flex; flex-direction:column; gap:24px; color:#22261f">
+        <div style="display:flex; align-items:center; gap:16px">
+          <svg viewBox="0 0 24 24" style="width:36px;height:36px;color:#2f6b3f"><use href="#ic-frigideira"></use></svg>
+          <div style="font:600 30px/1.1 'Helvetica Neue',Helvetica,Arial,sans-serif">Método</div>
+          <div style="margin-left:auto; font:500 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ver 23 receitas</div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(4,244px); gap:24px">
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-tacho"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Tacho</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-forno"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Forno</div>
+          </div>
+          <div style="height:268px; border:2px solid #2f6b3f; background:#eef3ec; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; color:#2f6b3f">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px"><use href="#ic-frigideira"></use></svg>
+            <div style="font:600 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Frigideira</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-grelhador"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Grelhador</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-airfryer"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Airfryer</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-micro-ondas"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Micro-ondas</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-confecao-a"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Sem cozinhar</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div style="width:1120px; margin-top:24px; background:#fff; border-radius:20px; box-shadow:0 24px 60px rgba(34,38,31,.18); padding:32px; display:flex; flex-direction:column; gap:24px; color:#22261f">
+        <div style="display:flex; align-items:center; gap:16px">
+          <svg viewBox="0 0 24 24" style="width:36px;height:36px;color:#2f6b3f"><use href="#ic-relogio"></use></svg>
+          <div style="font:600 30px/1.1 'Helvetica Neue',Helvetica,Arial,sans-serif">Tempo de confeção</div>
+          <div style="margin-left:auto; font:500 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">Ver 23 receitas</div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(4,244px); gap:24px">
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#5f6659"><use href="#ic-relogio"></use></svg>
+            <div style="font:600 46px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">20</div>
+            <div style="font:400 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">min</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#5f6659"><use href="#ic-relogio"></use></svg>
+            <div style="font:600 46px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">40</div>
+            <div style="font:400 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">min</div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#5f6659"><use href="#ic-relogio"></use></svg>
+            <div style="font:600 46px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">1 h</div>
+            <div style="font:400 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659"></div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;color:#5f6659"><use href="#ic-relogio"></use></svg>
+            <div style="font:600 46px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">1 h +</div>
+            <div style="font:400 20px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659"></div>
+          </div>
+          <div style="height:268px; border:2px solid #dcded4; border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px">
+            <svg viewBox="0 0 24 24" style="width:72px;height:72px;color:#22261f"><use href="#ic-sem-vespera"></use></svg>
+            <div style="font:500 24px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align:center">Sem véspera</div>
+          </div>
+        </div>
+      </div>
+      <div style="width:1120px; margin-top:24px; background:#1f2219; border-radius:20px; padding:26px 32px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; color:#eceee5">
+        <div style="font:500 17px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#a3aa99; margin-right:8px">Pastilhas no catálogo · 24px</div>
+        <div style="display:flex; align-items:center; gap:10px; border:1.5px solid #7fb98c; color:#7fb98c; border-radius:999px; padding:10px 18px">
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px"><use href="#ic-frigideira"></use></svg>
+          <span style="font:500 18px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Frigideira</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; border:1.5px solid #7fb98c; color:#7fb98c; border-radius:999px; padding:10px 18px">
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px"><use href="#ic-leve"></use></svg>
+          <span style="font:500 18px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Leve</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; border:1.5px solid #7fb98c; color:#7fb98c; border-radius:999px; padding:10px 18px">
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px"><use href="#ic-conforto-a"></use></svg>
+          <span style="font:500 18px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Conforto</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; border:1.5px solid #7fb98c; color:#7fb98c; border-radius:999px; padding:10px 18px">
+          <svg viewBox="0 0 24 24" style="width:24px;height:24px"><use href="#ic-sobras"></use></svg>
+          <span style="font:500 18px/1 'Helvetica Neue',Helvetica,Arial,sans-serif">Sobras</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:56px; display:flex; align-items:center; gap:18px; flex-wrap:wrap">
+    <button type="button" onClick="{{ copiar }}" style="border:1px solid #22261f; background:#22261f; color:#f4f5f0; border-radius:999px; padding:14px 22px; font:500 16px/1 'Helvetica Neue',Helvetica,Arial,sans-serif; cursor:pointer" style-hover="background:#2f6b3f; border-color:#2f6b3f">Copiar todas as peças para icons.tsx</button>
+    <span style="font:400 15px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#5f6659">{{ estado }}</span>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;traco&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:2.5,&quot;min&quot;:1.5,&quot;max&quot;:3.5,&quot;step&quot;:0.25,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Traço&quot;}}">
+class Component extends DCLogic {
+  state = { estado: "Sai como componentes React com viewBox 24, fill none, stroke currentColor, 1em." };
+
+  nomeCamel(id) {
+    return "Icon" + id.replace(/^ic-/, "").split("-").map(p => p[0].toUpperCase() + p.slice(1)).join("");
+  }
+
+  fonte() {
+    const symbols = Array.from(document.querySelectorAll("symbol[id^='ic-']"));
+    const sw = this.props.traco ?? 2.5;
+    return symbols.map(s => {
+      const corpo = Array.from(s.children)
+        .map(el => "      " + el.outerHTML.replace(/\s(xmlns|stroke|fill|stroke-linecap|stroke-linejoin)="[^"]*"/g, ""))
+        .join("\n");
+      return "export const " + this.nomeCamel(s.id) + " = (p: SVGProps<SVGSVGElement>) => (\n" +
+        "    <svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\"\n" +
+        "      strokeWidth={" + sw + "} strokeLinecap=\"round\" strokeLinejoin=\"round\" {...p}>\n" +
+        corpo + "\n    </svg>\n);";
+    }).join("\n\n");
+  }
+
+  renderVals() {
+    return {
+      traco: this.props.traco ?? 2.5,
+      estado: this.state.estado,
+      copiar: () => {
+        const txt = this.fonte();
+        const n = document.querySelectorAll("symbol[id^='ic-']").length;
+        const done = () => this.setState({ estado: "Copiado — " + n + " peças no clipboard." });
+        if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, () => this.setState({ estado: "Não deu para copiar; ver a consola." }));
+        else { console.log(txt); this.setState({ estado: "Sem clipboard: o código está na consola." }); }
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

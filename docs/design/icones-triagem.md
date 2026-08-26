@@ -1,7 +1,11 @@
-# Handover para o Claude Design — ícones do "Apetece-me algo"
+# Ícones do "Apetece-me algo" — handover e revisão
 
-Documento completo e autónomo: contexto, fluxo, medidas, especificação técnica e as 52 peças uma a
-uma. Quem o receber não precisa de mais nada.
+Documento completo e autónomo: contexto, fluxo, medidas, especificação técnica e as peças uma a uma.
+Quem o receber não precisa de mais nada.
+
+> **As peças já vieram.** O que chegou do Claude Design, o que ficou aceite e o que volta para trás
+> está na secção 10, no fim. Os desenhos estão em `app/src/ui/icones-triagem.tsx` e a folha de onde
+> se reexportam em `docs/design/icones-triagem.dc.html`.
 
 Os eixos estão fechados em `docs/conversas/07-vocabulario-labels.md`; a feature em
 `docs/product/roadmap.md` (N0) e `docs/conversas/02-ui-catalogo.md`.
@@ -318,3 +322,67 @@ escolhe-se a olhar.
 **Por onde começar:** Método (a fileira dos recipientes), Apetite (a escala) e Ocasião (o `conforto`).
 São onze peças e cobrem os três riscos do conjunto. Se resolverem, as outras quarenta e uma são
 trabalho.
+
+---
+
+## 10. O que voltou, e a revisão
+
+Recebido do Claude Design em 2026-08-26. **46 peças**, não 52 — e a diferença é uma decisão melhor do
+que a que estava no pedido.
+
+### Três decisões que melhoraram o pedido
+
+**Cinco critérios reutilizam o ícone de uma das suas opções**, em vez de terem desenho próprio: o
+Ingrediente principal é a coxa, o Método é a frigideira, o Apetite é o prato do meio, a Ocasião são as
+taças, o Regime é a folha. Só o Tipo de refeição, o Tempo e a Cultura têm ícone próprio. Isso faz o
+nível 1 e o nível 2 não se contradizerem — o mosaico do critério mostra literalmente uma das coisas
+que estão lá dentro — e poupa cinco desenhos.
+
+**O `conforto` deixou de ser a taça entre mãos e passou a ser uma lareira.** É a única peça do
+conjunto que não é objeto de cozinha, e é uma quebra de registo que aceito de bom grado: resolve o
+problema que eu tinha marcado como o mais difícil dos 44, tem silhueta única, e lê-se aos 24px. As
+mãos que eu propus não sobreviviam a esse tamanho.
+
+**O `sobras` abre a tampa para a esquerda**, ao contrário do cabo da frigideira. Foi uma colisão que
+eles encontraram e corrigiram, e que eu não tinha previsto.
+
+### Um defeito, corrigido na integração
+
+**O ficheiro não compilava.** Os oito ícones do mapa `iconesCriterio` estavam referenciados como
+`IconeAves`, `IconeFrigideira` e afins, e as definições chamam-se `IconAves`, `IconFrigideira`. Mais
+o sufixo `A` das variantes exploradas, que ficou nos nomes depois de a variante estar escolhida.
+
+Está registado no fundo do `app/src/ui/icones-triagem.tsx`. **Nenhum caminho de desenho foi tocado.**
+
+### O que aguenta os 24px, verificado
+
+Julgado nos pixels reais — os SVG a 24px, ampliados depois, e não redesenhados em grande.
+
+**Os quatro recipientes do Método, que eram o risco nº1, resolvem-se.** O forno é uma caixa quadrada
+com painel em cima, o micro-ondas é largo com janela e botões à direita, a airfryer é alta e estreita
+com a linha da gaveta, e o grelhador não tem recipiente nenhum. A silhueta faz o trabalho, como a
+regra 3 pedia.
+
+**A escala do Apetite, que era o risco nº2, funciona onde tem de funcionar.** A `leve` e a
+`equilibrado` são quase indistinguíveis aos 24px — a linha do enchimento muda dois pixels — mas aos
+72px, que é onde as três aparecem lado a lado e onde a escolha se faz, a progressão lê-se. Aos 24px o
+ícone está numa pastilha, com a palavra ao lado a fazer o trabalho. **Fica como está**: apertar a
+diferença estragava o desenho para ganhar precisão num sítio onde ela não é precisa.
+
+**O `dia-a-dia` e o ícone do critério Tipo de refeição são parecidos** — prato com garfo, com e sem
+faca. Pela regra 2 não é problema: estão em critérios diferentes e nunca aparecem no mesmo ecrã, um é
+de nível 1 e o outro de nível 2. Fica, e revê-se quando o painel estiver construído e se vir os dois
+numa sessão real.
+
+### Três peças que voltam para trás
+
+Não são de risco previsto — são as que, vistas aos 24px, **não dizem o que são**.
+
+| Peça | O que se lê hoje | O que precisa |
+|---|---|---|
+| `carne` | Um alvo, ou uma lente. O osso ao centro vira um ponto e o contorno vira um círculo | A silhueta de uma costeleta tem de vir do **recorte exterior**, não de um detalhe interior |
+| `acompanhamento` | Duas elipses sem relação | A ideia de "prato pequeno ao lado de um maior" perde-se. Talvez não seja composição, talvez seja outro objeto — uma taça de acompanhamento à parte |
+| `massa-e-arroz` | Três linhas onduladas — água | Massa enrolada num garfo diz massa; ondas dizem mar. Vale mais escolher um dos dois alimentos e desenhá-lo bem do que sugerir os dois e não dizer nenhum |
+
+As três estão em critérios de oito peças, onde competem com sete vizinhas bem resolvidas — e é isso
+que as faz notar.
