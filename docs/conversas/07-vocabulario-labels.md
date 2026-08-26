@@ -1,7 +1,7 @@
 # Conversa 7 — Vocabulário das labels
 
-**Estado:** Em curso — proposta fechada dos seis quadrantes, à espera de revisão. É o que destranca
-os ícones do "Apetece-me algo" (N0) e o único passo antes da encomenda ao Claude Design
+**Estado:** **Aplicada** — os oito critérios estão no `labels.json`, as seis receitas reetiquetadas,
+e o painel construído a usá-los
 **Conduz:** Claude
 **Destino das decisões:** `data/taxonomies/labels.json`
 **Vem de:** conversa 1, que fechou tudo o resto da metadata

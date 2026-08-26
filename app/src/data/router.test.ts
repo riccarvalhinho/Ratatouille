@@ -41,12 +41,19 @@ describe('parseHash', () => {
   });
 });
 
+describe('o painel de triagem', () => {
+  it('pertence ao catálogo e não a um ecrã próprio', () => {
+    expect(parseHash('#/apetece')).toEqual({ screen: 'receitas', triagem: true });
+  });
+});
+
 describe('toHash', () => {
   it('volta ao formato de origem', () => {
     for (const route of [
       { screen: 'home' as const },
       { screen: 'receitas' as const },
       { screen: 'receitas' as const, recipeId: 'caldo-verde' },
+      { screen: 'receitas' as const, triagem: true },
     ]) {
       expect(parseHash(toHash(route))).toEqual(route);
     }

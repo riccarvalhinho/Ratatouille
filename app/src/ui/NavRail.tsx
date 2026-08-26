@@ -4,7 +4,7 @@
  * Vertical e não uma barra em baixo porque, num tablet em horizontal, a altura é a dimensão escassa —
  * decisão vinda do benchmark do Cookidoo (docs/design/benchmark-bimby.md).
  */
-import type { Screen } from '../data/router.ts';
+import type { Route, Screen } from '../data/router.ts';
 import { toHash } from '../data/router.ts';
 import styles from './NavRail.module.css';
 
@@ -13,6 +13,10 @@ interface Destination {
   label: string;
   /** Traço do ícone, desenhado à mão para não trazer uma biblioteca só por causa de quatro ícones. */
   path: string;
+  /** Para onde vai, quando não é simplesmente o ecrã. */
+  route?: Route;
+  /** Nunca se acende: não é um destino, é um atalho para uma coisa que abre por cima. */
+  nuncaAtivo?: boolean;
 }
 
 const DESTINATIONS: Destination[] = [
@@ -25,6 +29,23 @@ const DESTINATIONS: Destination[] = [
   },
   { screen: 'compras', label: 'Compras', path: 'M4 5h2l2.5 10h9L20 8H7M9 19h.01M17 19h.01' },
 ];
+
+/*
+ * TEMPORÁRIO — atalho para o painel "Apetece-me algo", só para o ir experimentar sem ter de passar
+ * pelo catálogo.
+ *
+ * **Contradiz uma decisão da conversa 2**, e é de propósito: ficou dito que isto não é um destino da
+ * app mas uma porta lateral que se abre a partir da lista, e a lista continua a ser o ecrã principal.
+ * Um atalho na navegação diz o contrário a quem olha. Sai daqui quando a feature estiver julgada —
+ * o botão no topo do catálogo é o sítio dela.
+ */
+const ATALHO_TRIAGEM: Destination = {
+  screen: 'receitas',
+  label: 'Apetece-me',
+  route: { screen: 'receitas', triagem: true },
+  nuncaAtivo: true,
+  path: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM16 16l4.5 4.5',
+};
 
 /*
  * As Definições ficam em baixo, separadas das quatro do produto. É onde vive o token do GitHub e o
@@ -45,11 +66,11 @@ interface NavRailProps {
 export function NavRail({ current, pending = 0 }: NavRailProps) {
   return (
     <nav className={styles.rail} aria-label="Navegação principal">
-      {[...DESTINATIONS, SETTINGS].map((destination) => {
-        const active = destination.screen === current;
+      {[...DESTINATIONS, ATALHO_TRIAGEM, SETTINGS].map((destination) => {
+        const active = !destination.nuncaAtivo && destination.screen === current;
         return (
           <a
-            key={destination.screen}
+            key={destination.label}
             className={[
               styles.item,
               active ? styles.active : '',
@@ -57,7 +78,7 @@ export function NavRail({ current, pending = 0 }: NavRailProps) {
             ]
               .filter(Boolean)
               .join(' ')}
-            href={toHash({ screen: destination.screen })}
+            href={toHash(destination.route ?? { screen: destination.screen })}
             aria-current={active ? 'page' : undefined}
           >
             <svg

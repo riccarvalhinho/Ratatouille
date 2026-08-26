@@ -114,7 +114,11 @@ explorações.
 
 ### N0 — "Apetece-me algo"
 
-**Estado:** proposta em discussão · `docs/conversas/02-ui-catalogo.md`
+**Estado:** **construído, à espera de julgamento no tablet** · `docs/conversas/02-ui-catalogo.md`
+
+Foi construído antes de ter spec, e de propósito: com seis receitas nenhum argumento decide se a
+triagem serve — é preciso tocar-lhe. Quando estiver julgado, o que sobreviver escreve-se numa spec e
+o que não sobreviver sai.
 **Relacionado:** conversa 7 (vocabulário das labels), spec 001, spec 006 por escrever
 
 Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de oito
@@ -128,11 +132,15 @@ nova para os resultados.
 o ecrã principal. A única regra que impõe é escrever **no mesmo estado de filtro** que a barra mostra:
 duas entradas para o mesmo estado não fazem mal, dois estados fariam.
 
-**Porque não está num milestone:** com seis receitas a triagem devolveria sempre as mesmas duas. Faz
-sentido a partir de umas dezenas, e a escala alvo é uma centena ou mais. **Mas desenha-se antes de se
-construir**, porque é o primeiro teste a sério que a taxonomia de labels vai ter — e é melhor
-descobrir que a família `ocasiao` mistura vibe, tempo e sobras antes de haver cento e cinquenta
-receitas etiquetadas com ela.
+**Porque não está num milestone:** com seis receitas a triagem devolve sempre as mesmas duas. Faz
+sentido a partir de umas dezenas, e a escala alvo é uma centena ou mais. **Mas desenhou-se e
+construiu-se antes**, porque era o primeiro teste a sério que a taxonomia de labels ia ter — e mais
+valia descobrir que a família `ocasiao` misturava vibe, tempo e sobras antes de haver cento e
+cinquenta receitas etiquetadas com ela.
+
+**Um atalho temporário na navegação** dá-lhe entrada enquanto se experimenta. Contradiz a decisão de
+isto não ser um destino da app, e sai quando a feature estiver julgada — está marcado como tal no
+`app/src/ui/NavRail.tsx`.
 
 ### N1 — Revisão visual
 

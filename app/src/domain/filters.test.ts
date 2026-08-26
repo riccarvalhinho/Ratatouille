@@ -44,18 +44,48 @@ const gratinado = make('gratinado', {
 const all = [salada, assado, sopa, gratinado];
 const ids = (rs: Recipe[]) => rs.map((r) => r.id).sort();
 
+const bacalhau = make('bacalhau', {
+  timing: { prepMinutes: 10, cookMinutes: 10, prepAhead: { minutes: 1440, description: 'demolhar' } },
+});
+
 describe('durationBandOf', () => {
   it('classifica pelo tempo ativo', () => {
-    expect(durationBandOf(salada)).toBe('ate-30');
-    expect(durationBandOf(sopa)).toBe('30-60');
+    expect(durationBandOf(salada)).toBe('ate-20');
+    expect(durationBandOf(sopa)).toBe('ate-60');
     expect(durationBandOf(assado)).toBe('mais-de-60');
   });
 
   it('a antecedência não conta para a duração', () => {
-    const bacalhau = make('bacalhau', {
-      timing: { prepMinutes: 10, cookMinutes: 10, prepAhead: { minutes: 1440, description: 'demolhar' } },
-    });
-    expect(durationBandOf(bacalhau)).toBe('ate-30');
+    expect(durationBandOf(bacalhau)).toBe('ate-20');
+  });
+});
+
+describe('escalões de duração', () => {
+  it('são tetos e não intervalos: quem tem 40 minutos aceita uma de 10', () => {
+    const f = { ...EMPTY_FILTERS, durations: ['ate-40' as const] };
+    expect(ids(applyFilters(all, f))).toEqual(['salada']);
+  });
+
+  it('o último escalão é um piso e não um teto', () => {
+    // Se fosse teto infinito devolvia o catálogo inteiro, que é o contrário do que "mais de 1 h" diz.
+    const f = { ...EMPTY_FILTERS, durations: ['mais-de-60' as const] };
+    expect(ids(applyFilters(all, f))).toEqual(['assado']);
+  });
+
+  it('vários escalões somam-se: até 20 minutos, ou mais de uma hora', () => {
+    const f = { ...EMPTY_FILTERS, durations: ['ate-20' as const, 'mais-de-60' as const] };
+    expect(ids(applyFilters(all, f))).toEqual(['assado', 'salada']);
+  });
+});
+
+describe('sem véspera', () => {
+  it('exclui as que precisam de antecedência', () => {
+    const f = { ...EMPTY_FILTERS, semVespera: true };
+    expect(ids(applyFilters([...all, bacalhau], f))).toEqual(ids(all));
+  });
+
+  it('desligado, não exclui nada', () => {
+    expect(applyFilters([...all, bacalhau], EMPTY_FILTERS)).toHaveLength(5);
   });
 });
 
@@ -82,11 +112,26 @@ describe('applyFilters', () => {
     expect(ids(applyFilters(all, f))).toEqual(['gratinado', 'sopa']);
   });
 
-  it('filtra por label', () => {
-    expect(ids(applyFilters(all, { ...EMPTY_FILTERS, labels: ['carne', 'peixe'] }))).toEqual([
-      'assado',
-      'salada',
-    ]);
+  it('dentro do mesmo grupo, as labels somam-se', () => {
+    const f = { ...EMPTY_FILTERS, labels: { ingrediente: ['carne', 'peixe'] } };
+    expect(ids(applyFilters(all, f))).toEqual(['assado', 'salada']);
+  });
+
+  it('entre grupos diferentes, as labels restringem-se', () => {
+    // "peixe" está na salada; "prato-principal" no assado e no gratinado. Nenhuma receita é as duas.
+    const f = {
+      ...EMPTY_FILTERS,
+      labels: { ingrediente: ['peixe'], 'tipo-de-prato': ['prato-principal'] },
+    };
+    expect(applyFilters(all, f)).toEqual([]);
+  });
+
+  it('um grupo só com uma label não estreita os outros', () => {
+    const f = {
+      ...EMPTY_FILTERS,
+      labels: { ingrediente: ['carne'], 'tipo-de-prato': ['prato-principal'] },
+    };
+    expect(ids(applyFilters(all, f))).toEqual(['assado']);
   });
 
   it('exclui receitas sem peso quando se filtra por peso', () => {

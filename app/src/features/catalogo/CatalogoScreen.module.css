@@ -24,3 +24,68 @@
   padding: 0;
   list-style: none;
 }
+
+/*
+ * A porta lateral para o "Apetece-me algo". No topo da lista e não na navegação: a lista completa
+ * continua a ser o ecrã principal — ver a conversa 2.
+ */
+.apetece {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--touch-target);
+  margin-left: auto;
+  padding: 0 var(--space-5);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font: inherit;
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+/*
+ * O que está filtrado, com o mesmo ícone que o painel usou — e é aqui que os ícones aparecem a 24px,
+ * o tamanho onde falham primeiro. Tocar numa pastilha tira aquele filtro sem reabrir o painel: é o
+ * que torna barato alargar quando a triagem devolveu três receitas e nenhuma serve.
+ */
+.pastilhas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-5);
+  padding: 0;
+  list-style: none;
+}
+
+.pastilha {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.limparTudo {
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: none;
+  color: var(--color-text-muted);
+  font: inherit;
+  font-size: var(--text-sm);
+}
+
+.vazio {
+  max-width: 48ch;
+  color: var(--color-text-muted);
+}

@@ -5,10 +5,9 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "carne",
-    "dia-de-semana",
-    "conforto",
-    "portuguesa"
+    "aves",
+    "portuguesa",
+    "dia-a-dia"
   ],
   "methods": [
     "tacho"
