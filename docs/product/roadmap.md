@@ -120,8 +120,8 @@ explorações.
 Um **assistente de filtro** em pop-up, aberto por um botão no topo da lista. Um painel de oito
 quadrantes — tipo de refeição, ingrediente principal, método, tempo de confeção, cultura, apetite,
 ocasião, regime — em que se toca no critério, ele abre as opções em mini-ícones, e se vai tocando e
-prosseguindo. Os eixos estão fechados em `docs/conversas/07-vocabulario-labels.md` e as 44 peças de ícone,
-uma a uma, em `docs/design/icones-triagem.md`. **Aterra de volta no catálogo já filtrado**, sem vista
+prosseguindo. Os eixos estão fechados em `docs/conversas/07-vocabulario-labels.md` e o handover ao Claude Design, com as
+52 peças de ícone e o fluxo todo, em `docs/design/icones-triagem.md`. **Aterra de volta no catálogo já filtrado**, sem vista
 nova para os resultados.
 
 **Não substitui os filtros à mão nem é o ponto de entrada da app** — a lista completa continua a ser

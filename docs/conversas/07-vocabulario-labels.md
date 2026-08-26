@@ -163,8 +163,14 @@ este não.
 
 ### Os ícones
 
-**O inventário completo está em `docs/design/icones-triagem.md`** — as 44 peças uma a uma, com o que
-cada uma tem de comunicar, e as regras do conjunto. É esse ficheiro que vai para o Claude Design.
+**O handover completo está em `docs/design/icones-triagem.md`** — contexto, fluxo, medidas,
+especificação técnica e as 52 peças uma a uma. É autónomo: quem o receber não precisa de mais nada.
+
+Passou de 44 para 52 porque **os mosaicos dos critérios levam ícone próprio**. Tinha argumentado que
+não deviam, por um ícone de "Método" ser uma abstração e a regra do conjunto proibir metáforas. O
+argumento caiu por não ser preciso: **o ícone do critério é o objeto mais representativo do que está
+lá dentro** — o Método é uma frigideira, o Ingrediente principal é uma coxa. Nenhuma abstração, e a
+regra fica intacta.
 
 Duas coisas mudaram ao fazer a lista exaustiva, e ambas para menos:
 
@@ -173,6 +179,10 @@ Duas coisas mudaram ao fazer a lista exaustiva, e ambas para menos:
   dizer 20, 40 e 60. Fica um relógio partilhado, quatro numerais, e um ícone para o "sem véspera".
 - **O Apetite é um desenho e não três.** O mesmo prato com três enchimentos: o olho vê a progressão
   antes de ler as palavras, que é o que faz uma escala funcionar sem legenda.
+
+E a Cultura ficou resolvida por dentro: **cada uma é um prato dela e não uma bandeira** — a indiana é
+um caril, a mexicana um taco, a italiana massa ou pizza. Isso desfaz a colisão que eu tinha apontado
+entre a indiana e a mexicana, que puxavam ambas para a malagueta enquanto eram ingredientes.
 
 Apareceu uma opção nova ao percorrer o Ingrediente principal: **Massa e arroz**. "Apetece-me uma
 massa" é das apetências mais comuns que existem, e não tinha onde cair.
