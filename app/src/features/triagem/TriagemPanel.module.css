@@ -88,6 +88,17 @@
 .nomeCriterio,
 .nomeOpcao { font-size: var(--text-lg); font-weight: 600; }
 
+/*
+ * Onde não há ícone, o número é o desenho. São os escalões de tempo, e é a decisão do handover:
+ * quatro relógios com ponteiros diferentes seriam a pior maneira de dizer 20, 40 e 60.
+ */
+.numeral {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
 /* O que já está escolhido dentro deste critério, ou quantas opções tem se ainda não se escolheu. */
 .resumo {
   font-size: var(--text-sm);

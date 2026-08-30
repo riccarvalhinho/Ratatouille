@@ -30,7 +30,12 @@ export type ChaveIcone = string;
 export interface OpcaoTriagem {
   id: string;
   nome: string;
-  icone: ChaveIcone;
+  /**
+   * Sem ícone quando a opção **é** um número. Os escalões de tempo não levam desenho de propósito:
+   * o tempo é uma quantidade, e quatro relógios com ponteiros diferentes são a pior maneira de dizer
+   * 20, 40 e 60. Ver `docs/design/icones-triagem.md`.
+   */
+  icone?: ChaveIcone;
   /** Está escolhida nos filtros atuais? */
   escolhida: (filters: CatalogueFilters) => boolean;
   /** Liga ou desliga. Nunca substitui os outros critérios. */
@@ -125,7 +130,14 @@ export function criteriosDeTriagem(catalogue: Catalogue): CriterioTriagem[] {
       nome: 'Tempo de confeção',
       icone: 'relogio',
       opcoes: [
-        ...TEMPOS.map((band) => opcaoDeLista(band, DURATION_BAND_NAMES[band], 'durations')),
+        /*
+         * Os escalões montam-se aqui e não pelo `opcaoDeLista` por uma razão só: **não levam
+         * ícone**. O mosaico mostra o número, e o relógio do critério serve de motivo aos quatro.
+         */
+        ...TEMPOS.map((band) => {
+          const semIcone = opcaoDeLista(band, DURATION_BAND_NAMES[band], 'durations');
+          return { ...semIcone, icone: undefined };
+        }),
         {
           // Não é um escalão: é outro tipo de tempo, e por isso é um interruptor.
           id: 'sem-vespera',

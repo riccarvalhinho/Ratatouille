@@ -386,3 +386,43 @@ Não são de risco previsto — são as que, vistas aos 24px, **não dizem o que
 
 As três estão em critérios de oito peças, onde competem com sete vizinhas bem resolvidas — e é isso
 que as faz notar.
+
+## 11. Segunda entrega: as três voltaram refeitas
+
+Recebida em 2026-08-30. **46 peças outra vez, das quais 6 mudaram de geometria**: as três que tinham
+sido devolvidas, mais `dia-a-dia`, `tipo-refeicao` e `leguminosas`, que ninguém tinha pedido.
+
+**As três resolvem-se, e resolvem-se pelo caminho que o pedido indicava.**
+
+| Peça | Antes | Agora |
+|---|---|---|
+| `carne` | Um alvo: o osso ao centro virava um ponto, o contorno um círculo | Um osso, com a silhueta a vir do recorte exterior — que era exatamente o que faltava |
+| `massa-e-arroz` | Três ondas, que diziam mar | Massa enrolada num garfo. Escolheram um dos dois alimentos, como sugerido, em vez de sugerir os dois |
+| `acompanhamento` | Duas elipses sem relação | Uma travessa de duas asas. Não é composição, é outro objeto — a segunda das duas saídas propostas |
+
+As outras três mudanças são afinações da mesma ideia e não trocas de motivo, e nenhuma delas piora aos
+24px.
+
+**Os dois defeitos da primeira entrega desapareceram.** O ficheiro compila como veio, e os nomes já
+não trazem o sufixo `A` das variantes exploradas. A única alteração manual na integração foi o
+`import type { JSX, SVGProps } from 'react';`, que o projeto precisa e o pacote não sabia.
+
+### O que ficou de fora, de propósito
+
+O pacote traz as mesmas geometrias em quatro formatos — `assets/svg/`, `sprite.svg`,
+`icons.manifest.json` e um `INDEX.md`. Nada disso entra no repositório: a app importa o componente
+React e mais nada, e quatro cópias da mesma linha são quatro sítios onde a próxima correção se pode
+esquecer. Fica só o `.tsx`, mais o `.dc.html` de contacto para se poderem ver todos juntos.
+
+### O elo que passou a ter rede
+
+A integração revelou um buraco que não era desta entrega: **o painel procura o ícone pela chave da
+label, e uma chave que não existe não desenha nada — em silêncio.** Uma cultura nova no `labels.json`
+sem desenho correspondente dava um mosaico com o nome e um vazio, e só se descobria a olhar para o
+tablet.
+
+`app/src/domain/triagem.test.ts` fecha isso contra a taxonomia real de `data/`, e não contra uma
+fixture — uma fixture inventada passaria sempre. Apanhou logo o primeiro caso: os quatro escalões de
+tempo apontavam para ícones que nunca existiram. A ausência era certa, a maneira de a escrever é que
+não era; agora `icone` é opcional e os escalões dizem `undefined`, que é o que o mosaico do número
+já esperava.

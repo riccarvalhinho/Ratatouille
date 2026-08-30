@@ -32,7 +32,7 @@ interface TriagemPanelProps {
   onClose: () => void;
 }
 
-/** Um ícone pela chave dos dados. Se faltar, não desenha nada — a etiqueta fica a dizer o que é. */
+/** Um ícone pela chave dos dados. Uma chave que não existe é um erro, e o teste da triagem apanha-o. */
 function Icone({ chave, size }: { chave: string; size: number }) {
   const Desenho = icones[chave as keyof typeof icones];
   if (!Desenho) return null;
@@ -87,8 +87,18 @@ export function TriagemPanel({ catalogue, filters, onChange, onClose }: TriagemP
                     onClick={() => onChange(opcao.alternar(filters))}
                     aria-pressed={escolhida}
                   >
-                    <Icone chave={opcao.icone} size={72} />
-                    <span className={styles.nomeOpcao}>{opcao.nome}</span>
+                    {/*
+                      Sem ícone são os escalões de tempo, e é deliberado: o tempo é uma quantidade e
+                      lê-se melhor num número. Aí o próprio nome ocupa o lugar do desenho, em grande.
+                    */}
+                    {opcao.icone ? (
+                      <>
+                        <Icone chave={opcao.icone} size={72} />
+                        <span className={styles.nomeOpcao}>{opcao.nome}</span>
+                      </>
+                    ) : (
+                      <span className={styles.numeral}>{opcao.nome}</span>
+                    )}
                     {/*
                       A contagem aparece antes da escolha e não depois: diz quantas sobram SE se
                       escolher isto. Zero fica visível e apagado em vez de virar um beco sem saída.

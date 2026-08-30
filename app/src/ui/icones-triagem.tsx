@@ -3,16 +3,17 @@
  *
  * Vêm do Claude Design, a partir do handover em `docs/design/icones-triagem.md`. **A geometria não
  * se edita aqui**: a folha de desenho é `docs/design/icones-triagem.dc.html` e é de lá que se
- * reexporta. O que foi mexido à mão neste ficheiro está registado no fundo.
+ * reexporta.
  *
- * Ficam num ficheiro à parte do `icons.tsx` de propósito. O painel ainda não está construído — é o
- * N0 do roadmap — e assim não entram no bundle enquanto ninguém os importar.
- *
- * Grelha 24, traço 2.5, fill none, stroke currentColor, cantos e junções redondos: as mesmas
- * convenções do `icons.tsx`, para os dois conjuntos serem indistinguíveis no ecrã.
+ * Ficam à parte do `icons.tsx` porque são um conjunto com origem própria e um ciclo de revisão
+ * próprio — mas seguem as mesmas convenções, para os dois serem indistinguíveis no ecrã: grelha 24,
+ * traço 2.5, fill none, stroke currentColor.
  *
  * Tamanhos previstos: 72px no mosaico de opção, 48px no mosaico de critério, 24px na pastilha de
  * filtro do catálogo. Dimensionam-se por `font-size` — o SVG é 1em — e a cor vem do contexto.
+ *
+ * A única coisa mexida à mão é o `import type { JSX }`: com o transform novo do React esse tipo já
+ * não é global. Nenhum caminho de desenho foi tocado.
  */
 import type { JSX, SVGProps } from 'react';
 
@@ -29,7 +30,7 @@ const base = {
   strokeLinejoin: "round",
 } as const;
 
-// ──── Método ──────────────────────────────────────────────────────
+// ── Método ────────────────────────────────────────────────────
 export const IconFrigideira: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M2.5 10.5h13" />
@@ -95,7 +96,7 @@ export const IconSemConfecao: IconeTriagem = (props) => (
 );
 
 
-// ──── Apetite ─────────────────────────────────────────────────────
+// ── Apetite ───────────────────────────────────────────────────
 export const IconLeve: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M2.5 8.5h19" />
@@ -122,10 +123,10 @@ export const IconSubstancial: IconeTriagem = (props) => (
 );
 
 
-// ──── Ocasião ─────────────────────────────────────────────────────
+// ── Ocasião ───────────────────────────────────────────────────
 export const IconDiaADia: IconeTriagem = (props) => (
   <svg {...base} {...props}>
-    <circle cx="15" cy="12" r="7" />
+    <path d="M15 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14z" />
     <path d="M2.5 3.5v5" />
     <path d="M6.5 3.5v5" />
     <path d="M2.5 8.5h4" />
@@ -173,13 +174,13 @@ export const IconSobras: IconeTriagem = (props) => (
 );
 
 
-// ──── Tipo de refeição ────────────────────────────────────────────
+// ── Tipo de refeição ──────────────────────────────────────────
 export const IconTipoRefeicao: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M13.5 5.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z" />
-    <path d="M2.5 3.5v4" />
-    <path d="M5.5 3.5v4" />
-    <path d="M2.5 7.5h3" />
+    <path d="M2 3.5v4" />
+    <path d="M6 3.5v4" />
+    <path d="M2 7.5h4" />
     <path d="M4 7.5v13" />
     <path d="M21 3.5c1.4 2 1.4 5 0 7v10" />
   </svg>
@@ -215,10 +216,10 @@ export const IconPratoPrincipal: IconeTriagem = (props) => (
 
 export const IconAcompanhamento: IconeTriagem = (props) => (
   <svg {...base} {...props}>
-    <path d="M0 9.5h9.5" />
-    <path d="M1.5 9.5a4 3 0 0 0 8 0" />
-    <path d="M12.5 13.5h10" />
-    <path d="M14 13.5a4.25 3 0 0 0 8 0" />
+    <path d="M4 11.5h16" />
+    <path d="M6 11.5a6 4.5 0 0 0 12 0" />
+    <path d="M4 11.5c-1.5-.6-1.5-2.8 0-3.4" />
+    <path d="M20 11.5c1.5-.6 1.5-2.8 0-3.4" />
   </svg>
 );
 
@@ -257,12 +258,12 @@ export const IconPaoEBolos: IconeTriagem = (props) => (
 );
 
 
-// ──── Ingrediente principal ───────────────────────────────────────
+// ── Ingrediente principal ─────────────────────────────────────
 export const IconCarne: IconeTriagem = (props) => (
   <svg {...base} {...props}>
-    <path d="M7.6 5c4.4-1.9 9.5.6 10.7 5.3 1.2 4.6-1.9 8.6-6.6 8.9-4.4.3-7.9-2.4-8.2-6.2-.3-3.4 1.1-6.4 4.1-8z" />
-    <path d="M11.5 9.5a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8z" />
-    <path d="M13.9 11.9h4.4" />
+    <rect x="7.5" y="4" width="9" height="6" rx="1.6" />
+    <rect x="7.5" y="14" width="9" height="6" rx="1.6" />
+    <path d="M12 1.8v20.4" />
   </svg>
 );
 
@@ -304,9 +305,8 @@ export const IconOvos: IconeTriagem = (props) => (
 export const IconLeguminosas: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M6.2 18.2c-2.1-2.1-1.5-6.2 1.5-9.2s7.1-3.6 9.2-1.5c2.1 2.1 1.5 6.2-1.5 9.2s-7.1 3.6-9.2 1.5z" />
-    <path d="M9.6 14.4h.01" />
-    <path d="M12 12h.01" />
-    <path d="M14.4 9.6h.01" />
+    <path d="M10 14h.01" />
+    <path d="M14 10h.01" />
   </svg>
 );
 
@@ -322,14 +322,18 @@ export const IconLegumes: IconeTriagem = (props) => (
 
 export const IconMassaEArroz: IconeTriagem = (props) => (
   <svg {...base} {...props}>
-    <path d="M2.5 7.5c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0" />
-    <path d="M2.5 12c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0" />
-    <path d="M2.5 16.5c2.4-3.2 4.8 3.2 7.2 0s4.8 3.2 7.2 0 4.8 3.2 4.6 0" />
+    <path d="M6 2.5v6" />
+    <path d="M10.5 2.5v6" />
+    <path d="M15 2.5v6" />
+    <path d="M6 8.5h9" />
+    <path d="M10.5 8.5 12.9 16.2" />
+    <path d="M8.3 17a5.2 3.1 0 1 0 10.4 0 5.2 3.1 0 1 0-10.4 0z" />
+    <path d="M10.7 17.7c1.4-1.3 4.1-1.5 5.9-.4" />
   </svg>
 );
 
 
-// ──── Cultura ─────────────────────────────────────────────────────
+// ── Cultura ───────────────────────────────────────────────────
 export const IconCultura: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" />
@@ -412,7 +416,7 @@ export const IconAmericana: IconeTriagem = (props) => (
 );
 
 
-// ──── Tempo de confeção ───────────────────────────────────────────
+// ── Tempo de confeção ─────────────────────────────────────────
 export const IconRelogio: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" />
@@ -428,7 +432,7 @@ export const IconSemVespera: IconeTriagem = (props) => (
 );
 
 
-// ──── Regime ──────────────────────────────────────────────────────
+// ── Regime ────────────────────────────────────────────────────
 export const IconVegetariano: IconeTriagem = (props) => (
   <svg {...base} {...props}>
     <path d="M20 4C10 4 4 9.6 4 16c0 2.5 1.6 4 4 4 6.5 0 12-6.1 12-16z" />
@@ -460,8 +464,7 @@ export const IconSemLactose: IconeTriagem = (props) => (
   </svg>
 );
 
-// ──── Mapa por chave de opção ──────────────────────────────────────
-// As chaves são as do modelo de dados; conforto e sem-confecao perderam o sufixo da proposta.
+// ── Mapa por chave de opção ───────────────────────────────
 export const icones = {
   "frigideira": IconFrigideira,
   "tacho": IconTacho,
@@ -513,7 +516,7 @@ export const icones = {
 
 export type ChaveIcone = keyof typeof icones;
 
-// ──── Ícone de cada critério ──────────────────────────────────────
+// ── Ícone de cada critério ────────────────────────────────
 // Cinco critérios reutilizam uma das suas opções; o Tempo usa um relógio próprio,
 // partilhado pelos escalões (que são numerais em texto, não ícones).
 export const iconesCriterio = {
@@ -526,15 +529,3 @@ export const iconesCriterio = {
   "ocasiao": IconFesta,
   "regime": IconVegetariano,
 } satisfies Record<string, IconeTriagem>;
-
-/*
- * O que foi mexido à mão depois de vir do Claude Design, e porquê:
- *
- * 1. Os oito ícones de `iconesCriterio` estavam referenciados como `IconeAves`, `IconeFrigideira` e
- *    afins, mas as definições chamam-se `IconAves`, `IconFrigideira`. O ficheiro não compilava.
- * 2. `IconConfortoA` e `IconSemConfecaoA` perderam o sufixo da variante: eram duas propostas cada, e
- *    a A ficou escolhida. O sufixo era um resto do processo, não um nome.
- * 3. O tipo `JSX.Element` passou a ser importado do React — com o transform novo não é global.
- *
- * Nenhum caminho de desenho foi tocado.
- */
