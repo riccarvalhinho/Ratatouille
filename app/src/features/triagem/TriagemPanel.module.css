@@ -109,10 +109,15 @@
 /*
  * O regime não estreita por apetência, corta por regra — e por isso não se parece com os outros.
  * Ver a conversa 7. É também o único que o "Limpar" não limpa.
+ *
+ * A separação está no traço e **não no fundo**. Neste painel um fundo mais claro já quer dizer
+ * "escolhido", e o regime aparecia com ar de estar ligado sem ninguém lhe ter tocado — anunciava um
+ * estado que não existia. O tracejado diz outra coisa, que é o que se queria: um recipiente de outra
+ * natureza. E leva a cor do texto secundário porque a da borda, contra este fundo, não se vê.
  */
 .regra {
   border-style: dashed;
-  background: var(--color-surface-raised);
+  border-color: var(--color-text-muted);
 }
 
 .escolhida {
