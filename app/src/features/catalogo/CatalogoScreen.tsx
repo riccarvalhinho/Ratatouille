@@ -25,7 +25,8 @@ interface CatalogoScreenProps {
 interface PastilhaAtiva {
   chave: string;
   nome: string;
-  icone: string;
+  /** Os escalões de tempo não têm ícone: a pastilha fica só com o número, que é o que eles são. */
+  icone?: string;
   tirar: (f: CatalogueFilters) => CatalogueFilters;
 }
 
@@ -79,7 +80,7 @@ export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps)
       {pastilhas.length > 0 && (
         <ul className={styles.pastilhas}>
           {pastilhas.map((p) => {
-            const Icone = icones[p.icone as keyof typeof icones];
+            const Icone = p.icone ? icones[p.icone as keyof typeof icones] : undefined;
             return (
               <li key={p.chave}>
                 {/* Aqui os ícones estão a 24px, que é o tamanho onde falham primeiro. */}
