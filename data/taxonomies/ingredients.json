@@ -245,6 +245,18 @@
       "plural": "Coxas de frango",
       "aisle": "talho",
       "unitGramsPerUnit": 200
+    },
+    {
+      "id": "costela-de-porco",
+      "name": "Costela de porco",
+      "plural": "Costelas de porco",
+      "aisle": "talho"
+    },
+    {
+      "id": "colorau",
+      "name": "Colorau",
+      "aisle": "mercearia",
+      "staple": true
     }
   ]
 }
