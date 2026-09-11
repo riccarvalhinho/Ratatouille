@@ -257,6 +257,12 @@
       "name": "Colorau",
       "aisle": "mercearia",
       "staple": true
+    },
+    {
+      "id": "alecrim",
+      "name": "Alecrim",
+      "aisle": "mercearia",
+      "staple": true
     }
   ]
 }

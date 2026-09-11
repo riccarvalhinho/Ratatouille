@@ -1,8 +1,8 @@
 {
   "id": "costelas-no-forno",
   "name": "Costelas no forno",
-  "description": "Uma banda de costelas rapada, temperada com alho e colorau e assada horas a baixo calor, bem embrulhada em papel vegetal e alumínio. Só se abre no fim, para tostar.",
-  "narrative": "Pede-se ao talho uma banda de costelas rapadas. Tempera-se generosamente dos dois lados com sal, azeite, alho esmagado, pimenta e colorau, e embrulha-se — primeiro em papel vegetal, depois em folha de alumínio por fora, bem fechado em toda a volta. É o embrulho que faz a receita: fechado, o vapor fica preso e é ele que amacia a carne. Vai ao forno a 180 °C durante três a quatro horas, sem se mexer. Nos últimos dez minutos abre-se o embrulho, dobra-se o alumínio para baixo e sobe-se o forno para 220 °C com grelhador, só para a superfície tostar. Tira-se e serve-se.",
+  "description": "Uma banda de costelas rapada, temperada com alho e alecrim e assada horas a baixo calor, bem embrulhada em papel vegetal e alumínio. Só se abre no fim, para tostar.",
+  "narrative": "Pede-se ao talho uma banda de costelas rapadas. Tempera-se generosamente dos dois lados com sal, pimenta, alho esmagado, alecrim e azeite. A sogra junta ainda colorau; o sogro faz sem, e são a mesma receita. Embrulha-se — primeiro em papel vegetal, depois em folha de alumínio por fora, bem fechado em toda a volta. É o embrulho que faz a receita: fechado, o vapor fica preso e é ele que amacia a carne. Vai ao forno a 180 °C durante três a quatro horas, sem se mexer. Nos últimos dez minutos abre-se o embrulho, dobra-se o alumínio para baixo e sobe-se o forno para 220 °C com grelhador, só para a superfície tostar. Tira-se e serve-se.",
   "servings": 4,
   "labels": [
     "prato-principal",
@@ -49,21 +49,28 @@
       "unit": "qb"
     },
     {
-      "ref": "colorau",
+      "ref": "alecrim",
       "unit": "qb"
+    },
+    {
+      "ref": "colorau",
+      "unit": "qb",
+      "optional": true,
+      "note": "como a sogra faz; o sogro tempera sem"
     }
   ],
   "steps": [
     {
       "title": "Temperar a banda de costelas",
-      "text": "Sal, azeite, alho esmagado, pimenta e colorau esfregados dos dois lados, sem poupar. É o único tempero que a carne vai levar, e depois de embrulhada já não se corrige.",
+      "text": "Sal, pimenta, alho esmagado, alecrim e azeite esfregados dos dois lados, sem poupar. Quem faz como a sogra junta o colorau. É o único tempero que a carne leva, e depois de embrulhada já não se corrige.",
       "durationMinutes": 10,
       "ingredientRefs": [
         "costela-de-porco",
         "sal",
-        "azeite",
-        "dente-de-alho",
         "pimenta-preta",
+        "dente-de-alho",
+        "alecrim",
+        "azeite",
         "colorau"
       ]
     },
@@ -99,7 +106,7 @@
     "kind": "familia",
     "author": "Sogros"
   },
-  "notes": "Receita dos sogros, passada por áudio. A quantidade de alho é estimativa nossa — eles não a mediram.",
+  "notes": "Receita dos sogros, passada por áudio. O colorau é como a sogra faz; o sogro tempera sem ele. A quantidade de alho é estimativa nossa — eles não a mediram.",
   "createdAt": "2026-09-11",
   "updatedAt": "2026-09-11"
 }
