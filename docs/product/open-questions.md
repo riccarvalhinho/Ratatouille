@@ -223,3 +223,29 @@ migrar dados.
 
 As decisões concretas em cima da mesa estão em `docs/product/metadata-receitas.md`.
 
+
+---
+
+## Q13 — Que licenças do Commons se aceitam mesmo, e o que fazer sem autor?
+
+**Estado:** Aberta
+
+`tools/import/images.ts` diz aceitar do Commons "CC BY, CC BY-SA, CC0, domínio público", mas o
+código só recusa as `nd` — tudo o resto passa. A procurar fotografia para as costelas no forno veio
+uma candidata com a etiqueta **"Copyrighted free use"**, que não é nenhuma das quatro, e **sem
+autor**, portanto o `imageCredit` ficou só com licença e fonte.
+
+Duas perguntas, e a segunda é a que interessa:
+
+1. A lista das quatro é para cumprir à letra, ou era só descritiva? Há etiquetas do Commons
+   permissivas que não são CC ("Copyrighted free use", "Attribution", PD-*), e recusá-las corta
+   fotografia utilizável.
+2. **Uma imagem sem autor identificado deve ser aceite?** Numa CC BY o crédito ao autor é condição
+   da licença; sem autor não há como cumprir. O schema já só exige `license`, o que deixa passar
+   este caso sem ninguém dar por ele.
+
+Enquanto não se decidir, o aviso do preview (`npm run import:preview`) mostra o crédito tal como
+ficou, e quem revê vê o que falta.
+
+Custo de não decidir: baixo por agora — há seis receitas e uma imagem. Sobe quando o catálogo
+crescer, porque corrigir licenças em retrospetiva num repositório público é trabalho chato.

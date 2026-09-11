@@ -96,27 +96,56 @@ npm run validate
 O `import:save` grava em `data/recipes/<id>.json` e decide sozinho o `status` e os `gaps`. O
 `validate` confirma o schema e a integridade referencial.
 
-### 5. Commit
+### 5. Procurar a fotografia
 
-Uma receita nova é um commit. Dizer ao utilizador o que ficou por preencher.
-
-## Imagens
-
-**Não copiar a fotografia da fonte.** Uma foto de receita num site é obra protegida como o texto, e
+**Nunca copiar a fotografia da fonte.** Uma foto de receita num site é obra protegida como o texto, e
 este repositório é público. O `imageUrl` do que foi recolhido serve de referência, não de origem.
 
-Há duas vias legítimas:
+A melhor via é fotografia própria, tirada quando se cozinha — aí `imageCredit` leva
+`{ "license": "própria" }`. Não havendo, procura-se nos bancos de licença livre.
+
+**O proxy da sessão bloqueia os bancos todos**, tal como bloqueia os sites de receitas — Commons e
+Openverse respondem 403 a um `curl` daqui. Portanto o caminho é o mesmo do passo 1:
+
+**Actions → "Buscar imagens de licença livre"**, com `receitas` = o id, `consulta` = o termo **em
+inglês**, e `ramo` = o ramo de trabalho. O runner procura, descarrega para `media/recipes/`,
+preenche `image` e `imageCredit`, valida e faz commit.
+
+O `npm run import:image -- "caldo verde"` continua a servir para espreitar candidatas quando houver
+rede; daqui vai dizer que todos os bancos falharam, e isso é o esperado.
+
+**A `consulta` decide as duas metades: o que se procura e o que se aceita.** O classificador exige
+que o título do ficheiro contenha o termo inteiro e seguido — é o que impede um biryani de entrar
+como "Arroz de frango". Um nome de receita descritivo ("Costelas no forno") não aparece em título
+nenhum do Commons, portanto **sem `consulta` não passa nada**. Dar o nome do prato em inglês, do
+mais específico para o mais geral: `roasted pork ribs` → `pork ribs`.
+
+Quando o resumo disser "N candidatas, nenhuma convincente", foi o classificador a reprovar, não a
+falta de resultados — vale a pena uma segunda tentativa com um termo mais largo.
+
+**A atribuição tem de ficar em `imageCredit`**; sem isso a licença não é cumprida e o ecrã de
+detalhe mostra-a a quem vê a foto. E uma máquina não sabe se a fotografia mostra o prato certo:
+**confirmar a olho antes do merge.**
+
+Ficar sem imagem é resultado aceitável — a app mostra um marcador. Não vale a pena forçar nem
+inventar.
+
+### 6. Mostrar o preview
 
 ```bash
-npm run import:image -- "caldo verde"
+npm run import:preview -- costelas-no-forno
 ```
 
-Procura no **Openverse**, que só devolve conteúdo Creative Commons ou de domínio público, com a
-licença e o autor em cada resultado. Escolhida uma, **a atribuição tem de ir para `imageCredit`** —
-sem isso a licença não é cumprida.
+Escreve a receita como ela vai aparecer no ecrã de detalhe. **Mostrar sempre o resultado ao
+utilizador** antes do commit: é a última oportunidade de apanhar o que passa no schema e continua
+errado — um título de passo que repete o texto, uma nota de ingrediente que devia ser quantidade,
+um tempo que não bate certo com o que a receita diz, uma quantidade estimada que ficou absurda.
 
-A outra via, e a melhor: fotografia própria, tirada quando se cozinha. Aí `imageCredit` leva
-`{ "license": "própria" }`.
+Ler o JSON em voz alta não serve para isto, e abrir a app custa um build.
+
+### 7. Commit
+
+Uma receita nova é um commit. Dizer ao utilizador o que ficou por preencher e o que foi estimado.
 
 Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena forçar.
 
@@ -147,6 +176,10 @@ Quando a fonte vier com passos a mais e a junção não for óbvia — dois que 
 espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É barato agora e caro depois.
 
 ## O que já é decidido e não se volta a discutir
+
+- A fotografia procura-se sempre (passo 5) e nunca se copia da fonte. Sem imagem é resultado
+  aceitável; sem `imageCredit` numa imagem que não é nossa, não é
+- O preview do passo 6 mostra-se ao utilizador antes do commit, não depois
 
 - Passos ao nível de tarefa, com título. Nunca parágrafos, nunca um passo por gesto. Ver a secção
   "Como se escrevem os passos" — é a regra mais fácil de aplicar mal.
