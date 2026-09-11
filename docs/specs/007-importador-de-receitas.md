@@ -22,6 +22,8 @@ e ninguém escreve JSON à mão vezes suficientes para ter cem receitas.
 | CLI de correspondência | `npm run import:match` | Feito |
 | CLI de gravação validada | `npm run import:save` | Feito |
 | Protocolo de importação ponta a ponta | `.claude/skills/importar-receita/` | Feito |
+| Preview da receita em texto, antes do commit | `npm run import:preview` | Feito |
+| Procura de fotografia de licença livre | Actions → "Buscar imagens de licença livre" | Feito, mas ver abaixo |
 | Obter conteúdo de um link | — | **Bloqueado**, ver abaixo |
 
 ### A limitação de rede, e como se contorna
@@ -39,6 +41,18 @@ repositório → uma sessão normaliza, pergunta o que falta, e grava.
 
 Áudio, texto e fotografia não passam por aqui — chegam diretamente à sessão, e o áudio é aliás a
 fonte mais fácil de todas.
+
+**Os bancos de imagens estão no mesmo caso**, e foi reconfirmado: Commons e Openverse respondem 403
+a um pedido da sessão. A procura de fotografia faz-se pelo workflow "Buscar imagens de licença
+livre", com a mesma forma — o runner procura, descarrega, preenche `image` e `imageCredit`, e
+commita.
+
+Há aí uma armadilha que custou duas execuções a descobrir: a consulta dada ao workflow decide **o
+que se procura e o que se aceita**. O classificador exige que o título do ficheiro contenha o termo
+inteiro e seguido, que é o que impede um biryani de entrar como "Arroz de frango" — mas um nome de
+receita descritivo como "Costelas no forno" não aparece em título nenhum do Commons. Sem consulta em
+inglês, uma receita dessas nunca encontra nada, e o sintoma é enganador: "N candidatas, nenhuma
+convincente".
 
 ### O que se aprendeu a recolher uma página a sério
 
@@ -97,6 +111,10 @@ link, texto ou foto
       │
       ▼
 6. npm run validate → chumba se alguma referência não existir
+      │
+      ▼
+7. preview          → a receita como vai aparecer no ecrã de detalhe, mostrada
+                      ao utilizador antes do commit
 ```
 
 ### Sobre o passo 4 — perguntar
@@ -167,6 +185,8 @@ registada em `source`, agora com `kind: "video"` e `author` para dar crédito ao
 - [ ] Adiar uma pergunta deixa a receita em `status: "rascunho"` com o campo em `gaps`
 - [ ] Responder a todas grava com `status: "revisto"`
 - [ ] O ficheiro gerado passa em `npm run validate`
+- [ ] O preview em texto é mostrado ao utilizador antes do commit, com os formatadores da app
+- [ ] A fotografia procura-se nos bancos de licença livre e nunca se copia da fonte
 - [ ] A fonte fica registada, com autor no caso de vídeo
 - [ ] Nada é inventado em silêncio
 
