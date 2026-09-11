@@ -349,9 +349,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1);
   }
 
-  const results = await searchImages(query);
+  // Os quatro bancos, e não só o Openverse: um banco em baixo não pode deitar abaixo a procura
+  // toda. O Openverse começou a responder 403 a pedidos anónimos e isso bastava para o comando
+  // rebentar, apesar de o Commons estar bom.
+  const results = await searchFreeImages(query);
   if (results.length === 0) {
-    console.log('\nSem resultados de licença livre para essa pesquisa.\n');
+    console.log('\nSem resultados de licença livre para essa pesquisa.');
+    console.log('Se todos os bancos falharem com 403, é o proxy da sessão: usar o workflow');
+    console.log('"Buscar imagens de licença livre" no GitHub Actions.\n');
     process.exit(0);
   }
 
