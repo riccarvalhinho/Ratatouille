@@ -149,12 +149,24 @@ export function withImage(recipe: RecipeFile, candidate: ImageCandidate): Recipe
   return updated;
 }
 
-async function findAndSave(recipe: RecipeFile, query: string): Promise<ImageCandidate | undefined> {
+/**
+ * O `match` é o termo contra o qual o título tem de bater, e não é sempre o nome da receita.
+ *
+ * Quando alguém dá `--query` à mão está a afirmar como é que o prato se chama no banco, e essa
+ * afirmação tem de valer para as duas metades: procurar e aceitar. Só procurar não chegava — um
+ * nome descritivo como "Costelas no forno" nunca aparece num título do Commons, portanto a
+ * pesquisa trazia candidatas e o classificador reprovava-as todas, sem maneira de o corrigir.
+ */
+async function findAndSave(
+  recipe: RecipeFile,
+  query: string,
+  match: string,
+): Promise<ImageCandidate | undefined> {
   const candidates = await searchFreeImages(query);
   if (candidates.length === 0) return undefined;
 
   const ranked = candidates
-    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, recipe.name) }))
+    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, match) }))
     .filter((entry): entry is { candidate: ImageCandidate; points: number } => entry.points !== undefined)
     .sort((a, b) => b.points - a.points);
 
@@ -221,7 +233,7 @@ async function main(): Promise<void> {
     }
 
     console.log(`\n${recipe.name}${query ? `  (a procurar "${query}")` : ''}`);
-    const candidate = await findAndSave(recipe, query ?? recipe.name);
+    const candidate = await findAndSave(recipe, query ?? recipe.name, query ?? recipe.name);
 
     if (!candidate) {
       console.log('  nada aproveitável em nenhum banco');
