@@ -248,7 +248,10 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "kind": { "enum": ["propria", "familia", "livro", "web", "video", "importada"] },
+        "kind": {
+          "description": "gerada = escrita por AI a partir do nome do prato, sem fonte externa. Revista por um humano no papel, mas nunca cozinhada — é o que a distingue de uma receita da família.",
+          "enum": ["propria", "familia", "livro", "web", "video", "importada", "gerada"]
+        },
         "title": { "type": "string" },
         "author": {
           "description": "Autor, canal ou publicação de origem.",

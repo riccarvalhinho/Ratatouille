@@ -162,6 +162,17 @@ pronto.
 `source` com `kind` (incluindo `video`), `title`, `author` e `url`. As instruções são sempre
 reescritas, nunca copiadas.
 
+**`kind: "gerada"`** é o caso do catálogo inicial: receitas escritas por AI a partir do nome do
+prato, sem fonte externa nenhuma. Existe porque `revisto` e `gerada` respondem a perguntas
+diferentes e não se substituem uma à outra — `revisto` diz que um humano leu o ficheiro e o
+considerou completo, `gerada` diz de onde veio o texto. Uma receita gerada e revista está correta
+no papel e **nunca foi cozinhada por ninguém desta casa**; uma receita da família passou pela mesa
+antes de passar pelo repositório. Sem o campo, um ficheiro escrito de raiz por uma máquina ficava
+indistinguível de um que veio dos sogros, e o catálogo perdia a única informação que diz em quais
+se pode confiar de olhos fechados.
+
+O par honesto é `{ "kind": "gerada", "author": "Claude" }`.
+
 `notes` para notas pessoais: "a avó fazia com mais alho", "da última vez ficou salgado". Sem interface
 por agora — escrevem-se à mão.
 

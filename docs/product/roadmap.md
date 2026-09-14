@@ -35,6 +35,23 @@ sem receitas, um catálogo bonito não serve de nada.
 - Aplicar as alterações ao schema, aos tipos, ao validador e às receitas seed
 - `tools/import-recipe.ts`: link de site, link de vídeo, texto ou foto → ficheiro validado
 - Preenchimento interativo de lacunas — nada fica em branco em silêncio
+- [ ] Encher o catálogo: triar `docs/product/lista-de-receitas.md` e gerar as receitas
+
+**As receitas são geradas, não importadas de lado nenhum.** Procurou-se: não existe corpus livre em
+PT-PT que sirva — o RecipeNLG é de investigação e não-comercial, o Recipe1M+ nem sequer distribui os
+dados, o TheMealDB são umas centenas em inglês, e o Livro de Receitas do Wikilivros é PT-BR e CC BY-SA,
+que é viral. E o argumento que fecha a questão é outro: como as instruções são **sempre reescritas**
+(`docs/ops/importar-receitas.md`), o trabalho caro — taxonomia de ingredientes, passos ao nível de
+tarefa, labels, `weight`, tempos — é o mesmo venha a receita de onde vier. Um dataset só pouparia
+lembrar nomes de pratos.
+
+O método é por vagas, e a razão é esta: um erro sistemático de escrita repetido em 110 ficheiros
+custa 110 correções. Vai uma vaga de dez, lê-se, e **o que estiver errado vai para a skill** antes de
+se gerar a seguinte. Só quando uma vaga passar limpa se geram as restantes de uma vez.
+
+**O maior custo escondido não são as receitas, é a taxonomia.** São 43 ingredientes canónicos hoje;
+uma centena de receitas com metade internacional pede 250–350. Um `ref` inexistente é erro
+bloqueante no validador, portanto a taxonomia resolve-se **antes** de cada leva, não durante.
 
 **Frente B — design** (questões Q2 e Q10).
 

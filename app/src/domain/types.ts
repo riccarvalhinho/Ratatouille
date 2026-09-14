@@ -150,7 +150,8 @@ export interface Nutrition {
 }
 
 export interface RecipeSource {
-  kind?: 'propria' | 'familia' | 'livro' | 'web' | 'video' | 'importada';
+  /** `gerada` = escrita por AI, revista no papel, nunca cozinhada. */
+  kind?: 'propria' | 'familia' | 'livro' | 'web' | 'video' | 'importada' | 'gerada';
   title?: string;
   /** Autor, canal ou publicação de origem. */
   author?: string;

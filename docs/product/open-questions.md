@@ -80,6 +80,14 @@ Duas abordagens:
 O schema já distingue os dois através do campo `nutrition.method`, para que a app possa mostrar
 "estimado" em vez de fingir precisão. A decisão é sobre qual usar por omissão.
 
+**Atualização — isto deixou de ser teórico.** O catálogo vai passar de sete receitas para mais de
+cem, todas geradas e todas com `method: "estimado"`
+(`docs/product/lista-de-receitas.md`). Enquanto eram seis receitas, "estimar" era uma escolha sem
+consequência. Com uma centena, passa a ser o catálogo inteiro construído sobre palpites — e migrar
+para valores calculados depois implica ter dados nutricionais para os 250–350 ingredientes
+canónicos que a mesma leva vai criar. Decidir antes da leva grande é muito mais barato do que
+decidir depois; decidir *depois* não é impossível, é só trabalho a dobrar.
+
 ---
 
 ## Q5 — O histórico é automático ou manual?
