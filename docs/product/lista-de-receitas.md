@@ -101,10 +101,10 @@ Ao contrário da banha, aqui não há substituição — o prato sai da lista. S
 - **Iscas com elas** — o prato é fígado
 - **Ovos mexidos com farinheira** — o prato é a farinheira
 
-**Um caso de fronteira, para decidires:** o **cozido à portuguesa** leva farinheira em muitas casas,
-mas não é definido por ela — leva chouriço, morcela, carnes e legumes, e há cozidos sem farinheira
-nenhuma. Deixei-o na lista, para ser escrito sem. Se para ti cozido com farinheira é cozido, diz e
-sai também.
+Saiu também o **cozido à portuguesa**, e esse foi decidido e não deduzido: tinha ficado na lista
+por não ser *definido* pela farinheira — leva chouriço, morcela, carnes e legumes, e há cozidos sem
+ela — mas a chamada foi de quem come, não de quem escreve. Um cozido sem farinheira não é o cozido
+que se quer à mesa, e um prato que se faz a fingir não vale uma entrada no catálogo.
 
 ---
 
@@ -222,7 +222,6 @@ metade da razão de ter um catálogo.
 
 | Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Cozido à portuguesa | Prato único, com arroz | sem farinheira — ver regra 3 | proposta | |
 | Arroz de pato | Prato único, com salada de agrião | | proposta | |
 | Arroz de marisco | Prato único | | proposta | |
 | Arroz de tamboril | Prato único | | proposta | |
