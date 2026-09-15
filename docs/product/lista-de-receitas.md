@@ -47,11 +47,27 @@ Três regras que valem para **todas** as receitas geradas, não só para as dest
 escritas em `.claude/skills/importar-receita/SKILL.md`, que é o que garante que valem também para o
 que se importar daqui a seis meses — uma regra que fique só aqui deixa de existir na leva seguinte.
 
-## 1. Cada receita é um prato completo
+## 1. Uma receita deve dar uma refeição — por omissão, não à força
 
-**Uma receita é uma refeição, não um componente.** O acompanhamento vem escolhido e escrito dentro
-da mesma receita: os ingredientes na mesma lista, os passos entrelaçados com os do prato principal.
-Nada de abrir uma receita de peixe grelhado e ter de ir procurar noutra o que se põe ao lado.
+O acompanhamento vem escolhido e escrito dentro da mesma receita: os ingredientes na mesma lista, os
+passos entrelaçados com os do prato principal. O objetivo é **não ter de planear prato +
+acompanhamento em todas as refeições da semana**. Como a maior parte dos pratos "de prateleira" já
+vem com um acompanhamento óbvio, na maior parte dos casos isto sai de graça — e é por isso que a
+coluna `Com` das tabelas abaixo está quase toda preenchida.
+
+**Mas não se força, e algumas receitas ficam legitimamente sem.** Três casos:
+
+1. **O prato já é a refeição** — uma massa, um arroz malandro, um caril que já traz o arroz. É o
+   que está marcado como `Prato único`.
+2. **A receita foi ditada por alguém** — família ou receita própria. Escreve-se como foi dada.
+   **As costelas no forno são exatamente isto**: são costelas, o que se come com elas muda conforme
+   o dia, e inventar um acompanhamento seria pôr palavras na boca de quem a deu.
+3. **O prato come-se com muita coisa e nenhuma é mais canónica** do que as outras.
+
+**Um acompanhamento a mais é pior do que nenhum:** vai para a lista de compras na mesma, e compra-se
+comida que ninguém vai cozinhar. Na dúvida, deixa-se — o planeamento já aceita mais do que uma
+receita por bloco, portanto pôr uma salada ao lado de um prato incompleto custa um toque e já
+funciona hoje.
 
 O entrelaçar é a parte que interessa e a mais fácil de fazer mal. Os passos do acompanhamento
 **não vão todos para o fim** — vão para onde pertencem no tempo real da cozinha: o arroz começa
@@ -61,11 +77,11 @@ se lembre do arroz está errada mesmo que os ingredientes estejam lá.
 O schema já aguentava isto sem mudar nada: `ingredients` é lista única de propósito, e a descrição
 do campo já dizia que "as sub-preparações são partes da preparação total do prato".
 
-**O que isto custa, dito à frente:** os tempos sobem e as receitas ficam com mais passos, porque
-passam a descrever mais trabalho — o que antes era invisível não desapareceu, estava só noutro
-ficheiro. E o mesmo arroz de tomate vai aparecer dentro de várias receitas e também sozinho na
-secção dos acompanhamentos. Isso é redundância aceite: o valor está em abrir uma receita e ter a
-refeição inteira, não em não repetir texto.
+**O que isto custa, dito à frente:** nas receitas que levam acompanhamento, os tempos sobem e os
+passos aumentam, porque passam a descrever mais trabalho — o que antes era invisível não
+desapareceu, estava só noutro ficheiro. E o mesmo arroz de tomate vai aparecer dentro de várias
+receitas e também sozinho na secção dos acompanhamentos. Isso é redundância aceite: o valor está em
+abrir uma receita e ter a refeição inteira, não em não repetir texto.
 
 ## 2. Nada leva banha de porco
 
@@ -97,8 +113,9 @@ sai também.
 O núcleo, e a primeira coisa a ser gerada: é o que responde a "o que é que se janta hoje", e
 portanto o que faz o planeamento semanal e a lista de compras valerem alguma coisa.
 
-Cada linha inclui já o acompanhamento com que a receita vai ser escrita. É uma proposta como
-qualquer outra da lista — se o acompanhamento não servir, corrige-se na triagem.
+A coluna `Com` diz o acompanhamento com que a receita vai ser escrita. É uma proposta como qualquer
+outra da lista: se não servir, corrige-se na triagem — e **riscar a coluna também é resposta**, para
+os pratos que se preferem sozinhos.
 
 ## Portugueses
 

@@ -149,15 +149,32 @@ Uma receita nova é um commit. Dizer ao utilizador o que ficou por preencher e o
 
 Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena forçar.
 
-## Uma receita é uma refeição, não um componente
+## O acompanhamento faz parte da receita — por omissão, não por obrigação
 
-**Toda a receita de prato principal leva o acompanhamento escolhido e escrito lá dentro.** Os
-ingredientes do acompanhamento vão na mesma lista de `ingredients`; os passos vão entre os do prato
-principal. Ninguém deve ter de abrir uma segunda receita para saber o que se come ao lado.
+**Uma receita de prato principal deve dar uma refeição.** Os ingredientes do acompanhamento vão na
+mesma lista de `ingredients`; os passos vão entre os do prato principal. O objetivo é não ter de
+planear prato + acompanhamento a cada refeição da semana — e como a maior parte das receitas "de
+prateleira" já vem com um acompanhamento óbvio, na maior parte dos casos isto sai de graça.
 
-Se a fonte não disser com que acompanhamento se serve, **escolhe-se um e diz-se ao utilizador qual
-foi** — não se deixa o prato nu. A escolha segue o prato: um grelhado leva batata e salada, um
-guisado leva arroz ou puré, uma massa vale por si.
+Se a fonte não disser com que acompanhamento se serve mas o prato pedir claramente um,
+**escolhe-se e diz-se ao utilizador qual foi**. A escolha segue o prato: um grelhado leva batata e
+salada, um guisado leva arroz ou puré.
+
+**Mas não se força.** Há três casos em que a receita fica como está, e nenhum é falha:
+
+1. **O prato já é a refeição.** Uma massa, um arroz malandro, um caril que já traz o arroz. Não há
+   nada para acrescentar.
+2. **A receita foi ditada por alguém.** Família, ou receita própria. Escreve-se como foi dada —
+   inventar um acompanhamento é pôr palavras na boca de quem a deu. Pergunta-se se querem um; não
+   se acrescenta em silêncio. É o caso das **costelas no forno**: são costelas, e o que se come com
+   elas muda conforme o dia.
+3. **O prato come-se com muita coisa e nenhuma é mais canónica.** Forçar uma escolha aqui é fingir
+   uma decisão que ninguém tomou.
+
+**Um acompanhamento a mais é pior do que nenhum.** Vai para a lista de compras na mesma, e
+compra-se comida que ninguém vai cozinhar. Na dúvida entre acrescentar e deixar, deixa-se — o
+planeamento já aceita mais do que uma receita por bloco, portanto pôr uma salada ao lado de um
+prato incompleto é um gesto que já existe na app e custa um toque.
 
 **Os passos entrelaçam-se, não se empilham.** É aqui que isto se faz mal. O acompanhamento não vai
 todo para o fim da lista de passos: vai para onde pertence no tempo real da cozinha, que quase
@@ -178,8 +195,9 @@ trabalho, que já existia mas estava noutro ficheiro), e o mesmo acompanhamento 
 várias receitas e às vezes também sozinho. A redundância é o preço de abrir uma receita e ter lá a
 refeição inteira.
 
-**Exceções, e são só duas:** sopas e sobremesas. Uma sopa é a refeição ou é entrada de outra coisa;
-uma sobremesa não acompanha nada. Se pedir pão, diz-se no passo.
+E, a somar aos três casos de cima, **sopas e sobremesas nunca levam acompanhamento**: uma sopa é a
+refeição ou é entrada de outra coisa, e uma sobremesa não acompanha nada. Se pedirem pão, diz-se no
+passo.
 
 ## Ingredientes vetados
 
@@ -240,7 +258,8 @@ espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É bar
 - `weight` atribui-se pela rubrica em `docs/product/metadata-receitas.md`, não a olho
 - A origem de cozinha pergunta-se **sempre**, e "não tem" é resposta válida
 - Não há campo de dificuldade nem de Nutri-Score
-- Um prato principal leva o acompanhamento dentro da receita, com os passos entrelaçados. Sopas e
-  sobremesas são as únicas exceções
+- Um prato principal leva o acompanhamento dentro da receita, com os passos entrelaçados — por
+  omissão, não à força. Não se acrescenta a quem já é refeição, a quem foi ditado por alguém, nem a
+  quem come com tudo; e nunca a sopas e sobremesas
 - Banha, fígado e farinheira não entram. A banha substitui-se e o prato fica; os outros dois, quando
   definem o prato, tiram o prato

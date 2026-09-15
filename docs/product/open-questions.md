@@ -257,3 +257,33 @@ ficou, e quem revê vê o que falta.
 
 Custo de não decidir: baixo por agora — há seis receitas e uma imagem. Sobe quando o catálogo
 crescer, porque corrigir licenças em retrospetiva num repositório público é trabalho chato.
+
+---
+
+## Q14 — A app deve dizer que uma receita não é refeição completa?
+
+**Estado:** Aberta · a decidir depois da primeira vaga
+
+A regra de escrita já está fechada: uma receita de prato principal traz o acompanhamento dentro,
+**por omissão** e não à força — ver `.claude/skills/importar-receita/SKILL.md`. Há três casos em que
+fica legitimamente sem: o prato que já é a refeição, o prato ditado por alguém (as costelas dos
+sogros), e o prato que se come com muita coisa sem nenhuma ser mais canónica.
+
+O que fica por decidir é se a **app** precisa de saber disso. Hoje não sabe: nada no schema
+distingue "isto é a refeição" de "isto pede alguma coisa ao lado".
+
+**O argumento para não fazer nada:** o planeamento já aceita mais do que uma receita por bloco, o
+que resolve o caso em uso. E se a esmagadora maioria das receitas for completa, o sinal serve para
+pouco — é um campo novo para preencher em todas as receitas por causa de meia dúzia.
+
+**O argumento para fazer:** planear é que é o momento em que isto dói. Quem monta a semana à
+segunda-feira não abre cada receita para ver se está completa; escolhe pelo cartão. Um prato que
+pede acompanhamento e não o diz só aparece na quinta-feira, com a carne no forno e nada para pôr ao
+lado — e a lista de compras já foi feita sem isso.
+
+**Se se fizer, a forma mais barata é não acrescentar campo nenhum**: a label `acompanhamento` já
+existe, e uma receita de prato principal sem nenhum passo de acompanhamento é detetável. Mas
+detetável não é o mesmo que fiável, e um campo explícito ao menos não mente.
+
+**Decidir depois da primeira vaga, não antes.** Só com dez receitas escritas é que se sabe se isto é
+um caso raro ou um terço do catálogo — e a resposta muda consoante.

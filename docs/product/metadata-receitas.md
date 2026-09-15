@@ -109,16 +109,23 @@ cebola".
 **Não há grupos de ingredientes.** Foi considerado e rejeitado: a lista é única, e as sub-preparações
 são partes da preparação total do prato.
 
-**E uma receita é uma refeição, não um componente:** o acompanhamento vem escolhido e escrito dentro
-da mesma receita — ingredientes na mesma lista, passos entrelaçados com os do prato, não empilhados
-no fim. Abrir uma receita de peixe grelhado e ter de ir procurar noutra o que se põe ao lado é
-exatamente o que a app existe para evitar.
+**E uma receita deve dar uma refeição:** por omissão, o acompanhamento vem escolhido e escrito
+dentro da mesma receita — ingredientes na mesma lista, passos entrelaçados com os do prato, não
+empilhados no fim. O objetivo é não ter de planear prato + acompanhamento em todas as refeições da
+semana.
+
+**É omissão, não regra do formato.** Uma receita sem acompanhamento continua a ser uma receita
+válida, e há três casos em que fica assim de propósito: o prato que já é a refeição, o prato ditado
+por alguém (as costelas dos sogros são costelas — inventar-lhes um acompanhamento é pôr palavras na
+boca de quem as deu), e o prato que se come com muita coisa sem nenhuma ser mais canónica. Sopas e
+sobremesas nunca levam. Nestes casos o gesto vive no planeamento, que já aceita mais do que uma
+receita por bloco.
 
 Vale a pena registar que **esta decisão não custou nada ao formato**: a lista única, rejeitada como
-grupos por outras razões, já era a estrutura certa para um prato completo. As sopas e as sobremesas
-são a exceção natural, porque não acompanham nada. A regra operacional está em
-`.claude/skills/importar-receita/SKILL.md`, que é o que faz com que valha para o que se escrever
-daqui a seis meses e não só para a primeira leva.
+grupos por outras razões, já era a estrutura certa para um prato completo. A regra operacional, com
+o teste de quando se acrescenta e quando se deixa, está em
+`.claude/skills/importar-receita/SKILL.md` — é o que faz com que valha para o que se escrever daqui
+a seis meses e não só para a primeira leva.
 
 ## Equipamento
 
