@@ -2,13 +2,6 @@
   "id": "salmao-teriyaki",
   "name": "Salmão teriyaki",
   "description": "Lombos de salmão laqueados em molho de soja e mirim, com arroz e edamame.",
-  "image": "media/recipes/salmao-teriyaki.jpg",
-  "imageCredit": {
-    "author": "Prayitno / Thank you for (12 millions +) view",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/34128007@N04/10900376705"
-  },
   "narrative": "O molho é o mesmo do frango teriyaki, e faz-se antes. O salmão sela-se com a pele para baixo em lume forte, sem se mexer, até a pele ficar estaladiça e soltar-se sozinha da frigideira. Vira-se um minuto, escorre-se a gordura, e o molho entra a reduzir à volta até ficar espesso, a regar o peixe com a colher. O arroz e o edamame fazem-se em paralelo.",
   "servings": 4,
   "labels": [

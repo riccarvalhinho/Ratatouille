@@ -2,13 +2,6 @@
   "id": "salame-de-chocolate",
   "name": "Salame de chocolate",
   "description": "Bolacha partida à mão em creme de chocolate, enrolado e frio. Sem forno.",
-  "image": "media/recipes/salame-de-chocolate.jpg",
-  "imageCredit": {
-    "author": "Million Moments",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_Salami.JPG"
-  },
   "narrative": "A bolacha parte-se à mão em pedaços desiguais e não se tritura — são os pedaços que fazem o desenho do corte. O creme é manteiga, açúcar, cacau e um ovo. Enrola-se em papel vegetal como um rebuçado, apertado, e vai ao frio quatro horas. Corta-se com faca de serra e em fatias finas.",
   "servings": 10,
   "labels": [

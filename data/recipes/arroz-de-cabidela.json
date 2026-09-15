@@ -2,13 +2,6 @@
   "id": "arroz-de-cabidela",
   "name": "Arroz de cabidela",
   "description": "Arroz de galinha ligado com o sangue da ave e vinagre, malandro e escuro.",
-  "image": "media/recipes/arroz-de-cabidela.jpg",
-  "imageCredit": {
-    "author": "Thu Huynh",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/chopsticks-on-meat-19141541/"
-  },
   "narrative": "O sangue recolhe-se com vinagre, que é o que o impede de coagular antes da hora. A galinha coze-se aos pedaços num refogado com o seu caldo até estar tenra. O arroz coze nesse caldo, malandro. No fim, fora do lume, junta-se o sangue misturado com mais vinagre, a mexer sem parar — ao lume o sangue talha e fica granuloso em vez de ligar. Serve-se logo, que este arroz não espera.",
   "servings": 4,
   "labels": [

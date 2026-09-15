@@ -2,13 +2,6 @@
   "id": "lasanha-de-legumes-assados",
   "name": "Lasanha de legumes assados",
   "description": "Beringela, courgette e pimento assados em camadas com tomate e bechamel. Com salada verde.",
-  "image": "media/recipes/lasanha-de-legumes-assados.jpg",
-  "imageCredit": {
-    "author": "rick",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/35034361412@N01/193763041"
-  },
   "narrative": "Os legumes assam-se antes, em vez de irem crus para a lasanha — assados, perdem a água e concentram o sabor; crus, largam líquido e a lasanha fica aguada. Assam em tabuleiro único a 210 graus até ganharem cor. O molho de tomate é simples e o bechamel é o do costume. Monta-se, gratina-se, e repousa dez minutos antes de cortar.",
   "servings": 6,
   "labels": [

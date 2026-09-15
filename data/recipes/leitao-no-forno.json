@@ -2,13 +2,6 @@
   "id": "leitao-no-forno",
   "name": "Leitão no forno",
   "description": "Leitão temperado com a pasta de alho e pimenta, assado devagar e acabado em lume forte. Com batata e laranja.",
-  "image": "media/recipes/leitao-no-forno.jpg",
-  "imageCredit": {
-    "author": "avlxyz",
-    "license": "BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2505471024"
-  },
   "narrative": "O tempero é uma pasta de alho, banha — aqui substituída por manteiga e azeite —, sal, pimenta e louro, esfregada por dentro e por fora de véspera. Assa tapado a 160 graus três horas e só no fim sobe para 230, destapado, para a pele estalar. Pincela-se com o próprio molho e não com água, que amolece o que se está a tentar secar. Serve-se com batata assada e gomos de laranja, que cortam a gordura.",
   "servings": 8,
   "labels": [

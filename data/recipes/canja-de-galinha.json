@@ -2,13 +2,6 @@
   "id": "canja-de-galinha",
   "name": "Canja de galinha",
   "description": "Caldo de galinha com massa, limão e hortelã. A sopa dos dias ruins.",
-  "image": "media/recipes/canja-de-galinha.jpg",
-  "imageCredit": {
-    "author": "minicooper93402",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/21703936@N08/6387231225"
-  },
   "narrative": "A galinha coze devagar, nunca aos borbotões, e escuma-se a espuma dos primeiros minutos, que é o que deixa o caldo turvo. Uma hora em lume brando com cebola, cenoura e louro. Coa-se, desfia-se a carne, e a massa coze no caldo limpo. Limão e hortelã entram no prato e não no tacho — fervidos, ficam amargos.",
   "servings": 5,
   "labels": [

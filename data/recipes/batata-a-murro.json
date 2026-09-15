@@ -2,13 +2,6 @@
   "id": "batata-a-murro",
   "name": "Batata a murro",
   "description": "Batata pequena cozida com casca, esmagada com a mão e regada com azeite e alho.",
-  "image": "media/recipes/batata-a-murro.jpg",
-  "imageCredit": {
-    "author": "Boryslav Shoot",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/close-up-shot-of-vegetables-12072444/"
-  },
   "narrative": "Batata pequena, cozida com casca em água muito salgada — mais salgada do que parece certo, porque a casca protege e só assim o sal chega lá dentro. O murro dá-se com a palma da mão e a batata deve abrir sem se desfazer. É essa superfície rachada que agarra o azeite e o alho, e é toda a razão de ser do prato.",
   "servings": 6,
   "labels": [

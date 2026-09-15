@@ -2,13 +2,6 @@
   "id": "caril-de-grao-e-espinafres",
   "name": "Caril de grão e espinafres",
   "description": "Caril vegetariano de panela única, com grão, espinafres e leite de coco. Com arroz e iogurte.",
-  "image": "media/recipes/caril-de-grao-e-espinafres.jpg",
-  "imageCredit": {
-    "author": "Qnula",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/a-hand-holding-a-plate-with-food-10999800/"
-  },
   "narrative": "Caril de vinte minutos e de um tacho só. A base é a de sempre: cebola alourada, alho e gengibre, especiarias tostadas no óleo quente. O grão já cozido entra com o tomate e o leite de coco e apura dez minutos. Os espinafres vão no fim e desaparecem em dois minutos — postos antes, cozem de mais e o caril fica com um verde triste. Serve-se com arroz e uma colher de iogurte.",
   "servings": 4,
   "labels": [

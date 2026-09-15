@@ -2,13 +2,6 @@
   "id": "butter-chicken",
   "name": "Butter chicken",
   "description": "Caril suave de tomate, manteiga e natas, com frango marinado. Com basmati e naan.",
-  "image": "media/recipes/butter-chicken.jpg",
-  "imageCredit": {
-    "author": "Mack Male from Edmonton, AB, Canada",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Butter_Chicken_(2446546141).jpg"
-  },
   "narrative": "Caril de criança e de adulto ao mesmo tempo: quase não pica, e o que o define é a quantidade de manteiga. O frango marina em iogurte e especiarias e sela-se antes, como no tikka. O molho passa-se com a varinha depois de apurar, para ficar liso como veludo — é isso que o distingue de um caril de tomate qualquer. Manteiga e natas entram no fim, fora da fervura.",
   "servings": 4,
   "labels": [

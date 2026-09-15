@@ -2,13 +2,6 @@
   "id": "caldeirada-de-peixe",
   "name": "Caldeirada de peixe",
   "description": "Peixe, batata, cebola e pimento em camadas, cozidos sem mexer. Com pão.",
-  "image": "media/recipes/caldeirada-de-peixe.jpg",
-  "imageCredit": {
-    "author": "Rudi Kessler",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/soup-with-seafood-on-plate-23627792/"
-  },
   "narrative": "Caldeirada faz-se em camadas e não se mexe — abana-se o tacho pelas asas quando for preciso, porque a colher parte o peixe e no fim fica uma sopa de restos. Alternam-se cebola, batata em rodelas, pimento, tomate e peixe, com azeite, louro e colorau entre camadas. Um copo de vinho branco e água a meio da altura, tapado, e vinte e cinco minutos em lume brando. Come-se com pão para o caldo.",
   "servings": 4,
   "labels": [

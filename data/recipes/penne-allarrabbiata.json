@@ -2,13 +2,6 @@
   "id": "penne-allarrabbiata",
   "name": "Penne all'arrabbiata",
   "description": "Molho de tomate com alho e malagueta, picante e curto. Prato único.",
-  "image": "media/recipes/penne-allarrabbiata.jpg",
-  "imageCredit": {
-    "author": "epredator",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/53726379@N00/2186811463"
-  },
   "narrative": "Molho de vinte minutos e de três ingredientes. O alho e a malagueta vão a lume brando no azeite até perfumarem, sem corar. Junta-se o tomate pelado esmagado com as mãos e deixa-se apurar até o azeite voltar a aparecer à superfície — é esse o sinal de que está pronto, e não o relógio. A massa acaba de cozer dentro do molho com um pouco de água da cozedura.",
   "servings": 4,
   "labels": [

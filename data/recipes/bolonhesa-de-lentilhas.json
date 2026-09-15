@@ -2,13 +2,6 @@
   "id": "bolonhesa-de-lentilhas",
   "name": "Bolonhesa de lentilhas",
   "description": "Ragu de lentilhas castanhas com o mesmo método do de carne, sobre massa, com salada.",
-  "image": "media/recipes/bolonhesa-de-lentilhas.jpg",
-  "imageCredit": {
-    "author": "WzDD",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/32452843@N00/4347883715"
-  },
   "narrative": "Mesmo soffritto, mesmo vinho, mesmo tempo — muda a proteína. As lentilhas castanhas aguentam a cozedura longa sem se desfazerem, ao contrário das vermelhas, que viriam a virar puré. Um pouco de molho de soja e tomate concentrado dão a profundidade que a carne daria. Coze quarenta minutos com caldo a cobrir, e junta-se mais caldo se secar antes de as lentilhas cederem.",
   "servings": 4,
   "labels": [

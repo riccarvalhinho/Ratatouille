@@ -2,13 +2,6 @@
   "id": "coelho-guisado",
   "name": "Coelho guisado",
   "description": "Coelho estufado em vinho tinto com alho e louro, com batata cozida e arroz branco.",
-  "image": "media/recipes/coelho-guisado.jpg",
-  "imageCredit": {
-    "author": "Ken_Mayer",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/14529688@N08/5680029043"
-  },
   "narrative": "O coelho marina algumas horas em vinho tinto, alho, louro e colorau. Aloura-se bem escorrido, em lume forte, porque molhado não cora. Junta-se o refogado de cebola, a marinada e água a meio da altura, e vai tapado quarenta minutos — o coelho é carne magra e passa depressa de tenro a fibroso, por isso prova-se aos trinta. A batata coze à parte e o arroz faz-se nos últimos vinte minutos.",
   "servings": 4,
   "labels": [

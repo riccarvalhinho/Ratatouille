@@ -2,13 +2,6 @@
   "id": "bife-a-portuguesa",
   "name": "Bife à portuguesa",
   "description": "Bife com molho de mostarda, natas e presunto, com batata frita e salada de alface.",
-  "image": "media/recipes/bife-a-portuguesa.jpg",
-  "imageCredit": {
-    "author": "Nadin Sh",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/grilled-steak-on-wooden-chopping-board-13806699/"
-  },
   "narrative": "O bife sela-se em manteiga numa frigideira a fumegar e sai para descansar. No mesmo fundo aloura-se o alho, junta-se o presunto em tiras, e desglaça-se com vinho branco a raspar tudo o que ficou agarrado. Entram a mostarda e as natas, e deixa-se engrossar sem ferver com força. O bife volta só para se molhar. As batatas fritam-se antes, e a salada tempera-se à mesa.",
   "servings": 4,
   "labels": [

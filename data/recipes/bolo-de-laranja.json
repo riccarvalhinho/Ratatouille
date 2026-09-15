@@ -2,13 +2,6 @@
   "id": "bolo-de-laranja",
   "name": "Bolo de laranja",
   "description": "Bolo de tabuleiro húmido, com sumo e raspa de laranja e calda por cima.",
-  "image": "media/recipes/bolo-de-laranja.jpg",
-  "imageCredit": {
-    "author": "photoverulam",
-    "license": "BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/60652642@N00/4035901962"
-  },
   "narrative": "A raspa tira-se antes de espremer, e só a parte laranja — a parte branca é amarga. O bolo leva sumo na massa e uma calda de sumo e açúcar despejada ainda quente sobre o bolo quente, que é o que o mantém húmido dias. Pica-se com o palito antes de regar, para a calda entrar em vez de escorrer.",
   "servings": 12,
   "yield": "1 bolo de tabuleiro",

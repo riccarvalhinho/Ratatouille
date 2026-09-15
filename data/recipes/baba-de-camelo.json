@@ -2,13 +2,6 @@
   "id": "baba-de-camelo",
   "name": "Baba de camelo",
   "description": "Doce de leite condensado cozido batido com claras em castelo.",
-  "image": "media/recipes/baba-de-camelo.jpg",
-  "imageCredit": {
-    "author": "Jesus Carlon",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/dulce-de-leche-cookies-with-nestle-la-lechera-39322053/"
-  },
   "narrative": "A lata de leite condensado coze submersa em água durante três horas, e tem de estar sempre coberta — descoberta, aquece a seco e rebenta. Deixa-se arrefecer fechada antes de abrir. Depois é só envolver com as claras em castelo, de baixo para cima, para não perder o ar.",
   "servings": 6,
   "labels": [

@@ -2,13 +2,6 @@
   "id": "espetadas-de-fruta",
   "name": "Espetadas de fruta",
   "description": "Fruta em espetada com um fio de chocolate preto por cima.",
-  "image": "media/recipes/espetadas-de-fruta.jpg",
-  "imageCredit": {
-    "author": "will.wade",
-    "license": "BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/28498200@N02/4266901422"
-  },
   "narrative": "Sobremesa de festa e de mãos. A fruta enfia-se em espetadas alternando cores, e a que oxida leva limão. O chocolate derrete em banho-maria ou no micro-ondas em intervalos de vinte segundos, mexido entre eles — aquecido de uma vez, queima e fica granuloso. Deita-se em fio por cima, não se mergulha, para não ficar uma sobremesa de chocolate com fruta lá dentro.",
   "servings": 6,
   "labels": [

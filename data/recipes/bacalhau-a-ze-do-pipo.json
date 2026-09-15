@@ -2,13 +2,6 @@
   "id": "bacalhau-a-ze-do-pipo",
   "name": "Bacalhau à Zé do Pipo",
   "description": "Bacalhau em cama de cebola, coberto de puré e maionese, gratinado. Com salada.",
-  "image": "media/recipes/bacalhau-a-ze-do-pipo.jpg",
-  "imageCredit": {
-    "author": "Edita Brus",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/close-up-of-grilled-mashed-potato-topping-36040894/"
-  },
   "narrative": "Os lombos escalfam-se em leite, que os deixa macios e tira o sal que sobrou. A cebola aloura devagar em muito azeite e faz a cama. O puré leva-se ao saco de pasteleiro e faz-se um cordão à volta do bacalhau, para segurar a maionese no centro. O forno é curto e forte — a maionese tem de dourar sem talhar, e isso são dez a quinze minutos, não meia hora.",
   "servings": 4,
   "labels": [

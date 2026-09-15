@@ -2,13 +2,6 @@
   "id": "gelatina-de-fruta-natural",
   "name": "Gelatina de fruta natural",
   "description": "Gelatina feita com sumo de fruta e pedaços, sem pó de pacote.",
-  "image": "media/recipes/gelatina-de-fruta-natural.jpg",
-  "imageCredit": {
-    "author": "Pixabay",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/red-and-yellow-vitamin-candies-69802/"
-  },
   "narrative": "Feita com folhas de gelatina e sumo de fruta a sério, não com pó de sabor. As folhas demolham em água fria cinco minutos e espremem-se, e dissolvem-se em apenas um pouco de sumo aquecido, que depois se junta ao resto frio — aquecer o sumo todo mata-lhe o sabor. Ananás e kiwi crus não presam, e por isso não entram.",
   "servings": 6,
   "labels": [

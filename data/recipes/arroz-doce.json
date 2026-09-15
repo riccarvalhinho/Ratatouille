@@ -2,13 +2,6 @@
   "id": "arroz-doce",
   "name": "Arroz doce",
   "description": "Arroz cozido em leite com casca de limão, ligado com gemas, e canela por cima.",
-  "image": "media/recipes/arroz-doce.jpg",
-  "imageCredit": {
-    "author": "Yasin Onuş",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "sourceUrl": "https://www.pexels.com/photo/traditional-turkish-rice-pudding-in-bursa-37329608/"
-  },
   "narrative": "O arroz coze primeiro em água até a beber toda, e só então entra o leite quente — leite desde o início e o arroz nunca abre. Mexe-se com frequência nos últimos minutos, porque é aí que agarra. O açúcar entra tarde, que atrasa a cozedura se entrar cedo, e as gemas ligam-se fora do lume com um pouco do arroz quente antes de voltarem ao tacho, senão talham.",
   "servings": 8,
   "labels": [
