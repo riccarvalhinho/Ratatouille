@@ -2,13 +2,6 @@
   "id": "ananas-grelhado",
   "name": "Ananás grelhado",
   "description": "Rodelas de ananás na grelha com canela e lima, caramelizadas pelo próprio açúcar.",
-  "image": "media/recipes/ananas-grelhado.jpg",
-  "imageCredit": {
-    "author": "J Doll",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancho_Lentil_Soup_With_Grilled_Pineapple_(140491741).jpeg"
-  },
   "narrative": "O ananás tem açúcar que chegue para caramelizar sozinho: a grelha tem de estar muito quente e as rodelas não se mexem até ganharem marcas escuras. Grossas de dois dedos, senão secam. A lima entra depois da grelha e não antes, porque o sumo impede as marcas de se formarem.",
   "servings": 4,
   "labels": [

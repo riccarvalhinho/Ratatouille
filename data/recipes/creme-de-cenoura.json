@@ -2,13 +2,6 @@
   "id": "creme-de-cenoura",
   "name": "Creme de cenoura",
   "description": "Creme de tacho com cenoura, batata e coentros, sem natas.",
-  "image": "media/recipes/creme-de-cenoura.jpg",
-  "imageCredit": {
-    "author": "jules / stone soup",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrot_soup_spoon.jpg"
-  },
   "narrative": "Cenoura, batata e cebola cozem juntas em caldo até se desfazerem. A batata é que dá a textura cremosa — sem natas e sem farinha. Passa-se com a varinha até ficar aveludado e prova-se o sal no fim, porque o caldo já traz o dele. Coentros picados por cima e um fio de azeite.",
   "servings": 6,
   "labels": [

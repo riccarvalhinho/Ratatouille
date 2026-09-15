@@ -2,13 +2,6 @@
   "id": "sopa-de-lentilhas-a-turca",
   "name": "Sopa de lentilhas à turca",
   "description": "Lentilha vermelha desfeita com cominhos, rematada com manteiga de colorau e limão.",
-  "image": "media/recipes/sopa-de-lentilhas-a-turca.jpg",
-  "imageCredit": {
-    "author": "E4024",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_lentil_soup_from_Turkey.jpg"
-  },
   "narrative": "A lentilha vermelha desfaz-se sozinha em vinte minutos e é isso que se quer: uma sopa lisa e não um caldo com lentilhas. O remate é o que a faz — manteiga derretida com colorau e hortelã seca, despejada por cima no prato. O limão não é opcional: sem ele a sopa é plana, e com ele fica outra coisa.",
   "servings": 5,
   "labels": [

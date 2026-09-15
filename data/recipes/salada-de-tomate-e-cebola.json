@@ -2,13 +2,6 @@
   "id": "salada-de-tomate-e-cebola",
   "name": "Salada de tomate e cebola",
   "description": "Tomate maduro às rodelas com cebola, orégãos e azeite. O acompanhamento dos grelhados.",
-  "image": "media/recipes/salada-de-tomate-e-cebola.jpg",
-  "imageCredit": {
-    "author": "Fatimahope",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_onion_salad.jpg"
-  },
   "narrative": "Depende inteiramente do tomate: maduro, de época, e nunca do frigorífico, porque o frio mata-lhe o aroma e não volta. Salga-se o tomate cinco minutos antes de temperar, para largar um pouco de água e concentrar. A cebola fica em água fria dez minutos se for muito forte.",
   "servings": 4,
   "labels": [

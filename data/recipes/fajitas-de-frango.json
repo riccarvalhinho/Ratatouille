@@ -2,13 +2,6 @@
   "id": "fajitas-de-frango",
   "name": "Fajitas de frango",
   "description": "Frango e pimentos salteados em lume forte, com tortilhas, arroz e feijão.",
-  "image": "media/recipes/fajitas-de-frango.jpg",
-  "imageCredit": {
-    "author": "jeffreyw",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_fajitas.jpg"
-  },
   "narrative": "O frango corta-se em tiras e marina meia hora em lima, cominhos, colorau e alho. Salteia-se em lume muito forte, aos poucos, sem mexer até ganhar cor. Os pimentos e a cebola fazem-se a seguir na mesma frigideira, e devem ficar com resistência — moles, viram legumes cozidos e o prato perde o contraste. O arroz e o feijão fazem-se antes e servem-se ao lado.",
   "servings": 4,
   "labels": [

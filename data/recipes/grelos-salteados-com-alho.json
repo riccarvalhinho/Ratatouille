@@ -2,13 +2,6 @@
   "id": "grelos-salteados-com-alho",
   "name": "Grelos salteados com alho",
   "description": "Grelos escaldados e salteados em azeite com alho laminado. Cinco minutos.",
-  "image": "media/recipes/grelos-salteados-com-alho.jpg",
-  "imageCredit": {
-    "author": "T.Tseng",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broccoli_rabe,_cilantro,_soy_(27481272236).jpg"
-  },
   "narrative": "Escaldam-se dois minutos em água a ferver bem salgada e passam logo por água fria — é isso que lhes fixa o verde e tira o amargo a mais. Espremem-se e saltam-se em azeite com alho laminado, que não pode queimar. O limão no fim é opcional mas faz a diferença.",
   "servings": 4,
   "labels": [

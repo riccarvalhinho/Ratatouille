@@ -2,13 +2,6 @@
   "id": "arroz-de-pato",
   "name": "Arroz de pato",
   "description": "Pato cozido e desfiado, arroz cozido no seu caldo, gratinado com chouriço. Com salada de agrião.",
-  "image": "media/recipes/arroz-de-pato.jpg",
-  "imageCredit": {
-    "author": "eazytraveler",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-02-19_Duck_Rice_in_Tainan_City,_Taiwan.jpg"
-  },
   "narrative": "O pato coze primeiro em água com cebola, cenoura, chouriço e louro, e é esse caldo — gordo e saboroso — que vai cozer o arroz. Desfia-se a carne enquanto o caldo repousa, e retira-se a gordura que sobe à superfície, senão o arroz fica pesado. Monta-se em camadas no pirex: arroz, pato, arroz, e rodelas de chouriço por cima. Vai ao forno só para tostar a superfície.",
   "servings": 5,
   "labels": [

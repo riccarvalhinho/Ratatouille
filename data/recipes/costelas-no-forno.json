@@ -2,13 +2,6 @@
   "id": "costelas-no-forno",
   "name": "Costelas no forno",
   "description": "Uma banda de costelas rapada, temperada com alho e alecrim e assada horas a baixo calor, bem embrulhada em papel vegetal e alumínio. Só se abre no fim, para tostar.",
-  "image": "media/recipes/costelas-no-forno.jpg",
-  "imageCredit": {
-    "author": "Ceeseven",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roasted_Pork_Ribs_with_Fries.jpg"
-  },
   "narrative": "Pede-se ao talho uma banda de costelas rapadas. Tempera-se generosamente dos dois lados com sal, pimenta, alho esmagado, alecrim e azeite. A sogra junta ainda colorau; o sogro faz sem, e são a mesma receita. Embrulha-se — primeiro em papel vegetal, depois em folha de alumínio por fora, bem fechado em toda a volta. É o embrulho que faz a receita: fechado, o vapor fica preso e é ele que amacia a carne. Vai ao forno a 180 °C durante três a quatro horas, sem se mexer. Nos últimos dez minutos abre-se o embrulho, dobra-se o alumínio para baixo e sobe-se o forno para 220 °C com grelhador, só para a superfície tostar. Tira-se e serve-se.",
   "servings": 4,
   "needsSide": true,

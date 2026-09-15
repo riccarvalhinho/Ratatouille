@@ -2,13 +2,6 @@
   "id": "pataniscas-de-bacalhau",
   "name": "Pataniscas de bacalhau",
   "description": "Pataniscas de polme fofo com bacalhau desfiado, com arroz de feijão malandro.",
-  "image": "media/recipes/pataniscas-de-bacalhau.jpg",
-  "imageCredit": {
-    "author": "Ralbahitha",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Past%C3%A9is_de_Bacalhau_~_Salt_Cod_Fritters.jpg"
-  },
   "narrative": "O polme leva farinha, ovo, cebola, salsa e água gelada, e mexe-se o mínimo — polme batido de mais fica elástico e as pataniscas saem duras. O bacalhau desfiado envolve-se no fim. Fritam-se às colheradas em óleo bem quente, poucas de cada vez. O arroz de feijão faz-se ao mesmo tempo: refogado, feijão, arroz e mais caldo do que num arroz seco, para ficar malandro.",
   "servings": 4,
   "labels": [

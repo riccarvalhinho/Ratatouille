@@ -2,13 +2,6 @@
   "id": "tabule",
   "name": "Tabule",
   "description": "Bulgur hidratado com muita salsa, tomate, hortelã e limão.",
-  "image": "media/recipes/tabule.jpg",
-  "imageCredit": {
-    "author": "cyclonebill",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Tabbouleh.jpg"
-  },
   "narrative": "A salsa não é tempero, é o ingrediente principal — leva mais salsa do que bulgur, picada fina à faca e não na picadora, que a esmaga e a faz escurecer. O bulgur não se coze: hidrata-se em água a ferver, tapado, e solta-se com o garfo. Tempera-se e descansa meia hora antes de comer.",
   "servings": 4,
   "labels": [

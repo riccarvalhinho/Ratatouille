@@ -2,13 +2,6 @@
   "id": "paella",
   "name": "Paella",
   "description": "Arroz cozido no caldo sem se mexer, com frango, camarão e mexilhão. Prato único.",
-  "image": "media/recipes/paella.jpg",
-  "imageCredit": {
-    "author": "Wilfredor",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paella_de_fruit_de_mer.jpg"
-  },
   "narrative": "A regra da paella é uma só: depois de o caldo entrar, não se mexe mais. É esse sossego que forma a crosta tostada no fundo, que é a melhor parte e não um acidente. O frango aloura primeiro, depois o sofrito de cebola, alho, pimento e tomate, e o arroz torra dentro dele. O caldo entra quente, com o açafrão, e o marisco arruma-se por cima a meio da cozedura. Repousa cinco minutos tapada antes de servir.",
   "servings": 5,
   "labels": [

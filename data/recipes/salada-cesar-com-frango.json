@@ -2,13 +2,6 @@
   "id": "salada-cesar-com-frango",
   "name": "Salada César com frango",
   "description": "Alface romana, croutons, parmesão e molho cremoso de mostarda e limão, com frango grelhado.",
-  "image": "media/recipes/salada-cesar-com-frango.jpg",
-  "imageCredit": {
-    "author": "Geoff Peters from Vancouver, BC, Canada",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caesar_salad_(2).jpg"
-  },
   "narrative": "O molho faz-se com maionese, mostarda, alho, limão e parmesão, e é o que carrega a salada toda. Os croutons fazem-se de pão duro aos cubos, salteados em azeite com alho até ficarem estaladiços por fora e macios no centro. O frango grelha-se e corta-se em tiras. Junta-se tudo à última hora e envolve-se com as mãos — colheres esmagam a alface.",
   "servings": 4,
   "labels": [

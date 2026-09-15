@@ -131,8 +131,29 @@ Quando o resumo disser "N candidatas, nenhuma convincente", foi o classificador 
 falta de resultados — vale a pena uma segunda tentativa com um termo mais largo.
 
 **A atribuição tem de ficar em `imageCredit`**; sem isso a licença não é cumprida e o ecrã de
-detalhe mostra-a a quem vê a foto. E uma máquina não sabe se a fotografia mostra o prato certo:
-**confirmar a olho antes do merge.**
+detalhe mostra-a a quem vê a foto.
+
+### Olhar para a imagem antes de a commitar. Sempre.
+
+Não é uma recomendação, é o passo. **Uma sessão de Claude Code consegue ler ficheiros de imagem** —
+`Read` sobre `media/recipes/<id>.jpg` mostra a fotografia. Portanto não há desculpa para commitar
+uma foto sem a ver, e a frase "uma máquina não sabe se a fotografia mostra o prato certo", que aqui
+estava escrita, era falsa.
+
+Custou aprender: numa leva de 169 imagens do Commons e do Flickr, commitadas sem ninguém as abrir,
+o ananás grelhado ficou com uma foto de lentilhas com ketchup, a baba de camelo com uma pessoa numa
+feira, e o arroz de feijão com um prato de peixe. Todas passaram no classificador, porque o
+classificador é um `includes()` sobre o título do ficheiro — e títulos do Commons e do Flickr são
+texto livre escrito por quem carregou.
+
+**Duas coisas a verificar a olho, e a segunda é a que passa despercebida:**
+
+1. **É o prato certo?** Não a família do prato — o prato.
+2. **A fotografia presta?** Commons e Flickr são arquivos, não bancos de fotografia de comida. Um
+   guisado fotografado dentro de uma slow cooker numa bancada com tupperwares é o prato certo e não
+   serve na mesma. **Sem imagem é melhor do que com uma má**, e a app mostra um marcador neutro.
+
+Se forem muitas para olhar uma a uma, são muitas para commitar.
 
 Ficar sem imagem é resultado aceitável — a app mostra um marcador. Não vale a pena forçar nem
 inventar.

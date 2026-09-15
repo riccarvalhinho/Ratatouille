@@ -2,13 +2,6 @@
   "id": "pasteis-de-nata",
   "name": "Pastéis de nata",
   "description": "Massa folhada enrolada e creme de ovos, cozidos em forno muito quente.",
-  "image": "media/recipes/pasteis-de-nata.jpg",
-  "imageCredit": {
-    "author": "Addshore",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pastel_de_nata,_Vila_do_conde,_2022.jpg"
-  },
   "narrative": "O forno é a receita: o máximo que a casa der, e a grelha na posição mais alta. Abaixo de 250 graus o creme coze antes de a superfície queimar, e um pastel de nata sem manchas escuras não está feito. A massa enrola-se e corta-se em rodelas que se espalmam com o polegar molhado, subindo pelas paredes da forma. O creme enche só três quartos.",
   "servings": 12,
   "yield": "24 pastéis",

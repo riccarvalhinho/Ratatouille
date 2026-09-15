@@ -2,13 +2,6 @@
   "id": "sopa-de-ervilhas-com-hortela",
   "name": "Sopa de ervilhas com hortelã",
   "description": "Ervilhas congeladas cozidas em minutos, passadas com hortelã. Verde e rápida.",
-  "image": "media/recipes/sopa-de-ervilhas-com-hortela.jpg",
-  "imageCredit": {
-    "author": "Yonkeltron at en.wikipedia",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pea-soup-with-tortilla.jpg"
-  },
   "narrative": "Quinze minutos do princípio ao fim, e as ervilhas congeladas dão melhor resultado do que frescas fora de época. Cozem cinco minutos apenas — mais do que isso e o verde vira cinzento. A hortelã entra no momento de triturar e não antes. Serve-se com um fio de azeite e, se apetecer, uma colher de iogurte.",
   "servings": 5,
   "labels": [

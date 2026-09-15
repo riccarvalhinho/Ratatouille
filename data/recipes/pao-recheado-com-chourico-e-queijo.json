@@ -2,13 +2,6 @@
   "id": "pao-recheado-com-chourico-e-queijo",
   "name": "Pão recheado com chouriço e queijo",
   "description": "Massa de pão enrolada com chouriço e queijo, cozida em forma. Para levar.",
-  "image": "media/recipes/pao-recheado-com-chourico-e-queijo.jpg",
-  "imageCredit": {
-    "author": "Ravi Talwar",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stuffed_Bread_Pakora.JPG"
-  },
   "narrative": "A massa é a do pão caseiro. O recheio espalha-se sobre a massa aberta em retângulo, deixando uma margem livre num dos lados para selar. Enrola-se apertado e corta-se em fatias, ou coze-se inteiro na forma. O queijo tem de ficar por dentro e não à superfície, senão queima antes de a massa cozer.",
   "servings": 8,
   "yield": "1 pão recheado",

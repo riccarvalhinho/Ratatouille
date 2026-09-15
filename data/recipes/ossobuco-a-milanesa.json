@@ -2,13 +2,6 @@
   "id": "ossobuco-a-milanesa",
   "name": "Ossobuco à milanesa",
   "description": "Chambão com osso estufado devagar, com gremolata e risotto de açafrão.",
-  "image": "media/recipes/ossobuco-a-milanesa.jpg",
-  "imageCredit": {
-    "author": "stu_spivack",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ossobuco_-_stu_spivack.jpg"
-  },
   "narrative": "As rodelas de chambão atam-se à volta com fio, para não desfazerem, e passam por farinha antes de alourar. Estufam duas horas em vinho branco e caldo, tapadas, até a carne ceder à colher. O tutano do osso é a melhor parte e come-se com uma colherinha. A gremolata — casca de limão, alho e salsa picados crus — só se junta na hora de servir. O risotto faz-se nos últimos vinte minutos.",
   "servings": 4,
   "labels": [

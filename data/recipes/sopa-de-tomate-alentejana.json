@@ -2,13 +2,6 @@
   "id": "sopa-de-tomate-alentejana",
   "name": "Sopa de tomate alentejana",
   "description": "Tomate refogado com alho e coentros, pão dentro e ovo escalfado por cima.",
-  "image": "media/recipes/sopa-de-tomate-alentejana.jpg",
-  "imageCredit": {
-    "author": "William Stadtwald Demchick",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_soup_and_grilled_cheese.JPG"
-  },
   "narrative": "O refogado é longo: cebola e alho em azeite até amolecerem, tomate maduro ralado a apurar vinte minutos até perder a água e a acidez. Junta-se água a ferver e deixa-se ferver mais dez. Os ovos escalfam-se dentro da própria sopa, em covas abertas com a colher. O pão vai no fundo do prato e a sopa por cima — dentro do tacho, desfaz-se.",
   "servings": 4,
   "labels": [

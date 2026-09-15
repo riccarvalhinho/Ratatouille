@@ -2,13 +2,6 @@
   "id": "broa-de-milho",
   "name": "Broa de milho",
   "description": "Pão de farinha de milho escaldada com trigo, denso e de côdea grossa.",
-  "image": "media/recipes/broa-de-milho.jpg",
-  "imageCredit": {
-    "author": "Wheeler Cowperthwaite",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corn_Bread_1A.jpg"
-  },
   "narrative": "A farinha de milho escalda-se com água a ferver e tem de arrefecer antes de o fermento entrar — quente, mata-o e a broa não levanta. A massa é pesada e não fica elástica como a de trigo; amassa-se o que der. A levedação é mais lenta, duas horas, e a broa coze em forno forte.",
   "servings": 12,
   "yield": "1 broa de 1 kg",

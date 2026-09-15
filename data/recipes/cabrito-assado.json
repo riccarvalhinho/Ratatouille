@@ -2,13 +2,6 @@
   "id": "cabrito-assado",
   "name": "Cabrito assado",
   "description": "Cabrito marinado em vinho e alho, assado devagar, com batata e arroz de forno.",
-  "image": "media/recipes/cabrito-assado.jpg",
-  "imageCredit": {
-    "author": "Charles Haynes",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghanaian_Roast_Goat_cuisine_dish_food.jpg"
-  },
   "narrative": "O cabrito marina de véspera em vinho branco, alho, colorau e louro — é carne com sabor forte e a marinada arredonda-o. Assa tapado duas horas a 170 graus e destapa-se para a última meia hora. O arroz de forno faz-se à parte, com o caldo da própria assadeira, e vai ao forno ao mesmo tempo que as batatas, no calor que sobra.",
   "servings": 6,
   "labels": [

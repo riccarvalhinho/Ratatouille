@@ -2,13 +2,6 @@
   "id": "lasanha-de-carne",
   "name": "Lasanha de carne",
   "description": "Camadas de ragu, bechamel e placas de massa, gratinadas. Com salada verde.",
-  "image": "media/recipes/lasanha-de-carne.jpg",
-  "imageCredit": {
-    "author": "jules / stonesoup",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lasagne_-_stonesoup.jpg"
-  },
   "narrative": "Duas preparações que se fazem em paralelo: o ragu de carne, que quer uma hora, e o bechamel, que quer dez minutos e atenção. Monta-se sempre a começar por uma camada fina de molho no fundo, para a primeira placa não colar, e a acabar em bechamel e queijo. Repousa dez minutos fora do forno antes de cortar — cortada a sair, escorrega toda no prato.",
   "servings": 6,
   "labels": [

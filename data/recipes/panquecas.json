@@ -2,13 +2,6 @@
   "id": "panquecas",
   "name": "Panquecas",
   "description": "Panquecas fofas de frigideira, com mel ou fruta. Pequeno-almoço de fim de semana.",
-  "image": "media/recipes/panquecas.jpg",
-  "imageCredit": {
-    "author": "Ian Cv",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pancakes_(62621545).jpeg"
-  },
   "narrative": "A massa mexe-se o mínimo e fica grumosa de propósito — mexida até ficar lisa, sai borracha. Repousa dez minutos antes de ir à frigideira. A frigideira é de lume médio e quase sem gordura, e viram-se quando aparecem bolhas à superfície que rebentam e não voltam a fechar. A primeira sai sempre mal; é a que calibra o lume.",
   "servings": 4,
   "yield": "12 panquecas",

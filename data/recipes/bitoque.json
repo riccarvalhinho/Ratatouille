@@ -2,13 +2,6 @@
   "id": "bitoque",
   "name": "Bitoque",
   "description": "Bife fino frito em manteiga e alho, ovo estrelado por cima, batata frita e arroz ao lado. O molho nasce na frigideira do bife.",
-  "image": "media/recipes/bitoque.jpg",
-  "imageCredit": {
-    "author": "Glen Edelson from ATLANTA, USA",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steak_and_fries_(2378020440).jpg"
-  },
   "narrative": "O bitoque é prato de casa e de tasca, e a dificuldade não está em nenhum dos componentes — está na ordem. O arroz e a batata demoram; o bife faz-se em dois minutos e o ovo no fim. Começa-se por pôr o arroz ao lume, fritam-se as batatas enquanto ele coze, e só depois se aquece a frigideira do bife. Selado o bife e retirado para descansar, faz-se o molho no mesmo fundo com alho, manteiga e um golo de vinho branco a raspar o que ficou agarrado. Os ovos estrelam-se à parte, com a gema mole, e monta-se o prato com tudo ao mesmo tempo quente.",
   "servings": 2,
   "labels": [

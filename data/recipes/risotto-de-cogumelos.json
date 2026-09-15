@@ -2,13 +2,6 @@
   "id": "risotto-de-cogumelos",
   "name": "Risotto de cogumelos",
   "description": "Arroz arbóreo cozido em caldo, concha a concha, com cogumelos e parmesão.",
-  "image": "media/recipes/risotto-de-cogumelos.jpg",
-  "imageCredit": {
-    "author": "Katrin Gilger",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mushroom_Risotto_(4790048714).jpg"
-  },
   "narrative": "Risotto é vinte minutos de mexer e não tem atalho. O caldo tem de estar quente ao lado — caldo frio interrompe a cozedura e o arroz fica duro por fora e cru no meio. Os cogumelos saltam-se primeiro à parte, em lume forte, para não largarem água dentro do arroz. O arroz torra dois minutos no refogado, leva o vinho branco, e depois é caldo concha a concha até ceder. Fora do lume entram a manteiga e o parmesão.",
   "servings": 4,
   "labels": [

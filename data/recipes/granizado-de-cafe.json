@@ -2,13 +2,6 @@
   "id": "granizado-de-cafe",
   "name": "Granizado de café",
   "description": "Café forte congelado e raspado, sem açúcar adicionado.",
-  "image": "media/recipes/granizado-de-cafe.jpg",
-  "imageCredit": {
-    "author": "steveilott",
-    "license": "BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/8057065@N04/9246276991"
-  },
   "narrative": "Faz-se com café bem forte e ainda quente, para o açúcar se dissolver se se usar — mas a graça é não levar nenhum, e deixar o amargo do café à vista. Congela em camada fina e raspa-se de hora a hora. Serve-se em copos frios, e quem quiser junta uma colher de iogurte batido por cima.",
   "servings": 4,
   "labels": [

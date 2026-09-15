@@ -2,13 +2,6 @@
   "id": "mousse-de-chocolate",
   "name": "Mousse de chocolate",
   "description": "Chocolate preto, gemas e claras em castelo. Sem natas e sem manteiga.",
-  "image": "media/recipes/mousse-de-chocolate.jpg",
-  "imageCredit": {
-    "author": "jules / stonesoup",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_mousse_-_stonesoup.jpg"
-  },
   "narrative": "Chocolate de boa qualidade e nada mais a esconder-se atrás. Derrete-se em banho-maria ou no micro-ondas aos vinte segundos, e deixa-se arrefecer até estar morno — quente, cozinha as gemas; frio, endurece e faz grãos ao envolver. As claras batem-se em castelo firme e envolvem-se em três vezes, de baixo para cima. Quatro horas no frio, no mínimo.",
   "servings": 6,
   "labels": [

@@ -2,13 +2,6 @@
   "id": "frango-na-pucara",
   "name": "Frango na púcara",
   "description": "Frango estufado em vinho do Porto com cogumelos e presunto, com arroz branco e batata palha.",
-  "image": "media/recipes/frango-na-pucara.jpg",
-  "imageCredit": {
-    "author": "Judgefloro",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0647Pinto_beans_chicken_stew_13.jpg"
-  },
   "narrative": "Estufado de panela tapada, e o que o define é o vinho do Porto a reduzir com o molho do próprio frango. O frango aloura-se aos pedaços, tira-se, e no mesmo fundo vão a cebola, o alho, o presunto e os cogumelos. Volta o frango com o Porto, o vinho branco, o tomate e a mostarda, tapa-se, e ficam quarenta minutos em lume brando. Destapa-se no fim para o molho engrossar. Serve-se com arroz branco e batata palha por cima.",
   "servings": 4,
   "labels": [

@@ -2,12 +2,6 @@
   "id": "hamburguer-caseiro",
   "name": "Hambúrguer caseiro",
   "description": "Carne picada moldada sem apertar, selada em lume forte, com batata no forno e coleslaw.",
-  "image": "media/recipes/hamburguer-caseiro.jpg",
-  "imageCredit": {
-    "author": "Renee Comet (photographer)",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheeseburger.jpg"
-  },
   "narrative": "A carne mói-se ou compra-se picada com alguma gordura, e molda-se sem apertar — carne comprimida fica um disco rijo. Tempera-se só por fora e só na altura de ir à frigideira, porque o sal misturado na carne puxa a água e muda a textura. Sela-se em lume forte sem mexer, três minutos de cada lado. O coleslaw faz-se antes e ganha em repousar. A batata assa no forno desde o princípio.",
   "servings": 4,
   "labels": [

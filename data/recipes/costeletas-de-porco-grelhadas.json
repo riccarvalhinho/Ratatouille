@@ -2,13 +2,6 @@
   "id": "costeletas-de-porco-grelhadas",
   "name": "Costeletas de porco grelhadas",
   "description": "Costeletas temperadas com alho e limão, grelhadas, com arroz de tomate e salada.",
-  "image": "media/recipes/costeletas-de-porco-grelhadas.jpg",
-  "imageCredit": {
-    "author": "Roderick Suñaz Sumalinog",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_pork_chops.jpg"
-  },
   "narrative": "As costeletas temperam-se com alho, limão, sal e pimenta e descansam meia hora fora do frigorífico — carne fria encolhe na grelha. O arroz de tomate faz-se primeiro, porque leva vinte minutos: refogado de cebola e alho, tomate a desfazer-se, arroz e água a ferver. As costeletas grelham-se em lume forte, três a quatro minutos de cada lado, e descansam antes de ir para a mesa. A salada tempera-se à última.",
   "servings": 4,
   "labels": [

@@ -2,13 +2,6 @@
   "id": "perna-de-porco-assada",
   "name": "Perna de porco assada no forno",
   "description": "Assado lento de perna de porco com alho e vinho branco, batata assada e puré de maçã.",
-  "image": "media/recipes/perna-de-porco-assada.jpg",
-  "imageCredit": {
-    "author": "jeffreyw",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roast_pork_sandwich.jpg"
-  },
   "narrative": "A perna tempera-se de véspera com alho, colorau, louro e vinho branco. Vai ao forno tapada com folha de alumínio durante duas horas a 160 graus, e só depois se destapa e sobe para 200 para a pele tostar. As batatas entram no tabuleiro na última hora, a assar no molho da carne. O puré de maçã faz-se num tacho à parte, sem açúcar, e serve-se morno ou frio ao lado.",
   "servings": 6,
   "labels": [

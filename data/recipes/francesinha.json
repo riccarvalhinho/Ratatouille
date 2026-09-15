@@ -2,13 +2,6 @@
   "id": "francesinha",
   "name": "Francesinha",
   "description": "Sandes de carnes e queijo afogada em molho de cerveja e tomate, gratinada. Com batata frita.",
-  "image": "media/recipes/francesinha.jpg",
-  "imageCredit": {
-    "author": "José Raeiro",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Francesinhacaseira.JPG"
-  },
   "narrative": "O molho é a francesinha e faz-se com tempo: refogado de cebola e alho, tomate, cerveja, molho inglês, louro e piri-piri, quarenta minutos a apurar e depois passado pelo passador fino. Tem de napar a colher. A sandes monta-se com bife, linguiça, salsicha e fiambre, fecha-se, cobre-se de queijo e vai ao forno até derreter. O molho despeja-se a ferver por cima, à mesa.",
   "servings": 4,
   "labels": [

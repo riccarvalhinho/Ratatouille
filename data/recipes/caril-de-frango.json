@@ -2,13 +2,6 @@
   "id": "caril-de-frango",
   "name": "Caril de frango",
   "description": "Caril de base de cebola alourada devagar, tomate e leite de coco, com arroz basmati e uma colher de iogurte.",
-  "image": "media/recipes/caril-de-frango.jpg",
-  "imageCredit": {
-    "author": "Abhilashsnair",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_curry_Trivandrum.jpg"
-  },
   "narrative": "A cebola aloura devagar, vinte minutos em lume médio-baixo, até ficar dourada e doce — é o passo que a maior parte das receitas corta e é o que separa um caril bom de um molho amarelo. Depois o caril e os cominhos tostam um minuto no óleo quente com o alho e o gengibre, sem se descuidar porque queimam num instante. Aloura-se o frango, junta-se o tomate pelado esmagado e deixa-se apurar. A meio, põe-se o arroz basmati ao lume, lavado até a água sair clara. O caril acaba com o leite de coco, quinze minutos sem ferver com força, e o sal corrige-se no fim. Serve-se sobre o arroz, com coentros e uma colher de iogurte por cima — que não é enfeite, é o que corta o picante.",
   "servings": 4,
   "labels": [

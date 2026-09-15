@@ -2,13 +2,6 @@
   "id": "ratatouille",
   "name": "Ratatouille",
   "description": "Legumes do Sul de França estufados, cada um cozinhado à parte antes de se juntarem.",
-  "image": "media/recipes/ratatouille.jpg",
-  "imageCredit": {
-    "author": "Marcus Guimarães",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ratatouille.jpg"
-  },
   "narrative": "A diferença entre um ratatouille e um guisado de legumes é que aqui cada legume se cozinha sozinho primeiro, em azeite e em lume forte, e só depois se juntam. Dá mais uma frigideira para lavar e legumes que se distinguem no prato em vez de uma papa uniforme. A beringela vai primeiro porque bebe mais azeite. No fim juntam-se todos ao tomate e apuram vinte minutos em lume brando.",
   "servings": 4,
   "needsSide": true,

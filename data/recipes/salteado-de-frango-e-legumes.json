@@ -2,13 +2,6 @@
   "id": "salteado-de-frango-e-legumes",
   "name": "Salteado de frango e legumes",
   "description": "Stir-fry de wok com frango e legumes crocantes, molho de soja e gengibre. Com arroz.",
-  "image": "media/recipes/salteado-de-frango-e-legumes.jpg",
-  "imageCredit": {
-    "author": "Mark Pellegrini",
-    "license": "CC BY-SA 2.5",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MP_-_chicken_stir_fry_2.jpg"
-  },
   "narrative": "Stir-fry é um prato de preparação e não de cozedura: corta-se tudo antes, porque depois de o wok aquecer não há tempo para nada. O frango vai primeiro, sozinho, em lume máximo e sem mexer nos primeiros trinta segundos. Retira-se, fazem-se os legumes por ordem de dureza — cenoura, brócolos, pimento —, e junta-se tudo com o molho no fim, que reduz em menos de um minuto.",
   "servings": 4,
   "labels": [

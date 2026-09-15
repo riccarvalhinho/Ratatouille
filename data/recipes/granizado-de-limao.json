@@ -2,13 +2,6 @@
   "id": "granizado-de-limao",
   "name": "Granizado de limão",
   "description": "Gelo raspado com sumo de limão e hortelã, sem máquina.",
-  "image": "media/recipes/granizado-de-limao.jpg",
-  "imageCredit": {
-    "author": "TheGirlsNY",
-    "license": "BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/55768440@N00/10255249806"
-  },
   "narrative": "A calda faz-se com água, açúcar e casca de limão, ao lume só até o açúcar se dissolver, e arrefece antes de levar o sumo — o sumo fervido perde o aroma e ganha amargo. Congela em camada fina num tabuleiro largo, e raspa-se com o garfo de hora a hora, três ou quatro vezes, até estar tudo em cristais soltos.",
   "servings": 4,
   "labels": [

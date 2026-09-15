@@ -2,13 +2,6 @@
   "id": "pure-de-batata",
   "name": "Puré de batata",
   "description": "Batata esmagada quente com manteiga e leite quente, sem máquina.",
-  "image": "media/recipes/pure-de-batata.jpg",
-  "imageCredit": {
-    "author": "Missvain",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whole_Foods_mashed_potatoes_-_November_2023_-_Sarah_Stierch.jpg"
-  },
   "narrative": "Três regras: a batata esmaga-se quente, porque fria fica gomosa; a manteiga entra antes do leite, para envolver o amido e o puré não ficar elástico; e o leite entra quente, porque leite frio arrefece tudo e obriga a mexer mais. Nunca se usa a varinha mágica — as lâminas rebentam o amido e o resultado é cola.",
   "servings": 6,
   "labels": [

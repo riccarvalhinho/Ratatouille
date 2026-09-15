@@ -2,13 +2,6 @@
   "id": "quiche-lorraine",
   "name": "Quiche Lorraine",
   "description": "Tarte salgada de bacon e natas em massa quebrada, com salada verde.",
-  "image": "media/recipes/quiche-lorraine.jpg",
-  "imageCredit": {
-    "author": "Tamorlan",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quiche_Lorraine-2009.jpg"
-  },
   "narrative": "A massa coze primeiro sozinha, com pesos por cima, vinte minutos — sem essa cozedura em branco o fundo fica cru e mole debaixo do recheio. O bacon tosta-se e escorre-se da gordura. O recheio é ovos, natas, leite e noz-moscada, batidos só até ligar, sem espuma. Coze a 180 graus até o centro abanar como gelatina e não como líquido, e ganha corpo ao arrefecer.",
   "servings": 6,
   "labels": [

@@ -2,13 +2,6 @@
   "id": "pad-thai",
   "name": "Pad thai",
   "description": "Noodles de arroz salteados em molho de tamarindo, com ovo, tofu e amendoim.",
-  "image": "media/recipes/pad-thai.jpg",
-  "imageCredit": {
-    "author": "Stu Spivak",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pad_thai_mound.jpg"
-  },
   "narrative": "O molho de tamarindo, molho de peixe e açúcar mistura-se antes e é o prato inteiro: azedo, salgado e doce ao mesmo tempo. Os noodles de arroz não se cozem, demolham-se em água quente até ficarem flexíveis mas ainda firmes, porque acabam de cozinhar no wok. Tudo o resto é questão de ordem e de lume máximo: tofu, ovo, noodles, molho, e os rebentos e amendoim fora do lume.",
   "servings": 4,
   "labels": [

@@ -2,13 +2,6 @@
   "id": "minestrone",
   "name": "Minestrone",
   "description": "Sopa italiana de legumes com feijão encarnado e massa curta cozida no próprio caldo, servida com parmesão e manjericão.",
-  "image": "media/recipes/minestrone.jpg",
-  "imageCredit": {
-    "author": "Katrin Morenz from Aachen, Deutschland",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg"
-  },
   "narrative": "Começa no soffritto: cebola, cenoura e aipo em cubos pequenos, dez minutos no azeite em lume brando até amolecerem sem ganhar cor. É a base e não se acelera. Junta-se o tomate pelado esmagado, o alho, o louro, a batata em cubos e a água, e deixa-se ferver brandamente vinte minutos. A courgette e o feijão entram só depois — postos antes, a courgette desfaz-se e o feijão parte. A massa coze na própria sopa, que é o que a engrossa. Fora do lume, manjericão rasgado à mão e parmesão ralado por cima de cada prato.",
   "servings": 6,
   "labels": [

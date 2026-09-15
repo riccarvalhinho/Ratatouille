@@ -2,13 +2,6 @@
   "id": "pernil-de-borrego-no-forno",
   "name": "Pernil de borrego no forno",
   "description": "Perna de borrego com alho e alecrim, assada devagar sobre batata e legumes.",
-  "image": "media/recipes/pernil-de-borrego-no-forno.jpg",
-  "imageCredit": {
-    "author": "CharmaineZoe's Marvelous Melange from England",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roast_Leg_of_Lamb_(32823259234).jpg"
-  },
   "narrative": "A perna pica-se com a ponta da faca e enfiam-se lascas de alho e raminhos de alecrim nos cortes, para o tempero chegar ao meio da carne e não ficar só à superfície. Assa tapada duas horas a 160 graus sobre a batata e os legumes, que cozinham no que pinga. Destapa-se meia hora para dourar. Descansa vinte minutos antes de trinchar.",
   "servings": 6,
   "labels": [

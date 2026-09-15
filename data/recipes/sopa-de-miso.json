@@ -2,12 +2,6 @@
   "id": "sopa-de-miso",
   "name": "Sopa de miso",
   "description": "Caldo de alga com tofu em cubos e cebolinho. Dez minutos.",
-  "image": "media/recipes/sopa-de-miso.jpg",
-  "imageCredit": {
-    "author": "ish-ka",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miso_Soup.jpg"
-  },
   "narrative": "A única regra a sério: o miso nunca ferve. Dissolve-se numa concha de caldo à parte e junta-se com o lume desligado — fervido, perde o aroma e os fermentos, e fica com um sabor plano e salgado. A alga demolha cinco minutos e cresce muito, por isso usa-se pouca. O tofu entra só para aquecer.",
   "servings": 4,
   "labels": [

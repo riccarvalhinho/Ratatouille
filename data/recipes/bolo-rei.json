@@ -2,13 +2,6 @@
   "id": "bolo-rei",
   "name": "Bolo-rei",
   "description": "Massa levedada enriquecida com frutas cristalizadas e frutos secos. De Natal.",
-  "image": "media/recipes/bolo-rei.jpg",
-  "imageCredit": {
-    "author": "José Conçalves",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolo_Rei_-_Natal.JPG"
-  },
   "narrative": "A massa leva muita manteiga e ovo, e por isso leveda devagar — a primeira levedação pode levar duas a três horas conforme o frio da casa. Os frutos maceram em vinho do Porto de véspera. A manteiga entra só depois de a massa já estar formada, aos poucos, senão a massa nunca liga. A segunda levedação é já com a coroa moldada.",
   "servings": 12,
   "yield": "1 bolo-rei",

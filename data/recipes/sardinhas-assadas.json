@@ -2,13 +2,6 @@
   "id": "sardinhas-assadas",
   "name": "Sardinhas assadas",
   "description": "Sardinhas na grelha com pimento assado, batata cozida e pão.",
-  "image": "media/recipes/sardinhas-assadas.jpg",
-  "imageCredit": {
-    "author": "Yusuke Kawasaki from Tokyo, Japan",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Sardines_5.50%E2%82%AC_Marisqueira_O_Varino_Nazar%C3%A9_(3785526688).jpg"
-  },
   "narrative": "As sardinhas salgam-se generosamente uma hora antes e vão à grelha muito quente, sem se mexerem até se soltarem. Os pimentos assam inteiros na mesma grelha até a pele ficar preta, e depois fecham-se num saco ou taça tapada dez minutos — o vapor solta a pele e ela sai com os dedos. Temperam-se com alho e azeite. A batata coze com casca. O pão serve para o azeite e para a sardinha por cima.",
   "servings": 4,
   "labels": [
