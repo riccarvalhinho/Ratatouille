@@ -1,0 +1,131 @@
+{
+  "id": "sopa-de-feijao-com-hortalica",
+  "name": "Sopa de feijão com hortaliça",
+  "description": "Feijão encarnado passado com batata, e couve cortada fina a cozer no caldo.",
+  "narrative": "Metade do feijão passa-se com a batata e a cebola, e é isso que dá corpo ao caldo; a outra metade fica inteira. A couve corta-se muito fina e coze cinco a oito minutos, destapada, para não perder o verde. Uma rodela de chouriço dá o fumado sem tornar isto um prato de carne.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "leguminosas",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "varinha-magica",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "couve-lombarda",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras finas"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 60,
+      "unit": "g",
+      "note": "às rodelas",
+      "optional": true
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.8,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a base",
+      "text": "Metade do feijão, a batata, a cebola e o alho em água com sal, até a batata se desfazer.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "feijao-encarnado-cozido",
+        "batata",
+        "cebola",
+        "dente-de-alho",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Passar e devolver o feijão",
+      "text": "Triturar com o azeite dentro, e juntar o resto do feijão inteiro.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a couve",
+      "text": "Caldo a ferver, couve em tiras finas, cinco a oito minutos destapado. Chouriço escaldado, para quem quiser.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "couve-lombarda",
+        "chourico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 300,
+    "proteinGrams": 13,
+    "carbsGrams": 40,
+    "fatGrams": 10,
+    "saturatedFatGrams": 1.8,
+    "fibreGrams": 11,
+    "saltGrams": 1.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

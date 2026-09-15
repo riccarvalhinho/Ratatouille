@@ -1,0 +1,152 @@
+{
+  "id": "sopa-de-abobora-com-coco-e-caril",
+  "name": "Sopa de abóbora com coco e caril",
+  "description": "Creme de abóbora assada com leite de coco e caril, com coentros e lima.",
+  "narrative": "É o creme de abóbora com outra direção: as especiarias tostam no óleo antes de a abóbora entrar, e o leite de coco substitui parte do caldo. A abóbora assa, como no outro, porque assada concentra. Lima no fim, fora do lume. Fica melhor no dia seguinte, quando o caril assenta.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "asiatica",
+    "vegetariano",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tabuleiro-de-forno",
+    "tacho",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "abobora",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em cubos"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "caril-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "lima",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a abóbora",
+      "text": "Cubos com óleo e sal no tabuleiro, a 210 graus, até os bordos escurecerem.",
+      "durationMinutes": 35,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "abobora",
+        "oleo-alimentar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Tostar o caril",
+      "text": "Cebola, alho e gengibre no óleo, depois o caril um minuto no fundo, a mexer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "gengibre",
+        "caril-em-po"
+      ]
+    },
+    {
+      "title": "Juntar e passar",
+      "text": "Abóbora, caldo e leite de coco, cinco minutos, depois triturar até ficar liso.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "caldo-de-galinha",
+        "leite-de-coco",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Rematar com lima",
+      "text": "Sumo de lima fora do lume e coentros por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "lima",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 5,
+    "carbsGrams": 28,
+    "fatGrams": 22,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 5,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

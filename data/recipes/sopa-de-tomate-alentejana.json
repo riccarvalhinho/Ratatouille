@@ -1,0 +1,144 @@
+{
+  "id": "sopa-de-tomate-alentejana",
+  "name": "Sopa de tomate alentejana",
+  "description": "Tomate refogado com alho e coentros, pão dentro e ovo escalfado por cima.",
+  "narrative": "O refogado é longo: cebola e alho em azeite até amolecerem, tomate maduro ralado a apurar vinte minutos até perder a água e a acidez. Junta-se água a ferver e deixa-se ferver mais dez. Os ovos escalfam-se dentro da própria sopa, em covas abertas com a colher. O pão vai no fundo do prato e a sopa por cima — dentro do tacho, desfaz-se.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "legumes",
+    "ovos",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "ralador",
+    "concha"
+  ],
+  "ingredients": [
+    {
+      "ref": "tomate",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "maduros, ralados"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 300,
+      "unit": "g",
+      "note": "duro, às fatias"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar cebola e alho",
+      "text": "Em azeite, lume brando, até ficarem macios e sem cor.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar o tomate",
+      "text": "Tomate ralado com sal, vinte minutos, até perder a água e o azeite voltar à superfície.",
+      "durationMinutes": 22,
+      "ingredientRefs": [
+        "tomate",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar a água",
+      "text": "Água a ferver e dez minutos de fervura branda.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Escalfar os ovos",
+      "text": "Covas no caldo com a colher, um ovo em cada, até a clara firmar e a gema ficar mole.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Servir sobre o pão",
+      "text": "Fatias de pão no fundo dos pratos, sopa e ovo por cima, coentros a rematar.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "pao-rustico",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 16,
+    "carbsGrams": 58,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 6,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

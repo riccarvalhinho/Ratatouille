@@ -1,0 +1,116 @@
+{
+  "id": "sopa-de-agriao",
+  "name": "Sopa de agrião",
+  "description": "Creme de batata com agrião cortado, verde e com a picância da folha.",
+  "narrative": "A base é batata, cebola e alho passados com o azeite. O agrião entra no fim, cortado grosseiramente, e coze três a quatro minutos apenas — o suficiente para amolecer e não para perder nem o verde nem o travo apimentado que é a razão de o usar.",
+  "servings": 5,
+  "labels": [
+    "sopa",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "agriao",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.6,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a base",
+      "text": "Batata, cebola e alho em água com sal, até a batata se desfazer ao garfo.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cebola",
+        "dente-de-alho",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Passar com o azeite",
+      "text": "Triturar até ficar liso, com o azeite dentro.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer o agrião",
+      "text": "Caldo a ferver, agrião cortado grosso, três a quatro minutos destapado.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "agriao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 200,
+    "proteinGrams": 5,
+    "carbsGrams": 26,
+    "fatGrams": 9,
+    "saturatedFatGrams": 1.3,
+    "fibreGrams": 4,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

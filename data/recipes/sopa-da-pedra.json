@@ -1,0 +1,174 @@
+{
+  "id": "sopa-da-pedra",
+  "name": "Sopa da pedra",
+  "description": "Feijão, enchidos, batata e couve num caldo apurado. Sopa que é refeição.",
+  "narrative": "As carnes e os enchidos cozem primeiro e dão o caldo. O feijão já cozido apura lá dentro com batata, cenoura e um refogado de cebola, alho e colorau. A couve entra nos últimos dez minutos. É sopa grossa, de colher que fica de pé, e engrossa mais no dia seguinte — junta-se água a ferver se for preciso.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "leguminosas",
+    "carne",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 80
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 600,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "entremeada",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "morcela",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 500,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "couve-lombarda",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as carnes",
+      "text": "Entremeada e chouriço em água com o louro, em lume brando, até cederem. Cortar e guardar o caldo.",
+      "durationMinutes": 45,
+      "passive": true,
+      "ingredientRefs": [
+        "entremeada",
+        "chourico",
+        "agua",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Cebola, alho e colorau no azeite até amolecerem.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "colorau",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar feijão e legumes",
+      "text": "Feijão, batata, cenoura, as carnes cortadas e a morcela, com caldo a cobrir. Vinte minutos.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "feijao-encarnado-cozido",
+        "batata",
+        "cenoura",
+        "morcela",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar a couve",
+      "text": "Tiras nos últimos dez minutos. Coentros fora do lume.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "couve-lombarda",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 26,
+    "carbsGrams": 48,
+    "fatGrams": 26,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 12,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

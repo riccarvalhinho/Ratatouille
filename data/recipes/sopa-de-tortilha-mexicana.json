@@ -1,0 +1,165 @@
+{
+  "id": "sopa-de-tortilha-mexicana",
+  "name": "Sopa de tortilha mexicana",
+  "description": "Caldo de tomate e malagueta com tiras de tortilha fritas, abacate e lima.",
+  "narrative": "O caldo faz-se de tomate assado com cebola, alho e malagueta, triturado e apurado — assar em vez de refogar dá-lhe o fumado que o prato pede. As tortilhas cortam-se em tiras e fritam-se à parte, e só se põem no prato na hora de servir, senão amolecem e desaparecem. Abacate, coentros e lima a rematar.",
+  "servings": 5,
+  "labels": [
+    "sopa",
+    "legumes",
+    "mexicana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno",
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "tomate",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "tortilha-de-trigo",
+      "quantity": 6,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "abacate",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar tomate e cebola",
+      "text": "Tomate, cebola, alho e malagueta no tabuleiro com azeite, a 220 graus, até ganharem manchas escuras.",
+      "durationMinutes": 25,
+      "temperatureC": 220,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate",
+        "cebola",
+        "dente-de-alho",
+        "malagueta",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Triturar e apurar",
+      "text": "Tudo triturado no tacho com o caldo, os cominhos, sal e pimenta. Quinze minutos.",
+      "durationMinutes": 18,
+      "passive": true,
+      "ingredientRefs": [
+        "caldo-de-galinha",
+        "cominhos",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fritar as tiras de tortilha",
+      "text": "Óleo quente, poucas de cada vez, até ficarem estaladiças. Escorrer em papel e salgar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "tortilha-de-trigo",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Montar à mesa",
+      "text": "Sopa nos pratos, tiras por cima só na hora, com abacate em cubos, coentros e lima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "abacate",
+        "coentros",
+        "lima"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 360,
+    "proteinGrams": 8,
+    "carbsGrams": 38,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 8,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

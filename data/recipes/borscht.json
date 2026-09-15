@@ -1,0 +1,181 @@
+{
+  "id": "borscht",
+  "name": "Borscht",
+  "description": "Sopa de beterraba com carne e couve, servida com natas azedas e endro.",
+  "narrative": "A beterraba rala-se em vez de se cortar, para largar cor e açúcar depressa, e leva um fio de vinagre logo no início — o ácido fixa a cor, e sem ele a sopa fica castanha em vez de vermelha. A carne coze primeiro e dá o caldo. A couve entra nos últimos dez minutos. As natas azedas põem-se no prato, nunca no tacho.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "carne",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 90
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "beterraba",
+      "quantity": 600,
+      "unit": "g",
+      "note": "raladas"
+    },
+    {
+      "ref": "carne-de-vaca-para-guisar",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "couve-branca",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "batata",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "raladas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "natas-azedas",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a carne",
+      "text": "Carne em água com o louro e sal, a escumar no início, em lume brando até ceder. Guardar o caldo.",
+      "durationMinutes": 60,
+      "passive": true,
+      "ingredientRefs": [
+        "carne-de-vaca-para-guisar",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Refogar a beterraba com vinagre",
+      "text": "Cebola, cenoura e alho em azeite, depois a beterraba ralada, o concentrado e o vinagre logo a seguir.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "dente-de-alho",
+        "azeite",
+        "beterraba",
+        "tomate-concentrado",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Juntar tudo ao caldo",
+      "text": "Refogado, batata e a carne desfiada no caldo. Vinte minutos de fervura branda.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar a couve",
+      "text": "Tiras nos últimos dez minutos.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "couve-branca"
+      ]
+    },
+    {
+      "title": "Servir com natas azedas",
+      "text": "Uma colher em cada prato, nunca no tacho, com salsa por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "natas-azedas",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 26,
+    "carbsGrams": 34,
+    "fatGrams": 20,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 8,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

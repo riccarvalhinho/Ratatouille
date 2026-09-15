@@ -1,0 +1,173 @@
+{
+  "id": "harira",
+  "name": "Harira",
+  "description": "Sopa marroquina de grão, lentilha e tomate, com coentros e limão.",
+  "narrative": "Sopa espessa de dois legumes secos e muitas ervas. Leva coentros e salsa em quantidade, picados, e entram metade ao princípio e metade no fim — os primeiros dão fundo, os últimos dão frescura. Engrossa-se com farinha dissolvida em água fria, vertida em fio e a mexer, senão faz grumos. Limão à mesa.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "leguminosas",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 60
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "lentilha-castanha",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "aipo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "massa-cotovelo",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar com as especiarias",
+      "text": "Cebola e aipo em azeite, depois gengibre, curcuma, canela e pimenta meio minuto.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "aipo",
+        "azeite",
+        "gengibre",
+        "curcuma",
+        "canela-em-po",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer as lentilhas",
+      "text": "Tomate pelado, lentilhas, água, metade dos coentros e da salsa, e sal. Trinta minutos.",
+      "durationMinutes": 32,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "lentilha-castanha",
+        "agua",
+        "coentros",
+        "salsa",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar grão e massa",
+      "text": "Grão e massa, dez minutos até a massa cozer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "massa-cotovelo"
+      ]
+    },
+    {
+      "title": "Engrossar e rematar",
+      "text": "Farinha dissolvida em água fria, em fio e a mexer, cinco minutos. Resto das ervas e limão à mesa.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 400,
+    "proteinGrams": 18,
+    "carbsGrams": 58,
+    "fatGrams": 11,
+    "saturatedFatGrams": 1.6,
+    "fibreGrams": 12,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

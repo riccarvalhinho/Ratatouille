@@ -1,0 +1,137 @@
+{
+  "id": "sopa-de-grao-com-espinafres",
+  "name": "Sopa de grão com espinafres",
+  "description": "Grão passado em parte, espinafres no fim, com ovo cozido às rodelas.",
+  "narrative": "Passa-se metade do grão com a batata para engrossar, e a outra metade fica inteira. Os espinafres entram nos últimos dois minutos, só até murcharem. O ovo cozido corta-se às rodelas e vai no prato — é o que transforma isto de sopa em refeição. Um fio de azeite cru por cima é obrigatório.",
+  "servings": 5,
+  "labels": [
+    "sopa",
+    "leguminosas",
+    "legumes",
+    "ovos",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.6,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a base",
+      "text": "Metade do grão, a batata, a cebola e o alho em água com sal, até a batata se desfazer.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "batata",
+        "cebola",
+        "dente-de-alho",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer os ovos",
+      "text": "Dez minutos em água a ferver, à parte. Descascar e cortar às rodelas.",
+      "durationMinutes": 12,
+      "passive": true,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Passar e devolver o grão",
+      "text": "Triturar com o azeite, e juntar o resto do grão inteiro.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar os espinafres",
+      "text": "Dois minutos, só até murcharem. Ovo às rodelas no prato e azeite cru por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "espinafres"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 16,
+    "carbsGrams": 38,
+    "fatGrams": 14,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 10,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

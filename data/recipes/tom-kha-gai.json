@@ -1,0 +1,149 @@
+{
+  "id": "tom-kha-gai",
+  "name": "Tom kha gai",
+  "description": "Sopa tailandesa de leite de coco com frango, gengibre e lima. Azeda, salgada e cremosa.",
+  "narrative": "O caldo de coco nunca deve ferver com força, ou a gordura separa-se. A erva-príncipe e o gengibre esmagam-se com as costas da faca e cozem inteiros, para dar aroma e saírem no fim — não se comem. O sumo de lima entra sempre fora do lume, porque cozido fica amargo. Prova-se no fim e acerta-se o equilíbrio entre lima, molho de peixe e açúcar.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "aves",
+    "asiatica",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "erva-principe",
+      "quantity": 2,
+      "unit": "un",
+      "note": "esmagada"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 40,
+      "unit": "g",
+      "note": "em lâminas"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 200,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "molho-de-peixe",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Infusionar o caldo",
+      "text": "Caldo e leite de coco em lume brando com a erva-príncipe e o gengibre esmagados, dez minutos sem ferver com força.",
+      "durationMinutes": 12,
+      "passive": true,
+      "ingredientRefs": [
+        "caldo-de-galinha",
+        "leite-de-coco",
+        "erva-principe",
+        "gengibre"
+      ]
+    },
+    {
+      "title": "Cozer o frango e os cogumelos",
+      "text": "Tiras e cogumelos dentro, oito minutos em lume brando.",
+      "durationMinutes": 9,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "cogumelos"
+      ]
+    },
+    {
+      "title": "Temperar fora do lume",
+      "text": "Lume desligado: molho de peixe, sumo de lima, açúcar e malagueta. Provar e acertar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "molho-de-peixe",
+        "lima",
+        "acucar",
+        "malagueta",
+        "sal"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Coentros por cima, e a erva-príncipe e o gengibre retirados ou deixados de lado no prato.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 28,
+    "carbsGrams": 16,
+    "fatGrams": 38,
+    "saturatedFatGrams": 30,
+    "fibreGrams": 2,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

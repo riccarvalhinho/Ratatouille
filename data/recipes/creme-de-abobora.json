@@ -1,0 +1,119 @@
+{
+  "id": "creme-de-abobora",
+  "name": "Creme de abóbora",
+  "description": "Creme suave de abóbora assada, com sementes torradas por cima.",
+  "narrative": "A abóbora assa em vez de cozer — assada, a água evapora e o açúcar caramela, e o creme fica com o dobro do sabor pelo mesmo trabalho. Vai ao forno em cubos com azeite até os bordos escurecerem. Depois é só juntar ao refogado de cebola com caldo e passar. As sementes da própria abóbora lavam-se, secam-se e torram-se no forno com sal.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tabuleiro-de-forno",
+    "tacho",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "abobora",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a abóbora",
+      "text": "Cubos com azeite e sal no tabuleiro, a 210 graus, até os bordos escurecerem.",
+      "durationMinutes": 35,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "abobora",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Refogar a cebola",
+      "text": "Cebola e alho em azeite, em lume brando, até amolecerem.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Juntar e passar",
+      "text": "Abóbora assada, caldo quente, noz-moscada e pimenta, cinco minutos. Triturar até ficar liso.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "caldo-de-galinha",
+        "noz-moscada",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 240,
+    "proteinGrams": 6,
+    "carbsGrams": 28,
+    "fatGrams": 12,
+    "saturatedFatGrams": 2,
+    "fibreGrams": 5,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

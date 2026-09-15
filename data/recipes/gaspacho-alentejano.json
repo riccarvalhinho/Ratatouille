@@ -1,0 +1,151 @@
+{
+  "id": "gaspacho-alentejano",
+  "name": "Gaspacho alentejano",
+  "description": "Sopa fria de tomate, pepino e pimento, com pão e muito orégão. Sem triturar.",
+  "narrative": "O gaspacho alentejano não se tritura: corta-se tudo aos cubos pequenos, à faca, e é essa textura que o distingue do gaspacho de copo. Faz-se uma pasta de alho, sal e orégãos no almofariz, dissolve-se em azeite, vinagre e água muito fria, e verte-se sobre os legumes. Vai ao frio pelo menos duas horas, e o pão só entra no prato.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "legumes",
+    "portuguesa",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Duas horas no frigorífico antes de servir"
+    }
+  },
+  "equipment": [
+    "almofariz",
+    "taca",
+    "faca-de-chef",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "tomate",
+      "quantity": 800,
+      "unit": "g",
+      "note": "maduros, em cubos"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-verde",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada fina"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 300,
+      "unit": "g",
+      "note": "duro, em cubos"
+    },
+    {
+      "ref": "agua",
+      "quantity": 700,
+      "unit": "ml",
+      "note": "muito fria"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cortar tudo à faca",
+      "text": "Tomate, pepino, pimento e cebola em cubos pequenos e iguais. Sem triturar.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "tomate",
+        "pepino",
+        "pimento-verde",
+        "cebola"
+      ]
+    },
+    {
+      "title": "Fazer a pasta de alho",
+      "text": "Alho, sal e orégãos pisados no almofariz, dissolvidos com azeite e vinagre.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "oregaos",
+        "azeite",
+        "vinagre-de-vinho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar a água fria e arrefecer",
+      "text": "Tempero e água muito fria sobre os legumes. Pelo menos duas horas no frigorífico.",
+      "durationMinutes": 125,
+      "passive": true,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Servir com o pão",
+      "text": "Cubos de pão duro no fundo do prato e o gaspacho por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 380,
+    "proteinGrams": 9,
+    "carbsGrams": 48,
+    "fatGrams": 18,
+    "saturatedFatGrams": 2.6,
+    "fibreGrams": 6,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "sopa-de-ervilhas-com-hortela",
+  "name": "Sopa de ervilhas com hortelã",
+  "description": "Ervilhas congeladas cozidas em minutos, passadas com hortelã. Verde e rápida.",
+  "narrative": "Quinze minutos do princípio ao fim, e as ervilhas congeladas dão melhor resultado do que frescas fora de época. Cozem cinco minutos apenas — mais do que isso e o verde vira cinzento. A hortelã entra no momento de triturar e não antes. Serve-se com um fio de azeite e, se apetecer, uma colher de iogurte.",
+  "servings": 5,
+  "labels": [
+    "sopa",
+    "legumes",
+    "vegetariano",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "ervilhas-congeladas",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "alho-frances",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amolecer a cebola",
+      "text": "Cebola e alho-francês em azeite, em lume brando, até amolecerem sem cor.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "alho-frances",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Cozer as ervilhas",
+      "text": "Caldo a ferver e as ervilhas, cinco minutos e não mais.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ervilhas-congeladas",
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Passar com a hortelã",
+      "text": "Hortelã dentro na altura de triturar, com sumo de limão, sal e pimenta.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "hortela",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 240,
+    "proteinGrams": 12,
+    "carbsGrams": 28,
+    "fatGrams": 10,
+    "saturatedFatGrams": 1.5,
+    "fibreGrams": 9,
+    "saltGrams": 1.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

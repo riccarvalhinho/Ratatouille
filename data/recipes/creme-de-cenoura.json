@@ -1,0 +1,122 @@
+{
+  "id": "creme-de-cenoura",
+  "name": "Creme de cenoura",
+  "description": "Creme de tacho com cenoura, batata e coentros, sem natas.",
+  "narrative": "Cenoura, batata e cebola cozem juntas em caldo até se desfazerem. A batata é que dá a textura cremosa — sem natas e sem farinha. Passa-se com a varinha até ficar aveludado e prova-se o sal no fim, porque o caldo já traz o dele. Coentros picados por cima e um fio de azeite.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "varinha-magica",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "cenoura",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "batata",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.4,
+      "unit": "l"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar a cebola",
+      "text": "Cebola e alho em azeite, em lume brando, até amolecerem sem cor.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Cozer os legumes",
+      "text": "Cenoura, batata e o caldo, até tudo se desfazer ao garfo.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "cenoura",
+        "batata",
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Passar e temperar",
+      "text": "Triturar até ficar aveludado, e só então provar o sal. Coentros e azeite por cima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "coentros",
+        "sal",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 200,
+    "proteinGrams": 4,
+    "carbsGrams": 28,
+    "fatGrams": 8,
+    "saturatedFatGrams": 1.2,
+    "fibreGrams": 6,
+    "saltGrams": 1.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

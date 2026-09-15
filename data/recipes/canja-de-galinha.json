@@ -1,0 +1,133 @@
+{
+  "id": "canja-de-galinha",
+  "name": "Canja de galinha",
+  "description": "Caldo de galinha com massa, limão e hortelã. A sopa dos dias ruins.",
+  "narrative": "A galinha coze devagar, nunca aos borbotões, e escuma-se a espuma dos primeiros minutos, que é o que deixa o caldo turvo. Uma hora em lume brando com cebola, cenoura e louro. Coa-se, desfia-se a carne, e a massa coze no caldo limpo. Limão e hortelã entram no prato e não no tacho — fervidos, ficam amargos.",
+  "servings": 5,
+  "labels": [
+    "sopa",
+    "aves",
+    "portuguesa",
+    "conforto",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 75
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "coador",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "galinha",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "aos pedaços"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "massa-cotovelo",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a galinha",
+      "text": "Pedaços em água fria com cebola, cenoura, louro e sal, a escumar a espuma dos primeiros minutos. Fervura branda, uma hora.",
+      "durationMinutes": 65,
+      "passive": true,
+      "ingredientRefs": [
+        "galinha",
+        "cebola",
+        "cenoura",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Coar e desfiar",
+      "text": "Coar o caldo, tirar peles e ossos, desfiar a carne.",
+      "durationMinutes": 12
+    },
+    {
+      "title": "Cozer a massa no caldo",
+      "text": "Massa no caldo limpo a ferver, o tempo do pacote, com a carne desfiada.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "massa-cotovelo",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Servir com limão e hortelã",
+      "text": "No prato, nunca no tacho: sumo de limão e folhas de hortelã.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "limao",
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 28,
+    "carbsGrams": 26,
+    "fatGrams": 8,
+    "saturatedFatGrams": 2,
+    "fibreGrams": 2,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

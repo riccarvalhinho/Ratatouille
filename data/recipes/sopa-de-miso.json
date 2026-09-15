@@ -1,0 +1,106 @@
+{
+  "id": "sopa-de-miso",
+  "name": "Sopa de miso",
+  "description": "Caldo de alga com tofu em cubos e cebolinho. Dez minutos.",
+  "narrative": "A única regra a sério: o miso nunca ferve. Dissolve-se numa concha de caldo à parte e junta-se com o lume desligado — fervido, perde o aroma e os fermentos, e fica com um sabor plano e salgado. A alga demolha cinco minutos e cresce muito, por isso usa-se pouca. O tofu entra só para aquecer.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "asiatica",
+    "vegetariano",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "concha",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "pasta-de-miso",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "alga-wakame",
+      "quantity": 10,
+      "unit": "g",
+      "note": "seca"
+    },
+    {
+      "ref": "tofu",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 1,
+      "unit": "ccha",
+      "optional": true
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.2,
+      "unit": "l"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Demolhar a alga",
+      "text": "Cinco minutos em água fria, até crescer e ficar macia. Escorrer.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "alga-wakame"
+      ]
+    },
+    {
+      "title": "Aquecer o caldo",
+      "text": "Água ao lume até quase ferver, com a alga e o tofu em cubos, dois minutos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "agua",
+        "tofu"
+      ]
+    },
+    {
+      "title": "Dissolver o miso fora do lume",
+      "text": "Lume desligado, miso dissolvido numa concha de caldo à parte e devolvido ao tacho. Cebolinho e soja a rematar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "pasta-de-miso",
+        "cebolinho",
+        "molho-de-soja"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 90,
+    "proteinGrams": 7,
+    "carbsGrams": 6,
+    "fatGrams": 3.5,
+    "saturatedFatGrams": 0.6,
+    "fibreGrams": 1,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

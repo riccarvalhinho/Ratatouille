@@ -1,0 +1,122 @@
+{
+  "id": "acorda-alentejana",
+  "name": "Açorda alentejana",
+  "description": "Pasta de alho e coentros escaldada com água a ferver, sobre pão, com ovo escalfado.",
+  "narrative": "Não leva refogado nem tacho a apurar: a pasta de alho, coentros e sal faz-se no almofariz, põe-se no fundo da terrina com o azeite, e escalda-se com a água a ferver onde escalfaram os ovos. O pão duro fica dentro a amolecer. Se a água não estiver mesmo a ferver, o alho fica cru e agressivo em vez de perfumado.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "ovos",
+    "portuguesa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "almofariz",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "pao-rustico",
+      "quantity": 400,
+      "unit": "g",
+      "note": "duro, às fatias"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "ccha",
+      "optional": true
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a pasta no almofariz",
+      "text": "Alho, coentros e sal grosso pisados até virarem pasta, com o azeite envolvido.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "coentros",
+        "sal",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Escalfar os ovos",
+      "text": "Água a ferver com um pouco de vinagre, ovos escalfados três minutos, retirados com a escumadeira.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ovo",
+        "agua",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Escaldar a pasta",
+      "text": "Pasta no fundo da terrina, água a ferver por cima, a mexer.",
+      "durationMinutes": 3
+    },
+    {
+      "title": "Juntar o pão e servir",
+      "text": "Fatias de pão duro dentro a amolecer, ovo escalfado por cima de cada prato.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 16,
+    "carbsGrams": 58,
+    "fatGrams": 24,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 5,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

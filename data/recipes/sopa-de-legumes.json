@@ -1,0 +1,117 @@
+{
+  "id": "sopa-de-legumes",
+  "name": "Sopa de legumes",
+  "description": "A sopa de todos os dias: batata, cenoura, courgette e feijão-verde, passada.",
+  "narrative": "Tudo ao mesmo tempo num tacho com água e sal, até a batata se desfazer. Passa-se com a varinha até ficar lisa, com o azeite dentro, e rectifica-se a espessura com água a ferver. Quem gostar de encontrar pedaços guarda um pouco dos legumes antes de triturar e devolve-os no fim. Congela bem em doses individuais.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "varinha-magica",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "alho-frances",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "feijao-verde",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.8,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer os legumes",
+      "text": "Tudo em cubos no tacho com água e sal, em lume médio, até a batata se desfazer ao garfo.",
+      "durationMinutes": 28,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cenoura",
+        "courgette",
+        "cebola",
+        "alho-frances",
+        "feijao-verde",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Passar com a varinha",
+      "text": "Triturar até ficar lisa, com o azeite dentro. Água a ferver se ficar grossa de mais.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 180,
+    "proteinGrams": 5,
+    "carbsGrams": 26,
+    "fatGrams": 7,
+    "saturatedFatGrams": 1,
+    "fibreGrams": 5,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

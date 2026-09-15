@@ -1,0 +1,148 @@
+{
+  "id": "creme-de-cogumelos",
+  "name": "Creme de cogumelos",
+  "description": "Cogumelos salteados em lume forte, passados em creme com natas e pão torrado.",
+  "narrative": "Os cogumelos saltam-se primeiro em lume muito forte e aos poucos, até dourarem — postos a cozer diretamente no caldo, ficam pálidos e a sopa sabe a água de cogumelo. Guarda-se um punhado para servir por cima. O resto passa-se com a batata e o caldo, e as natas entram fora do lume. Pão torrado em cubos a rematar.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "cogumelos",
+      "quantity": 600,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "batata",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "natas",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pao-de-forma",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear os cogumelos",
+      "text": "Lume muito forte, em três levas, até dourarem. Guardar um punhado para o fim.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cogumelos",
+        "manteiga",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a batata no caldo",
+      "text": "Cebola e alho a amolecer, depois a batata e o caldo, até se desfazer.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "batata",
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Passar e juntar as natas",
+      "text": "Cogumelos dentro e triturar até ficar liso. Natas fora do lume.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "natas"
+      ]
+    },
+    {
+      "title": "Torrar o pão e servir",
+      "text": "Cubos de pão tostados na frigideira com azeite. Por cima, com os cogumelos guardados e salsa.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pao-de-forma",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 9,
+    "carbsGrams": 28,
+    "fatGrams": 19,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 4,
+    "saltGrams": 1.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

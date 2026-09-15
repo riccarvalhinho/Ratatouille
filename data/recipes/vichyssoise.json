@@ -1,0 +1,135 @@
+{
+  "id": "vichyssoise",
+  "name": "Vichyssoise",
+  "description": "Creme frio de alho-francês e batata, com natas e cebolinho.",
+  "narrative": "Serve-se frio, e é isso que muda a receita: o frio anestesia o paladar, por isso tempera-se mais do que pareceria certo quando ainda está quente. O alho-francês estufa em manteiga sem ganhar cor — corado, muda o sabor e a cor fica suja. Passa-se, coa-se por um passador fino para ficar de veludo, e vai ao frio pelo menos quatro horas.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "francesa",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no frigorífico antes de servir"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "varinha-magica",
+    "passador-fino",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "alho-frances",
+      "quantity": 4,
+      "unit": "un",
+      "note": "só a parte branca"
+    },
+    {
+      "ref": "batata",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Estufar o alho-francês",
+      "text": "Rodelas bem lavadas com a cebola em manteiga, tapadas em lume brando, até amolecerem sem ganhar cor.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "alho-frances",
+        "cebola",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Cozer a batata",
+      "text": "Batata em cubos e o caldo, até se desfazer ao garfo.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Passar e coar",
+      "text": "Triturar e passar por passador fino, para ficar aveludado. Natas envolvidas, sal e pimenta a sério.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "natas",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Arrefecer",
+      "text": "Pelo menos quatro horas no frigorífico. Cebolinho por cima à mesa.",
+      "durationMinutes": 245,
+      "passive": true,
+      "ingredientRefs": [
+        "cebolinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 7,
+    "carbsGrams": 32,
+    "fatGrams": 18,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 4,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

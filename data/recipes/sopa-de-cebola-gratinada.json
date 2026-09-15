@@ -1,0 +1,146 @@
+{
+  "id": "sopa-de-cebola-gratinada",
+  "name": "Sopa de cebola gratinada",
+  "description": "Cebola caramelizada quarenta minutos em caldo, com pão e gruyère gratinados por cima.",
+  "narrative": "A cebola quer quarenta minutos e não vinte: é o tempo que leva a passar de translúcida a castanha e doce, e é aí que a sopa se faz. Mexe-se de vez em quando e raspa-se o fundo, que é onde está a cor. Desglaça-se com vinho branco, junta-se o caldo e apura-se meia hora. Depois é pão torrado e gruyère em taças, debaixo do grelhador até borbulhar.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "francesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho",
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 80
+  },
+  "equipment": [
+    "placa",
+    "forno",
+    "tacho",
+    "taca",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "cebola",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tomilho",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "queijo-gruyere",
+      "quantity": 200,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Caramelizar a cebola",
+      "text": "Meias-luas finas em manteiga e azeite, lume médio-baixo, a mexer e a raspar o fundo, até ficarem castanhas e doces.",
+      "durationMinutes": 45,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "manteiga",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Desglaçar e apurar",
+      "text": "Vinho branco a raspar o fundo, depois o caldo, o louro e o tomilho. Meia hora de fervura branda.",
+      "durationMinutes": 32,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-branco",
+        "caldo-de-galinha",
+        "folha-de-louro",
+        "tomilho",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Torrar o pão",
+      "text": "Fatias tostadas no forno até ficarem secas.",
+      "durationMinutes": 8,
+      "temperatureC": 220,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "title": "Gratinar em taças",
+      "text": "Sopa nas taças, pão por cima e gruyère a cobrir. Debaixo do grelhador até borbulhar e dourar.",
+      "durationMinutes": 8,
+      "temperatureC": 240,
+      "ingredientRefs": [
+        "queijo-gruyere"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 20,
+    "carbsGrams": 48,
+    "fatGrams": 26,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 6,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
