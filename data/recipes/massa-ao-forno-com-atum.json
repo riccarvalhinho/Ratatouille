@@ -1,0 +1,164 @@
+{
+  "id": "massa-ao-forno-com-atum",
+  "name": "Massa ao forno com atum",
+  "description": "Penne com atum e tomate, ligado com natas e gratinado. Com salada.",
+  "narrative": "Jantar de despensa e de tabuleiro único no forno. A massa coze-se três minutos a menos do que o pacote diz, porque acaba de cozinhar dentro do molho. Faz-se um refogado rápido de cebola e alho com tomate, junta-se o atum escorrido e as natas, e envolve-se tudo com a massa num pirex. Queijo por cima e vinte minutos de forno até a superfície tostar.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "massa-e-arroz",
+    "dia-a-dia",
+    "conforto",
+    "sobras"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "panela-grande",
+    "pirex",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-penne",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "atum-em-conserva",
+      "quantity": 300,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 4,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a massa a menos",
+      "text": "Penne em água com sal, três minutos a menos do que diz o pacote. Escorrer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "massa-penne",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Cebola e alho no azeite, tomate pelado esmagado e orégãos, cinco minutos. Atum escorrido e as natas fora do lume.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "tomate-pelado",
+        "oregaos",
+        "atum-em-conserva",
+        "natas",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Gratinar",
+      "text": "Massa envolvida no molho dentro do pirex, queijo ralado a cobrir, a 200 graus até tostar.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Temperar a salada",
+      "text": "Alface rasgada com azeite, vinagre e sal, à mesa.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 42,
+    "carbsGrams": 72,
+    "fatGrams": 28,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 5,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

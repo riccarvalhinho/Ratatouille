@@ -1,0 +1,188 @@
+{
+  "id": "lasanha-de-carne",
+  "name": "Lasanha de carne",
+  "description": "Camadas de ragu, bechamel e placas de massa, gratinadas. Com salada verde.",
+  "narrative": "Duas preparações que se fazem em paralelo: o ragu de carne, que quer uma hora, e o bechamel, que quer dez minutos e atenção. Monta-se sempre a começar por uma camada fina de molho no fundo, para a primeira placa não colar, e a acabar em bechamel e queijo. Repousa dez minutos fora do forno antes de cortar — cortada a sair, escorrega toda no prato.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "massa-e-arroz",
+    "italiana",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 35,
+    "cookMinutes": 75
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "pirex",
+    "vara-de-arames",
+    "folha-de-aluminio"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "vinho-tinto",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "massa-lasanha",
+      "quantity": 12,
+      "unit": "un",
+      "note": "placas"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o ragu",
+      "text": "Cebola, cenoura e alho no azeite, carne a soltar-se, vinho tinto a evaporar, tomate pelado. Uma hora em lume brando.",
+      "durationMinutes": 60,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "dente-de-alho",
+        "azeite",
+        "carne-picada-de-vaca",
+        "vinho-tinto",
+        "tomate-pelado",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o bechamel",
+      "text": "Manteiga e farinha mexidas um minuto, leite quente aos poucos sempre a bater, noz-moscada e sal, até napar a colher.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga",
+        "farinha-de-trigo",
+        "leite",
+        "noz-moscada"
+      ]
+    },
+    {
+      "title": "Montar as camadas",
+      "text": "Molho fino no fundo do pirex, depois placas, ragu, bechamel e queijo, repetindo. Acabar em bechamel e queijo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "massa-lasanha",
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Gratinar",
+      "text": "Forno a 190 graus, tapada com alumínio os primeiros 20 minutos e destapada depois, até dourar.",
+      "durationMinutes": 45,
+      "temperatureC": 190,
+      "passive": true
+    },
+    {
+      "title": "Repousar e servir",
+      "text": "Dez minutos fora do forno antes de cortar. Salada de alface temperada ao lado.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 48,
+    "carbsGrams": 72,
+    "fatGrams": 44,
+    "saturatedFatGrams": 22,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

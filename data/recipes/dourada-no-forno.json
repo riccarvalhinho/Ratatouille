@@ -1,0 +1,144 @@
+{
+  "id": "dourada-no-forno",
+  "name": "Dourada no forno",
+  "description": "Douradas inteiras assadas sobre batata e cebola, com limão e vinho branco.",
+  "narrative": "A batata em rodelas finas e a cebola vão primeiro ao forno, vinte minutos, porque demoram mais do que o peixe. As douradas temperam-se por dentro e por fora e assentam por cima, com rodelas de limão na barriga. Rega-se com vinho branco e azeite e assa mais vinte e cinco minutos. O peixe está quando a espinha dorsal se solta ao puxar — e se a batata ainda resistir, tira-se o peixe e deixa-se a batata lá mais um pouco.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "mediterranica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "mandolina",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "dourada",
+      "quantity": 2,
+      "unit": "un",
+      "note": "amanhadas"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em rodelas finas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a batata e a cebola",
+      "text": "Rodelas finas de batata e cebola no tabuleiro com azeite, alho, louro e sal, a 200 graus.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cebola",
+        "azeite",
+        "dente-de-alho",
+        "folha-de-louro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Temperar as douradas",
+      "text": "Sal e pimenta por dentro e por fora, com rodelas de limão e salsa dentro da barriga.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "dourada",
+        "limao",
+        "salsa",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar o peixe por cima",
+      "text": "Douradas sobre a batata, regadas com vinho branco e azeite. Está quando a espinha se soltar ao puxar.",
+      "durationMinutes": 25,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Limão em gomos e o molho do tabuleiro por cima.",
+      "durationMinutes": 3
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 560,
+    "proteinGrams": 46,
+    "carbsGrams": 45,
+    "fatGrams": 22,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 5,
+    "saltGrams": 1.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

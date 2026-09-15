@@ -1,0 +1,167 @@
+{
+  "id": "bife-stroganoff",
+  "name": "Bife Stroganoff",
+  "description": "Tiras de carne em molho de natas, mostarda e cogumelos, com arroz e batata palha.",
+  "narrative": "A carne corta-se em tiras finas contra a fibra e sela-se em lume muito forte, aos poucos — todas de uma vez, arrefecem a frigideira e a carne coze em vez de tostar. Retira-se e no mesmo fundo vão a cebola e os cogumelos. Desglaça-se com brandy ou vinho, junta-se a mostarda e as natas, e deixa-se engrossar sem ferver. A carne volta só no fim, meio minuto. O arroz faz-se antes.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-vaca",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras finas"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 300,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "natas",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "batata-palha",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar a carne em levas",
+      "text": "Tiras secas, frigideira a fumegar com manteiga e azeite, em três levas sem encher. Retirar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "lombo-de-vaca",
+        "manteiga",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Saltear cebola e cogumelos",
+      "text": "No mesmo fundo, até os cogumelos dourarem e reabsorverem a água.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "cogumelos"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Vinho branco a raspar o fundo, mostarda e natas, a engrossar em lume brando sem ferver.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "vinho-branco",
+        "mostarda",
+        "natas"
+      ]
+    },
+    {
+      "title": "Juntar a carne e servir",
+      "text": "Carne de volta meio minuto. Sobre o arroz, com batata palha e salsa por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "batata-palha",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 48,
+    "carbsGrams": 68,
+    "fatGrams": 38,
+    "saturatedFatGrams": 18,
+    "fibreGrams": 3,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

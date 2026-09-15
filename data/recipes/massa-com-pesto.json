@@ -1,0 +1,138 @@
+{
+  "id": "massa-com-pesto",
+  "name": "Massa com pesto",
+  "description": "Pesto de manjericão feito no almofariz, com tomate cereja ao lado.",
+  "narrative": "O pesto faz-se com manjericão, pinhões tostados, alho, parmesão e azeite. No almofariz fica melhor do que na picadora, porque as lâminas aquecem e escurecem o manjericão. O sal ajuda a esmagar. Junta-se o azeite em fio no fim, a mexer e não a bater. A massa escorre-se e mistura-se com o pesto fora do lume, com um pouco de água da cozedura — o pesto nunca vai ao lume, ou perde a cor e o cheiro.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "almofariz",
+    "frigideira",
+    "escorredor",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "manjericao",
+      "quantity": 80,
+      "unit": "g",
+      "note": "só as folhas"
+    },
+    {
+      "ref": "pinhoes",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 60,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate-cereja",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 4,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Tostar os pinhões",
+      "text": "Frigideira seca em lume médio, a abanar, até ficarem dourados. Deixar arrefecer.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pinhoes"
+      ]
+    },
+    {
+      "title": "Fazer o pesto",
+      "text": "Manjericão, pinhões, alho, sal e parmesão esmagados no almofariz, com o azeite em fio no fim, a mexer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manjericao",
+        "dente-de-alho",
+        "queijo-parmesao",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer a massa",
+      "text": "Água abundante com sal, o tempo do pacote. Guardar uma concha da água antes de escorrer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "esparguete",
+        "agua"
+      ]
+    },
+    {
+      "title": "Envolver fora do lume",
+      "text": "Massa e pesto numa taça, com água da cozedura aos poucos até ficar cremoso. Tomate cereja ao meio, cru, por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "tomate-cereja",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 22,
+    "carbsGrams": 76,
+    "fatGrams": 40,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 5,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

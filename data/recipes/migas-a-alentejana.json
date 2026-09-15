@@ -1,0 +1,128 @@
+{
+  "id": "migas-a-alentejana",
+  "name": "Migas à alentejana",
+  "description": "Pão alentejano desfeito na gordura da entremeada, com muito alho. Prato único.",
+  "narrative": "A entremeada corta-se em cubos e frita-se devagar até largar a gordura e ficar tostada — é nessa gordura, e não em banha, que as migas se fazem. Tira-se a carne e no mesmo fundo aloura-se o alho. O pão, previamente molhado em água morna com sal e espremido, vai para a frigideira e mexe-se até formar um bolo que se solta do fundo. Enrola-se e vira-se para tostar dos dois lados, e serve-se com a entremeada por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "ingredients": [
+    {
+      "ref": "entremeada",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 500,
+      "unit": "g",
+      "note": "duro"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 400,
+      "unit": "ml",
+      "note": "morna"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Temperar e fritar a entremeada",
+      "text": "Cubos com colorau, alho, sal e pimenta, fritos devagar no azeite até tostarem e largarem a gordura. Retirar a carne.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "entremeada",
+        "colorau",
+        "dente-de-alho",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Molhar e espremer o pão",
+      "text": "Pão duro aos pedaços em água morna com sal, e espremido com as mãos até ficar húmido e não encharcado.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "pao-rustico",
+        "agua"
+      ]
+    },
+    {
+      "title": "Alourar o alho na gordura",
+      "text": "Resto do alho laminado na gordura da carne, com o louro, só até cheirar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o bolo de migas",
+      "text": "Pão espremido dentro, a mexer e a apertar com a colher até formar um bolo que se solta do fundo.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Tostar e servir",
+      "text": "Enrolar e virar para tostar dos dois lados. Entremeada por cima.",
+      "durationMinutes": 6
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 32,
+    "carbsGrams": 68,
+    "fatGrams": 42,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 4,
+    "saltGrams": 3
+  },
+  "notes": "Feito na gordura da própria entremeada, em vez da banha que a receita tradicional pede.",
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

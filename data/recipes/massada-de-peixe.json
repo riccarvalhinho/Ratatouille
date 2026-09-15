@@ -1,0 +1,156 @@
+{
+  "id": "massada-de-peixe",
+  "name": "Massada de peixe",
+  "description": "Massa caldosa cozida num refogado de tomate e pimento, com postas de peixe.",
+  "narrative": "Prato único e de tacho só. Faz-se um refogado demorado de cebola, alho, pimento e tomate, que é o que dá corpo ao caldo. Junta-se água a ferver e deixa-se apurar. A massa coze dentro desse caldo, e o peixe entra nos últimos cinco minutos, em postas, só o tempo de cozer — posto ao princípio, desfaz-se e desaparece. Serve-se logo, que a massa continua a beber caldo dentro do prato.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "massa-e-arroz",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "faca-de-chef",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em postas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "massa-cotovelo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o refogado",
+      "text": "Cebola, alho e pimento no azeite em lume brando até amolecerem, depois o tomate ralado e o concentrado, a apurar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "pimento-vermelho",
+        "azeite",
+        "tomate",
+        "tomate-concentrado"
+      ]
+    },
+    {
+      "title": "Juntar a água e apurar",
+      "text": "Água a ferver, louro, sal e pimenta. Dez minutos de fervura branda.",
+      "durationMinutes": 12,
+      "passive": true,
+      "ingredientRefs": [
+        "agua",
+        "folha-de-louro",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a massa no caldo",
+      "text": "Massa direto no caldo, o tempo do pacote menos dois minutos.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "massa-cotovelo"
+      ]
+    },
+    {
+      "title": "Juntar o peixe e servir",
+      "text": "Postas por cima, tapado, cinco minutos até a carne abrir em lascas. Coentros picados e servir logo.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pescada",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 580,
+    "proteinGrams": 42,
+    "carbsGrams": 68,
+    "fatGrams": 16,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 6,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

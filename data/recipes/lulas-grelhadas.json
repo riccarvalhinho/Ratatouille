@@ -1,0 +1,139 @@
+{
+  "id": "lulas-grelhadas",
+  "name": "Lulas grelhadas",
+  "description": "Lulas na grelha com molho verde de salsa e alho, com arroz de manteiga.",
+  "narrative": "Lulas grelham-se depressa ou ficam borracha: dois a três minutos de cada lado em grelha muito quente, e mais nada. Marinam antes só meia hora em azeite, alho e limão. O molho verde faz-se cru, com salsa, alho, azeite e vinagre bem picados. O arroz de manteiga é arroz branco cozido e envolvido com uma noz de manteiga no fim, e faz-se enquanto as lulas marinam.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "tacho",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "lula",
+      "quantity": 800,
+      "unit": "g",
+      "note": "limpas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 8,
+      "unit": "csopa"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar as lulas",
+      "text": "Azeite, dois dentes de alho esmagados, sumo de limão, sal e pimenta. Meia hora chega.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "lula",
+        "azeite",
+        "dente-de-alho",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer o arroz de manteiga",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Envolver a manteiga fora do lume.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Fazer o molho verde",
+      "text": "Salsa e o resto do alho picados muito finos, com azeite, vinagre e sal.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "salsa",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Grelhar as lulas",
+      "text": "Grelha muito quente, dois a três minutos de cada lado. Servir com o molho verde por cima e o arroz ao lado.",
+      "durationMinutes": 6
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 540,
+    "proteinGrams": 38,
+    "carbsGrams": 52,
+    "fatGrams": 20,
+    "saturatedFatGrams": 4.5,
+    "fibreGrams": 2,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

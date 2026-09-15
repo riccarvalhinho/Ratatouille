@@ -1,0 +1,169 @@
+{
+  "id": "cordon-bleu",
+  "name": "Cordon bleu",
+  "description": "Peito de frango recheado com fiambre e queijo, panado e frito. Com puré e feijão-verde.",
+  "narrative": "O peito abre-se em livro e achata-se, recheia-se com fiambre e queijo deixando uma margem livre em toda a volta, e fecha-se apertado — recheio até à borda derrete para fora na frigideira. Fecha-se com palitos e passa por farinha, ovo e pão ralado. Frita-se em lume médio, não forte, porque precisa de tempo para o interior cozer sem o pão queimar. O puré e o feijão-verde fazem-se ao mesmo tempo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "francesa",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "panela-grande",
+    "rolo-da-massa",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "fiambre",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-ralado",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "feijao-verde",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a batata",
+      "text": "Batata em cubos em água com sal, até ceder ao garfo.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Rechear os peitos",
+      "text": "Abrir em livro, achatar, e rechear com fiambre e queijo deixando margem em toda a volta. Fechar com palitos.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "fiambre",
+        "queijo-flamengo",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Panar",
+      "text": "Farinha, ovo batido e pão ralado, a apertar com a mão.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo",
+        "pao-ralado"
+      ]
+    },
+    {
+      "title": "Fritar em lume médio",
+      "text": "Óleo a meia altura, quatro a cinco minutos de cada lado, dourado por fora e quente no centro.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Fazer o puré e o feijão-verde",
+      "text": "Batata esmagada com manteiga, leite quente e noz-moscada. Feijão-verde cinco minutos em água a ferver com sal.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga",
+        "leite",
+        "noz-moscada",
+        "feijao-verde"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 58,
+    "carbsGrams": 68,
+    "fatGrams": 42,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 7,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

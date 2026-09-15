@@ -1,0 +1,162 @@
+{
+  "id": "risotto-de-camarao",
+  "name": "Risotto de camarão",
+  "description": "O mesmo método do risotto, com caldo feito das cascas dos camarões.",
+  "narrative": "As cascas e cabeças dos camarões cozem em água com cebola e louro e dão o caldo — é isso que faz este risotto saber a marisco e não a arroz com camarões por cima. Os camarões saltam-se à parte em trinta segundos e só voltam no fim, porque cozidos vinte minutos ficam borracha. O resto é o método de sempre: torrar o arroz, vinho branco, e caldo quente concha a concha.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "massa-e-arroz",
+    "italiana",
+    "festa"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "frigideira",
+    "coador",
+    "concha"
+  ],
+  "ingredients": [
+    {
+      "ref": "camarao",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "ref": "arroz-arboreo",
+      "quantity": 320,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o caldo com as cascas",
+      "text": "Descascar os camarões e cozer cascas e cabeças em água com uma cebola, o louro e sal. Coar e manter quente.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "camarao",
+        "cebola",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Saltear os camarões",
+      "text": "Azeite bem quente, trinta segundos de cada lado, com um dente de alho. Retirar.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Torrar o arroz",
+      "text": "Resto da cebola e do alho picados no azeite, depois o arroz dois minutos a mexer, e o concentrado de tomate.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "arroz-arboreo",
+        "tomate-concentrado"
+      ]
+    },
+    {
+      "title": "Vinho e caldo concha a concha",
+      "text": "Vinho branco a evaporar, depois o caldo quente uma concha de cada vez, a mexer, até o arroz ceder com resistência ao centro.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Rematar com manteiga e camarões",
+      "text": "Manteiga envolvida fora do lume, camarões e coentros por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "manteiga",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 38,
+    "carbsGrams": 72,
+    "fatGrams": 20,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 3,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

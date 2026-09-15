@@ -1,0 +1,159 @@
+{
+  "id": "risotto-de-cogumelos",
+  "name": "Risotto de cogumelos",
+  "description": "Arroz arbóreo cozido em caldo, concha a concha, com cogumelos e parmesão.",
+  "narrative": "Risotto é vinte minutos de mexer e não tem atalho. O caldo tem de estar quente ao lado — caldo frio interrompe a cozedura e o arroz fica duro por fora e cru no meio. Os cogumelos saltam-se primeiro à parte, em lume forte, para não largarem água dentro do arroz. O arroz torra dois minutos no refogado, leva o vinho branco, e depois é caldo concha a concha até ceder. Fora do lume entram a manteiga e o parmesão.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "legumes",
+    "italiana",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "concha",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-arboreo",
+      "quantity": 320,
+      "unit": "g"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 400,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada fina"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.5,
+      "unit": "l",
+      "note": "quente"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 80,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear os cogumelos",
+      "text": "Lume forte, em duas levas, até dourarem e reabsorverem a água. Temperar e reservar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cogumelos",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Torrar o arroz",
+      "text": "Cebola e alho em azeite até ficarem translúcidos, depois o arroz dois minutos a mexer, até os grãos ficarem brilhantes.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "arroz-arboreo"
+      ]
+    },
+    {
+      "title": "Desglaçar com vinho",
+      "text": "Vinho branco a mexer até evaporar por completo.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Juntar o caldo concha a concha",
+      "text": "Caldo quente uma concha de cada vez, a mexer, só juntando a seguinte quando a anterior for absorvida. Dezoito minutos até o arroz ceder com resistência ao centro.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Ligar fora do lume",
+      "text": "Manteiga fria e parmesão envolvidos com energia fora do calor, com os cogumelos. Salsa por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "manteiga",
+        "queijo-parmesao",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 640,
+    "proteinGrams": 20,
+    "carbsGrams": 78,
+    "fatGrams": 26,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 4,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

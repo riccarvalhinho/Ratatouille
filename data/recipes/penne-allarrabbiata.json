@@ -1,0 +1,125 @@
+{
+  "id": "penne-allarrabbiata",
+  "name": "Penne all'arrabbiata",
+  "description": "Molho de tomate com alho e malagueta, picante e curto. Prato único.",
+  "narrative": "Molho de vinte minutos e de três ingredientes. O alho e a malagueta vão a lume brando no azeite até perfumarem, sem corar. Junta-se o tomate pelado esmagado com as mãos e deixa-se apurar até o azeite voltar a aparecer à superfície — é esse o sinal de que está pronto, e não o relógio. A massa acaba de cozer dentro do molho com um pouco de água da cozedura.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-penne",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 4,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Perfumar o azeite",
+      "text": "Alho laminado e malagueta em lume brando no azeite, até cheirarem e sem corar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "malagueta",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar o tomate",
+      "text": "Tomate pelado esmagado com as mãos e sal. Apurar até o azeite voltar a aparecer à superfície.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer a massa a menos",
+      "text": "Penne em água abundante com sal, dois minutos a menos do que o pacote. Guardar uma concha da água.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "massa-penne",
+        "agua"
+      ]
+    },
+    {
+      "title": "Acabar a massa no molho",
+      "text": "Massa escorrida dentro do molho com a água da cozedura, a saltear dois minutos. Salsa picada por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 580,
+    "proteinGrams": 14,
+    "carbsGrams": 82,
+    "fatGrams": 22,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 7,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

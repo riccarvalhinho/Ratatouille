@@ -1,0 +1,183 @@
+{
+  "id": "feijoada-a-transmontana",
+  "name": "Feijoada à transmontana",
+  "description": "Feijão encarnado com carnes de porco e enchidos, com couve e arroz branco.",
+  "narrative": "As carnes salgadas e o chispe cozem primeiro em água com louro, e é esse caldo que coze o feijão — não se deita fora. Faz-se um refogado de cebola, alho e colorau, junta-se o feijão, as carnes cortadas e caldo a cobrir, e deixa-se apurar meia hora em lume brando. A couve entra nos últimos dez minutos, para não desfazer. O arroz branco faz-se à parte e serve-se ao lado.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "carne",
+    "portuguesa",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 90
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 800,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "entremeada",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "chispe",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "morcela",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "couve-lombarda",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as carnes",
+      "text": "Entremeada, chispe e chouriço em água com louro, em lume brando, até cederem. Guardar o caldo e cortar as carnes.",
+      "durationMinutes": 50,
+      "passive": true,
+      "ingredientRefs": [
+        "entremeada",
+        "chispe",
+        "chourico",
+        "agua",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Cebola, alho e colorau no azeite até amolecerem, com a cenoura em rodelas.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "colorau",
+        "azeite",
+        "cenoura"
+      ]
+    },
+    {
+      "title": "Juntar o feijão e apurar",
+      "text": "Feijão, carnes cortadas, a morcela e caldo a cobrir. Meia hora em lume brando.",
+      "durationMinutes": 30,
+      "passive": true,
+      "ingredientRefs": [
+        "feijao-encarnado-cozido",
+        "morcela",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar a couve",
+      "text": "Tiras de couve nos últimos dez minutos, só até amolecerem.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "couve-lombarda"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Servir ao lado.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 920,
+    "proteinGrams": 52,
+    "carbsGrams": 82,
+    "fatGrams": 42,
+    "saturatedFatGrams": 15,
+    "fibreGrams": 14,
+    "saltGrams": 3.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

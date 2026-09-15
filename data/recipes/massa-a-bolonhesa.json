@@ -1,0 +1,174 @@
+{
+  "id": "massa-a-bolonhesa",
+  "name": "Massa à bolonhesa",
+  "description": "Ragu de carne longo, com leite e vinho tinto, sobre esparguete e com queijo ralado.",
+  "narrative": "O ragu quer tempo e não pressa: soffritto de cebola, cenoura e aipo dez minutos, carne a soltar-se e a perder toda a água, e só depois o vinho tinto a evaporar. O leite entra antes do tomate — é ele que amacia a carne, e o tomate posto primeiro impede-o de ser absorvido. Depois é hora e meia em lume muito brando, quase sem borbulhar. A massa coze no fim.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "massa-e-arroz",
+    "italiana",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 100
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "escorredor",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "aipo",
+      "quantity": 2,
+      "unit": "un",
+      "note": "talos"
+    },
+    {
+      "ref": "vinho-tinto",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 4,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o soffritto",
+      "text": "Cebola, cenoura e aipo em cubos muito pequenos, dez minutos no azeite em lume brando.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "aipo",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Alourar a carne",
+      "text": "Carne dentro, em lume forte, a desfazer com a colher, até perder a água toda e começar a agarrar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "carne-picada-de-vaca",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Vinho, depois leite",
+      "text": "Vinho tinto a evaporar por completo, e só então o leite, a mexer até ser absorvido.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "vinho-tinto",
+        "leite"
+      ]
+    },
+    {
+      "title": "Apurar o ragu",
+      "text": "Tomate pelado esmagado, concentrado e louro. Lume muito brando, quase sem borbulhar, tapado a meio.",
+      "durationMinutes": 90,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "tomate-concentrado",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cozer a massa e servir",
+      "text": "Esparguete em água abundante com sal, o tempo do pacote. Nos pratos, com o ragu e parmesão ralado.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "esparguete",
+        "agua",
+        "queijo-parmesao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 45,
+    "carbsGrams": 82,
+    "fatGrams": 32,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 7,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

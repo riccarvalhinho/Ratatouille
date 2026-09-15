@@ -1,0 +1,173 @@
+{
+  "id": "filetes-de-pescada",
+  "name": "Filetes de pescada",
+  "description": "Filetes panados em polme, fritos, com arroz de tomate.",
+  "narrative": "Os filetes temperam-se com sal, alho e limão e ficam a apanhar tempero enquanto se faz o arroz de tomate. O polme é farinha, ovo e um pouco de água ou cerveja, mexido só até ligar. Fritam-se em óleo bem quente, poucos de cada vez, e escorrem em papel. O arroz de tomate faz-se antes e fica tapado a apurar: refogado de cebola e alho, tomate ralado a desfazer-se, arroz e água a ferver.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "taca",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 8,
+      "unit": "un",
+      "note": "filetes"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cerveja",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 400,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Temperar os filetes",
+      "text": "Sal, pimenta, alho esmagado e sumo de limão sobre o peixe. Deixar enquanto se faz o arroz.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "pescada",
+        "sal",
+        "pimenta-preta",
+        "dente-de-alho",
+        "limao"
+      ]
+    },
+    {
+      "title": "Fazer o arroz de tomate",
+      "text": "Cebola e alho no azeite, tomate ralado cinco minutos a desfazer, depois o arroz e a água a ferver com sal. Tapado, 18 minutos.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "cebola",
+        "azeite",
+        "tomate",
+        "arroz-carolino",
+        "agua"
+      ]
+    },
+    {
+      "title": "Preparar o polme",
+      "text": "Farinha, ovos e cerveja mexidos só até ligar, com uma pitada de sal.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo",
+        "cerveja"
+      ]
+    },
+    {
+      "title": "Fritar os filetes",
+      "text": "Passar pelo polme e fritar em óleo bem quente, três ou quatro de cada vez, dourados dos dois lados. Escorrer em papel.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Filetes sobre o arroz, salsa picada e gomos de limão.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 42,
+    "carbsGrams": 78,
+    "fatGrams": 28,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 4,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,161 @@
+{
+  "id": "frango-com-limao-e-alcaparras",
+  "name": "Frango com limão e alcaparras",
+  "description": "Peito panado em farinha, salteado, com molho de limão, alcaparras e manteiga. Com arroz e espargos.",
+  "narrative": "Os peitos abrem-se ao meio na horizontal e achatam-se, para cozerem em quatro minutos em vez de doze. Passam por farinha temperada, sacudida bem, e salteiam-se em manteiga e azeite. No mesmo fundo entra o vinho branco, o sumo de limão e as alcaparras, e a manteiga fria no fim liga o molho — ao lume forte, a manteiga separa-se e o molho fica oleoso. O arroz faz-se antes e os espargos no vapor no fim.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "italiana",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "cesto-de-vapor",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 4,
+      "unit": "un",
+      "note": "abertos e achatados"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 70,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "alcaparras",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "espargos",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Panar e saltear o frango",
+      "text": "Peitos achatados passados por farinha com sal e pimenta, sacudidos. Salteados em manteiga e azeite, dois minutos de cada lado. Retirar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "farinha-de-trigo",
+        "manteiga",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Vinho branco a raspar o fundo, sumo de limão e alcaparras, a reduzir a metade. Manteiga fria em pedaços, fora do lume forte, a envolver.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "vinho-branco",
+        "limao",
+        "alcaparras"
+      ]
+    },
+    {
+      "title": "Cozer os espargos",
+      "text": "Quatro minutos no vapor, verdes e firmes.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "espargos"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Frango no molho meio minuto, salsa picada por cima, arroz e espargos ao lado.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 640,
+    "proteinGrams": 48,
+    "carbsGrams": 62,
+    "fatGrams": 22,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 4,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

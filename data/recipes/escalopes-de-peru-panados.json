@@ -1,0 +1,165 @@
+{
+  "id": "escalopes-de-peru-panados",
+  "name": "Escalopes de peru panados",
+  "description": "Peru panado em pão ralado, frito, com batata frita no forno e salada.",
+  "narrative": "A batata vai ao forno primeiro, porque leva trinta minutos e o peru cinco. Os escalopes achatam-se com o rolo entre duas folhas de película até ficarem finos, e passam por farinha, ovo e pão ralado — nessa ordem, e a farinha não se salta, porque é ela que segura o ovo. Fritam-se em óleo pouco fundo, dois minutos de cada lado. Escorrem em grelha e não em papel, para não amolecerem por baixo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "rolo-da-massa",
+    "pelicula-aderente",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-peru",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-ralado",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a batata",
+      "text": "Palitos com azeite e sal, espalhados sem se sobreporem, a 220 graus, virados a meio.",
+      "durationMinutes": 30,
+      "temperatureC": 220,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Achatar e temperar o peru",
+      "text": "Entre duas folhas de película, com o rolo, até ficarem finos. Sal e pimenta dos dois lados.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "bife-de-peru",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Panar",
+      "text": "Farinha, depois ovo batido, depois pão ralado, apertando com a mão para agarrar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo",
+        "pao-ralado"
+      ]
+    },
+    {
+      "title": "Fritar",
+      "text": "Óleo pouco fundo e bem quente, dois minutos de cada lado. Escorrer sobre grelha.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Temperar a salada e servir",
+      "text": "Alface e tomate com azeite, vinagre e sal. Gomos de limão para o peru.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "alface",
+        "tomate",
+        "vinagre-de-vinho",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 48,
+    "carbsGrams": 72,
+    "fatGrams": 32,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

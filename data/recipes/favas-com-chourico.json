@@ -1,0 +1,153 @@
+{
+  "id": "favas-com-chourico",
+  "name": "Favas com chouriço",
+  "description": "Favas guisadas com chouriço e entremeada, num refogado de cebola e coentros. Com pão.",
+  "narrative": "Refogado demorado de cebola e alho em azeite, com o chouriço e a entremeada às rodelas a largar gordura e cor. Junta-se um pouco de água e deixa-se apurar antes de entrarem as favas — postas cedo de mais no refogado seco, queimam. Cozem tapadas vinte minutos, com coentros no fim. Come-se com pão, que é o que apanha o molho.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "carne",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "favas",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 150,
+      "unit": "g",
+      "note": "às rodelas"
+    },
+    {
+      "ref": "entremeada",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar com os enchidos",
+      "text": "Cebola e alho no azeite até amolecerem, depois o chouriço e a entremeada a largar gordura.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "chourico",
+        "entremeada"
+      ]
+    },
+    {
+      "title": "Apurar com vinho e água",
+      "text": "Vinho branco a evaporar, depois a água e o louro, cinco minutos a apurar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "vinho-branco",
+        "agua",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cozer as favas",
+      "text": "Favas dentro, tapado, em lume brando, até ficarem tenras.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "favas",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Rematar com coentros",
+      "text": "Coentros picados fora do lume, e pão à mesa.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "coentros",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 32,
+    "carbsGrams": 48,
+    "fatGrams": 32,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 12,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

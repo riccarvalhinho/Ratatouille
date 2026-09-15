@@ -1,0 +1,137 @@
+{
+  "id": "sardinhas-assadas",
+  "name": "Sardinhas assadas",
+  "description": "Sardinhas na grelha com pimento assado, batata cozida e pão.",
+  "narrative": "As sardinhas salgam-se generosamente uma hora antes e vão à grelha muito quente, sem se mexerem até se soltarem. Os pimentos assam inteiros na mesma grelha até a pele ficar preta, e depois fecham-se num saco ou taça tapada dez minutos — o vapor solta a pele e ela sai com os dedos. Temperam-se com alho e azeite. A batata coze com casca. O pão serve para o azeite e para a sardinha por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "dia-a-dia",
+    "festa"
+  ],
+  "methods": [
+    "grelhador",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "Salgar as sardinhas uma hora antes"
+    }
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "panela-grande",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "sardinha",
+      "quantity": 12,
+      "unit": "un"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Salgar as sardinhas",
+      "text": "Sal grosso por fora, uma hora antes.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "sardinha",
+        "sal"
+      ]
+    },
+    {
+      "title": "Assar os pimentos",
+      "text": "Inteiros na grelha, a virar, até a pele ficar preta em toda a volta.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "pimento-vermelho"
+      ]
+    },
+    {
+      "title": "Cozer as batatas",
+      "text": "Batatas com casca em água salgada até cederem ao garfo.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Pelar e temperar os pimentos",
+      "text": "Fechados numa taça tapada dez minutos, depois pele e sementes fora e às tiras, com alho laminado, azeite e vinagre.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Grelhar as sardinhas",
+      "text": "Grelha muito quente, a virar só quando se soltarem, uns quatro minutos de cada lado. Servir com pão.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 42,
+    "carbsGrams": 48,
+    "fatGrams": 28,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

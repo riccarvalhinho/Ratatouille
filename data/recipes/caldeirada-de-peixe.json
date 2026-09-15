@@ -1,0 +1,167 @@
+{
+  "id": "caldeirada-de-peixe",
+  "name": "Caldeirada de peixe",
+  "description": "Peixe, batata, cebola e pimento em camadas, cozidos sem mexer. Com pão.",
+  "narrative": "Caldeirada faz-se em camadas e não se mexe — abana-se o tacho pelas asas quando for preciso, porque a colher parte o peixe e no fim fica uma sopa de restos. Alternam-se cebola, batata em rodelas, pimento, tomate e peixe, com azeite, louro e colorau entre camadas. Um copo de vinho branco e água a meio da altura, tapado, e vinte e cinco minutos em lume brando. Come-se com pão para o caldo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em postas"
+    },
+    {
+      "ref": "choco",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em anéis"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em rodelas grossas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Montar as camadas",
+      "text": "Cebola no fundo, depois batata, pimento, tomate e peixe, alternando e temperando cada camada com azeite, alho, colorau, louro, sal e pimenta.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "cebola",
+        "batata",
+        "pimento-vermelho",
+        "tomate",
+        "pescada",
+        "choco",
+        "azeite",
+        "dente-de-alho",
+        "colorau",
+        "folha-de-louro",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer sem mexer",
+      "text": "Vinho branco e água a meio da altura, tapado, em lume brando. Abanar o tacho pelas asas em vez de mexer.",
+      "durationMinutes": 30,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-branco",
+        "agua"
+      ]
+    },
+    {
+      "title": "Servir com pão",
+      "text": "Coentros picados por cima e pão à mesa para o caldo.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "coentros",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 45,
+    "carbsGrams": 52,
+    "fatGrams": 26,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

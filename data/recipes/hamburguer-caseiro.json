@@ -1,0 +1,174 @@
+{
+  "id": "hamburguer-caseiro",
+  "name": "Hambúrguer caseiro",
+  "description": "Carne picada moldada sem apertar, selada em lume forte, com batata no forno e coleslaw.",
+  "narrative": "A carne mói-se ou compra-se picada com alguma gordura, e molda-se sem apertar — carne comprimida fica um disco rijo. Tempera-se só por fora e só na altura de ir à frigideira, porque o sal misturado na carne puxa a água e muda a textura. Sela-se em lume forte sem mexer, três minutos de cada lado. O coleslaw faz-se antes e ganha em repousar. A batata assa no forno desde o princípio.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "americana",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "ralador",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "pao-para-hamburguer",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "couve-branca",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras finas"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "raladas"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a batata",
+      "text": "Palitos com azeite e sal, a 220 graus, virados a meio.",
+      "durationMinutes": 30,
+      "temperatureC": 220,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o coleslaw",
+      "text": "Couve em tiras finas e cenoura ralada, com maionese, vinagre, sal e pimenta. Deixar repousar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "couve-branca",
+        "cenoura",
+        "maionese",
+        "vinagre-de-vinho",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Moldar os hambúrgueres",
+      "text": "Quatro discos maiores do que o pão, sem apertar a carne, com uma cova ao centro.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "carne-picada-de-vaca"
+      ]
+    },
+    {
+      "title": "Selar em lume forte",
+      "text": "Sal por fora só agora. Frigideira a fumegar, três minutos de cada lado, queijo por cima no fim.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "queijo-flamengo"
+      ]
+    },
+    {
+      "title": "Montar",
+      "text": "Pão tostado na frigideira, alface, tomate e cebola roxa em rodelas finas.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pao-para-hamburguer",
+        "alface",
+        "tomate",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 45,
+    "carbsGrams": 68,
+    "fatGrams": 48,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

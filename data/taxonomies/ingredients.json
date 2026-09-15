@@ -1188,6 +1188,36 @@
       "id": "sangue-de-galinha",
       "name": "Sangue de galinha",
       "aisle": "talho"
+    },
+    {
+      "id": "favas",
+      "name": "Favas",
+      "aisle": "congelados"
+    },
+    {
+      "id": "couve-lombarda",
+      "name": "Couve lombarda",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "pinhoes",
+      "name": "Pinhões",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "alcaparras",
+      "name": "Alcaparras",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "acafrao",
+      "name": "Açafrão",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "pao-naan",
+      "name": "Pão naan",
+      "aisle": "padaria"
     }
   ]
 }

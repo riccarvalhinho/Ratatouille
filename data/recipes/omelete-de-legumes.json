@@ -1,0 +1,146 @@
+{
+  "id": "omelete-de-legumes",
+  "name": "Omelete de legumes",
+  "description": "Omelete grande de frigideira com courgette, pimento e cebola, com salada e pão.",
+  "narrative": "Os legumes saltam-se primeiro, sozinhos, até perderem a água — postos crus no ovo, largam líquido e a omelete fica mole e cinzenta. Batem-se os ovos com sal, pimenta e um pouco de queijo ralado, e vertem-se sobre os legumes na frigideira em lume brando. Puxa-se a borda com a espátula e inclina-se a frigideira para o ovo cru escorrer para baixo. Dobra-se ao meio quando o centro ainda estiver húmido.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "ovos",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "espatula"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear os legumes",
+      "text": "Cebola, courgette e pimento em azeite quente até perderem a água e começarem a dourar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "courgette",
+        "pimento-vermelho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Bater os ovos",
+      "text": "Ovos com sal, pimenta e o queijo ralado, batidos só até ficarem uniformes.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "ovo",
+        "sal",
+        "pimenta-preta",
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Cozer a omelete",
+      "text": "Ovos sobre os legumes em lume brando, a puxar a borda com a espátula e a inclinar a frigideira. Dobrar ao meio com o centro ainda húmido.",
+      "durationMinutes": 8
+    },
+    {
+      "title": "Servir com salada e pão",
+      "text": "Alface e tomate temperados com azeite, vinagre e sal, e pão à mesa.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "alface",
+        "tomate",
+        "vinagre-de-vinho",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 32,
+    "carbsGrams": 22,
+    "fatGrams": 32,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 4,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

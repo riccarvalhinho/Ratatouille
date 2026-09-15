@@ -1,0 +1,140 @@
+{
+  "id": "choco-frito-a-setubalense",
+  "name": "Choco frito à setubalense",
+  "description": "Tiras de choco panadas e fritas, com batata frita e limão.",
+  "narrative": "O choco corta-se em tiras largas e marina duas horas em alho, limão, sal e pimenta. Passa-se por farinha e ovo — farinha, ovo, e nada mais, sem pão ralado — e frita-se em óleo bem quente, poucas tiras de cada vez. Sai dourado e macio; frito de mais fica rijo. As batatas fritam-se primeiro e mantêm-se quentes no forno enquanto o choco vai à frigideira.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Marinar o choco duas horas"
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "choco",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em tiras largas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un",
+      "note": "esmagados"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o choco",
+      "text": "Alho esmagado, sumo de um limão, sal e pimenta sobre as tiras. Duas horas no frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "choco",
+        "dente-de-alho",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos secos em óleo quente, em duas levas, escorridos em papel e salgados.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Panar o choco",
+      "text": "Escorrer bem e passar por farinha e depois por ovo batido, sacudindo o excesso.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo"
+      ]
+    },
+    {
+      "title": "Fritar o choco",
+      "text": "Óleo bem quente, poucas tiras de cada vez, dois minutos até dourar. Escorrer em papel e servir com salsa e o outro limão.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 45,
+    "carbsGrams": 75,
+    "fatGrams": 38,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 5,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,158 @@
+{
+  "id": "frango-a-cacadora",
+  "name": "Frango à caçadora",
+  "description": "Frango estufado com tomate, azeitonas e alecrim, com polenta cremosa.",
+  "narrative": "As coxas alouram-se com a pele para baixo em lume médio, sem se mexerem, até a pele soltar-se sozinha e ficar dourada. Retira-se quase toda a gordura, refoga-se cebola e alho, desglaça-se com vinho branco e junta-se tomate, alecrim e azeitonas. O frango volta e estufa tapado quarenta minutos. A polenta faz-se nos últimos dez, mexida sem parar com caldo quente.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "italiana",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "vara-de-arames",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 100,
+      "unit": "g",
+      "note": "pretas, descaroçadas"
+    },
+    {
+      "ref": "alecrim",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "polenta",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o frango na pele",
+      "text": "Pele para baixo em lume médio, sem mexer, até se soltar sozinha e estar dourada. Virar um minuto e retirar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Refogar e desglaçar",
+      "text": "Escorrer quase toda a gordura, cebola e alho a amolecer, vinho branco a raspar o fundo.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Estufar com tomate e azeitonas",
+      "text": "Tomate pelado, alecrim e azeitonas, com o frango de volta. Tapado em lume brando.",
+      "durationMinutes": 40,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "alecrim",
+        "azeitona"
+      ]
+    },
+    {
+      "title": "Fazer a polenta",
+      "text": "Caldo a ferver, polenta em chuva a mexer sem parar, até engrossar. Manteiga e parmesão fora do lume.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "polenta",
+        "caldo-de-galinha",
+        "manteiga",
+        "queijo-parmesao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 52,
+    "carbsGrams": 72,
+    "fatGrams": 34,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 6,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,172 @@
+{
+  "id": "goulash",
+  "name": "Goulash",
+  "description": "Guisado de vaca com muito colorau e pimento, longo e escuro. Com puré de batata.",
+  "narrative": "O colorau é o prato e não um tempero: entra em quantidade, e sempre fora do lume forte, porque queima e amarga em segundos. A cebola aloura devagar até quase desfazer, a carne sela à parte, e junta-se tudo com pimento, tomate e água a cobrir. Depois é duas horas em lume muito brando, destapado na última meia hora para o molho reduzir. O puré faz-se no fim.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 135
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-vaca-para-guisar",
+      "quantity": 900,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar a carne",
+      "text": "Cubos secos em azeite bem quente, em três levas, até ganharem crosta. Retirar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "carne-de-vaca-para-guisar",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Amolecer a cebola",
+      "text": "Cebola e alho no mesmo fundo em lume brando, até quase desfazerem.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Juntar o colorau fora do lume",
+      "text": "Tacho fora do calor, colorau e cominhos a mexer, depois o pimento, o tomate, o louro e a carne.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "colorau",
+        "cominhos",
+        "pimento-vermelho",
+        "tomate-pelado",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Estufar devagar",
+      "text": "Água a cobrir, tapado, em lume muito brando. Destapar na última meia hora.",
+      "durationMinutes": 120,
+      "passive": true,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Fazer o puré",
+      "text": "Batata cozida e esmagada quente com manteiga e leite quente, sal e pimenta.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "batata",
+        "manteiga",
+        "leite"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 860,
+    "proteinGrams": 58,
+    "carbsGrams": 62,
+    "fatGrams": 42,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

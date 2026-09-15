@@ -1,0 +1,129 @@
+{
+  "id": "carapaus-grelhados",
+  "name": "Carapaus grelhados",
+  "description": "Carapaus na grelha com batata cozida e molho de vinagrete com cebola e salsa.",
+  "narrative": "Os carapaus temperam-se só com sal grosso, meia hora antes, e vão à grelha bem quente sem gordura nenhuma. Não se mexem até se soltarem sozinhos da grelha — puxados antes disso, deixam a pele para trás. A batata coze com casca no mesmo tempo. O vinagrete faz-se cru, com cebola picada muito fina, salsa, azeite e vinagre, e leva-se à mesa à parte.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "panela-grande",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "carapau",
+      "quantity": 8,
+      "unit": "un",
+      "note": "amanhados"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada muito fina"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Salgar os carapaus",
+      "text": "Sal grosso por fora, meia hora antes de ir para a grelha.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "carapau",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer as batatas",
+      "text": "Batatas com casca em água salgada com o louro, até o garfo entrar sem resistência.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o vinagrete",
+      "text": "Cebola picada fina, salsa, azeite, vinagre, sal e pimenta, batidos numa taça.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "cebola",
+        "salsa",
+        "azeite",
+        "vinagre-de-vinho",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Grelhar os carapaus",
+      "text": "Grelha bem quente e sem gordura. Virar só quando se soltarem sozinhos, uns cinco minutos de cada lado.",
+      "durationMinutes": 12
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 42,
+    "carbsGrams": 42,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 4,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

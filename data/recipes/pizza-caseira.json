@@ -1,0 +1,152 @@
+{
+  "id": "pizza-caseira",
+  "name": "Pizza caseira",
+  "description": "Massa levedada em casa, molho de tomate cru e mozzarella. Com salada verde.",
+  "narrative": "A massa faz-se de véspera ou de manhã: farinha, água, fermento e sal, amassada dez minutos e a levedar até duplicar. O molho é tomate pelado esmagado com sal e azeite, cru — cozido antes, coze outra vez no forno e fica ácido. O forno vai no máximo com o tabuleiro lá dentro a aquecer, e a pizza entra sobre o tabuleiro já a escaldar, que é o que se aproxima de um forno de lenha. Manjericão só à saída.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "festa",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 15,
+    "prepAhead": {
+      "minutes": 90,
+      "description": "Levedar a massa até duplicar, hora e meia à temperatura ambiente ou de véspera no frigorífico"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "taca",
+    "papel-vegetal"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 320,
+      "unit": "ml",
+      "note": "morna"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 7,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-mozzarella",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar e levedar",
+      "text": "Farinha, água morna, fermento, sal e azeite, amassados dez minutos até a massa ficar lisa. A levedar tapada até duplicar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "agua",
+        "fermento-de-padeiro",
+        "sal",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Aquecer o forno com o tabuleiro",
+      "text": "Forno no máximo, com o tabuleiro lá dentro a aquecer meia hora.",
+      "durationMinutes": 30,
+      "temperatureC": 250,
+      "passive": true
+    },
+    {
+      "title": "Preparar o molho cru",
+      "text": "Tomate pelado esmagado à mão com sal, azeite e orégãos. Sem ir ao lume.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "oregaos"
+      ]
+    },
+    {
+      "title": "Abrir e cobrir",
+      "text": "Massa aberta à mão sobre papel vegetal, molho fino, mozzarella escorrida aos pedaços.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "queijo-mozzarella"
+      ]
+    },
+    {
+      "title": "Cozer e rematar",
+      "text": "Sobre o tabuleiro a escaldar, no máximo, até a borda inchar e tostar. Manjericão à saída, salada ao lado.",
+      "durationMinutes": 12,
+      "temperatureC": 250,
+      "ingredientRefs": [
+        "manjericao",
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 32,
+    "carbsGrams": 98,
+    "fatGrams": 28,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 5,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

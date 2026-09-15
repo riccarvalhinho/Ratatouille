@@ -1,0 +1,181 @@
+{
+  "id": "bolonhesa-de-lentilhas",
+  "name": "Bolonhesa de lentilhas",
+  "description": "Ragu de lentilhas castanhas com o mesmo método do de carne, sobre massa, com salada.",
+  "narrative": "Mesmo soffritto, mesmo vinho, mesmo tempo — muda a proteína. As lentilhas castanhas aguentam a cozedura longa sem se desfazerem, ao contrário das vermelhas, que viriam a virar puré. Um pouco de molho de soja e tomate concentrado dão a profundidade que a carne daria. Coze quarenta minutos com caldo a cobrir, e junta-se mais caldo se secar antes de as lentilhas cederem.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "escorredor",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "lentilha-castanha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "aipo",
+      "quantity": 2,
+      "unit": "un",
+      "note": "talos"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinho-tinto",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o soffritto",
+      "text": "Cebola, cenoura, aipo e alho em cubos pequenos, dez minutos no azeite em lume brando.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "aipo",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Tostar as lentilhas e desglaçar",
+      "text": "Lentilhas escorridas no refogado dois minutos, depois o vinho tinto a evaporar.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "lentilha-castanha",
+        "vinho-tinto"
+      ]
+    },
+    {
+      "title": "Apurar o ragu",
+      "text": "Tomate pelado, concentrado, soja, louro e água a cobrir. Quarenta minutos em lume brando, com mais água se secar.",
+      "durationMinutes": 45,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "tomate-concentrado",
+        "molho-de-soja",
+        "folha-de-louro",
+        "agua",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a massa e servir",
+      "text": "Esparguete em água com sal, o tempo do pacote. Nos pratos, com o ragu e a alface temperada ao lado.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "esparguete",
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 700,
+    "proteinGrams": 28,
+    "carbsGrams": 108,
+    "fatGrams": 18,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 16,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,132 @@
+{
+  "id": "esparguete-aglio-e-olio",
+  "name": "Esparguete aglio e olio",
+  "description": "Alho laminado dourado em azeite com malagueta, ligado com água da cozedura. Com salada verde.",
+  "narrative": "Quatro ingredientes e nenhum sítio onde esconder erros. O alho lamina-se fino e vai a lume brando no azeite, com a malagueta, até ficar dourado-claro — passa a queimado em segundos, e queimado amarga o prato todo. Tira-se do lume enquanto se espera pela massa. O esparguete escorre-se um minuto antes do tempo e vai para a frigideira com uma concha de água da cozedura, a saltear, até o molho ficar cremoso.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escorredor",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un",
+      "note": "laminados finos"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 4,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr a água ao lume",
+      "text": "Água abundante com sal, a ferver.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Dourar o alho em lume brando",
+      "text": "Lâminas e malagueta no azeite, até ficarem dourado-claro. Tirar do lume assim que lá chegarem.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "malagueta"
+      ]
+    },
+    {
+      "title": "Cozer a massa e guardar a água",
+      "text": "Um minuto a menos do que o pacote. Tirar uma concha da água antes de escorrer.",
+      "durationMinutes": 9,
+      "ingredientRefs": [
+        "esparguete"
+      ]
+    },
+    {
+      "title": "Saltear e ligar",
+      "text": "Massa na frigideira com o azeite e a água aos poucos, a saltear até o molho ficar cremoso. Salsa picada e a alface ao lado com vinagre.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "salsa",
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 640,
+    "proteinGrams": 16,
+    "carbsGrams": 78,
+    "fatGrams": 28,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 5,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

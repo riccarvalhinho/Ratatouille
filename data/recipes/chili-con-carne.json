@@ -1,0 +1,192 @@
+{
+  "id": "chili-con-carne",
+  "name": "Chili con carne",
+  "description": "Carne picada com feijão, cominhos e chocolate preto, com arroz branco e natas azedas.",
+  "narrative": "A carne sela-se bem antes de qualquer líquido, para tostar em vez de cozer. As especiarias tostam a seguir no próprio fundo, meio minuto, antes de entrar o tomate. O feijão entra já cozido, no fim, e um quadrado de chocolate preto vai no último minuto — não sabe a chocolate, escurece e arredonda o molho. Coze uma hora em lume brando e o arroz faz-se nos últimos vinte minutos.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "leguminosas",
+    "mexicana",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 70
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 480,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "chocolate-preto",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "natas-azedas",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Selar a carne",
+      "text": "Carne em azeite bem quente, a desfazer com a colher, até perder a água e tostar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "carne-picada-de-vaca",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Refogar e tostar as especiarias",
+      "text": "Cebola, alho e pimento a amolecer, depois cominhos, colorau e malagueta meio minuto no fundo.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "pimento-vermelho",
+        "cominhos",
+        "colorau",
+        "malagueta"
+      ]
+    },
+    {
+      "title": "Apurar com tomate",
+      "text": "Tomate pelado, concentrado e água. Quarenta minutos em lume brando, destapado.",
+      "durationMinutes": 40,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "tomate-concentrado",
+        "agua"
+      ]
+    },
+    {
+      "title": "Juntar feijão e chocolate",
+      "text": "Feijão escorrido dez minutos, e o chocolate no último minuto, a derreter no molho.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "feijao-encarnado-cozido",
+        "chocolate-preto"
+      ]
+    },
+    {
+      "title": "Cozer o arroz e servir",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Com natas azedas e coentros por cima.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "natas-azedas",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 42,
+    "carbsGrams": 82,
+    "fatGrams": 26,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 12,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
