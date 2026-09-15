@@ -37,6 +37,12 @@ export function RecipeCard({ recipe, catalogue, onOpen }: RecipeCardProps) {
           {recipe.timing.prepAhead && (
             <span className={styles.ahead}>{formatPrepAhead(recipe.timing.prepAhead.minutes)}</span>
           )}
+          {/*
+            Informação, não aviso. Fica na mesma linha e com o mesmo peso dos outros factos do
+            cartão — de propósito sem a cor de `ahead`, que existe para o que muda o planeamento da
+            véspera. Isto não muda: diz-se, e quem planeia decide.
+          */}
+          {recipe.needsSide && <span>pede acompanhamento</span>}
         </span>
 
         <span className={styles.labels}>

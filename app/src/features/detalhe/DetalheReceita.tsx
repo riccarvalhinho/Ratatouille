@@ -127,6 +127,9 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
                     {`${formatPrepAhead(recipe.timing.prepAhead.minutes)} — ${recipe.timing.prepAhead.description}`}
                   </MetaRow>
                 )}
+                {recipe.needsSide && (
+                  <MetaRow label="Acompanhamento">Não vem na receita</MetaRow>
+                )}
                 <MetaRow label="Como se faz">
                   {recipe.methods.map((m) => COOKING_METHOD_NAMES[m]).join(', ')}
                 </MetaRow>

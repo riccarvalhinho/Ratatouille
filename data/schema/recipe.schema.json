@@ -85,6 +85,11 @@
       "type": "string",
       "minLength": 1
     },
+    "needsSide": {
+      "description": "A receita é só o prato: come-se com alguma coisa ao lado que ela não traz. Ausente significa que a receita dá uma refeição — que é o caso normal, porque o acompanhamento escreve-se dentro da receita por omissão (ver .claude/skills/importar-receita/SKILL.md). Só se declara a exceção, como no status: o prato que já é refeição não precisa de dizer que é.",
+      "type": "boolean",
+      "default": false
+    },
     "labels": {
       "description": "Referências a data/taxonomies/labels.json. O vocabulário está por rever — ver docs/conversas/07-vocabulario-labels.md.",
       "type": "array",

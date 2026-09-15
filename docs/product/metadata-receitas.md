@@ -121,6 +121,11 @@ boca de quem as deu), e o prato que se come com muita coisa sem nenhuma ser mais
 sobremesas nunca levam. Nestes casos o gesto vive no planeamento, que já aceita mais do que uma
 receita por bloco.
 
+**`needsSide`** marca essa exceção, e só a exceção — ausente significa que a receita dá uma
+refeição, pela mesma convenção do `status`. Serve para o cartão e o detalhe dizerem "pede
+acompanhamento" **como facto, não como aviso**: sem ícone, sem cor, sem filtro. A app não tem
+opinião sobre se isso é problema — quem planeia é que decide. Q14, fechada.
+
 Vale a pena registar que **esta decisão não custou nada ao formato**: a lista única, rejeitada como
 grupos por outras razões, já era a estrutura certa para um prato completo. A regra operacional, com
 o teste de quando se acrescenta e quando se deixa, está em

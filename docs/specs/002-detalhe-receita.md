@@ -41,6 +41,10 @@ ao topo.
    o "última vez" mentia precisamente nas receitas que se sabem de cor. Marcado, muda de cor e não só
    de texto, e volta a tocar-se para desfazer
 6. Rendimento — para quantas pessoas dá, ou quantas unidades rende, ou ambos
+6b. **Acompanhamento: "não vem na receita"**, quando `needsSide` (Q14). Mais uma linha da mesma
+    lista de factos, com o mesmo aspeto das outras — não é aviso nem bloco próprio. Só aparece na
+    exceção: a maior parte das receitas traz o acompanhamento escrito lá dentro e não tem nada a
+    dizer sobre isto
 7. Eletrodomésticos e utensílios necessários, **em dois blocos separados** — os aparelhos
    condicionam se a receita é sequer possível, os utensílios são detalhe (`kind` da taxonomia)
 8. Lista de ingredientes, com a quantidade alinhada à direita numa coluna própria, para a lista ser

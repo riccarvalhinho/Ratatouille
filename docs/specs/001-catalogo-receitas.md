@@ -21,11 +21,27 @@ Cada receita aparece como um cartão com:
 - nome
 - duração de confeção
 - indicação de antecedência de preparação, quando existe (ex.: "de véspera", "+2h")
+- **"pede acompanhamento", quando `needsSide`** — ver abaixo
 - label de dificuldade
 - até 3 labels de tipo de prato (carne, peixe, sopa, sobremesa, …)
 
 Se a receita não tiver imagem, o cartão mostra um marcador neutro em vez de partir o alinhamento
 da grelha.
+
+#### "pede acompanhamento" é informação, não aviso
+
+Quase todas as receitas trazem o acompanhamento escrito lá dentro; as que não trazem levam
+`needsSide` (Q14). O cartão diz isso **na mesma linha dos outros factos e com o mesmo peso** — sem
+ícone, sem cor, sem badge, e sem componente próprio.
+
+A distinção com a antecedência de preparação é de propósito: "de véspera" é acentuado porque **muda
+o que se tem de fazer ontem**, e quem não reparar chega tarde. "Pede acompanhamento" não muda nada
+no momento em que se lê — é contexto para quem está a montar a semana, e a app não tem opinião sobre
+se isso é problema. Tratá-lo como aviso seria dizer que uma receita está incompleta, e não está: há
+pratos que se comem com coisas diferentes conforme o dia, e as costelas no forno são um deles.
+
+Também **não filtra**: não há filtro de "só refeições completas". Um filtro obrigaria a decidir por
+quem planeia, e o valor aqui é só não ser surpreendido.
 
 ### Filtros
 

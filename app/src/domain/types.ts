@@ -189,7 +189,10 @@ export interface Recipe {
   servings?: number;
   /** Rendimento que não são pessoas: "30 bolachas", "1 bolo de 24 cm". */
   yield?: string;
+  /** A receita é só o prato: come-se com algo ao lado que ela não traz. Ausente = dá uma refeição. */
+  needsSide?: boolean;
   labels: string[];
+
   methods: CookingMethod[];
   weight?: Weight;
   timing: RecipeTiming;

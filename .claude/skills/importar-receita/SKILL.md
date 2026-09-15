@@ -176,6 +176,15 @@ compra-se comida que ninguém vai cozinhar. Na dúvida entre acrescentar e deixa
 planeamento já aceita mais do que uma receita por bloco, portanto pôr uma salada ao lado de um
 prato incompleto é um gesto que já existe na app e custa um toque.
 
+**Quando se deixa, marca-se: `needsSide: true`.** É a única coisa que a receita tem de fazer a
+seguir. O campo só se escreve na exceção — uma receita que dá uma refeição não o leva, tal como uma
+receita revista não leva `status`. O cartão e o detalhe mostram-no como facto e não como aviso
+(spec 001), portanto marcar não é admitir que a receita está incompleta: é dizer ao próximo que
+abre o catálogo o que já se sabia ao escrevê-la.
+
+**Não marcar é que é erro.** Uma receita que pede acompanhamento e não o diz só se descobre com a
+carne no forno — e a lista de compras já foi feita sem ele.
+
 **Os passos entrelaçam-se, não se empilham.** É aqui que isto se faz mal. O acompanhamento não vai
 todo para o fim da lista de passos: vai para onde pertence no tempo real da cozinha, que quase
 sempre quer dizer **começar antes**, porque o arroz e a batata demoram mais do que o peixe.

@@ -260,30 +260,39 @@ crescer, porque corrigir licenças em retrospetiva num repositório público é 
 
 ---
 
-## Q14 — A app deve dizer que uma receita não é refeição completa?
+## Q14 — A app deve dizer que uma receita não é refeição completa? ✅
 
-**Estado:** Aberta · a decidir depois da primeira vaga
+**Estado:** Fechada · 2026-09-15 · aplicada
 
-A regra de escrita já está fechada: uma receita de prato principal traz o acompanhamento dentro,
-**por omissão** e não à força — ver `.claude/skills/importar-receita/SKILL.md`. Há três casos em que
-fica legitimamente sem: o prato que já é a refeição, o prato ditado por alguém (as costelas dos
-sogros), e o prato que se come com muita coisa sem nenhuma ser mais canónica.
+**Resposta: sim, mas como informação, não como aviso.** Sem ícone, sem cor, sem badge, sem
+componente próprio e sem filtro — uma linha a mais no meio dos factos que o cartão e o detalhe já
+mostram.
 
-O que fica por decidir é se a **app** precisa de saber disso. Hoje não sabe: nada no schema
-distingue "isto é a refeição" de "isto pede alguma coisa ao lado".
+A regra de escrita já estava fechada: uma receita de prato principal traz o acompanhamento dentro,
+**por omissão** e não à força, com três exceções legítimas — o prato que já é a refeição, o prato
+ditado por alguém (as costelas dos sogros), e o prato que se come com muita coisa sem nenhuma ser
+mais canónica. O que faltava decidir era se a app precisava de saber.
 
-**O argumento para não fazer nada:** o planeamento já aceita mais do que uma receita por bloco, o
-que resolve o caso em uso. E se a esmagadora maioria das receitas for completa, o sinal serve para
-pouco — é um campo novo para preencher em todas as receitas por causa de meia dúzia.
+**Porque é informação e não aviso.** A comparação certa é com a antecedência de preparação, que é
+acentuada no cartão: "de véspera" muda o que se tinha de ter feito ontem, e quem não reparar chega
+tarde. "Pede acompanhamento" não muda nada no momento em que se lê. E, mais importante, tratá-lo
+como aviso seria a app dizer que a receita está incompleta — e não está. As costelas dos sogros são
+costelas; o que se come com elas muda conforme o dia. Um triângulo amarelo em cima disso seria a app
+a ter uma opinião que não lhe pertence.
 
-**O argumento para fazer:** planear é que é o momento em que isto dói. Quem monta a semana à
-segunda-feira não abre cada receita para ver se está completa; escolhe pelo cartão. Um prato que
-pede acompanhamento e não o diz só aparece na quinta-feira, com a carne no forno e nada para pôr ao
-lado — e a lista de compras já foi feita sem isso.
+**Mas também não é nada.** Quem monta a semana à segunda-feira escolhe pelo cartão, sem abrir cada
+receita. Um prato que pede acompanhamento e não o diz aparece na quinta, com a carne no forno e
+nada para pôr ao lado — e as compras já foram feitas sem isso.
 
-**Se se fizer, a forma mais barata é não acrescentar campo nenhum**: a label `acompanhamento` já
-existe, e uma receita de prato principal sem nenhum passo de acompanhamento é detetável. Mas
-detetável não é o mesmo que fiável, e um campo explícito ao menos não mente.
+**Como ficou:**
 
-**Decidir depois da primeira vaga, não antes.** Só com dez receitas escritas é que se sabe se isto é
-um caso raro ou um terço do catálogo — e a resposta muda consoante.
+- **`needsSide: true`** em `data/schema/recipe.schema.json` e em `app/src/domain/types.ts`. Só se
+  declara a exceção; ausente significa que a receita dá uma refeição. É a convenção que o `status`
+  já usava, e evita um campo novo para preencher em todas as receitas por causa de meia dúzia.
+- **Cartão:** "pede acompanhamento", na mesma linha e com o mesmo peso da duração e do rendimento
+  (spec 001).
+- **Detalhe:** mais uma linha, "Acompanhamento — não vem na receita" (spec 002).
+- **Planeamento:** nada. Não avisa, não bloqueia, não filtra. O gesto que resolve — pôr outra
+  receita no mesmo bloco — já existe desde o M3.
+- **Quando se marca:** `.claude/skills/importar-receita/SKILL.md`.
+- **Primeira receita marcada:** `costelas-no-forno`, que é o exemplo de onde a regra veio.
