@@ -1,0 +1,167 @@
+{
+  "id": "carne-de-porco-a-alentejana",
+  "name": "Carne de porco à alentejana",
+  "description": "Porco marinado em massa de pimentão e vinho branco, salteado com amêijoas e batata aos cubos.",
+  "narrative": "A carne corta-se em cubos e marina de véspera em colorau, alho, vinho branco e louro. As batatas fritam-se em cubos pequenos e ficam à espera. A carne escorre-se da marinada e aloura-se em lume forte, aos poucos — molhada ou amontoada, coze em vez de tostar. A marinada vai a seguir para o tacho a apurar, e só então entram as amêijoas, tapadas, até abrirem. As que não abrirem deitam-se fora. No fim junta-se a batata, coentros e limão.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "marisco",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 35,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Marinar a carne de véspera e pôr as amêijoas em água com sal a largar areia"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "faca-de-chef",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-porco-para-guisar",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em cubos de 3 cm"
+    },
+    {
+      "ref": "ameijoa",
+      "quantity": 800,
+      "unit": "g",
+      "note": "de véspera em água e sal"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em cubos pequenos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar a carne",
+      "text": "Colorau, alho esmagado, vinho branco, louro, sal e pimenta sobre os cubos. De véspera no frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "carne-de-porco-para-guisar",
+        "colorau",
+        "dente-de-alho",
+        "vinho-branco",
+        "folha-de-louro",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fritar a batata aos cubos",
+      "text": "Cubos pequenos em óleo quente até dourarem. Escorrer em papel e reservar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Alourar a carne em lume forte",
+      "text": "Escorrer bem a carne da marinada e alourar no azeite em três levas, sem encher o tacho.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar a marinada e abrir as amêijoas",
+      "text": "Verter a marinada no tacho e deixar ferver cinco minutos. Amêijoas dentro, tapado, até abrirem — deitar fora as fechadas.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "ameijoa"
+      ]
+    },
+    {
+      "title": "Juntar a batata e servir",
+      "text": "Batata frita envolvida no molho fora do lume, com coentros picados e gomos de limão.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "coentros",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 52,
+    "carbsGrams": 48,
+    "fatGrams": 38,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 4,
+    "saltGrams": 3.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

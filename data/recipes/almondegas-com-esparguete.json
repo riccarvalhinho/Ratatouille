@@ -1,0 +1,174 @@
+{
+  "id": "almondegas-com-esparguete",
+  "name": "Almôndegas com esparguete",
+  "description": "Almôndegas de carne picada estufadas em molho de tomate, sobre esparguete, com queijo ralado.",
+  "narrative": "As almôndegas fazem-se com carne picada, pão demolhado em leite, ovo, alho e salsa — é o pão que as mantém tenras, e sem ele ficam bolas secas. Alouram-se na frigideira só para ganhar cor e acabam de cozinhar dentro do molho de tomate, vinte minutos em lume brando. O esparguete coze no fim, enquanto o molho apura. Serve-se com queijo ralado por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "massa-e-arroz",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "panela-grande",
+    "escorredor",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "pao-de-forma",
+      "quantity": 2,
+      "unit": "un",
+      "note": "sem côdea, demolhado em leite"
+    },
+    {
+      "ref": "leite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar e bolear as almôndegas",
+      "text": "Carne, pão espremido do leite, ovo, metade do alho picado, salsa, sal e pimenta. Bolas do tamanho de uma noz.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "carne-picada-de-vaca",
+        "pao-de-forma",
+        "leite",
+        "ovo",
+        "dente-de-alho",
+        "salsa",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Alourar só para ganhar cor",
+      "text": "Azeite quente na frigideira, almôndegas a rolar até corarem de todos os lados. Retirar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Fazer o molho de tomate",
+      "text": "Cebola e o resto do alho no mesmo azeite, depois o tomate pelado esmagado e o concentrado. Sal e dez minutos a apurar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "tomate-pelado",
+        "tomate-concentrado"
+      ]
+    },
+    {
+      "title": "Estufar as almôndegas no molho",
+      "text": "Devolver as almôndegas ao molho, tapadas, em lume brando.",
+      "durationMinutes": 20,
+      "passive": true
+    },
+    {
+      "title": "Cozer o esparguete e servir",
+      "text": "Massa em água a ferver com sal, o tempo do pacote. Escorrida para os pratos, com as almôndegas, o molho e o queijo ralado.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "esparguete",
+        "agua",
+        "queijo-ralado"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 45,
+    "carbsGrams": 82,
+    "fatGrams": 28,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 7,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

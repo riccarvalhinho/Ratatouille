@@ -1,0 +1,176 @@
+{
+  "id": "frango-de-churrasco",
+  "name": "Frango de churrasco",
+  "description": "Frango espalmado grelhado, pincelado com molho de churrasco, com batata frita e salada de tomate.",
+  "narrative": "O frango espalma-se e marina em alho, colorau, limão e piri-piri. Grelha-se com a pele para baixo primeiro, em lume médio e não forte — em lume forte queima a pele antes de o osso cozer. Vira-se uma vez e só se pincela com o molho nos últimos minutos, porque o molho tem açúcar e queima. As batatas fritam-se entretanto e o tomate tempera-se cru.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "portuguesa",
+    "dia-a-dia",
+    "festa"
+  ],
+  "methods": [
+    "grelhador"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "Marinar o frango uma hora, ou de véspera"
+    }
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "frigideira",
+    "pincel-de-cozinha",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "frango-inteiro",
+      "quantity": 1,
+      "unit": "un",
+      "note": "espalmado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "piri-piri",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango espalmado",
+      "text": "Alho, colorau, piri-piri, sumo de um limão, azeite e sal esfregados por dentro e por fora. Uma hora no frigorífico.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "frango-inteiro",
+        "dente-de-alho",
+        "colorau",
+        "piri-piri",
+        "limao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Grelhar com a pele para baixo",
+      "text": "Lume médio, pele para baixo, 20 minutos sem mexer. Virar e mais 15 do outro lado.",
+      "durationMinutes": 35
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos secos em óleo quente, em duas levas, escorridos em papel e salgados.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Temperar o tomate",
+      "text": "Rodelas de tomate e cebola em meias-luas, com orégãos, azeite, vinagre e sal.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tomate",
+        "cebola",
+        "oregaos",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Pincelar e servir",
+      "text": "Manteiga derretida com piri-piri e o resto do limão, pincelada no frango nos últimos minutos da grelha.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 890,
+    "proteinGrams": 56,
+    "carbsGrams": 68,
+    "fatGrams": 44,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 5,
+    "saltGrams": 2.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

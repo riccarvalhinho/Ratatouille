@@ -1,0 +1,132 @@
+{
+  "id": "bacalhau-a-lagareiro",
+  "name": "Bacalhau à lagareiro",
+  "description": "Lombos assados com muito azeite e alho, batata a murro e brócolos.",
+  "narrative": "Prato de três ingredientes, e o azeite é um deles — a sério, não um fio. As batatas pequenas cozem com casca e depois levam o murro. Os lombos de bacalhau e as batatas vão ao tabuleiro com o alho laminado e o azeite a cobrir metade da altura, a assar a 200 graus. Rega-se com o próprio azeite a meio. Os brócolos cozem no vapor nos últimos minutos.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 1440,
+      "description": "Demolhar o bacalhau 24 horas no frigorífico, a trocar a água três vezes"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "placa",
+    "panela-grande",
+    "cesto-de-vapor"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 4,
+      "unit": "un",
+      "note": "lombos demolhados"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "brocolos",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em floretes"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as batatas com casca",
+      "text": "Batatas inteiras em água com sal e o louro, até o garfo entrar sem resistência.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Dar o murro",
+      "text": "Escorridas e esmagadas com a palma da mão, sem as desfazer.",
+      "durationMinutes": 5
+    },
+    {
+      "title": "Assar com azeite e alho",
+      "text": "Lombos e batatas no tabuleiro, alho laminado por cima e azeite até meia altura. A 200 graus, regando a meio.",
+      "durationMinutes": 35,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "bacalhau-salgado",
+        "dente-de-alho",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer os brócolos no vapor",
+      "text": "Cinco minutos no cesto, verdes e com resistência ao garfo. Servir ao lado, regados com o azeite do tabuleiro.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "brocolos"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 50,
+    "carbsGrams": 52,
+    "fatGrams": 52,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 7,
+    "saltGrams": 3.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

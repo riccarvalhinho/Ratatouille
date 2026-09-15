@@ -1,0 +1,162 @@
+{
+  "id": "arroz-de-cabidela",
+  "name": "Arroz de cabidela",
+  "description": "Arroz de galinha ligado com o sangue da ave e vinagre, malandro e escuro.",
+  "narrative": "O sangue recolhe-se com vinagre, que é o que o impede de coagular antes da hora. A galinha coze-se aos pedaços num refogado com o seu caldo até estar tenra. O arroz coze nesse caldo, malandro. No fim, fora do lume, junta-se o sangue misturado com mais vinagre, a mexer sem parar — ao lume o sangue talha e fica granuloso em vez de ligar. Serve-se logo, que este arroz não espera.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "massa-e-arroz",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "galinha",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "aos pedaços"
+    },
+    {
+      "ref": "sangue-de-galinha",
+      "quantity": 150,
+      "unit": "ml",
+      "note": "recolhido com vinagre"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.4,
+      "unit": "l"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Guardar o sangue com vinagre",
+      "text": "Sangue misturado com duas colheres de vinagre, tapado no frigorífico.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "sangue-de-galinha",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Refogar e alourar a galinha",
+      "text": "Cebola, alho e tomate ralado no azeite, depois os pedaços de galinha a corar com sal, pimenta e louro.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "tomate",
+        "azeite",
+        "galinha",
+        "folha-de-louro",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a galinha",
+      "text": "Água a cobrir, tapado, em lume brando até a carne ceder.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Cozer o arroz no caldo",
+      "text": "Arroz no caldo a ferver, mais líquido do que num arroz seco. Dezoito minutos.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino"
+      ]
+    },
+    {
+      "title": "Ligar com o sangue fora do lume",
+      "text": "Tacho fora do calor, sangue com o resto do vinagre em fio, a mexer sem parar até o arroz escurecer e ligar. Salsa por cima e servir já.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 700,
+    "proteinGrams": 48,
+    "carbsGrams": 68,
+    "fatGrams": 22,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 3,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

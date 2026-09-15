@@ -1,0 +1,169 @@
+{
+  "id": "rojoes",
+  "name": "Rojões",
+  "description": "Cubos de porco marinados e assados no seu molho, com batata assada e grelos salteados.",
+  "narrative": "A carne marina de véspera em vinho branco, alho, colorau e louro. Aloura-se em azeite — nunca em banha, e o prato não perde nada com isso — em lume forte e aos poucos, até ganhar crosta de todos os lados. Depois junta-se a marinada e deixa-se apurar tapado, cerca de quarenta minutos, até a carne ceder ao garfo. A batata assa ao mesmo tempo no forno e os grelos saltam-se no fim, com alho, enquanto o molho reduz.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho",
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 60,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Marinar a carne de véspera"
+    }
+  },
+  "equipment": [
+    "placa",
+    "forno",
+    "tacho",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-porco-para-guisar",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em cubos de 4 cm"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cravinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em gomos"
+    },
+    {
+      "ref": "grelos",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar a carne",
+      "text": "Vinho branco, alho, colorau, louro, cravinho, sal e pimenta sobre os cubos. De véspera no frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "carne-de-porco-para-guisar",
+        "vinho-branco",
+        "dente-de-alho",
+        "colorau",
+        "folha-de-louro",
+        "cravinho",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Pôr a batata no forno",
+      "text": "Gomos com azeite, sal e dois dentes de alho esmagados, a 200 graus.",
+      "durationMinutes": 40,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite",
+        "dente-de-alho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Alourar a carne",
+      "text": "Carne escorrida e seca, em azeite bem quente, em três levas até ganhar crosta de todos os lados.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Estufar com a marinada",
+      "text": "Verter a marinada, tapar e deixar em lume brando até a carne ceder ao garfo. Destapar no fim para o molho reduzir.",
+      "durationMinutes": 40,
+      "passive": true
+    },
+    {
+      "title": "Saltear os grelos",
+      "text": "Grelos escaldados dois minutos e salteados em azeite com alho laminado. Servir com a carne, a batata e o limão.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "grelos",
+        "azeite",
+        "dente-de-alho",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 55,
+    "carbsGrams": 45,
+    "fatGrams": 45,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "notes": "Feito com azeite em vez de banha, que é a gordura tradicional deste prato.",
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,175 @@
+{
+  "id": "arroz-de-frango",
+  "name": "Arroz de frango",
+  "description": "Arroz malandro cozido no caldo do próprio frango, com o frango desfiado dentro. Com salada.",
+  "narrative": "Coze-se o frango em água com cebola, cenoura, louro e sal — e é esse caldo, não água nova, que vai cozer o arroz. Desfia-se a carne enquanto arrefece o suficiente para se lhe pegar. No tacho faz-se um refogado de cebola e alho com tomate e chouriço, junta-se o arroz, o caldo coado e deixa-se ficar malandro, com mais caldo do que um arroz seco. O frango desfiado entra no fim, só para aquecer.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "massa-e-arroz",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 60
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "coador",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 80,
+      "unit": "g",
+      "note": "às rodelas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o frango e guardar o caldo",
+      "text": "Coxas em água com uma cebola, a cenoura, o louro e sal, em lume brando até a carne se soltar do osso. Coar o caldo.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "cebola",
+        "cenoura",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Desfiar a carne",
+      "text": "Retirar a pele e os ossos e desfiar com dois garfos, assim que der para lhe pegar.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Refogar com tomate e chouriço",
+      "text": "Cebola e alho no azeite, chouriço às rodelas e o tomate ralado, até o tomate desfazer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "chourico",
+        "tomate"
+      ]
+    },
+    {
+      "title": "Cozer o arroz no caldo",
+      "text": "Arroz no refogado, depois o caldo quente — mais do que num arroz seco, para ficar malandro. Dezoito minutos em lume brando.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar o frango e servir",
+      "text": "Frango desfiado dentro, dois minutos só para aquecer, salsa picada por cima. Alface temperada ao lado.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "salsa",
+        "alface",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 42,
+    "carbsGrams": 72,
+    "fatGrams": 22,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 5,
+    "saltGrams": 2.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

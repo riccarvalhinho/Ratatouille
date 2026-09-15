@@ -1,0 +1,164 @@
+{
+  "id": "coelho-guisado",
+  "name": "Coelho guisado",
+  "description": "Coelho estufado em vinho tinto com alho e louro, com batata cozida e arroz branco.",
+  "narrative": "O coelho marina algumas horas em vinho tinto, alho, louro e colorau. Aloura-se bem escorrido, em lume forte, porque molhado não cora. Junta-se o refogado de cebola, a marinada e água a meio da altura, e vai tapado quarenta minutos — o coelho é carne magra e passa depressa de tenro a fibroso, por isso prova-se aos trinta. A batata coze à parte e o arroz faz-se nos últimos vinte minutos.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 60,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Marinar o coelho duas horas, ou de véspera"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coelho",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "aos pedaços"
+    },
+    {
+      "ref": "vinho-tinto",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o coelho",
+      "text": "Vinho tinto, alho esmagado, louro, colorau, sal e pimenta sobre os pedaços. Duas horas no frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "coelho",
+        "vinho-tinto",
+        "dente-de-alho",
+        "folha-de-louro",
+        "colorau",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Alourar os pedaços",
+      "text": "Coelho escorrido e seco, em azeite bem quente, em duas levas até corar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Estufar com a marinada",
+      "text": "Cebola no mesmo fundo, depois a marinada e água a meio da altura. Tapado em lume brando, a provar aos trinta minutos.",
+      "durationMinutes": 40,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "agua"
+      ]
+    },
+    {
+      "title": "Cozer a batata",
+      "text": "Batata em cubos grandes em água com sal, até ceder ao garfo.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Cozer o arroz e servir",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Guisado com salsa por cima, batata e arroz ao lado.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 690,
+    "proteinGrams": 52,
+    "carbsGrams": 62,
+    "fatGrams": 22,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 5,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

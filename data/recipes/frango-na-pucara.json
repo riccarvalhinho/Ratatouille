@@ -1,0 +1,181 @@
+{
+  "id": "frango-na-pucara",
+  "name": "Frango na púcara",
+  "description": "Frango estufado em vinho do Porto com cogumelos e presunto, com arroz branco e batata palha.",
+  "narrative": "Estufado de panela tapada, e o que o define é o vinho do Porto a reduzir com o molho do próprio frango. O frango aloura-se aos pedaços, tira-se, e no mesmo fundo vão a cebola, o alho, o presunto e os cogumelos. Volta o frango com o Porto, o vinho branco, o tomate e a mostarda, tapa-se, e ficam quarenta minutos em lume brando. Destapa-se no fim para o molho engrossar. Serve-se com arroz branco e batata palha por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 60
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "presunto",
+      "quantity": 80,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 250,
+      "unit": "g",
+      "note": "em quartos"
+    },
+    {
+      "ref": "vinho-do-porto",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata-palha",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o frango",
+      "text": "Coxas temperadas com sal e pimenta, em azeite quente, até corarem de todos os lados. Retirar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Refogar com presunto e cogumelos",
+      "text": "Cebola, alho e presunto no mesmo fundo, depois os cogumelos até largarem e reabsorverem a água.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "presunto",
+        "cogumelos"
+      ]
+    },
+    {
+      "title": "Estufar com o Porto",
+      "text": "Devolver o frango com o Porto, o vinho branco, o tomate, a mostarda e o louro. Tapado, em lume brando.",
+      "durationMinutes": 40,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-do-porto",
+        "vinho-branco",
+        "tomate",
+        "mostarda",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua"
+      ]
+    },
+    {
+      "title": "Reduzir o molho e servir",
+      "text": "Destapar cinco minutos em lume médio até o molho napar. Nos pratos, com o arroz e batata palha por cima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "batata-palha"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 790,
+    "proteinGrams": 52,
+    "carbsGrams": 68,
+    "fatGrams": 32,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 4,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "bifanas",
+  "name": "Bifanas",
+  "description": "Febras finas marinadas em alho, vinho branco e colorau, servidas no pão com batata frita.",
+  "narrative": "As febras marinam pelo menos uma hora em alho esmagado, vinho branco, colorau, louro e uma pitada de piri-piri — é a marinada que faz a bifana, e sem ela fica só carne de porco frita. Fritam-se depressa numa frigideira bem quente, aos poucos para não largarem água, e a marinada vai a seguir para o mesmo lume a apurar até virar molho. As batatas fritam-se entretanto. Serve-se no pão, com o molho a escorrer para dentro.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 25,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "Marinar as febras pelo menos uma hora, ou de véspera"
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "febra-de-porco",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un",
+      "note": "esmagados"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 4,
+      "unit": "un",
+      "note": "papo-secos"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar as febras",
+      "text": "Alho esmagado, vinho branco, colorau, louro, sal e piri-piri numa taça com a carne. Pelo menos uma hora no frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "febra-de-porco",
+        "dente-de-alho",
+        "vinho-branco",
+        "colorau",
+        "folha-de-louro",
+        "sal",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos secos com um pano, em óleo quente e em duas levas. Escorrer em papel e salgar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar as febras",
+      "text": "Frigideira bem quente com manteiga, três ou quatro de cada vez, um minuto de cada lado. Retirar para um prato.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "manteiga",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Apurar a marinada e servir",
+      "text": "Verter a marinada na mesma frigideira e deixar reduzir a metade. Devolver as febras só o tempo de se molharem, e montar no pão aberto.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 42,
+    "carbsGrams": 62,
+    "fatGrams": 32,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 4,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "salsichas-frescas-com-pure",
+  "name": "Salsichas frescas com puré",
+  "description": "Salsichas frescas douradas na frigideira, puré de batata e cebola caramelizada.",
+  "narrative": "Jantar de dias sem vontade nenhuma, e por isso escrito para o mínimo de atenção. As cebolas vão ao lume primeiro, em fatias finas com manteiga, e ficam vinte minutos a caramelizar sozinhas com uma mexidela de vez em quando. A batata coze no mesmo tempo. As salsichas douram-se devagar em lume médio, porque em lume forte rebentam antes de cozerem por dentro. O puré faz-se à última, com o leite bem quente.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "salsicha-fresca",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr as cebolas a caramelizar",
+      "text": "Meias-luas finas com metade da manteiga em lume brando, mexidas de vez em quando, até ficarem castanhas e doces.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Cozer a batata",
+      "text": "Batata em cubos em água com sal, até se desfazer ao garfo.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Dourar as salsichas",
+      "text": "Azeite em lume médio, a rolar de vez em quando, até ficarem douradas por igual e cozidas por dentro.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "salsicha-fresca",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Fazer o puré e servir",
+      "text": "Batata escorrida e esmagada quente, com o resto da manteiga e o leite quente aos poucos. Noz-moscada, sal e pimenta. Salsichas por cima, cebola a rematar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "leite",
+        "noz-moscada",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 32,
+    "carbsGrams": 62,
+    "fatGrams": 44,
+    "saturatedFatGrams": 20,
+    "fibreGrams": 6,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

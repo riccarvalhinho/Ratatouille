@@ -1,0 +1,153 @@
+{
+  "id": "frango-assado-com-piri-piri",
+  "name": "Frango assado com piri-piri",
+  "description": "Frango inteiro espalmado, temperado com piri-piri e alho, com batata assada e arroz.",
+  "narrative": "O frango espalma-se cortando-o ao meio pelas costas e abrindo-o com a mão — assim assa por igual e em metade do tempo. Tempera-se com uma pasta de alho, piri-piri, colorau, limão e azeite, e descansa o tempo que houver. Vai ao forno sobre as batatas em gomos, que assam no que pinga do frango. O arroz branco faz-se nos últimos vinte minutos. Pincela-se com o molho do tabuleiro a meio do assado.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "portuguesa",
+    "dia-a-dia",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 60
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "tacho",
+    "faca-de-chef",
+    "pincel-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "frango-inteiro",
+      "quantity": 1,
+      "unit": "un",
+      "note": "espalmado"
+    },
+    {
+      "ref": "piri-piri",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Espalmar e temperar o frango",
+      "text": "Cortar ao meio pelas costas e abrir com a palma da mão. Pasta de alho, piri-piri, colorau, sumo de limão, azeite e sal esfregada por dentro e por fora.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "frango-inteiro",
+        "dente-de-alho",
+        "piri-piri",
+        "colorau",
+        "limao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar sobre as batatas",
+      "text": "Gomos de batata no fundo do tabuleiro com azeite e sal, o frango aberto por cima, a 200 graus. Pincelar com o molho aos 30 minutos.",
+      "durationMinutes": 55,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver, louro e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Descansar e trinchar",
+      "text": "Dez minutos fora do forno antes de cortar, com o resto do limão em gomos.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 830,
+    "proteinGrams": 55,
+    "carbsGrams": 72,
+    "fatGrams": 34,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

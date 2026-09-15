@@ -1,0 +1,156 @@
+{
+  "id": "bacalhau-a-bras",
+  "name": "Bacalhau à Brás",
+  "description": "Bacalhau desfiado com cebola, batata palha e ovo ligado fora do lume. Com azeitonas e salada.",
+  "narrative": "A cebola aloura-se devagar em bastante azeite, com o alho, até ficar doce. Junta-se o bacalhau desfiado e demolhado, só o tempo de aquecer. A batata palha entra a seguir, envolvida com cuidado para não partir. E o ovo batido junta-se com o tacho fora do lume, a mexer depressa: é o calor que resta que o coze, e ao lume vira ovo mexido com bacalhau. Serve-se logo, com azeitonas, salsa e uma alface ao lado.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "ovos",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 500,
+      "unit": "g",
+      "note": "demolhado e desfiado"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "batata-palha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 80,
+      "unit": "g",
+      "note": "pretas"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar a cebola devagar",
+      "text": "Meias-luas finas com o alho em bastante azeite, em lume médio-baixo, até ficarem douradas e doces.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Juntar o bacalhau desfiado",
+      "text": "Bacalhau bem escorrido, três minutos só para aquecer e tomar o sabor da cebola.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "bacalhau-salgado",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Envolver a batata palha",
+      "text": "Batata palha dentro, envolvida com duas colheres e sem esmagar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "batata-palha"
+      ]
+    },
+    {
+      "title": "Ligar o ovo fora do lume",
+      "text": "Frigideira fora do calor, ovos batidos por cima, a mexer depressa até ficarem cremosos e não secos.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "ovo",
+        "sal"
+      ]
+    },
+    {
+      "title": "Servir com azeitonas e salada",
+      "text": "Azeitonas e salsa picada por cima. Alface rasgada ao lado, temperada com azeite, vinagre e sal.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "azeitona",
+        "salsa",
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 45,
+    "carbsGrams": 52,
+    "fatGrams": 42,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 4,
+    "saltGrams": 3.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "bacalhau-com-broa",
+  "name": "Bacalhau com broa",
+  "description": "Lombos de bacalhau com crosta de broa e alho, com batata a murro e grelos.",
+  "narrative": "Os lombos assam primeiro só com azeite e alho, vinte minutos, para ficarem quentes e soltarem-se em lascas. A crosta faz-se à parte: broa esmigalhada com alho, salsa e azeite, apertada com as mãos até ficar húmida e agarrar. Espalha-se por cima do peixe e volta ao forno dez minutos, só para tostar. A batata assa no mesmo tabuleiro desde o princípio e os grelos escaldam-se no fim.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 1440,
+      "description": "Demolhar o bacalhau 24 horas no frigorífico, a trocar a água três vezes"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "placa",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 4,
+      "unit": "un",
+      "note": "lombos demolhados"
+    },
+    {
+      "ref": "broa-de-milho",
+      "quantity": 200,
+      "unit": "g",
+      "note": "esmigalhada"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "grelos",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o bacalhau e a batata no forno",
+      "text": "Lombos e batatas pequenas no tabuleiro com metade do azeite e três dentes de alho, a 190 graus.",
+      "durationMinutes": 20,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "bacalhau-salgado",
+        "batata",
+        "azeite",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Preparar a crosta de broa",
+      "text": "Broa esmigalhada com o resto do alho picado, salsa, azeite e pimenta, apertada com as mãos até ficar húmida.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "broa-de-milho",
+        "salsa",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Tostar a crosta",
+      "text": "Crosta espalhada por cima dos lombos, de volta ao forno até dourar.",
+      "durationMinutes": 12,
+      "temperatureC": 200
+    },
+    {
+      "title": "Escaldar os grelos",
+      "text": "Dois minutos em água a ferver com sal, escorridos e regados com azeite.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "grelos",
+        "sal"
+      ]
+    },
+    {
+      "title": "Dar o murro na batata",
+      "text": "Batatas esmagadas com a palma da mão e regadas com o azeite do tabuleiro.",
+      "durationMinutes": 4
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 740,
+    "proteinGrams": 52,
+    "carbsGrams": 48,
+    "fatGrams": 38,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 6,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,207 @@
+{
+  "id": "empadao-de-carne",
+  "name": "Empadão de carne",
+  "description": "Carne picada refogada sob uma camada de puré de batata, gratinado no forno, com salada ao lado.",
+  "narrative": "A carne picada refoga-se com cebola, alho, cenoura e tomate até ficar um picado húmido mas não caldoso — se ficar líquido, molha o puré por baixo e o empadão desfaz-se ao servir. O puré faz-se enquanto isso, com manteiga e leite quente. Monta-se em camadas no pirex, alisa-se o puré com o garfo para fazer sulcos, e vai ao forno até tostar. A salada tempera-se à parte.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto",
+    "sobras"
+  ],
+  "methods": [
+    "forno",
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "frigideira",
+    "pirex",
+    "descascador",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "raladas"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a gema, para pincelar"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a batata para o puré",
+      "text": "Batata em cubos em água com sal, até se desfazer ao garfo.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Refogar a carne",
+      "text": "Cebola, alho e cenoura ralada no azeite, depois a carne a soltar-se. Vinho branco, tomate pelado e louro, a apurar até não ficar líquido no fundo.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "cenoura",
+        "azeite",
+        "carne-picada-de-vaca",
+        "vinho-branco",
+        "tomate-pelado",
+        "folha-de-louro",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o puré",
+      "text": "Batata escorrida e esmagada ainda quente, com a manteiga e o leite quente aos poucos. Noz-moscada e sal.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "manteiga",
+        "leite",
+        "noz-moscada"
+      ]
+    },
+    {
+      "title": "Montar e gratinar",
+      "text": "Carne no fundo do pirex, puré por cima alisado com o garfo, gema pincelada e queijo ralado. Forno até a superfície dourar.",
+      "durationMinutes": 25,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "ovo",
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Temperar a salada",
+      "text": "Alface rasgada e tomate às rodelas, com azeite, vinagre e sal.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "alface",
+        "tomate",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 690,
+    "proteinGrams": 38,
+    "carbsGrams": 62,
+    "fatGrams": 32,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 7,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,160 @@
+{
+  "id": "bife-a-portuguesa",
+  "name": "Bife à portuguesa",
+  "description": "Bife com molho de mostarda, natas e presunto, com batata frita e salada de alface.",
+  "narrative": "O bife sela-se em manteiga numa frigideira a fumegar e sai para descansar. No mesmo fundo aloura-se o alho, junta-se o presunto em tiras, e desglaça-se com vinho branco a raspar tudo o que ficou agarrado. Entram a mostarda e as natas, e deixa-se engrossar sem ferver com força. O bife volta só para se molhar. As batatas fritam-se antes, e a salada tempera-se à mesa.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "faca-de-chef",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-vaca",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "presunto",
+      "quantity": 80,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos secos, óleo quente, duas levas. Escorrer em papel e salgar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar os bifes",
+      "text": "Manteiga em frigideira a fumegar, um a dois minutos de cada lado conforme o ponto. Retirar e tapar.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "bife-de-vaca",
+        "manteiga",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o molho no mesmo fundo",
+      "text": "Alho e presunto a alourar, vinho branco a raspar o fundo, depois a mostarda e as natas. Lume baixo até engrossar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "presunto",
+        "vinho-branco",
+        "mostarda",
+        "natas"
+      ]
+    },
+    {
+      "title": "Molhar os bifes e servir",
+      "text": "Devolver os bifes ao molho meio minuto. Ao lado, a batata e a alface rasgada, temperada à mesa com azeite, vinagre e sal.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "alface",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 46,
+    "carbsGrams": 52,
+    "fatGrams": 54,
+    "saturatedFatGrams": 24,
+    "fibreGrams": 4,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

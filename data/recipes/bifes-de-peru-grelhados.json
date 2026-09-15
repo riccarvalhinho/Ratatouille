@@ -1,0 +1,149 @@
+{
+  "id": "bifes-de-peru-grelhados",
+  "name": "Bifes de peru grelhados",
+  "description": "Peru grelhado com alho e limão, salada de tomate e batata a murro. O jantar de vinte minutos.",
+  "narrative": "Prato para dias em que não se quer cozinhar. As batatas pequenas cozem-se com casca em água bem salgada e depois esmagam-se com a palma da mão, para abrirem sem se desfazerem — é essa superfície rachada que agarra o azeite e o alho. Os bifes de peru grelham-se dois minutos de cada lado, não mais, porque peru passado fica seco e não há molho que o salve. O tomate tempera-se cru enquanto a batata coze.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-peru",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as batatas com casca",
+      "text": "Batatas pequenas inteiras em água bem salgada, até o garfo entrar sem resistência.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Temperar os bifes",
+      "text": "Alho esmagado, sumo de meio limão, azeite, sal e pimenta sobre o peru.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "bife-de-peru",
+        "dente-de-alho",
+        "limao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Temperar o tomate",
+      "text": "Tomate às rodelas com a cebola roxa, orégãos, azeite, vinagre e sal.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "tomate",
+        "cebola-roxa",
+        "oregaos",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Dar o murro nas batatas",
+      "text": "Batatas escorridas e esmagadas com a palma da mão, regadas com azeite e o resto do alho laminado.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Grelhar o peru e servir",
+      "text": "Grelha bem quente, dois minutos de cada lado. Direto para o prato com a batata e a salada.",
+      "durationMinutes": 5
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 48,
+    "carbsGrams": 42,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 5,
+    "saltGrams": 1.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

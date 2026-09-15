@@ -1,0 +1,168 @@
+{
+  "id": "bacalhau-a-gomes-de-sa",
+  "name": "Bacalhau à Gomes de Sá",
+  "description": "Bacalhau no forno com batata às rodelas, cebola, ovo cozido e azeitonas.",
+  "narrative": "O bacalhau demolhado escalda-se em leite quente e fica lá dentro meia hora — é o que lhe tira o sal que resta e o deixa mais macio. A batata coze com casca e corta-se em rodelas grossas. A cebola e o alho alouram-se devagar em muito azeite. Junta-se tudo numa travessa, sem mexer de mais para a batata não desfazer, e vai a forno quente vinte minutos. Sai com ovo cozido às rodelas, azeitonas pretas e salsa.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "ovos",
+    "portuguesa",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 1440,
+      "description": "Demolhar o bacalhau 24 horas no frigorífico, a trocar a água três vezes"
+    }
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "pirex",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 600,
+      "unit": "g",
+      "note": "demolhado"
+    },
+    {
+      "ref": "leite",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "com casca"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 100,
+      "unit": "g",
+      "note": "pretas"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar o bacalhau em leite",
+      "text": "Leite quente sobre o bacalhau, tapado, meia hora. Escorrer e lascar, tirando peles e espinhas.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "bacalhau-salgado",
+        "leite"
+      ]
+    },
+    {
+      "title": "Cozer a batata e os ovos",
+      "text": "Batata com casca em água com sal e o louro; os ovos na mesma panela nos últimos dez minutos.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "ovo",
+        "folha-de-louro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Alourar a cebola em azeite",
+      "text": "Meias-luas e alho em lume brando com bastante azeite, até ficarem translúcidas e douradas.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Montar e levar ao forno",
+      "text": "Batata descascada em rodelas grossas, bacalhau e cebola envolvidos com cuidado na travessa. Forno a 200 graus.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Rematar com ovo e azeitonas",
+      "text": "Ovo cozido às rodelas, azeitonas pretas e salsa picada por cima, à saída do forno.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeitona",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 48,
+    "carbsGrams": 58,
+    "fatGrams": 45,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 5,
+    "saltGrams": 3.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

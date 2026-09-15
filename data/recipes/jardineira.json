@@ -1,0 +1,177 @@
+{
+  "id": "jardineira",
+  "name": "Jardineira",
+  "description": "Guisado de carne com batata, cenoura e ervilhas, servido com arroz branco.",
+  "narrative": "Guisado de tacho e de panela só. A carne aloura-se primeiro em lume forte, para ganhar crosta, e só depois entra o refogado de cebola e alho. Vinho branco a desglaçar, tomate, louro e água a cobrir, e uma hora tapado em lume brando. A batata e a cenoura entram na última meia hora, as ervilhas nos últimos cinco minutos. O arroz branco faz-se à parte, no fim.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 90
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "faca-de-chef",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-vaca-para-guisar",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em rodelas grossas"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em cubos grandes"
+    },
+    {
+      "ref": "ervilhas-congeladas",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.2,
+      "unit": "l"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar a carne",
+      "text": "Cubos secos em azeite bem quente, em duas levas, até ganharem crosta. Retirar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "carne-de-vaca-para-guisar",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Refogar e desglaçar",
+      "text": "Cebola e alho no mesmo fundo até amolecerem, depois o vinho branco a raspar o fundo, o tomate e o louro.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "vinho-branco",
+        "tomate-pelado",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Estufar a carne",
+      "text": "Devolver a carne, cobrir com água e deixar tapado em lume brando até ceder ao garfo.",
+      "durationMinutes": 60,
+      "passive": true,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Juntar a batata e a cenoura",
+      "text": "Mais trinta minutos, até a batata estar cozida mas inteira. Ervilhas nos últimos cinco.",
+      "durationMinutes": 30,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cenoura",
+        "ervilhas-congeladas"
+      ]
+    },
+    {
+      "title": "Cozer o arroz branco",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Servir ao lado, com salsa picada sobre o guisado.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 46,
+    "carbsGrams": 72,
+    "fatGrams": 24,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 8,
+    "saltGrams": 2.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

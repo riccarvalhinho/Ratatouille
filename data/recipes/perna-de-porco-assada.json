@@ -1,0 +1,159 @@
+{
+  "id": "perna-de-porco-assada",
+  "name": "Perna de porco assada no forno",
+  "description": "Assado lento de perna de porco com alho e vinho branco, batata assada e puré de maçã.",
+  "narrative": "A perna tempera-se de véspera com alho, colorau, louro e vinho branco. Vai ao forno tapada com folha de alumínio durante duas horas a 160 graus, e só depois se destapa e sobe para 200 para a pele tostar. As batatas entram no tabuleiro na última hora, a assar no molho da carne. O puré de maçã faz-se num tacho à parte, sem açúcar, e serve-se morno ou frio ao lado.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 180,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Temperar a perna de véspera"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "folha-de-aluminio",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "perna-de-porco",
+      "quantity": 2,
+      "unit": "kg"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em gomos grandes"
+    },
+    {
+      "ref": "maca",
+      "quantity": 4,
+      "unit": "un",
+      "note": "descascadas e em cubos"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Temperar a perna de véspera",
+      "text": "Pasta de alho, colorau, sal, pimenta e azeite esfregada por toda a carne, com o louro e o vinho branco por baixo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "perna-de-porco",
+        "dente-de-alho",
+        "colorau",
+        "azeite",
+        "folha-de-louro",
+        "vinho-branco",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar tapada",
+      "text": "Tabuleiro selado com folha de alumínio, a 160 graus, sem abrir.",
+      "durationMinutes": 120,
+      "temperatureC": 160,
+      "passive": true
+    },
+    {
+      "title": "Juntar a batata e destapar",
+      "text": "Gomos de batata à volta da carne, no molho do tabuleiro. Subir para 200 graus e assar destapado até a pele estalar.",
+      "durationMinutes": 60,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Fazer o puré de maçã",
+      "text": "Maçã em cubos num tacho com um dedo de água, sumo de limão e canela, tapada, até desfazer. Esmagar com o garfo.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "maca",
+        "limao",
+        "canela-em-po"
+      ]
+    },
+    {
+      "title": "Descansar e trinchar",
+      "text": "Quinze minutos fora do forno antes de cortar, com o molho do tabuleiro passado para uma molheira.",
+      "durationMinutes": 15
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 58,
+    "carbsGrams": 52,
+    "fatGrams": 42,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 5,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

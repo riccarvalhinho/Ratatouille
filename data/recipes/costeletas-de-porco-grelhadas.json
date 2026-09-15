@@ -1,0 +1,156 @@
+{
+  "id": "costeletas-de-porco-grelhadas",
+  "name": "Costeletas de porco grelhadas",
+  "description": "Costeletas temperadas com alho e limão, grelhadas, com arroz de tomate e salada.",
+  "narrative": "As costeletas temperam-se com alho, limão, sal e pimenta e descansam meia hora fora do frigorífico — carne fria encolhe na grelha. O arroz de tomate faz-se primeiro, porque leva vinte minutos: refogado de cebola e alho, tomate a desfazer-se, arroz e água a ferver. As costeletas grelham-se em lume forte, três a quatro minutos de cada lado, e descansam antes de ir para a mesa. A salada tempera-se à última.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "grelhador",
+    "tacho",
+    "faca-de-chef",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "costeleta-de-porco",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un",
+      "note": "esmagados"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 400,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-cereja",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Temperar e deixar sair do frio",
+      "text": "Alho esmagado, sumo de meio limão, sal e pimenta nas costeletas. Meia hora fora do frigorífico.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "costeleta-de-porco",
+        "dente-de-alho",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o arroz de tomate",
+      "text": "Cebola e alho no azeite, tomate ralado a desfazer-se cinco minutos, depois o arroz e a água a ferver com sal. Tapado, 18 minutos.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "tomate",
+        "arroz-carolino",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Grelhar as costeletas",
+      "text": "Grelha bem quente, três a quatro minutos de cada lado, sem mexer até virar.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Descansar e temperar a salada",
+      "text": "Cinco minutos de descanso para a carne. Alface e tomate cereja com azeite, vinagre e sal.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "alface",
+        "tomate-cereja",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 700,
+    "proteinGrams": 45,
+    "carbsGrams": 58,
+    "fatGrams": 30,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 5,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
