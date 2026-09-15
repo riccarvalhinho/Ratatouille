@@ -12,6 +12,9 @@ Imagens das receitas. Vivem no Git, portanto ficam aqui para sempre — comprimi
 O validador (`npm run validate`) confirma que o campo `image` de uma receita aponta para um caminho
 com o nome certo.
 
+**A estratégia completa está em `docs/ops/imagens.md`**: por que ordem se procura, o que se aprendeu
+ao commitar 169 imagens erradas de uma vez, e porque é que nenhuma imagem entra sem alguém a ver.
+
 ## De onde vêm
 
 `.github/workflows/buscar-imagens.yml` procura em quatro bancos. Corre no GitHub Actions e não numa

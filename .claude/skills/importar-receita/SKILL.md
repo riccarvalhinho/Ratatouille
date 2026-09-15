@@ -105,8 +105,15 @@ escrita à mão vale pouco; numa leva de vinte é a diferença entre rever e fin
 
 ### 5. Procurar a fotografia
 
+**A estratégia completa, por ordem de preferência, está em `docs/ops/imagens.md`** — ler antes de
+procurar seja o que for. O resumo: fotografia própria primeiro, bancos curados depois, arquivos a
+seguir, e frame de vídeo só com licença CC.
+
 **Nunca copiar a fotografia da fonte.** Uma foto de receita num site é obra protegida como o texto, e
 este repositório é público. O `imageUrl` do que foi recolhido serve de referência, não de origem.
+O mesmo vale para um frame de um vídeo de Instagram ou de YouTube: a legenda e os ingredientes são
+factos e usam-se, a imagem é obra e não se usa — **a única exceção é um vídeo publicado em CC BY**,
+que o YouTube identifica, e aí credita-se o canal.
 
 A melhor via é fotografia própria, tirada quando se cozinha — aí `imageCredit` leva
 `{ "license": "própria" }`. Não havendo, procura-se nos bancos de licença livre.
