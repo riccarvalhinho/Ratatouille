@@ -114,7 +114,7 @@
   "steps": [
     {
       "title": "Fazer o soffritto",
-      "text": "Cebola, cenoura e aipo em cubos pequenos, dez minutos no azeite em lume brando até amolecerem sem ganhar cor. É a base da sopa e não se acelera.",
+      "text": "Cebola, cenoura e aipo em cubos pequenos, dez minutos no azeite em lume brando até amolecerem sem ganhar cor.",
       "durationMinutes": 12,
       "ingredientRefs": [
         "cebola",
@@ -139,7 +139,7 @@
     },
     {
       "title": "Acrescentar a courgette e o feijão",
-      "text": "Mais dez minutos. Postos no princípio, a courgette desfaz-se e o feijão parte-se todo.",
+      "text": "Mais dez minutos, só até a courgette ficar tenra.",
       "durationMinutes": 10,
       "ingredientRefs": [
         "courgette",
@@ -148,7 +148,7 @@
     },
     {
       "title": "Cozer a massa na própria sopa",
-      "text": "Massa direto no caldo, o tempo que o pacote disser. Solta amido e engrossa a sopa — é assim que deve ser, não é defeito.",
+      "text": "Massa direto no caldo, o tempo que o pacote disser.",
       "durationMinutes": 8,
       "ingredientRefs": [
         "massa-cotovelo"

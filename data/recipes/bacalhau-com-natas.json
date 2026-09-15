@@ -118,7 +118,7 @@
   "steps": [
     {
       "title": "Fritar a batata em palitos",
-      "text": "Só até ganharem cor clara: acabam de cozinhar no forno, e fritas até ao fim saem de lá moles. Escorrer bem em papel.",
+      "text": "Fritar só até ganharem cor clara. Escorrer bem em papel.",
       "durationMinutes": 20,
       "ingredientRefs": [
         "batata",
@@ -138,7 +138,7 @@
     },
     {
       "title": "Fazer o bechamel",
-      "text": "Manteiga derretida com a farinha, mexida um minuto para perder o sabor a cru. Leite aos poucos sempre a bater, depois as natas e a noz-moscada, até napar as costas da colher.",
+      "text": "Manteiga derretida com a farinha, mexida um minuto. Leite aos poucos sempre a bater, depois as natas e a noz-moscada, até napar as costas da colher.",
       "durationMinutes": 10,
       "ingredientRefs": [
         "manteiga",

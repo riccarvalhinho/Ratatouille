@@ -276,6 +276,39 @@ a mesma coisa duas vezes, um dos dois está mal escrito.
 
 O mau repete o título e parte em dois uma coisa que é uma. O bom diz coisas diferentes em cada linha.
 
+### O texto diz o que fazer e até quando parar. Não diz porquê.
+
+É o erro mais fácil de cometer a escrever receitas, e sai naturalmente a quem escreve bem: acabar
+cada passo com uma frase a justificar a instrução, a defender a receita, ou a explicar a técnica.
+Lê-se bem e não serve para nada — quem está a cozinhar tem as mãos sujas e quer o gesto seguinte.
+
+**O teste, frase a frase: se eu cortar isto, alguém faz alguma coisa diferente?** Se não, sai.
+
+| Sai | Fica |
+|---|---|
+| «É o único ar que este bolo leva — batido a menos, sai pesado.» | «Bater até triplicar de volume.» |
+| «Natas não entram: isso é outro prato.» | «Ao lume, coalha.» |
+| «É o passo que quase toda a gente corta, e é o que faz o caril.» | «Queimados, ficam amargos.» |
+| «Solta amido e engrossa a sopa — é assim que deve ser, não é defeito.» | «O palito ao centro tem de sair seco.» |
+
+A coluna da esquerda explica. A da direita muda uma mão, ou diz quando parar. Repare-se que a
+diferença **não é o comprimento nem a existência de segunda frase**: um aviso sobre a única maneira
+de estragar o prato fica, por mais curto que seja o passo.
+
+Nunca olhar para trás nem para a frente: «batido agora, perde-se o ar do passo anterior» obriga a
+quem lê a lembrar-se de um ecrã que já passou, e o modo cozinha mostra um passo de cada vez.
+
+**O porquê não se perde — muda de sítio.** É na `narrative` que ele vive, e é lá que se vai
+procurá-lo quando apetecer perceber a receita em vez de a executar. Ao cortar uma justificação de um
+passo, **confirmar que a narrativa a diz**; se não disser, é lá que se acrescenta.
+
+### Uma parte ou uma quantidade nunca pode ser lida de duas maneiras
+
+«Gemas, ovo inteiro» não diz se leva gemas, se leva ovos inteiros, se leva os dois — e quem está a
+cozinhar não tem como adivinhar. Isto não é estilo, é um defeito que impede a execução, e nem o
+schema nem o `import:sanidade` o apanham. Escreve-se «só as gemas, sem as claras», e a linha do
+ingrediente diz o mesmo.
+
 Uma receita da internet vem com a granularidade que o autor quis, e muitas vêm no formato mau — uma
 linha por gesto. **Reagrupar faz parte do trabalho de importar**, não é liberdade que se toma: sem
 isso, o modo cozinha fica com o dobro dos passos e metade deles não diz nada.
@@ -291,6 +324,8 @@ espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É bar
 
 - Passos ao nível de tarefa, com título. Nunca parágrafos, nunca um passo por gesto. Ver a secção
   "Como se escrevem os passos" — é a regra mais fácil de aplicar mal.
+- O texto do passo diz o que fazer e até quando parar, nunca porquê. O porquê vive na `narrative`,
+  e é para lá que se muda o que se corta — não se deita fora
 - Tempo total inclui a preparação estimada; a antecedência (marinar, demolhar) é campo à parte e
   **não** entra no total. Vira passo quando a espera é a receita, não vira quando acontece longe da
   cozinha — o teste está na secção "A antecedência vira passo, ou não?"

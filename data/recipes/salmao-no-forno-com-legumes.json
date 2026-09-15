@@ -86,7 +86,7 @@
   "steps": [
     {
       "title": "Assar a batata sozinha",
-      "text": "Rodelas com azeite, sal e alho, espalhadas sem se sobreporem. Vinte minutos antes de entrar mais nada: a batata demora o dobro dos legumes.",
+      "text": "Rodelas com azeite, sal e alho, espalhadas sem se sobreporem. Vinte minutos antes de entrar mais nada.",
       "durationMinutes": 20,
       "temperatureC": 200,
       "passive": true,

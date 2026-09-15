@@ -40,7 +40,7 @@
       "type": "string"
     },
     "narrative": {
-      "description": "A receita em texto corrido, numa transcrição nossa. Nunca o texto original de outra pessoa — ver docs/ops/importar-receitas.md. Serve de rede de segurança da importação e de leitura corrida.",
+      "description": "A receita em texto corrido, numa transcrição nossa. Nunca o texto original de outra pessoa — ver docs/ops/importar-receitas.md. Serve de rede de segurança da importação, de leitura corrida, e é o sítio onde o porquê pode viver: a justificação que não cabe num passo escreve-se aqui, num tom mais conversado.",
       "type": "string"
     },
     "status": {
@@ -198,7 +198,7 @@
             "maxLength": 60
           },
           "text": {
-            "description": "O que é preciso saber para não fazer mal o que o título anuncia: o como, o até quando, a ressalva. Nunca repete o título.",
+            "description": "O que é preciso saber para não fazer mal o que o título anuncia: o como, o até quando, a ressalva. Nunca repete o título, e nunca explica porquê — o teste é se cortar a frase faz alguém cozinhar de maneira diferente. A justificação vive em narrative.",
             "type": "string",
             "minLength": 1,
             "maxLength": 280

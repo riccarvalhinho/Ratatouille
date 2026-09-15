@@ -2,7 +2,7 @@
   "id": "caril-de-frango",
   "name": "Caril de frango",
   "description": "Caril de base de cebola alourada devagar, tomate e leite de coco, com arroz basmati e uma colher de iogurte.",
-  "narrative": "A cebola aloura devagar, vinte minutos em lume médio-baixo, até ficar dourada e doce — é o passo que a maior parte das receitas corta e é o que separa um caril bom de um molho amarelo. Depois o caril e os cominhos tostam um minuto no óleo quente com o alho e o gengibre, sem se descuidar porque queimam num instante. Aloura-se o frango, junta-se o tomate pelado esmagado e deixa-se apurar. A meio, põe-se o arroz basmati ao lume, lavado até a água sair clara. O caril acaba com o leite de coco, quinze minutos sem ferver com força, e o sal corrige-se no fim. Serve-se sobre o arroz, com iogurte e coentros por cima.",
+  "narrative": "A cebola aloura devagar, vinte minutos em lume médio-baixo, até ficar dourada e doce — é o passo que a maior parte das receitas corta e é o que separa um caril bom de um molho amarelo. Depois o caril e os cominhos tostam um minuto no óleo quente com o alho e o gengibre, sem se descuidar porque queimam num instante. Aloura-se o frango, junta-se o tomate pelado esmagado e deixa-se apurar. A meio, põe-se o arroz basmati ao lume, lavado até a água sair clara. O caril acaba com o leite de coco, quinze minutos sem ferver com força, e o sal corrige-se no fim. Serve-se sobre o arroz, com coentros e uma colher de iogurte por cima — que não é enfeite, é o que corta o picante.",
   "servings": 4,
   "labels": [
     "prato-principal",
@@ -102,7 +102,7 @@
   "steps": [
     {
       "title": "Alourar a cebola devagar",
-      "text": "Vinte minutos em lume médio-baixo, a mexer de vez em quando, até ficar dourada e doce. É o passo que quase toda a gente corta, e é o que faz o caril.",
+      "text": "Vinte minutos em lume médio-baixo, a mexer de vez em quando, até ficar dourada e doce.",
       "durationMinutes": 20,
       "ingredientRefs": [
         "cebola",
@@ -111,7 +111,7 @@
     },
     {
       "title": "Tostar as especiarias",
-      "text": "Caril e cominhos direto no óleo quente com o alho e o gengibre, um minuto só e sempre a mexer. Queimados, ficam amargos e não há como recuperar.",
+      "text": "Caril e cominhos direto no óleo quente com o alho e o gengibre, um minuto só e sempre a mexer. Queimados, ficam amargos.",
       "durationMinutes": 2,
       "ingredientRefs": [
         "caril-em-po",
@@ -153,7 +153,7 @@
     },
     {
       "title": "Servir com iogurte e coentros",
-      "text": "Caril sobre o arroz, uma colher de iogurte por cima e coentros picados. O iogurte não é enfeite — é o que corta o picante.",
+      "text": "Caril sobre o arroz, uma colher de iogurte por cima e coentros picados.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "iogurte-natural",

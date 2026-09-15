@@ -95,7 +95,7 @@
   "steps": [
     {
       "title": "Pôr o arroz a cozer",
-      "text": "Arroz, água e sal, tapado, 12 minutos em lume baixo. Começa primeiro porque tudo o resto se faz em dez.",
+      "text": "Arroz, água e sal, tapado, 12 minutos em lume baixo.",
       "durationMinutes": 15,
       "passive": true,
       "ingredientRefs": [
@@ -106,7 +106,7 @@
     },
     {
       "title": "Misturar o molho teriyaki",
-      "text": "Soja, mirim, açúcar, gengibre e alho numa taça, mexidos até o açúcar desaparecer. Pronto de antemão, entra na frigideira sem hesitar.",
+      "text": "Soja, mirim, açúcar, gengibre e alho numa taça, mexidos até o açúcar desaparecer.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "molho-de-soja",
@@ -118,7 +118,7 @@
     },
     {
       "title": "Cozer os brócolos no vapor",
-      "text": "Cinco minutos no cesto, por cima do arroz ou em panela à parte. Ficam verdes e com resistência; mais do que isso perdem a cor e a graça.",
+      "text": "Cinco minutos no cesto, por cima do arroz ou em panela à parte. Ficam verdes e com resistência ao garfo.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "brocolos"

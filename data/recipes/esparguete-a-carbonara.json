@@ -2,7 +2,7 @@
   "id": "esparguete-a-carbonara",
   "name": "Esparguete à carbonara",
   "description": "Ovo, queijo e bacon tostado, ligados fora do lume com água da cozedura. Sem natas.",
-  "narrative": "Põe-se a água ao lume e, enquanto ferve, vai o bacon a lume médio numa frigideira sem gordura nenhuma — larga a dele. Numa taça batem-se as gemas com um ovo inteiro, o queijo ralado na hora e muita pimenta, até virar um creme espesso. O esparguete coze um minuto a menos do que diz o pacote, e antes de escorrer tira-se uma caneca da água da cozedura. A massa vai para a frigideira já fora do calor, os ovos por cima a mexer depressa, e a água aos poucos até o molho ficar cremoso. No lume, os ovos coalham e aquilo vira omelete com massa.",
+  "narrative": "Põe-se a água ao lume e, enquanto ferve, vai o bacon a lume médio numa frigideira sem gordura nenhuma — larga a dele. Numa taça batem-se as gemas — só as gemas, que as claras não entram —, o queijo ralado na hora e muita pimenta, até virar um creme espesso. Natas também não: isso é outro prato, e este não precisa delas porque o creme sai do ovo e da água da cozedura. O esparguete coze um minuto a menos do que diz o pacote, e antes de escorrer tira-se uma caneca da água da cozedura. A massa vai para a frigideira já fora do calor, os ovos por cima a mexer depressa, e a água aos poucos até o molho ficar cremoso. No lume, os ovos coalham e aquilo vira omelete com massa.",
   "servings": 2,
   "labels": [
     "prato-principal",
@@ -41,9 +41,9 @@
     },
     {
       "ref": "ovo",
-      "quantity": 3,
+      "quantity": 4,
       "unit": "un",
-      "note": "2 gemas e 1 ovo inteiro"
+      "note": "só as gemas, sem as claras"
     },
     {
       "ref": "queijo-parmesao",
@@ -68,7 +68,7 @@
   "steps": [
     {
       "title": "Água ao lume e bacon a tostar",
-      "text": "Água com sal a aquecer enquanto o bacon vai a lume médio numa frigideira seca — larga a gordura dele. Tostado mas não ressequido.",
+      "text": "Água com sal a aquecer enquanto o bacon vai a lume médio numa frigideira seca. Tostado mas não ressequido.",
       "durationMinutes": 8,
       "ingredientRefs": [
         "agua",
@@ -77,8 +77,8 @@
       ]
     },
     {
-      "title": "Bater os ovos com o queijo",
-      "text": "Gemas, ovo inteiro, queijo ralado na hora e pimenta a sério, batidos até ficar um creme espesso. Natas não entram: isso é outro prato.",
+      "title": "Bater as gemas com o queijo",
+      "text": "Só as gemas, sem as claras, com o queijo ralado na hora e pimenta a sério. Bater até ficar um creme espesso.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "ovo",
@@ -88,7 +88,7 @@
     },
     {
       "title": "Cozer a massa e guardar a água",
-      "text": "Um minuto a menos do que diz o pacote. Antes de escorrer, tirar uma caneca da água da cozedura — é ela que faz o molho.",
+      "text": "Um minuto a menos do que diz o pacote. Antes de escorrer, tirar uma caneca da água da cozedura.",
       "durationMinutes": 9,
       "ingredientRefs": [
         "esparguete"

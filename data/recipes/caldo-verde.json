@@ -73,7 +73,7 @@
   "steps": [
     {
       "title": "Cozer a batata com a cebola",
-      "text": "Batata, cebola e alho na água com sal, em lume médio até a batata se desfazer à pressão do garfo. Não precisa de vigilância nenhuma.",
+      "text": "Batata, cebola e alho na água com sal, em lume médio até a batata se desfazer à pressão do garfo.",
       "durationMinutes": 20,
       "passive": true,
       "ingredientRefs": [
@@ -86,7 +86,7 @@
     },
     {
       "title": "Passar tudo com a varinha",
-      "text": "Triturar até ficar liso, com o azeite já dentro. Grosso de mais, junta-se água a ferver: a couve ainda vai beber caldo.",
+      "text": "Triturar até ficar liso, com o azeite já dentro. Se ficar grosso de mais, juntar água a ferver.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "azeite"
@@ -94,7 +94,7 @@
     },
     {
       "title": "Escaldar as rodelas de chouriço",
-      "text": "Dois minutos no caldo a ferver e retirar. Deixam o fumado na sopa e chegam quentes ao prato.",
+      "text": "Dois minutos no caldo a ferver e retirar.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "chourico"
@@ -102,7 +102,7 @@
     },
     {
       "title": "Cozer a couve e servir",
-      "text": "Caldo a ferver, couve dentro, cinco minutos destapado para ficar verde e não amarelo. Nos pratos, com o chouriço e um fio de azeite.",
+      "text": "Caldo a ferver, couve dentro, cinco minutos destapado. Nos pratos, com o chouriço e um fio de azeite.",
       "durationMinutes": 6,
       "ingredientRefs": [
         "couve-galega",

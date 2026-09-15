@@ -99,7 +99,7 @@
   "steps": [
     {
       "title": "Pôr o arroz ao lume",
-      "text": "Refogar um dente de alho no azeite, juntar o arroz, a água a ferver, o louro e sal. Tapado, 12 minutos em lume brando. Começa primeiro porque é o que demora mais.",
+      "text": "Refogar um dente de alho no azeite, juntar o arroz, a água a ferver, o louro e sal. Tapado, 12 minutos em lume brando.",
       "durationMinutes": 15,
       "ingredientRefs": [
         "arroz-agulha",
@@ -112,7 +112,7 @@
     },
     {
       "title": "Fritar as batatas",
-      "text": "Secar os palitos com um pano antes de irem ao óleo quente, senão espirram e não alouram. Em duas levas, para o óleo não arrefecer, e a escorrer em papel.",
+      "text": "Secar bem os palitos com um pano antes de irem ao óleo quente. Fritar em duas levas e escorrer em papel.",
       "durationMinutes": 15,
       "ingredientRefs": [
         "batata",

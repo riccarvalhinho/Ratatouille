@@ -53,7 +53,7 @@
   "steps": [
     {
       "title": "Triturar a melancia com a lima",
-      "text": "Cubos, sumo de lima e o açúcar, batidos até ficar líquido. Provar agora: gelado sabe sempre menos doce do que líquido.",
+      "text": "Cubos, sumo de lima e o açúcar, batidos até ficar líquido. Provar e deixar mais doce do que parece preciso.",
       "durationMinutes": 5,
       "ingredientRefs": [
         "melancia",
@@ -63,13 +63,13 @@
     },
     {
       "title": "Congelar em camada fina",
-      "text": "Tabuleiro largo, nunca taça funda. Quanto mais fina a camada, mais depressa congela e mais fino fica o cristal.",
+      "text": "Tabuleiro largo e nunca taça funda, com a mistura numa camada de dois dedos.",
       "durationMinutes": 60,
       "passive": true
     },
     {
       "title": "Raspar com o garfo de hora a hora",
-      "text": "Três ou quatro vezes, sempre a soltar a superfície que já congelou. É isto que faz um granizado — sem raspar, sai um bloco.",
+      "text": "Três ou quatro vezes, sempre a soltar a superfície que já congelou, até estar tudo em cristais soltos.",
       "durationMinutes": 5
     },
     {
