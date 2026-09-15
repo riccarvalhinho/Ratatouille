@@ -1,0 +1,161 @@
+{
+  "id": "frango-teriyaki",
+  "name": "Frango teriyaki",
+  "description": "Tiras de frango seladas em lume forte e envolvidas num molho de soja e mirim reduzido, com arroz e brócolos no vapor.",
+  "narrative": "O arroz vai primeiro ao lume, porque o resto se faz em dez minutos. Numa taça mistura-se a soja, o mirim, o açúcar, o gengibre e o alho, até o açúcar desaparecer — feito de antemão, entra na frigideira sem hesitações. Os brócolos cozem no vapor cinco minutos, o suficiente para ficarem verdes e com resistência. O frango sela-se em frigideira bem quente, com as tiras espalhadas sem se tocarem, e não se mexe até ganharem cor: amontoado, coze em vez de tostar. Por fim junta-se o molho e deixa-se borbulhar dois ou três minutos até ficar espesso e brilhante.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "cesto-de-vapor",
+    "ralador",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em tiras grossas"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "mirim",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "brocolos",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em floretes"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz a cozer",
+      "text": "Arroz, água e sal, tapado, 12 minutos em lume baixo. Começa primeiro porque tudo o resto se faz em dez.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Misturar o molho teriyaki",
+      "text": "Soja, mirim, açúcar, gengibre e alho numa taça, mexidos até o açúcar desaparecer. Pronto de antemão, entra na frigideira sem hesitar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "molho-de-soja",
+        "mirim",
+        "acucar",
+        "gengibre",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Cozer os brócolos no vapor",
+      "text": "Cinco minutos no cesto, por cima do arroz ou em panela à parte. Ficam verdes e com resistência; mais do que isso perdem a cor e a graça.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "brocolos"
+      ]
+    },
+    {
+      "title": "Selar o frango em lume forte",
+      "text": "Frigideira a fumegar, tiras espalhadas sem se tocarem, e não se mexe até ganharem cor. Amontoado, o frango coze em vez de tostar.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Reduzir o molho e servir",
+      "text": "Molho por cima do frango, a borbulhar até ficar espesso e a brilhar — dois a três minutos. Sobre o arroz, com os brócolos ao lado e sésamo por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 45,
+    "carbsGrams": 75,
+    "fatGrams": 12,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 5,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

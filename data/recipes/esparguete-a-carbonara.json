@@ -1,0 +1,119 @@
+{
+  "id": "esparguete-a-carbonara",
+  "name": "Esparguete à carbonara",
+  "description": "Ovo, queijo e bacon tostado, ligados fora do lume com água da cozedura. Sem natas.",
+  "narrative": "Põe-se a água ao lume e, enquanto ferve, vai o bacon a lume médio numa frigideira sem gordura nenhuma — larga a dele. Numa taça batem-se as gemas com um ovo inteiro, o queijo ralado na hora e muita pimenta, até virar um creme espesso. O esparguete coze um minuto a menos do que diz o pacote, e antes de escorrer tira-se uma caneca da água da cozedura. A massa vai para a frigideira já fora do calor, os ovos por cima a mexer depressa, e a água aos poucos até o molho ficar cremoso. No lume, os ovos coalham e aquilo vira omelete com massa.",
+  "servings": 2,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escorredor",
+    "taca",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "esparguete",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "bacon",
+      "quantity": 120,
+      "unit": "g",
+      "note": "em tiras grossas"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un",
+      "note": "2 gemas e 1 ovo inteiro"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 50,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Água ao lume e bacon a tostar",
+      "text": "Água com sal a aquecer enquanto o bacon vai a lume médio numa frigideira seca — larga a gordura dele. Tostado mas não ressequido.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "agua",
+        "sal",
+        "bacon"
+      ]
+    },
+    {
+      "title": "Bater os ovos com o queijo",
+      "text": "Gemas, ovo inteiro, queijo ralado na hora e pimenta a sério, batidos até ficar um creme espesso. Natas não entram: isso é outro prato.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "ovo",
+        "queijo-parmesao",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a massa e guardar a água",
+      "text": "Um minuto a menos do que diz o pacote. Antes de escorrer, tirar uma caneca da água da cozedura — é ela que faz o molho.",
+      "durationMinutes": 9,
+      "ingredientRefs": [
+        "esparguete"
+      ]
+    },
+    {
+      "title": "Ligar tudo fora do lume",
+      "text": "Massa escorrida para a frigideira já fora do calor, ovos por cima a mexer depressa, água da cozedura aos poucos até ficar cremoso. Ao lume, coalha.",
+      "durationMinutes": 3
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 38,
+    "carbsGrams": 70,
+    "fatGrams": 38,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 4,
+    "saltGrams": 2.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

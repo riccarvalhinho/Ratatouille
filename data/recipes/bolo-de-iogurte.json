@@ -1,0 +1,133 @@
+{
+  "id": "bolo-de-iogurte",
+  "name": "Bolo de iogurte",
+  "description": "O bolo de tabuleiro de qualquer casa: iogurte, óleo e raspa de limão, sem nada que não se tenha na despensa.",
+  "narrative": "Batem-se os ovos com o açúcar até a mistura ficar clara e triplicar de volume — é o único ar que este bolo leva, e batido a menos fica pesado. Junta-se o iogurte, o óleo em fio e a raspa de limão, só o suficiente para incorporar. A farinha e o fermento vão peneirados por cima e envolvem-se com a espátula de baixo para cima, parando assim que não se vir farinha seca. Forma untada e polvilhada, forno a 180 graus durante 35 minutos, e o palito ao centro tem de sair seco. Desenforma-se ao fim de dez minutos e arrefece sobre a grelha.",
+  "servings": 12,
+  "yield": "1 bolo de 24 cm",
+  "labels": [
+    "sobremesa",
+    "pao-e-bolos",
+    "portuguesa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "forma-de-bolo",
+    "batedeira",
+    "peneira",
+    "espatula",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "iogurte-natural",
+      "quantity": 125,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a raspa"
+    },
+    {
+      "ref": "manteiga",
+      "unit": "qb",
+      "note": "para untar a forma"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater os ovos com o açúcar",
+      "text": "Até ficar claro e triplicar de volume. É o único ar que este bolo leva — batido a menos, sai pesado.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Juntar o iogurte, o óleo e a raspa",
+      "text": "O óleo em fio e sem bater com força, só até incorporar. Batido agora, perde-se o ar do passo anterior.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "iogurte-natural",
+        "oleo-alimentar",
+        "limao"
+      ]
+    },
+    {
+      "title": "Envolver a farinha com o fermento",
+      "text": "Peneirados por cima e envolvidos com a espátula, de baixo para cima. Parar assim que não se vir farinha seca.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "fermento-em-po"
+      ]
+    },
+    {
+      "title": "Cozer e provar com o palito",
+      "text": "Forma untada e polvilhada. O palito ao centro tem de sair seco; se sair húmido, mais cinco minutos — e não se abre a porta antes dos 30.",
+      "durationMinutes": 35,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Desenformar e arrefecer",
+      "text": "Dez minutos na forma, depois sobre a grelha até arrefecer. Cortado quente, esmigalha-se.",
+      "durationMinutes": 10
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 5,
+    "carbsGrams": 38,
+    "fatGrams": 12,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 1,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

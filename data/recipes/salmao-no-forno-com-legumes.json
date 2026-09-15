@@ -1,0 +1,151 @@
+{
+  "id": "salmao-no-forno-com-legumes",
+  "name": "Salmão no forno com legumes",
+  "description": "Tabuleiro único: batata em rodelas, courgette, pimento e cebola roxa, com os lombos de salmão por cima no fim.",
+  "narrative": "Tudo no mesmo tabuleiro, mas não ao mesmo tempo — é essa a única coisa que este prato exige. A batata em rodelas grossas vai sozinha vinte minutos com azeite, sal e alho, porque demora o dobro dos legumes. Depois juntam-se a courgette, o pimento e a cebola roxa por cima, com mais azeite e orégãos, por mais dez. Só então entram os lombos de salmão com a pele para baixo, temperados e com rodelas de limão, e doze minutos chegam: quando a carne abre em lascas à pressão do garfo, está pronta. Dois minutos de descanso e vai à mesa com o resto do limão espremido por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "legumes",
+    "mediterranica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-salmao",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em rodelas grossas"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a batata sozinha",
+      "text": "Rodelas com azeite, sal e alho, espalhadas sem se sobreporem. Vinte minutos antes de entrar mais nada: a batata demora o dobro dos legumes.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite",
+        "dente-de-alho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar os legumes por cima",
+      "text": "Courgette, pimento e cebola roxa sobre a batata, com mais azeite e orégãos. Dez minutos.",
+      "durationMinutes": 10,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "courgette",
+        "pimento-vermelho",
+        "cebola-roxa",
+        "azeite",
+        "oregaos"
+      ]
+    },
+    {
+      "title": "Assar o salmão por cima de tudo",
+      "text": "Lombos com a pele para baixo, sal, pimenta e rodelas de limão. Está quando a carne abrir em lascas à pressão do garfo — doze minutos chegam quase sempre.",
+      "durationMinutes": 12,
+      "temperatureC": 200,
+      "ingredientRefs": [
+        "lombo-de-salmao",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Descansar e servir",
+      "text": "Fora do forno, dois minutos antes de ir para a mesa, com o resto do limão espremido por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 560,
+    "proteinGrams": 40,
+    "carbsGrams": 38,
+    "fatGrams": 26,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 6,
+    "saltGrams": 1.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

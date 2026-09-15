@@ -1,19 +1,12 @@
 {
   "id": "caldo-verde",
   "name": "Caldo verde",
-  "description": "A sopa portuguesa por excelência: puré de batata e cebola com couve galega cortada muito fina e uma rodela de chouriço.",
-  "image": "media/recipes/caldo-verde.jpg",
-  "imageCredit": {
-    "author": "Mateus Hidalgo",
-    "license": "CC BY-SA 2.5 br",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/br/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caldo_verde.jpg"
-  },
-  "narrative": "Comece por estufar a cebola e o alho em metade do azeite, sem deixar ganhar cor. Junte as batatas descascadas e a água, tempere de sal, e deixe ferver até a batata se desfazer ao toque do garfo. Reduza tudo a puré com a varinha, até não sobrar nenhum pedaço. Entretanto, aloure as rodelas de chouriço numa frigideira, sem gordura nenhuma além da que elas próprias largam. Volte a pôr o caldo ao lume e, quando levantar fervura, junte a couve cortada muito fina. Coza-a destapada e pouco tempo, porque é assim que fica verde em vez de amarelada. Sirva com uma rodela de chouriço e um fio do azeite que sobrou.",
+  "description": "Creme de batata com couve galega cortada muito fina, rodelas de chouriço e um fio de azeite por cima.",
+  "narrative": "Coze-se a batata com a cebola e o alho em água temperada, até desfazer ao garfo. Passa-se tudo com a varinha, já com o azeite dentro, até ficar um creme liso — se ficar grosso de mais junta-se água a ferver, porque a couve ainda vai beber caldo. Escaldam-se as rodelas de chouriço no caldo a ferver, só dois minutos, e retiram-se. Por fim entra a couve cortada em fios finos, cinco minutos destapada para não perder o verde. Serve-se com as rodelas de chouriço e azeite por cima.",
   "servings": 4,
   "labels": [
     "sopa",
-    "carne",
+    "legumes",
     "portuguesa",
     "dia-a-dia",
     "conforto"
@@ -31,20 +24,25 @@
     "panela-grande",
     "varinha-magica",
     "faca-de-chef",
-    "tabua-de-cozinha"
+    "descascador"
   ],
   "ingredients": [
+    {
+      "ref": "couve-galega",
+      "quantity": 200,
+      "unit": "g",
+      "note": "cortada em fios muito finos"
+    },
     {
       "ref": "batata",
       "quantity": 600,
       "unit": "g",
-      "note": "descascadas e em cubos"
+      "note": "descascada e em cubos"
     },
     {
       "ref": "cebola",
       "quantity": 1,
-      "unit": "un",
-      "note": "picada"
+      "unit": "un"
     },
     {
       "ref": "dente-de-alho",
@@ -52,21 +50,15 @@
       "unit": "un"
     },
     {
-      "ref": "couve-galega",
-      "quantity": 200,
-      "unit": "g",
-      "note": "cortada em juliana muito fina"
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
     },
     {
       "ref": "chourico",
       "quantity": 100,
       "unit": "g",
-      "note": "em rodelas finas"
-    },
-    {
-      "ref": "azeite",
-      "quantity": 4,
-      "unit": "csopa"
+      "note": "às rodelas finas"
     },
     {
       "ref": "agua",
@@ -80,67 +72,58 @@
   ],
   "steps": [
     {
-      "title": "Refogar a base",
-      "text": "Metade do azeite, a cebola e o alho ao lume. Amolecer sem alourar.",
-      "durationMinutes": 5,
-      "ingredientRefs": [
-        "azeite",
-        "cebola",
-        "dente-de-alho"
-      ]
-    },
-    {
-      "title": "Cozer as batatas",
-      "text": "Juntar as batatas e a água, temperar com sal e deixar até se desfazerem com o garfo.",
+      "title": "Cozer a batata com a cebola",
+      "text": "Batata, cebola e alho na água com sal, em lume médio até a batata se desfazer à pressão do garfo. Não precisa de vigilância nenhuma.",
       "durationMinutes": 20,
       "passive": true,
       "ingredientRefs": [
         "batata",
+        "cebola",
+        "dente-de-alho",
         "agua",
         "sal"
       ]
     },
     {
-      "title": "Passar a puré",
-      "text": "Com a varinha mágica, até ficar liso."
+      "title": "Passar tudo com a varinha",
+      "text": "Triturar até ficar liso, com o azeite já dentro. Grosso de mais, junta-se água a ferver: a couve ainda vai beber caldo.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "azeite"
+      ]
     },
     {
-      "title": "Alourar o chouriço",
-      "text": "Em rodelas, numa frigideira à parte, sem gordura extra.",
+      "title": "Escaldar as rodelas de chouriço",
+      "text": "Dois minutos no caldo a ferver e retirar. Deixam o fumado na sopa e chegam quentes ao prato.",
       "durationMinutes": 3,
       "ingredientRefs": [
         "chourico"
       ]
     },
     {
-      "title": "Cozer a couve",
-      "text": "Voltar a pôr o caldo a ferver, juntar a couve e cozer destapado, para não perder a cor.",
-      "durationMinutes": 5,
+      "title": "Cozer a couve e servir",
+      "text": "Caldo a ferver, couve dentro, cinco minutos destapado para ficar verde e não amarelo. Nos pratos, com o chouriço e um fio de azeite.",
+      "durationMinutes": 6,
       "ingredientRefs": [
-        "couve-galega"
-      ]
-    },
-    {
-      "title": "Servir",
-      "text": "Uma rodela de chouriço e um fio do restante azeite em cada prato.",
-      "ingredientRefs": [
-        "chourico",
+        "couve-galega",
         "azeite"
       ]
     }
   ],
   "nutrition": {
     "method": "estimado",
-    "calories": 290,
+    "calories": 260,
     "proteinGrams": 7,
-    "carbsGrams": 33,
-    "fatGrams": 14,
-    "fibreGrams": 5,
-    "saltGrams": 1.2
+    "carbsGrams": 30,
+    "fatGrams": 12,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 4,
+    "saltGrams": 1.8
   },
   "source": {
-    "kind": "propria"
+    "kind": "gerada",
+    "author": "Claude"
   },
-  "createdAt": "2026-08-23",
-  "updatedAt": "2026-08-23"
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
 }

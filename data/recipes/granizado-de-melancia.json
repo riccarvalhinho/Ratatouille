@@ -1,0 +1,100 @@
+{
+  "id": "granizado-de-melancia",
+  "name": "Granizado de melancia",
+  "description": "Melancia batida com lima, congelada em camada fina e raspada à garfada até ficar em cristais soltos.",
+  "narrative": "Bate-se a melancia em cubos com o sumo de lima e, se for preciso, um pouco de açúcar — e prova-se antes de congelar, porque gelado sabe sempre menos doce do que líquido. Espalha-se num tabuleiro largo em vez de uma taça funda: quanto mais fina a camada, mais depressa congela e mais fino fica o cristal. Depois é raspar a superfície com um garfo de hora a hora, três ou quatro vezes, até estar tudo em cristais soltos. É a raspagem que faz um granizado; sem ela sai um bloco de gelo. Serve-se em copos frios, com hortelã.",
+  "servings": 4,
+  "labels": [
+    "sobremesa",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no congelador, com uma raspagem de garfo de hora a hora"
+    }
+  },
+  "equipment": [
+    "congelador",
+    "liquidificadora",
+    "tabuleiro-de-forno"
+  ],
+  "ingredients": [
+    {
+      "ref": "melancia",
+      "quantity": 800,
+      "unit": "g",
+      "note": "sem casca e sem grainhas, em cubos"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un",
+      "note": "só o sumo"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Triturar a melancia com a lima",
+      "text": "Cubos, sumo de lima e o açúcar, batidos até ficar líquido. Provar agora: gelado sabe sempre menos doce do que líquido.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "melancia",
+        "lima",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Congelar em camada fina",
+      "text": "Tabuleiro largo, nunca taça funda. Quanto mais fina a camada, mais depressa congela e mais fino fica o cristal.",
+      "durationMinutes": 60,
+      "passive": true
+    },
+    {
+      "title": "Raspar com o garfo de hora a hora",
+      "text": "Três ou quatro vezes, sempre a soltar a superfície que já congelou. É isto que faz um granizado — sem raspar, sai um bloco.",
+      "durationMinutes": 5
+    },
+    {
+      "title": "Servir com hortelã",
+      "text": "Uma última raspagem antes de ir para a mesa, em copos que tenham estado no frio, com folhas de hortelã por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 90,
+    "proteinGrams": 1,
+    "carbsGrams": 22,
+    "fatGrams": 0.3,
+    "saturatedFatGrams": 0,
+    "fibreGrams": 1,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

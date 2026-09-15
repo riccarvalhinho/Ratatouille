@@ -9,7 +9,7 @@
             "recipeId": "caldo-verde"
           },
           {
-            "recipeId": "salada-de-grao-com-atum"
+            "recipeId": "salmao-no-forno-com-legumes"
           }
         ]
       }
@@ -19,7 +19,7 @@
       "blocks": {
         "jantar": [
           {
-            "recipeId": "arroz-de-frango"
+            "recipeId": "frango-teriyaki"
           }
         ]
       }
@@ -32,7 +32,7 @@
             "recipeId": "bacalhau-com-natas"
           },
           {
-            "recipeId": "arroz-doce"
+            "recipeId": "bolo-de-iogurte"
           }
         ]
       }

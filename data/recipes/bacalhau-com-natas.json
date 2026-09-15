@@ -1,14 +1,8 @@
 {
   "id": "bacalhau-com-natas",
   "name": "Bacalhau com natas",
-  "description": "Bacalhau desfiado com batata frita em palitos e cebola, ligado com béchamel e natas, gratinado no forno.",
-  "image": "media/recipes/bacalhau-com-natas.jpg",
-  "imageCredit": {
-    "author": "Fpenteado",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacalhau_com_natas.jpg"
-  },
+  "description": "Bacalhau lascado com batata frita em palitos e bechamel de natas, gratinado no forno. Com salada de alface ao lado.",
+  "narrative": "O bacalhau demolha-se de véspera. Fritam-se as batatas em palitos finos, mas só até ganharem cor clara — acabam de cozinhar no forno. Aloura-se a cebola com o alho no azeite e junta-se o bacalhau lascado, só o tempo de aquecer. À parte faz-se o bechamel: manteiga com farinha mexida um minuto, leite aos poucos sempre a bater, natas e noz-moscada até engrossar. Mistura-se metade do molho com a batata e o bacalhau no pirex, cobre-se com o resto e com queijo ralado, e vai ao forno até tostar. Enquanto gratina, tempera-se a salada.",
   "servings": 4,
   "labels": [
     "prato-principal",
@@ -18,33 +12,33 @@
   ],
   "methods": [
     "forno",
-    "tacho",
-    "frigideira"
+    "frigideira",
+    "tacho"
   ],
   "weight": "substancial",
   "timing": {
-    "prepMinutes": 40,
-    "cookMinutes": 25,
+    "prepMinutes": 30,
+    "cookMinutes": 45,
     "prepAhead": {
       "minutes": 1440,
-      "description": "Demolhar o bacalhau 24 horas, mudando a água 3 a 4 vezes"
+      "description": "Demolhar o bacalhau 24 horas no frigorífico, a trocar a água três vezes"
     }
   },
   "equipment": [
     "forno",
     "placa",
-    "tacho",
     "frigideira",
+    "tacho",
     "pirex",
-    "faca-de-chef",
-    "tabua-de-cozinha"
+    "vara-de-arames",
+    "ralador"
   ],
   "ingredients": [
     {
       "ref": "bacalhau-salgado",
       "quantity": 600,
       "unit": "g",
-      "note": "demolhado"
+      "note": "demolhado, cozido e lascado"
     },
     {
       "ref": "batata",
@@ -61,8 +55,7 @@
     {
       "ref": "dente-de-alho",
       "quantity": 2,
-      "unit": "un",
-      "note": "picados"
+      "unit": "un"
     },
     {
       "ref": "natas",
@@ -71,32 +64,47 @@
     },
     {
       "ref": "leite",
-      "quantity": 500,
+      "quantity": 300,
       "unit": "ml"
     },
     {
       "ref": "manteiga",
-      "quantity": 50,
+      "quantity": 40,
       "unit": "g"
     },
     {
       "ref": "farinha-de-trigo",
-      "quantity": 50,
+      "quantity": 40,
       "unit": "g"
     },
     {
       "ref": "queijo-ralado",
-      "quantity": 80,
+      "quantity": 60,
       "unit": "g"
-    },
-    {
-      "ref": "azeite",
-      "quantity": 3,
-      "unit": "csopa"
     },
     {
       "ref": "noz-moscada",
       "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
     },
     {
       "ref": "sal",
@@ -109,25 +117,18 @@
   ],
   "steps": [
     {
-      "title": "Cozer e desfiar o bacalhau",
-      "text": "Em água a ferver, depois escorrer, tirar peles e espinhas e desfiar em lascas.",
-      "durationMinutes": 10,
+      "title": "Fritar a batata em palitos",
+      "text": "Só até ganharem cor clara: acabam de cozinhar no forno, e fritas até ao fim saem de lá moles. Escorrer bem em papel.",
+      "durationMinutes": 20,
       "ingredientRefs": [
-        "bacalhau-salgado"
+        "batata",
+        "oleo-alimentar"
       ]
     },
     {
-      "title": "Fritar as batatas",
-      "text": "Em palitos, até douradas mas ainda macias por dentro. Escorrer em papel.",
+      "title": "Alourar a cebola e juntar o bacalhau",
+      "text": "Cebola e alho no azeite até ficarem translúcidos, depois o bacalhau lascado só o tempo de aquecer. Mais do que isso seca-o.",
       "durationMinutes": 10,
-      "ingredientRefs": [
-        "batata"
-      ]
-    },
-    {
-      "title": "Refogar a cebola com o bacalhau",
-      "text": "Alourar a cebola e o alho no azeite até ficarem translúcidos, juntar o bacalhau e envolver. Reservar.",
-      "durationMinutes": 8,
       "ingredientRefs": [
         "cebola",
         "dente-de-alho",
@@ -136,40 +137,39 @@
       ]
     },
     {
-      "title": "Fazer o roux",
-      "text": "Derreter a manteiga, juntar a farinha e mexer até formar uma pasta.",
-      "durationMinutes": 2,
+      "title": "Fazer o bechamel",
+      "text": "Manteiga derretida com a farinha, mexida um minuto para perder o sabor a cru. Leite aos poucos sempre a bater, depois as natas e a noz-moscada, até napar as costas da colher.",
+      "durationMinutes": 10,
       "ingredientRefs": [
         "manteiga",
-        "farinha-de-trigo"
-      ]
-    },
-    {
-      "title": "Engrossar o molho",
-      "text": "Leite aos poucos, sempre a mexer. Temperar com sal, pimenta e noz-moscada e envolver as natas.",
-      "durationMinutes": 6,
-      "ingredientRefs": [
+        "farinha-de-trigo",
         "leite",
-        "sal",
-        "pimenta-preta",
+        "natas",
         "noz-moscada",
-        "natas"
+        "sal",
+        "pimenta-preta"
       ]
     },
     {
-      "title": "Montar no pirex",
-      "text": "Misturar as batatas, o bacalhau e metade do molho. Cobrir com o restante e polvilhar com o queijo.",
+      "title": "Montar e gratinar",
+      "text": "Batata, bacalhau e metade do molho misturados no pirex, o resto do molho por cima e o queijo ralado a cobrir. Forno até a superfície ficar tostada.",
+      "durationMinutes": 25,
+      "temperatureC": 200,
+      "passive": true,
       "ingredientRefs": [
-        "batata",
-        "bacalhau-salgado",
         "queijo-ralado"
       ]
     },
     {
-      "title": "Gratinar",
-      "text": "No forno, até a superfície ficar dourada.",
-      "durationMinutes": 25,
-      "temperatureC": 200
+      "title": "Temperar a salada enquanto gratina",
+      "text": "Alface lavada e rasgada à mão. O azeite, o vinagre e o sal batem-se à parte e só se juntam à mesa, senão murcha antes de chegar lá.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "alface",
+        "azeite",
+        "vinagre-de-vinho",
+        "sal"
+      ]
     }
   ],
   "nutrition": {
@@ -178,12 +178,14 @@
     "proteinGrams": 45,
     "carbsGrams": 55,
     "fatGrams": 42,
-    "fibreGrams": 4,
+    "saturatedFatGrams": 20,
+    "fibreGrams": 5,
     "saltGrams": 3.5
   },
   "source": {
-    "kind": "familia"
+    "kind": "gerada",
+    "author": "Claude"
   },
-  "createdAt": "2026-08-23",
-  "updatedAt": "2026-08-23"
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
 }

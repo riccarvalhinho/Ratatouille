@@ -1,0 +1,185 @@
+{
+  "id": "minestrone",
+  "name": "Minestrone",
+  "description": "Sopa italiana de legumes com feijão encarnado e massa curta cozida no próprio caldo, servida com parmesão e manjericão.",
+  "narrative": "Começa no soffritto: cebola, cenoura e aipo em cubos pequenos, dez minutos no azeite em lume brando até amolecerem sem ganhar cor. É a base e não se acelera. Junta-se o tomate pelado esmagado, o alho, o louro, a batata em cubos e a água, e deixa-se ferver brandamente vinte minutos. A courgette e o feijão entram só depois — postos antes, a courgette desfaz-se e o feijão parte. A massa coze na própria sopa, que é o que a engrossa. Fora do lume, manjericão rasgado à mão e parmesão ralado por cima de cada prato.",
+  "servings": 6,
+  "labels": [
+    "sopa",
+    "legumes",
+    "leguminosas",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 50
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "faca-de-chef",
+    "tabua-de-cozinha",
+    "descascador",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "aipo",
+      "quantity": 2,
+      "unit": "un",
+      "note": "talos"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 400,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "massa-cotovelo",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 40,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o soffritto",
+      "text": "Cebola, cenoura e aipo em cubos pequenos, dez minutos no azeite em lume brando até amolecerem sem ganhar cor. É a base da sopa e não se acelera.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "aipo",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Juntar o tomate, a batata e a água",
+      "text": "Tomate pelado esmagado com a colher, alho, louro, batata em cubos e a água. Vinte minutos de fervura branda.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "dente-de-alho",
+        "folha-de-louro",
+        "batata",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Acrescentar a courgette e o feijão",
+      "text": "Mais dez minutos. Postos no princípio, a courgette desfaz-se e o feijão parte-se todo.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "courgette",
+        "feijao-encarnado-cozido"
+      ]
+    },
+    {
+      "title": "Cozer a massa na própria sopa",
+      "text": "Massa direto no caldo, o tempo que o pacote disser. Solta amido e engrossa a sopa — é assim que deve ser, não é defeito.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "massa-cotovelo"
+      ]
+    },
+    {
+      "title": "Servir com parmesão e manjericão",
+      "text": "Fora do lume: manjericão rasgado à mão, parmesão ralado e um fio de azeite em cada prato.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "manjericao",
+        "queijo-parmesao",
+        "azeite",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 13,
+    "carbsGrams": 48,
+    "fatGrams": 9,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 9,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

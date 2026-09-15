@@ -1,0 +1,170 @@
+{
+  "id": "bitoque",
+  "name": "Bitoque",
+  "description": "Bife fino frito em manteiga e alho, ovo estrelado por cima, batata frita e arroz ao lado. O molho nasce na frigideira do bife.",
+  "narrative": "O bitoque é prato de casa e de tasca, e a dificuldade não está em nenhum dos componentes — está na ordem. O arroz e a batata demoram; o bife faz-se em dois minutos e o ovo no fim. Começa-se por pôr o arroz ao lume, fritam-se as batatas enquanto ele coze, e só depois se aquece a frigideira do bife. Selado o bife e retirado para descansar, faz-se o molho no mesmo fundo com alho, manteiga e um golo de vinho branco a raspar o que ficou agarrado. Os ovos estrelam-se à parte, com a gema mole, e monta-se o prato com tudo ao mesmo tempo quente.",
+  "servings": 2,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "faca-de-chef",
+    "tabua-de-cozinha",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-vaca",
+      "quantity": 2,
+      "unit": "un",
+      "note": "finos, da alcatra ou da vazia"
+    },
+    {
+      "ref": "batata",
+      "quantity": 500,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "esmagados"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Refogar um dente de alho no azeite, juntar o arroz, a água a ferver, o louro e sal. Tapado, 12 minutos em lume brando. Começa primeiro porque é o que demora mais.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "dente-de-alho",
+        "azeite",
+        "agua",
+        "folha-de-louro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Secar os palitos com um pano antes de irem ao óleo quente, senão espirram e não alouram. Em duas levas, para o óleo não arrefecer, e a escorrer em papel.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar os bifes",
+      "text": "Frigideira a fumegar, tempero só no momento de entrar. Um minuto de cada lado para malpassado, dois para bem passado. Retirar e tapar enquanto se faz o molho.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "bife-de-vaca",
+        "sal",
+        "pimenta-preta",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Fazer o molho no mesmo fundo",
+      "text": "Lume baixo, alho e manteiga até cheirarem sem queimar, depois o vinho branco a raspar tudo o que ficou agarrado. Deixar reduzir a metade.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "manteiga",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Estrelar os ovos e montar",
+      "text": "Ovos à parte, com a gema mole. No prato: bife com o ovo por cima, batata e arroz ao lado, molho por cima da carne.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "ovo",
+        "oleo-alimentar"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 950,
+    "proteinGrams": 48,
+    "carbsGrams": 85,
+    "fatGrams": 48,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 6,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

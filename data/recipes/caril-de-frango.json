@@ -1,0 +1,180 @@
+{
+  "id": "caril-de-frango",
+  "name": "Caril de frango",
+  "description": "Caril de base de cebola alourada devagar, tomate e leite de coco, com arroz basmati e uma colher de iogurte.",
+  "narrative": "A cebola aloura devagar, vinte minutos em lume médio-baixo, até ficar dourada e doce — é o passo que a maior parte das receitas corta e é o que separa um caril bom de um molho amarelo. Depois o caril e os cominhos tostam um minuto no óleo quente com o alho e o gengibre, sem se descuidar porque queimam num instante. Aloura-se o frango, junta-se o tomate pelado esmagado e deixa-se apurar. A meio, põe-se o arroz basmati ao lume, lavado até a água sair clara. O caril acaba com o leite de coco, quinze minutos sem ferver com força, e o sal corrige-se no fim. Serve-se sobre o arroz, com iogurte e coentros por cima.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "indiana",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "ralador",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 8,
+      "unit": "un",
+      "note": "sem pele, desossadas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "caril-em-po",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 125,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar a cebola devagar",
+      "text": "Vinte minutos em lume médio-baixo, a mexer de vez em quando, até ficar dourada e doce. É o passo que quase toda a gente corta, e é o que faz o caril.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "cebola",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Tostar as especiarias",
+      "text": "Caril e cominhos direto no óleo quente com o alho e o gengibre, um minuto só e sempre a mexer. Queimados, ficam amargos e não há como recuperar.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "caril-em-po",
+        "cominhos",
+        "dente-de-alho",
+        "gengibre"
+      ]
+    },
+    {
+      "title": "Selar o frango e juntar o tomate",
+      "text": "Frango a alourar de todos os lados, depois o tomate pelado esmagado com a colher e sal. Dez minutos a apurar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "tomate-pelado",
+        "sal"
+      ]
+    },
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Basmati lavado até a água sair clara, com o dobro do volume em água e sal. Tapado, 12 minutos, e não se levanta a tampa.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Acabar com o leite de coco",
+      "text": "Lume baixo e quinze minutos sem deixar ferver com força, senão o molho talha. O sal prova-se e corrige-se agora, nunca antes.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "leite-de-coco",
+        "sal"
+      ]
+    },
+    {
+      "title": "Servir com iogurte e coentros",
+      "text": "Caril sobre o arroz, uma colher de iogurte por cima e coentros picados. O iogurte não é enfeite — é o que corta o picante.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "iogurte-natural",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 42,
+    "carbsGrams": 62,
+    "fatGrams": 32,
+    "saturatedFatGrams": 18,
+    "fibreGrams": 6,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
