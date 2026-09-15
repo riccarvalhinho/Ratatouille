@@ -2,6 +2,13 @@
   "id": "sopa-de-feijao-com-hortalica",
   "name": "Sopa de feijão com hortaliça",
   "description": "Feijão encarnado passado com batata, e couve cortada fina a cozer no caldo.",
+  "image": "media/recipes/sopa-de-feijao-com-hortalica.jpg",
+  "imageCredit": {
+    "author": "Tiia Monto",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bean_cabbage_soup_with_sausage.jpg"
+  },
   "narrative": "Metade do feijão passa-se com a batata e a cebola, e é isso que dá corpo ao caldo; a outra metade fica inteira. A couve corta-se muito fina e coze cinco a oito minutos, destapada, para não perder o verde. Uma rodela de chouriço dá o fumado sem tornar isto um prato de carne.",
   "servings": 6,
   "labels": [

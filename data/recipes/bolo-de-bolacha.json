@@ -2,6 +2,13 @@
   "id": "bolo-de-bolacha",
   "name": "Bolo de bolacha",
   "description": "Bolacha Maria molhada em café, em camadas com creme de manteiga. Sem forno.",
+  "image": "media/recipes/bolo-de-bolacha.jpg",
+  "imageCredit": {
+    "author": "jules",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_hazelnut_biscuit_cake.jpg"
+  },
   "narrative": "As bolachas mergulham no café só um instante de cada lado — encharcadas, o bolo desfaz-se ao cortar. O creme é manteiga em pomada batida com açúcar até ficar claro e leve, e as gemas entram uma a uma. Monta-se em camadas e vai ao frio de um dia para o outro: cortado no próprio dia, esfarela.",
   "servings": 10,
   "labels": [

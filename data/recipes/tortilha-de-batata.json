@@ -2,6 +2,13 @@
   "id": "tortilha-de-batata",
   "name": "Tortilha de batata",
   "description": "Batata e cebola confitadas em azeite, ligadas em ovo e cozidas devagar. Com salada e pão.",
+  "image": "media/recipes/tortilha-de-batata.jpg",
+  "imageCredit": {
+    "author": "Xavi Talleda from Barcelona",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spanish_omelette_cooking.jpg"
+  },
   "narrative": "A batata não se frita, confita-se: em azeite morno e em lume brando, tapada, até ficar macia sem ganhar cor. Escorre-se e mistura-se quente com os ovos batidos, e deixa-se repousar dez minutos para a batata beber o ovo. Coze-se em lume brando numa frigideira pequena, e vira-se com a ajuda de um prato. O centro deve ficar cremoso, não seco.",
   "servings": 4,
   "labels": [

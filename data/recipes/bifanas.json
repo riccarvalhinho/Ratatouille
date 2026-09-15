@@ -2,6 +2,13 @@
   "id": "bifanas",
   "name": "Bifanas",
   "description": "Febras finas marinadas em alho, vinho branco e colorau, servidas no pão com batata frita.",
+  "image": "media/recipes/bifanas.jpg",
+  "imageCredit": {
+    "author": "Dktue",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pulled-pork-sandwiches.jpg"
+  },
   "narrative": "As febras marinam pelo menos uma hora em alho esmagado, vinho branco, colorau, louro e uma pitada de piri-piri — é a marinada que faz a bifana, e sem ela fica só carne de porco frita. Fritam-se depressa numa frigideira bem quente, aos poucos para não largarem água, e a marinada vai a seguir para o mesmo lume a apurar até virar molho. As batatas fritam-se entretanto. Serve-se no pão, com o molho a escorrer para dentro.",
   "servings": 4,
   "labels": [

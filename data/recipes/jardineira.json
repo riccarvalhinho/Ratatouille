@@ -2,6 +2,13 @@
   "id": "jardineira",
   "name": "Jardineira",
   "description": "Guisado de carne com batata, cenoura e ervilhas, servido com arroz branco.",
+  "image": "media/recipes/jardineira.jpg",
+  "imageCredit": {
+    "author": "Kurt Nordstrom from Ponder, TX, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Stew!.jpg"
+  },
   "narrative": "Guisado de tacho e de panela só. A carne aloura-se primeiro em lume forte, para ganhar crosta, e só depois entra o refogado de cebola e alho. Vinho branco a desglaçar, tomate, louro e água a cobrir, e uma hora tapado em lume brando. A batata e a cenoura entram na última meia hora, as ervilhas nos últimos cinco minutos. O arroz branco faz-se à parte, no fim.",
   "servings": 5,
   "labels": [

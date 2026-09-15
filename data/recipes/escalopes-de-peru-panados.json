@@ -2,6 +2,13 @@
   "id": "escalopes-de-peru-panados",
   "name": "Escalopes de peru panados",
   "description": "Peru panado em pão ralado, frito, com batata frita no forno e salada.",
+  "image": "media/recipes/escalopes-de-peru-panados.jpg",
+  "imageCredit": {
+    "author": "Kobako",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiener-Schnitzel02.jpg"
+  },
   "narrative": "A batata vai ao forno primeiro, porque leva trinta minutos e o peru cinco. Os escalopes achatam-se com o rolo entre duas folhas de película até ficarem finos, e passam por farinha, ovo e pão ralado — nessa ordem, e a farinha não se salta, porque é ela que segura o ovo. Fritam-se em óleo pouco fundo, dois minutos de cada lado. Escorrem em grelha e não em papel, para não amolecerem por baixo.",
   "servings": 4,
   "labels": [

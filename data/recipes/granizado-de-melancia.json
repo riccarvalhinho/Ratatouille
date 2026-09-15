@@ -2,6 +2,13 @@
   "id": "granizado-de-melancia",
   "name": "Granizado de melancia",
   "description": "Melancia batida com lima, congelada em camada fina e raspada à garfada até ficar em cristais soltos.",
+  "image": "media/recipes/granizado-de-melancia.jpg",
+  "imageCredit": {
+    "author": "Mari Liis",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/40878536@N08/5893349730"
+  },
   "narrative": "Bate-se a melancia em cubos com o sumo de lima e, se for preciso, um pouco de açúcar — e prova-se antes de congelar, porque gelado sabe sempre menos doce do que líquido. Espalha-se num tabuleiro largo em vez de uma taça funda: quanto mais fina a camada, mais depressa congela e mais fino fica o cristal. Depois é raspar a superfície com um garfo de hora a hora, três ou quatro vezes, até estar tudo em cristais soltos. É a raspagem que faz um granizado; sem ela sai um bloco de gelo. Serve-se em copos frios, com hortelã.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "gyros-de-frango",
   "name": "Gyros de frango",
   "description": "Frango marinado em iogurte e especiarias, com pita, batata frita e tzatziki.",
+  "image": "media/recipes/gyros-de-frango.jpg",
+  "imageCredit": {
+    "author": "Anagoria",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240511_Chicken_Gyros_Restaurant_Elia_anagoria.jpg"
+  },
   "narrative": "O iogurte da marinada não é só sabor: o ácido e o cálcio amaciam a carne sem a desfazer como o limão sozinho faria. O frango marina pelo menos duas horas e salteia-se em lume forte, em levas. O tzatziki quer pepino ralado e espremido com as mãos — não espremido, o molho fica aguado dentro de meia hora. As batatas vão ao forno e as pitas aquecem no fim.",
   "servings": 4,
   "labels": [

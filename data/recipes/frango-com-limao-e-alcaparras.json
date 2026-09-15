@@ -2,6 +2,13 @@
   "id": "frango-com-limao-e-alcaparras",
   "name": "Frango com limão e alcaparras",
   "description": "Peito panado em farinha, salteado, com molho de limão, alcaparras e manteiga. Com arroz e espargos.",
+  "image": "media/recipes/frango-com-limao-e-alcaparras.jpg",
+  "imageCredit": {
+    "author": "Ralph Daily from Birmingham, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Piccata_(6408123327).jpg"
+  },
   "narrative": "Os peitos abrem-se ao meio na horizontal e achatam-se, para cozerem em quatro minutos em vez de doze. Passam por farinha temperada, sacudida bem, e salteiam-se em manteiga e azeite. No mesmo fundo entra o vinho branco, o sumo de limão e as alcaparras, e a manteiga fria no fim liga o molho — ao lume forte, a manteiga separa-se e o molho fica oleoso. O arroz faz-se antes e os espargos no vapor no fim.",
   "servings": 4,
   "labels": [

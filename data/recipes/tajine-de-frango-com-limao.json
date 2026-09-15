@@ -2,6 +2,13 @@
   "id": "tajine-de-frango-com-limao",
   "name": "Tajine de frango com limão",
   "description": "Frango estufado com limão, azeitonas e especiarias, em panela tapada. Com cuscuz.",
+  "image": "media/recipes/tajine-de-frango-com-limao.jpg",
+  "imageCredit": {
+    "author": "Karen and Brad Emerson",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tagine_(4656854428).jpg"
+  },
   "narrative": "Guisado marroquino de lume brando e panela tapada, e o limão é o que o marca. Sem limão em conserva usa-se limão fresco às rodelas com um pouco de sal, posto cedo para amaciar. As especiarias tostam no óleo antes de entrar o líquido. Coze cinquenta minutos tapado e destapa-se no fim para o molho reduzir. O cuscuz hidrata-se no caldo da própria panela.",
   "servings": 4,
   "labels": [

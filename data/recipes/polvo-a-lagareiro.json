@@ -2,6 +2,13 @@
   "id": "polvo-a-lagareiro",
   "name": "Polvo à lagareiro",
   "description": "Polvo cozido e assado com muito azeite e alho, com batata a murro e grelos.",
+  "image": "media/recipes/polvo-a-lagareiro.jpg",
+  "imageCredit": {
+    "author": "Misaochan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_octopus.jpg"
+  },
   "narrative": "O polvo coze primeiro numa panela sem água nenhuma além da que ele larga, com uma cebola inteira, quarenta minutos a uma hora conforme o tamanho. Está quando um garfo entra na parte mais grossa sem resistência — e nada disto tem que ver com rolhas ou com assustar o polvo três vezes. Depois vai ao forno com as batatas, muito azeite e alho laminado, só para tostar.",
   "servings": 4,
   "labels": [

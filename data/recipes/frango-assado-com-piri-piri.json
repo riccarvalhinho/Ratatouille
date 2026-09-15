@@ -2,6 +2,13 @@
   "id": "frango-assado-com-piri-piri",
   "name": "Frango assado com piri-piri",
   "description": "Frango inteiro espalmado, temperado com piri-piri e alho, com batata assada e arroz.",
+  "image": "media/recipes/frango-assado-com-piri-piri.jpg",
+  "imageCredit": {
+    "author": "Betty Longbottom",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piri_Piri_Chicken_-_Leeds_Road_-_geograph.org.uk_-_1539151.jpg"
+  },
   "narrative": "O frango espalma-se cortando-o ao meio pelas costas e abrindo-o com a mão — assim assa por igual e em metade do tempo. Tempera-se com uma pasta de alho, piri-piri, colorau, limão e azeite, e descansa o tempo que houver. Vai ao forno sobre as batatas em gomos, que assam no que pinga do frango. O arroz branco faz-se nos últimos vinte minutos. Pincela-se com o molho do tabuleiro a meio do assado.",
   "servings": 4,
   "labels": [

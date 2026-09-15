@@ -2,6 +2,13 @@
   "id": "rendang-de-vaca",
   "name": "Rendang de vaca",
   "description": "Guisado indonésio de vaca em leite de coco, reduzido até secar e a carne tostar. Com arroz jasmim.",
+  "image": "media/recipes/rendang-de-vaca.jpg",
+  "imageCredit": {
+    "author": "Jen Arrr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_campur_with_beef_rendang_(8638211835).jpg"
+  },
   "narrative": "Rendang não é um caril: é um guisado que se deixa reduzir até o leite de coco se separar e a carne acabar a fritar na própria gordura. São três horas e a última meia hora exige atenção, porque é aí que agarra. A pasta de especiarias tritura-se antes — malagueta, alho, gengibre, erva-príncipe, cebola. Fica melhor no dia seguinte.",
   "servings": 5,
   "labels": [

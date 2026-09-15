@@ -2,6 +2,13 @@
   "id": "salada-de-fruta",
   "name": "Salada de fruta",
   "description": "Fruta da época em pedaços, com sumo de laranja e hortelã.",
+  "image": "media/recipes/salada-de-fruta.jpg",
+  "imageCredit": {
+    "author": "dnm",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruktsallad_(Fruit_salad).jpg"
+  },
   "narrative": "Duas regras e mais nada: a fruta que oxida — maçã, pera, banana — entra por último e leva sumo de laranja ou limão logo por cima; e corta-se tudo do mesmo tamanho, porque uma salada com pedaços desiguais come-se mal. Meia hora no frio antes de servir chega para os sabores se juntarem; mais do que duas horas e a fruta amolece.",
   "servings": 6,
   "labels": [

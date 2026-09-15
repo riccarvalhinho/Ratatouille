@@ -2,6 +2,13 @@
   "id": "chili-con-carne",
   "name": "Chili con carne",
   "description": "Carne picada com feijão, cominhos e chocolate preto, com arroz branco e natas azedas.",
+  "image": "media/recipes/chili-con-carne.jpg",
+  "imageCredit": {
+    "author": "cyclonebill",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Chili_con_carne_(2).jpg"
+  },
   "narrative": "A carne sela-se bem antes de qualquer líquido, para tostar em vez de cozer. As especiarias tostam a seguir no próprio fundo, meio minuto, antes de entrar o tomate. O feijão entra já cozido, no fim, e um quadrado de chocolate preto vai no último minuto — não sabe a chocolate, escurece e arredonda o molho. Coze uma hora em lume brando e o arroz faz-se nos últimos vinte minutos.",
   "servings": 5,
   "labels": [

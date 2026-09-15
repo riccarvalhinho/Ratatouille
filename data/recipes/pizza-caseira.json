@@ -2,6 +2,13 @@
   "id": "pizza-caseira",
   "name": "Pizza caseira",
   "description": "Massa levedada em casa, molho de tomate cru e mozzarella. Com salada verde.",
+  "image": "media/recipes/pizza-caseira.jpg",
+  "imageCredit": {
+    "author": "Shisma",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Margherita_pizza_on_plate.jpg"
+  },
   "narrative": "A massa faz-se de véspera ou de manhã: farinha, água, fermento e sal, amassada dez minutos e a levedar até duplicar. O molho é tomate pelado esmagado com sal e azeite, cru — cozido antes, coze outra vez no forno e fica ácido. O forno vai no máximo com o tabuleiro lá dentro a aquecer, e a pizza entra sobre o tabuleiro já a escaldar, que é o que se aproxima de um forno de lenha. Manjericão só à saída.",
   "servings": 4,
   "labels": [

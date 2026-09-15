@@ -2,6 +2,13 @@
   "id": "dahl-de-lentilhas-vermelhas",
   "name": "Dahl de lentilhas vermelhas",
   "description": "Lentilhas desfeitas em caldo com curcuma, rematadas com especiarias fritas em manteiga. Com arroz.",
+  "image": "media/recipes/dahl-de-lentilhas-vermelhas.jpg",
+  "imageCredit": {
+    "author": "David Jackmanson",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58301516@N00/18657496932"
+  },
   "narrative": "As lentilhas vermelhas desfazem-se sozinhas em vinte minutos e é isso que se quer — dahl é puré e não sopa de lentilhas inteiras. Cozem em água com curcuma e sal, mexidas de vez em quando para não agarrarem. O que faz o prato é o remate: cominhos, alho laminado e malagueta fritos em manteiga até cheirarem, e despejados por cima na hora de servir, ainda a crepitar.",
   "servings": 4,
   "labels": [

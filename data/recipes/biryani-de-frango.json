@@ -2,6 +2,13 @@
   "id": "biryani-de-frango",
   "name": "Biryani de frango",
   "description": "Arroz basmati e frango marinado cozidos em camadas seladas, com açafrão e frutos secos.",
+  "image": "media/recipes/biryani-de-frango.jpg",
+  "imageCredit": {
+    "author": "pelican",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_biryani_3.jpg"
+  },
   "narrative": "A técnica é o prato: o arroz coze só a setenta por cento em água muito temperada e escorre-se. O frango marinado fica no fundo do tacho, o arroz por cima em camada, e rega-se com leite com açafrão e cebola frita. Tapa-se selado — com massa de farinha à volta da tampa, se se quiser fazer bem — e vai vinte e cinco minutos em lume mínimo. Não se mexe nem se espreita; mistura-se só no prato.",
   "servings": 5,
   "labels": [

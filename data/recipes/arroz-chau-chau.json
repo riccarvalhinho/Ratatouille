@@ -2,6 +2,13 @@
   "id": "arroz-chau-chau",
   "name": "Arroz chau-chau",
   "description": "Arroz salteado com ovo, legumes e o que sobrou. Prato único de quinze minutos.",
+  "image": "media/recipes/arroz-chau-chau.jpg",
+  "imageCredit": {
+    "author": "Euniceyeoh07",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_egg_fried_rice.jpg"
+  },
   "narrative": "Este prato exige arroz do dia anterior, frio e seco — arroz acabado de cozer tem humidade a mais e cola-se ao wok numa papa. É a receita das sobras por natureza, e melhora com elas. O ovo faz-se primeiro e tira-se, os legumes a seguir em lume máximo, e o arroz entra por último a ser espalhado e deixado a tostar antes de se mexer.",
   "servings": 4,
   "labels": [

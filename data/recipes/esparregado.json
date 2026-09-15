@@ -2,6 +2,13 @@
   "id": "esparregado",
   "name": "Esparregado",
   "description": "Espinafres cozidos e picados, ligados com um refogado de alho e farinha.",
+  "image": "media/recipes/esparregado.jpg",
+  "imageCredit": {
+    "author": "Arnold Gatilao",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Creamed_Spinach_with_Nueske%27s_Bacon.jpg"
+  },
   "narrative": "Os espinafres cozem em pouquíssima água, só a que fica nas folhas depois de lavadas, e espremem-se muito bem — é a água que não se tira que faz esparregados aguados. Pica-se à faca em vez de triturar, para ficar com textura. O refogado de alho com uma colher de farinha é o que o liga, e o vinagre no fim é o que o levanta.",
   "servings": 4,
   "labels": [

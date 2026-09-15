@@ -2,6 +2,13 @@
   "id": "coleslaw",
   "name": "Coleslaw",
   "description": "Couve branca e cenoura em molho de maionese e vinagre, a repousar.",
+  "image": "media/recipes/coleslaw.jpg",
+  "imageCredit": {
+    "author": "Stanistani",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coleslaw_at_Charlies.jpg"
+  },
   "narrative": "A couve corta-se muito fina, de mandolina ou à faca com paciência, e salga-se meia hora a escorrer — sem isso, larga água dentro do molho e o coleslaw fica aguado na segunda hora. Espreme-se com as mãos antes de temperar. Melhora em repousar e fica bom no dia seguinte.",
   "servings": 6,
   "labels": [

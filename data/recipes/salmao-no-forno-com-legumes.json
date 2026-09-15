@@ -2,6 +2,13 @@
   "id": "salmao-no-forno-com-legumes",
   "name": "Salmão no forno com legumes",
   "description": "Tabuleiro único: batata em rodelas, courgette, pimento e cebola roxa, com os lombos de salmão por cima no fim.",
+  "image": "media/recipes/salmao-no-forno-com-legumes.jpg",
+  "imageCredit": {
+    "author": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lox_and_baked_salmon_salad.jpg"
+  },
   "narrative": "Tudo no mesmo tabuleiro, mas não ao mesmo tempo — é essa a única coisa que este prato exige. A batata em rodelas grossas vai sozinha vinte minutos com azeite, sal e alho, porque demora o dobro dos legumes. Depois juntam-se a courgette, o pimento e a cebola roxa por cima, com mais azeite e orégãos, por mais dez. Só então entram os lombos de salmão com a pele para baixo, temperados e com rodelas de limão, e doze minutos chegam: quando a carne abre em lascas à pressão do garfo, está pronta. Dois minutos de descanso e vai à mesa com o resto do limão espremido por cima.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,12 @@
   "id": "massa-a-bolonhesa",
   "name": "Massa à bolonhesa",
   "description": "Ragu de carne longo, com leite e vinho tinto, sobre esparguete e com queijo ralado.",
+  "image": "media/recipes/massa-a-bolonhesa.jpg",
+  "imageCredit": {
+    "author": "No machine-readable author provided. Chingon assumed (based on copyright claims).",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_Bolognese.jpg"
+  },
   "narrative": "O ragu quer tempo e não pressa: soffritto de cebola, cenoura e aipo dez minutos, carne a soltar-se e a perder toda a água, e só depois o vinho tinto a evaporar. O leite entra antes do tomate — é ele que amacia a carne, e o tomate posto primeiro impede-o de ser absorvido. Depois é hora e meia em lume muito brando, quase sem borbulhar. A massa coze no fim.",
   "servings": 4,
   "labels": [

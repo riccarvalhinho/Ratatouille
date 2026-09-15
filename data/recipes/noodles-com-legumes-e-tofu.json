@@ -2,6 +2,13 @@
   "id": "noodles-com-legumes-e-tofu",
   "name": "Noodles com legumes e tofu",
   "description": "Tofu tostado e legumes salteados com noodles e molho de soja. Prato único.",
+  "image": "media/recipes/noodles-com-legumes-e-tofu.jpg",
+  "imageCredit": {
+    "author": "stu_spivack",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/2112137180"
+  },
   "narrative": "O tofu tem de ser espremido antes: embrulha-se em papel com um peso por cima meia hora, porque tofu com água não tosta, cozinha ao vapor dentro da própria humidade. Corta-se em cubos, passa-se por amido e frita-se até ficar dourado de todos os lados. Os noodles cozem no tempo do pacote e passam por água fria. Salteia-se tudo junto no fim, com o molho, menos de dois minutos.",
   "servings": 4,
   "labels": [

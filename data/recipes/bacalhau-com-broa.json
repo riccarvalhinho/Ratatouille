@@ -2,6 +2,13 @@
   "id": "bacalhau-com-broa",
   "name": "Bacalhau com broa",
   "description": "Lombos de bacalhau com crosta de broa e alho, com batata a murro e grelos.",
+  "image": "media/recipes/bacalhau-com-broa.jpg",
+  "imageCredit": {
+    "author": "Tiia Monto",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_cod_fillet.jpg"
+  },
   "narrative": "Os lombos assam primeiro só com azeite e alho, vinte minutos, para ficarem quentes e soltarem-se em lascas. A crosta faz-se à parte: broa esmigalhada com alho, salsa e azeite, apertada com as mãos até ficar húmida e agarrar. Espalha-se por cima do peixe e volta ao forno dez minutos, só para tostar. A batata assa no mesmo tabuleiro desde o princípio e os grelos escaldam-se no fim.",
   "servings": 4,
   "labels": [

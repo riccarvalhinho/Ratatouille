@@ -2,6 +2,13 @@
   "id": "pato-a-pequinesa-simplificado",
   "name": "Pato à pequinesa simplificado",
   "description": "Pernas de pato laqueadas em mel e soja, desfiadas, com panquecas, pepino e cebolinho.",
+  "image": "media/recipes/pato-a-pequinesa-simplificado.jpg",
+  "imageCredit": {
+    "author": "joyosity",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peking_duck_wrap_1.jpg"
+  },
   "narrative": "A versão de casa troca o pato inteiro seco ao ar por pernas assadas devagar, que dão o mesmo resultado sem a logística. Assam duas horas a 160 graus sobre uma grelha, para a gordura escorrer, e nos últimos vinte minutos pincelam-se com mel, soja e cinco especiarias, três vezes. A pele fica escura e estaladiça. Desfia-se e monta-se à mesa, com pepino em palitos e cebolinho.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "frango-teriyaki",
   "name": "Frango teriyaki",
   "description": "Tiras de frango seladas em lume forte e envolvidas num molho de soja e mirim reduzido, com arroz e brócolos no vapor.",
+  "image": "media/recipes/frango-teriyaki.jpg",
+  "imageCredit": {
+    "author": "CNEcija12345",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teriyaki_chicken_and_beef_Yakiniku_pancit_styleCNE.jpg"
+  },
   "narrative": "O arroz vai primeiro ao lume, porque o resto se faz em dez minutos. Numa taça mistura-se a soja, o mirim, o açúcar, o gengibre e o alho, até o açúcar desaparecer — feito de antemão, entra na frigideira sem hesitações. Os brócolos cozem no vapor cinco minutos, o suficiente para ficarem verdes e com resistência. O frango sela-se em frigideira bem quente, com as tiras espalhadas sem se tocarem, e não se mexe até ganharem cor: amontoado, coze em vez de tostar. Por fim junta-se o molho e deixa-se borbulhar dois ou três minutos até ficar espesso e brilhante.",
   "servings": 4,
   "labels": [

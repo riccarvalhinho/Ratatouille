@@ -2,6 +2,13 @@
   "id": "salada-de-polvo",
   "name": "Salada de polvo",
   "description": "Polvo cozido em cubos, com cebola, salsa e coentros, temperado de véspera.",
+  "image": "media/recipes/salada-de-polvo.jpg",
+  "imageCredit": {
+    "author": "Petr Kratochvil",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octopus_salad.jpg"
+  },
   "narrative": "O polvo coze sem água nenhuma além da que larga, com uma cebola inteira, até o garfo entrar sem resistência. Corta-se em pedaços ainda morno, porque absorve melhor o tempero quente do que frio. Tempera-se e vai ao frigorífico de um dia para o outro — é essa espera que faz a salada, e comida no próprio dia sabe a polvo com cebola.",
   "servings": 6,
   "labels": [

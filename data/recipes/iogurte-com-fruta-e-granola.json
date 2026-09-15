@@ -2,6 +2,13 @@
   "id": "iogurte-com-fruta-e-granola",
   "name": "Iogurte com fruta e granola",
   "description": "Camadas de iogurte, fruta e granola numa taça. Cinco minutos.",
+  "image": "media/recipes/iogurte-com-fruta-e-granola.jpg",
+  "imageCredit": {
+    "author": "Menchie's Frozen Yogurt",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Menchie%27s_Frozen_Yogurt_Fruit.jpg"
+  },
   "narrative": "A única coisa que importa é a ordem e o momento: a granola vai sempre por cima e só na hora de comer, porque em contacto com o iogurte amolece em minutos. Se for para levar, leva-se à parte. Serve de pequeno-almoço e de sobremesa sem mudar nada.",
   "servings": 4,
   "labels": [

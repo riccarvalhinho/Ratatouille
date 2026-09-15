@@ -2,6 +2,13 @@
   "id": "bacalhau-a-gomes-de-sa",
   "name": "Bacalhau à Gomes de Sá",
   "description": "Bacalhau no forno com batata às rodelas, cebola, ovo cozido e azeitonas.",
+  "image": "media/recipes/bacalhau-a-gomes-de-sa.jpg",
+  "imageCredit": {
+    "author": "Adriao",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_Gomes_de_S%C3%A1.jpg"
+  },
   "narrative": "O bacalhau demolhado escalda-se em leite quente e fica lá dentro meia hora — é o que lhe tira o sal que resta e o deixa mais macio. A batata coze com casca e corta-se em rodelas grossas. A cebola e o alho alouram-se devagar em muito azeite. Junta-se tudo numa travessa, sem mexer de mais para a batata não desfazer, e vai a forno quente vinte minutos. Sai com ovo cozido às rodelas, azeitonas pretas e salsa.",
   "servings": 4,
   "labels": [

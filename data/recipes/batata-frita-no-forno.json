@@ -2,6 +2,13 @@
   "id": "batata-frita-no-forno",
   "name": "Batata frita no forno",
   "description": "Palitos assados a 220 graus, estaladiços por fora. Alternativa à fritadeira.",
+  "image": "media/recipes/batata-frita-no-forno.jpg",
+  "imageCredit": {
+    "author": "@joefoodie",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/98178986@N00/4007731588"
+  },
   "narrative": "Duas coisas separam isto de batata assada mole: os palitos demolham em água fria vinte minutos para largar amido e secam-se muito bem, porque água no palito faz vapor e vapor não tosta; e espalham-se sem se tocarem, numa camada só. Viram-se a meio e não antes, para terem tempo de formar crosta.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "gratinado-de-batata",
   "name": "Gratinado de batata",
   "description": "Batata em rodelas finas cozida em natas com alho e noz-moscada, gratinada devagar.",
+  "image": "media/recipes/gratinado-de-batata.jpg",
+  "imageCredit": {
+    "author": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_potato_gratin_(5022340365).jpg"
+  },
   "narrative": "A batata corta-se muito fina, de mandolina se houver, e não se lava depois de cortada — é o amido que solta que engrossa as natas e liga o gratinado. As rodelas escaldam-se nas natas com alho e noz-moscada cinco minutos antes de irem para a travessa, o que encurta o forno e garante que ficam cozidas. Depois é uma hora a 160 graus, devagar, e o queijo só na última meia hora.",
   "servings": 6,
   "labels": [

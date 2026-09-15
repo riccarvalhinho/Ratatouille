@@ -2,6 +2,13 @@
   "id": "bacalhau-a-bras",
   "name": "Bacalhau à Brás",
   "description": "Bacalhau desfiado com cebola, batata palha e ovo ligado fora do lume. Com azeitonas e salada.",
+  "image": "media/recipes/bacalhau-a-bras.jpg",
+  "imageCredit": {
+    "author": "Fpenteado at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacalhau_a_Bras.jpg"
+  },
   "narrative": "A cebola aloura-se devagar em bastante azeite, com o alho, até ficar doce. Junta-se o bacalhau desfiado e demolhado, só o tempo de aquecer. A batata palha entra a seguir, envolvida com cuidado para não partir. E o ovo batido junta-se com o tacho fora do lume, a mexer depressa: é o calor que resta que o coze, e ao lume vira ovo mexido com bacalhau. Serve-se logo, com azeitonas, salsa e uma alface ao lado.",
   "servings": 4,
   "labels": [

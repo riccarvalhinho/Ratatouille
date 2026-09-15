@@ -2,6 +2,13 @@
   "id": "empadao-de-carne",
   "name": "Empadão de carne",
   "description": "Carne picada refogada sob uma camada de puré de batata, gratinado no forno, com salada ao lado.",
+  "image": "media/recipes/empadao-de-carne.jpg",
+  "imageCredit": {
+    "author": "Sandy maistry",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cookoff._Cottage_pie.veg_soups_and_scones.jpg"
+  },
   "narrative": "A carne picada refoga-se com cebola, alho, cenoura e tomate até ficar um picado húmido mas não caldoso — se ficar líquido, molha o puré por baixo e o empadão desfaz-se ao servir. O puré faz-se enquanto isso, com manteiga e leite quente. Monta-se em camadas no pirex, alisa-se o puré com o garfo para fazer sulcos, e vai ao forno até tostar. A salada tempera-se à parte.",
   "servings": 6,
   "labels": [

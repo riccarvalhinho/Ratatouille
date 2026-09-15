@@ -2,6 +2,13 @@
   "id": "bife-stroganoff",
   "name": "Bife Stroganoff",
   "description": "Tiras de carne em molho de natas, mostarda e cogumelos, com arroz e batata palha.",
+  "image": "media/recipes/bife-stroganoff.jpg",
+  "imageCredit": {
+    "author": "Pittaya Sroilong",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff-01.jpg"
+  },
   "narrative": "A carne corta-se em tiras finas contra a fibra e sela-se em lume muito forte, aos poucos — todas de uma vez, arrefecem a frigideira e a carne coze em vez de tostar. Retira-se e no mesmo fundo vão a cebola e os cogumelos. Desglaça-se com brandy ou vinho, junta-se a mostarda e as natas, e deixa-se engrossar sem ferver. A carne volta só no fim, meio minuto. O arroz faz-se antes.",
   "servings": 4,
   "labels": [

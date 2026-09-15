@@ -2,6 +2,13 @@
   "id": "rancho-a-moda-da-beira",
   "name": "Rancho à moda da Beira",
   "description": "Grão, massa e carnes de porco num caldo apurado. Prato único de inverno.",
+  "image": "media/recipes/rancho-a-moda-da-beira.jpg",
+  "imageCredit": {
+    "author": "E4024",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpea_stew.jpg"
+  },
   "narrative": "Rancho é feijoada de grão com massa, e o que o segura é o caldo das carnes. Entremeada, chouriço e osso cozem juntos e dão esse caldo. O grão já cozido apura lá dentro com cenoura, couve e um refogado de cebola e colorau. A massa coze no próprio caldo nos últimos dez minutos e engrossa-o. Se ficar espesso de mais no dia seguinte, junta-se água a ferver.",
   "servings": 6,
   "labels": [

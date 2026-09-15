@@ -2,6 +2,13 @@
   "id": "pudim-de-chia-com-fruta",
   "name": "Pudim de chia com fruta",
   "description": "Sementes de chia em leite, de véspera no frio, com fruta por cima.",
+  "image": "media/recipes/pudim-de-chia-com-fruta.jpg",
+  "imageCredit": {
+    "author": "ljguitar",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/75218757@N00/4613279299"
+  },
   "narrative": "A proporção é o que decide: três colheres de chia por cada chávena de líquido. Mexe-se, espera-se cinco minutos e mexe-se outra vez — sem essa segunda mexidela as sementes assentam todas no fundo e ficam num bloco. Depois é uma noite no frigorífico. Serve-se com fruta e, se estiver grosso de mais, junta-se um pouco de leite.",
   "servings": 4,
   "labels": [

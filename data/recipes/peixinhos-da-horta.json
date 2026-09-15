@@ -2,6 +2,13 @@
   "id": "peixinhos-da-horta",
   "name": "Peixinhos da horta",
   "description": "Feijão-verde em polme, frito até ficar dourado e leve.",
+  "image": "media/recipes/peixinhos-da-horta.jpg",
+  "imageCredit": {
+    "author": "jeffreyw",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_and_snow_peas_with_stir_fried_green_beans_(15666974844).jpg"
+  },
   "narrative": "O polme leva farinha, ovo e água muito fria — quase gelada — e mexe-se o mínimo, porque um polme trabalhado fica elástico e a fritura pesada. O feijão-verde escalda-se primeiro, três minutos, e seca-se bem, senão o polme escorrega. O óleo tem de estar mesmo quente: frio, absorve e fica ensopado.",
   "servings": 4,
   "labels": [

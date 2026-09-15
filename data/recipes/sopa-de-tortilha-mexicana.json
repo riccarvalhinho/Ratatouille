@@ -2,6 +2,13 @@
   "id": "sopa-de-tortilha-mexicana",
   "name": "Sopa de tortilha mexicana",
   "description": "Caldo de tomate e malagueta com tiras de tortilha fritas, abacate e lima.",
+  "image": "media/recipes/sopa-de-tortilha-mexicana.jpg",
+  "imageCredit": {
+    "author": "Nan Palmero from San Antonio, TX, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tortilla_Soup_at_Azul_Hist%C3%B3rico_(26724396508).jpg"
+  },
   "narrative": "O caldo faz-se de tomate assado com cebola, alho e malagueta, triturado e apurado — assar em vez de refogar dá-lhe o fumado que o prato pede. As tortilhas cortam-se em tiras e fritam-se à parte, e só se põem no prato na hora de servir, senão amolecem e desaparecem. Abacate, coentros e lima a rematar.",
   "servings": 5,
   "labels": [

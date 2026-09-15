@@ -2,6 +2,13 @@
   "id": "filetes-de-pescada",
   "name": "Filetes de pescada",
   "description": "Filetes panados em polme, fritos, com arroz de tomate.",
+  "image": "media/recipes/filetes-de-pescada.jpg",
+  "imageCredit": {
+    "author": "avlxyz",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2738770396"
+  },
   "narrative": "Os filetes temperam-se com sal, alho e limão e ficam a apanhar tempero enquanto se faz o arroz de tomate. O polme é farinha, ovo e um pouco de água ou cerveja, mexido só até ligar. Fritam-se em óleo bem quente, poucos de cada vez, e escorrem em papel. O arroz de tomate faz-se antes e fica tapado a apurar: refogado de cebola e alho, tomate ralado a desfazer-se, arroz e água a ferver.",
   "servings": 4,
   "labels": [
