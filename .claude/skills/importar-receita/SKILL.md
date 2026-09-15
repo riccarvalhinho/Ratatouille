@@ -149,6 +149,58 @@ Uma receita nova é um commit. Dizer ao utilizador o que ficou por preencher e o
 
 Uma receita sem imagem funciona — a app mostra um marcador. Não vale a pena forçar.
 
+## Uma receita é uma refeição, não um componente
+
+**Toda a receita de prato principal leva o acompanhamento escolhido e escrito lá dentro.** Os
+ingredientes do acompanhamento vão na mesma lista de `ingredients`; os passos vão entre os do prato
+principal. Ninguém deve ter de abrir uma segunda receita para saber o que se come ao lado.
+
+Se a fonte não disser com que acompanhamento se serve, **escolhe-se um e diz-se ao utilizador qual
+foi** — não se deixa o prato nu. A escolha segue o prato: um grelhado leva batata e salada, um
+guisado leva arroz ou puré, uma massa vale por si.
+
+**Os passos entrelaçam-se, não se empilham.** É aqui que isto se faz mal. O acompanhamento não vai
+todo para o fim da lista de passos: vai para onde pertence no tempo real da cozinha, que quase
+sempre quer dizer **começar antes**, porque o arroz e a batata demoram mais do que o peixe.
+
+| | Mau | Bom |
+|---|---|---|
+| Passo 1 | Grelhar o peixe | Pôr o arroz ao lume |
+| Passo 2 | Fazer o molho | Grelhar o peixe |
+| Passo 3 | Cozer o arroz | Fazer o molho e servir |
+
+O mau está completo e é inútil: quem o seguir come peixe frio com arroz quente. O modo cozinha
+mostra um passo de cada vez, portanto a ordem dos passos **é** a ordem em que se cozinha — não há
+onde ler à frente.
+
+Duas consequências a aceitar de olhos abertos: os tempos sobem (a receita passou a descrever mais
+trabalho, que já existia mas estava noutro ficheiro), e o mesmo acompanhamento aparece dentro de
+várias receitas e às vezes também sozinho. A redundância é o preço de abrir uma receita e ter lá a
+refeição inteira.
+
+**Exceções, e são só duas:** sopas e sobremesas. Uma sopa é a refeição ou é entrada de outra coisa;
+uma sobremesa não acompanha nada. Se pedir pão, diz-se no passo.
+
+## Ingredientes vetados
+
+Três coisas nunca entram numa receita deste catálogo, e não é preferência de escrita — é decisão de
+quem come.
+
+- **Banha de porco.** Onde a receita tradicional a pede — rojões, migas, filhoses —, usa-se
+  **azeite, manteiga ou óleo**, conforme o prato. O prato mantém-se, muda a gordura. `banha` não
+  existe em `data/taxonomies/ingredients.json` e **não se acrescenta**: sem entrada na taxonomia, a
+  regra é verificável pelo validador em vez de depender de quem escreve se lembrar dela.
+- **Fígado**, em qualquer forma.
+- **Farinheira.**
+
+Nos dois últimos não há substituição. Se o prato for definido pelo ingrediente — iscas, ovos com
+farinheira —, **o prato não se importa**; diz-se porquê. Se o ingrediente for só um dos muitos de um
+prato que existe sem ele (a farinheira num cozido), escreve-se a receita sem ele e nota-se em
+`notes`.
+
+Se alguma vez aparecer um pedido para importar uma receita que os leve, **perguntar** em vez de
+decidir sozinho — pode ser uma receita de família, e aí a decisão é de quem a deu.
+
 ## Como se escrevem os passos
 
 **Passos ao nível de tarefa: uma ação e a espera que lhe pertence.** Dois limites, e nenhum é de
@@ -188,3 +240,7 @@ espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É bar
 - `weight` atribui-se pela rubrica em `docs/product/metadata-receitas.md`, não a olho
 - A origem de cozinha pergunta-se **sempre**, e "não tem" é resposta válida
 - Não há campo de dificuldade nem de Nutri-Score
+- Um prato principal leva o acompanhamento dentro da receita, com os passos entrelaçados. Sopas e
+  sobremesas são as únicas exceções
+- Banha, fígado e farinheira não entram. A banha substitui-se e o prato fica; os outros dois, quando
+  definem o prato, tiram o prato

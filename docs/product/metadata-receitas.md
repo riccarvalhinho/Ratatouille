@@ -109,6 +109,17 @@ cebola".
 **Não há grupos de ingredientes.** Foi considerado e rejeitado: a lista é única, e as sub-preparações
 são partes da preparação total do prato.
 
+**E uma receita é uma refeição, não um componente:** o acompanhamento vem escolhido e escrito dentro
+da mesma receita — ingredientes na mesma lista, passos entrelaçados com os do prato, não empilhados
+no fim. Abrir uma receita de peixe grelhado e ter de ir procurar noutra o que se põe ao lado é
+exatamente o que a app existe para evitar.
+
+Vale a pena registar que **esta decisão não custou nada ao formato**: a lista única, rejeitada como
+grupos por outras razões, já era a estrutura certa para um prato completo. As sopas e as sobremesas
+são a exceção natural, porque não acompanham nada. A regra operacional está em
+`.claude/skills/importar-receita/SKILL.md`, que é o que faz com que valha para o que se escrever
+daqui a seis meses e não só para a primeira leva.
+
 ## Equipamento
 
 Referências a `data/taxonomies/equipment.json`, onde cada item está marcado **uma vez** como `comum`

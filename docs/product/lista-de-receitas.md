@@ -11,7 +11,7 @@ da direita — é a ligação entre esta lista e o catálogo.
 
 Passar a lista e marcar. Rejeitar é o gesto normal, não a exceção: a lista foi escrita larga de
 propósito, para servir de puxa-memória. **Um catálogo de 80 pratos que se cozinham vale mais do que
-um de 150 em que metade nunca sai da grelha.**
+um de 180 em que metade nunca sai da grelha.**
 
 Duas perguntas por linha, e nenhuma é sobre a receita ser boa:
 
@@ -41,108 +41,160 @@ tahini, molho de peixe). Não é motivo para rejeitar — é aviso de que o prat
 
 ---
 
+# Regras desta leva
+
+Três regras que valem para **todas** as receitas geradas, não só para as desta lista. As três estão
+escritas em `.claude/skills/importar-receita/SKILL.md`, que é o que garante que valem também para o
+que se importar daqui a seis meses — uma regra que fique só aqui deixa de existir na leva seguinte.
+
+## 1. Cada receita é um prato completo
+
+**Uma receita é uma refeição, não um componente.** O acompanhamento vem escolhido e escrito dentro
+da mesma receita: os ingredientes na mesma lista, os passos entrelaçados com os do prato principal.
+Nada de abrir uma receita de peixe grelhado e ter de ir procurar noutra o que se põe ao lado.
+
+O entrelaçar é a parte que interessa e a mais fácil de fazer mal. Os passos do acompanhamento
+**não vão todos para o fim** — vão para onde pertencem no tempo real da cozinha: o arroz começa
+antes do peixe porque demora mais, e o passo diz isso. Uma receita que faça o prato todo e só depois
+se lembre do arroz está errada mesmo que os ingredientes estejam lá.
+
+O schema já aguentava isto sem mudar nada: `ingredients` é lista única de propósito, e a descrição
+do campo já dizia que "as sub-preparações são partes da preparação total do prato".
+
+**O que isto custa, dito à frente:** os tempos sobem e as receitas ficam com mais passos, porque
+passam a descrever mais trabalho — o que antes era invisível não desapareceu, estava só noutro
+ficheiro. E o mesmo arroz de tomate vai aparecer dentro de várias receitas e também sozinho na
+secção dos acompanhamentos. Isso é redundância aceite: o valor está em abrir uma receita e ter a
+refeição inteira, não em não repetir texto.
+
+## 2. Nada leva banha de porco
+
+Onde a receita tradicional pede banha, usa-se **azeite, manteiga ou óleo**, conforme o que o prato
+pede. O prato mantém-se; muda a gordura. Os candidatos onde isto se nota estão marcados com
+`sem banha` na coluna de notas — rojões, migas e filhoses são os três em que a banha é mesmo a
+versão canónica, e nesses a substituição é uma decisão, não um descuido.
+
+`banha` não existe em `data/taxonomies/ingredients.json` e **não vai ser acrescentada**. É o que
+torna a regra verificável em vez de ser boa intenção: sem entrada na taxonomia, nenhuma receita a
+consegue referenciar sem falhar a validação.
+
+## 3. Nada leva fígado nem farinheira
+
+Ao contrário da banha, aqui não há substituição — o prato sai da lista. Saíram por isto:
+
+- **Iscas com elas** — o prato é fígado
+- **Ovos mexidos com farinheira** — o prato é a farinheira
+
+**Um caso de fronteira, para decidires:** o **cozido à portuguesa** leva farinheira em muitas casas,
+mas não é definido por ela — leva chouriço, morcela, carnes e legumes, e há cozidos sem farinheira
+nenhuma. Deixei-o na lista, para ser escrito sem. Se para ti cozido com farinheira é cozido, diz e
+sai também.
+
+---
+
 # Pratos principais — dia a dia
 
 O núcleo, e a primeira coisa a ser gerada: é o que responde a "o que é que se janta hoje", e
 portanto o que faz o planeamento semanal e a lista de compras valerem alguma coisa.
 
+Cada linha inclui já o acompanhamento com que a receita vai ser escrita. É uma proposta como
+qualquer outra da lista — se o acompanhamento não servir, corrige-se na triagem.
+
 ## Portugueses
 
-| Prato | O que é | Despensa | Estado | id |
+| Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Bitoque | Bife, ovo a cavalo, batata frita | | proposta | |
-| Bifanas | Febras marinhadas em alho e vinho branco, no pão | | proposta | |
-| Bife à portuguesa | Bife com molho de mostarda, natas e presunto | | proposta | |
-| Carne de porco à alentejana | Porco marinado com amêijoas e batata aos cubos | | proposta | |
-| Rojões | Porco em cubos assado no seu molho | | proposta | |
-| Costeletas de porco grelhadas | Grelhador, alho e limão | | proposta | |
-| Perna de porco assada no forno | Assado simples de domingo a meio da semana | | proposta | |
-| Almôndegas com esparguete | Almôndegas em molho de tomate | | proposta | |
-| Empadão de carne | Carne picada sob puré de batata, gratinado | | proposta | |
-| Jardineira | Guisado de carne com legumes e batata | | proposta | |
-| Salsichas frescas com puré | Rápido, dias sem vontade nenhuma | | proposta | |
-| Frango assado com piri-piri | Frango inteiro ou às partes, no forno | | proposta | |
-| Frango na púcara | Frango estufado com vinho do Porto e cogumelos | | proposta | |
-| Frango de churrasco | Espalmado, grelhado, com molho de churrasco | | proposta | |
-| Arroz de frango | Arroz malandro com frango desfiado | | proposta | |
-| Arroz de cabidela | Arroz de frango com sangue e vinagre | | proposta | |
-| Bifes de peru grelhados | Peru grelhado com salada, o jantar de dez minutos | | proposta | |
-| Coelho guisado | Coelho estufado com vinho tinto e alho | | proposta | |
-| Iscas com elas | Fígado de porco marinado com batata cozida | | proposta | |
-| Bacalhau à Brás | Bacalhau desfiado, batata palha e ovo | | proposta | |
-| Bacalhau com natas | Bacalhau gratinado com batata e natas | | proposta | |
-| Bacalhau à Gomes de Sá | Bacalhau no forno com batata, ovo e azeitona | | proposta | |
-| Bacalhau com broa | Lombo de bacalhau com crosta de broa e alho | | proposta | |
-| Bacalhau à lagareiro | Lombo assado com batata a murro e muito azeite | | proposta | |
-| Pataniscas de bacalhau | Pataniscas com arroz de feijão | | proposta | |
-| Filetes de pescada com arroz de tomate | Panados, com arroz de tomate | | proposta | |
-| Massada de peixe | Massa caldosa com peixe e refogado | | proposta | |
-| Caldeirada de peixe | Peixe, batata e pimento em camadas | | proposta | |
-| Carapaus grelhados | Grelhados, com batata cozida e molho de vinagrete | | proposta | |
-| Sardinhas assadas | Grelhador, pão e pimento assado | | proposta | |
-| Dourada no forno | Peixe inteiro com batata e cebola | | proposta | |
-| Salmão no forno com legumes | Tabuleiro único, meia hora | | proposta | |
-| Lulas grelhadas | Grelhadas com molho verde | | proposta | |
-| Choco frito à setubalense | Choco panado e frito, com batata | | proposta | |
-| Açorda de camarão | Pão, alho, coentros e camarão | | proposta | |
-| Migas à alentejana | Pão desfeito com entremeada e alho | | proposta | |
-| Ovos mexidos com farinheira | Jantar de despensa, rápido | | proposta | |
-| Favas com chouriço | Favas guisadas com enchidos | | proposta | |
-| Feijoada à transmontana | Feijão com carnes de porco | | proposta | |
-| Omelete de legumes | Omelete grande de frigideira | | proposta | |
+| Bitoque | Batata frita e arroz branco, ovo a cavalo | | proposta | |
+| Bifanas | No pão, com batata frita | | proposta | |
+| Bife à portuguesa | Batata frita e salada de alface | | proposta | |
+| Carne de porco à alentejana | Batata aos cubos, no mesmo tacho | | proposta | |
+| Rojões | Batata assada e grelos salteados | sem banha | proposta | |
+| Costeletas de porco grelhadas | Arroz de tomate e salada | | proposta | |
+| Perna de porco assada no forno | Batata assada e puré de maçã | | proposta | |
+| Almôndegas com esparguete | Esparguete e queijo ralado | | proposta | |
+| Empadão de carne | Salada de alface e tomate ao lado | | proposta | |
+| Jardineira | Prato único, com arroz branco | | proposta | |
+| Salsichas frescas com puré | Puré de batata e cebola caramelizada | | proposta | |
+| Frango assado com piri-piri | Batata assada e arroz | | proposta | |
+| Frango na púcara | Arroz branco e batata palha | | proposta | |
+| Frango de churrasco | Batata frita e salada de tomate | | proposta | |
+| Arroz de frango | Prato único, com salada | | proposta | |
+| Arroz de cabidela | Prato único | | proposta | |
+| Bifes de peru grelhados | Salada de tomate e batata a murro | | proposta | |
+| Coelho guisado | Batata cozida e arroz branco | | proposta | |
+| Bacalhau à Brás | Azeitonas e salada de alface | | proposta | |
+| Bacalhau com natas | Prato único, com salada | | proposta | |
+| Bacalhau à Gomes de Sá | Prato único | | proposta | |
+| Bacalhau com broa | Batata a murro e grelos | | proposta | |
+| Bacalhau à lagareiro | Batata a murro e brócolos | | proposta | |
+| Pataniscas de bacalhau | Arroz de feijão | | proposta | |
+| Filetes de pescada | Arroz de tomate | | proposta | |
+| Massada de peixe | Prato único | | proposta | |
+| Caldeirada de peixe | Prato único, com pão | | proposta | |
+| Carapaus grelhados | Batata cozida e molho de vinagrete | | proposta | |
+| Sardinhas assadas | Pimento assado, batata cozida e pão | | proposta | |
+| Dourada no forno | Batata e cebola no mesmo tabuleiro | | proposta | |
+| Salmão no forno com legumes | Tabuleiro único, com batata | | proposta | |
+| Lulas grelhadas | Arroz de manteiga e molho verde | | proposta | |
+| Choco frito à setubalense | Batata frita e limão | | proposta | |
+| Açorda de camarão | Prato único | | proposta | |
+| Migas à alentejana | Com entremeada, prato único | sem banha | proposta | |
+| Favas com chouriço | Prato único, com pão | | proposta | |
+| Feijoada à transmontana | Arroz branco | | proposta | |
+| Omelete de legumes | Salada e pão | | proposta | |
 
 ## Internacionais
 
-| Prato | O que é | Despensa | Estado | id |
+| Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Esparguete à carbonara | Ovo, queijo, guanciale, sem natas | | proposta | |
-| Esparguete aglio e olio | Alho, azeite e malagueta, quinze minutos | | proposta | |
-| Massa com pesto | Pesto de manjericão feito na hora | | proposta | |
-| Massa à bolonhesa | Ragu de carne longo | | proposta | |
-| Massa ao forno com atum | Gratinado de despensa | | proposta | |
-| Lasanha de carne | Bolonhesa e bechamel em camadas | | proposta | |
-| Bolonhesa de lentilhas | A mesma massa, sem carne | | proposta | |
-| Penne all'arrabbiata | Tomate, alho e malagueta | | proposta | |
-| Risotto de cogumelos | Arroz arbóreo, caldo, parmesão | | proposta | |
-| Risotto de camarão | O mesmo método, com marisco | | proposta | |
-| Pizza caseira | Massa levedada, no forno de casa | | proposta | |
-| Frango à caçadora | Frango estufado com tomate e azeitona | | proposta | |
-| Frango com limão e alcaparras | Piccata, frigideira, vinte minutos | | proposta | |
-| Escalopes de peru panados | Panados com salada | | proposta | |
-| Cordon bleu | Peito recheado com fiambre e queijo | | proposta | |
-| Hambúrguer caseiro | Carne picada, pão e o que se quiser | | proposta | |
-| Bife Stroganoff | Tiras de carne em molho de natas e mostarda | | proposta | |
-| Goulash | Guisado de carne com colorau | | proposta | |
-| Chili con carne | Carne picada com feijão e especiarias | | proposta | |
-| Tacos de carne picada | Tortilhas, carne temperada, o resto à mesa | sim | proposta | |
-| Fajitas de frango | Frango e pimentos salteados | sim | proposta | |
-| Moussaka | Beringela, carne e bechamel | | proposta | |
-| Paella | Arroz com frango e marisco | | proposta | |
-| Tortilha de batata | Tortilla espanhola, batata e ovo | | proposta | |
-| Quiche Lorraine | Tarte salgada de bacon e natas | | proposta | |
-| Tarte de alho-francês | Tarte salgada vegetariana | | proposta | |
-| Gratinado de batata | Batata, natas e forno | | proposta | |
-| Shakshuka | Ovos escalfados em molho de tomate e pimento | | proposta | |
-| Falafel com pita | Grão frito ou no forno, com molho de iogurte | sim | proposta | |
-| Cuscuz com legumes | Cuscuz e legumes assados | | proposta | |
-| Gyros de frango | Frango marinado com pita e tzatziki | | proposta | |
-| Caril de frango | Caril de base de tomate e cebola | sim | proposta | |
-| Frango tikka masala | Frango marinado em iogurte, molho cremoso | sim | proposta | |
-| Butter chicken | Caril suave de tomate e manteiga | sim | proposta | |
-| Caril de grão e espinafres | Vegetariano, panela única | sim | proposta | |
-| Dahl de lentilhas vermelhas | Lentilhas com especiarias e leite de coco | sim | proposta | |
-| Salteado de frango e legumes | Stir-fry de wok, quinze minutos | sim | proposta | |
-| Frango teriyaki com arroz | Molho de soja, mirim e açúcar | sim | proposta | |
-| Salmão teriyaki | O mesmo molho, no peixe | sim | proposta | |
-| Noodles com legumes e tofu | Salteado vegetariano | sim | proposta | |
-| Arroz chau-chau | Arroz salteado com o que sobrou | sim | proposta | |
-| Yakisoba | Noodles salteados com carne e legumes | sim | proposta | |
-| Pad thai | Noodles de arroz com tamarindo e amendoim | sim | proposta | |
-| Peixe em leite de coco | Caril tailandês suave | sim | proposta | |
-| Salada César com frango | Salada que é refeição | | proposta | |
-| Poke bowl de salmão | Tigela fria de arroz e peixe | sim | proposta | |
-| Wraps de frango | Almoço de sobras | | proposta | |
-| Ratatouille | Legumes estufados do Sul de França | | proposta | |
+| Esparguete à carbonara | Prato único | | proposta | |
+| Esparguete aglio e olio | Prato único, com salada verde | | proposta | |
+| Massa com pesto | Prato único, com tomate cereja | | proposta | |
+| Massa à bolonhesa | Prato único, com queijo ralado | | proposta | |
+| Massa ao forno com atum | Salada ao lado | | proposta | |
+| Lasanha de carne | Salada verde | | proposta | |
+| Bolonhesa de lentilhas | Massa e salada | | proposta | |
+| Penne all'arrabbiata | Prato único | | proposta | |
+| Risotto de cogumelos | Prato único | | proposta | |
+| Risotto de camarão | Prato único | | proposta | |
+| Pizza caseira | Salada verde | | proposta | |
+| Frango à caçadora | Polenta ou puré | | proposta | |
+| Frango com limão e alcaparras | Arroz e espargos | | proposta | |
+| Escalopes de peru panados | Batata frita no forno e salada | | proposta | |
+| Cordon bleu | Puré e feijão-verde | | proposta | |
+| Hambúrguer caseiro | Batata frita no forno e coleslaw | | proposta | |
+| Bife Stroganoff | Arroz branco e batata palha | | proposta | |
+| Goulash | Puré de batata ou massa curta | | proposta | |
+| Chili con carne | Arroz branco e natas azedas | | proposta | |
+| Tacos de carne picada | Tortilhas e acompanhamentos à mesa | sim | proposta | |
+| Fajitas de frango | Tortilhas, arroz e feijão | sim | proposta | |
+| Moussaka | Salada grega | | proposta | |
+| Paella | Prato único, com limão | | proposta | |
+| Tortilha de batata | Salada de tomate e pão | | proposta | |
+| Quiche Lorraine | Salada verde | | proposta | |
+| Tarte de alho-francês | Salada verde | | proposta | |
+| Gratinado de batata | Com salada, ou ao lado de carne grelhada | | proposta | |
+| Shakshuka | Pão para molhar | | proposta | |
+| Falafel com pita | Pita, salada e molho de iogurte | sim | proposta | |
+| Cuscuz com legumes | Prato único | | proposta | |
+| Gyros de frango | Pita, batata frita e tzatziki | | proposta | |
+| Caril de frango | Arroz basmati e iogurte | sim | proposta | |
+| Frango tikka masala | Arroz basmati e naan | sim | proposta | |
+| Butter chicken | Arroz basmati e naan | sim | proposta | |
+| Caril de grão e espinafres | Arroz e iogurte | sim | proposta | |
+| Dahl de lentilhas vermelhas | Arroz e coentros | sim | proposta | |
+| Salteado de frango e legumes | Arroz ou noodles | sim | proposta | |
+| Frango teriyaki | Arroz e brócolos no vapor | sim | proposta | |
+| Salmão teriyaki | Arroz e edamame | sim | proposta | |
+| Noodles com legumes e tofu | Prato único | sim | proposta | |
+| Arroz chau-chau | Prato único | sim | proposta | |
+| Yakisoba | Prato único | sim | proposta | |
+| Pad thai | Prato único, com amendoim e lima | sim | proposta | |
+| Peixe em leite de coco | Arroz jasmim | sim | proposta | |
+| Salada César com frango | Prato único, com croutons | | proposta | |
+| Poke bowl de salmão | Prato único | sim | proposta | |
+| Wraps de frango | Salada ao lado | | proposta | |
+| Ratatouille | Arroz ou pão, ou ao lado de carne | | proposta | |
 
 ---
 
@@ -151,60 +203,125 @@ portanto o que faz o planeamento semanal e a lista de compras valerem alguma coi
 Mais longos ou mais cerimoniosos. Não são o alvo da primeira leva, mas entram na lista porque são
 metade da razão de ter um catálogo.
 
-| Prato | O que é | Despensa | Estado | id |
+| Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Cozido à portuguesa | Carnes, enchidos e legumes cozidos | | proposta | |
-| Arroz de pato | Pato desfiado com arroz e chouriço, no forno | | proposta | |
-| Arroz de marisco | Arroz malandro de marisco | | proposta | |
-| Arroz de tamboril | Malandro, com tamboril e coentros | | proposta | |
-| Polvo à lagareiro | Polvo assado com batata a murro | | proposta | |
-| Leitão no forno | Pele estaladiça, tempo longo | | proposta | |
-| Cabrito assado | Assado de festa com batata e arroz de forno | | proposta | |
-| Bacalhau assado com todos | Bacalhau cozido com couve, batata e ovo | | proposta | |
-| Ensopado de borrego | Borrego com pão no fundo do prato | | proposta | |
-| Feijoada de marisco | Feijão branco com marisco | | proposta | |
-| Rancho à moda da Beira | Grão, massa e carnes | | proposta | |
-| Bacalhau à Zé do Pipo | Bacalhau com puré e maionese, gratinado | | proposta | |
-| Peito de vitela recheado | Assado lento de forno | | proposta | |
-| Naco na pedra | Carne grelhada com molhos | | proposta | |
-| Francesinha | Sandes com molho de cerveja e queijo gratinado | | proposta | |
-| Bœuf bourguignon | Vitela estufada em vinho tinto | | proposta | |
-| Ossobuco à milanesa | Chambão estufado com gremolata | | proposta | |
-| Costela assada lenta | Costela de vaca, horas de forno baixo | | proposta | |
-| Pernil de borrego no forno | Alecrim, alho e tempo | | proposta | |
-| Pato à pequinesa simplificado | Pato laqueado, versão de casa | sim | proposta | |
-| Biryani de frango | Arroz especiado em camadas | sim | proposta | |
-| Rendang de vaca | Guisado longo em leite de coco | sim | proposta | |
-| Tajine de frango com limão | Guisado marroquino de panela | sim | proposta | |
-| Lasanha de legumes assados | Vegetariana, de forno | | proposta | |
-| Wellington de vaca | Massa folhada e duxelles | | proposta | |
+| Cozido à portuguesa | Prato único, com arroz | sem farinheira — ver regra 3 | proposta | |
+| Arroz de pato | Prato único, com salada de agrião | | proposta | |
+| Arroz de marisco | Prato único | | proposta | |
+| Arroz de tamboril | Prato único | | proposta | |
+| Polvo à lagareiro | Batata a murro e grelos | | proposta | |
+| Leitão no forno | Batata assada e laranja | | proposta | |
+| Cabrito assado | Batata assada e arroz de forno | | proposta | |
+| Bacalhau assado com todos | Couve, batata, ovo e cenoura | | proposta | |
+| Feijoada de marisco | Arroz branco | | proposta | |
+| Rancho à moda da Beira | Prato único | | proposta | |
+| Bacalhau à Zé do Pipo | Prato único, com salada | | proposta | |
+| Peito de vitela recheado | Batata assada e legumes | | proposta | |
+| Naco na pedra | Batata frita, arroz e molhos | | proposta | |
+| Francesinha | Batata frita | | proposta | |
+| Bœuf bourguignon | Puré de batata | | proposta | |
+| Ossobuco à milanesa | Risotto à milanesa | | proposta | |
+| Costela assada lenta | Batata assada e coleslaw | | proposta | |
+| Pernil de borrego no forno | Batata e legumes do mesmo tabuleiro | | proposta | |
+| Pato à pequinesa simplificado | Panquecas, pepino e cebolinho | sim | proposta | |
+| Biryani de frango | Prato único, com raita | sim | proposta | |
+| Rendang de vaca | Arroz jasmim | sim | proposta | |
+| Tajine de frango com limão | Cuscuz | sim | proposta | |
+| Lasanha de legumes assados | Salada verde | | proposta | |
+| Wellington de vaca | Puré e legumes glaceados | | proposta | |
+
+---
+
+# Sopas
+
+**25 sopas, 11 delas internacionais.** Entram nesta leva e não ficam para depois: a sopa é o que se
+come mais vezes por semana em casa portuguesa, e com nove sopas o filtro de tipo de prato não tem
+nada para filtrar.
+
+As sopas são a exceção natural à regra do prato completo — uma sopa é a refeição toda, ou é
+entrada de outra coisa. Onde pede pão ou um acompanhamento, está dito.
+
+## Portuguesas — 14
+
+| Prato | O que é | Notas | Estado | id |
+|---|---|---|---|---|
+| Caldo verde | Couve galega, batata e chouriço | | proposta | |
+| Sopa de legumes | A sopa de todos os dias | | proposta | |
+| Sopa de tomate alentejana | Tomate, pão e ovo escalfado | | proposta | |
+| Creme de abóbora | Creme suave, com sementes torradas | | proposta | |
+| Creme de cenoura | Creme de tacho, com coentros | | proposta | |
+| Creme de cogumelos | Creme com natas e pão torrado | | proposta | |
+| Sopa de peixe | Caldo de peixe passado, com massinhas | | proposta | |
+| Canja de galinha | Galinha, massa e limão | | proposta | |
+| Sopa da pedra | Feijão, enchidos e legumes | | proposta | |
+| Sopa de feijão com hortaliça | Feijão encarnado e couve | | proposta | |
+| Sopa de grão com espinafres | Grão, espinafres e ovo | | proposta | |
+| Sopa de agrião | Agrião, batata e um fio de azeite | | proposta | |
+| Gaspacho alentejano | Sopa fria de tomate, pepino e pão | | proposta | |
+| Açorda alentejana | Pão, alho, coentros e ovo escalfado | | proposta | |
+
+## Internacionais — 11
+
+| Prato | O que é | Notas | Estado | id |
+|---|---|---|---|---|
+| Minestrone | Sopa italiana de legumes e massa | | proposta | |
+| Sopa de cebola gratinada | Francesa, com pão e queijo no forno | | proposta | |
+| Vichyssoise | Creme frio de alho-francês e batata | | proposta | |
+| Sopa de ervilhas com hortelã | Inglesa, verde e rápida | | proposta | |
+| Borscht | Sopa de beterraba com natas azedas | | proposta | |
+| Sopa de lentilhas à turca | Lentilha vermelha, cominhos e limão | | proposta | |
+| Harira | Sopa marroquina de grão, lentilha e tomate | sim | proposta | |
+| Sopa de tortilha mexicana | Caldo de tomate com tiras de tortilha | sim | proposta | |
+| Sopa de miso | Caldo dashi com tofu e alga | sim | proposta | |
+| Tom kha gai | Sopa tailandesa de coco, frango e galanga | sim | proposta | |
+| Sopa de abóbora com coco e caril | Creme com leite de coco | sim | proposta | |
+
+---
+
+# Sobremesas saudáveis
+
+Um pack à parte das sobremesas de pastelaria, e a pedido. A maior parte não tem confeção nenhuma
+(`methods: ["sem-confecao"]`), o que as torna as receitas mais baratas de gerar da lista toda — e
+as únicas que se fazem enquanto o jantar está no forno.
+
+| Prato | O que é | Notas | Estado | id |
+|---|---|---|---|---|
+| Granizado de melancia | Melancia congelada e raspada, com lima | | proposta | |
+| Granizado de limão | Gelo raspado com sumo de limão e hortelã | | proposta | |
+| Granizado de café | Sem açúcar adicionado | | proposta | |
+| Gelado de banana | Banana congelada batida, sem natas | | proposta | |
+| Gelatina de fruta natural | Gelatina feita com sumo de fruta e pedaços | | proposta | |
+| Salada de fruta | Fruta da época, sumo de laranja e hortelã | | proposta | |
+| Espetadas de fruta | Fruta em espetada, com chocolate preto | | proposta | |
+| Maçã assada com canela | Forno, sem açúcar adicionado | | proposta | |
+| Ananás grelhado | Grelhador, com canela e lima | | proposta | |
+| Iogurte com fruta e granola | Camadas, de taça | | proposta | |
+| Pudim de chia com fruta | De véspera, no frigorífico | sim | proposta | |
+| Mousse de iogurte e frutos vermelhos | Batida, sem forno | | proposta | |
 
 ---
 
 # Depois dos principais
 
-Fora da primeira leva por decisão tua — entram quando os principais estiverem no sítio. Ficam aqui
-para não se perderem.
+Fora da primeira leva — entram quando os principais e as sopas estiverem no sítio.
 
-## Sopas, saladas e acompanhamentos
+## Saladas e acompanhamentos
 
-| Prato | O que é | Despensa | Estado | id |
+**Nota de âmbito, depois da regra do prato completo:** estas deixaram de ser necessárias para
+completar uma refeição, porque agora cada receita já traz o seu acompanhamento escrito. O que
+sobra é um uso mais estreito e ainda assim real — a salada que se faz à parte para acompanhar o
+que já está feito, o puré que se quer sozinho. Por isso a secção encolheu e ficou para o fim, em
+vez de desaparecer.
+
+| Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Caldo verde | Couve galega, batata e chouriço | | proposta | |
-| Sopa de legumes | A sopa de todos os dias | | proposta | |
-| Creme de abóbora | Creme suave de forno ou tacho | | proposta | |
-| Sopa de peixe | Caldo de peixe passado | | proposta | |
-| Canja de galinha | Galinha, massa e limão | | proposta | |
-| Sopa da pedra | Feijão, enchidos e legumes | | proposta | |
-| Gaspacho | Sopa fria de tomate e pepino | | proposta | |
-| Creme de cogumelos | Creme com natas | | proposta | |
-| Sopa de miso | Caldo dashi com tofu e alga | sim | proposta | |
 | Salada de grão com atum | Salada fria de despensa | | proposta | |
 | Salada de polvo | Polvo cozido com cebola e coentros | | proposta | |
 | Salada de tomate e cebola | Acompanhamento de grelhados | | proposta | |
 | Salada de feijão frade com ovo | Clássico de verão | | proposta | |
 | Salada grega | Tomate, pepino, feta e azeitona | | proposta | |
 | Tabule | Salada de bulgur e salsa | sim | proposta | |
+| Coleslaw | Couve e cenoura em molho cremoso | | proposta | |
 | Arroz de tomate | Acompanhamento malandro | | proposta | |
 | Arroz de feijão | Acompanhamento de pataniscas | | proposta | |
 | Batata a murro | Batata assada esmagada com alho e azeite | | proposta | |
@@ -220,7 +337,7 @@ para não se perderem.
 Vale a pena por uma razão técnica além da gulodice: são os únicos pratos que exercitam `yield` em
 vez de `servings`, o equipamento de pastelaria e o `prepAhead` de levedar e arrefecer.
 
-| Prato | O que é | Despensa | Estado | id |
+| Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
 | Arroz doce | Canela por cima, à portuguesa | | proposta | |
 | Leite-creme | Queimado com açúcar | | proposta | |
@@ -243,7 +360,7 @@ vez de `servings`, o equipamento de pastelaria e o `prepAhead` de levedar e arre
 | Broa de milho | Pão de milho | | proposta | |
 | Pão recheado com chouriço e queijo | Para levar ou para lanche | | proposta | |
 | Bolo-rei | Natal, com o seu tempo de levedar | | proposta | |
-| Filhoses | Fritas, de época | | proposta | |
+| Filhoses | Fritas, de época | sem banha | proposta | |
 
 ---
 
@@ -262,6 +379,8 @@ O que vale a pena dizer, por ordem de utilidade:
 4. **O que se cozinhava e se deixou de cozinhar.** Muitas vezes só se perdeu porque ninguém se
    lembrava dele à hora de decidir — que é exatamente o problema que esta app existe para resolver.
 
-| Prato | O que é | Quem faz | Estado | id |
+E, para cada um, **com que acompanhamento se come** — porque agora isso faz parte da receita.
+
+| Prato | Com | Quem faz | Estado | id |
 |---|---|---|---|---|
 | | | | | |
