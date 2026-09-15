@@ -1,0 +1,120 @@
+{
+  "id": "salada-de-fruta",
+  "name": "Salada de fruta",
+  "description": "Fruta da época em pedaços, com sumo de laranja e hortelã.",
+  "narrative": "Duas regras e mais nada: a fruta que oxida — maçã, pera, banana — entra por último e leva sumo de laranja ou limão logo por cima; e corta-se tudo do mesmo tamanho, porque uma salada com pedaços desiguais come-se mal. Meia hora no frio antes de servir chega para os sabores se juntarem; mais do que duas horas e a fruta amolece.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "vegan",
+    "sem-gluten",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 30,
+      "description": "Meia hora no frigorífico antes de servir, e não mais de duas"
+    }
+  },
+  "equipment": [
+    "frigorifico",
+    "taca",
+    "faca-de-chef",
+    "espremedor-eletrico"
+  ],
+  "ingredients": [
+    {
+      "ref": "laranja",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "maca",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "banana",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "morango",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "ananas",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "mel",
+      "quantity": 1,
+      "unit": "csopa",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o sumo",
+      "text": "Sumo de duas laranjas, com o mel dissolvido para quem quiser.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "laranja",
+        "mel"
+      ]
+    },
+    {
+      "title": "Cortar a fruta que não oxida",
+      "text": "Morango, ananás e a outra laranja em gajos, todos do mesmo tamanho.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "morango",
+        "ananas"
+      ]
+    },
+    {
+      "title": "Cortar a que oxida e regar",
+      "text": "Maçã e banana por último, com o sumo logo por cima.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "maca",
+        "banana"
+      ]
+    },
+    {
+      "title": "Arrefecer",
+      "text": "Meia hora no frigorífico, e não mais de duas. Hortelã picada à saída.",
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 130,
+    "proteinGrams": 1.5,
+    "carbsGrams": 31,
+    "fatGrams": 0.4,
+    "saturatedFatGrams": 0,
+    "fibreGrams": 4,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

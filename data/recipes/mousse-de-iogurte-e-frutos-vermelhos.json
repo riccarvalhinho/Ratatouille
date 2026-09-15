@@ -1,0 +1,119 @@
+{
+  "id": "mousse-de-iogurte-e-frutos-vermelhos",
+  "name": "Mousse de iogurte e frutos vermelhos",
+  "description": "Iogurte batido com claras em castelo e coulis de frutos vermelhos. Sem forno.",
+  "narrative": "A leveza vem das claras e não das natas: batem-se em castelo firme e envolvem-se no iogurte com a espátula, de baixo para cima, em três vezes — batidas com força, perde-se o ar todo e fica um creme pesado. O coulis faz-se com os frutos ao lume com um pouco de açúcar, passado e arrefecido antes de entrar, senão desfaz o ar da mousse.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "vegetariano",
+    "sem-gluten",
+    "festa"
+  ],
+  "methods": [
+    "sem-confecao",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 10,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Duas horas no frigorífico"
+    }
+  },
+  "equipment": [
+    "frigorifico",
+    "tacho",
+    "batedeira",
+    "espatula",
+    "passador-fino"
+  ],
+  "ingredients": [
+    {
+      "ref": "iogurte-natural",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "só as claras"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "frutos-vermelhos-congelados",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o coulis",
+      "text": "Frutos vermelhos ao lume com metade do açúcar e sumo de limão, dez minutos. Passar e arrefecer por completo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "frutos-vermelhos-congelados",
+        "acucar",
+        "limao"
+      ]
+    },
+    {
+      "title": "Bater as claras em castelo",
+      "text": "Claras com o resto do açúcar, até fazerem bico firme.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Envolver no iogurte",
+      "text": "Claras no iogurte em três vezes, com a espátula e de baixo para cima, até ficar homogéneo.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "iogurte-natural"
+      ]
+    },
+    {
+      "title": "Montar e arrefecer",
+      "text": "Camadas de mousse e coulis frio nas taças. Duas horas no frigorífico. Hortelã a rematar.",
+      "durationMinutes": 125,
+      "passive": true,
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 180,
+    "proteinGrams": 11,
+    "carbsGrams": 26,
+    "fatGrams": 2.5,
+    "saturatedFatGrams": 1.4,
+    "fibreGrams": 3,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

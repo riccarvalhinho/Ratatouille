@@ -1,0 +1,107 @@
+{
+  "id": "pudim-de-chia-com-fruta",
+  "name": "Pudim de chia com fruta",
+  "description": "Sementes de chia em leite, de véspera no frio, com fruta por cima.",
+  "narrative": "A proporção é o que decide: três colheres de chia por cada chávena de líquido. Mexe-se, espera-se cinco minutos e mexe-se outra vez — sem essa segunda mexidela as sementes assentam todas no fundo e ficam num bloco. Depois é uma noite no frigorífico. Serve-se com fruta e, se estiver grosso de mais, junta-se um pouco de leite.",
+  "servings": 4,
+  "labels": [
+    "sobremesa",
+    "pequeno-almoco",
+    "vegan",
+    "sem-gluten",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 480,
+      "description": "Uma noite no frigorífico"
+    }
+  },
+  "equipment": [
+    "frigorifico",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "sementes-de-chia",
+      "quantity": 90,
+      "unit": "g"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "mel",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "baunilha",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "morango",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "banana",
+      "quantity": 2,
+      "unit": "un"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Misturar e voltar a mexer",
+      "text": "Chia, leite de coco, mel e baunilha mexidos. Cinco minutos de espera e mexer outra vez.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "sementes-de-chia",
+        "leite-de-coco",
+        "mel",
+        "baunilha"
+      ]
+    },
+    {
+      "title": "Levar ao frio",
+      "text": "Tapado no frigorífico, de um dia para o outro.",
+      "durationMinutes": 480,
+      "passive": true
+    },
+    {
+      "title": "Servir com fruta",
+      "text": "Morangos e banana por cima. Leite a mais se estiver grosso de mais.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "morango",
+        "banana"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 7,
+    "carbsGrams": 32,
+    "fatGrams": 19,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 12,
+    "saltGrams": 0.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

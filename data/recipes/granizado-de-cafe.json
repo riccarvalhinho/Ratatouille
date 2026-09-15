@@ -1,0 +1,86 @@
+{
+  "id": "granizado-de-cafe",
+  "name": "Granizado de café",
+  "description": "Café forte congelado e raspado, sem açúcar adicionado.",
+  "narrative": "Faz-se com café bem forte e ainda quente, para o açúcar se dissolver se se usar — mas a graça é não levar nenhum, e deixar o amargo do café à vista. Congela em camada fina e raspa-se de hora a hora. Serve-se em copos frios, e quem quiser junta uma colher de iogurte batido por cima.",
+  "servings": 4,
+  "labels": [
+    "sobremesa",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 8,
+    "cookMinutes": 5,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no congelador, com uma raspagem de garfo de hora a hora"
+    }
+  },
+  "equipment": [
+    "congelador",
+    "tabuleiro-de-forno"
+  ],
+  "ingredients": [
+    {
+      "ref": "cafe",
+      "quantity": 600,
+      "unit": "ml",
+      "note": "bem forte"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o café e temperar",
+      "text": "Café forte, ainda quente, com o açúcar e a canela para quem quiser. Tem de arrefecer por completo antes de ir ao congelador.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "cafe",
+        "acucar",
+        "canela-em-po"
+      ]
+    },
+    {
+      "title": "Congelar em camada fina",
+      "text": "Tabuleiro largo, camada de dois dedos, no congelador.",
+      "durationMinutes": 60,
+      "passive": true
+    },
+    {
+      "title": "Raspar de hora a hora",
+      "text": "Garfo a soltar a superfície, três ou quatro vezes, até ficar em cristais soltos.",
+      "durationMinutes": 5
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 60,
+    "proteinGrams": 0.3,
+    "carbsGrams": 14,
+    "fatGrams": 0,
+    "saturatedFatGrams": 0,
+    "fibreGrams": 0,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

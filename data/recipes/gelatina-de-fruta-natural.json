@@ -1,0 +1,118 @@
+{
+  "id": "gelatina-de-fruta-natural",
+  "name": "Gelatina de fruta natural",
+  "description": "Gelatina feita com sumo de fruta e pedaços, sem pó de pacote.",
+  "narrative": "Feita com folhas de gelatina e sumo de fruta a sério, não com pó de sabor. As folhas demolham em água fria cinco minutos e espremem-se, e dissolvem-se em apenas um pouco de sumo aquecido, que depois se junta ao resto frio — aquecer o sumo todo mata-lhe o sabor. Ananás e kiwi crus não presam, e por isso não entram.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "sem-gluten",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 5,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no frigorífico até firmar, ou de véspera"
+    }
+  },
+  "equipment": [
+    "frigorifico",
+    "tacho",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "gelatina-em-folhas",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 6,
+      "unit": "un",
+      "note": "só o sumo"
+    },
+    {
+      "ref": "morango",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "banana",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "mel",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Demolhar a gelatina",
+      "text": "Folhas em água fria, cinco minutos, até amolecerem. Espremer com a mão.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "gelatina-em-folhas"
+      ]
+    },
+    {
+      "title": "Dissolver em sumo morno",
+      "text": "Um copo do sumo aquecido sem ferver, com a gelatina e o mel dissolvidos dentro.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "laranja",
+        "mel"
+      ]
+    },
+    {
+      "title": "Juntar ao sumo frio e à fruta",
+      "text": "Resto do sumo frio misturado, e a fruta em pedaços repartida pelas taças.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "morango",
+        "banana"
+      ]
+    },
+    {
+      "title": "Levar ao frio",
+      "text": "Pelo menos quatro horas no frigorífico, até firmar. Hortelã por cima.",
+      "durationMinutes": 245,
+      "passive": true,
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 110,
+    "proteinGrams": 4,
+    "carbsGrams": 22,
+    "fatGrams": 0.3,
+    "saturatedFatGrams": 0,
+    "fibreGrams": 2,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "maca-assada-com-canela",
+  "name": "Maçã assada com canela",
+  "description": "Maçãs descaroçadas e assadas com canela e limão, sem açúcar adicionado.",
+  "narrative": "Escolhe-se maçã que aguente o forno — reineta ou bravo — porque as de comer desfazem-se em puré. Descaroçam-se sem atravessar o fundo, para o recheio não escorrer, e faz-se um golpe na casca a toda a volta, que impede a maçã de rebentar. Assam com um pouco de água no fundo do tabuleiro, que faz vapor e as mantém húmidas.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "vegan",
+    "sem-gluten",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "descarocador"
+  ],
+  "ingredients": [
+    {
+      "ref": "maca",
+      "quantity": 6,
+      "unit": "un",
+      "note": "reineta ou bravo"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "mel",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "noz",
+      "quantity": 50,
+      "unit": "g",
+      "note": "picadas",
+      "optional": true
+    },
+    {
+      "ref": "passas",
+      "quantity": 40,
+      "unit": "g",
+      "optional": true
+    },
+    {
+      "ref": "agua",
+      "quantity": 100,
+      "unit": "ml"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Descaroçar e golpear",
+      "text": "Retirar o caroço sem atravessar o fundo, e fazer um golpe na casca a toda a volta.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "maca"
+      ]
+    },
+    {
+      "title": "Rechear",
+      "text": "Canela, sumo de limão, e mel, nozes ou passas para quem quiser, dentro de cada maçã.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "canela-em-po",
+        "limao",
+        "mel",
+        "noz",
+        "passas"
+      ]
+    },
+    {
+      "title": "Assar com vapor",
+      "text": "Água no fundo do tabuleiro, a 180 graus, até a faca entrar sem resistência.",
+      "durationMinutes": 40,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "agua"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 140,
+    "proteinGrams": 1,
+    "carbsGrams": 30,
+    "fatGrams": 1.5,
+    "saturatedFatGrams": 0.2,
+    "fibreGrams": 4,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

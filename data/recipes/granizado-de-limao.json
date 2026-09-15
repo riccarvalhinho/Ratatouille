@@ -1,0 +1,98 @@
+{
+  "id": "granizado-de-limao",
+  "name": "Granizado de limão",
+  "description": "Gelo raspado com sumo de limão e hortelã, sem máquina.",
+  "narrative": "A calda faz-se com água, açúcar e casca de limão, ao lume só até o açúcar se dissolver, e arrefece antes de levar o sumo — o sumo fervido perde o aroma e ganha amargo. Congela em camada fina num tabuleiro largo, e raspa-se com o garfo de hora a hora, três ou quatro vezes, até estar tudo em cristais soltos.",
+  "servings": 4,
+  "labels": [
+    "sobremesa",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 5,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no congelador, com uma raspagem de garfo de hora a hora"
+    }
+  },
+  "equipment": [
+    "congelador",
+    "tacho",
+    "tabuleiro-de-forno",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "limao",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a calda",
+      "text": "Água, açúcar e a casca de dois limões ao lume, só até o açúcar se dissolver. Deixar arrefecer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "acucar",
+        "agua",
+        "limao"
+      ]
+    },
+    {
+      "title": "Juntar o sumo",
+      "text": "Sumo dos limões na calda já fria, coado.",
+      "durationMinutes": 5
+    },
+    {
+      "title": "Congelar em camada fina",
+      "text": "Tabuleiro largo, camada de dois dedos, no congelador.",
+      "durationMinutes": 60,
+      "passive": true
+    },
+    {
+      "title": "Raspar de hora a hora",
+      "text": "Garfo a soltar a superfície, três ou quatro vezes, até ficar tudo em cristais. Hortelã nos copos.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 110,
+    "proteinGrams": 0.5,
+    "carbsGrams": 28,
+    "fatGrams": 0.1,
+    "saturatedFatGrams": 0,
+    "fibreGrams": 0.5,
+    "saltGrams": 0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
