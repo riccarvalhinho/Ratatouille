@@ -1,0 +1,155 @@
+{
+  "id": "wraps-de-frango",
+  "name": "Wraps de frango",
+  "description": "Tortilhas com frango salteado, alface e molho de iogurte. Almoço de sobras.",
+  "narrative": "Feito para sobras e para pressa: se houver frango assado de ontem, salta-se o primeiro passo e o almoço faz-se em dez minutos. O molho é iogurte com mostarda, limão e alho. As tortilhas aquecem-se numa frigideira seca, porque frias racham ao enrolar. Enrola-se apertado com o recheio numa faixa a dois terços, dobrando as pontas para dentro.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "dia-a-dia",
+    "sobras"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 500,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tortilha-de-trigo",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear o frango",
+      "text": "Tiras temperadas com colorau, sal e pimenta, em azeite quente, sem mexer até ganharem cor.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "colorau",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Iogurte, mostarda, alho esmagado, sumo de limão e sal.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "iogurte-natural",
+        "mostarda",
+        "dente-de-alho",
+        "limao"
+      ]
+    },
+    {
+      "title": "Aquecer as tortilhas",
+      "text": "Frigideira seca, meio minuto de cada lado, empilhadas num pano.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "tortilha-de-trigo"
+      ]
+    },
+    {
+      "title": "Enrolar",
+      "text": "Recheio numa faixa a dois terços da tortilha, molho por cima, pontas dobradas para dentro e depois apertado sobre si mesmo.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "alface",
+        "tomate",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 560,
+    "proteinGrams": 42,
+    "carbsGrams": 58,
+    "fatGrams": 16,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 5,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

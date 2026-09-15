@@ -1,0 +1,160 @@
+{
+  "id": "poke-bowl-de-salmao",
+  "name": "Poke bowl de salmão",
+  "description": "Salmão cru marinado em soja e sésamo, sobre arroz avinagrado, com abacate e edamame.",
+  "narrative": "Prato sem confeção depois do arroz, e por isso a qualidade do peixe é a receita toda: salmão próprio para consumo cru, comprado no dia. O arroz coze e tempera-se ainda morno com vinagre de arroz, açúcar e sal, e arrefece tapado com um pano. O salmão corta-se em cubos e marina só dez minutos — mais do que isso, a soja começa a cozê-lo e a textura muda.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho",
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-salmao",
+      "quantity": 500,
+      "unit": "g",
+      "note": "próprio para consumo cru, em cubos"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "vinagre-de-arroz",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "abacate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "edamame",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "lima",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer e temperar o arroz",
+      "text": "Arroz, o dobro de água e sal, tapado, 12 minutos. Ainda morno, envolver o vinagre de arroz com o açúcar e sal.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "vinagre-de-arroz",
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Arrefecer o arroz",
+      "text": "Tapado com um pano húmido, até ficar à temperatura ambiente.",
+      "durationMinutes": 20,
+      "passive": true
+    },
+    {
+      "title": "Marinar o salmão",
+      "text": "Cubos em molho de soja e sésamo, dez minutos e não mais.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "lombo-de-salmao",
+        "molho-de-soja",
+        "sementes-de-sesamo"
+      ]
+    },
+    {
+      "title": "Cozer o edamame",
+      "text": "Cinco minutos em água a ferver com sal. Escorrer e arrefecer.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "edamame"
+      ]
+    },
+    {
+      "title": "Montar as taças",
+      "text": "Arroz no fundo, salmão, abacate em fatias, pepino e edamame em sectores. Cebolinho e lima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "abacate",
+        "pepino",
+        "cebolinho",
+        "lima"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 38,
+    "carbsGrams": 78,
+    "fatGrams": 24,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 8,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

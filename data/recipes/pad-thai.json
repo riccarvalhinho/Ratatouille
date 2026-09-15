@@ -1,0 +1,163 @@
+{
+  "id": "pad-thai",
+  "name": "Pad thai",
+  "description": "Noodles de arroz salteados em molho de tamarindo, com ovo, tofu e amendoim.",
+  "narrative": "O molho de tamarindo, molho de peixe e açúcar mistura-se antes e é o prato inteiro: azedo, salgado e doce ao mesmo tempo. Os noodles de arroz não se cozem, demolham-se em água quente até ficarem flexíveis mas ainda firmes, porque acabam de cozinhar no wok. Tudo o resto é questão de ordem e de lume máximo: tofu, ovo, noodles, molho, e os rebentos e amendoim fora do lume.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "wok",
+    "taca",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "noodles-de-arroz",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "tofu",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tamarindo",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-peixe",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "amendoim",
+      "quantity": 80,
+      "unit": "g",
+      "note": "tostado e picado"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "optional": true
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1,
+      "unit": "l",
+      "note": "quente"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Demolhar os noodles",
+      "text": "Água quente sobre os noodles até ficarem flexíveis mas ainda firmes. Escorrer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "noodles-de-arroz",
+        "agua"
+      ]
+    },
+    {
+      "title": "Misturar o molho",
+      "text": "Tamarindo, molho de peixe e açúcar mexidos até o açúcar desaparecer.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "tamarindo",
+        "molho-de-peixe",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Tostar o tofu",
+      "text": "Cubos em óleo bem quente com o alho, até dourarem. Empurrar para o lado.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tofu",
+        "oleo-alimentar",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Fazer o ovo e juntar os noodles",
+      "text": "Ovos partidos no espaço livre e mexidos até firmarem, depois os noodles e o molho por cima, a saltear.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Rematar fora do lume",
+      "text": "Amendoim picado, cebolinho, malagueta e gomos de lima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "amendoim",
+        "cebolinho",
+        "malagueta",
+        "lima"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 24,
+    "carbsGrams": 82,
+    "fatGrams": 22,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 5,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,172 @@
+{
+  "id": "yakisoba",
+  "name": "Yakisoba",
+  "description": "Noodles salteados com carne de porco, couve e molho agridoce. Prato único.",
+  "narrative": "O molho mistura-se antes: soja, molho inglês, ketchup ou concentrado de tomate, açúcar e vinagre de arroz — é um molho agridoce, e é ele que distingue yakisoba de noodles salteados quaisquer. A carne e os legumes fazem-se em lume máximo, os noodles entram já cozidos e soltos, e o molho no fim, a envolver tudo em menos de um minuto.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "massa-e-arroz",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "wok",
+    "panela-grande",
+    "escorredor",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "noodles-de-trigo",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "entremeada",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras finas"
+    },
+    {
+      "ref": "couve-branca",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em palitos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "molho-worcestershire",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-arroz",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Misturar o molho",
+      "text": "Soja, molho inglês, concentrado de tomate, açúcar e vinagre de arroz numa taça.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "molho-de-soja",
+        "molho-worcestershire",
+        "tomate-concentrado",
+        "acucar",
+        "vinagre-de-arroz"
+      ]
+    },
+    {
+      "title": "Cozer os noodles",
+      "text": "Água a ferver com sal, o tempo do pacote. Escorrer e soltar com um fio de óleo.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "noodles-de-trigo",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Saltear a carne",
+      "text": "Tiras em lume máximo com óleo, até tostarem nos bordos.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "entremeada",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Saltear os legumes",
+      "text": "Cebola, cenoura e couve no mesmo wok, três minutos, ainda com resistência.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "couve-branca"
+      ]
+    },
+    {
+      "title": "Juntar noodles e molho",
+      "text": "Noodles dentro, molho por cima, a envolver menos de um minuto. Sésamo por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 28,
+    "carbsGrams": 82,
+    "fatGrams": 28,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

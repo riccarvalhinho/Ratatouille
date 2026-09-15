@@ -1,0 +1,145 @@
+{
+  "id": "salada-cesar-com-frango",
+  "name": "Salada César com frango",
+  "description": "Alface romana, croutons, parmesão e molho cremoso de mostarda e limão, com frango grelhado.",
+  "narrative": "O molho faz-se com maionese, mostarda, alho, limão e parmesão, e é o que carrega a salada toda. Os croutons fazem-se de pão duro aos cubos, salteados em azeite com alho até ficarem estaladiços por fora e macios no centro. O frango grelha-se e corta-se em tiras. Junta-se tudo à última hora e envolve-se com as mãos — colheres esmagam a alface.",
+  "servings": 4,
+  "labels": [
+    "salada",
+    "prato-principal",
+    "aves",
+    "americana",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "grelhador",
+    "placa",
+    "frigideira",
+    "taca",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "alface",
+      "quantity": 2,
+      "unit": "un",
+      "note": "romana"
+    },
+    {
+      "ref": "peito-de-frango",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-de-forma",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 60,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o molho",
+      "text": "Maionese, mostarda, um dente de alho esmagado, sumo de limão, metade do parmesão, sal e pimenta.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "maionese",
+        "mostarda",
+        "dente-de-alho",
+        "limao",
+        "queijo-parmesao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Tostar os croutons",
+      "text": "Cubos de pão em azeite com alho laminado, a saltear, até ficarem estaladiços por fora.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "pao-de-forma",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Grelhar o frango",
+      "text": "Peitos temperados em grelha bem quente, quatro minutos de cada lado. Descansar e cortar em tiras.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango"
+      ]
+    },
+    {
+      "title": "Envolver à última hora",
+      "text": "Alface rasgada à mão com o molho, envolvida com as mãos. Croutons, frango e o resto do parmesão por cima.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "alface"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 42,
+    "carbsGrams": 32,
+    "fatGrams": 38,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 4,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

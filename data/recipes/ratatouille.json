@@ -1,0 +1,147 @@
+{
+  "id": "ratatouille",
+  "name": "Ratatouille",
+  "description": "Legumes do Sul de França estufados, cada um cozinhado à parte antes de se juntarem.",
+  "narrative": "A diferença entre um ratatouille e um guisado de legumes é que aqui cada legume se cozinha sozinho primeiro, em azeite e em lume forte, e só depois se juntam. Dá mais uma frigideira para lavar e legumes que se distinguem no prato em vez de uma papa uniforme. A beringela vai primeiro porque bebe mais azeite. No fim juntam-se todos ao tomate e apuram vinte minutos em lume brando.",
+  "servings": 4,
+  "needsSide": true,
+  "labels": [
+    "prato-principal",
+    "acompanhamento",
+    "legumes",
+    "francesa",
+    "mediterranica",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "beringela",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "tomilho",
+      "unit": "qb"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Corar a beringela sozinha",
+      "text": "Cubos em azeite bem quente, em lume forte, até ganharem cor. Retirar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "beringela",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Corar a courgette e o pimento",
+      "text": "Cada um por sua vez no mesmo azeite, sem amontoar, até ganharem cor nos bordos. Retirar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "courgette",
+        "pimento-vermelho"
+      ]
+    },
+    {
+      "title": "Fazer a base de tomate",
+      "text": "Cebola e alho em lume brando até amolecerem, depois o tomate em cubos, o tomilho, sal e pimenta.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "tomate",
+        "tomilho",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar tudo e apurar",
+      "text": "Legumes de volta, envolvidos com cuidado, vinte minutos em lume brando. Manjericão rasgado fora do lume.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "manjericao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 6,
+    "carbsGrams": 26,
+    "fatGrams": 22,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 9,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

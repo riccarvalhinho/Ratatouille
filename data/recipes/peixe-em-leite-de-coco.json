@@ -1,0 +1,168 @@
+{
+  "id": "peixe-em-leite-de-coco",
+  "name": "Peixe em leite de coco",
+  "description": "Postas de peixe branco pochadas num caldo de coco com gengibre e lima. Com arroz jasmim.",
+  "narrative": "Caril tailandês suave e de vinte minutos. A base faz-se com cebola, alho, gengibre e um pouco de pasta de caril, e depois entra o leite de coco, que nunca deve ferver com força — a gordura separa-se e o molho fica granuloso. O peixe pocha lá dentro em lume brando, cinco a seis minutos, e está quando abrir em lascas. Lima e coentros só no fim, fora do lume.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em postas"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "caril-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-peixe",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "erva-principe",
+      "quantity": 1,
+      "unit": "un",
+      "optional": true
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz jasmim lavado, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer a base",
+      "text": "Cebola, alho e gengibre no óleo até amolecerem, depois o caril e a erva-príncipe esmagada, um minuto.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "gengibre",
+        "oleo-alimentar",
+        "caril-em-po",
+        "erva-principe"
+      ]
+    },
+    {
+      "title": "Juntar o leite de coco",
+      "text": "Leite de coco e molho de peixe, em lume brando e sem deixar ferver com força.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "leite-de-coco",
+        "molho-de-peixe"
+      ]
+    },
+    {
+      "title": "Pochar o peixe",
+      "text": "Postas dentro do caldo, tapado, até abrirem em lascas à pressão do garfo.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "pescada"
+      ]
+    },
+    {
+      "title": "Rematar com lima e coentros",
+      "text": "Fora do lume, sumo de uma lima e coentros. A outra em gomos à mesa.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "lima",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 640,
+    "proteinGrams": 42,
+    "carbsGrams": 72,
+    "fatGrams": 22,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 4,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
