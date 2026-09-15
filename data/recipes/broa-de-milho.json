@@ -1,0 +1,118 @@
+{
+  "id": "broa-de-milho",
+  "name": "Broa de milho",
+  "description": "Pão de farinha de milho escaldada com trigo, denso e de côdea grossa.",
+  "narrative": "A farinha de milho escalda-se com água a ferver e tem de arrefecer antes de o fermento entrar — quente, mata-o e a broa não levanta. A massa é pesada e não fica elástica como a de trigo; amassa-se o que der. A levedação é mais lenta, duas horas, e a broa coze em forno forte.",
+  "servings": 12,
+  "yield": "1 broa de 1 kg",
+  "labels": [
+    "pao-e-bolos",
+    "portuguesa",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 50,
+    "prepAhead": {
+      "minutes": 150,
+      "description": "Escaldar a farinha e deixar levedar duas horas"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "papel-vegetal",
+    "colher-de-pau",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-milho",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml",
+      "note": "a ferver"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "quantity": 12,
+      "unit": "g"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar a farinha de milho",
+      "text": "Água a ferver sobre a farinha de milho, mexida com colher de pau. Deixar arrefecer até morna.",
+      "durationMinutes": 30,
+      "passive": true,
+      "ingredientRefs": [
+        "farinha-de-milho",
+        "agua"
+      ]
+    },
+    {
+      "title": "Amassar com o trigo",
+      "text": "Farinha de trigo, fermento e sal na massa morna, amassados o que der — não fica elástica como a de trigo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "fermento-de-padeiro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Levedar",
+      "text": "Tapada, duas horas, até crescer visivelmente.",
+      "durationMinutes": 120,
+      "passive": true
+    },
+    {
+      "title": "Cozer em forno forte",
+      "text": "Broa moldada redonda sobre papel vegetal, a 220 graus, até a côdea ficar grossa e escura.",
+      "durationMinutes": 50,
+      "temperatureC": 220,
+      "passive": true
+    },
+    {
+      "title": "Arrefecer",
+      "text": "Sobre a grelha, até estar fria por completo — cortada morna, esfarela.",
+      "durationMinutes": 60,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 220,
+    "proteinGrams": 6,
+    "carbsGrams": 46,
+    "fatGrams": 1.2,
+    "saturatedFatGrams": 0.2,
+    "fibreGrams": 3,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

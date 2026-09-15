@@ -1,0 +1,142 @@
+{
+  "id": "arroz-doce",
+  "name": "Arroz doce",
+  "description": "Arroz cozido em leite com casca de limão, ligado com gemas, e canela por cima.",
+  "narrative": "O arroz coze primeiro em água até a beber toda, e só então entra o leite quente — leite desde o início e o arroz nunca abre. Mexe-se com frequência nos últimos minutos, porque é aí que agarra. O açúcar entra tarde, que atrasa a cozedura se entrar cedo, e as gemas ligam-se fora do lume com um pouco do arroz quente antes de voltarem ao tacho, senão talham.",
+  "servings": 8,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "colher-de-pau",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-carolino",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "só as gemas"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Abrir o arroz em água",
+      "text": "Arroz em água a ferver com uma pitada de sal, a casca de limão e o pau de canela, até beber a água toda.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "agua",
+        "limao",
+        "pau-de-canela",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer no leite quente",
+      "text": "Leite quente aos poucos, a mexer, em lume brando, até o arroz ficar macio.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "leite"
+      ]
+    },
+    {
+      "title": "Juntar o açúcar e a manteiga",
+      "text": "Só agora, a mexer, mais cinco minutos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "acucar",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Ligar as gemas fora do lume",
+      "text": "Gemas batidas com duas colheres do arroz quente, e só depois devolvidas ao tacho fora do calor, a mexer.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Arrefecer e polvilhar",
+      "text": "Nos pratos ou na travessa, e a canela só quando estiver frio.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 8,
+    "carbsGrams": 62,
+    "fatGrams": 7,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 0.5,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

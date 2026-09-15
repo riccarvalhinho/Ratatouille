@@ -1,0 +1,129 @@
+{
+  "id": "panquecas",
+  "name": "Panquecas",
+  "description": "Panquecas fofas de frigideira, com mel ou fruta. Pequeno-almoço de fim de semana.",
+  "narrative": "A massa mexe-se o mínimo e fica grumosa de propósito — mexida até ficar lisa, sai borracha. Repousa dez minutos antes de ir à frigideira. A frigideira é de lume médio e quase sem gordura, e viram-se quando aparecem bolhas à superfície que rebentam e não voltam a fechar. A primeira sai sempre mal; é a que calibra o lume.",
+  "servings": 4,
+  "yield": "12 panquecas",
+  "labels": [
+    "pequeno-almoco",
+    "sobremesa",
+    "americana",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "vara-de-arames",
+    "espatula"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g",
+      "note": "derretida"
+    },
+    {
+      "ref": "mel",
+      "unit": "qb"
+    },
+    {
+      "ref": "morango",
+      "quantity": 200,
+      "unit": "g",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Misturar sem alisar",
+      "text": "Farinha, fermento, açúcar e sal de um lado; leite, ovos e manteiga do outro. Juntar e mexer só até ligar, grumos incluídos.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "fermento-em-po",
+        "acucar",
+        "sal",
+        "leite",
+        "ovo",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Repousar a massa",
+      "text": "Dez minutos tapada, à temperatura ambiente.",
+      "durationMinutes": 10,
+      "passive": true
+    },
+    {
+      "title": "Cozer em lume médio",
+      "text": "Frigideira quase sem gordura. Virar quando as bolhas rebentarem e não voltarem a fechar.",
+      "durationMinutes": 15
+    },
+    {
+      "title": "Servir",
+      "text": "Empilhadas, com mel e fruta.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "mel",
+        "morango"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 10,
+    "carbsGrams": 52,
+    "fatGrams": 10,
+    "saturatedFatGrams": 4.5,
+    "fibreGrams": 2,
+    "saltGrams": 0.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

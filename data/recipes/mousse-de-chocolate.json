@@ -1,0 +1,106 @@
+{
+  "id": "mousse-de-chocolate",
+  "name": "Mousse de chocolate",
+  "description": "Chocolate preto, gemas e claras em castelo. Sem natas e sem manteiga.",
+  "narrative": "Chocolate de boa qualidade e nada mais a esconder-se atrás. Derrete-se em banho-maria ou no micro-ondas aos vinte segundos, e deixa-se arrefecer até estar morno — quente, cozinha as gemas; frio, endurece e faz grãos ao envolver. As claras batem-se em castelo firme e envolvem-se em três vezes, de baixo para cima. Quatro horas no frio, no mínimo.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "festa",
+    "conforto",
+    "sem-gluten"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 5,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no frigorífico, ou de véspera"
+    }
+  },
+  "equipment": [
+    "micro-ondas",
+    "batedeira",
+    "espatula",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "chocolate-preto",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Derreter e arrefecer o chocolate",
+      "text": "Aos vinte segundos no micro-ondas, a mexer entre eles. Deixar chegar a morno.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "chocolate-preto"
+      ]
+    },
+    {
+      "title": "Juntar as gemas",
+      "text": "Gemas uma a uma no chocolate morno, a mexer bem entre cada.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Bater as claras em castelo",
+      "text": "Claras com uma pitada de sal e o açúcar a meio, até fazerem bico firme.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Envolver em três vezes",
+      "text": "Claras no chocolate em três adições, com a espátula e de baixo para cima, até não se ver branco.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Levar ao frio",
+      "text": "Nas taças, tapadas, pelo menos quatro horas.",
+      "durationMinutes": 245,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 8,
+    "carbsGrams": 26,
+    "fatGrams": 17,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 3,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

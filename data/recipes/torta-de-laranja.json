@@ -1,0 +1,113 @@
+{
+  "id": "torta-de-laranja",
+  "name": "Torta de laranja",
+  "description": "Torta enrolada de ovos, açúcar e sumo de laranja, sem farinha.",
+  "narrative": "Não leva farinha nenhuma: são ovos, açúcar, sumo e raspa, e um pouco de amido. Coze depressa e em forno quente, num tabuleiro forrado, e sai muito húmida. Enrola-se logo a seguir, ainda a escaldar, com a ajuda do papel — arrefecida, racha ao enrolar e já não há como voltar atrás.",
+  "servings": 8,
+  "yield": "1 torta",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa",
+    "sem-gluten"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "papel-vegetal",
+    "batedeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "amido-de-milho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "manteiga",
+      "unit": "qb",
+      "note": "para untar"
+    },
+    {
+      "ref": "acucar-em-po",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater os ovos com o açúcar",
+      "text": "Até ficarem claros e espessos.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ovo",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Juntar sumo, raspa e amido",
+      "text": "Raspa e sumo das laranjas com o amido dissolvido, envolvidos sem bater.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "laranja",
+        "amido-de-milho"
+      ]
+    },
+    {
+      "title": "Cozer em tabuleiro forrado",
+      "text": "Papel vegetal untado, massa espalhada fina, a 200 graus, até firmar e ainda húmida.",
+      "durationMinutes": 13,
+      "temperatureC": 200,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Enrolar a escaldar",
+      "text": "Virar sobre um pano polvilhado de açúcar e enrolar logo, com a ajuda do papel, sem esperar que arrefeça.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "acucar-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 6,
+    "carbsGrams": 52,
+    "fatGrams": 5,
+    "saturatedFatGrams": 1.5,
+    "fibreGrams": 0.5,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

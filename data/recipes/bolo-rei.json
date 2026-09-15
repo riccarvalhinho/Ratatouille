@@ -1,0 +1,182 @@
+{
+  "id": "bolo-rei",
+  "name": "Bolo-rei",
+  "description": "Massa levedada enriquecida com frutas cristalizadas e frutos secos. De Natal.",
+  "narrative": "A massa leva muita manteiga e ovo, e por isso leveda devagar — a primeira levedação pode levar duas a três horas conforme o frio da casa. Os frutos maceram em vinho do Porto de véspera. A manteiga entra só depois de a massa já estar formada, aos poucos, senão a massa nunca liga. A segunda levedação é já com a coroa moldada.",
+  "servings": 12,
+  "yield": "1 bolo-rei",
+  "labels": [
+    "sobremesa",
+    "pao-e-bolos",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 40,
+    "cookMinutes": 35,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Macerar os frutos de véspera e contar com quatro a cinco horas de levedações"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "batedeira",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 100,
+      "unit": "g",
+      "note": "em pomada"
+    },
+    {
+      "ref": "leite",
+      "quantity": 120,
+      "unit": "ml",
+      "note": "morno"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ref": "frutas-cristalizadas",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "passas",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "noz",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "amendoa",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "vinho-do-porto",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a raspa"
+    },
+    {
+      "ref": "acucar-em-po",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Macerar os frutos",
+      "text": "Frutas cristalizadas e passas no vinho do Porto, de véspera.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "frutas-cristalizadas",
+        "passas",
+        "vinho-do-porto"
+      ]
+    },
+    {
+      "title": "Fazer a massa",
+      "text": "Farinha, açúcar, ovos, leite morno, fermento, raspa de limão e sal, amassados até ficar lisa.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "acucar",
+        "ovo",
+        "leite",
+        "fermento-de-padeiro",
+        "limao",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar a manteiga aos poucos",
+      "text": "Manteiga em pomada em pedaços, um de cada vez, só juntando o seguinte quando o anterior estiver absorvido.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Primeira levedação",
+      "text": "Tapada, duas a três horas conforme o frio da casa, até duplicar.",
+      "durationMinutes": 180,
+      "passive": true
+    },
+    {
+      "title": "Moldar a coroa e levedar",
+      "text": "Frutos escorridos envolvidos na massa, coroa moldada com o buraco ao centro, a levedar mais hora e meia.",
+      "durationMinutes": 95,
+      "passive": true,
+      "ingredientRefs": [
+        "noz",
+        "amendoa"
+      ]
+    },
+    {
+      "title": "Cozer",
+      "text": "A 180 graus, até ficar dourado e o palito sair seco. Açúcar em pó à saída.",
+      "durationMinutes": 35,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "acucar-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 9,
+    "carbsGrams": 62,
+    "fatGrams": 15,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 3,
+    "saltGrams": 0.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

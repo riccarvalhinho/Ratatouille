@@ -1,0 +1,106 @@
+{
+  "id": "baba-de-camelo",
+  "name": "Baba de camelo",
+  "description": "Doce de leite condensado cozido batido com claras em castelo.",
+  "narrative": "A lata de leite condensado coze submersa em água durante três horas, e tem de estar sempre coberta — descoberta, aquece a seco e rebenta. Deixa-se arrefecer fechada antes de abrir. Depois é só envolver com as claras em castelo, de baixo para cima, para não perder o ar.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "tacho",
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 180,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "A lata coze três horas e tem de arrefecer fechada"
+    }
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "batedeira",
+    "espatula"
+  ],
+  "ingredients": [
+    {
+      "ref": "leite-condensado",
+      "quantity": 400,
+      "unit": "g",
+      "note": "lata fechada"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "só as claras"
+    },
+    {
+      "ref": "amendoa",
+      "quantity": 50,
+      "unit": "g",
+      "note": "laminada e tostada",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a lata submersa",
+      "text": "Lata fechada numa panela com água a cobrir sempre, três horas, a repor água a ferver.",
+      "durationMinutes": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "leite-condensado"
+      ]
+    },
+    {
+      "title": "Arrefecer antes de abrir",
+      "text": "Deixar a lata arrefecer por completo antes de a abrir.",
+      "durationMinutes": 60,
+      "passive": true
+    },
+    {
+      "title": "Bater as claras",
+      "text": "Claras com uma pitada de sal, até fazerem bico firme.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "sal"
+      ]
+    },
+    {
+      "title": "Envolver",
+      "text": "Doce de leite envolvido nas claras em três vezes, de baixo para cima. Amêndoa tostada por cima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "amendoa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 10,
+    "carbsGrams": 48,
+    "fatGrams": 9,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 0.5,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

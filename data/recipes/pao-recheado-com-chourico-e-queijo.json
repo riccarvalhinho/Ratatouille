@@ -1,0 +1,140 @@
+{
+  "id": "pao-recheado-com-chourico-e-queijo",
+  "name": "Pão recheado com chouriço e queijo",
+  "description": "Massa de pão enrolada com chouriço e queijo, cozida em forma. Para levar.",
+  "narrative": "A massa é a do pão caseiro. O recheio espalha-se sobre a massa aberta em retângulo, deixando uma margem livre num dos lados para selar. Enrola-se apertado e corta-se em fatias, ou coze-se inteiro na forma. O queijo tem de ficar por dentro e não à superfície, senão queima antes de a massa cozer.",
+  "servings": 8,
+  "yield": "1 pão recheado",
+  "labels": [
+    "pao-e-bolos",
+    "snack",
+    "carne",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 35,
+    "prepAhead": {
+      "minutes": 130,
+      "description": "Duas levedações, hora e meia e quarenta minutos"
+    }
+  },
+  "equipment": [
+    "forno",
+    "forma-de-bolo",
+    "rolo-da-massa",
+    "pincel-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 320,
+      "unit": "ml",
+      "note": "morna"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 7,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 200,
+      "unit": "g",
+      "note": "às rodelas finas"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em fatias"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a gema, para pincelar"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar",
+      "text": "Farinha, água morna, fermento, sal e azeite, amassados dez minutos até ficar liso.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "agua",
+        "fermento-de-padeiro",
+        "sal",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Levedar",
+      "text": "Tapada, hora e meia, até duplicar.",
+      "durationMinutes": 90,
+      "passive": true
+    },
+    {
+      "title": "Abrir e rechear",
+      "text": "Massa aberta em retângulo, chouriço e queijo espalhados com uma margem livre num dos lados para selar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "chourico",
+        "queijo-flamengo"
+      ]
+    },
+    {
+      "title": "Enrolar e levedar outra vez",
+      "text": "Rolo apertado com a costura para baixo, na forma, a levedar mais quarenta minutos.",
+      "durationMinutes": 45,
+      "passive": true
+    },
+    {
+      "title": "Cozer",
+      "text": "Pincelado com gema, a 200 graus, até ficar dourado e soar oco ao bater por baixo.",
+      "durationMinutes": 35,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 380,
+    "proteinGrams": 16,
+    "carbsGrams": 48,
+    "fatGrams": 14,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 2,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

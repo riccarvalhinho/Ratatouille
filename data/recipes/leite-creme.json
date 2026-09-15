@@ -1,0 +1,120 @@
+{
+  "id": "leite-creme",
+  "name": "Leite-creme",
+  "description": "Creme de gemas e leite queimado com açúcar por cima.",
+  "narrative": "É um creme de amido e não de forno: as gemas batem-se com o açúcar e a farinha, e o leite quente junta-se em fio, a mexer, antes de tudo voltar ao lume. Engrossa em lume brando e nunca ferve, ou talha. Arrefece com película colada à superfície, senão cria pele. O açúcar queima-se à última hora com ferro ou maçarico, e come-se antes de amolecer.",
+  "servings": 6,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Duas horas no frigorífico a firmar"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "vara-de-arames",
+    "pelicula-aderente",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "leite",
+      "quantity": 750,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un",
+      "note": "só as gemas"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 180,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Infusionar o leite",
+      "text": "Leite ao lume com a casca de limão e o pau de canela, até levantar fervura. Retirar e deixar em infusão.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "leite",
+        "limao",
+        "pau-de-canela"
+      ]
+    },
+    {
+      "title": "Bater as gemas",
+      "text": "Gemas, açúcar e farinha batidos até ficar um creme claro e sem grumos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "acucar",
+        "farinha-de-trigo"
+      ]
+    },
+    {
+      "title": "Juntar o leite em fio",
+      "text": "Leite coado e ainda quente sobre as gemas, em fio e sempre a bater.",
+      "durationMinutes": 4
+    },
+    {
+      "title": "Engrossar sem ferver",
+      "text": "De volta ao lume brando, a mexer sem parar, até engrossar e napar a colher. Nunca deixar ferver.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Arrefecer e queimar",
+      "text": "Película colada à superfície e ao frio até firmar. Açúcar por cima e queimado só à última hora.",
+      "durationMinutes": 125,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 300,
+    "proteinGrams": 8,
+    "carbsGrams": 42,
+    "fatGrams": 11,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 0,
+    "saltGrams": 0.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

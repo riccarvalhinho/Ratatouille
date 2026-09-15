@@ -1,0 +1,117 @@
+{
+  "id": "pao-caseiro",
+  "name": "Pão caseiro",
+  "description": "Pão de forno de casa, com levedação longa e crosta estaladiça.",
+  "narrative": "Massa de quatro ingredientes e muito tempo. A primeira levedação é de hora e meia até duplicar, e a segunda de quarenta minutos já moldado. O forno vai no máximo com um tabuleiro vazio lá dentro; despeja-se um copo de água nesse tabuleiro ao meter o pão, e é esse vapor que dá a crosta. Deixa-se arrefecer por completo antes de cortar.",
+  "servings": 10,
+  "yield": "1 pão de 900 g",
+  "labels": [
+    "pao-e-bolos",
+    "portuguesa",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 40,
+    "prepAhead": {
+      "minutes": 130,
+      "description": "Duas levedações, hora e meia e quarenta minutos"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "papel-vegetal",
+    "taca",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 400,
+      "unit": "ml",
+      "note": "morna"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 7,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "quantity": 12,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar",
+      "text": "Farinha, água morna, fermento e sal, amassados dez minutos até a massa ficar lisa e elástica.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "agua",
+        "fermento-de-padeiro",
+        "sal",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Primeira levedação",
+      "text": "Tapada à temperatura ambiente, até duplicar de tamanho.",
+      "durationMinutes": 90,
+      "passive": true
+    },
+    {
+      "title": "Moldar e levedar outra vez",
+      "text": "Massa desgaseificada e moldada, a levedar mais quarenta minutos sobre papel vegetal.",
+      "durationMinutes": 45,
+      "passive": true
+    },
+    {
+      "title": "Cozer com vapor",
+      "text": "Forno no máximo com um tabuleiro vazio lá dentro. Um copo de água nesse tabuleiro ao meter o pão. Vinte minutos a 250 e mais vinte a 200.",
+      "durationMinutes": 40,
+      "temperatureC": 250,
+      "passive": true
+    },
+    {
+      "title": "Arrefecer antes de cortar",
+      "text": "Sobre a grelha, até arrefecer por completo.",
+      "durationMinutes": 60,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 240,
+    "proteinGrams": 8,
+    "carbsGrams": 48,
+    "fatGrams": 1.5,
+    "saturatedFatGrams": 0.3,
+    "fibreGrams": 2,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

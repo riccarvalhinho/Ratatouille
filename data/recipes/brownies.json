@@ -1,0 +1,134 @@
+{
+  "id": "brownies",
+  "name": "Brownies",
+  "description": "Brownie denso de tabuleiro, com chocolate derretido e pouca farinha.",
+  "narrative": "A diferença entre brownie e bolo de chocolate é a farinha a menos e o ovo a mais. A farinha envolve-se só até desaparecer, porque trabalhada desenvolve glúten e o brownie fica elástico. Tira-se do forno quando o palito sai com migalhas húmidas e não seco — seco quer dizer que já passou. Corta-se frio.",
+  "servings": 16,
+  "yield": "16 quadrados",
+  "labels": [
+    "sobremesa",
+    "americana",
+    "pao-e-bolos",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "papel-vegetal",
+    "batedeira",
+    "peneira"
+  ],
+  "ingredients": [
+    {
+      "ref": "chocolate-preto",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 180,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "cacau-em-po",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "noz",
+      "quantity": 80,
+      "unit": "g",
+      "note": "picadas",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Derreter chocolate e manteiga",
+      "text": "Em banho-maria ou no micro-ondas aos vinte segundos, a mexer. Deixar chegar a morno.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "chocolate-preto",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Bater os ovos com o açúcar",
+      "text": "Até ficarem claros e espessos, e juntar o chocolate morno.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Envolver a farinha",
+      "text": "Farinha, cacau e sal peneirados, envolvidos só até desaparecerem. Nozes no fim.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "cacau-em-po",
+        "sal",
+        "noz"
+      ]
+    },
+    {
+      "title": "Cozer até às migalhas húmidas",
+      "text": "Tabuleiro forrado, a 180 graus. O palito tem de sair com migalhas húmidas, nunca seco.",
+      "durationMinutes": 25,
+      "temperatureC": 180,
+      "passive": true
+    },
+    {
+      "title": "Arrefecer antes de cortar",
+      "text": "Frio por completo no tabuleiro, e só depois cortar em quadrados.",
+      "durationMinutes": 60,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 380,
+    "proteinGrams": 5,
+    "carbsGrams": 42,
+    "fatGrams": 22,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 2,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "salame-de-chocolate",
+  "name": "Salame de chocolate",
+  "description": "Bolacha partida à mão em creme de chocolate, enrolado e frio. Sem forno.",
+  "narrative": "A bolacha parte-se à mão em pedaços desiguais e não se tritura — são os pedaços que fazem o desenho do corte. O creme é manteiga, açúcar, cacau e um ovo. Enrola-se em papel vegetal como um rebuçado, apertado, e vai ao frio quatro horas. Corta-se com faca de serra e em fatias finas.",
+  "servings": 10,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "snack",
+    "festa"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 240,
+      "description": "Quatro horas no frigorífico"
+    }
+  },
+  "equipment": [
+    "batedeira",
+    "papel-vegetal",
+    "faca-de-pao",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "bolacha-maria",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 150,
+      "unit": "g",
+      "note": "em pomada"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "cacau-em-po",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "acucar-em-po",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Partir a bolacha à mão",
+      "text": "Pedaços desiguais, do tamanho de uma unha. Nunca na picadora.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "bolacha-maria"
+      ]
+    },
+    {
+      "title": "Fazer o creme",
+      "text": "Manteiga em pomada batida com o açúcar e o cacau, e o ovo a envolver no fim.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "manteiga",
+        "acucar",
+        "cacau-em-po",
+        "ovo"
+      ]
+    },
+    {
+      "title": "Enrolar em papel vegetal",
+      "text": "Bolacha envolvida no creme, e o rolo apertado em papel vegetal como um rebuçado.",
+      "durationMinutes": 8
+    },
+    {
+      "title": "Levar ao frio",
+      "text": "Quatro horas no frigorífico. Cortar em fatias finas com faca de serra, e açúcar em pó por cima.",
+      "durationMinutes": 245,
+      "passive": true,
+      "ingredientRefs": [
+        "acucar-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 5,
+    "carbsGrams": 52,
+    "fatGrams": 22,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 2,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "pasteis-de-nata",
+  "name": "Pastéis de nata",
+  "description": "Massa folhada enrolada e creme de ovos, cozidos em forno muito quente.",
+  "narrative": "O forno é a receita: o máximo que a casa der, e a grelha na posição mais alta. Abaixo de 250 graus o creme coze antes de a superfície queimar, e um pastel de nata sem manchas escuras não está feito. A massa enrola-se e corta-se em rodelas que se espalmam com o polegar molhado, subindo pelas paredes da forma. O creme enche só três quartos.",
+  "servings": 12,
+  "yield": "24 pastéis",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa",
+    "pao-e-bolos"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "forma-de-queques",
+    "grelha-de-arrefecimento",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-folhada",
+      "quantity": 1,
+      "unit": "un",
+      "note": "placa retangular"
+    },
+    {
+      "ref": "leite",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "natas",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 35,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un",
+      "note": "só as gemas"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 125,
+      "unit": "ml"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a calda",
+      "text": "Açúcar, água, casca de limão e pau de canela ao lume até ferver três minutos. Deixar arrefecer um pouco.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "acucar",
+        "agua",
+        "limao",
+        "pau-de-canela"
+      ]
+    },
+    {
+      "title": "Fazer o creme",
+      "text": "Farinha dissolvida no leite frio, as natas, e ao lume a engrossar. Calda coada em fio, a mexer, e as gemas fora do lume.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "leite",
+        "natas",
+        "ovo"
+      ]
+    },
+    {
+      "title": "Forrar as formas",
+      "text": "Massa folhada enrolada apertada, cortada em rodelas de dois dedos, espalmadas com o polegar molhado até subirem pelas paredes.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "massa-folhada"
+      ]
+    },
+    {
+      "title": "Cozer no forno no máximo",
+      "text": "Formas cheias a três quartos, grelha no alto, no máximo que o forno der, até o creme ganhar manchas escuras.",
+      "durationMinutes": 14,
+      "temperatureC": 250
+    },
+    {
+      "title": "Arrefecer e polvilhar",
+      "text": "Desenformar quentes e arrefecer sobre a grelha. Canela em pó para quem quiser.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 250,
+    "proteinGrams": 4,
+    "carbsGrams": 34,
+    "fatGrams": 11,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 0.4,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

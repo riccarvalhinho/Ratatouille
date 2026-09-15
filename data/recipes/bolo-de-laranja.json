@@ -1,0 +1,127 @@
+{
+  "id": "bolo-de-laranja",
+  "name": "Bolo de laranja",
+  "description": "Bolo de tabuleiro húmido, com sumo e raspa de laranja e calda por cima.",
+  "narrative": "A raspa tira-se antes de espremer, e só a parte laranja — a parte branca é amarga. O bolo leva sumo na massa e uma calda de sumo e açúcar despejada ainda quente sobre o bolo quente, que é o que o mantém húmido dias. Pica-se com o palito antes de regar, para a calda entrar em vez de escorrer.",
+  "servings": 12,
+  "yield": "1 bolo de tabuleiro",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "pao-e-bolos",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "forno",
+    "forma-de-bolo",
+    "batedeira",
+    "peneira",
+    "ralador",
+    "tacho"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "manteiga",
+      "unit": "qb",
+      "note": "para untar"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater os ovos com o açúcar",
+      "text": "Até triplicar de volume e ficar claro.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Juntar sumo, raspa e óleo",
+      "text": "Raspa de duas laranjas, o sumo delas e o óleo em fio, só até incorporar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "laranja",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Envolver a farinha",
+      "text": "Farinha e fermento peneirados por cima, envolvidos com a espátula até não se ver farinha seca.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "fermento-em-po"
+      ]
+    },
+    {
+      "title": "Cozer",
+      "text": "Forma untada e polvilhada, a 180 graus. Palito ao centro tem de sair seco.",
+      "durationMinutes": 38,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Fazer a calda e regar",
+      "text": "Sumo das outras duas laranjas com açúcar ao lume cinco minutos. Bolo picado com o palito e regado ainda quente.",
+      "durationMinutes": 10
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 5,
+    "carbsGrams": 52,
+    "fatGrams": 11,
+    "saturatedFatGrams": 1.6,
+    "fibreGrams": 1,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

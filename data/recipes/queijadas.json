@@ -1,0 +1,135 @@
+{
+  "id": "queijadas",
+  "name": "Queijadas",
+  "description": "Queijadas pequenas de requeijão e ovos, cozidas em forma de queques.",
+  "narrative": "Massa fina e recheio simples. O recheio bate-se sem espuma e enche as formas quase até cima, porque cresce pouco. Forno bem quente no início, para a massa firmar, e depois mais brando para o recheio acabar sem queimar. Desenformam-se mornas, que frias colam.",
+  "servings": 9,
+  "yield": "18 queijadas",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "pao-e-bolos",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "forno",
+    "forma-de-queques",
+    "rolo-da-massa",
+    "batedeira",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-creme",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a raspa"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a massa",
+      "text": "Farinha, manteiga, água e sal amassados até ligar. Repousar dez minutos tapada.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "manteiga",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Forrar as formas",
+      "text": "Massa aberta fina e cortada em círculos, a cobrir o fundo e as paredes sem rasgar.",
+      "durationMinutes": 12
+    },
+    {
+      "title": "Bater o recheio",
+      "text": "Queijo, açúcar, ovos e raspa de limão batidos sem fazer espuma.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "queijo-creme",
+        "acucar",
+        "ovo",
+        "limao"
+      ]
+    },
+    {
+      "title": "Cozer em dois tempos",
+      "text": "Formas cheias quase até cima. Dez minutos a 220 graus, e mais vinte a 180.",
+      "durationMinutes": 30,
+      "temperatureC": 220,
+      "passive": true
+    },
+    {
+      "title": "Desenformar mornas",
+      "text": "Ainda mornas, sobre a grelha. Canela em pó por cima.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 220,
+    "proteinGrams": 5,
+    "carbsGrams": 30,
+    "fatGrams": 9,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 0.5,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

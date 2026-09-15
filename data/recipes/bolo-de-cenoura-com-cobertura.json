@@ -1,0 +1,139 @@
+{
+  "id": "bolo-de-cenoura-com-cobertura",
+  "name": "Bolo de cenoura com cobertura",
+  "description": "Bolo húmido de cenoura crua triturada, com cobertura de chocolate.",
+  "narrative": "A cenoura vai crua e triturada com o óleo e os ovos, não ralada — triturada, desaparece na massa e deixa só a humidade e a cor. A cobertura é a portuguesa: cacau, açúcar, manteiga e leite ao lume até engrossar, despejada sobre o bolo ainda morno para assentar lisa.",
+  "servings": 12,
+  "yield": "1 bolo de 26 cm",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "pao-e-bolos",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "forma-de-bolo",
+    "processador-de-alimentos",
+    "peneira",
+    "tacho"
+  ],
+  "ingredients": [
+    {
+      "ref": "cenoura",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cacau-em-po",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 100,
+      "unit": "ml"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Triturar a cenoura crua",
+      "text": "Cenoura em pedaços com o óleo, os ovos e o açúcar, até ficar um creme liso e laranja.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cenoura",
+        "oleo-alimentar",
+        "ovo",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Envolver a farinha",
+      "text": "Farinha e fermento peneirados por cima, envolvidos até não se ver farinha seca.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "fermento-em-po"
+      ]
+    },
+    {
+      "title": "Cozer",
+      "text": "Forma untada, a 180 graus. Palito ao centro tem de sair seco.",
+      "durationMinutes": 45,
+      "temperatureC": 180,
+      "passive": true
+    },
+    {
+      "title": "Fazer a cobertura",
+      "text": "Cacau, açúcar, manteiga e leite ao lume, a mexer, até engrossar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cacau-em-po",
+        "manteiga",
+        "leite"
+      ]
+    },
+    {
+      "title": "Cobrir ainda morno",
+      "text": "Cobertura despejada sobre o bolo morno, espalhada com as costas da colher.",
+      "durationMinutes": 5
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 6,
+    "carbsGrams": 58,
+    "fatGrams": 19,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 2,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -88,14 +88,12 @@ function suspeitas(receita: Receita): string[] {
   }
 
   /*
-   * Numa receita cuja antecedência é a própria receita — o granizado a congelar e a ser raspado de
-   * hora a hora —, os passos passivos somam horas que de propósito não estão no tempo total, que é
-   * só o tempo passado na cozinha. Contá-los aqui dava um falso positivo garantido, portanto ficam
-   * de fora quando existe `prepAhead`. Ver a secção "A antecedência vira passo, ou não?" da skill.
+   * Os passos passivos ficam sempre de fora desta conta. `prepMinutes` e `cookMinutes` medem tempo
+   * na cozinha, e um passo passivo é por definição tempo em que não se está lá — o granizado a
+   * congelar, o brownie a arrefecer, a massa a levedar. Contá-los dava um falso positivo garantido
+   * em qualquer receita com espera. Ver "A antecedência vira passo, ou não?" na skill.
    */
-  const contam = receita.timing.prepAhead
-    ? receita.steps.filter((passo) => !passo.passive)
-    : receita.steps;
+  const contam = receita.steps.filter((passo) => !passo.passive);
   const somaDosPassos = contam.reduce((total, passo) => total + (passo.durationMinutes ?? 0), 0);
   const total = receita.timing.prepMinutes + receita.timing.cookMinutes;
   if (total > 0 && somaDosPassos > total * FOLGA_DE_TEMPOS) {

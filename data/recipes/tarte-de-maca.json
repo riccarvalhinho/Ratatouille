@@ -1,0 +1,123 @@
+{
+  "id": "tarte-de-maca",
+  "name": "Tarte de maçã",
+  "description": "Massa quebrada com maçã laminada fina e brilho de geleia.",
+  "narrative": "A massa coze em branco vinte minutos antes de levar a maçã, senão o fundo fica cru. A maçã lamina-se muito fina e dispõe-se sobreposta, porque fatias grossas ficam cruas no centro enquanto os bordos queimam. O brilho faz-se com doce de fruta aquecido e pincelado à saída do forno.",
+  "servings": 8,
+  "yield": "1 tarte de 26 cm",
+  "labels": [
+    "sobremesa",
+    "francesa",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "forma-de-tarte",
+    "papel-vegetal",
+    "mandolina",
+    "pincel-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-quebrada",
+      "quantity": 1,
+      "unit": "un",
+      "note": "disco"
+    },
+    {
+      "ref": "maca",
+      "quantity": 5,
+      "unit": "un",
+      "note": "em lâminas finas"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "mel",
+      "quantity": 2,
+      "unit": "csopa"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a massa em branco",
+      "text": "Massa na forma, picada com o garfo, com papel vegetal e pesos por cima, a 190 graus.",
+      "durationMinutes": 22,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "massa-quebrada"
+      ]
+    },
+    {
+      "title": "Laminar a maçã",
+      "text": "Muito fina, de mandolina ou à faca, com sumo de limão logo por cima.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "maca",
+        "limao"
+      ]
+    },
+    {
+      "title": "Dispor e cozer",
+      "text": "Lâminas sobrepostas em círculos sobre a base, com açúcar, canela e pedacinhos de manteiga. A 190 graus até os bordos dourarem.",
+      "durationMinutes": 35,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "acucar",
+        "canela-em-po",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Dar o brilho",
+      "text": "Mel aquecido pincelado sobre a maçã, à saída do forno.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "mel"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 300,
+    "proteinGrams": 3,
+    "carbsGrams": 46,
+    "fatGrams": 12,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 3,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

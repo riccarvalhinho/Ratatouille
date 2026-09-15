@@ -35,7 +35,7 @@ sem receitas, um catálogo bonito não serve de nada.
 - Aplicar as alterações ao schema, aos tipos, ao validador e às receitas seed
 - `tools/import-recipe.ts`: link de site, link de vídeo, texto ou foto → ficheiro validado
 - Preenchimento interativo de lacunas — nada fica em branco em silêncio
-- [ ] Encher o catálogo: triar `docs/product/lista-de-receitas.md` e gerar as receitas
+- [x] Encher o catálogo: 185 receitas geradas a partir de `docs/product/lista-de-receitas.md`
 
 **As receitas são geradas, não importadas de lado nenhum.** Procurou-se: não existe corpus livre em
 PT-PT que sirva — o RecipeNLG é de investigação e não-comercial, o Recipe1M+ nem sequer distribui os
@@ -49,9 +49,13 @@ O método é por vagas, e a razão é esta: um erro sistemático de escrita repe
 custa 110 correções. Vai uma vaga de dez, lê-se, e **o que estiver errado vai para a skill** antes de
 se gerar a seguinte. Só quando uma vaga passar limpa se geram as restantes de uma vez.
 
-**O maior custo escondido não são as receitas, é a taxonomia.** São 43 ingredientes canónicos hoje;
-uma centena de receitas com metade internacional pede 250–350. Um `ref` inexistente é erro
-bloqueante no validador, portanto a taxonomia resolve-se **antes** de cada leva, não durante.
+**O maior custo escondido não foram as receitas, foi a taxonomia** — e a previsão ficou perto: de
+43 ingredientes canónicos para 214. Resolveu-se à cabeça e não durante, porque um `ref` inexistente
+é erro bloqueante no validador.
+
+**Feito.** 185 receitas, das quais 184 geradas e uma da família. O que falta agora não é gerar mais:
+é **cortar** o que não se vai cozinhar, encher a secção do repertório de casa, e a passagem das
+imagens — que continua à espera da Q13.
 
 **Frente B — design** (questões Q2 e Q10).
 

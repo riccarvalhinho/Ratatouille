@@ -1,0 +1,119 @@
+{
+  "id": "pudim-flan",
+  "name": "Pudim flan",
+  "description": "Pudim de ovos e leite cozido em banho-maria, com caramelo no fundo.",
+  "narrative": "O caramelo faz-se a seco ou com pouca água e não se mexe com a colher — abana-se a forma, porque mexer cristaliza o açúcar. O creme bate-se sem fazer espuma, senão o pudim sai com buracos. Coze em banho-maria, no forno, com a água a chegar a meio da forma — é o banho-maria que impede o ovo de coalhar. Desenforma-se frio, no dia seguinte.",
+  "servings": 8,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 60,
+    "prepAhead": {
+      "minutes": 480,
+      "description": "Uma noite no frigorífico antes de desenformar"
+    }
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "forma-de-bolo",
+    "tabuleiro-de-forno",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "leite",
+      "quantity": 750,
+      "unit": "ml"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca"
+    },
+    {
+      "ref": "baunilha",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o caramelo",
+      "text": "Metade do açúcar ao lume, a abanar a forma e sem mexer com a colher, até ficar dourado. Espalhar no fundo da forma.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "acucar"
+      ]
+    },
+    {
+      "title": "Infusionar o leite",
+      "text": "Leite ao lume com a casca de limão e a baunilha, até levantar fervura. Deixar em infusão e coar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "leite",
+        "limao",
+        "baunilha"
+      ]
+    },
+    {
+      "title": "Bater o creme sem espuma",
+      "text": "Ovos com o resto do açúcar, batidos com o garfo e sem fazer espuma, com o leite morno em fio.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Cozer em banho-maria",
+      "text": "Creme coado para a forma caramelizada, dentro de um tabuleiro com água a meio da altura, a 170 graus, até abanar como gelatina ao centro.",
+      "durationMinutes": 55,
+      "temperatureC": 170,
+      "passive": true
+    },
+    {
+      "title": "Arrefecer antes de desenformar",
+      "text": "Frio por completo, e de preferência de véspera, antes de virar no prato.",
+      "durationMinutes": 480,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 9,
+    "carbsGrams": 52,
+    "fatGrams": 8,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 0,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

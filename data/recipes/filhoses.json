@@ -1,0 +1,135 @@
+{
+  "id": "filhoses",
+  "name": "Filhoses",
+  "description": "Massa levedada esticada à mão e frita, polvilhada com açúcar e canela.",
+  "narrative": "A massa leva ovos, laranja e aguardente ou vinho do Porto, e leveda até duplicar. Estica-se cada bola à mão sobre as costas dos dedos, até ficar fina e quase transparente ao centro — é isso que faz a filhó leve. Fritam-se em óleo bem quente, não em banha, e uma de cada vez. Escorrem em papel e polvilham-se ainda quentes.",
+  "servings": 10,
+  "yield": "20 filhoses",
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 40,
+    "cookMinutes": 30,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Duas horas de levedação"
+    }
+  },
+  "equipment": [
+    "frigideira",
+    "taca",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-do-porto",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "fermento-de-padeiro",
+      "quantity": 15,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar",
+      "text": "Farinha, ovos, sumo e raspa de laranja, Porto, fermento e sal, amassados até a massa ficar lisa e macia.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo",
+        "laranja",
+        "vinho-do-porto",
+        "fermento-de-padeiro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Levedar",
+      "text": "Tapada, hora e meia a duas horas, até duplicar.",
+      "durationMinutes": 110,
+      "passive": true
+    },
+    {
+      "title": "Esticar à mão",
+      "text": "Bolas do tamanho de um ovo, esticadas sobre as costas dos dedos até ficarem finas e quase transparentes ao centro.",
+      "durationMinutes": 20
+    },
+    {
+      "title": "Fritar em óleo quente",
+      "text": "Uma de cada vez, em óleo bem quente, dourada dos dois lados. Escorrer em papel.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Polvilhar ainda quentes",
+      "text": "Açúcar e canela por cima, enquanto ainda estão quentes.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "acucar",
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 6,
+    "carbsGrams": 42,
+    "fatGrams": 9,
+    "saturatedFatGrams": 1.2,
+    "fibreGrams": 1.5,
+    "saltGrams": 0.3
+  },
+  "notes": "Fritas em óleo alimentar, em vez da banha que a receita tradicional pede.",
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

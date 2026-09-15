@@ -1,22 +1,19 @@
 # Lista de receitas
 
-O backlog do catálogo. Cada linha é um prato candidato; nenhum vira ficheiro sem passar por triagem.
+O backlog do catálogo. **As 184 linhas estão feitas** — cada uma tem o seu ficheiro em
+`data/recipes/`, validado, e o id na coluna da direita.
 
 **Estado de uma linha:** `proposta` · `aceite` · `rejeitada` · `feita`
 
-Uma linha só passa a `feita` quando existe `data/recipes/<id>.json` validado. O id fica na coluna
-da direita — é a ligação entre esta lista e o catálogo.
+## O que fazer com esta lista agora
 
-## Como se tria
+Deixou de ser um backlog e passou a ser um índice. Serve para duas coisas:
 
-Passar a lista e marcar. Rejeitar é o gesto normal, não a exceção: a lista foi escrita larga de
-propósito, para servir de puxa-memória. **Um catálogo de 80 pratos que se cozinham vale mais do que
-um de 180 em que metade nunca sai da grelha.**
-
-Duas perguntas por linha, e nenhuma é sobre a receita ser boa:
-
-1. Isto já se cozinhou cá em casa, ou apetecia cozinhar?
-2. Os ingredientes compram-se no supermercado do costume?
+1. **Rejeitar depois do facto.** A lista foi escrita larga de propósito e gerou-se toda de uma vez,
+   portanto é garantido que há aqui pratos que nunca ninguém vai cozinhar. Apagar uma receita é um
+   `git rm` e uma linha marcada `rejeitada` — e um catálogo de 80 pratos que se cozinham vale mais
+   do que um de 184 em que metade nunca sai da grelha.
+2. **Acrescentar o que falta.** A secção do fim continua por encher, e é a que interessa.
 
 ## De onde vêm estes nomes
 
@@ -121,97 +118,97 @@ os pratos que se preferem sozinhos.
 
 | Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Bitoque | Batata frita e arroz branco, ovo a cavalo | | proposta | |
-| Bifanas | No pão, com batata frita | | proposta | |
-| Bife à portuguesa | Batata frita e salada de alface | | proposta | |
-| Carne de porco à alentejana | Batata aos cubos, no mesmo tacho | | proposta | |
-| Rojões | Batata assada e grelos salteados | sem banha | proposta | |
-| Costeletas de porco grelhadas | Arroz de tomate e salada | | proposta | |
-| Perna de porco assada no forno | Batata assada e puré de maçã | | proposta | |
-| Almôndegas com esparguete | Esparguete e queijo ralado | | proposta | |
-| Empadão de carne | Salada de alface e tomate ao lado | | proposta | |
-| Jardineira | Prato único, com arroz branco | | proposta | |
-| Salsichas frescas com puré | Puré de batata e cebola caramelizada | | proposta | |
-| Frango assado com piri-piri | Batata assada e arroz | | proposta | |
-| Frango na púcara | Arroz branco e batata palha | | proposta | |
-| Frango de churrasco | Batata frita e salada de tomate | | proposta | |
-| Arroz de frango | Prato único, com salada | | proposta | |
-| Arroz de cabidela | Prato único | | proposta | |
-| Bifes de peru grelhados | Salada de tomate e batata a murro | | proposta | |
-| Coelho guisado | Batata cozida e arroz branco | | proposta | |
-| Bacalhau à Brás | Azeitonas e salada de alface | | proposta | |
-| Bacalhau com natas | Prato único, com salada | | proposta | |
-| Bacalhau à Gomes de Sá | Prato único | | proposta | |
-| Bacalhau com broa | Batata a murro e grelos | | proposta | |
-| Bacalhau à lagareiro | Batata a murro e brócolos | | proposta | |
-| Pataniscas de bacalhau | Arroz de feijão | | proposta | |
-| Filetes de pescada | Arroz de tomate | | proposta | |
-| Massada de peixe | Prato único | | proposta | |
-| Caldeirada de peixe | Prato único, com pão | | proposta | |
-| Carapaus grelhados | Batata cozida e molho de vinagrete | | proposta | |
-| Sardinhas assadas | Pimento assado, batata cozida e pão | | proposta | |
-| Dourada no forno | Batata e cebola no mesmo tabuleiro | | proposta | |
-| Salmão no forno com legumes | Tabuleiro único, com batata | | proposta | |
-| Lulas grelhadas | Arroz de manteiga e molho verde | | proposta | |
-| Choco frito à setubalense | Batata frita e limão | | proposta | |
-| Açorda de camarão | Prato único | | proposta | |
-| Migas à alentejana | Com entremeada, prato único | sem banha | proposta | |
-| Favas com chouriço | Prato único, com pão | | proposta | |
-| Feijoada à transmontana | Arroz branco | | proposta | |
-| Omelete de legumes | Salada e pão | | proposta | |
+| Bitoque | Batata frita e arroz branco, ovo a cavalo |  | feita | `bitoque` |
+| Bifanas | No pão, com batata frita |  | feita | `bifanas` |
+| Bife à portuguesa | Batata frita e salada de alface |  | feita | `bife-a-portuguesa` |
+| Carne de porco à alentejana | Batata aos cubos, no mesmo tacho |  | feita | `carne-de-porco-a-alentejana` |
+| Rojões | Batata assada e grelos salteados | sem banha | feita | `rojoes` |
+| Costeletas de porco grelhadas | Arroz de tomate e salada |  | feita | `costeletas-de-porco-grelhadas` |
+| Perna de porco assada no forno | Batata assada e puré de maçã |  | feita | `perna-de-porco-assada` |
+| Almôndegas com esparguete | Esparguete e queijo ralado |  | feita | `almondegas-com-esparguete` |
+| Empadão de carne | Salada de alface e tomate ao lado |  | feita | `empadao-de-carne` |
+| Jardineira | Prato único, com arroz branco |  | feita | `jardineira` |
+| Salsichas frescas com puré | Puré de batata e cebola caramelizada |  | feita | `salsichas-frescas-com-pure` |
+| Frango assado com piri-piri | Batata assada e arroz |  | feita | `frango-assado-com-piri-piri` |
+| Frango na púcara | Arroz branco e batata palha |  | feita | `frango-na-pucara` |
+| Frango de churrasco | Batata frita e salada de tomate |  | feita | `frango-de-churrasco` |
+| Arroz de frango | Prato único, com salada |  | feita | `arroz-de-frango` |
+| Arroz de cabidela | Prato único |  | feita | `arroz-de-cabidela` |
+| Bifes de peru grelhados | Salada de tomate e batata a murro |  | feita | `bifes-de-peru-grelhados` |
+| Coelho guisado | Batata cozida e arroz branco |  | feita | `coelho-guisado` |
+| Bacalhau à Brás | Azeitonas e salada de alface |  | feita | `bacalhau-a-bras` |
+| Bacalhau com natas | Prato único, com salada |  | feita | `bacalhau-com-natas` |
+| Bacalhau à Gomes de Sá | Prato único |  | feita | `bacalhau-a-gomes-de-sa` |
+| Bacalhau com broa | Batata a murro e grelos |  | feita | `bacalhau-com-broa` |
+| Bacalhau à lagareiro | Batata a murro e brócolos |  | feita | `bacalhau-a-lagareiro` |
+| Pataniscas de bacalhau | Arroz de feijão |  | feita | `pataniscas-de-bacalhau` |
+| Filetes de pescada | Arroz de tomate |  | feita | `filetes-de-pescada` |
+| Massada de peixe | Prato único |  | feita | `massada-de-peixe` |
+| Caldeirada de peixe | Prato único, com pão |  | feita | `caldeirada-de-peixe` |
+| Carapaus grelhados | Batata cozida e molho de vinagrete |  | feita | `carapaus-grelhados` |
+| Sardinhas assadas | Pimento assado, batata cozida e pão |  | feita | `sardinhas-assadas` |
+| Dourada no forno | Batata e cebola no mesmo tabuleiro |  | feita | `dourada-no-forno` |
+| Salmão no forno com legumes | Tabuleiro único, com batata |  | feita | `salmao-no-forno-com-legumes` |
+| Lulas grelhadas | Arroz de manteiga e molho verde |  | feita | `lulas-grelhadas` |
+| Choco frito à setubalense | Batata frita e limão |  | feita | `choco-frito-a-setubalense` |
+| Açorda de camarão | Prato único |  | feita | `acorda-de-camarao` |
+| Migas à alentejana | Com entremeada, prato único | sem banha | feita | `migas-a-alentejana` |
+| Favas com chouriço | Prato único, com pão |  | feita | `favas-com-chourico` |
+| Feijoada à transmontana | Arroz branco |  | feita | `feijoada-a-transmontana` |
+| Omelete de legumes | Salada e pão |  | feita | `omelete-de-legumes` |
 
 ## Internacionais
 
 | Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Esparguete à carbonara | Prato único | | proposta | |
-| Esparguete aglio e olio | Prato único, com salada verde | | proposta | |
-| Massa com pesto | Prato único, com tomate cereja | | proposta | |
-| Massa à bolonhesa | Prato único, com queijo ralado | | proposta | |
-| Massa ao forno com atum | Salada ao lado | | proposta | |
-| Lasanha de carne | Salada verde | | proposta | |
-| Bolonhesa de lentilhas | Massa e salada | | proposta | |
-| Penne all'arrabbiata | Prato único | | proposta | |
-| Risotto de cogumelos | Prato único | | proposta | |
-| Risotto de camarão | Prato único | | proposta | |
-| Pizza caseira | Salada verde | | proposta | |
-| Frango à caçadora | Polenta ou puré | | proposta | |
-| Frango com limão e alcaparras | Arroz e espargos | | proposta | |
-| Escalopes de peru panados | Batata frita no forno e salada | | proposta | |
-| Cordon bleu | Puré e feijão-verde | | proposta | |
-| Hambúrguer caseiro | Batata frita no forno e coleslaw | | proposta | |
-| Bife Stroganoff | Arroz branco e batata palha | | proposta | |
-| Goulash | Puré de batata ou massa curta | | proposta | |
-| Chili con carne | Arroz branco e natas azedas | | proposta | |
-| Tacos de carne picada | Tortilhas e acompanhamentos à mesa | sim | proposta | |
-| Fajitas de frango | Tortilhas, arroz e feijão | sim | proposta | |
-| Moussaka | Salada grega | | proposta | |
-| Paella | Prato único, com limão | | proposta | |
-| Tortilha de batata | Salada de tomate e pão | | proposta | |
-| Quiche Lorraine | Salada verde | | proposta | |
-| Tarte de alho-francês | Salada verde | | proposta | |
-| Gratinado de batata | Com salada, ou ao lado de carne grelhada | | proposta | |
-| Shakshuka | Pão para molhar | | proposta | |
-| Falafel com pita | Pita, salada e molho de iogurte | sim | proposta | |
-| Cuscuz com legumes | Prato único | | proposta | |
-| Gyros de frango | Pita, batata frita e tzatziki | | proposta | |
-| Caril de frango | Arroz basmati e iogurte | sim | proposta | |
-| Frango tikka masala | Arroz basmati e naan | sim | proposta | |
-| Butter chicken | Arroz basmati e naan | sim | proposta | |
-| Caril de grão e espinafres | Arroz e iogurte | sim | proposta | |
-| Dahl de lentilhas vermelhas | Arroz e coentros | sim | proposta | |
-| Salteado de frango e legumes | Arroz ou noodles | sim | proposta | |
-| Frango teriyaki | Arroz e brócolos no vapor | sim | proposta | |
-| Salmão teriyaki | Arroz e edamame | sim | proposta | |
-| Noodles com legumes e tofu | Prato único | sim | proposta | |
-| Arroz chau-chau | Prato único | sim | proposta | |
-| Yakisoba | Prato único | sim | proposta | |
-| Pad thai | Prato único, com amendoim e lima | sim | proposta | |
-| Peixe em leite de coco | Arroz jasmim | sim | proposta | |
-| Salada César com frango | Prato único, com croutons | | proposta | |
-| Poke bowl de salmão | Prato único | sim | proposta | |
-| Wraps de frango | Salada ao lado | | proposta | |
-| Ratatouille | Arroz ou pão, ou ao lado de carne | | proposta | |
+| Esparguete à carbonara | Prato único |  | feita | `esparguete-a-carbonara` |
+| Esparguete aglio e olio | Prato único, com salada verde |  | feita | `esparguete-aglio-e-olio` |
+| Massa com pesto | Prato único, com tomate cereja |  | feita | `massa-com-pesto` |
+| Massa à bolonhesa | Prato único, com queijo ralado |  | feita | `massa-a-bolonhesa` |
+| Massa ao forno com atum | Salada ao lado |  | feita | `massa-ao-forno-com-atum` |
+| Lasanha de carne | Salada verde |  | feita | `lasanha-de-carne` |
+| Bolonhesa de lentilhas | Massa e salada |  | feita | `bolonhesa-de-lentilhas` |
+| Penne all'arrabbiata | Prato único |  | feita | `penne-allarrabbiata` |
+| Risotto de cogumelos | Prato único |  | feita | `risotto-de-cogumelos` |
+| Risotto de camarão | Prato único |  | feita | `risotto-de-camarao` |
+| Pizza caseira | Salada verde |  | feita | `pizza-caseira` |
+| Frango à caçadora | Polenta ou puré |  | feita | `frango-a-cacadora` |
+| Frango com limão e alcaparras | Arroz e espargos |  | feita | `frango-com-limao-e-alcaparras` |
+| Escalopes de peru panados | Batata frita no forno e salada |  | feita | `escalopes-de-peru-panados` |
+| Cordon bleu | Puré e feijão-verde |  | feita | `cordon-bleu` |
+| Hambúrguer caseiro | Batata frita no forno e coleslaw |  | feita | `hamburguer-caseiro` |
+| Bife Stroganoff | Arroz branco e batata palha |  | feita | `bife-stroganoff` |
+| Goulash | Puré de batata ou massa curta |  | feita | `goulash` |
+| Chili con carne | Arroz branco e natas azedas |  | feita | `chili-con-carne` |
+| Tacos de carne picada | Tortilhas e acompanhamentos à mesa | sim | feita | `tacos-de-carne-picada` |
+| Fajitas de frango | Tortilhas, arroz e feijão | sim | feita | `fajitas-de-frango` |
+| Moussaka | Salada grega |  | feita | `moussaka` |
+| Paella | Prato único, com limão |  | feita | `paella` |
+| Tortilha de batata | Salada de tomate e pão |  | feita | `tortilha-de-batata` |
+| Quiche Lorraine | Salada verde |  | feita | `quiche-lorraine` |
+| Tarte de alho-francês | Salada verde |  | feita | `tarte-de-alho-frances` |
+| Gratinado de batata | Com salada, ou ao lado de carne grelhada |  | feita | `gratinado-de-batata` |
+| Shakshuka | Pão para molhar |  | feita | `shakshuka` |
+| Falafel com pita | Pita, salada e molho de iogurte | sim | feita | `falafel-com-pita` |
+| Cuscuz com legumes | Prato único |  | feita | `cuscuz-com-legumes` |
+| Gyros de frango | Pita, batata frita e tzatziki |  | feita | `gyros-de-frango` |
+| Caril de frango | Arroz basmati e iogurte | sim | feita | `caril-de-frango` |
+| Frango tikka masala | Arroz basmati e naan | sim | feita | `frango-tikka-masala` |
+| Butter chicken | Arroz basmati e naan | sim | feita | `butter-chicken` |
+| Caril de grão e espinafres | Arroz e iogurte | sim | feita | `caril-de-grao-e-espinafres` |
+| Dahl de lentilhas vermelhas | Arroz e coentros | sim | feita | `dahl-de-lentilhas-vermelhas` |
+| Salteado de frango e legumes | Arroz ou noodles | sim | feita | `salteado-de-frango-e-legumes` |
+| Frango teriyaki | Arroz e brócolos no vapor | sim | feita | `frango-teriyaki` |
+| Salmão teriyaki | Arroz e edamame | sim | feita | `salmao-teriyaki` |
+| Noodles com legumes e tofu | Prato único | sim | feita | `noodles-com-legumes-e-tofu` |
+| Arroz chau-chau | Prato único | sim | feita | `arroz-chau-chau` |
+| Yakisoba | Prato único | sim | feita | `yakisoba` |
+| Pad thai | Prato único, com amendoim e lima | sim | feita | `pad-thai` |
+| Peixe em leite de coco | Arroz jasmim | sim | feita | `peixe-em-leite-de-coco` |
+| Salada César com frango | Prato único, com croutons |  | feita | `salada-cesar-com-frango` |
+| Poke bowl de salmão | Prato único | sim | feita | `poke-bowl-de-salmao` |
+| Wraps de frango | Salada ao lado |  | feita | `wraps-de-frango` |
+| Ratatouille | Arroz ou pão, ou ao lado de carne |  | feita | `ratatouille` |
 
 ---
 
@@ -222,29 +219,29 @@ metade da razão de ter um catálogo.
 
 | Prato | Com | Notas | Estado | id |
 |---|---|---|---|---|
-| Arroz de pato | Prato único, com salada de agrião | | proposta | |
-| Arroz de marisco | Prato único | | proposta | |
-| Arroz de tamboril | Prato único | | proposta | |
-| Polvo à lagareiro | Batata a murro e grelos | | proposta | |
-| Leitão no forno | Batata assada e laranja | | proposta | |
-| Cabrito assado | Batata assada e arroz de forno | | proposta | |
-| Bacalhau assado com todos | Couve, batata, ovo e cenoura | | proposta | |
-| Feijoada de marisco | Arroz branco | | proposta | |
-| Rancho à moda da Beira | Prato único | | proposta | |
-| Bacalhau à Zé do Pipo | Prato único, com salada | | proposta | |
-| Peito de vitela recheado | Batata assada e legumes | | proposta | |
-| Naco na pedra | Batata frita, arroz e molhos | | proposta | |
-| Francesinha | Batata frita | | proposta | |
-| Bœuf bourguignon | Puré de batata | | proposta | |
-| Ossobuco à milanesa | Risotto à milanesa | | proposta | |
-| Costela assada lenta | Batata assada e coleslaw | | proposta | |
-| Pernil de borrego no forno | Batata e legumes do mesmo tabuleiro | | proposta | |
-| Pato à pequinesa simplificado | Panquecas, pepino e cebolinho | sim | proposta | |
-| Biryani de frango | Prato único, com raita | sim | proposta | |
-| Rendang de vaca | Arroz jasmim | sim | proposta | |
-| Tajine de frango com limão | Cuscuz | sim | proposta | |
-| Lasanha de legumes assados | Salada verde | | proposta | |
-| Wellington de vaca | Puré e legumes glaceados | | proposta | |
+| Arroz de pato | Prato único, com salada de agrião |  | feita | `arroz-de-pato` |
+| Arroz de marisco | Prato único |  | feita | `arroz-de-marisco` |
+| Arroz de tamboril | Prato único |  | feita | `arroz-de-tamboril` |
+| Polvo à lagareiro | Batata a murro e grelos |  | feita | `polvo-a-lagareiro` |
+| Leitão no forno | Batata assada e laranja |  | feita | `leitao-no-forno` |
+| Cabrito assado | Batata assada e arroz de forno |  | feita | `cabrito-assado` |
+| Bacalhau assado com todos | Couve, batata, ovo e cenoura |  | feita | `bacalhau-assado-com-todos` |
+| Feijoada de marisco | Arroz branco |  | feita | `feijoada-de-marisco` |
+| Rancho à moda da Beira | Prato único |  | feita | `rancho-a-moda-da-beira` |
+| Bacalhau à Zé do Pipo | Prato único, com salada |  | feita | `bacalhau-a-ze-do-pipo` |
+| Peito de vitela recheado | Batata assada e legumes |  | feita | `peito-de-vitela-recheado` |
+| Naco na pedra | Batata frita, arroz e molhos |  | feita | `naco-na-pedra` |
+| Francesinha | Batata frita |  | feita | `francesinha` |
+| Bœuf bourguignon | Puré de batata |  | feita | `boeuf-bourguignon` |
+| Ossobuco à milanesa | Risotto à milanesa |  | feita | `ossobuco-a-milanesa` |
+| Costela assada lenta | Batata assada e coleslaw |  | feita | `costela-assada-lenta` |
+| Pernil de borrego no forno | Batata e legumes do mesmo tabuleiro |  | feita | `pernil-de-borrego-no-forno` |
+| Pato à pequinesa simplificado | Panquecas, pepino e cebolinho | sim | feita | `pato-a-pequinesa-simplificado` |
+| Biryani de frango | Prato único, com raita | sim | feita | `biryani-de-frango` |
+| Rendang de vaca | Arroz jasmim | sim | feita | `rendang-de-vaca` |
+| Tajine de frango com limão | Cuscuz | sim | feita | `tajine-de-frango-com-limao` |
+| Lasanha de legumes assados | Salada verde |  | feita | `lasanha-de-legumes-assados` |
+| Wellington de vaca | Puré e legumes glaceados |  | feita | `wellington-de-vaca` |
 
 ---
 
@@ -261,36 +258,36 @@ entrada de outra coisa. Onde pede pão ou um acompanhamento, está dito.
 
 | Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Caldo verde | Couve galega, batata e chouriço | | proposta | |
-| Sopa de legumes | A sopa de todos os dias | | proposta | |
-| Sopa de tomate alentejana | Tomate, pão e ovo escalfado | | proposta | |
-| Creme de abóbora | Creme suave, com sementes torradas | | proposta | |
-| Creme de cenoura | Creme de tacho, com coentros | | proposta | |
-| Creme de cogumelos | Creme com natas e pão torrado | | proposta | |
-| Sopa de peixe | Caldo de peixe passado, com massinhas | | proposta | |
-| Canja de galinha | Galinha, massa e limão | | proposta | |
-| Sopa da pedra | Feijão, enchidos e legumes | | proposta | |
-| Sopa de feijão com hortaliça | Feijão encarnado e couve | | proposta | |
-| Sopa de grão com espinafres | Grão, espinafres e ovo | | proposta | |
-| Sopa de agrião | Agrião, batata e um fio de azeite | | proposta | |
-| Gaspacho alentejano | Sopa fria de tomate, pepino e pão | | proposta | |
-| Açorda alentejana | Pão, alho, coentros e ovo escalfado | | proposta | |
+| Caldo verde | Couve galega, batata e chouriço |  | feita | `caldo-verde` |
+| Sopa de legumes | A sopa de todos os dias |  | feita | `sopa-de-legumes` |
+| Sopa de tomate alentejana | Tomate, pão e ovo escalfado |  | feita | `sopa-de-tomate-alentejana` |
+| Creme de abóbora | Creme suave, com sementes torradas |  | feita | `creme-de-abobora` |
+| Creme de cenoura | Creme de tacho, com coentros |  | feita | `creme-de-cenoura` |
+| Creme de cogumelos | Creme com natas e pão torrado |  | feita | `creme-de-cogumelos` |
+| Sopa de peixe | Caldo de peixe passado, com massinhas |  | feita | `sopa-de-peixe` |
+| Canja de galinha | Galinha, massa e limão |  | feita | `canja-de-galinha` |
+| Sopa da pedra | Feijão, enchidos e legumes |  | feita | `sopa-da-pedra` |
+| Sopa de feijão com hortaliça | Feijão encarnado e couve |  | feita | `sopa-de-feijao-com-hortalica` |
+| Sopa de grão com espinafres | Grão, espinafres e ovo |  | feita | `sopa-de-grao-com-espinafres` |
+| Sopa de agrião | Agrião, batata e um fio de azeite |  | feita | `sopa-de-agriao` |
+| Gaspacho alentejano | Sopa fria de tomate, pepino e pão |  | feita | `gaspacho-alentejano` |
+| Açorda alentejana | Pão, alho, coentros e ovo escalfado |  | feita | `acorda-alentejana` |
 
 ## Internacionais — 11
 
 | Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Minestrone | Sopa italiana de legumes e massa | | proposta | |
-| Sopa de cebola gratinada | Francesa, com pão e queijo no forno | | proposta | |
-| Vichyssoise | Creme frio de alho-francês e batata | | proposta | |
-| Sopa de ervilhas com hortelã | Inglesa, verde e rápida | | proposta | |
-| Borscht | Sopa de beterraba com natas azedas | | proposta | |
-| Sopa de lentilhas à turca | Lentilha vermelha, cominhos e limão | | proposta | |
-| Harira | Sopa marroquina de grão, lentilha e tomate | sim | proposta | |
-| Sopa de tortilha mexicana | Caldo de tomate com tiras de tortilha | sim | proposta | |
-| Sopa de miso | Caldo dashi com tofu e alga | sim | proposta | |
-| Tom kha gai | Sopa tailandesa de coco, frango e galanga | sim | proposta | |
-| Sopa de abóbora com coco e caril | Creme com leite de coco | sim | proposta | |
+| Minestrone | Sopa italiana de legumes e massa |  | feita | `minestrone` |
+| Sopa de cebola gratinada | Francesa, com pão e queijo no forno |  | feita | `sopa-de-cebola-gratinada` |
+| Vichyssoise | Creme frio de alho-francês e batata |  | feita | `vichyssoise` |
+| Sopa de ervilhas com hortelã | Inglesa, verde e rápida |  | feita | `sopa-de-ervilhas-com-hortela` |
+| Borscht | Sopa de beterraba com natas azedas |  | feita | `borscht` |
+| Sopa de lentilhas à turca | Lentilha vermelha, cominhos e limão |  | feita | `sopa-de-lentilhas-a-turca` |
+| Harira | Sopa marroquina de grão, lentilha e tomate | sim | feita | `harira` |
+| Sopa de tortilha mexicana | Caldo de tomate com tiras de tortilha | sim | feita | `sopa-de-tortilha-mexicana` |
+| Sopa de miso | Caldo dashi com tofu e alga | sim | feita | `sopa-de-miso` |
+| Tom kha gai | Sopa tailandesa de coco, frango e galanga | sim | feita | `tom-kha-gai` |
+| Sopa de abóbora com coco e caril | Creme com leite de coco | sim | feita | `sopa-de-abobora-com-coco-e-caril` |
 
 ---
 
@@ -302,18 +299,18 @@ as únicas que se fazem enquanto o jantar está no forno.
 
 | Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Granizado de melancia | Melancia congelada e raspada, com lima | | proposta | |
-| Granizado de limão | Gelo raspado com sumo de limão e hortelã | | proposta | |
-| Granizado de café | Sem açúcar adicionado | | proposta | |
-| Gelado de banana | Banana congelada batida, sem natas | | proposta | |
-| Gelatina de fruta natural | Gelatina feita com sumo de fruta e pedaços | | proposta | |
-| Salada de fruta | Fruta da época, sumo de laranja e hortelã | | proposta | |
-| Espetadas de fruta | Fruta em espetada, com chocolate preto | | proposta | |
-| Maçã assada com canela | Forno, sem açúcar adicionado | | proposta | |
-| Ananás grelhado | Grelhador, com canela e lima | | proposta | |
-| Iogurte com fruta e granola | Camadas, de taça | | proposta | |
-| Pudim de chia com fruta | De véspera, no frigorífico | sim | proposta | |
-| Mousse de iogurte e frutos vermelhos | Batida, sem forno | | proposta | |
+| Granizado de melancia | Melancia congelada e raspada, com lima |  | feita | `granizado-de-melancia` |
+| Granizado de limão | Gelo raspado com sumo de limão e hortelã |  | feita | `granizado-de-limao` |
+| Granizado de café | Sem açúcar adicionado |  | feita | `granizado-de-cafe` |
+| Gelado de banana | Banana congelada batida, sem natas |  | feita | `gelado-de-banana` |
+| Gelatina de fruta natural | Gelatina feita com sumo de fruta e pedaços |  | feita | `gelatina-de-fruta-natural` |
+| Salada de fruta | Fruta da época, sumo de laranja e hortelã |  | feita | `salada-de-fruta` |
+| Espetadas de fruta | Fruta em espetada, com chocolate preto |  | feita | `espetadas-de-fruta` |
+| Maçã assada com canela | Forno, sem açúcar adicionado |  | feita | `maca-assada-com-canela` |
+| Ananás grelhado | Grelhador, com canela e lima |  | feita | `ananas-grelhado` |
+| Iogurte com fruta e granola | Camadas, de taça |  | feita | `iogurte-com-fruta-e-granola` |
+| Pudim de chia com fruta | De véspera, no frigorífico | sim | feita | `pudim-de-chia-com-fruta` |
+| Mousse de iogurte e frutos vermelhos | Batida, sem forno |  | feita | `mousse-de-iogurte-e-frutos-vermelhos` |
 
 ---
 
@@ -331,22 +328,22 @@ vez de desaparecer.
 
 | Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Salada de grão com atum | Salada fria de despensa | | proposta | |
-| Salada de polvo | Polvo cozido com cebola e coentros | | proposta | |
-| Salada de tomate e cebola | Acompanhamento de grelhados | | proposta | |
-| Salada de feijão frade com ovo | Clássico de verão | | proposta | |
-| Salada grega | Tomate, pepino, feta e azeitona | | proposta | |
-| Tabule | Salada de bulgur e salsa | sim | proposta | |
-| Coleslaw | Couve e cenoura em molho cremoso | | proposta | |
-| Arroz de tomate | Acompanhamento malandro | | proposta | |
-| Arroz de feijão | Acompanhamento de pataniscas | | proposta | |
-| Batata a murro | Batata assada esmagada com alho e azeite | | proposta | |
-| Batata frita no forno | Alternativa à fritadeira | | proposta | |
-| Puré de batata | O puré de referência | | proposta | |
-| Legumes assados no tabuleiro | Acompanhamento de tudo | | proposta | |
-| Esparregado | Espinafres cremosos | | proposta | |
-| Grelos salteados com alho | Acompanhamento rápido | | proposta | |
-| Peixinhos da horta | Feijão-verde em polme, frito | | proposta | |
+| Salada de grão com atum | Salada fria de despensa |  | feita | `salada-de-grao-com-atum` |
+| Salada de polvo | Polvo cozido com cebola e coentros |  | feita | `salada-de-polvo` |
+| Salada de tomate e cebola | Acompanhamento de grelhados |  | feita | `salada-de-tomate-e-cebola` |
+| Salada de feijão frade com ovo | Clássico de verão |  | feita | `salada-de-feijao-frade-com-ovo` |
+| Salada grega | Tomate, pepino, feta e azeitona |  | feita | `salada-grega` |
+| Tabule | Salada de bulgur e salsa | sim | feita | `tabule` |
+| Coleslaw | Couve e cenoura em molho cremoso |  | feita | `coleslaw` |
+| Arroz de tomate | Acompanhamento malandro |  | feita | `arroz-de-tomate` |
+| Arroz de feijão | Acompanhamento de pataniscas |  | feita | `arroz-de-feijao` |
+| Batata a murro | Batata assada esmagada com alho e azeite |  | feita | `batata-a-murro` |
+| Batata frita no forno | Alternativa à fritadeira |  | feita | `batata-frita-no-forno` |
+| Puré de batata | O puré de referência |  | feita | `pure-de-batata` |
+| Legumes assados no tabuleiro | Acompanhamento de tudo |  | feita | `legumes-assados-no-tabuleiro` |
+| Esparregado | Espinafres cremosos |  | feita | `esparregado` |
+| Grelos salteados com alho | Acompanhamento rápido |  | feita | `grelos-salteados-com-alho` |
+| Peixinhos da horta | Feijão-verde em polme, frito |  | feita | `peixinhos-da-horta` |
 
 ## Sobremesas, bolos e pequeno-almoço
 
@@ -355,28 +352,28 @@ vez de `servings`, o equipamento de pastelaria e o `prepAhead` de levedar e arre
 
 | Prato | O que é | Notas | Estado | id |
 |---|---|---|---|---|
-| Arroz doce | Canela por cima, à portuguesa | | proposta | |
-| Leite-creme | Queimado com açúcar | | proposta | |
-| Pudim flan | Pudim de ovos e caramelo | | proposta | |
-| Mousse de chocolate | Clássico de fim de almoço | | proposta | |
-| Bolo de bolacha | Bolacha Maria e creme de manteiga | | proposta | |
-| Baba de camelo | Doce de ovos e leite condensado | | proposta | |
-| Salame de chocolate | Sem forno | | proposta | |
-| Pastéis de nata | Massa folhada e creme | | proposta | |
-| Bolo de laranja | Bolo de tabuleiro simples | | proposta | |
-| Bolo de iogurte | O primeiro bolo de qualquer casa | | proposta | |
-| Bolo de cenoura com cobertura | Versão portuguesa, cobertura de chocolate | | proposta | |
-| Torta de laranja | Enrolada, sem farinha | | proposta | |
-| Tarte de maçã | Massa quebrada e maçã laminada | | proposta | |
-| Queijadas | Pequenas, de forma de queques | | proposta | |
-| Brownies | Denso, de tabuleiro | | proposta | |
-| Panquecas | Pequeno-almoço de fim de semana | | proposta | |
-| Papas de aveia | Pequeno-almoço de semana | | proposta | |
-| Pão caseiro | Massa levedada, forno de casa | | proposta | |
-| Broa de milho | Pão de milho | | proposta | |
-| Pão recheado com chouriço e queijo | Para levar ou para lanche | | proposta | |
-| Bolo-rei | Natal, com o seu tempo de levedar | | proposta | |
-| Filhoses | Fritas, de época | sem banha | proposta | |
+| Arroz doce | Canela por cima, à portuguesa |  | feita | `arroz-doce` |
+| Leite-creme | Queimado com açúcar |  | feita | `leite-creme` |
+| Pudim flan | Pudim de ovos e caramelo |  | feita | `pudim-flan` |
+| Mousse de chocolate | Clássico de fim de almoço |  | feita | `mousse-de-chocolate` |
+| Bolo de bolacha | Bolacha Maria e creme de manteiga |  | feita | `bolo-de-bolacha` |
+| Baba de camelo | Doce de ovos e leite condensado |  | feita | `baba-de-camelo` |
+| Salame de chocolate | Sem forno |  | feita | `salame-de-chocolate` |
+| Pastéis de nata | Massa folhada e creme |  | feita | `pasteis-de-nata` |
+| Bolo de laranja | Bolo de tabuleiro simples |  | feita | `bolo-de-laranja` |
+| Bolo de iogurte | O primeiro bolo de qualquer casa |  | feita | `bolo-de-iogurte` |
+| Bolo de cenoura com cobertura | Versão portuguesa, cobertura de chocolate |  | feita | `bolo-de-cenoura-com-cobertura` |
+| Torta de laranja | Enrolada, sem farinha |  | feita | `torta-de-laranja` |
+| Tarte de maçã | Massa quebrada e maçã laminada |  | feita | `tarte-de-maca` |
+| Queijadas | Pequenas, de forma de queques |  | feita | `queijadas` |
+| Brownies | Denso, de tabuleiro |  | feita | `brownies` |
+| Panquecas | Pequeno-almoço de fim de semana |  | feita | `panquecas` |
+| Papas de aveia | Pequeno-almoço de semana |  | feita | `papas-de-aveia` |
+| Pão caseiro | Massa levedada, forno de casa |  | feita | `pao-caseiro` |
+| Broa de milho | Pão de milho |  | feita | `broa-de-milho` |
+| Pão recheado com chouriço e queijo | Para levar ou para lanche |  | feita | `pao-recheado-com-chourico-e-queijo` |
+| Bolo-rei | Natal, com o seu tempo de levedar |  | feita | `bolo-rei` |
+| Filhoses | Fritas, de época | sem banha | feita | `filhoses` |
 
 ---
 

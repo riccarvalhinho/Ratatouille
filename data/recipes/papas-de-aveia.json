@@ -1,0 +1,102 @@
+{
+  "id": "papas-de-aveia",
+  "name": "Papas de aveia",
+  "description": "Aveia cozida em leite ou água, com fruta e canela. Pequeno-almoço de semana.",
+  "narrative": "Proporção de um para três, aveia e líquido, e lume brando com mexidela de vez em quando. Uma pitada de sal não a torna salgada; torna-a doce, e sem ela sabe a papel. A fruta entra no fim ou por cima. Fica pronta em dez minutos e faz-se de véspera para levar frio.",
+  "servings": 3,
+  "labels": [
+    "pequeno-almoco",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "colher-de-pau"
+  ],
+  "ingredients": [
+    {
+      "ref": "aveia",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 450,
+      "unit": "ml"
+    },
+    {
+      "ref": "banana",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "mel",
+      "quantity": 2,
+      "unit": "csopa",
+      "optional": true
+    },
+    {
+      "ref": "noz",
+      "quantity": 40,
+      "unit": "g",
+      "note": "picadas",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a aveia",
+      "text": "Aveia e leite com uma pitada de sal, em lume brando, a mexer de vez em quando, até engrossar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "aveia",
+        "leite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Rematar",
+      "text": "Banana às rodelas, canela, e mel ou nozes para quem quiser.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "banana",
+        "canela-em-po",
+        "mel",
+        "noz"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 12,
+    "carbsGrams": 52,
+    "fatGrams": 7,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 6,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
