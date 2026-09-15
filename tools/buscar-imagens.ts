@@ -198,7 +198,11 @@ async function tentarTermo(recipe: RecipeFile, query: string): Promise<ImageCand
   if (candidates.length === 0) return undefined;
 
   const ranked = candidates
-    .map((candidate, index) => ({ candidate, points: scoreCandidate(candidate, index, match) }))
+    .map((candidate, index) => ({
+      candidate,
+      // A posição é a do banco de origem. O índice na lista junta só serve de rede se faltar.
+      points: scoreCandidate(candidate, candidate.position ?? index, match),
+    }))
     .filter((entry): entry is { candidate: ImageCandidate; points: number } => entry.points !== undefined)
     .sort((a, b) => b.points - a.points);
 
