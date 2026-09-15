@@ -1,0 +1,184 @@
+{
+  "id": "rancho-a-moda-da-beira",
+  "name": "Rancho à moda da Beira",
+  "description": "Grão, massa e carnes de porco num caldo apurado. Prato único de inverno.",
+  "narrative": "Rancho é feijoada de grão com massa, e o que o segura é o caldo das carnes. Entremeada, chouriço e osso cozem juntos e dão esse caldo. O grão já cozido apura lá dentro com cenoura, couve e um refogado de cebola e colorau. A massa coze no próprio caldo nos últimos dez minutos e engrossa-o. Se ficar espesso de mais no dia seguinte, junta-se água a ferver.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "carne",
+    "massa-e-arroz",
+    "portuguesa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 80
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 800,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "entremeada",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "massa-cotovelo",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "couve-lombarda",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "batata",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as carnes",
+      "text": "Entremeada e chouriço em água com o louro, em lume brando, até cederem. Guardar o caldo e cortar as carnes.",
+      "durationMinutes": 45,
+      "passive": true,
+      "ingredientRefs": [
+        "entremeada",
+        "chourico",
+        "agua",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Cebola, alho e colorau no azeite até amolecerem.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "colorau",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar com grão e legumes",
+      "text": "Grão, cenoura, batata, carnes cortadas e caldo a cobrir. Vinte minutos em lume brando.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "cenoura",
+        "batata",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar couve e massa",
+      "text": "Couve em tiras e a massa, dez minutos, até a massa cozer e engrossar o caldo.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "couve-lombarda",
+        "massa-cotovelo"
+      ]
+    },
+    {
+      "title": "Rematar",
+      "text": "Hortelã fora do lume, para quem gostar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 42,
+    "carbsGrams": 92,
+    "fatGrams": 32,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 16,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

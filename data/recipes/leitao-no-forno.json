@@ -1,0 +1,150 @@
+{
+  "id": "leitao-no-forno",
+  "name": "Leitão no forno",
+  "description": "Leitão temperado com a pasta de alho e pimenta, assado devagar e acabado em lume forte. Com batata e laranja.",
+  "narrative": "O tempero é uma pasta de alho, banha — aqui substituída por manteiga e azeite —, sal, pimenta e louro, esfregada por dentro e por fora de véspera. Assa tapado a 160 graus três horas e só no fim sobe para 230, destapado, para a pele estalar. Pincela-se com o próprio molho e não com água, que amolece o que se está a tentar secar. Serve-se com batata assada e gomos de laranja, que cortam a gordura.",
+  "servings": 8,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 210,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Temperar o leitão de véspera"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "folha-de-aluminio",
+    "almofariz",
+    "pincel-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "leitao",
+      "quantity": 4,
+      "unit": "kg"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 12,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1.5,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a pasta e temperar",
+      "text": "Alho, manteiga amolecida, azeite, sal e muita pimenta pisados até virar pasta, esfregada por dentro e por fora. De véspera no frio.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "leitao",
+        "dente-de-alho",
+        "manteiga",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar tapado",
+      "text": "Louro e vinho branco no tabuleiro, tudo selado com alumínio, a 160 graus.",
+      "durationMinutes": 180,
+      "temperatureC": 160,
+      "passive": true,
+      "ingredientRefs": [
+        "folha-de-louro",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Juntar a batata e destapar",
+      "text": "Gomos de batata à volta no molho, destapado, a 200 graus.",
+      "durationMinutes": 40,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Tostar a pele",
+      "text": "Subir para 230 graus, a pincelar com o molho do tabuleiro, até a pele estalar.",
+      "durationMinutes": 15,
+      "temperatureC": 230
+    },
+    {
+      "title": "Descansar e trinchar",
+      "text": "Vinte minutos fora do forno antes de cortar. Laranja em gomos ao lado.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "laranja"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 980,
+    "proteinGrams": 62,
+    "carbsGrams": 58,
+    "fatGrams": 58,
+    "saturatedFatGrams": 22,
+    "fibreGrams": 5,
+    "saltGrams": 3
+  },
+  "notes": "Temperado com manteiga e azeite em vez da banha tradicional.",
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,159 @@
+{
+  "id": "naco-na-pedra",
+  "name": "Naco na pedra",
+  "description": "Naco de vaca grelhado e acabado na pedra à mesa, com batata frita, arroz e dois molhos.",
+  "narrative": "A pedra aquece no forno a 250 graus durante quarenta minutos — não há atalho, e uma pedra morna cozinha a carne em vez de a selar. O naco sela-se na frigideira dois minutos de cada lado e vai para a pedra a acabar à frente de quem come, cada um ao seu ponto. Os molhos, de manteiga e alho e de pimenta, fazem-se antes. A batata e o arroz também.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 50
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "tacho",
+    "termometro-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "naco-de-vaca",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "natas",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "pimenta-preta",
+      "quantity": 2,
+      "unit": "csopa",
+      "note": "em grão, esmagada"
+    },
+    {
+      "ref": "vinho-do-porto",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Aquecer a pedra",
+      "text": "Pedra no forno a 250 graus, quarenta minutos.",
+      "durationMinutes": 40,
+      "temperatureC": 250,
+      "passive": true
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer os molhos",
+      "text": "Um de manteiga derretida com alho laminado. Outro de natas com a pimenta em grão esmagada e o Porto, a reduzir.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga",
+        "dente-de-alho",
+        "natas",
+        "pimenta-preta",
+        "vinho-do-porto"
+      ]
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos secos em óleo quente, em duas levas, escorridos e salgados.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Selar os nacos",
+      "text": "Frigideira a fumegar com azeite, dois minutos de cada lado. Levar à mesa sobre a pedra a escaldar.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "naco-de-vaca",
+        "azeite"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 980,
+    "proteinGrams": 58,
+    "carbsGrams": 72,
+    "fatGrams": 52,
+    "saturatedFatGrams": 22,
+    "fibreGrams": 5,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

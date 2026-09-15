@@ -1,0 +1,195 @@
+{
+  "id": "ossobuco-a-milanesa",
+  "name": "Ossobuco à milanesa",
+  "description": "Chambão com osso estufado devagar, com gremolata e risotto de açafrão.",
+  "narrative": "As rodelas de chambão atam-se à volta com fio, para não desfazerem, e passam por farinha antes de alourar. Estufam duas horas em vinho branco e caldo, tapadas, até a carne ceder à colher. O tutano do osso é a melhor parte e come-se com uma colherinha. A gremolata — casca de limão, alho e salsa picados crus — só se junta na hora de servir. O risotto faz-se nos últimos vinte minutos.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "italiana",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 150
+  },
+  "equipment": [
+    "placa",
+    "cacarola-de-ferro",
+    "tacho",
+    "ralador",
+    "concha"
+  ],
+  "ingredients": [
+    {
+      "ref": "chambao-com-osso",
+      "quantity": 4,
+      "unit": "un",
+      "note": "rodelas grossas"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "aipo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 700,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-arboreo",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "acafrao",
+      "unit": "qb"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Atar e alourar o chambão",
+      "text": "Rodelas atadas à volta com fio, passadas por farinha, alouradas em manteiga e azeite de ambos os lados. Retirar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "chambao-com-osso",
+        "farinha-de-trigo",
+        "manteiga",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer a base",
+      "text": "Cebola, cenoura e aipo em cubos pequenos no mesmo fundo, dez minutos.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "aipo"
+      ]
+    },
+    {
+      "title": "Estufar devagar",
+      "text": "Vinho branco a evaporar, tomate, caldo e louro, com a carne de volta. Tapado, em lume muito brando, até ceder à colher.",
+      "durationMinutes": 120,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-branco",
+        "tomate-pelado",
+        "caldo-de-galinha",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Fazer o risotto de açafrão",
+      "text": "Arroz torrado em manteiga, vinho, e caldo quente com açafrão concha a concha. Parmesão fora do lume.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "arroz-arboreo",
+        "acafrao",
+        "queijo-parmesao"
+      ]
+    },
+    {
+      "title": "Juntar a gremolata",
+      "text": "Casca de limão, alho e salsa picados crus, espalhados por cima só na hora de servir.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "limao",
+        "dente-de-alho",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 980,
+    "proteinGrams": 62,
+    "carbsGrams": 82,
+    "fatGrams": 42,
+    "saturatedFatGrams": 18,
+    "fibreGrams": 5,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

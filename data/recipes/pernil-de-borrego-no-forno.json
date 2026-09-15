@@ -1,0 +1,141 @@
+{
+  "id": "pernil-de-borrego-no-forno",
+  "name": "Pernil de borrego no forno",
+  "description": "Perna de borrego com alho e alecrim, assada devagar sobre batata e legumes.",
+  "narrative": "A perna pica-se com a ponta da faca e enfiam-se lascas de alho e raminhos de alecrim nos cortes, para o tempero chegar ao meio da carne e não ficar só à superfície. Assa tapada duas horas a 160 graus sobre a batata e os legumes, que cozinham no que pinga. Destapa-se meia hora para dourar. Descansa vinte minutos antes de trinchar.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "mediterranica",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 155
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "folha-de-aluminio",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "perna-de-borrego",
+      "quantity": 2,
+      "unit": "kg"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 10,
+      "unit": "un",
+      "note": "em lascas"
+    },
+    {
+      "ref": "alecrim",
+      "unit": "qb"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Picar e temperar a perna",
+      "text": "Cortes com a ponta da faca, lascas de alho e alecrim enfiados dentro. Azeite, limão, sal e pimenta por fora.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "perna-de-borrego",
+        "dente-de-alho",
+        "alecrim",
+        "azeite",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar tapada",
+      "text": "Batata, cebola e cenoura no fundo do tabuleiro com o vinho branco, a carne por cima, tudo selado com alumínio, a 160 graus.",
+      "durationMinutes": 120,
+      "temperatureC": 160,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cebola",
+        "cenoura",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Destapar e dourar",
+      "text": "Alumínio fora, a 210 graus, regando com o molho, até a superfície dourar.",
+      "durationMinutes": 35,
+      "temperatureC": 210,
+      "passive": true
+    },
+    {
+      "title": "Descansar e trinchar",
+      "text": "Vinte minutos fora do forno antes de cortar, com o molho do tabuleiro à parte.",
+      "durationMinutes": 20
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 900,
+    "proteinGrams": 62,
+    "carbsGrams": 58,
+    "fatGrams": 48,
+    "saturatedFatGrams": 17,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

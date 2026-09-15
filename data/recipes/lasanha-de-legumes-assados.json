@@ -1,0 +1,199 @@
+{
+  "id": "lasanha-de-legumes-assados",
+  "name": "Lasanha de legumes assados",
+  "description": "Beringela, courgette e pimento assados em camadas com tomate e bechamel. Com salada verde.",
+  "narrative": "Os legumes assam-se antes, em vez de irem crus para a lasanha — assados, perdem a água e concentram o sabor; crus, largam líquido e a lasanha fica aguada. Assam em tabuleiro único a 210 graus até ganharem cor. O molho de tomate é simples e o bechamel é o do costume. Monta-se, gratina-se, e repousa dez minutos antes de cortar.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "massa-e-arroz",
+    "italiana",
+    "vegetariano",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 35,
+    "cookMinutes": 75
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "pirex",
+    "tabuleiro-de-forno",
+    "vara-de-arames"
+  ],
+  "ingredients": [
+    {
+      "ref": "beringela",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em fatias"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em fatias"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "massa-lasanha",
+      "quantity": 12,
+      "unit": "un",
+      "note": "placas"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar os legumes",
+      "text": "Fatias e tiras no tabuleiro com azeite e sal, a 210 graus, viradas a meio, até ganharem cor.",
+      "durationMinutes": 35,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "beringela",
+        "courgette",
+        "pimento-vermelho",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o molho de tomate",
+      "text": "Cebola e alho no azeite, tomate pelado esmagado, sal e pimenta, vinte minutos a apurar. Manjericão no fim.",
+      "durationMinutes": 22,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "tomate-pelado",
+        "manjericao",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o bechamel",
+      "text": "Manteiga e farinha um minuto, leite quente aos poucos a bater, noz-moscada e sal, até napar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga",
+        "farinha-de-trigo",
+        "leite",
+        "noz-moscada"
+      ]
+    },
+    {
+      "title": "Montar",
+      "text": "Molho fino no fundo, placas, legumes, tomate, bechamel e queijo, repetindo. Acabar em bechamel e queijo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "massa-lasanha",
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Gratinar e repousar",
+      "text": "A 190 graus, tapada os primeiros vinte minutos. Dez minutos fora do forno antes de cortar. Salada ao lado.",
+      "durationMinutes": 45,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "alface",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 26,
+    "carbsGrams": 72,
+    "fatGrams": 38,
+    "saturatedFatGrams": 18,
+    "fibreGrams": 9,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

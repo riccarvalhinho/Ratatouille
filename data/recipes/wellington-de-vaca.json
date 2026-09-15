@@ -1,0 +1,200 @@
+{
+  "id": "wellington-de-vaca",
+  "name": "Wellington de vaca",
+  "description": "Lombo selado, coberto de duxelles e presunto, embrulhado em massa folhada.",
+  "narrative": "Três inimigos da humidade, e é toda a receita: o lombo sela-se e arrefece, a duxelles de cogumelos cozinha-se até ficar seca ao ponto de se agarrar à colher, e o presunto forma uma barreira entre as duas. Embrulha-se apertado em película e vai ao frio meia hora antes de entrar na massa. Assa-se a 200 graus vinte e cinco minutos para mal passado — com termómetro, 52 graus ao centro.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "francesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 45,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 30,
+      "description": "Meia hora no frigorífico depois de embrulhar em presunto"
+    }
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "pelicula-aderente",
+    "termometro-de-cozinha",
+    "processador-de-alimentos"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-vaca",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "peça central"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "presunto",
+      "quantity": 12,
+      "unit": "un",
+      "note": "fatias finas"
+    },
+    {
+      "ref": "massa-folhada",
+      "quantity": 2,
+      "unit": "un",
+      "note": "placas"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomilho",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinho-do-porto",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a gema, para pincelar"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Selar o lombo",
+      "text": "Peça atada, temperada, selada em azeite muito quente de todos os lados. Pincelar com mostarda ainda quente e deixar arrefecer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "lombo-de-vaca",
+        "azeite",
+        "mostarda",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer a duxelles seca",
+      "text": "Cogumelos, cebola e alho picados muito finos, em manteiga, com tomilho e o Porto, até ficarem secos e agarrarem à colher.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "cogumelos",
+        "cebola",
+        "dente-de-alho",
+        "manteiga",
+        "tomilho",
+        "vinho-do-porto"
+      ]
+    },
+    {
+      "title": "Embrulhar em presunto e frio",
+      "text": "Presunto sobreposto em película, duxelles fria espalhada, lombo ao centro. Enrolar apertado e meia hora no frigorífico.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "presunto"
+      ]
+    },
+    {
+      "title": "Embrulhar na massa",
+      "text": "Massa folhada à volta do rolo, bordos selados com gema, virado com a costura para baixo. Pincelar e riscar a superfície.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "massa-folhada",
+        "ovo"
+      ]
+    },
+    {
+      "title": "Assar",
+      "text": "A 200 graus, até 52 graus ao centro para mal passado. Descansar dez minutos antes de cortar.",
+      "durationMinutes": 28,
+      "temperatureC": 200
+    },
+    {
+      "title": "Fazer o puré e as cenouras",
+      "text": "Batata cozida e esmagada com manteiga e leite quente. Cenouras glaceadas em manteiga com um pouco de açúcar.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "batata",
+        "leite",
+        "cenoura"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 1080,
+    "proteinGrams": 68,
+    "carbsGrams": 72,
+    "fatGrams": 58,
+    "saturatedFatGrams": 26,
+    "fibreGrams": 7,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

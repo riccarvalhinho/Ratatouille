@@ -1,0 +1,162 @@
+{
+  "id": "arroz-de-pato",
+  "name": "Arroz de pato",
+  "description": "Pato cozido e desfiado, arroz cozido no seu caldo, gratinado com chouriço. Com salada de agrião.",
+  "narrative": "O pato coze primeiro em água com cebola, cenoura, chouriço e louro, e é esse caldo — gordo e saboroso — que vai cozer o arroz. Desfia-se a carne enquanto o caldo repousa, e retira-se a gordura que sobe à superfície, senão o arroz fica pesado. Monta-se em camadas no pirex: arroz, pato, arroz, e rodelas de chouriço por cima. Vai ao forno só para tostar a superfície.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "massa-e-arroz",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 110
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "panela-grande",
+    "tacho",
+    "pirex",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "perna-de-pato",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "agriao",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "laranja",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o pato",
+      "text": "Pernas em água com cebola, cenoura, metade do chouriço, louro e sal, em lume brando até a carne se soltar do osso.",
+      "durationMinutes": 75,
+      "passive": true,
+      "ingredientRefs": [
+        "perna-de-pato",
+        "cebola",
+        "cenoura",
+        "chourico",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Desfiar e limpar o caldo",
+      "text": "Retirar peles e ossos e desfiar a carne. Coar o caldo e tirar a gordura que subiu à superfície.",
+      "durationMinutes": 15
+    },
+    {
+      "title": "Cozer o arroz no caldo",
+      "text": "Arroz no azeite dois minutos, depois o caldo quente na proporção de dois para um. Dezoito minutos, ainda um pouco húmido.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Montar em camadas",
+      "text": "Metade do arroz no pirex, o pato desfiado, o resto do arroz, e o outro chouriço às rodelas por cima.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Gratinar e servir",
+      "text": "Forno a 200 graus até a superfície tostar. Agrião temperado com azeite, vinagre e laranja ao lado.",
+      "durationMinutes": 20,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "agriao",
+        "vinagre-de-vinho",
+        "laranja"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 52,
+    "carbsGrams": 88,
+    "fatGrams": 38,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 4,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

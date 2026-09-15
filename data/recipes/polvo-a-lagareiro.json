@@ -1,0 +1,140 @@
+{
+  "id": "polvo-a-lagareiro",
+  "name": "Polvo à lagareiro",
+  "description": "Polvo cozido e assado com muito azeite e alho, com batata a murro e grelos.",
+  "narrative": "O polvo coze primeiro numa panela sem água nenhuma além da que ele larga, com uma cebola inteira, quarenta minutos a uma hora conforme o tamanho. Está quando um garfo entra na parte mais grossa sem resistência — e nada disto tem que ver com rolhas ou com assustar o polvo três vezes. Depois vai ao forno com as batatas, muito azeite e alho laminado, só para tostar.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 90
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "panela-grande",
+    "tabuleiro-de-forno"
+  ],
+  "ingredients": [
+    {
+      "ref": "polvo",
+      "quantity": 1.5,
+      "unit": "kg"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "inteira"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 10,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "grelos",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o polvo sem água",
+      "text": "Polvo na panela com a cebola inteira e o louro, tapado, em lume brando. Está quando o garfo entrar sem resistência na parte mais grossa.",
+      "durationMinutes": 55,
+      "passive": true,
+      "ingredientRefs": [
+        "polvo",
+        "cebola",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cozer as batatas",
+      "text": "Batatas inteiras com casca em água bem salgada, até cederem ao garfo.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Dar o murro",
+      "text": "Batatas escorridas e esmagadas com a palma da mão, sem as desfazer.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Assar com azeite e alho",
+      "text": "Polvo e batatas no tabuleiro, alho laminado e o azeite por cima, a 200 graus, regando a meio.",
+      "durationMinutes": 30,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Escaldar os grelos",
+      "text": "Dois minutos em água a ferver com sal, escorridos e regados com o azeite do tabuleiro.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "grelos"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 920,
+    "proteinGrams": 58,
+    "carbsGrams": 52,
+    "fatGrams": 58,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

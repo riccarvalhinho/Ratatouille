@@ -1,0 +1,160 @@
+{
+  "id": "arroz-de-tamboril",
+  "name": "Arroz de tamboril",
+  "description": "Arroz malandro com tamboril e coentros, num caldo feito das espinhas.",
+  "narrative": "O tamboril tem uma espinha central que dá um caldo excelente — pede-se ao peixeiro que a guarde e coze-se com cebola e louro. O peixe corta-se em medalhões e entra só nos últimos cinco minutos, porque tamboril cozido de mais fica rijo. O arroz fica malandro e serve-se logo. Coentros a sério, não uma pitada.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "massa-e-arroz",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "coador",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "tamboril",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em medalhões, com a espinha"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 350,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o caldo da espinha",
+      "text": "Espinha central em água com uma cebola, o louro e sal, em lume brando. Coar e manter quente.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "tamboril",
+        "cebola",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Resto da cebola, alho, pimento e tomate ralado no azeite, até apurar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "pimento-vermelho",
+        "tomate",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Cozer o arroz no caldo",
+      "text": "Arroz no refogado, vinho branco a evaporar, caldo quente de sobra. Dezoito minutos, malandro.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "vinho-branco",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar o tamboril",
+      "text": "Medalhões nos últimos cinco minutos, tapado, até ficarem opacos.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Rematar com coentros",
+      "text": "Coentros picados em quantidade, fora do lume, e servir logo.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 46,
+    "carbsGrams": 78,
+    "fatGrams": 18,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 4,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

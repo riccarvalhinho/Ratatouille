@@ -1,0 +1,174 @@
+{
+  "id": "rendang-de-vaca",
+  "name": "Rendang de vaca",
+  "description": "Guisado indonésio de vaca em leite de coco, reduzido até secar e a carne tostar. Com arroz jasmim.",
+  "narrative": "Rendang não é um caril: é um guisado que se deixa reduzir até o leite de coco se separar e a carne acabar a fritar na própria gordura. São três horas e a última meia hora exige atenção, porque é aí que agarra. A pasta de especiarias tritura-se antes — malagueta, alho, gengibre, erva-príncipe, cebola. Fica melhor no dia seguinte.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "asiatica",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 180
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "processador-de-alimentos",
+    "frigideira",
+    "panela-grande"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-vaca-para-guisar",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em cubos"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "erva-principe",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "coco-ralado",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer a pasta de especiarias",
+      "text": "Cebola, alho, gengibre, malagueta e curcuma triturados até ficarem pasta.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "gengibre",
+        "malagueta",
+        "curcuma"
+      ]
+    },
+    {
+      "title": "Tostar o coco ralado",
+      "text": "Frigideira seca em lume médio, a abanar, até ficar castanho e cheirar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "coco-ralado"
+      ]
+    },
+    {
+      "title": "Refogar a pasta e juntar a carne",
+      "text": "Pasta no tacho até cheirar e escurecer, depois a carne, o leite de coco, a erva-príncipe esmagada, o louro, o açúcar e sal.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "carne-de-vaca-para-guisar",
+        "leite-de-coco",
+        "erva-principe",
+        "folha-de-louro",
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Reduzir devagar",
+      "text": "Destapado, em lume brando, a mexer de vez em quando, até o molho encurtar para metade.",
+      "durationMinutes": 150,
+      "passive": true
+    },
+    {
+      "title": "Secar até a carne tostar",
+      "text": "A última meia hora exige atenção: mexer com frequência, até o óleo se separar e a carne tostar na própria gordura. Juntar o coco tostado.",
+      "durationMinutes": 30
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz jasmim lavado, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 980,
+    "proteinGrams": 58,
+    "carbsGrams": 78,
+    "fatGrams": 52,
+    "saturatedFatGrams": 34,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "notes": "Fica melhor no dia seguinte.",
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

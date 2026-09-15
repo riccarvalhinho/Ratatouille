@@ -1,0 +1,152 @@
+{
+  "id": "pato-a-pequinesa-simplificado",
+  "name": "Pato à pequinesa simplificado",
+  "description": "Pernas de pato laqueadas em mel e soja, desfiadas, com panquecas, pepino e cebolinho.",
+  "narrative": "A versão de casa troca o pato inteiro seco ao ar por pernas assadas devagar, que dão o mesmo resultado sem a logística. Assam duas horas a 160 graus sobre uma grelha, para a gordura escorrer, e nos últimos vinte minutos pincelam-se com mel, soja e cinco especiarias, três vezes. A pele fica escura e estaladiça. Desfia-se e monta-se à mesa, com pepino em palitos e cebolinho.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "asiatica",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 140
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "grelha-de-arrefecimento",
+    "pincel-de-cozinha",
+    "frigideira"
+  ],
+  "ingredients": [
+    {
+      "ref": "perna-de-pato",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "mel",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "cravinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "tortilha-de-trigo",
+      "quantity": 12,
+      "unit": "un",
+      "note": "pequenas"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em palitos"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-arroz",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Temperar e assar as pernas",
+      "text": "Pele picada com a ponta da faca, sal e pimenta. Sobre uma grelha com tabuleiro por baixo, a 160 graus.",
+      "durationMinutes": 120,
+      "temperatureC": 160,
+      "passive": true,
+      "ingredientRefs": [
+        "perna-de-pato",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer a laca",
+      "text": "Mel, soja, gengibre, canela e cravinho mexidos até ligar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "mel",
+        "molho-de-soja",
+        "gengibre",
+        "canela-em-po",
+        "cravinho"
+      ]
+    },
+    {
+      "title": "Laquear em três passagens",
+      "text": "Pincelar, dez minutos a 200 graus, e repetir três vezes, até a pele ficar escura e estaladiça.",
+      "durationMinutes": 25,
+      "temperatureC": 200
+    },
+    {
+      "title": "Preparar os acompanhamentos",
+      "text": "Pepino em palitos com o vinagre de arroz, cebolinho em tiras, tortilhas aquecidas na frigideira seca.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "pepino",
+        "vinagre-de-arroz",
+        "cebolinho",
+        "tortilha-de-trigo"
+      ]
+    },
+    {
+      "title": "Desfiar e montar à mesa",
+      "text": "Carne desfiada com dois garfos, e cada um monta a sua.",
+      "durationMinutes": 8
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 42,
+    "carbsGrams": 68,
+    "fatGrams": 42,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 4,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

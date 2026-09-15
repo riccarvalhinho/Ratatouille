@@ -1,0 +1,167 @@
+{
+  "id": "peito-de-vitela-recheado",
+  "name": "Peito de vitela recheado",
+  "description": "Peito aberto e recheado com fiambre, espinafres e ovo, enrolado e assado devagar.",
+  "narrative": "O peito abre-se em bolsa ou em manta — pede-se ao talho — e recheia-se com espinafres salteados, fiambre e ovo cozido alinhado ao centro, para o corte ficar bonito. Ata-se com fio de cozinha de dois em dois dedos, senão o recheio sai todo no forno. Assa tapado hora e meia e destapa-se no fim. Corta-se só depois de descansar vinte minutos, ou desfaz-se.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 35,
+    "cookMinutes": 110
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "tabuleiro-de-forno",
+    "folha-de-aluminio",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-vitela",
+      "quantity": 1.8,
+      "unit": "kg",
+      "note": "aberto em manta"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "fiambre",
+      "quantity": 200,
+      "unit": "g",
+      "note": "fatias"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "cozidos"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear os espinafres",
+      "text": "Espinafres com alho em azeite até murcharem. Escorrer bem a água em cima de um coador.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "espinafres",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Rechear e atar",
+      "text": "Carne temperada por dentro, espinafres, fiambre e os ovos cozidos alinhados ao centro. Enrolar e atar de dois em dois dedos.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "peito-de-vitela",
+        "fiambre",
+        "ovo",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar tapado",
+      "text": "Cebola, cenoura, louro e vinho branco no tabuleiro, tudo selado com alumínio, a 170 graus.",
+      "durationMinutes": 90,
+      "temperatureC": 170,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "cenoura",
+        "folha-de-louro",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Juntar a batata e destapar",
+      "text": "Gomos à volta no molho, destapado, a 200 graus, até a carne dourar.",
+      "durationMinutes": 35,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Descansar antes de cortar",
+      "text": "Vinte minutos fora do forno, e só depois cortar em fatias grossas.",
+      "durationMinutes": 20
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 860,
+    "proteinGrams": 58,
+    "carbsGrams": 52,
+    "fatGrams": 48,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

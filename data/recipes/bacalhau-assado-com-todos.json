@@ -1,0 +1,157 @@
+{
+  "id": "bacalhau-assado-com-todos",
+  "name": "Bacalhau assado com todos",
+  "description": "Bacalhau cozido com couve, batata, cenoura e ovo, regado com azeite e alho.",
+  "narrative": "Prato de uma panela e de nenhuma técnica, e é essa a sua graça. Cada coisa entra por ordem de tempo: batata e cenoura primeiro, couve depois, bacalhau por último, cinco minutos, porque fervido a sério desfaz-se. Os ovos cozem à parte. O molho é azeite bem quente com alho laminado, despejado por cima à mesa, a crepitar.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "legumes",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "prepAhead": {
+      "minutes": 1440,
+      "description": "Demolhar o bacalhau 24 horas no frigorífico, a trocar a água três vezes"
+    }
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 4,
+      "unit": "un",
+      "note": "lombos demolhados"
+    },
+    {
+      "ref": "couve-lombarda",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em quartos"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer batata e cenoura",
+      "text": "Em água com sal e o louro, até quase cederem ao garfo.",
+      "durationMinutes": 20,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cenoura",
+        "sal",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cozer os ovos",
+      "text": "Dez minutos em água a ferver, à parte. Descascar.",
+      "durationMinutes": 12,
+      "passive": true,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Juntar a couve",
+      "text": "Quartos de couve na mesma panela da batata, oito minutos.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "couve-lombarda"
+      ]
+    },
+    {
+      "title": "Escalfar o bacalhau",
+      "text": "Lombos por cima, tapado, cinco minutos, até abrirem em lascas.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "bacalhau-salgado"
+      ]
+    },
+    {
+      "title": "Fazer o azeite de alho",
+      "text": "Azeite bem quente com alho laminado, até o alho ficar dourado. Despejar sobre tudo à mesa, com pimenta.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "pimenta-preta",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 860,
+    "proteinGrams": 52,
+    "carbsGrams": 58,
+    "fatGrams": 50,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 10,
+    "saltGrams": 3.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

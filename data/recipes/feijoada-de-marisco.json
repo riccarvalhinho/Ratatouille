@@ -1,0 +1,182 @@
+{
+  "id": "feijoada-de-marisco",
+  "name": "Feijoada de marisco",
+  "description": "Feijão branco em caldo de marisco, com camarão, amêijoa e mexilhão. Com arroz branco.",
+  "narrative": "O caldo faz-se das cascas dos camarões, como no arroz de marisco. O feijão branco já cozido apura nesse caldo com um refogado de cebola, alho, pimento e tomate, vinte minutos, até o molho engrossar sozinho — não leva farinha nem amido. O marisco entra no fim e cozinha em minutos. O arroz branco faz-se à parte.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "leguminosas",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tacho",
+    "coador"
+  ],
+  "ingredients": [
+    {
+      "ref": "camarao",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "ameijoa",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "mexilhao",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "feijao-branco-cozido",
+      "quantity": 800,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb",
+      "optional": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o caldo das cascas",
+      "text": "Descascar os camarões e cozer cascas e cabeças em água com uma cebola, o louro e sal. Coar.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "camarao",
+        "cebola",
+        "folha-de-louro",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Resto da cebola, alho, pimento e tomate ralado no azeite, até apurar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "pimento-vermelho",
+        "tomate",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar o feijão no caldo",
+      "text": "Vinho branco a evaporar, feijão e caldo a cobrir. Vinte minutos até o molho engrossar sozinho.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "vinho-branco",
+        "feijao-branco-cozido"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha"
+      ]
+    },
+    {
+      "title": "Juntar o marisco",
+      "text": "Amêijoas e mexilhões tapados até abrirem, camarões nos últimos dois minutos. Coentros e piri-piri.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ameijoa",
+        "mexilhao",
+        "coentros",
+        "piri-piri"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 52,
+    "carbsGrams": 82,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 14,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

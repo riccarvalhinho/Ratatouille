@@ -1,0 +1,182 @@
+{
+  "id": "costela-assada-lenta",
+  "name": "Costela assada lenta",
+  "description": "Costela de vaca esfregada com especiarias e assada horas a baixo calor. Com batata e coleslaw.",
+  "narrative": "A costela esfrega-se de véspera com uma mistura seca de colorau, açúcar amarelo, alho em pó, sal e pimenta. Assa embrulhada em alumínio a 140 graus durante cinco horas — a temperatura baixa é o que derrete o colagénio sem secar a carne. Abre-se no fim, pincela-se com o molho e sobe-se o forno para tostar. O coleslaw faz-se de manhã e melhora à espera.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "americana",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 320,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Esfregar a costela com a mistura seca de véspera"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "folha-de-aluminio",
+    "ralador",
+    "pincel-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "costela-de-vaca",
+      "quantity": 2.5,
+      "unit": "kg"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "alho-em-po",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-worcestershire",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "couve-branca",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em tiras finas"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "raladas"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Esfregar com a mistura seca",
+      "text": "Colorau, açúcar, alho em pó, cominhos, sal e pimenta misturados e esfregados por toda a costela, sobre uma camada de mostarda. De véspera.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "costela-de-vaca",
+        "colorau",
+        "acucar",
+        "alho-em-po",
+        "cominhos",
+        "mostarda",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar embrulhada",
+      "text": "Bem selada em alumínio, a 140 graus, sem abrir.",
+      "durationMinutes": 300,
+      "temperatureC": 140,
+      "passive": true
+    },
+    {
+      "title": "Abrir e pincelar",
+      "text": "Alumínio aberto, pincelar com o molho do tabuleiro e o molho inglês, a 220 graus, até a superfície tostar.",
+      "durationMinutes": 20,
+      "temperatureC": 220,
+      "ingredientRefs": [
+        "molho-worcestershire"
+      ]
+    },
+    {
+      "title": "Assar a batata",
+      "text": "Gomos com azeite e sal noutro tabuleiro, a 220 graus, virados a meio.",
+      "durationMinutes": 35,
+      "temperatureC": 220,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Fazer o coleslaw",
+      "text": "Couve em tiras e cenoura ralada, com maionese, vinagre, sal e pimenta. Deixar repousar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "couve-branca",
+        "cenoura",
+        "maionese",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 1050,
+    "proteinGrams": 62,
+    "carbsGrams": 62,
+    "fatGrams": 62,
+    "saturatedFatGrams": 22,
+    "fibreGrams": 7,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

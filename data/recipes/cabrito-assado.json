@@ -1,0 +1,162 @@
+{
+  "id": "cabrito-assado",
+  "name": "Cabrito assado",
+  "description": "Cabrito marinado em vinho e alho, assado devagar, com batata e arroz de forno.",
+  "narrative": "O cabrito marina de véspera em vinho branco, alho, colorau e louro — é carne com sabor forte e a marinada arredonda-o. Assa tapado duas horas a 170 graus e destapa-se para a última meia hora. O arroz de forno faz-se à parte, com o caldo da própria assadeira, e vai ao forno ao mesmo tempo que as batatas, no calor que sobra.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 160,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Marinar o cabrito de véspera"
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "pirex",
+    "folha-de-aluminio",
+    "tacho"
+  ],
+  "ingredients": [
+    {
+      "ref": "cabrito",
+      "quantity": 2.5,
+      "unit": "kg",
+      "note": "aos pedaços"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 10,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em gomos"
+    },
+    {
+      "ref": "arroz-carolino",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o cabrito",
+      "text": "Vinho branco, alho, colorau, louro, azeite, sal e pimenta sobre os pedaços. De véspera no frio.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "cabrito",
+        "vinho-branco",
+        "dente-de-alho",
+        "colorau",
+        "folha-de-louro",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar tapado",
+      "text": "Cabrito com a marinada no tabuleiro, selado com alumínio, a 170 graus.",
+      "durationMinutes": 120,
+      "temperatureC": 170,
+      "passive": true
+    },
+    {
+      "title": "Juntar a batata e destapar",
+      "text": "Gomos à volta da carne no molho, destapado, a 200 graus.",
+      "durationMinutes": 40,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Fazer o arroz de forno",
+      "text": "Refogado de cebola, arroz, e caldo quente da assadeira. Ao forno num pirex até o líquido desaparecer.",
+      "durationMinutes": 30,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "cebola",
+        "agua"
+      ]
+    },
+    {
+      "title": "Descansar",
+      "text": "Quinze minutos fora do forno antes de servir.",
+      "durationMinutes": 15
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 940,
+    "proteinGrams": 62,
+    "carbsGrams": 72,
+    "fatGrams": 44,
+    "saturatedFatGrams": 15,
+    "fibreGrams": 5,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

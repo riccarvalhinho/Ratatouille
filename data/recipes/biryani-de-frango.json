@@ -1,0 +1,202 @@
+{
+  "id": "biryani-de-frango",
+  "name": "Biryani de frango",
+  "description": "Arroz basmati e frango marinado cozidos em camadas seladas, com açafrão e frutos secos.",
+  "narrative": "A técnica é o prato: o arroz coze só a setenta por cento em água muito temperada e escorre-se. O frango marinado fica no fundo do tacho, o arroz por cima em camada, e rega-se com leite com açafrão e cebola frita. Tapa-se selado — com massa de farinha à volta da tampa, se se quiser fazer bem — e vai vinte e cinco minutos em lume mínimo. Não se mexe nem se espreita; mistura-se só no prato.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "massa-e-arroz",
+    "indiana",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 35,
+    "cookMinutes": 60,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Marinar o frango duas horas, ou de véspera"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "escorredor",
+    "frigideira"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 8,
+      "unit": "un",
+      "note": "sem pele"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "garam-masala",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 25,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "acafrao",
+      "unit": "qb"
+    },
+    {
+      "ref": "leite",
+      "quantity": 100,
+      "unit": "ml",
+      "note": "morno"
+    },
+    {
+      "ref": "passas",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "amendoa",
+      "quantity": 50,
+      "unit": "g",
+      "note": "laminada"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "cravinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango",
+      "text": "Coxas em iogurte, garam masala, gengibre, alho e sal. Duas horas no frigorífico.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "iogurte-natural",
+        "garam-masala",
+        "gengibre",
+        "dente-de-alho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fritar a cebola",
+      "text": "Meias-luas finas em óleo, até ficarem castanhas e estaladiças. Escorrer em papel.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "cebola",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Cozer o arroz a setenta por cento",
+      "text": "Basmati lavado em muita água a ferver, muito salgada, com o cravinho. Cinco minutos e escorrer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua",
+        "cravinho"
+      ]
+    },
+    {
+      "title": "Montar as camadas",
+      "text": "Frango no fundo do tacho, arroz por cima, e o leite com açafrão, a manteiga, a cebola frita, passas e amêndoa a rematar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "acafrao",
+        "leite",
+        "manteiga",
+        "passas",
+        "amendoa"
+      ]
+    },
+    {
+      "title": "Cozer selado em lume mínimo",
+      "text": "Tampa selada, lume no mínimo, vinte e cinco minutos. Sem mexer nem espreitar.",
+      "durationMinutes": 25,
+      "passive": true
+    },
+    {
+      "title": "Servir",
+      "text": "Coentros e hortelã por cima, e misturar só no prato.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "coentros",
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 920,
+    "proteinGrams": 48,
+    "carbsGrams": 108,
+    "fatGrams": 32,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

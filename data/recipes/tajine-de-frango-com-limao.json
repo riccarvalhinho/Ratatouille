@@ -1,0 +1,183 @@
+{
+  "id": "tajine-de-frango-com-limao",
+  "name": "Tajine de frango com limão",
+  "description": "Frango estufado com limão, azeitonas e especiarias, em panela tapada. Com cuscuz.",
+  "narrative": "Guisado marroquino de lume brando e panela tapada, e o limão é o que o marca. Sem limão em conserva usa-se limão fresco às rodelas com um pouco de sal, posto cedo para amaciar. As especiarias tostam no óleo antes de entrar o líquido. Coze cinquenta minutos tapado e destapa-se no fim para o molho reduzir. O cuscuz hidrata-se no caldo da própria panela.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 65
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "acafrao",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un",
+      "note": "às rodelas"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 150,
+      "unit": "g",
+      "note": "verdes"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cuscuz",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 700,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o frango",
+      "text": "Coxas temperadas em azeite quente, até corarem de todos os lados. Retirar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Tostar as especiarias",
+      "text": "Cebola, alho e gengibre a amolecer, depois curcuma, cominhos, canela e açafrão um minuto no fundo.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "gengibre",
+        "curcuma",
+        "cominhos",
+        "canela-em-po",
+        "acafrao"
+      ]
+    },
+    {
+      "title": "Estufar com limão",
+      "text": "Frango de volta, rodelas de limão com sal e água a meio da altura. Tapado, em lume brando.",
+      "durationMinutes": 50,
+      "passive": true,
+      "ingredientRefs": [
+        "limao",
+        "agua"
+      ]
+    },
+    {
+      "title": "Juntar azeitonas e reduzir",
+      "text": "Azeitonas nos últimos dez minutos, destapado, até o molho encurtar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "azeitona"
+      ]
+    },
+    {
+      "title": "Hidratar o cuscuz",
+      "text": "Caldo da panela a ferver sobre o cuscuz, na mesma medida, tapado cinco minutos. Soltar com o garfo. Coentros e salsa por cima.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cuscuz",
+        "coentros",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 48,
+    "carbsGrams": 82,
+    "fatGrams": 26,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 6,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

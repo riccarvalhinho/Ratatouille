@@ -1,0 +1,205 @@
+{
+  "id": "francesinha",
+  "name": "Francesinha",
+  "description": "Sandes de carnes e queijo afogada em molho de cerveja e tomate, gratinada. Com batata frita.",
+  "narrative": "O molho é a francesinha e faz-se com tempo: refogado de cebola e alho, tomate, cerveja, molho inglês, louro e piri-piri, quarenta minutos a apurar e depois passado pelo passador fino. Tem de napar a colher. A sandes monta-se com bife, linguiça, salsicha e fiambre, fecha-se, cobre-se de queijo e vai ao forno até derreter. O molho despeja-se a ferver por cima, à mesa.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 70
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "frigideira",
+    "passador-fino",
+    "pirex"
+  ],
+  "ingredients": [
+    {
+      "ref": "pao-de-forma",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias grossas"
+    },
+    {
+      "ref": "bife-de-vaca",
+      "quantity": 4,
+      "unit": "un",
+      "note": "finos"
+    },
+    {
+      "ref": "linguica",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "salsicha-fresca",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "fiambre",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 12,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "cerveja",
+      "quantity": 330,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "molho-worcestershire",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "amido-de-milho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Apurar o molho",
+      "text": "Cebola e alho na manteiga, tomate, cerveja, molho inglês, louro, piri-piri, sal e pimenta. Quarenta minutos em lume brando.",
+      "durationMinutes": 45,
+      "passive": true,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "manteiga",
+        "tomate-pelado",
+        "cerveja",
+        "molho-worcestershire",
+        "folha-de-louro",
+        "piri-piri",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Passar e engrossar o molho",
+      "text": "Passador fino, depois o amido dissolvido em água fria, a ferver até napar a colher.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "amido-de-milho"
+      ]
+    },
+    {
+      "title": "Grelhar as carnes",
+      "text": "Bifes, linguiça e salsichas na frigideira, cada um ao seu tempo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "bife-de-vaca",
+        "linguica",
+        "salsicha-fresca"
+      ]
+    },
+    {
+      "title": "Fritar as batatas",
+      "text": "Palitos em óleo quente, em duas levas, escorridos em papel.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Montar e gratinar",
+      "text": "Pão, bife, linguiça, salsicha, fiambre, pão por cima, e queijo a cobrir tudo. Forno a 220 graus até derreter. Molho a ferver por cima à mesa.",
+      "durationMinutes": 12,
+      "temperatureC": 220,
+      "ingredientRefs": [
+        "pao-de-forma",
+        "fiambre",
+        "queijo-flamengo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 1150,
+    "proteinGrams": 62,
+    "carbsGrams": 88,
+    "fatGrams": 62,
+    "saturatedFatGrams": 26,
+    "fibreGrams": 6,
+    "saltGrams": 4.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
