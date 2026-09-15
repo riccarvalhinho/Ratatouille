@@ -23,8 +23,9 @@ Duas entradas, que se juntam no mesmo ficheiro:
   de receitas em PT-PT que sirva, e como as instruções são sempre reescritas
   (`docs/ops/importar-receitas.md`), um dataset só pouparia a parte barata. São nomes de pratos, e
   é para isso que servem.
-- **O repertório ditado** — a secção do fim, por encher. É a entrada com melhor taxa de acerto das
-  duas, porque é a única que sabe o que se come mesmo à terça-feira.
+- **O repertório de casa** — a secção do fim. Não é a lista do que já se sabe fazer, que está quase
+  toda aqui em cima: é o que nenhuma lista genérica tem — as receitas de família, as versões
+  próprias de um prato que já cá está, e o que se come fora e apetecia fazer em casa.
 
 ## O que sai daqui
 
@@ -379,20 +380,23 @@ vez de `servings`, o equipamento de pastelaria e o `prepAhead` de levedar e arre
 
 # O teu repertório
 
-**Por encher.** Manda por áudio ou escreve; eu passo para aqui.
+**Não é a lista do que já sabes fazer.** Isso está quase todo aqui em cima, porque são pratos
+comuns e foi para isso que a lista larga serviu — e foi essa a confusão que esta secção causou da
+primeira vez que a escrevi.
 
-O que vale a pena dizer, por ordem de utilidade:
+O que aqui falta são as três coisas que **nenhuma lista genérica tem**:
 
-1. **O que se cozinha sem pensar.** Os jantares de terça-feira, o que se faz quando ninguém tem
-   vontade. São os que mais faltam numa lista escrita de fora, e os que mais se vão usar.
-2. **O que a família faz.** Como as costelas dos sogros. Estes não se geram — ditam-se, e entram
-   como `kind: "familia"`, que é outra coisa e vale mais.
-3. **O que se come fora e apetecia fazer em casa.** O restaurante do costume, o prato que se pede
-   sempre.
-4. **O que se cozinhava e se deixou de cozinhar.** Muitas vezes só se perdeu porque ninguém se
-   lembrava dele à hora de decidir — que é exatamente o problema que esta app existe para resolver.
+1. **As receitas de família.** Como as costelas dos sogros. Essas não se geram: ditam-se, entram com
+   `kind: "familia"` em vez de `"gerada"`, e valem mais do que qualquer receita desta lista porque
+   já passaram pela mesa antes de passarem pelo repositório.
+2. **A tua versão de um prato que já está no catálogo.** Se o bitoque cá em casa leva o molho de
+   outra maneira, a receita gerada está errada para ti — e corrigir uma vale mais do que acrescentar
+   uma nova.
+3. **O que se come fora e apetecia fazer em casa.** É o único destes três que ainda pode trazer
+   pratos que não estão na lista.
 
-E, para cada um, **com que acompanhamento se come** — porque agora isso faz parte da receita.
+**Não é para preencher de uma vez.** É para quando te lembrares de uma: dizes, e ela entra. A tabela
+fica aqui para as ir juntando.
 
 | Prato | Com | Quem faz | Estado | id |
 |---|---|---|---|---|
