@@ -55,9 +55,9 @@ export interface ImageCandidate {
 }
 
 /**
- * Licenças que se aceitam. Exclui as `nd` (sem derivações), porque redimensionar e recortar para
- * thumbnail é uma derivação, e as `nc` ficam de fora por precaução — o uso é doméstico, mas o
- * repositório é público e não vale a pena a discussão.
+ * Filtro que se pede ao **Openverse**, que só aceita estes quatro códigos no parâmetro `license`.
+ * Não é a regra do projeto: essa está em `licencaAceitavel()`, é mais larga do que isto, e é
+ * aplicada a seguir sobre o resultado dos quatro bancos. Ver a Q13.
  */
 const ACCEPTED = ['cc0', 'pdm', 'by', 'by-sa'];
 
@@ -125,6 +125,43 @@ function stripHtml(value: string | undefined): string | undefined {
 /** Recusa o que não se pode recortar. A app usa `object-fit: cover`, portanto recorta sempre. */
 function forbidsDerivatives(license: string): boolean {
   return /\bnd\b|no.?deriv/i.test(license);
+}
+
+/**
+ * Licenças permissivas que **não** exigem crédito ao autor: domínio público e equivalentes, mais as
+ * licenças próprias dos bancos curados.
+ */
+const DISPENSA_CREDITO = /\bcc0\b|\bpdm\b|\bpd-|public\s*domain|copyrighted free use|pexels license|pixabay license/i;
+
+/** Licenças permissivas que **exigem** crédito: as CC BY e as etiquetas "Attribution" do Commons. */
+const EXIGE_CREDITO = /\bby(-sa)?\b|attribution/i;
+
+/**
+ * Decide se uma candidata pode entrar num repositório público. Q13, fechada.
+ *
+ * Duas regras, e a segunda é a que faltava.
+ *
+ * **Que licenças.** Aceitam-se as permissivas, sejam CC ou não — o Commons tem etiquetas como
+ * "Copyrighted free use" e "Attribution" que são tão utilizáveis como uma CC BY, e recusá-las por
+ * não estarem numa lista de quatro cortava fotografia boa sem ganhar nada. Recusam-se as `nd`,
+ * porque redimensionar para thumbnail é uma derivação, e as `nc` por precaução: o uso é doméstico,
+ * mas o repositório é público. Uma licença que não se reconheça é recusada — o silêncio não é
+ * permissão.
+ *
+ * **Sem autor, não entra** quando a licença exige crédito. Numa CC BY o crédito é *condição* da
+ * licença, e um ficheiro sem autor identificado não tem como a cumprir: publicá-lo seria violar a
+ * licença com boa consciência. A regra vive aqui, e não na revisão humana, precisamente porque uma
+ * pessoa a rever 185 imagens não repara na que vem sem autor.
+ */
+export function licencaAceitavel(license: string, autor?: string): boolean {
+  if (!license) return false;
+  if (forbidsDerivatives(license)) return false;
+  if (/\bnc\b|noncommercial|non.?commercial/i.test(license)) return false;
+
+  if (DISPENSA_CREDITO.test(license)) return true;
+  if (EXIGE_CREDITO.test(license)) return Boolean(autor?.trim());
+
+  return false;
 }
 
 interface CommonsImageInfo {
@@ -320,7 +357,15 @@ export async function searchFreeImages(query: string, limit = 12): Promise<Image
       console.warn(`  ${name} falhou em "${query}": ${String(error)}`);
     }
   }
-  return found;
+
+  // O portão da Q13 fica aqui e não dentro de cada banco: uma regra num sítio, e nenhum banco novo
+  // pode entrar sem passar por ela.
+  const aceites = found.filter((c) => licencaAceitavel(c.license, c.creator));
+  const recusadas = found.length - aceites.length;
+  if (recusadas > 0) {
+    console.log(`  ${recusadas} candidata(s) recusadas por licença ou por falta de autor`);
+  }
+  return aceites;
 }
 
 /** Como a atribuição tem de ficar guardada na receita para a licença ser cumprida. */

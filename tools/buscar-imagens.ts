@@ -28,8 +28,31 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { paths, rel } from './paths.ts';
 import { searchFreeImages, toCredit, type ImageCandidate } from './import/images.ts';
+
+/**
+ * Termos de procura em inglês, por receita.
+ *
+ * Existe porque a consulta decide as duas metades — o que se procura e o que se aceita — e o nome
+ * português de um prato não aparece em título nenhum do Commons. Sem isto, uma leva de 185 receitas
+ * teria de ser 185 execuções do workflow com `--query` à mão.
+ *
+ * O valor pode ser um termo ou uma lista, do mais específico para o mais geral: tenta-se por ordem
+ * e fica a primeira que dê. É o "vale a pena uma segunda tentativa com um termo mais largo" que a
+ * skill mandava fazer à mão, agora automático.
+ */
+const CONSULTAS = path.join(path.dirname(fileURLToPath(import.meta.url)), 'consultas-de-imagem.json');
+
+function termosPara(recipe: RecipeFile, override?: string): string[] {
+  if (override) return [override];
+  if (!fs.existsSync(CONSULTAS)) return [recipe.name];
+  const mapa = JSON.parse(fs.readFileSync(CONSULTAS, 'utf8')) as Record<string, string | string[]>;
+  const entrada = mapa[recipe.id];
+  if (!entrada) return [recipe.name];
+  return Array.isArray(entrada) ? entrada : [entrada];
+}
 
 /** Acima disto a imagem não vale o peso no repositório nem no bundle. Ver `media/README.md`. */
 const MAX_BYTES = 300 * 1024;
@@ -159,9 +182,18 @@ export function withImage(recipe: RecipeFile, candidate: ImageCandidate): Recipe
  */
 async function findAndSave(
   recipe: RecipeFile,
-  query: string,
-  match: string,
+  termos: string[],
 ): Promise<ImageCandidate | undefined> {
+  for (const [indice, termo] of termos.entries()) {
+    const encontrada = await tentarTermo(recipe, termo);
+    if (encontrada) return encontrada;
+    if (indice < termos.length - 1) console.log(`  a tentar um termo mais largo`);
+  }
+  return undefined;
+}
+
+async function tentarTermo(recipe: RecipeFile, query: string): Promise<ImageCandidate | undefined> {
+  const match = query;
   const candidates = await searchFreeImages(query);
   if (candidates.length === 0) return undefined;
 
@@ -171,7 +203,7 @@ async function findAndSave(
     .sort((a, b) => b.points - a.points);
 
   if (ranked.length === 0) {
-    console.log(`  ${candidates.length} candidata(s), nenhuma convincente`);
+    console.log(`  ${candidates.length} candidata(s), nenhuma convincente para "${query}"`);
     return undefined;
   }
 
@@ -232,8 +264,9 @@ async function main(): Promise<void> {
       continue;
     }
 
-    console.log(`\n${recipe.name}${query ? `  (a procurar "${query}")` : ''}`);
-    const candidate = await findAndSave(recipe, query ?? recipe.name, query ?? recipe.name);
+    const termos = termosPara(recipe, query);
+    console.log(`\n${recipe.name}  (${termos.join(' → ')})`);
+    const candidate = await findAndSave(recipe, termos);
 
     if (!candidate) {
       console.log('  nada aproveitável em nenhum banco');
@@ -244,6 +277,11 @@ async function main(): Promise<void> {
     fs.writeFileSync(full, `${JSON.stringify(withImage(recipe, candidate), null, 2)}\n`, 'utf8');
     console.log(`  → ${rel(full)}`);
     found++;
+
+    // Uma leva de 185 receitas são centenas de pedidos seguidos aos mesmos quatro bancos. A pausa
+    // custa três minutos no total e evita levar com 429 a meio, que deixaria metade do catálogo sem
+    // imagem sem se perceber porquê.
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   }
 
   console.log(`\n✓ ${found} nova(s), ${skipped} já tinha(m), ${missing} sem resultado`);

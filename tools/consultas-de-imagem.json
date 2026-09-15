@@ -1,0 +1,742 @@
+{
+  "bitoque": [
+    "beef steak fried egg",
+    "steak and fries"
+  ],
+  "bifanas": [
+    "pork sandwich",
+    "pork steak sandwich"
+  ],
+  "bife-a-portuguesa": [
+    "beef steak cream sauce",
+    "beef steak"
+  ],
+  "carne-de-porco-a-alentejana": [
+    "pork with clams",
+    "pork clams"
+  ],
+  "rojoes": [
+    "fried pork cubes",
+    "roast pork cubes"
+  ],
+  "costeletas-de-porco-grelhadas": [
+    "grilled pork chops",
+    "pork chop"
+  ],
+  "perna-de-porco-assada": [
+    "roast pork leg",
+    "roast pork"
+  ],
+  "almondegas-com-esparguete": [
+    "spaghetti and meatballs",
+    "meatballs tomato sauce"
+  ],
+  "empadao-de-carne": [
+    "cottage pie",
+    "shepherds pie"
+  ],
+  "jardineira": [
+    "beef stew vegetables",
+    "beef stew"
+  ],
+  "salsichas-frescas-com-pure": [
+    "sausages and mash",
+    "sausage mashed potato"
+  ],
+  "frango-assado-com-piri-piri": [
+    "piri piri chicken",
+    "roast chicken"
+  ],
+  "frango-na-pucara": [
+    "chicken stew wine",
+    "chicken stew"
+  ],
+  "frango-de-churrasco": [
+    "grilled chicken",
+    "barbecue chicken"
+  ],
+  "arroz-de-frango": [
+    "chicken rice",
+    "rice chicken"
+  ],
+  "arroz-de-cabidela": [
+    "chicken blood rice",
+    "chicken rice stew"
+  ],
+  "bifes-de-peru-grelhados": [
+    "grilled turkey steak",
+    "turkey steak"
+  ],
+  "coelho-guisado": [
+    "rabbit stew",
+    "stewed rabbit"
+  ],
+  "bacalhau-a-bras": [
+    "bacalhau a bras",
+    "salt cod potato egg"
+  ],
+  "bacalhau-com-natas": [
+    "cod gratin cream",
+    "cod bake potato"
+  ],
+  "bacalhau-a-gomes-de-sa": [
+    "bacalhau a gomes de sa",
+    "salt cod potato bake"
+  ],
+  "bacalhau-com-broa": [
+    "salt cod cornbread crust",
+    "baked cod"
+  ],
+  "bacalhau-a-lagareiro": [
+    "bacalhau a lagareiro",
+    "roasted cod potatoes"
+  ],
+  "pataniscas-de-bacalhau": [
+    "salt cod fritters",
+    "cod fritters"
+  ],
+  "filetes-de-pescada": [
+    "fried hake fillets",
+    "fried fish fillets"
+  ],
+  "massada-de-peixe": [
+    "fish pasta stew",
+    "fish soup pasta"
+  ],
+  "caldeirada-de-peixe": [
+    "fish stew portuguese",
+    "fish stew"
+  ],
+  "carapaus-grelhados": [
+    "grilled mackerel",
+    "grilled fish"
+  ],
+  "sardinhas-assadas": [
+    "grilled sardines",
+    "sardines"
+  ],
+  "dourada-no-forno": [
+    "baked sea bream",
+    "baked fish potatoes"
+  ],
+  "lulas-grelhadas": [
+    "grilled squid",
+    "squid"
+  ],
+  "choco-frito-a-setubalense": [
+    "fried cuttlefish",
+    "fried squid"
+  ],
+  "acorda-de-camarao": [
+    "shrimp bread stew",
+    "prawn bread soup"
+  ],
+  "migas-a-alentejana": [
+    "migas bread pork",
+    "fried breadcrumbs pork"
+  ],
+  "favas-com-chourico": [
+    "broad beans chorizo",
+    "broad beans stew"
+  ],
+  "feijoada-a-transmontana": [
+    "portuguese bean stew",
+    "bean stew sausage"
+  ],
+  "omelete-de-legumes": [
+    "vegetable omelette",
+    "omelette"
+  ],
+  "esparguete-a-carbonara": [
+    "spaghetti carbonara",
+    "carbonara"
+  ],
+  "esparguete-aglio-e-olio": [
+    "spaghetti aglio e olio",
+    "garlic spaghetti"
+  ],
+  "massa-com-pesto": [
+    "pasta pesto",
+    "pesto"
+  ],
+  "massa-a-bolonhesa": [
+    "spaghetti bolognese",
+    "pasta meat sauce"
+  ],
+  "massa-ao-forno-com-atum": [
+    "tuna pasta bake",
+    "pasta bake"
+  ],
+  "lasanha-de-carne": [
+    "lasagne",
+    "lasagna"
+  ],
+  "bolonhesa-de-lentilhas": [
+    "lentil bolognese",
+    "lentil pasta sauce"
+  ],
+  "penne-allarrabbiata": [
+    "penne arrabbiata",
+    "tomato pasta"
+  ],
+  "risotto-de-cogumelos": [
+    "mushroom risotto",
+    "risotto"
+  ],
+  "risotto-de-camarao": [
+    "prawn risotto",
+    "seafood risotto"
+  ],
+  "pizza-caseira": [
+    "margherita pizza",
+    "pizza"
+  ],
+  "frango-a-cacadora": [
+    "chicken cacciatore",
+    "chicken tomato stew"
+  ],
+  "frango-com-limao-e-alcaparras": [
+    "chicken piccata",
+    "lemon chicken"
+  ],
+  "escalopes-de-peru-panados": [
+    "breaded turkey schnitzel",
+    "schnitzel"
+  ],
+  "cordon-bleu": [
+    "chicken cordon bleu",
+    "cordon bleu"
+  ],
+  "hamburguer-caseiro": [
+    "cheeseburger",
+    "hamburger"
+  ],
+  "bife-stroganoff": [
+    "beef stroganoff",
+    "stroganoff"
+  ],
+  "goulash": [
+    "goulash",
+    "beef paprika stew"
+  ],
+  "chili-con-carne": [
+    "chili con carne",
+    "chili"
+  ],
+  "tacos-de-carne-picada": [
+    "beef tacos",
+    "tacos"
+  ],
+  "fajitas-de-frango": [
+    "chicken fajitas",
+    "fajitas"
+  ],
+  "moussaka": [
+    "moussaka",
+    "aubergine bake"
+  ],
+  "paella": [
+    "paella",
+    "seafood rice"
+  ],
+  "tortilha-de-batata": [
+    "spanish omelette",
+    "tortilla de patatas"
+  ],
+  "quiche-lorraine": [
+    "quiche lorraine",
+    "quiche"
+  ],
+  "tarte-de-alho-frances": [
+    "leek tart",
+    "leek quiche"
+  ],
+  "gratinado-de-batata": [
+    "potato gratin",
+    "gratin dauphinois"
+  ],
+  "shakshuka": [
+    "shakshuka",
+    "eggs tomato sauce"
+  ],
+  "falafel-com-pita": [
+    "falafel pita",
+    "falafel"
+  ],
+  "cuscuz-com-legumes": [
+    "couscous vegetables",
+    "couscous salad"
+  ],
+  "gyros-de-frango": [
+    "chicken gyros",
+    "gyros"
+  ],
+  "caril-de-frango": [
+    "chicken curry",
+    "curry"
+  ],
+  "frango-tikka-masala": [
+    "chicken tikka masala",
+    "tikka masala"
+  ],
+  "butter-chicken": [
+    "butter chicken",
+    "murgh makhani"
+  ],
+  "caril-de-grao-e-espinafres": [
+    "chickpea spinach curry",
+    "chana masala"
+  ],
+  "dahl-de-lentilhas-vermelhas": [
+    "red lentil dahl",
+    "dal"
+  ],
+  "salteado-de-frango-e-legumes": [
+    "chicken stir fry",
+    "stir fry"
+  ],
+  "frango-teriyaki": [
+    "teriyaki chicken",
+    "teriyaki"
+  ],
+  "salmao-teriyaki": [
+    "teriyaki salmon",
+    "glazed salmon"
+  ],
+  "noodles-com-legumes-e-tofu": [
+    "tofu noodles",
+    "vegetable noodles"
+  ],
+  "arroz-chau-chau": [
+    "egg fried rice",
+    "fried rice"
+  ],
+  "yakisoba": [
+    "yakisoba",
+    "fried noodles"
+  ],
+  "pad-thai": [
+    "pad thai",
+    "thai noodles"
+  ],
+  "peixe-em-leite-de-coco": [
+    "coconut fish curry",
+    "fish curry"
+  ],
+  "salada-cesar-com-frango": [
+    "caesar salad chicken",
+    "caesar salad"
+  ],
+  "poke-bowl-de-salmao": [
+    "salmon poke bowl",
+    "poke bowl"
+  ],
+  "wraps-de-frango": [
+    "chicken wrap",
+    "wrap sandwich"
+  ],
+  "ratatouille": [
+    "ratatouille",
+    "stewed vegetables"
+  ],
+  "salmao-no-forno-com-legumes": [
+    "baked salmon vegetables",
+    "baked salmon"
+  ],
+  "arroz-de-pato": [
+    "duck rice",
+    "roast duck rice"
+  ],
+  "arroz-de-marisco": [
+    "seafood rice",
+    "shellfish rice"
+  ],
+  "arroz-de-tamboril": [
+    "monkfish rice",
+    "monkfish stew"
+  ],
+  "polvo-a-lagareiro": [
+    "roasted octopus potatoes",
+    "grilled octopus"
+  ],
+  "leitao-no-forno": [
+    "roast suckling pig",
+    "roast pork crackling"
+  ],
+  "cabrito-assado": [
+    "roast kid goat",
+    "roast goat"
+  ],
+  "bacalhau-assado-com-todos": [
+    "boiled salt cod vegetables",
+    "boiled cod cabbage"
+  ],
+  "feijoada-de-marisco": [
+    "seafood bean stew",
+    "bean stew seafood"
+  ],
+  "rancho-a-moda-da-beira": [
+    "chickpea pasta stew",
+    "chickpea stew"
+  ],
+  "bacalhau-a-ze-do-pipo": [
+    "cod mashed potato bake",
+    "cod gratin"
+  ],
+  "peito-de-vitela-recheado": [
+    "stuffed veal breast",
+    "stuffed roast veal"
+  ],
+  "naco-na-pedra": [
+    "steak on hot stone",
+    "beef steak"
+  ],
+  "francesinha": [
+    "francesinha",
+    "sandwich melted cheese sauce"
+  ],
+  "boeuf-bourguignon": [
+    "boeuf bourguignon",
+    "beef burgundy stew"
+  ],
+  "ossobuco-a-milanesa": [
+    "ossobuco",
+    "braised veal shank"
+  ],
+  "costela-assada-lenta": [
+    "slow roast beef ribs",
+    "barbecue ribs"
+  ],
+  "pernil-de-borrego-no-forno": [
+    "roast leg of lamb",
+    "roast lamb"
+  ],
+  "pato-a-pequinesa-simplificado": [
+    "peking duck",
+    "roast duck pancakes"
+  ],
+  "biryani-de-frango": [
+    "chicken biryani",
+    "biryani"
+  ],
+  "rendang-de-vaca": [
+    "beef rendang",
+    "rendang"
+  ],
+  "tajine-de-frango-com-limao": [
+    "chicken tagine lemon",
+    "tagine"
+  ],
+  "lasanha-de-legumes-assados": [
+    "vegetable lasagne",
+    "vegetarian lasagna"
+  ],
+  "wellington-de-vaca": [
+    "beef wellington",
+    "wellington"
+  ],
+  "costelas-no-forno": [
+    "roasted pork ribs",
+    "pork ribs"
+  ],
+  "caldo-verde": [
+    "caldo verde",
+    "kale potato soup"
+  ],
+  "sopa-de-legumes": [
+    "vegetable soup",
+    "soup"
+  ],
+  "sopa-de-tomate-alentejana": [
+    "tomato soup poached egg",
+    "tomato soup"
+  ],
+  "creme-de-abobora": [
+    "pumpkin soup",
+    "butternut squash soup"
+  ],
+  "creme-de-cenoura": [
+    "carrot soup",
+    "carrot cream soup"
+  ],
+  "creme-de-cogumelos": [
+    "mushroom soup",
+    "cream of mushroom"
+  ],
+  "sopa-de-peixe": [
+    "fish soup",
+    "seafood soup"
+  ],
+  "canja-de-galinha": [
+    "chicken soup",
+    "chicken noodle soup"
+  ],
+  "sopa-da-pedra": [
+    "stone soup bean",
+    "bean soup sausage"
+  ],
+  "sopa-de-feijao-com-hortalica": [
+    "bean cabbage soup",
+    "bean soup"
+  ],
+  "sopa-de-grao-com-espinafres": [
+    "chickpea spinach soup",
+    "chickpea soup"
+  ],
+  "sopa-de-agriao": [
+    "watercress soup",
+    "green soup"
+  ],
+  "gaspacho-alentejano": [
+    "gazpacho",
+    "cold tomato soup"
+  ],
+  "acorda-alentejana": [
+    "bread garlic soup",
+    "bread soup egg"
+  ],
+  "minestrone": [
+    "minestrone",
+    "vegetable pasta soup"
+  ],
+  "sopa-de-cebola-gratinada": [
+    "french onion soup",
+    "onion soup"
+  ],
+  "vichyssoise": [
+    "vichyssoise",
+    "leek potato soup"
+  ],
+  "sopa-de-ervilhas-com-hortela": [
+    "pea soup mint",
+    "pea soup"
+  ],
+  "borscht": [
+    "borscht",
+    "beetroot soup"
+  ],
+  "sopa-de-lentilhas-a-turca": [
+    "red lentil soup",
+    "lentil soup"
+  ],
+  "harira": [
+    "harira",
+    "moroccan soup"
+  ],
+  "sopa-de-tortilha-mexicana": [
+    "tortilla soup",
+    "mexican soup"
+  ],
+  "sopa-de-miso": [
+    "miso soup",
+    "miso"
+  ],
+  "tom-kha-gai": [
+    "tom kha gai",
+    "coconut chicken soup"
+  ],
+  "sopa-de-abobora-com-coco-e-caril": [
+    "curried pumpkin soup",
+    "pumpkin coconut soup"
+  ],
+  "granizado-de-melancia": [
+    "watermelon granita",
+    "granita"
+  ],
+  "granizado-de-limao": [
+    "lemon granita",
+    "granita"
+  ],
+  "granizado-de-cafe": [
+    "coffee granita",
+    "granita"
+  ],
+  "gelado-de-banana": [
+    "banana nice cream",
+    "banana ice cream"
+  ],
+  "gelatina-de-fruta-natural": [
+    "fruit jelly",
+    "jelly dessert"
+  ],
+  "salada-de-fruta": [
+    "fruit salad",
+    "mixed fruit"
+  ],
+  "espetadas-de-fruta": [
+    "fruit skewers",
+    "fruit kebabs"
+  ],
+  "maca-assada-com-canela": [
+    "baked apple cinnamon",
+    "baked apples"
+  ],
+  "ananas-grelhado": [
+    "grilled pineapple",
+    "pineapple slices"
+  ],
+  "iogurte-com-fruta-e-granola": [
+    "yogurt granola parfait",
+    "yogurt fruit"
+  ],
+  "pudim-de-chia-com-fruta": [
+    "chia pudding",
+    "chia seed pudding"
+  ],
+  "mousse-de-iogurte-e-frutos-vermelhos": [
+    "berry yogurt mousse",
+    "berry mousse"
+  ],
+  "salada-de-grao-com-atum": [
+    "chickpea tuna salad",
+    "chickpea salad"
+  ],
+  "salada-de-polvo": [
+    "octopus salad",
+    "octopus"
+  ],
+  "salada-de-tomate-e-cebola": [
+    "tomato onion salad",
+    "tomato salad"
+  ],
+  "salada-de-feijao-frade-com-ovo": [
+    "black eyed pea salad",
+    "bean salad egg"
+  ],
+  "salada-grega": [
+    "greek salad",
+    "feta salad"
+  ],
+  "tabule": [
+    "tabbouleh",
+    "parsley bulgur salad"
+  ],
+  "coleslaw": [
+    "coleslaw",
+    "cabbage salad"
+  ],
+  "arroz-de-tomate": [
+    "tomato rice",
+    "rice tomato"
+  ],
+  "arroz-de-feijao": [
+    "rice and beans",
+    "bean rice"
+  ],
+  "batata-a-murro": [
+    "smashed potatoes garlic",
+    "roast potatoes"
+  ],
+  "batata-frita-no-forno": [
+    "oven baked fries",
+    "potato wedges"
+  ],
+  "pure-de-batata": [
+    "mashed potato",
+    "mashed potatoes"
+  ],
+  "legumes-assados-no-tabuleiro": [
+    "roasted vegetables tray",
+    "roasted vegetables"
+  ],
+  "esparregado": [
+    "creamed spinach",
+    "spinach puree"
+  ],
+  "grelos-salteados-com-alho": [
+    "sauteed greens garlic",
+    "broccoli rabe"
+  ],
+  "peixinhos-da-horta": [
+    "battered green beans",
+    "fried green beans"
+  ],
+  "arroz-doce": [
+    "portuguese rice pudding",
+    "rice pudding"
+  ],
+  "leite-creme": [
+    "creme brulee",
+    "custard cream dessert"
+  ],
+  "pudim-flan": [
+    "flan caramel",
+    "creme caramel"
+  ],
+  "mousse-de-chocolate": [
+    "chocolate mousse",
+    "mousse"
+  ],
+  "bolo-de-bolacha": [
+    "biscuit cake",
+    "icebox cake"
+  ],
+  "baba-de-camelo": [
+    "dulce de leche mousse",
+    "caramel mousse"
+  ],
+  "salame-de-chocolate": [
+    "chocolate salami",
+    "chocolate biscuit log"
+  ],
+  "pasteis-de-nata": [
+    "pastel de nata",
+    "custard tart"
+  ],
+  "bolo-de-laranja": [
+    "orange cake",
+    "citrus cake"
+  ],
+  "bolo-de-iogurte": [
+    "yogurt cake",
+    "sponge cake"
+  ],
+  "bolo-de-cenoura-com-cobertura": [
+    "carrot cake chocolate",
+    "carrot cake"
+  ],
+  "torta-de-laranja": [
+    "orange roll cake",
+    "swiss roll"
+  ],
+  "tarte-de-maca": [
+    "apple tart",
+    "apple pie"
+  ],
+  "queijadas": [
+    "queijada",
+    "cheese tartlets"
+  ],
+  "brownies": [
+    "chocolate brownies",
+    "brownies"
+  ],
+  "panquecas": [
+    "pancakes",
+    "pancake stack"
+  ],
+  "papas-de-aveia": [
+    "porridge oats",
+    "oatmeal"
+  ],
+  "pao-caseiro": [
+    "homemade bread loaf",
+    "bread loaf"
+  ],
+  "broa-de-milho": [
+    "cornbread loaf",
+    "corn bread"
+  ],
+  "pao-recheado-com-chourico-e-queijo": [
+    "chorizo cheese bread",
+    "stuffed bread"
+  ],
+  "bolo-rei": [
+    "bolo rei",
+    "fruit ring cake"
+  ],
+  "filhoses": [
+    "portuguese fried dough",
+    "fried dough"
+  ]
+}

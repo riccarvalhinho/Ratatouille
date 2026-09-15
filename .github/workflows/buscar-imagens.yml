@@ -23,7 +23,7 @@ on:
         description: 'Ramo onde commitar'
         required: false
         type: string
-        default: claude/kitchen-app-planning-o8v0b5
+        default: claude/bold-hawking-ta6f66
 
 permissions:
   contents: write

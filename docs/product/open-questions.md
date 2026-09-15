@@ -234,29 +234,36 @@ As decisões concretas em cima da mesa estão em `docs/product/metadata-receitas
 
 ---
 
-## Q13 — Que licenças do Commons se aceitam mesmo, e o que fazer sem autor?
+## Q13 — Que licenças do Commons se aceitam mesmo, e o que fazer sem autor? ✅
 
-**Estado:** Aberta
+**Estado:** Fechada · 2026-09-15 · aplicada em `tools/import/images.ts`
 
-`tools/import/images.ts` diz aceitar do Commons "CC BY, CC BY-SA, CC0, domínio público", mas o
-código só recusa as `nd` — tudo o resto passa. A procurar fotografia para as costelas no forno veio
-uma candidata com a etiqueta **"Copyrighted free use"**, que não é nenhuma das quatro, e **sem
-autor**, portanto o `imageCredit` ficou só com licença e fonte.
+Vinha de uma incoerência: o módulo dizia aceitar quatro licenças — CC BY, CC BY-SA, CC0 e domínio
+público — mas o código só recusava as `nd`, portanto tudo o resto passava. E a fotografia candidata
+para as costelas veio com a etiqueta "Copyrighted free use" e **sem autor**.
 
-Duas perguntas, e a segunda é a que interessa:
+**Resposta, nas duas metades:**
 
-1. A lista das quatro é para cumprir à letra, ou era só descritiva? Há etiquetas do Commons
-   permissivas que não são CC ("Copyrighted free use", "Attribution", PD-*), e recusá-las corta
-   fotografia utilizável.
-2. **Uma imagem sem autor identificado deve ser aceite?** Numa CC BY o crédito ao autor é condição
-   da licença; sem autor não há como cumprir. O schema já só exige `license`, o que deixa passar
-   este caso sem ninguém dar por ele.
+1. **Aceitam-se as permissivas todas, CC ou não.** A lista de quatro era descritiva e não uma regra.
+   O Commons tem etiquetas como "Copyrighted free use", "Attribution" e as PD-* que são tão
+   utilizáveis como uma CC BY, e recusá-las por não estarem numa lista cortava fotografia boa sem
+   ganhar nada. Continuam de fora as `nd` — redimensionar para thumbnail é uma derivação — e as
+   `nc`, por precaução, porque o uso é doméstico mas o repositório é público. **Uma licença que não
+   se reconheça é recusada:** o silêncio não é permissão.
+2. **Sem autor identificado, não entra — quando a licença exige crédito.** Numa CC BY o crédito é
+   *condição* da licença, e um ficheiro sem autor não tem como a cumprir. CC0, domínio público, PDM
+   e as licenças próprias do Pexels e do Pixabay passam sem autor, porque não o pedem.
 
-Enquanto não se decidir, o aviso do preview (`npm run import:preview`) mostra o crédito tal como
-ficou, e quem revê vê o que falta.
+**Onde vive a regra, e porquê aí.** Numa só função, `licencaAceitavel()`, aplicada uma vez sobre o
+resultado dos quatro bancos em vez de espalhada por cada um — nenhum banco novo pode entrar sem
+passar por ela. E vive no código e não na revisão humana de propósito: **uma pessoa a rever 185
+imagens não repara na que vem sem autor**, e era exatamente esse o caso que abriu a questão.
 
-Custo de não decidir: baixo por agora — há seis receitas e uma imagem. Sobe quando o catálogo
-crescer, porque corrigir licenças em retrospetiva num repositório público é trabalho chato.
+Verificada contra dezassete casos, dos permissivos aos proibitivos, incluindo os dois que a
+motivaram: "Copyrighted free use" sem autor passa, "CC BY" sem autor não.
+
+**O que continua a ser humano:** confirmar que a fotografia mostra o prato certo. Isso nenhuma
+licença resolve.
 
 ---
 
