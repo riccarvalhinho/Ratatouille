@@ -100,6 +100,13 @@ importador estima.
 `prepAhead` é a antecedência que **não** é tempo ativo — marinar, demolhar, levedar, arrefecer — e por
 isso **não entra no total**. Somá-la faria o bacalhau com natas parecer uma receita de 25 horas.
 
+**Se essa espera também vira passo depende de haver alguém à espera dela.** O granizado, cujo ciclo
+de congelar e raspar de hora a hora é a receita, leva passos com temporizador; a demolha do bacalhau
+de véspera não leva, porque ninguém quer um temporizador de 24 horas no tablet. Daí decorre uma
+coisa que parece erro e não é: numa receita do primeiro tipo, os `durationMinutes` dos passos somam
+muito mais do que o tempo total — medem coisas diferentes. O teste está em
+`.claude/skills/importar-receita/SKILL.md`.
+
 ## Ingredientes
 
 Lista única de `{ ref, quantity, unit, note, optional }`, onde `ref` aponta para um ingrediente

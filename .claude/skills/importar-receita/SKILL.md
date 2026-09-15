@@ -91,10 +91,17 @@ Regras ao perguntar:
 ```bash
 npm run import:save -- /tmp/rascunho.json
 npm run validate
+npm run import:sanidade -- <id>
 ```
 
 O `import:save` grava em `data/recipes/<id>.json` e decide sozinho o `status` e os `gaps`. O
 `validate` confirma o schema e a integridade referencial.
+
+O `import:sanidade` é outra coisa e **não substitui nenhum dos dois**: procura desleixo que passa na
+validação toda — um título que repete o texto, um ingrediente que nenhum passo usa, um passo que usa
+um ingrediente que a receita não declara, tempos que não batem certo, calorias absurdas. São
+**suspeitas, não erros**: pode enganar-se, e confirma-se uma a uma antes de mexer. Numa receita
+escrita à mão vale pouco; numa leva de vinte é a diferença entre rever e fingir que se reviu.
 
 ### 5. Procurar a fotografia
 
@@ -228,6 +235,28 @@ prato que existe sem ele (a farinheira num cozido), escreve-se a receita sem ele
 Se alguma vez aparecer um pedido para importar uma receita que os leve, **perguntar** em vez de
 decidir sozinho — pode ser uma receita de família, e aí a decisão é de quem a deu.
 
+## A antecedência vira passo, ou não?
+
+`prepAhead` nunca entra no tempo total — isso já estava decidido. O que faltava era saber se a
+espera **também** se escreve como passo, e a vaga 1 mostrou porquê: a demolha do bacalhau ficou sem
+passo e o congelamento do granizado ficou com dois, as duas a cumprir a regra escrita.
+
+**O teste é um só: quando a espera acabar, há alguém ao pé do tablet?**
+
+- **Sim → é passo, com `durationMinutes` e `passive: true`.** A espera faz parte de cozinhar e o
+  temporizador do modo cozinha serve mesmo para alguma coisa. É o granizado, em que o ciclo de
+  congelar e raspar de hora a hora **é** a receita. É a massa levedada, em que se volta para a
+  bater. É o arrefecer que tem de acontecer antes do passo seguinte.
+- **Não → fica só em `prepAhead`, e diz-se na `narrative`.** A espera acontece longe da cozinha e
+  ninguém quer um temporizador de 24 horas no tablet. É o bacalhau a demolhar de véspera, a carne a
+  marinar de um dia para o outro, a massa a descansar no frigorífico durante a noite.
+
+**Consequência que não é defeito:** numa receita do primeiro tipo, os `durationMinutes` dos passos
+somam muito mais do que o tempo total — o granizado soma 73 minutos contra um total de 10. Está
+certo, porque as duas coisas medem coisas diferentes: o total é o tempo que se passa na cozinha, e
+os passos incluem a espera em que não se está lá. Não "corrigir" isto inflacionando `cookMinutes`;
+seria pôr quatro horas de congelador num campo que diz tempo de confeção.
+
 ## Como se escrevem os passos
 
 **Passos ao nível de tarefa: uma ação e a espera que lhe pertence.** Dois limites, e nenhum é de
@@ -263,7 +292,8 @@ espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É bar
 - Passos ao nível de tarefa, com título. Nunca parágrafos, nunca um passo por gesto. Ver a secção
   "Como se escrevem os passos" — é a regra mais fácil de aplicar mal.
 - Tempo total inclui a preparação estimada; a antecedência (marinar, demolhar) é campo à parte e
-  **não** entra no total
+  **não** entra no total. Vira passo quando a espera é a receita, não vira quando acontece longe da
+  cozinha — o teste está na secção "A antecedência vira passo, ou não?"
 - `weight` atribui-se pela rubrica em `docs/product/metadata-receitas.md`, não a olho
 - A origem de cozinha pergunta-se **sempre**, e "não tem" é resposta válida
 - Não há campo de dificuldade nem de Nutri-Score

@@ -32,6 +32,9 @@ fonte (link, foto, texto colado, ou de cabeça)
   npm run validate     ← falha se algo não bater certo com o schema
         │
         ▼
+  npm run import:sanidade  ← suspeitas que passam no schema: título a repetir o
+        │                    texto, ingrediente sem passo, tempos que não batem
+        ▼
   revisão humana        ← ler o ficheiro, corrigir o que estiver errado
         │
         ▼
