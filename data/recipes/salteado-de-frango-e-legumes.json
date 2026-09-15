@@ -1,0 +1,172 @@
+{
+  "id": "salteado-de-frango-e-legumes",
+  "name": "Salteado de frango e legumes",
+  "description": "Stir-fry de wok com frango e legumes crocantes, molho de soja e gengibre. Com arroz.",
+  "narrative": "Stir-fry é um prato de preparação e não de cozedura: corta-se tudo antes, porque depois de o wok aquecer não há tempo para nada. O frango vai primeiro, sozinho, em lume máximo e sem mexer nos primeiros trinta segundos. Retira-se, fazem-se os legumes por ordem de dureza — cenoura, brócolos, pimento —, e junta-se tudo com o molho no fim, que reduz em menos de um minuto.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "legumes",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "wok",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em palitos"
+    },
+    {
+      "ref": "brocolos",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em floretes"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "amido-de-milho",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cortar tudo antes",
+      "text": "Frango em tiras, cenoura em palitos, brócolos em floretes pequenos, pimento e cebola. Molho de soja misturado com o amido, o gengibre e o alho.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "cenoura",
+        "brocolos",
+        "pimento-vermelho",
+        "cebola",
+        "molho-de-soja",
+        "amido-de-milho",
+        "gengibre",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Saltear o frango",
+      "text": "Wok em lume máximo com o óleo, frango espalhado e sem mexer os primeiros trinta segundos. Retirar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Saltear os legumes por ordem",
+      "text": "Cenoura primeiro, depois brócolos, pimento e cebola, sempre a saltear. Ficam com resistência.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Juntar o molho e servir",
+      "text": "Frango de volta e o molho por cima, a envolver até engrossar. Sésamo e arroz ao lado.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 48,
+    "carbsGrams": 76,
+    "fatGrams": 14,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 7,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

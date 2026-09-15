@@ -1,0 +1,149 @@
+{
+  "id": "salmao-teriyaki",
+  "name": "Salmão teriyaki",
+  "description": "Lombos de salmão laqueados em molho de soja e mirim, com arroz e edamame.",
+  "narrative": "O molho é o mesmo do frango teriyaki, e faz-se antes. O salmão sela-se com a pele para baixo em lume forte, sem se mexer, até a pele ficar estaladiça e soltar-se sozinha da frigideira. Vira-se um minuto, escorre-se a gordura, e o molho entra a reduzir à volta até ficar espesso, a regar o peixe com a colher. O arroz e o edamame fazem-se em paralelo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "asiatica",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-salmao",
+      "quantity": 4,
+      "unit": "un",
+      "note": "com pele"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "mirim",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "edamame",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Misturar o molho",
+      "text": "Soja, mirim, açúcar e gengibre numa taça, até o açúcar desaparecer.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "molho-de-soja",
+        "mirim",
+        "acucar",
+        "gengibre"
+      ]
+    },
+    {
+      "title": "Selar o salmão na pele",
+      "text": "Óleo em lume forte, pele para baixo, sem mexer, até ficar estaladiça e soltar-se sozinha. Virar um minuto.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "lombo-de-salmao",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Laquear com o molho",
+      "text": "Escorrer a gordura, molho à volta a reduzir, a regar o peixe com a colher até ficar brilhante.",
+      "durationMinutes": 4
+    },
+    {
+      "title": "Cozer o edamame e servir",
+      "text": "Cinco minutos em água a ferver com sal. Sobre o arroz, com sésamo por cima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "edamame",
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 48,
+    "carbsGrams": 78,
+    "fatGrams": 18,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 6,
+    "saltGrams": 3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

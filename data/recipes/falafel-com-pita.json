@@ -1,0 +1,187 @@
+{
+  "id": "falafel-com-pita",
+  "name": "Falafel com pita",
+  "description": "Bolinhos de grão cru demolhado, fritos, com pita, salada e molho de iogurte.",
+  "narrative": "O grão tem de ser seco e demolhado de véspera, nunca cozido nem de lata — grão cozido não agarra e os falafel desfazem-se no óleo. Tritura-se cru com cebola, alho, salsa, coentros e especiarias, até ficar uma areia húmida que se aperta na mão. Repousa no frio meia hora. Fritam-se em óleo a 170 graus, dourados por fora. O molho de iogurte e a salada fazem-se enquanto a massa repousa.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "vegetariano",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 30,
+    "cookMinutes": 20,
+    "prepAhead": {
+      "minutes": 720,
+      "description": "Demolhar o grão seco de véspera, doze horas em água fria"
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "processador-de-alimentos",
+    "escumadeira",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-seco",
+      "quantity": 400,
+      "unit": "g",
+      "note": "demolhado de véspera"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "pao-pita",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "tahini",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Triturar o grão cru",
+      "text": "Grão demolhado e escorrido com cebola, alho, salsa, coentros, cominhos, sal e pimenta, até ficar uma areia húmida que se aperta na mão.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "grao-de-bico-seco",
+        "cebola",
+        "dente-de-alho",
+        "salsa",
+        "coentros",
+        "cominhos",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Ligar e repousar no frio",
+      "text": "Farinha envolvida, meia hora tapado no frigorífico.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "farinha-de-trigo"
+      ]
+    },
+    {
+      "title": "Fazer o molho e a salada",
+      "text": "Iogurte, tahini, sumo de limão e sal batidos. Tomate, pepino e alface aos pedaços.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "iogurte-natural",
+        "tahini",
+        "limao",
+        "tomate",
+        "pepino",
+        "alface"
+      ]
+    },
+    {
+      "title": "Bolear e fritar",
+      "text": "Bolas do tamanho de uma noz, fritas em óleo a 170 graus, poucas de cada vez, até ficarem castanhas.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Montar nas pitas",
+      "text": "Pitas aquecidas na frigideira seca, abertas, com salada, falafel e o molho por cima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pao-pita"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 28,
+    "carbsGrams": 82,
+    "fatGrams": 32,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 16,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

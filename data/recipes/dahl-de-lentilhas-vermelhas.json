@@ -1,0 +1,157 @@
+{
+  "id": "dahl-de-lentilhas-vermelhas",
+  "name": "Dahl de lentilhas vermelhas",
+  "description": "Lentilhas desfeitas em caldo com curcuma, rematadas com especiarias fritas em manteiga. Com arroz.",
+  "narrative": "As lentilhas vermelhas desfazem-se sozinhas em vinte minutos e é isso que se quer — dahl é puré e não sopa de lentilhas inteiras. Cozem em água com curcuma e sal, mexidas de vez em quando para não agarrarem. O que faz o prato é o remate: cominhos, alho laminado e malagueta fritos em manteiga até cheirarem, e despejados por cima na hora de servir, ainda a crepitar.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "indiana",
+    "dia-a-dia",
+    "vegetariano",
+    "conforto"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "frigideira"
+  ],
+  "ingredients": [
+    {
+      "ref": "lentilha-vermelha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as lentilhas",
+      "text": "Lentilhas lavadas em água com curcuma, gengibre, cebola picada e sal, a mexer de vez em quando, até se desfazerem.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "lentilha-vermelha",
+        "curcuma",
+        "gengibre",
+        "cebola",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Basmati lavado, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-basmati"
+      ]
+    },
+    {
+      "title": "Fritar o remate",
+      "text": "Manteiga quente com cominhos, alho laminado e malagueta, até o alho ficar dourado e cheirar.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "manteiga",
+        "cominhos",
+        "dente-de-alho",
+        "malagueta"
+      ]
+    },
+    {
+      "title": "Servir com o remate por cima",
+      "text": "Despejar a manteiga temperada sobre o dahl ainda a crepitar. Coentros e limão.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "coentros",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 26,
+    "carbsGrams": 96,
+    "fatGrams": 14,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 14,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

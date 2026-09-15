@@ -1,0 +1,136 @@
+{
+  "id": "gratinado-de-batata",
+  "name": "Gratinado de batata",
+  "description": "Batata em rodelas finas cozida em natas com alho e noz-moscada, gratinada devagar.",
+  "narrative": "A batata corta-se muito fina, de mandolina se houver, e não se lava depois de cortada — é o amido que solta que engrossa as natas e liga o gratinado. As rodelas escaldam-se nas natas com alho e noz-moscada cinco minutos antes de irem para a travessa, o que encurta o forno e garante que ficam cozidas. Depois é uma hora a 160 graus, devagar, e o queijo só na última meia hora.",
+  "servings": 6,
+  "needsSide": true,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "francesa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 70
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "pirex",
+    "mandolina",
+    "folha-de-aluminio"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em rodelas muito finas"
+    },
+    {
+      "ref": "natas",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "queijo-gruyere",
+      "quantity": 120,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 20,
+      "unit": "g",
+      "note": "para untar"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar a batata nas natas",
+      "text": "Rodelas finas, sem lavar, no tacho com as natas, o leite, o alho, noz-moscada, sal e pimenta. Cinco minutos a ferver brandamente.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "batata",
+        "natas",
+        "leite",
+        "dente-de-alho",
+        "noz-moscada",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Montar na travessa",
+      "text": "Travessa untada, batata e natas espalhadas por igual e prensadas com as costas da colher.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Cozer devagar",
+      "text": "Forno a 160 graus, tapado com alumínio a primeira meia hora.",
+      "durationMinutes": 40,
+      "temperatureC": 160,
+      "passive": true
+    },
+    {
+      "title": "Gratinar com o queijo",
+      "text": "Queijo ralado por cima, destapado, até ficar dourado e a faca entrar sem resistência.",
+      "durationMinutes": 30,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "queijo-gruyere"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 12,
+    "carbsGrams": 42,
+    "fatGrams": 34,
+    "saturatedFatGrams": 21,
+    "fibreGrams": 4,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

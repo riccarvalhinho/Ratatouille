@@ -1,0 +1,161 @@
+{
+  "id": "quiche-lorraine",
+  "name": "Quiche Lorraine",
+  "description": "Tarte salgada de bacon e natas em massa quebrada, com salada verde.",
+  "narrative": "A massa coze primeiro sozinha, com pesos por cima, vinte minutos — sem essa cozedura em branco o fundo fica cru e mole debaixo do recheio. O bacon tosta-se e escorre-se da gordura. O recheio é ovos, natas, leite e noz-moscada, batidos só até ligar, sem espuma. Coze a 180 graus até o centro abanar como gelatina e não como líquido, e ganha corpo ao arrefecer.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "ovos",
+    "francesa",
+    "conforto"
+  ],
+  "methods": [
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "forma-de-tarte",
+    "papel-vegetal",
+    "vara-de-arames"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-quebrada",
+      "quantity": 1,
+      "unit": "un",
+      "note": "disco"
+    },
+    {
+      "ref": "bacon",
+      "quantity": 200,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "natas",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "leite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-gruyere",
+      "quantity": 100,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a massa em branco",
+      "text": "Massa na forma, picada com o garfo, com papel vegetal e pesos por cima. Forno a 190 graus.",
+      "durationMinutes": 25,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "massa-quebrada"
+      ]
+    },
+    {
+      "title": "Tostar o bacon",
+      "text": "Frigideira seca em lume médio, até tostar. Escorrer a gordura em papel.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "bacon"
+      ]
+    },
+    {
+      "title": "Bater o recheio",
+      "text": "Ovos, natas, leite, noz-moscada, sal e pimenta, batidos só até ligar e sem fazer espuma.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo",
+        "natas",
+        "leite",
+        "noz-moscada",
+        "pimenta-preta",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer a quiche",
+      "text": "Bacon e queijo na base, recheio por cima, a 180 graus até o centro abanar como gelatina.",
+      "durationMinutes": 35,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "queijo-gruyere"
+      ]
+    },
+    {
+      "title": "Arrefecer e servir",
+      "text": "Quinze minutos antes de cortar. Alface temperada com azeite, vinagre e sal.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "alface",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 700,
+    "proteinGrams": 26,
+    "carbsGrams": 38,
+    "fatGrams": 52,
+    "saturatedFatGrams": 26,
+    "fibreGrams": 2,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

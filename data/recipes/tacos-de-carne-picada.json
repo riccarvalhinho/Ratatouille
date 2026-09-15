@@ -1,0 +1,178 @@
+{
+  "id": "tacos-de-carne-picada",
+  "name": "Tacos de carne picada",
+  "description": "Carne temperada com cominhos e colorau, com tortilhas e os acompanhamentos à mesa.",
+  "narrative": "A carne sela-se bem, tosta as especiarias no próprio fundo e apura só dez minutos com um pouco de água, até ficar húmida mas não caldosa — molhada de mais, encharca a tortilha e o taco desfaz-se na mão. Tudo o resto se prepara cru enquanto a carne apura: guacamole esmagado com o garfo, tomate com cebola e coentros, limas em gomos. As tortilhas aquecem-se numa frigideira seca, à última.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "mexicana",
+    "dia-a-dia",
+    "festa"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "tortilha-de-trigo",
+      "quantity": 12,
+      "unit": "un"
+    },
+    {
+      "ref": "abacate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Selar a carne",
+      "text": "Carne em azeite bem quente, a desfazer com a colher, até perder a água e tostar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "carne-picada-de-vaca",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Tostar as especiarias e apurar",
+      "text": "Cebola, alho e malagueta a amolecer, cominhos e colorau meio minuto no fundo, depois a água até secar quase toda.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "malagueta",
+        "cominhos",
+        "colorau",
+        "agua"
+      ]
+    },
+    {
+      "title": "Fazer o guacamole",
+      "text": "Abacate esmagado com o garfo, sumo de uma lima, sal e coentros picados.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "abacate",
+        "lima",
+        "coentros"
+      ]
+    },
+    {
+      "title": "Preparar o tomate",
+      "text": "Tomate em cubos com a cebola roxa picada, coentros, sal e o resto da lima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tomate",
+        "cebola-roxa"
+      ]
+    },
+    {
+      "title": "Aquecer as tortilhas",
+      "text": "Frigideira seca, meio minuto de cada lado, empilhadas num pano. Montar à mesa.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tortilha-de-trigo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 740,
+    "proteinGrams": 38,
+    "carbsGrams": 62,
+    "fatGrams": 38,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 10,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

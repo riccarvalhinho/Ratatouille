@@ -1,0 +1,221 @@
+{
+  "id": "moussaka",
+  "name": "Moussaka",
+  "description": "Beringela, carne de borrego e bechamel em camadas, gratinadas. Com salada grega.",
+  "narrative": "As beringelas cortam-se em fatias, salgam-se e ficam meia hora a escorrer — é o que lhes tira o amargo e a água, e sem isso a moussaka fica aguada por baixo. Assam-se no forno em vez de fritas, com azeite. A carne apura com tomate, canela e orégãos. Monta-se em camadas, acaba em bechamel com queijo, e vai ao forno quarenta minutos. Repousa antes de cortar.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "legumes",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 35,
+    "cookMinutes": 75
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "pirex",
+    "tabuleiro-de-forno",
+    "escorredor",
+    "vara-de-arames"
+  ],
+  "ingredients": [
+    {
+      "ref": "beringela",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em fatias"
+    },
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "vinho-tinto",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "canela-em-po",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 700,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-ralado",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-feta",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Salgar e escorrer a beringela",
+      "text": "Fatias salgadas em camadas num escorredor, meia hora, depois secas com pano.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "beringela",
+        "sal"
+      ]
+    },
+    {
+      "title": "Assar a beringela",
+      "text": "Fatias pinceladas com azeite no tabuleiro, a 200 graus, viradas a meio, até dourarem.",
+      "durationMinutes": 25,
+      "temperatureC": 200,
+      "passive": true,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar a carne",
+      "text": "Cebola e alho no azeite, carne a tostar, vinho tinto a evaporar, tomate pelado, canela e orégãos. Vinte minutos.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "carne-picada-de-vaca",
+        "vinho-tinto",
+        "tomate-pelado",
+        "canela-em-po",
+        "oregaos",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o bechamel",
+      "text": "Manteiga e farinha um minuto, leite quente aos poucos a bater, até napar. Fora do lume, o ovo e metade do queijo.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "manteiga",
+        "farinha-de-trigo",
+        "leite",
+        "ovo",
+        "queijo-ralado"
+      ]
+    },
+    {
+      "title": "Montar e gratinar",
+      "text": "Beringela, carne, beringela, bechamel e o resto do queijo. Forno a 190 graus até dourar. Repousar dez minutos.",
+      "durationMinutes": 45,
+      "temperatureC": 190,
+      "passive": true
+    },
+    {
+      "title": "Fazer a salada grega",
+      "text": "Tomate, pepino, feta aos cubos e azeitonas, com azeite, vinagre, orégãos e sal.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "tomate",
+        "pepino",
+        "queijo-feta",
+        "azeitona",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 920,
+    "proteinGrams": 48,
+    "carbsGrams": 52,
+    "fatGrams": 58,
+    "saturatedFatGrams": 24,
+    "fibreGrams": 9,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

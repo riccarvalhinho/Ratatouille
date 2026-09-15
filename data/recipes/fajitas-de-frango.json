@@ -1,0 +1,181 @@
+{
+  "id": "fajitas-de-frango",
+  "name": "Fajitas de frango",
+  "description": "Frango e pimentos salteados em lume forte, com tortilhas, arroz e feijão.",
+  "narrative": "O frango corta-se em tiras e marina meia hora em lima, cominhos, colorau e alho. Salteia-se em lume muito forte, aos poucos, sem mexer até ganhar cor. Os pimentos e a cebola fazem-se a seguir na mesma frigideira, e devem ficar com resistência — moles, viram legumes cozidos e o prato perde o contraste. O arroz e o feijão fazem-se antes e servem-se ao lado.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "mexicana",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "pimento-verde",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tortilha-de-trigo",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "arroz-agulha",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango",
+      "text": "Tiras em sumo de lima, cominhos, colorau, alho, sal e pimenta. Meia hora.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "lima",
+        "cominhos",
+        "colorau",
+        "dente-de-alho",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz, o dobro de água a ferver e sal, tapado, 12 minutos. Envolver o feijão escorrido no fim.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-agulha",
+        "agua",
+        "feijao-encarnado-cozido"
+      ]
+    },
+    {
+      "title": "Saltear o frango",
+      "text": "Frigideira a fumegar, tiras em duas levas, sem mexer até ganharem cor. Retirar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Saltear os pimentos",
+      "text": "Pimentos e cebola no mesmo fundo, lume forte, cinco minutos, ainda com resistência.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pimento-vermelho",
+        "pimento-verde",
+        "cebola"
+      ]
+    },
+    {
+      "title": "Aquecer as tortilhas e montar",
+      "text": "Frigideira seca, meio minuto de cada lado. Frango de volta aos pimentos, coentros e a outra lima.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tortilha-de-trigo",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 48,
+    "carbsGrams": 82,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 10,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

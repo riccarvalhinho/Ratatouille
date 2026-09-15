@@ -1,0 +1,158 @@
+{
+  "id": "shakshuka",
+  "name": "Shakshuka",
+  "description": "Ovos escalfados num molho de tomate e pimento com cominhos, com pão para molhar.",
+  "narrative": "O molho é onde está o prato: cebola e pimento a amolecer devagar, cominhos e colorau tostados no fundo, tomate a apurar vinte minutos até engrossar e o azeite voltar à superfície. Abrem-se covas com as costas da colher e parte-se um ovo em cada, tapado, cinco a sete minutos — a clara tem de firmar e a gema ficar mole, e passa do ponto depressa. Coentros e pão à mesa.",
+  "servings": 3,
+  "labels": [
+    "prato-principal",
+    "ovos",
+    "legumes",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "optional": true
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amolecer cebola e pimento",
+      "text": "Em azeite, lume brando, até ficarem macios e doces.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "pimento-vermelho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Tostar as especiarias",
+      "text": "Alho, cominhos, colorau e malagueta meio minuto no fundo, a mexer.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "cominhos",
+        "colorau",
+        "malagueta"
+      ]
+    },
+    {
+      "title": "Apurar o molho",
+      "text": "Tomate pelado esmagado, sal e pimenta, até engrossar e o azeite voltar à superfície.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Escalfar os ovos",
+      "text": "Covas no molho com as costas da colher, um ovo em cada, tapado, até a clara firmar e a gema ficar mole.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Coentros por cima e pão à mesa para molhar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "coentros",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 22,
+    "carbsGrams": 32,
+    "fatGrams": 24,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 7,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

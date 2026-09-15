@@ -1,0 +1,184 @@
+{
+  "id": "gyros-de-frango",
+  "name": "Gyros de frango",
+  "description": "Frango marinado em iogurte e especiarias, com pita, batata frita e tzatziki.",
+  "narrative": "O iogurte da marinada não é só sabor: o ácido e o cálcio amaciam a carne sem a desfazer como o limão sozinho faria. O frango marina pelo menos duas horas e salteia-se em lume forte, em levas. O tzatziki quer pepino ralado e espremido com as mãos — não espremido, o molho fica aguado dentro de meia hora. As batatas vão ao forno e as pitas aquecem no fim.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "dia-a-dia",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 30,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Marinar o frango duas horas, ou de véspera"
+    }
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "frigideira",
+    "ralador",
+    "tabuleiro-de-forno"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 400,
+      "unit": "g",
+      "note": "150 g para a marinada, o resto para o tzatziki"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "ralado"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-pita",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "batata",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em palitos"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango",
+      "text": "Tiras em iogurte, alho, orégãos, colorau, cominhos, limão, sal e pimenta. Duas horas no frigorífico.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "iogurte-natural",
+        "dente-de-alho",
+        "oregaos",
+        "colorau",
+        "cominhos",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar a batata",
+      "text": "Palitos com azeite e sal, a 220 graus, virados a meio.",
+      "durationMinutes": 30,
+      "temperatureC": 220,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Fazer o tzatziki",
+      "text": "Pepino ralado e espremido com as mãos, misturado com iogurte, alho, hortelã e sal.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "pepino",
+        "hortela"
+      ]
+    },
+    {
+      "title": "Saltear o frango",
+      "text": "Frigideira a fumegar, em duas levas, sem mexer até ganhar cor.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Aquecer as pitas e montar",
+      "text": "Pitas na frigideira seca, abertas, com frango, tomate, cebola roxa e tzatziki.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "pao-pita",
+        "tomate",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 52,
+    "carbsGrams": 78,
+    "fatGrams": 28,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 7,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

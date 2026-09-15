@@ -1,0 +1,146 @@
+{
+  "id": "tortilha-de-batata",
+  "name": "Tortilha de batata",
+  "description": "Batata e cebola confitadas em azeite, ligadas em ovo e cozidas devagar. Com salada e pão.",
+  "narrative": "A batata não se frita, confita-se: em azeite morno e em lume brando, tapada, até ficar macia sem ganhar cor. Escorre-se e mistura-se quente com os ovos batidos, e deixa-se repousar dez minutos para a batata beber o ovo. Coze-se em lume brando numa frigideira pequena, e vira-se com a ajuda de um prato. O centro deve ficar cremoso, não seco.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "ovos",
+    "mediterranica",
+    "dia-a-dia",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "escorredor",
+    "taca",
+    "mandolina"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em rodelas finas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "pao-rustico",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Confitar a batata e a cebola",
+      "text": "Rodelas finas e cebola em azeite morno, tapadas, em lume brando, até ficarem macias sem corar. Escorrer o azeite.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cebola",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Ligar com o ovo",
+      "text": "Ovos batidos com sal e pimenta, a batata quente envolvida dentro. Repousar dez minutos.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "ovo",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer devagar",
+      "text": "Frigideira pequena com um fio do azeite, em lume brando, até a borda firmar e o centro ainda abanar.",
+      "durationMinutes": 8
+    },
+    {
+      "title": "Virar com um prato",
+      "text": "Prato por cima, virar a frigideira, e deslizar de volta para acabar do outro lado.",
+      "durationMinutes": 5
+    },
+    {
+      "title": "Servir com salada e pão",
+      "text": "Tomate e cebola roxa com orégãos, azeite, vinagre e sal. Pão à mesa.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "tomate",
+        "cebola-roxa",
+        "oregaos",
+        "vinagre-de-vinho",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 22,
+    "carbsGrams": 52,
+    "fatGrams": 38,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 5,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

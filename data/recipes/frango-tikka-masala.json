@@ -1,0 +1,195 @@
+{
+  "id": "frango-tikka-masala",
+  "name": "Frango tikka masala",
+  "description": "Frango marinado em iogurte e especiarias, grelhado, num molho cremoso de tomate. Com basmati e naan.",
+  "narrative": "São duas metades e a primeira é que faz o prato: o frango marina em iogurte com garam masala, gengibre e alho, e grelha-se em lume muito forte até ganhar manchas escuras. Esse tostado não se consegue dentro do molho. O masala faz-se à parte, com cebola alourada, especiarias tostadas, tomate e natas, e o frango junta-se no fim. O arroz faz-se em paralelo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "indiana",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "Marinar o frango duas horas, ou de véspera"
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "garam-masala",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "pao-naan",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango",
+      "text": "Cubos em iogurte, metade do garam masala, gengibre, alho, colorau e sal. Duas horas no frigorífico.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "iogurte-natural",
+        "garam-masala",
+        "gengibre",
+        "dente-de-alho",
+        "colorau",
+        "sal"
+      ]
+    },
+    {
+      "title": "Alourar a cebola",
+      "text": "Meias-luas em lume médio-baixo no óleo, até ficarem douradas e doces.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "cebola",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Grelhar o frango em lume forte",
+      "text": "Frigideira a fumegar, cubos escorridos da marinada em duas levas, até ganharem manchas escuras. Retirar.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Fazer o masala",
+      "text": "Resto do garam masala, cominhos e curcuma um minuto no fundo da cebola, depois o tomate pelado a apurar dez minutos.",
+      "durationMinutes": 14,
+      "ingredientRefs": [
+        "cominhos",
+        "curcuma",
+        "tomate-pelado"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Basmati lavado até a água sair clara, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua"
+      ]
+    },
+    {
+      "title": "Acabar com natas e frango",
+      "text": "Natas no molho em lume brando, frango de volta cinco minutos. Coentros por cima, naan aquecido ao lado.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "natas",
+        "coentros",
+        "pao-naan"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 820,
+    "proteinGrams": 52,
+    "carbsGrams": 82,
+    "fatGrams": 30,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

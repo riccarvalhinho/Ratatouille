@@ -1,0 +1,162 @@
+{
+  "id": "tarte-de-alho-frances",
+  "name": "Tarte de alho-francês",
+  "description": "Alho-francês estufado em manteiga sobre massa quebrada, com creme de ovo. Com salada.",
+  "narrative": "O alho-francês corta-se em rodelas finas e lava-se bem entre as camadas, onde se esconde areia. Estufa-se em manteiga com uma pitada de sal, tapado e em lume brando, vinte minutos, até ficar macio e doce — não se procura cor aqui. A massa coze em branco primeiro. Junta-se o alho-francês frio ao creme de ovos e natas, e vai ao forno até firmar.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "ovos",
+    "francesa",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 55
+  },
+  "equipment": [
+    "forno",
+    "placa",
+    "tacho",
+    "forma-de-tarte",
+    "papel-vegetal"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-quebrada",
+      "quantity": 1,
+      "unit": "un",
+      "note": "disco"
+    },
+    {
+      "ref": "alho-frances",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em rodelas finas"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "natas",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "queijo-gruyere",
+      "quantity": 80,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Lavar e estufar o alho-francês",
+      "text": "Rodelas finas bem lavadas, em manteiga com sal, tapadas em lume brando, até ficarem macias sem corar.",
+      "durationMinutes": 22,
+      "passive": true,
+      "ingredientRefs": [
+        "alho-frances",
+        "manteiga",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer a massa em branco",
+      "text": "Massa na forma, picada, com papel vegetal e pesos, a 190 graus.",
+      "durationMinutes": 25,
+      "temperatureC": 190,
+      "passive": true,
+      "ingredientRefs": [
+        "massa-quebrada"
+      ]
+    },
+    {
+      "title": "Bater o creme",
+      "text": "Ovos, natas, noz-moscada, sal e pimenta, batidos só até ligar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo",
+        "natas",
+        "noz-moscada",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Cozer a tarte",
+      "text": "Alho-francês já morno sobre a base, creme por cima e o queijo. A 180 graus até firmar ao centro.",
+      "durationMinutes": 30,
+      "temperatureC": 180,
+      "passive": true,
+      "ingredientRefs": [
+        "queijo-gruyere"
+      ]
+    },
+    {
+      "title": "Arrefecer e servir",
+      "text": "Quinze minutos antes de cortar. Alface com azeite, vinagre e sal.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "alface",
+        "azeite",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 18,
+    "carbsGrams": 40,
+    "fatGrams": 44,
+    "saturatedFatGrams": 22,
+    "fibreGrams": 4,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

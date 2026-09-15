@@ -1,0 +1,187 @@
+{
+  "id": "caril-de-grao-e-espinafres",
+  "name": "Caril de grão e espinafres",
+  "description": "Caril vegetariano de panela única, com grão, espinafres e leite de coco. Com arroz e iogurte.",
+  "narrative": "Caril de vinte minutos e de um tacho só. A base é a de sempre: cebola alourada, alho e gengibre, especiarias tostadas no óleo quente. O grão já cozido entra com o tomate e o leite de coco e apura dez minutos. Os espinafres vão no fim e desaparecem em dois minutos — postos antes, cozem de mais e o caril fica com um verde triste. Serve-se com arroz e uma colher de iogurte.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "legumes",
+    "indiana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "panela-grande",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 800,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 400,
+      "unit": "ml"
+    },
+    {
+      "ref": "caril-em-po",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar a cebola",
+      "text": "Meias-luas no óleo em lume médio-baixo, até ficarem douradas.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Tostar as especiarias",
+      "text": "Alho, gengibre, caril, cominhos e curcuma um minuto no óleo quente, sempre a mexer.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "gengibre",
+        "caril-em-po",
+        "cominhos",
+        "curcuma"
+      ]
+    },
+    {
+      "title": "Apurar com grão e coco",
+      "text": "Tomate pelado, grão e leite de coco, com sal. Dez minutos em lume brando.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "grao-de-bico-cozido",
+        "leite-de-coco",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Basmati lavado, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua"
+      ]
+    },
+    {
+      "title": "Juntar os espinafres",
+      "text": "Espinafres dentro, dois minutos até murcharem. Limão, coentros e iogurte à mesa.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "espinafres",
+        "limao",
+        "coentros",
+        "iogurte-natural"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 24,
+    "carbsGrams": 92,
+    "fatGrams": 24,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 16,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

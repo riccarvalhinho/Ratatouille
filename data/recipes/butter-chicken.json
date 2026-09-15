@@ -1,0 +1,194 @@
+{
+  "id": "butter-chicken",
+  "name": "Butter chicken",
+  "description": "Caril suave de tomate, manteiga e natas, com frango marinado. Com basmati e naan.",
+  "narrative": "Caril de criança e de adulto ao mesmo tempo: quase não pica, e o que o define é a quantidade de manteiga. O frango marina em iogurte e especiarias e sela-se antes, como no tikka. O molho passa-se com a varinha depois de apurar, para ficar liso como veludo — é isso que o distingue de um caril de tomate qualquer. Manteiga e natas entram no fim, fora da fervura.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "indiana",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 45,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "Marinar o frango uma hora"
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "garam-masala",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "pao-naan",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango",
+      "text": "Cubos em iogurte, gengibre, alho, colorau e sal. Uma hora chega.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "iogurte-natural",
+        "gengibre",
+        "dente-de-alho",
+        "colorau",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar o frango",
+      "text": "Metade da manteiga em lume forte, cubos escorridos em duas levas até ganharem cor. Retirar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Apurar o molho",
+      "text": "Cebola no mesmo fundo, garam masala, cominhos e canela um minuto, depois o tomate pelado, vinte minutos.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "cebola",
+        "garam-masala",
+        "cominhos",
+        "canela-em-po",
+        "tomate-pelado"
+      ]
+    },
+    {
+      "title": "Passar com a varinha",
+      "text": "Triturar o molho até ficar completamente liso.",
+      "durationMinutes": 4
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Basmati lavado, o dobro de água e sal, tapado, 12 minutos.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua"
+      ]
+    },
+    {
+      "title": "Acabar com manteiga e natas",
+      "text": "Fora da fervura, o resto da manteiga e as natas envolvidas, com o frango. Coentros e naan.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "natas",
+        "coentros",
+        "pao-naan"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 880,
+    "proteinGrams": 50,
+    "carbsGrams": 84,
+    "fatGrams": 38,
+    "saturatedFatGrams": 20,
+    "fibreGrams": 6,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

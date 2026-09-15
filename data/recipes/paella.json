@@ -1,0 +1,181 @@
+{
+  "id": "paella",
+  "name": "Paella",
+  "description": "Arroz cozido no caldo sem se mexer, com frango, camarão e mexilhão. Prato único.",
+  "narrative": "A regra da paella é uma só: depois de o caldo entrar, não se mexe mais. É esse sossego que forma a crosta tostada no fundo, que é a melhor parte e não um acidente. O frango aloura primeiro, depois o sofrito de cebola, alho, pimento e tomate, e o arroz torra dentro dele. O caldo entra quente, com o açafrão, e o marisco arruma-se por cima a meio da cozedura. Repousa cinco minutos tapada antes de servir.",
+  "servings": 5,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "aves",
+    "massa-e-arroz",
+    "mediterranica",
+    "festa"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "concha"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-carolino",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "camarao",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "mexilhao",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "ervilhas-congeladas",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "acafrao",
+      "unit": "qb"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 1.2,
+      "unit": "l",
+      "note": "quente"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o frango",
+      "text": "Pedaços temperados em azeite quente, até corarem de todos os lados. Empurrar para o bordo.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o sofrito",
+      "text": "Cebola, alho e pimento a amolecer, depois o tomate ralado até desfazer e o colorau.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "pimento-vermelho",
+        "tomate",
+        "colorau"
+      ]
+    },
+    {
+      "title": "Torrar o arroz e juntar o caldo",
+      "text": "Arroz dois minutos no sofrito, depois o caldo quente com o açafrão. Espalhar por igual e não mexer mais.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "caldo-de-galinha",
+        "acafrao"
+      ]
+    },
+    {
+      "title": "Arrumar o marisco por cima",
+      "text": "Aos dez minutos, camarões, mexilhões e ervilhas espalhados à superfície, sem afundar.",
+      "durationMinutes": 15,
+      "passive": true,
+      "ingredientRefs": [
+        "camarao",
+        "mexilhao",
+        "ervilhas-congeladas"
+      ]
+    },
+    {
+      "title": "Repousar tapada",
+      "text": "Fora do lume, tapada com um pano, cinco minutos. Limão em gomos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 48,
+    "carbsGrams": 88,
+    "fatGrams": 24,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 6,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

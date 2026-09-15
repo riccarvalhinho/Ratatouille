@@ -1,0 +1,164 @@
+{
+  "id": "cuscuz-com-legumes",
+  "name": "Cuscuz com legumes",
+  "description": "Cuscuz hidratado em caldo quente, com legumes assados e grão. Prato único.",
+  "narrative": "O cuscuz não se coze: hidrata-se. Põe-se numa taça, cobre-se com caldo a ferver na proporção de um para um, tapa-se cinco minutos e solta-se com o garfo — mexido antes do tempo fica pastoso. Os legumes assam no forno em cubos grandes, com azeite e especiarias, até ganharem cor nos bordos. Junta-se o grão, limão e ervas frescas no fim, e come-se morno ou frio.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "leguminosas",
+    "vegetariano",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "cuscuz",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "caldo-de-galinha",
+      "quantity": 300,
+      "unit": "ml",
+      "note": "quente"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "beringela",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 400,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar os legumes",
+      "text": "Cubos grandes no tabuleiro com azeite, cominhos, curcuma, sal e pimenta, a 210 graus, até ganharem cor nos bordos.",
+      "durationMinutes": 30,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "courgette",
+        "beringela",
+        "pimento-vermelho",
+        "cebola-roxa",
+        "azeite",
+        "cominhos",
+        "curcuma",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Hidratar o cuscuz",
+      "text": "Caldo a ferver sobre o cuscuz, na mesma medida, tapado cinco minutos. Soltar com o garfo.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cuscuz",
+        "caldo-de-galinha"
+      ]
+    },
+    {
+      "title": "Juntar tudo",
+      "text": "Legumes e grão envolvidos no cuscuz, com sumo de limão, salsa e hortelã picadas.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "limao",
+        "salsa",
+        "hortela"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 20,
+    "carbsGrams": 88,
+    "fatGrams": 22,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 14,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
