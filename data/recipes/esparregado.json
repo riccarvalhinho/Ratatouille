@@ -1,0 +1,121 @@
+{
+  "id": "esparregado",
+  "name": "Esparregado",
+  "description": "Espinafres cozidos e picados, ligados com um refogado de alho e farinha.",
+  "narrative": "Os espinafres cozem em pouquíssima água, só a que fica nas folhas depois de lavadas, e espremem-se muito bem — é a água que não se tira que faz esparregados aguados. Pica-se à faca em vez de triturar, para ficar com textura. O refogado de alho com uma colher de farinha é o que o liga, e o vinagre no fim é o que o levanta.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "portuguesa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "espinafres",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "leite",
+      "quantity": 100,
+      "unit": "ml",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer e espremer",
+      "text": "Espinafres lavados num tacho tapado, só com a água das folhas, até murcharem. Espremer muito bem com as mãos.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "espinafres",
+        "sal"
+      ]
+    },
+    {
+      "title": "Picar à faca",
+      "text": "Picados grosseiramente sobre a tábua, e não na picadora.",
+      "durationMinutes": 5
+    },
+    {
+      "title": "Fazer o refogado",
+      "text": "Alho laminado em azeite sem queimar, farinha um minuto a mexer, e o leite para quem quiser.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "farinha-de-trigo",
+        "leite"
+      ]
+    },
+    {
+      "title": "Juntar e rematar",
+      "text": "Espinafres no refogado, cinco minutos a apurar, com o vinagre e pimenta no fim.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "vinagre-de-vinho",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 200,
+    "proteinGrams": 7,
+    "carbsGrams": 12,
+    "fatGrams": 15,
+    "saturatedFatGrams": 2.3,
+    "fibreGrams": 6,
+    "saltGrams": 1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

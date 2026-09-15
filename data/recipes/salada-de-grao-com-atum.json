@@ -1,0 +1,140 @@
+{
+  "id": "salada-de-grao-com-atum",
+  "name": "Salada de grão com atum",
+  "description": "Grão, atum, cebola roxa e ovo cozido, temperados com azeite e vinagre. Sem lume.",
+  "narrative": "Salada de despensa que dá uma refeição no verão. O grão escorre-se e lava-se bem em água corrente, para tirar o líquido da lata, que é turvo e salgado. A cebola roxa fica dez minutos em água fria antes de entrar, o que lhe tira a agressividade sem lhe tirar o sabor. Tempera-se pelo menos meia hora antes de comer.",
+  "servings": 4,
+  "labels": [
+    "salada",
+    "prato-principal",
+    "leguminosas",
+    "peixe",
+    "ovos",
+    "portuguesa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "ref": "atum-em-conserva",
+      "quantity": 240,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos",
+      "optional": true
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer os ovos",
+      "text": "Dez minutos em água a ferver. Arrefecer em água fria e descascar.",
+      "durationMinutes": 12,
+      "passive": true,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Amansar a cebola",
+      "text": "Meias-luas finas em água fria, dez minutos. Escorrer bem.",
+      "durationMinutes": 11,
+      "ingredientRefs": [
+        "cebola-roxa"
+      ]
+    },
+    {
+      "title": "Lavar o grão",
+      "text": "Grão escorrido e passado por água corrente, até sair limpa.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "grao-de-bico-cozido"
+      ]
+    },
+    {
+      "title": "Juntar e temperar",
+      "text": "Grão, atum desfeito, cebola, tomate, ovo aos gomos e salsa, com azeite, vinagre, sal e pimenta. Meia hora antes de comer.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "atum-em-conserva",
+        "tomate",
+        "salsa",
+        "azeite",
+        "vinagre-de-vinho",
+        "sal",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 28,
+    "carbsGrams": 32,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 10,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

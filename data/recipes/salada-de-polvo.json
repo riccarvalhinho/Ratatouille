@@ -1,0 +1,133 @@
+{
+  "id": "salada-de-polvo",
+  "name": "Salada de polvo",
+  "description": "Polvo cozido em cubos, com cebola, salsa e coentros, temperado de véspera.",
+  "narrative": "O polvo coze sem água nenhuma além da que larga, com uma cebola inteira, até o garfo entrar sem resistência. Corta-se em pedaços ainda morno, porque absorve melhor o tempero quente do que frio. Tempera-se e vai ao frigorífico de um dia para o outro — é essa espera que faz a salada, e comida no próprio dia sabe a polvo com cebola.",
+  "servings": 6,
+  "labels": [
+    "salada",
+    "marisco",
+    "portuguesa",
+    "festa"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 60,
+    "prepAhead": {
+      "minutes": 480,
+      "description": "Uma noite no frigorífico depois de temperado"
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "polvo",
+      "quantity": 1.2,
+      "unit": "kg"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer o polvo",
+      "text": "Polvo no tacho com uma cebola inteira e o louro, tapado e sem água, em lume brando, até o garfo entrar sem resistência.",
+      "durationMinutes": 55,
+      "passive": true,
+      "ingredientRefs": [
+        "polvo",
+        "cebola",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Cortar ainda morno",
+      "text": "Pedaços do tamanho de uma trinca, enquanto ainda está quente.",
+      "durationMinutes": 10
+    },
+    {
+      "title": "Temperar",
+      "text": "Resto da cebola picada, alho, salsa, coentros, azeite, vinagre, sal e pimenta sobre o polvo morno.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "salsa",
+        "coentros",
+        "azeite",
+        "vinagre-de-vinho",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Levar ao frio de véspera",
+      "text": "Tapado no frigorífico, de um dia para o outro.",
+      "durationMinutes": 480,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 380,
+    "proteinGrams": 42,
+    "carbsGrams": 6,
+    "fatGrams": 22,
+    "saturatedFatGrams": 3.2,
+    "fibreGrams": 1,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

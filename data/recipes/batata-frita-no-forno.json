@@ -1,0 +1,106 @@
+{
+  "id": "batata-frita-no-forno",
+  "name": "Batata frita no forno",
+  "description": "Palitos assados a 220 graus, estaladiços por fora. Alternativa à fritadeira.",
+  "narrative": "Duas coisas separam isto de batata assada mole: os palitos demolham em água fria vinte minutos para largar amido e secam-se muito bem, porque água no palito faz vapor e vapor não tosta; e espalham-se sem se tocarem, numa camada só. Viram-se a meio e não antes, para terem tempo de formar crosta.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "em palitos"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha",
+      "optional": true
+    },
+    {
+      "ref": "alho-em-po",
+      "quantity": 1,
+      "unit": "ccha",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Demolhar e secar",
+      "text": "Palitos em água fria vinte minutos, depois secos com um pano até não brilharem.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata"
+      ]
+    },
+    {
+      "title": "Temperar e espalhar",
+      "text": "Azeite, sal, pimenta e as especiarias envolvidos, espalhados numa camada só e sem se tocarem.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "azeite",
+        "colorau",
+        "alho-em-po",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar e virar a meio",
+      "text": "A 220 graus, virados uma só vez a meio, até ficarem dourados.",
+      "durationMinutes": 35,
+      "temperatureC": 220,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 260,
+    "proteinGrams": 5,
+    "carbsGrams": 42,
+    "fatGrams": 9,
+    "saturatedFatGrams": 1.3,
+    "fibreGrams": 4,
+    "saltGrams": 0.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

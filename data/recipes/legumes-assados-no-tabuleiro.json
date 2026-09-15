@@ -1,0 +1,134 @@
+{
+  "id": "legumes-assados-no-tabuleiro",
+  "name": "Legumes assados no tabuleiro",
+  "description": "Legumes da época em cubos, assados até ganharem cor nos bordos.",
+  "narrative": "A regra é a mesma para qualquer legume: cubos do mesmo tamanho, azeite que chegue, espalhados sem se tocarem e forno bem quente. Amontoados, cozem no próprio vapor e saem moles e pálidos. Os que demoram mais — batata, cenoura, batata-doce — entram vinte minutos antes dos rápidos.",
+  "servings": 6,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "mediterranica",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 40
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un",
+      "note": "com casca"
+    },
+    {
+      "ref": "alecrim",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar os que demoram",
+      "text": "Batata e cenoura com azeite, alho e sal, espalhados sem se tocarem, a 210 graus.",
+      "durationMinutes": 20,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "cenoura",
+        "azeite",
+        "dente-de-alho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar os rápidos",
+      "text": "Courgette, pimento e cebola roxa por cima, com mais azeite e o alecrim.",
+      "durationMinutes": 20,
+      "temperatureC": 210,
+      "passive": true,
+      "ingredientRefs": [
+        "courgette",
+        "pimento-vermelho",
+        "cebola-roxa",
+        "alecrim",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Direto do tabuleiro, com o azeite que ficou no fundo.",
+      "durationMinutes": 3
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 240,
+    "proteinGrams": 4,
+    "carbsGrams": 28,
+    "fatGrams": 13,
+    "saturatedFatGrams": 1.9,
+    "fibreGrams": 6,
+    "saltGrams": 0.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

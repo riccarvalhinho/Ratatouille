@@ -1,0 +1,121 @@
+{
+  "id": "peixinhos-da-horta",
+  "name": "Peixinhos da horta",
+  "description": "Feijão-verde em polme, frito até ficar dourado e leve.",
+  "narrative": "O polme leva farinha, ovo e água muito fria — quase gelada — e mexe-se o mínimo, porque um polme trabalhado fica elástico e a fritura pesada. O feijão-verde escalda-se primeiro, três minutos, e seca-se bem, senão o polme escorrega. O óleo tem de estar mesmo quente: frio, absorve e fica ensopado.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "portuguesa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "panela-grande",
+    "taca",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-verde",
+      "quantity": 500,
+      "unit": "g",
+      "note": "aparado"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 200,
+      "unit": "ml",
+      "note": "bem fria"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "unit": "qb",
+      "note": "para fritar"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar o feijão-verde",
+      "text": "Três minutos em água a ferver com sal, depois água fria e secar muito bem com pano.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "feijao-verde",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o polme",
+      "text": "Farinha, ovos e água bem fria, mexidos só até desaparecerem os grumos maiores.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "ovo",
+        "agua"
+      ]
+    },
+    {
+      "title": "Fritar",
+      "text": "Passar pelo polme e deitar em óleo bem quente, poucos de cada vez, até dourarem. Escorrer em papel.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Servir com limão",
+      "text": "Gomos de limão à mesa, e comem-se quentes.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 9,
+    "carbsGrams": 42,
+    "fatGrams": 15,
+    "saturatedFatGrams": 2,
+    "fibreGrams": 5,
+    "saltGrams": 1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

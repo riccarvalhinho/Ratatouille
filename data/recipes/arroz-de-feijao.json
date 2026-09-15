@@ -1,0 +1,141 @@
+{
+  "id": "arroz-de-feijao",
+  "name": "Arroz de feijão",
+  "description": "Arroz malandro com feijão encarnado, o acompanhamento das pataniscas.",
+  "narrative": "O mesmo método do arroz de tomate, com o feijão a entrar no refogado antes do arroz. Usa-se um pouco do líquido da cozedura do feijão na água, que dá cor e corpo. Fica malandro, com o feijão inteiro e não desfeito — por isso entra tarde e não se mexe com força.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "massa-e-arroz",
+    "leguminosas",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-carolino",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "feijao-encarnado-cozido",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 1,
+      "unit": "un",
+      "note": "ralado"
+    },
+    {
+      "ref": "chourico",
+      "quantity": 60,
+      "unit": "g",
+      "note": "às rodelas",
+      "optional": true
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar",
+      "text": "Cebola, alho e o chouriço para quem quiser, em azeite, depois o tomate ralado e o louro.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "chourico",
+        "tomate",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Juntar o feijão",
+      "text": "Feijão escorrido no refogado, cinco minutos, mexido com cuidado para não desfazer.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "feijao-encarnado-cozido"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz e a água a ferver de sobra, com sal. Dezoito minutos, malandro.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "agua",
+        "sal",
+        "pimenta-preta",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 400,
+    "proteinGrams": 12,
+    "carbsGrams": 66,
+    "fatGrams": 10,
+    "saturatedFatGrams": 1.6,
+    "fibreGrams": 8,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

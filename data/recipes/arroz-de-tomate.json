@@ -1,0 +1,123 @@
+{
+  "id": "arroz-de-tomate",
+  "name": "Arroz de tomate",
+  "description": "Arroz malandro cozido num refogado de tomate ralado.",
+  "narrative": "O tomate rala-se e refoga-se sozinho o tempo suficiente para perder a água e a acidez — o passo que quase todos encurtam, e o motivo por que tantos arrozes de tomate sabem a tomate cru. Leva mais água do que um arroz seco, porque é para ficar malandro, e continua a beber dentro do prato.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "massa-e-arroz",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-carolino",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 600,
+      "unit": "g",
+      "note": "maduros, ralados"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Refogar a cebola",
+      "text": "Cebola e alho em azeite, em lume brando, até amolecerem sem cor.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar o tomate",
+      "text": "Tomate ralado com o louro e sal, até perder a água e o azeite voltar à superfície.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "tomate",
+        "folha-de-louro",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer o arroz",
+      "text": "Arroz dois minutos no refogado, depois a água a ferver de sobra. Dezoito minutos, malandro.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "arroz-carolino",
+        "agua",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 6,
+    "carbsGrams": 58,
+    "fatGrams": 10,
+    "saturatedFatGrams": 1.5,
+    "fibreGrams": 3,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

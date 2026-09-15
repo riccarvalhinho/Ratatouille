@@ -1,0 +1,131 @@
+{
+  "id": "salada-grega",
+  "name": "Salada grega",
+  "description": "Tomate, pepino, cebola roxa, feta e azeitonas. Sem alface.",
+  "narrative": "Não leva alface nenhuma — é isso que a distingue de uma salada mista com queijo. Os pedaços cortam-se grandes, para se comerem à garfada, e o feta vai em bloco ou em cubos grossos por cima, nunca esmigalhado. Só azeite e orégãos; o vinagre é opcional, porque o feta já traz sal e acidez.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "salada",
+    "legumes",
+    "mediterranica",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "faca-de-chef",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "tomate",
+      "quantity": 500,
+      "unit": "g",
+      "note": "em gomos grandes"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas grossas"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "queijo-feta",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 100,
+      "unit": "g",
+      "note": "pretas"
+    },
+    {
+      "ref": "pimento-verde",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras",
+      "optional": true
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cortar em pedaços grandes",
+      "text": "Tomate em gomos, pepino em meias-luas grossas, cebola e pimento em tiras.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "tomate",
+        "pepino",
+        "cebola-roxa",
+        "pimento-verde"
+      ]
+    },
+    {
+      "title": "Temperar a base",
+      "text": "Azeite, orégãos, sal e pimenta sobre os legumes, envolvidos com cuidado.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "oregaos",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Rematar com feta e azeitonas",
+      "text": "Feta em cubos grossos por cima, sem envolver, e as azeitonas à volta.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "queijo-feta",
+        "azeitona"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 320,
+    "proteinGrams": 10,
+    "carbsGrams": 12,
+    "fatGrams": 26,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 3,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

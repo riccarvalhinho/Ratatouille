@@ -1,0 +1,101 @@
+{
+  "id": "grelos-salteados-com-alho",
+  "name": "Grelos salteados com alho",
+  "description": "Grelos escaldados e salteados em azeite com alho laminado. Cinco minutos.",
+  "narrative": "Escaldam-se dois minutos em água a ferver bem salgada e passam logo por água fria — é isso que lhes fixa o verde e tira o amargo a mais. Espremem-se e saltam-se em azeite com alho laminado, que não pode queimar. O limão no fim é opcional mas faz a diferença.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira"
+  ],
+  "ingredients": [
+    {
+      "ref": "grelos",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "optional": true
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar e arrefecer",
+      "text": "Dois minutos em água a ferver bem salgada, e logo para água fria. Espremer.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "grelos",
+        "sal"
+      ]
+    },
+    {
+      "title": "Saltear com alho",
+      "text": "Alho laminado em azeite sem queimar, grelos dentro, três minutos a saltear. Malagueta e limão para quem quiser.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "malagueta",
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 160,
+    "proteinGrams": 5,
+    "carbsGrams": 8,
+    "fatGrams": 13,
+    "saturatedFatGrams": 1.9,
+    "fibreGrams": 5,
+    "saltGrams": 0.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "salada-de-tomate-e-cebola",
+  "name": "Salada de tomate e cebola",
+  "description": "Tomate maduro às rodelas com cebola, orégãos e azeite. O acompanhamento dos grelhados.",
+  "narrative": "Depende inteiramente do tomate: maduro, de época, e nunca do frigorífico, porque o frio mata-lhe o aroma e não volta. Salga-se o tomate cinco minutos antes de temperar, para largar um pouco de água e concentrar. A cebola fica em água fria dez minutos se for muito forte.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "salada",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "faca-de-chef",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "tomate",
+      "quantity": 600,
+      "unit": "g",
+      "note": "maduros, às rodelas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Salgar o tomate",
+      "text": "Rodelas espalhadas no prato com sal, cinco minutos, a largar água.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tomate",
+        "sal"
+      ]
+    },
+    {
+      "title": "Amansar a cebola",
+      "text": "Meias-luas em água fria dez minutos, se a cebola for muito forte. Escorrer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola"
+      ]
+    },
+    {
+      "title": "Temperar",
+      "text": "Orégãos, azeite, vinagre e pimenta por cima, sem mexer de mais.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "oregaos",
+        "azeite",
+        "vinagre-de-vinho",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 140,
+    "proteinGrams": 1.5,
+    "carbsGrams": 8,
+    "fatGrams": 12,
+    "saturatedFatGrams": 1.7,
+    "fibreGrams": 2,
+    "saltGrams": 0.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

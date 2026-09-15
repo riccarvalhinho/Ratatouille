@@ -1,0 +1,132 @@
+{
+  "id": "coleslaw",
+  "name": "Coleslaw",
+  "description": "Couve branca e cenoura em molho de maionese e vinagre, a repousar.",
+  "narrative": "A couve corta-se muito fina, de mandolina ou à faca com paciência, e salga-se meia hora a escorrer — sem isso, larga água dentro do molho e o coleslaw fica aguado na segunda hora. Espreme-se com as mãos antes de temperar. Melhora em repousar e fica bom no dia seguinte.",
+  "servings": 6,
+  "labels": [
+    "acompanhamento",
+    "salada",
+    "legumes",
+    "americana",
+    "dia-a-dia",
+    "vegetariano"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "Uma hora no frigorífico depois de temperado"
+    }
+  },
+  "equipment": [
+    "escorredor",
+    "ralador",
+    "taca",
+    "mandolina"
+  ],
+  "ingredients": [
+    {
+      "ref": "couve-branca",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras muito finas"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "raladas"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas",
+      "optional": true
+    },
+    {
+      "ref": "maionese",
+      "quantity": 6,
+      "unit": "csopa"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Salgar e escorrer a couve",
+      "text": "Tiras finas com sal num escorredor, meia hora a largar água. Espremer com as mãos.",
+      "durationMinutes": 35,
+      "passive": true,
+      "ingredientRefs": [
+        "couve-branca",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Maionese, vinagre, mostarda, açúcar e pimenta batidos numa taça.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "maionese",
+        "vinagre-de-vinho",
+        "mostarda",
+        "acucar",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Envolver e repousar",
+      "text": "Couve espremida, cenoura ralada e cebola no molho. Uma hora no frigorífico.",
+      "durationMinutes": 65,
+      "passive": true,
+      "ingredientRefs": [
+        "cenoura",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 240,
+    "proteinGrams": 2,
+    "carbsGrams": 14,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 4,
+    "saltGrams": 1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

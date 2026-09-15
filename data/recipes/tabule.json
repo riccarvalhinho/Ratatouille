@@ -1,0 +1,137 @@
+{
+  "id": "tabule",
+  "name": "Tabule",
+  "description": "Bulgur hidratado com muita salsa, tomate, hortelã e limão.",
+  "narrative": "A salsa não é tempero, é o ingrediente principal — leva mais salsa do que bulgur, picada fina à faca e não na picadora, que a esmaga e a faz escurecer. O bulgur não se coze: hidrata-se em água a ferver, tapado, e solta-se com o garfo. Tempera-se e descansa meia hora antes de comer.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "salada",
+    "legumes",
+    "vegetariano",
+    "vegan",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 0,
+    "prepAhead": {
+      "minutes": 30,
+      "description": "Meia hora de repouso antes de comer, para o bulgur beber o tempero"
+    }
+  },
+  "equipment": [
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bulgur",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "salsa",
+      "quantity": 200,
+      "unit": "g",
+      "note": "picada fina"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em cubos pequenos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada fina"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 200,
+      "unit": "ml",
+      "note": "a ferver"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Hidratar o bulgur",
+      "text": "Água a ferver sobre o bulgur, tapado quinze minutos. Soltar com o garfo e deixar arrefecer.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "bulgur",
+        "agua"
+      ]
+    },
+    {
+      "title": "Picar a salsa à faca",
+      "text": "Fina, à faca e nunca na picadora. Hortelã também.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "salsa",
+        "hortela"
+      ]
+    },
+    {
+      "title": "Juntar e temperar",
+      "text": "Bulgur frio, salsa, hortelã, tomate e cebola, com sumo de limão, azeite, sal e pimenta.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tomate",
+        "cebola-roxa",
+        "limao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Deixar repousar",
+      "text": "Meia hora antes de comer, para o bulgur beber o tempero."
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 280,
+    "proteinGrams": 6,
+    "carbsGrams": 32,
+    "fatGrams": 15,
+    "saturatedFatGrams": 2.1,
+    "fibreGrams": 6,
+    "saltGrams": 1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

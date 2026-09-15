@@ -1,0 +1,106 @@
+{
+  "id": "batata-a-murro",
+  "name": "Batata a murro",
+  "description": "Batata pequena cozida com casca, esmagada com a mão e regada com azeite e alho.",
+  "narrative": "Batata pequena, cozida com casca em água muito salgada — mais salgada do que parece certo, porque a casca protege e só assim o sal chega lá dentro. O murro dá-se com a palma da mão e a batata deve abrir sem se desfazer. É essa superfície rachada que agarra o azeite e o alho, e é toda a razão de ser do prato.",
+  "servings": 6,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "portuguesa",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan"
+  ],
+  "methods": [
+    "tacho",
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "tabuleiro-de-forno"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb",
+      "optional": true
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer com casca",
+      "text": "Batatas inteiras em água muito salgada com o louro, até o garfo entrar sem resistência.",
+      "durationMinutes": 28,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Dar o murro",
+      "text": "Escorridas e esmagadas com a palma da mão, uma a uma, sem as desfazer.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Regar com azeite e alho",
+      "text": "Azeite morno com alho laminado por cima, e salsa para quem quiser.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 360,
+    "proteinGrams": 5,
+    "carbsGrams": 42,
+    "fatGrams": 20,
+    "saturatedFatGrams": 2.8,
+    "fibreGrams": 4,
+    "saltGrams": 1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}

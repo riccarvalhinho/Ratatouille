@@ -1,0 +1,103 @@
+{
+  "id": "pure-de-batata",
+  "name": "Puré de batata",
+  "description": "Batata esmagada quente com manteiga e leite quente, sem máquina.",
+  "narrative": "Três regras: a batata esmaga-se quente, porque fria fica gomosa; a manteiga entra antes do leite, para envolver o amido e o puré não ficar elástico; e o leite entra quente, porque leite frio arrefece tudo e obriga a mexer mais. Nunca se usa a varinha mágica — as lâminas rebentam o amido e o resultado é cola.",
+  "servings": 6,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "dia-a-dia",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "descascador"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 250,
+      "unit": "ml",
+      "note": "quente"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a batata",
+      "text": "Cubos em água com sal, até se desfazerem à pressão do garfo.",
+      "durationMinutes": 25,
+      "passive": true,
+      "ingredientRefs": [
+        "batata",
+        "sal"
+      ]
+    },
+    {
+      "title": "Esmagar quente com a manteiga",
+      "text": "Escorrida e esmagada logo, com a manteiga primeiro, até derreter por completo.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Juntar o leite quente",
+      "text": "Em fio e aos poucos, a envolver com a colher e nunca com a varinha, até à consistência que se quer. Noz-moscada e pimenta.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "leite",
+        "noz-moscada",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 300,
+    "proteinGrams": 6,
+    "carbsGrams": 38,
+    "fatGrams": 14,
+    "saturatedFatGrams": 8.5,
+    "fibreGrams": 3,
+    "saltGrams": 0.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-15",
+  "updatedAt": "2026-09-15"
+}
