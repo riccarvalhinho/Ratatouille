@@ -2,6 +2,13 @@
   "id": "sopa-de-legumes",
   "name": "Sopa de legumes",
   "description": "A sopa de todos os dias: batata, cenoura, courgette e feijão-verde, passada.",
+  "image": "media/recipes/sopa-de-legumes.jpg",
+  "imageCredit": {
+    "author": "D.L.",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/35284396@N00/407366342"
+  },
   "narrative": "Tudo ao mesmo tempo num tacho com água e sal, até a batata se desfazer. Passa-se com a varinha até ficar lisa, com o azeite dentro, e rectifica-se a espessura com água a ferver. Quem gostar de encontrar pedaços guarda um pouco dos legumes antes de triturar e devolve-os no fim. Congela bem em doses individuais.",
   "servings": 6,
   "labels": [

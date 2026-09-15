@@ -2,6 +2,13 @@
   "id": "salada-de-feijao-frade-com-ovo",
   "name": "Salada de feijão frade com ovo",
   "description": "Feijão frade com ovo cozido, cebola e salsa. Clássico de verão.",
+  "image": "media/recipes/salada-de-feijao-frade-com-ovo.jpg",
+  "imageCredit": {
+    "author": "Diet Guide",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/healthy-vegetarian-meal-with-rice-and-vegetables-29269763/"
+  },
   "narrative": "Come-se morna ou fria, e morna é melhor — o feijão ainda tépido absorve o tempero de outra maneira. A cebola pica-se muito fina e a salsa entra em quantidade, não como enfeite. Um fio de vinagre de vinho é obrigatório: sem ele a salada é plana.",
   "servings": 4,
   "labels": [

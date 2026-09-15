@@ -2,6 +2,13 @@
   "id": "torta-de-laranja",
   "name": "Torta de laranja",
   "description": "Torta enrolada de ovos, açúcar e sumo de laranja, sem farinha.",
+  "image": "media/recipes/torta-de-laranja.jpg",
+  "imageCredit": {
+    "author": "Pegah Sharifi",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/orange-swiss-roll-topped-with-fruits-7166347/"
+  },
   "narrative": "Não leva farinha nenhuma: são ovos, açúcar, sumo e raspa, e um pouco de amido. Coze depressa e em forno quente, num tabuleiro forrado, e sai muito húmida. Enrola-se logo a seguir, ainda a escaldar, com a ajuda do papel — arrefecida, racha ao enrolar e já não há como voltar atrás.",
   "servings": 8,
   "yield": "1 torta",

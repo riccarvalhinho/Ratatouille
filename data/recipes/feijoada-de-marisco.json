@@ -2,6 +2,13 @@
   "id": "feijoada-de-marisco",
   "name": "Feijoada de marisco",
   "description": "Feijão branco em caldo de marisco, com camarão, amêijoa e mexilhão. Com arroz branco.",
+  "image": "media/recipes/feijoada-de-marisco.jpg",
+  "imageCredit": {
+    "author": "Rudi Kessler",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/soup-with-seafood-on-plate-23627792/"
+  },
   "narrative": "O caldo faz-se das cascas dos camarões, como no arroz de marisco. O feijão branco já cozido apura nesse caldo com um refogado de cebola, alho, pimento e tomate, vinte minutos, até o molho engrossar sozinho — não leva farinha nem amido. O marisco entra no fim e cozinha em minutos. O arroz branco faz-se à parte.",
   "servings": 5,
   "labels": [

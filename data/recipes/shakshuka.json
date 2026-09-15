@@ -2,6 +2,13 @@
   "id": "shakshuka",
   "name": "Shakshuka",
   "description": "Ovos escalfados num molho de tomate e pimento com cominhos, com pão para molhar.",
+  "image": "media/recipes/shakshuka.jpg",
+  "imageCredit": {
+    "author": "Joe Mahoney",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka1.jpg"
+  },
   "narrative": "O molho é onde está o prato: cebola e pimento a amolecer devagar, cominhos e colorau tostados no fundo, tomate a apurar vinte minutos até engrossar e o azeite voltar à superfície. Abrem-se covas com as costas da colher e parte-se um ovo em cada, tapado, cinco a sete minutos — a clara tem de firmar e a gema ficar mole, e passa do ponto depressa. Coentros e pão à mesa.",
   "servings": 3,
   "labels": [

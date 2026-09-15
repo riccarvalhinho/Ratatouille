@@ -2,6 +2,13 @@
   "id": "salsichas-frescas-com-pure",
   "name": "Salsichas frescas com puré",
   "description": "Salsichas frescas douradas na frigideira, puré de batata e cebola caramelizada.",
+  "image": "media/recipes/salsichas-frescas-com-pure.jpg",
+  "imageCredit": {
+    "author": "Paula",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/sausage-and-egg-on-plate-128641/"
+  },
   "narrative": "Jantar de dias sem vontade nenhuma, e por isso escrito para o mínimo de atenção. As cebolas vão ao lume primeiro, em fatias finas com manteiga, e ficam vinte minutos a caramelizar sozinhas com uma mexidela de vez em quando. A batata coze no mesmo tempo. As salsichas douram-se devagar em lume médio, porque em lume forte rebentam antes de cozerem por dentro. O puré faz-se à última, com o leite bem quente.",
   "servings": 4,
   "labels": [

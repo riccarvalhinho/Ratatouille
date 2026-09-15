@@ -2,6 +2,13 @@
   "id": "creme-de-abobora",
   "name": "Creme de abóbora",
   "description": "Creme suave de abóbora assada, com sementes torradas por cima.",
+  "image": "media/recipes/creme-de-abobora.jpg",
+  "imageCredit": {
+    "author": "stu_spivack",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/319266288"
+  },
   "narrative": "A abóbora assa em vez de cozer — assada, a água evapora e o açúcar caramela, e o creme fica com o dobro do sabor pelo mesmo trabalho. Vai ao forno em cubos com azeite até os bordos escurecerem. Depois é só juntar ao refogado de cebola com caldo e passar. As sementes da própria abóbora lavam-se, secam-se e torram-se no forno com sal.",
   "servings": 6,
   "labels": [

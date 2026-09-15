@@ -2,6 +2,13 @@
   "id": "queijadas",
   "name": "Queijadas",
   "description": "Queijadas pequenas de requeijão e ovos, cozidas em forma de queques.",
+  "image": "media/recipes/queijadas.jpg",
+  "imageCredit": {
+    "author": "Daquella manera",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://www.flickr.com/photos/62518311@N00/15833508675"
+  },
   "narrative": "Massa fina e recheio simples. O recheio bate-se sem espuma e enche as formas quase até cima, porque cresce pouco. Forno bem quente no início, para a massa firmar, e depois mais brando para o recheio acabar sem queimar. Desenformam-se mornas, que frias colam.",
   "servings": 9,
   "yield": "18 queijadas",

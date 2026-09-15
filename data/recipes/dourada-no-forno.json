@@ -2,6 +2,13 @@
   "id": "dourada-no-forno",
   "name": "Dourada no forno",
   "description": "Douradas inteiras assadas sobre batata e cebola, com limão e vinho branco.",
+  "image": "media/recipes/dourada-no-forno.jpg",
+  "imageCredit": {
+    "author": "Mavi Yıldız Restoran Cumalıkızık Bursa",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-turkish-grilled-fish-in-clay-dish-37206697/"
+  },
   "narrative": "A batata em rodelas finas e a cebola vão primeiro ao forno, vinte minutos, porque demoram mais do que o peixe. As douradas temperam-se por dentro e por fora e assentam por cima, com rodelas de limão na barriga. Rega-se com vinho branco e azeite e assa mais vinte e cinco minutos. O peixe está quando a espinha dorsal se solta ao puxar — e se a batata ainda resistir, tira-se o peixe e deixa-se a batata lá mais um pouco.",
   "servings": 4,
   "labels": [

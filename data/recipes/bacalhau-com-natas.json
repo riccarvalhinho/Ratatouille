@@ -2,6 +2,13 @@
   "id": "bacalhau-com-natas",
   "name": "Bacalhau com natas",
   "description": "Bacalhau lascado com batata frita em palitos e bechamel de natas, gratinado no forno. Com salada de alface ao lado.",
+  "image": "media/recipes/bacalhau-com-natas.jpg",
+  "imageCredit": {
+    "author": "Sylwester Ficek",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/cheesy-vegetable-baked-casserole-in-white-dish-32039641/"
+  },
   "narrative": "O bacalhau demolha-se de véspera. Fritam-se as batatas em palitos finos, mas só até ganharem cor clara — acabam de cozinhar no forno. Aloura-se a cebola com o alho no azeite e junta-se o bacalhau lascado, só o tempo de aquecer. À parte faz-se o bechamel: manteiga com farinha mexida um minuto, leite aos poucos sempre a bater, natas e noz-moscada até engrossar. Mistura-se metade do molho com a batata e o bacalhau no pirex, cobre-se com o resto e com queijo ralado, e vai ao forno até tostar. Enquanto gratina, tempera-se a salada.",
   "servings": 4,
   "labels": [

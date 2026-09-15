@@ -2,6 +2,13 @@
   "id": "borscht",
   "name": "Borscht",
   "description": "Sopa de beterraba com carne e couve, servida com natas azedas e endro.",
+  "image": "media/recipes/borscht.jpg",
+  "imageCredit": {
+    "author": "Kelly Sue DeConnick",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borscht_with_cream.jpg"
+  },
   "narrative": "A beterraba rala-se em vez de se cortar, para largar cor e açúcar depressa, e leva um fio de vinagre logo no início — o ácido fixa a cor, e sem ele a sopa fica castanha em vez de vermelha. A carne coze primeiro e dá o caldo. A couve entra nos últimos dez minutos. As natas azedas põem-se no prato, nunca no tacho.",
   "servings": 6,
   "labels": [

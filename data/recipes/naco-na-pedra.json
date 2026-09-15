@@ -2,6 +2,13 @@
   "id": "naco-na-pedra",
   "name": "Naco na pedra",
   "description": "Naco de vaca grelhado e acabado na pedra à mesa, com batata frita, arroz e dois molhos.",
+  "image": "media/recipes/naco-na-pedra.jpg",
+  "imageCredit": {
+    "author": "Amar  Preciado",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/a-steak-is-on-a-plate-with-candles-on-it-28245163/"
+  },
   "narrative": "A pedra aquece no forno a 250 graus durante quarenta minutos — não há atalho, e uma pedra morna cozinha a carne em vez de a selar. O naco sela-se na frigideira dois minutos de cada lado e vai para a pedra a acabar à frente de quem come, cada um ao seu ponto. Os molhos, de manteiga e alho e de pimenta, fazem-se antes. A batata e o arroz também.",
   "servings": 4,
   "labels": [

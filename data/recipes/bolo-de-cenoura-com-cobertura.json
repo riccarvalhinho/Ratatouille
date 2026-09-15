@@ -2,6 +2,13 @@
   "id": "bolo-de-cenoura-com-cobertura",
   "name": "Bolo de cenoura com cobertura",
   "description": "Bolo húmido de cenoura crua triturada, com cobertura de chocolate.",
+  "image": "media/recipes/bolo-de-cenoura-com-cobertura.jpg",
+  "imageCredit": {
+    "author": "loustejskal.com",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/63311602@N08/27215655316"
+  },
   "narrative": "A cenoura vai crua e triturada com o óleo e os ovos, não ralada — triturada, desaparece na massa e deixa só a humidade e a cor. A cobertura é a portuguesa: cacau, açúcar, manteiga e leite ao lume até engrossar, despejada sobre o bolo ainda morno para assentar lisa.",
   "servings": 12,
   "yield": "1 bolo de 26 cm",

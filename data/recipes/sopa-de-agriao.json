@@ -2,6 +2,13 @@
   "id": "sopa-de-agriao",
   "name": "Sopa de agrião",
   "description": "Creme de batata com agrião cortado, verde e com a picância da folha.",
+  "image": "media/recipes/sopa-de-agriao.jpg",
+  "imageCredit": {
+    "author": "ProjectManhattan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watercress_soup.jpg"
+  },
   "narrative": "A base é batata, cebola e alho passados com o azeite. O agrião entra no fim, cortado grosseiramente, e coze três a quatro minutos apenas — o suficiente para amolecer e não para perder nem o verde nem o travo apimentado que é a razão de o usar.",
   "servings": 5,
   "labels": [

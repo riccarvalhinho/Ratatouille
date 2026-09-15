@@ -2,6 +2,13 @@
   "id": "arroz-de-frango",
   "name": "Arroz de frango",
   "description": "Arroz malandro cozido no caldo do próprio frango, com o frango desfiado dentro. Com salada.",
+  "image": "media/recipes/arroz-de-frango.jpg",
+  "imageCredit": {
+    "author": "Misaochan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice.jpg"
+  },
   "narrative": "Coze-se o frango em água com cebola, cenoura, louro e sal — e é esse caldo, não água nova, que vai cozer o arroz. Desfia-se a carne enquanto arrefece o suficiente para se lhe pegar. No tacho faz-se um refogado de cebola e alho com tomate e chouriço, junta-se o arroz, o caldo coado e deixa-se ficar malandro, com mais caldo do que um arroz seco. O frango desfiado entra no fim, só para aquecer.",
   "servings": 4,
   "labels": [

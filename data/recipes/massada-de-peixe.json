@@ -2,6 +2,13 @@
   "id": "massada-de-peixe",
   "name": "Massada de peixe",
   "description": "Massa caldosa cozida num refogado de tomate e pimento, com postas de peixe.",
+  "image": "media/recipes/massada-de-peixe.jpg",
+  "imageCredit": {
+    "author": "Rudi Kessler",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/soup-with-seafood-on-plate-23627792/"
+  },
   "narrative": "Prato único e de tacho só. Faz-se um refogado demorado de cebola, alho, pimento e tomate, que é o que dá corpo ao caldo. Junta-se água a ferver e deixa-se apurar. A massa coze dentro desse caldo, e o peixe entra nos últimos cinco minutos, em postas, só o tempo de cozer — posto ao princípio, desfaz-se e desaparece. Serve-se logo, que a massa continua a beber caldo dentro do prato.",
   "servings": 4,
   "labels": [

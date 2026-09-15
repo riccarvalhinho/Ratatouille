@@ -2,6 +2,13 @@
   "id": "sopa-de-abobora-com-coco-e-caril",
   "name": "Sopa de abóbora com coco e caril",
   "description": "Creme de abóbora assada com leite de coco e caril, com coentros e lima.",
+  "image": "media/recipes/sopa-de-abobora-com-coco-e-caril.jpg",
+  "imageCredit": {
+    "author": "Kari Sullivan from Austin, TX",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curried_Pumpkin_Soup_(122342820).jpg"
+  },
   "narrative": "É o creme de abóbora com outra direção: as especiarias tostam no óleo antes de a abóbora entrar, e o leite de coco substitui parte do caldo. A abóbora assa, como no outro, porque assada concentra. Lima no fim, fora do lume. Fica melhor no dia seguinte, quando o caril assenta.",
   "servings": 6,
   "labels": [

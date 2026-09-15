@@ -2,6 +2,13 @@
   "id": "arroz-de-tomate",
   "name": "Arroz de tomate",
   "description": "Arroz malandro cozido num refogado de tomate ralado.",
+  "image": "media/recipes/arroz-de-tomate.jpg",
+  "imageCredit": {
+    "author": "kkalyan",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/35581095@N00/164075552"
+  },
   "narrative": "O tomate rala-se e refoga-se sozinho o tempo suficiente para perder a água e a acidez — o passo que quase todos encurtam, e o motivo por que tantos arrozes de tomate sabem a tomate cru. Leva mais água do que um arroz seco, porque é para ficar malandro, e continua a beber dentro do prato.",
   "servings": 4,
   "labels": [

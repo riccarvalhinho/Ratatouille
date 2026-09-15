@@ -2,6 +2,13 @@
   "id": "frango-de-churrasco",
   "name": "Frango de churrasco",
   "description": "Frango espalmado grelhado, pincelado com molho de churrasco, com batata frita e salada de tomate.",
+  "image": "media/recipes/frango-de-churrasco.jpg",
+  "imageCredit": {
+    "author": "D-Stanley",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/79721788@N00/5282834559"
+  },
   "narrative": "O frango espalma-se e marina em alho, colorau, limão e piri-piri. Grelha-se com a pele para baixo primeiro, em lume médio e não forte — em lume forte queima a pele antes de o osso cozer. Vira-se uma vez e só se pincela com o molho nos últimos minutos, porque o molho tem açúcar e queima. As batatas fritam-se entretanto e o tomate tempera-se cru.",
   "servings": 4,
   "labels": [

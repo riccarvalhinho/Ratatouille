@@ -2,6 +2,13 @@
   "id": "gaspacho-alentejano",
   "name": "Gaspacho alentejano",
   "description": "Sopa fria de tomate, pepino e pimento, com pão e muito orégão. Sem triturar.",
+  "image": "media/recipes/gaspacho-alentejano.jpg",
+  "imageCredit": {
+    "author": "tomatoes and friends",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/49845772@N03/4812761687"
+  },
   "narrative": "O gaspacho alentejano não se tritura: corta-se tudo aos cubos pequenos, à faca, e é essa textura que o distingue do gaspacho de copo. Faz-se uma pasta de alho, sal e orégãos no almofariz, dissolve-se em azeite, vinagre e água muito fria, e verte-se sobre os legumes. Vai ao frio pelo menos duas horas, e o pão só entra no prato.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "migas-a-alentejana",
   "name": "Migas à alentejana",
   "description": "Pão alentejano desfeito na gordura da entremeada, com muito alho. Prato único.",
+  "image": "media/recipes/migas-a-alentejana.jpg",
+  "imageCredit": {
+    "author": "Kuiyibo Campos",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/man-preparing-meat-in-a-kitchen-19955759/"
+  },
   "narrative": "A entremeada corta-se em cubos e frita-se devagar até largar a gordura e ficar tostada — é nessa gordura, e não em banha, que as migas se fazem. Tira-se a carne e no mesmo fundo aloura-se o alho. O pão, previamente molhado em água morna com sal e espremido, vai para a frigideira e mexe-se até formar um bolo que se solta do fundo. Enrola-se e vira-se para tostar dos dois lados, e serve-se com a entremeada por cima.",
   "servings": 4,
   "labels": [

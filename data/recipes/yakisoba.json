@@ -2,6 +2,13 @@
   "id": "yakisoba",
   "name": "Yakisoba",
   "description": "Noodles salteados com carne de porco, couve e molho agridoce. Prato único.",
+  "image": "media/recipes/yakisoba.jpg",
+  "imageCredit": {
+    "author": "tab2_dawa",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yakisoba.jpg"
+  },
   "narrative": "O molho mistura-se antes: soja, molho inglês, ketchup ou concentrado de tomate, açúcar e vinagre de arroz — é um molho agridoce, e é ele que distingue yakisoba de noodles salteados quaisquer. A carne e os legumes fazem-se em lume máximo, os noodles entram já cozidos e soltos, e o molho no fim, a envolver tudo em menos de um minuto.",
   "servings": 4,
   "labels": [

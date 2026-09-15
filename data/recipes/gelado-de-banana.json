@@ -2,6 +2,13 @@
   "id": "gelado-de-banana",
   "name": "Gelado de banana",
   "description": "Banana congelada batida até ficar cremosa. Sem natas e sem açúcar.",
+  "image": "media/recipes/gelado-de-banana.jpg",
+  "imageCredit": {
+    "author": "Nitsan Simantov",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=78359177"
+  },
   "narrative": "A banana tem de estar bem madura, com a casca já manchada, e cortada em rodelas antes de congelar — inteira, a picadora não a vence. Batida congelada, passa por uma fase granulosa que parece que não vai resultar, e de repente vira creme. Não se junta líquido nenhum antes disso, ou fica batido em vez de gelado.",
   "servings": 4,
   "labels": [

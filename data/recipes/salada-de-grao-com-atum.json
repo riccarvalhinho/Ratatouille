@@ -2,6 +2,13 @@
   "id": "salada-de-grao-com-atum",
   "name": "Salada de grão com atum",
   "description": "Grão, atum, cebola roxa e ovo cozido, temperados com azeite e vinagre. Sem lume.",
+  "image": "media/recipes/salada-de-grao-com-atum.jpg",
+  "imageCredit": {
+    "author": "Alesia  Kozik",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/vegetarian-meal-with-poached-egg-6632285/"
+  },
   "narrative": "Salada de despensa que dá uma refeição no verão. O grão escorre-se e lava-se bem em água corrente, para tirar o líquido da lata, que é turvo e salgado. A cebola roxa fica dez minutos em água fria antes de entrar, o que lhe tira a agressividade sem lhe tirar o sabor. Tempera-se pelo menos meia hora antes de comer.",
   "servings": 4,
   "labels": [

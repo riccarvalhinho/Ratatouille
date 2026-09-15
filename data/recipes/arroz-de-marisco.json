@@ -2,6 +2,13 @@
   "id": "arroz-de-marisco",
   "name": "Arroz de marisco",
   "description": "Arroz malandro num caldo feito das cascas, com camarão, amêijoa e mexilhão.",
+  "image": "media/recipes/arroz-de-marisco.jpg",
+  "imageCredit": {
+    "author": "jackol",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/44124329962@N01/423105589"
+  },
   "narrative": "O caldo faz-se das cascas e cabeças dos camarões — é o passo que separa isto de arroz com marisco por cima, e leva vinte minutos. O refogado é de cebola, alho, pimento e tomate, demorado. O arroz coze nesse caldo, malandro, com mais líquido do que um arroz seco, porque continua a beber no prato. O marisco entra nos últimos minutos e as amêijoas fechadas deitam-se fora.",
   "servings": 5,
   "labels": [

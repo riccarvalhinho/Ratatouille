@@ -2,6 +2,13 @@
   "id": "frango-tikka-masala",
   "name": "Frango tikka masala",
   "description": "Frango marinado em iogurte e especiarias, grelhado, num molho cremoso de tomate. Com basmati e naan.",
+  "image": "media/recipes/frango-tikka-masala.jpg",
+  "imageCredit": {
+    "author": "secretlondon123",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/25834786@N03/2895455410"
+  },
   "narrative": "São duas metades e a primeira é que faz o prato: o frango marina em iogurte com garam masala, gengibre e alho, e grelha-se em lume muito forte até ganhar manchas escuras. Esse tostado não se consegue dentro do molho. O masala faz-se à parte, com cebola alourada, especiarias tostadas, tomate e natas, e o frango junta-se no fim. O arroz faz-se em paralelo.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "brownies",
   "name": "Brownies",
   "description": "Brownie denso de tabuleiro, com chocolate derretido e pouca farinha.",
+  "image": "media/recipes/brownies.jpg",
+  "imageCredit": {
+    "author": "arnold | inuyaki",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58819758@N00/1300578148"
+  },
   "narrative": "A diferença entre brownie e bolo de chocolate é a farinha a menos e o ovo a mais. A farinha envolve-se só até desaparecer, porque trabalhada desenvolve glúten e o brownie fica elástico. Tira-se do forno quando o palito sai com migalhas húmidas e não seco — seco quer dizer que já passou. Corta-se frio.",
   "servings": 16,
   "yield": "16 quadrados",

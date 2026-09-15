@@ -2,6 +2,13 @@
   "id": "almondegas-com-esparguete",
   "name": "Almôndegas com esparguete",
   "description": "Almôndegas de carne picada estufadas em molho de tomate, sobre esparguete, com queijo ralado.",
+  "image": "media/recipes/almondegas-com-esparguete.jpg",
+  "imageCredit": {
+    "author": "Yamaguchi先生 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_(cropped).jpg"
+  },
   "narrative": "As almôndegas fazem-se com carne picada, pão demolhado em leite, ovo, alho e salsa — é o pão que as mantém tenras, e sem ele ficam bolas secas. Alouram-se na frigideira só para ganhar cor e acabam de cozinhar dentro do molho de tomate, vinte minutos em lume brando. O esparguete coze no fim, enquanto o molho apura. Serve-se com queijo ralado por cima.",
   "servings": 4,
   "labels": [

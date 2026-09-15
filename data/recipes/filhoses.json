@@ -2,6 +2,13 @@
   "id": "filhoses",
   "name": "Filhoses",
   "description": "Massa levedada esticada à mão e frita, polvilhada com açúcar e canela.",
+  "image": "media/recipes/filhoses.jpg",
+  "imageCredit": {
+    "author": "Joice Rivas",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/person-holding-cooked-rolls-of-bread-7261546/"
+  },
   "narrative": "A massa leva ovos, laranja e aguardente ou vinho do Porto, e leveda até duplicar. Estica-se cada bola à mão sobre as costas dos dedos, até ficar fina e quase transparente ao centro — é isso que faz a filhó leve. Fritam-se em óleo bem quente, não em banha, e uma de cada vez. Escorrem em papel e polvilham-se ainda quentes.",
   "servings": 10,
   "yield": "20 filhoses",

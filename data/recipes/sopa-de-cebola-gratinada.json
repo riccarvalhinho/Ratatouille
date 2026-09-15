@@ -2,6 +2,13 @@
   "id": "sopa-de-cebola-gratinada",
   "name": "Sopa de cebola gratinada",
   "description": "Cebola caramelizada quarenta minutos em caldo, com pão e gruyère gratinados por cima.",
+  "image": "media/recipes/sopa-de-cebola-gratinada.jpg",
+  "imageCredit": {
+    "author": "joebeone",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/71753172@N00/328826777"
+  },
   "narrative": "A cebola quer quarenta minutos e não vinte: é o tempo que leva a passar de translúcida a castanha e doce, e é aí que a sopa se faz. Mexe-se de vez em quando e raspa-se o fundo, que é onde está a cor. Desglaça-se com vinho branco, junta-se o caldo e apura-se meia hora. Depois é pão torrado e gruyère em taças, debaixo do grelhador até borbulhar.",
   "servings": 6,
   "labels": [

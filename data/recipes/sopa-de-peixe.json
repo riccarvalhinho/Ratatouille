@@ -2,6 +2,13 @@
   "id": "sopa-de-peixe",
   "name": "Sopa de peixe",
   "description": "Caldo de peixe passado com refogado de tomate, com massinhas.",
+  "image": "media/recipes/sopa-de-peixe.jpg",
+  "imageCredit": {
+    "author": "Fanny Schertzer",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_fish_soup,_Hankasalmi.jpg"
+  },
   "narrative": "O caldo faz-se de cabeças e espinhas com cebola, alho-francês, louro e salsa — e nunca ferve com força nem passa dos vinte minutos, porque peixe cozido de mais deixa o caldo amargo. Coa-se. O refogado de cebola, alho e tomate apura à parte, junta-se o caldo e passa-se tudo. As massinhas cozem no fim e o peixe em lascas devolve-se à sopa.",
   "servings": 5,
   "labels": [

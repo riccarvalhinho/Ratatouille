@@ -2,6 +2,12 @@
   "id": "boeuf-bourguignon",
   "name": "Bœuf bourguignon",
   "description": "Vitela estufada horas em vinho tinto com bacon, cebolinhas e cogumelos. Com puré.",
+  "image": "media/recipes/boeuf-bourguignon.jpg",
+  "imageCredit": {
+    "author": "Véronique PAGNIER",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boeuf_Bourguignon.JPG"
+  },
   "narrative": "Três selagens separadas, e nenhuma se salta: o bacon, a carne em levas, e os cogumelos e cebolinhas à parte no fim. Tudo junto na mesma panela desde o início dá carne cozida em vez de estufada. A carne aloura, polvilha-se com farinha para ligar o molho, e vai o vinho tinto todo com o caldo. Três horas a 160 graus no forno, tapado. Os cogumelos e cebolinhas juntam-se só nos últimos minutos.",
   "servings": 6,
   "labels": [

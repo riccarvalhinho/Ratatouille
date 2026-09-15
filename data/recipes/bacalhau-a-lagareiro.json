@@ -2,6 +2,13 @@
   "id": "bacalhau-a-lagareiro",
   "name": "Bacalhau à lagareiro",
   "description": "Lombos assados com muito azeite e alho, batata a murro e brócolos.",
+  "image": "media/recipes/bacalhau-a-lagareiro.jpg",
+  "imageCredit": {
+    "author": "TUBARONES PHOTOGRAPHY",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/top-view-of-potatoes-and-egg-dish-9546268/"
+  },
   "narrative": "Prato de três ingredientes, e o azeite é um deles — a sério, não um fio. As batatas pequenas cozem com casca e depois levam o murro. Os lombos de bacalhau e as batatas vão ao tabuleiro com o alho laminado e o azeite a cobrir metade da altura, a assar a 200 graus. Rega-se com o próprio azeite a meio. Os brócolos cozem no vapor nos últimos minutos.",
   "servings": 4,
   "labels": [

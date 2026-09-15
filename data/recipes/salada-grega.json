@@ -2,6 +2,13 @@
   "id": "salada-grega",
   "name": "Salada grega",
   "description": "Tomate, pepino, cebola roxa, feta e azeitonas. Sem alface.",
+  "image": "media/recipes/salada-grega.jpg",
+  "imageCredit": {
+    "author": "susan@kingstreetmarketinggroup",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/64141731@N00/7206018248"
+  },
   "narrative": "Não leva alface nenhuma — é isso que a distingue de uma salada mista com queijo. Os pedaços cortam-se grandes, para se comerem à garfada, e o feta vai em bloco ou em cubos grossos por cima, nunca esmigalhado. Só azeite e orégãos; o vinagre é opcional, porque o feta já traz sal e acidez.",
   "servings": 4,
   "labels": [

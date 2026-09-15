@@ -2,6 +2,13 @@
   "id": "acorda-de-camarao",
   "name": "Açorda de camarão",
   "description": "Pão desfeito no caldo dos camarões, com alho, coentros e ovo. Prato único.",
+  "image": "media/recipes/acorda-de-camarao.jpg",
+  "imageCredit": {
+    "author": "Rudi Kessler",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/soup-with-seafood-on-plate-23627792/"
+  },
   "narrative": "As cascas dos camarões cozem-se em água com louro e sal e dão o caldo — deitá-las fora e usar água é o que separa uma açorda de pão molhado. O pão duro corta-se aos pedaços e vai amolecendo nesse caldo quente. Faz-se um refogado de muito alho e coentros em azeite, junta-se o pão e o caldo aos poucos, a mexer, até ficar uma papa grossa. Os ovos batidos entram fora do lume, e os camarões por cima.",
   "servings": 4,
   "labels": [
