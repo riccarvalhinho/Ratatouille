@@ -2,6 +2,13 @@
   "id": "massa-ao-forno-com-atum",
   "name": "Massa ao forno com atum",
   "description": "Penne com atum e tomate, ligado com natas e gratinado. Com salada.",
+  "image": "media/recipes/massa-ao-forno-com-atum.jpg",
+  "imageCredit": {
+    "author": "GrahamPics1",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/76526364@N06/32443291368"
+  },
   "narrative": "Jantar de despensa e de tabuleiro único no forno. A massa coze-se três minutos a menos do que o pacote diz, porque acaba de cozinhar dentro do molho. Faz-se um refogado rápido de cebola e alho com tomate, junta-se o atum escorrido e as natas, e envolve-se tudo com a massa num pirex. Queijo por cima e vinte minutos de forno até a superfície tostar.",
   "servings": 4,
   "labels": [

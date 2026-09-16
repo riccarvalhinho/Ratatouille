@@ -2,6 +2,13 @@
   "id": "lulas-grelhadas",
   "name": "Lulas grelhadas",
   "description": "Lulas na grelha com molho verde de salsa e alho, com arroz de manteiga.",
+  "image": "media/recipes/lulas-grelhadas.jpg",
+  "imageCredit": {
+    "author": "whologwhy",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/60417477@N00/4997841338"
+  },
   "narrative": "Lulas grelham-se depressa ou ficam borracha: dois a três minutos de cada lado em grelha muito quente, e mais nada. Marinam antes só meia hora em azeite, alho e limão. O molho verde faz-se cru, com salsa, alho, azeite e vinagre bem picados. O arroz de manteiga é arroz branco cozido e envolvido com uma noz de manteiga no fim, e faz-se enquanto as lulas marinam.",
   "servings": 4,
   "labels": [

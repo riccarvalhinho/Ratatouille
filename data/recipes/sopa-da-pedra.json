@@ -2,6 +2,13 @@
   "id": "sopa-da-pedra",
   "name": "Sopa da pedra",
   "description": "Feijão, enchidos, batata e couve num caldo apurado. Sopa que é refeição.",
+  "image": "media/recipes/sopa-da-pedra.jpg",
+  "imageCredit": {
+    "author": "IARA MELO",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-homemade-bean-soup-in-white-bowl-30635687/"
+  },
   "narrative": "As carnes e os enchidos cozem primeiro e dão o caldo. O feijão já cozido apura lá dentro com batata, cenoura e um refogado de cebola, alho e colorau. A couve entra nos últimos dez minutos. É sopa grossa, de colher que fica de pé, e engrossa mais no dia seguinte — junta-se água a ferver se for preciso.",
   "servings": 6,
   "labels": [

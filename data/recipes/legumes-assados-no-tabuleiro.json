@@ -2,6 +2,13 @@
   "id": "legumes-assados-no-tabuleiro",
   "name": "Legumes assados no tabuleiro",
   "description": "Legumes da época em cubos, assados até ganharem cor nos bordos.",
+  "image": "media/recipes/legumes-assados-no-tabuleiro.jpg",
+  "imageCredit": {
+    "author": "🇻🇳🇻🇳Nguyễn Tiến Thịnh 🇻🇳🇻🇳",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-roasted-vegetables-in-baking-tray-32659125/"
+  },
   "narrative": "A regra é a mesma para qualquer legume: cubos do mesmo tamanho, azeite que chegue, espalhados sem se tocarem e forno bem quente. Amontoados, cozem no próprio vapor e saem moles e pálidos. Os que demoram mais — batata, cenoura, batata-doce — entram vinte minutos antes dos rápidos.",
   "servings": 6,
   "labels": [

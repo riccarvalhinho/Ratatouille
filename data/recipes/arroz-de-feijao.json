@@ -2,6 +2,13 @@
   "id": "arroz-de-feijao",
   "name": "Arroz de feijão",
   "description": "Arroz malandro com feijão encarnado, o acompanhamento das pataniscas.",
+  "image": "media/recipes/arroz-de-feijao.jpg",
+  "imageCredit": {
+    "author": "The Marmot",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/38142119@N00/18997439088"
+  },
   "narrative": "O mesmo método do arroz de tomate, com o feijão a entrar no refogado antes do arroz. Usa-se um pouco do líquido da cozedura do feijão na água, que dá cor e corpo. Fica malandro, com o feijão inteiro e não desfeito — por isso entra tarde e não se mexe com força.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "leite-creme",
   "name": "Leite-creme",
   "description": "Creme de gemas e leite queimado com açúcar por cima.",
+  "image": "media/recipes/leite-creme.jpg",
+  "imageCredit": {
+    "author": "Janine from Mililani, Hawaii, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Creme_brulee_(2).jpg"
+  },
   "narrative": "É um creme de amido e não de forno: as gemas batem-se com o açúcar e a farinha, e o leite quente junta-se em fio, a mexer, antes de tudo voltar ao lume. Engrossa em lume brando e nunca ferve, ou talha. Arrefece com película colada à superfície, senão cria pele. O açúcar queima-se à última hora com ferro ou maçarico, e come-se antes de amolecer.",
   "servings": 6,
   "labels": [

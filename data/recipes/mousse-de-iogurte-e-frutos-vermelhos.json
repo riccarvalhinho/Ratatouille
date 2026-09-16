@@ -2,6 +2,13 @@
   "id": "mousse-de-iogurte-e-frutos-vermelhos",
   "name": "Mousse de iogurte e frutos vermelhos",
   "description": "Iogurte batido com claras em castelo e coulis de frutos vermelhos. Sem forno.",
+  "image": "media/recipes/mousse-de-iogurte-e-frutos-vermelhos.jpg",
+  "imageCredit": {
+    "author": "Dimitry Fadeev",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-dessert-4664306/"
+  },
   "narrative": "A leveza vem das claras e não das natas: batem-se em castelo firme e envolvem-se no iogurte com a espátula, de baixo para cima, em três vezes — batidas com força, perde-se o ar todo e fica um creme pesado. O coulis faz-se com os frutos ao lume com um pouco de açúcar, passado e arrefecido antes de entrar, senão desfaz o ar da mousse.",
   "servings": 6,
   "labels": [

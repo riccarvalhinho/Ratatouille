@@ -2,6 +2,13 @@
   "id": "arroz-de-tamboril",
   "name": "Arroz de tamboril",
   "description": "Arroz malandro com tamboril e coentros, num caldo feito das espinhas.",
+  "image": "media/recipes/arroz-de-tamboril.jpg",
+  "imageCredit": {
+    "author": "Nano Erdozain",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-spicy-seafood-risotto-on-rustic-plate-31710628/"
+  },
   "narrative": "O tamboril tem uma espinha central que dá um caldo excelente — pede-se ao peixeiro que a guarde e coze-se com cebola e louro. O peixe corta-se em medalhões e entra só nos últimos cinco minutos, porque tamboril cozido de mais fica rijo. O arroz fica malandro e serve-se logo. Coentros a sério, não uma pitada.",
   "servings": 5,
   "labels": [

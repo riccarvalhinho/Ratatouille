@@ -2,6 +2,13 @@
   "id": "esparguete-aglio-e-olio",
   "name": "Esparguete aglio e olio",
   "description": "Alho laminado dourado em azeite com malagueta, ligado com água da cozedura. Com salada verde.",
+  "image": "media/recipes/esparguete-aglio-e-olio.jpg",
+  "imageCredit": {
+    "author": "Vassilis Online",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/42741557@N05/11422999135"
+  },
   "narrative": "Quatro ingredientes e nenhum sítio onde esconder erros. O alho lamina-se fino e vai a lume brando no azeite, com a malagueta, até ficar dourado-claro — passa a queimado em segundos, e queimado amarga o prato todo. Tira-se do lume enquanto se espera pela massa. O esparguete escorre-se um minuto antes do tempo e vai para a frigideira com uma concha de água da cozedura, a saltear, até o molho ficar cremoso.",
   "servings": 4,
   "labels": [

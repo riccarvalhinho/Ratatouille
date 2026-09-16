@@ -2,6 +2,13 @@
   "id": "massa-com-pesto",
   "name": "Massa com pesto",
   "description": "Pesto de manjericão feito no almofariz, com tomate cereja ao lado.",
+  "image": "media/recipes/massa-com-pesto.jpg",
+  "imageCredit": {
+    "author": "Jon Åslund",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/45074090@N00/3719416993"
+  },
   "narrative": "O pesto faz-se com manjericão, pinhões tostados, alho, parmesão e azeite. No almofariz fica melhor do que na picadora, porque as lâminas aquecem e escurecem o manjericão. O sal ajuda a esmagar. Junta-se o azeite em fio no fim, a mexer e não a bater. A massa escorre-se e mistura-se com o pesto fora do lume, com um pouco de água da cozedura — o pesto nunca vai ao lume, ou perde a cor e o cheiro.",
   "servings": 4,
   "labels": [

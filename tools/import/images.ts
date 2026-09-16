@@ -52,6 +52,13 @@ export interface ImageCandidate {
   provider?: string;
   width?: number;
   height?: number;
+  /**
+   * Posição da candidata **dentro do banco que a devolveu**, e não na lista junta.
+   *
+   * É o juízo de relevância desse banco sobre a consulta, e só faz sentido comparado com as do
+   * mesmo banco. Ver o comentário em `searchFreeImages`.
+   */
+  position?: number;
 }
 
 /**
@@ -349,10 +356,20 @@ export async function searchFreeImages(query: string, limit = 12): Promise<Image
     ['Openverse', () => searchImages(query, limit)],
   ];
 
+  /*
+   * Cada candidata leva a sua posição **dentro do próprio banco**.
+   *
+   * Sem isto, quem pontua recebe o índice na lista junta — e como os bancos são consultados por
+   * ordem, as candidatas do Commons começavam no índice 24 e a penalização por posição empurrava-as
+   * todas para pontuação negativa. O efeito era silencioso e grave: configurar as chaves do Pexels
+   * e do Pixabay não acrescentava opções, **desligava** o Commons e o Openverse. O caldo verde, que
+   * tinha uma fotografia certa do Commons, passou a ter um aqueduto do Pexels.
+   */
   const found: ImageCandidate[] = [];
   for (const [name, search] of banks) {
     try {
-      found.push(...(await search()));
+      const doBanco = await search();
+      found.push(...doBanco.map((candidate, posicao) => ({ ...candidate, position: posicao })));
     } catch (error) {
       console.warn(`  ${name} falhou em "${query}": ${String(error)}`);
     }

@@ -2,6 +2,13 @@
   "id": "tacos-de-carne-picada",
   "name": "Tacos de carne picada",
   "description": "Carne temperada com cominhos e colorau, com tortilhas e os acompanhamentos à mesa.",
+  "image": "media/recipes/tacos-de-carne-picada.jpg",
+  "imageCredit": {
+    "author": "jeffreyw",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/7927684@N03/12525671195"
+  },
   "narrative": "A carne sela-se bem, tosta as especiarias no próprio fundo e apura só dez minutos com um pouco de água, até ficar húmida mas não caldosa — molhada de mais, encharca a tortilha e o taco desfaz-se na mão. Tudo o resto se prepara cru enquanto a carne apura: guacamole esmagado com o garfo, tomate com cebola e coentros, limas em gomos. As tortilhas aquecem-se numa frigideira seca, à última.",
   "servings": 4,
   "labels": [
