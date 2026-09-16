@@ -1,0 +1,139 @@
+{
+  "id": "salada-de-atum-e-feijao-branco",
+  "name": "Salada de atum e feijão branco",
+  "description": "Três latas, uma cebola e quinze minutos. Não leva lume nenhum.",
+  "narrative": "É a refeição de dia de calor em que ninguém quer acender nada, e sai da despensa inteira. O passo que quase toda a gente salta é passar o feijão por água corrente: o líquido da conserva sabe a lata e turva o tempero. A cebola roxa fica dez minutos no sumo de limão antes de entrar — perde o ardor e fica rosa, e é a diferença entre uma salada equilibrada e uma que sabe a cebola crua a tarde toda. O atum entra aos pedaços grandes e mexe-se o mínimo.",
+  "servings": 4,
+  "labels": [
+    "salada",
+    "peixe",
+    "leguminosas",
+    "mediterranica",
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "taca",
+    "escorredor",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-branco-cozido",
+      "quantity": 480,
+      "unit": "g",
+      "note": "escorrido e passado por água"
+    },
+    {
+      "ref": "atum-em-conserva",
+      "quantity": 300,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 60,
+      "unit": "g",
+      "note": "sem caroço"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amaciar a cebola no limão",
+      "text": "Meias-luas finas no sumo do limão com uma pitada de sal. Deixar enquanto se corta o resto.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola-roxa",
+        "limao",
+        "sal"
+      ],
+      "passive": true
+    },
+    {
+      "title": "Juntar o feijão com o tomate",
+      "text": "Feijão bem passado por água, tomate, azeitona e salsa picada.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "feijao-branco-cozido",
+        "tomate",
+        "azeitona",
+        "salsa"
+      ]
+    },
+    {
+      "title": "Temperar e envolver o atum",
+      "text": "Azeite, orégãos e pimenta. Atum aos pedaços grandes, a mexer o mínimo.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "azeite",
+        "oregaos",
+        "pimenta-preta",
+        "atum-em-conserva"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 390,
+    "proteinGrams": 27,
+    "carbsGrams": 25,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 9,
+    "saltGrams": 1.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

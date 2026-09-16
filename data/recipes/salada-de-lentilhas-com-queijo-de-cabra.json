@@ -1,0 +1,165 @@
+{
+  "id": "salada-de-lentilhas-com-queijo-de-cabra",
+  "name": "Salada de lentilhas com queijo de cabra",
+  "description": "Lentilha castanha morna, beterraba assada, queijo de cabra e noz, com vinagrete de mel.",
+  "narrative": "A lentilha castanha é a que aguenta uma salada: mantém a forma onde a vermelha se desfaz em puré. Coze em vinte minutos sem demolha nenhuma, em água sem sal — sal a meio da cozedura endurece a pele — e escorre-se logo, senão continua a inchar. Serve-se morna, que é quando absorve o vinagrete. A beterraba pode ser cozida de compra para poupar quarenta minutos, e ninguém dá pela diferença debaixo do queijo de cabra. O mel no vinagrete equilibra a acidez da beterraba e a acidez do queijo.",
+  "servings": 4,
+  "labels": [
+    "salada",
+    "leguminosas",
+    "dia-a-dia",
+    "vegetariano",
+    "francesa",
+    "sem-gluten"
+  ],
+  "methods": [
+    "tacho",
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "forno",
+    "tabuleiro-de-forno",
+    "taca",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "lentilha-castanha",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "beterraba",
+      "quantity": 400,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "queijo-de-cabra",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "noz",
+      "quantity": 80,
+      "unit": "g",
+      "note": "partidas"
+    },
+    {
+      "ref": "rucula",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-balsamico",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "mel",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar a beterraba",
+      "text": "Forno a 200 °C com azeite e sal, até os bordos caramelizarem.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "beterraba",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer as lentilhas sem sal",
+      "text": "Com o louro, em água a ferver. Escorrer assim que estiverem tenras e ainda inteiras, e só então salgar.",
+      "durationMinutes": 22,
+      "ingredientRefs": [
+        "lentilha-castanha",
+        "folha-de-louro",
+        "agua"
+      ]
+    },
+    {
+      "title": "Bater o vinagrete de mel",
+      "text": "Mostarda, vinagre, mel e sal, azeite a fio no fim.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "mostarda",
+        "vinagre-balsamico",
+        "mel",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Temperar as lentilhas mornas e montar",
+      "text": "Vinagrete nas lentilhas ainda quentes, com a cebola. Rúcula, beterraba, queijo aos pedaços e noz por cima.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "cebola-roxa",
+        "rucula",
+        "queijo-de-cabra",
+        "noz"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 27,
+    "carbsGrams": 52,
+    "fatGrams": 32,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 14,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

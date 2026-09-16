@@ -1,0 +1,148 @@
+{
+  "id": "hummus-com-legumes",
+  "name": "Hummus com palitos de legumes",
+  "description": "Grão, tahini e limão batidos até ficarem lisos, com cenoura e pepino para molhar.",
+  "narrative": "O hummus fica granuloso por dois motivos: pouco líquido e pressa. A água gelada batida no fim é o que o torna claro e aveludado — parece contraintuitivo juntar água a uma pasta, e é exatamente isso que faz a diferença. Tirar a pele ao grão de bico melhora ainda mais a textura e leva cinco minutos de paciência; quem não os tiver, bate mais tempo. O tahini tem de ser mexido no frasco antes de se medir, porque separa e o que está à superfície é só óleo.",
+  "servings": 6,
+  "labels": [
+    "snack",
+    "leguminosas",
+    "mediterranica",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "processador-de-alimentos",
+    "espatula",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 480,
+      "unit": "g",
+      "note": "escorrido e passado por água"
+    },
+    {
+      "ref": "tahini",
+      "quantity": 90,
+      "unit": "g",
+      "note": "mexido no frasco antes de medir"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 80,
+      "unit": "ml",
+      "note": "gelada"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em palitos"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em palitos"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater o tahini com o limão primeiro",
+      "text": "Tahini, sumo dos limões e o alho, sozinhos, até ficar uma pasta clara. Só depois entra o grão.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "tahini",
+        "limao",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Juntar o grão e a água gelada",
+      "text": "Grão, cominhos e sal, a bater. Água gelada a fio com a máquina a trabalhar, até ficar liso e claro. Três minutos, não trinta segundos.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "cominhos",
+        "sal",
+        "agua"
+      ]
+    },
+    {
+      "title": "Cortar os legumes",
+      "text": "Cenoura e pepino em palitos do mesmo tamanho.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "cenoura",
+        "pepino"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Hummus numa taça com uma cova ao centro, azeite a encher a cova e colorau por cima.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "azeite",
+        "colorau"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 290,
+    "proteinGrams": 10,
+    "carbsGrams": 24,
+    "fatGrams": 18,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 8,
+    "saltGrams": 0.7
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

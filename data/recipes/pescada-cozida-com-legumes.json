@@ -1,0 +1,158 @@
+{
+  "id": "pescada-cozida-com-legumes",
+  "name": "Pescada cozida com legumes",
+  "description": "Peixe e legumes no mesmo tacho, por ordem de tempo, com molho de azeite e alho por cima.",
+  "narrative": "O jantar de terça-feira que ninguém escreve porque parece óbvio, e depois sai mal na mesma: ou o peixe cozeu de mais ou a batata ficou crua. A ordem resolve — batata e cenoura primeiro, feijão verde a meio, peixe nos últimos oito minutos, e tudo no mesmo tacho para não haver três lumes. O molho é o que faz a diferença entre isto e comida de hospital: azeite morno com alho laminado, vinagre e salsa, batido com um garfo e deitado por cima na hora de servir. Um ovo cozido acrescenta-se se a refeição tiver de aguentar até à noite.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 22
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "escumadeira",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 700,
+      "unit": "g",
+      "note": "em postas"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "descascada, em metades"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em troços grossos"
+    },
+    {
+      "ref": "feijao-verde",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr a batata e a cenoura a cozer",
+      "text": "Água a cobrir, sal e o louro. A contar do momento em que ferve.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "batata",
+        "cenoura",
+        "agua",
+        "sal",
+        "folha-de-louro"
+      ]
+    },
+    {
+      "title": "Juntar o feijão verde e os ovos",
+      "text": "Os ovos vão inteiros para a mesma água.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "feijao-verde",
+        "ovo"
+      ]
+    },
+    {
+      "title": "Cozer a pescada por cima",
+      "text": "Postas em camada única sobre os legumes. Pronta quando a espinha central se solta com um garfo.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "pescada"
+      ]
+    },
+    {
+      "title": "Bater o molho de azeite e alho",
+      "text": "Azeite, alho laminado, vinagre e salsa picada, batidos com um garfo. Sal no fim.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "vinagre-de-vinho",
+        "salsa",
+        "sal"
+      ]
+    },
+    {
+      "title": "Servir e regar",
+      "text": "Peixe, legumes e ovo descascado no prato, molho por cima na hora.",
+      "durationMinutes": 2
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 540,
+    "proteinGrams": 45,
+    "carbsGrams": 38,
+    "fatGrams": 24,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 7,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

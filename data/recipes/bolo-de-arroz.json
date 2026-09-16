@@ -1,0 +1,138 @@
+{
+  "id": "bolo-de-arroz",
+  "name": "Bolo de arroz",
+  "description": "Os queques de pastelaria, com farinha de arroz e açúcar por cima. Dão doze.",
+  "narrative": "O que faz o bolo de arroz não é levar arroz — é a farinha de arroz misturada com a de trigo, que lhe dá o miolo seco e areento que se reconhece à dentada. A proporção habitual é um terço de farinha de arroz para dois de trigo; mais do que isso e fica quebradiço. A tira de papel à volta não é decoração: segura a massa a subir a direito e é o que dá a forma de torre. O açúcar polvilhado antes de entrar no forno caramelza e faz a crosta de cima.",
+  "servings": 12,
+  "yield": "12 bolos de arroz",
+  "labels": [
+    "sobremesa",
+    "pao-e-bolos",
+    "portuguesa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "forno",
+    "batedeira",
+    "forma-de-queques",
+    "papel-vegetal",
+    "peneira"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-arroz",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g",
+      "note": "mais um pouco para polvilhar"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 125,
+      "unit": "g",
+      "note": "amolecida"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "leite",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a raspa"
+    },
+    {
+      "ref": "sal",
+      "quantity": 1,
+      "unit": "pitada"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater a manteiga com o açúcar",
+      "text": "Até ficar um creme claro e fofo, antes de os ovos entrarem.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "manteiga",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Juntar os ovos e a raspa",
+      "text": "Um de cada vez, só batendo o seguinte depois de o anterior desaparecer.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "ovo",
+        "limao"
+      ]
+    },
+    {
+      "title": "Alternar as farinhas com o leite",
+      "text": "Farinhas peneiradas com o fermento e o sal, a alternar com o leite, em velocidade baixa. Parar assim que ficar homogéneo.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "farinha-de-arroz",
+        "fermento-em-po",
+        "sal",
+        "leite"
+      ]
+    },
+    {
+      "title": "Encher as formas com colarinho de papel",
+      "text": "Tira de papel vegetal a forrar cada forma acima do bordo, massa até dois terços, açúcar por cima.",
+      "durationMinutes": 6
+    },
+    {
+      "title": "Cozer",
+      "text": "Forno a 180 °C, até levantarem em cúpula rachada e o palito sair seco.",
+      "durationMinutes": 25
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 310,
+    "proteinGrams": 5,
+    "carbsGrams": 47,
+    "fatGrams": 11,
+    "saturatedFatGrams": 6.5,
+    "fibreGrams": 0.8,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

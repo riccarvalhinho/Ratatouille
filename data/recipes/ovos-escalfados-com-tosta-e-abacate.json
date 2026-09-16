@@ -1,0 +1,130 @@
+{
+  "id": "ovos-escalfados-com-tosta-e-abacate",
+  "name": "Ovos escalfados com tosta e abacate",
+  "description": "Ovo escalfado em água com vinagre, sobre pão torrado com abacate esmagado.",
+  "narrative": "Escalfar assusta e não devia. Três coisas resolvem: água a tremer e não a ferver, uma colher de vinagre para a clara coagular depressa, e ovos o mais frescos possível — num ovo velho a clara já está líquida e espalha-se por toda a panela. Fazer um redemoinho com a colher antes de deixar cair o ovo enrola a clara à volta da gema. O abacate esmaga-se com um garfo e leva limão logo, que é o que o impede de escurecer enquanto se faz o resto.",
+  "servings": 2,
+  "labels": [
+    "pequeno-almoco",
+    "ovos",
+    "dia-a-dia",
+    "vegetariano",
+    "americana"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 8,
+    "cookMinutes": 8
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "escumadeira",
+    "torradeira",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "abacate",
+      "quantity": 1,
+      "unit": "un",
+      "note": "maduro"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "malagueta",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 1.5,
+      "unit": "l"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Esmagar o abacate com limão",
+      "text": "Garfo, não varinha. Sumo de meio limão, sal e pimenta a envolver.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "abacate",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Torrar o pão",
+      "text": "Bem dourado — mole não aguenta o ovo.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "title": "Escalfar os ovos",
+      "text": "Água a tremer sem ferver, com o vinagre. Redemoinho com a colher, ovo partido ao centro, dois a dois. Retirar quando a clara estiver firme e a gema ceder ao toque.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "agua",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Montar",
+      "text": "Abacate sobre a torrada, ovo por cima, malagueta em rodelas e sal grosso.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "malagueta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 470,
+    "proteinGrams": 20,
+    "carbsGrams": 34,
+    "fatGrams": 27,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 8,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "ovos-mexidos-com-cogumelos",
+  "name": "Ovos mexidos com cogumelos",
+  "description": "Cogumelos salteados a sério e ovos mexidos em lume brando, sobre pão torrado.",
+  "narrative": "Os ovos mexidos falham sempre pela mesma razão: lume alto e pressa. Em lume brando e a mexer, levam cinco minutos e saem em creme; em lume alto levam um e saem em grumos secos. Os cogumelos são o contrário — precisam de lume forte e de espaço na frigideira, senão largam água e cozem em vez de alourar, e por isso vão primeiro e saem antes de os ovos entrarem. Tirar do lume com os ovos ainda a parecer pouco feitos é o único gesto que conta: o calor da frigideira acaba o trabalho no prato.",
+  "servings": 2,
+  "labels": [
+    "prato-principal",
+    "ovos",
+    "dia-a-dia",
+    "vegetariano",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 13
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "espatula",
+    "torradeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 6,
+      "unit": "un"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 250,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias grossas"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Saltear os cogumelos em lume forte",
+      "text": "Frigideira bem quente, cogumelos em camada única, sem mexer no primeiro minuto. Alho no fim, sal só depois de estarem dourados.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "cogumelos",
+        "dente-de-alho",
+        "sal"
+      ]
+    },
+    {
+      "title": "Torrar o pão",
+      "text": "Enquanto os cogumelos alouram.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "pao-rustico"
+      ]
+    },
+    {
+      "title": "Mexer os ovos em lume brando",
+      "text": "Ovos batidos com sal e pimenta na manteiga, a mexer sempre. Tirar do lume quando ainda parecerem pouco feitos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "manteiga",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Montar",
+      "text": "Ovos sobre a torrada, cogumelos por cima, cebolinho picado.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "cebolinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 26,
+    "carbsGrams": 30,
+    "fatGrams": 28,
+    "saturatedFatGrams": 11,
+    "fibreGrams": 3,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,161 @@
+{
+  "id": "salada-de-massa-com-legumes",
+  "name": "Salada de massa com legumes",
+  "description": "Massa curta fria com tomate, pepino e feta. Faz-se de véspera e sabe melhor no dia seguinte.",
+  "narrative": "É a salada que se leva para a praia e para o trabalho, e a que aguenta. A massa coze um minuto a mais do que para servir quente — fria endurece, e massa al dente que arrefece fica a saber a crua. Passar por água fria trava a cozedura e tira o amido que colaria tudo. O tempero vai ainda morno, que é quando a massa absorve, e o queijo feta entra no fim para não se desfazer. Um dia no frigorífico melhora-a, porque é o tempo que o tomate leva a largar sumo e a temperar o resto.",
+  "servings": 6,
+  "labels": [
+    "salada",
+    "massa-e-arroz",
+    "legumes",
+    "mediterranica",
+    "dia-a-dia",
+    "vegetariano",
+    "sobras"
+  ],
+  "methods": [
+    "tacho",
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 12
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "escorredor",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-penne",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-cereja",
+      "quantity": 300,
+      "unit": "g",
+      "note": "ao meio"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "queijo-feta",
+      "quantity": 200,
+      "unit": "g",
+      "note": "esfarelado"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 100,
+      "unit": "g",
+      "note": "sem caroço"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 70,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-balsamico",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a massa um minuto a mais",
+      "text": "Al dente endurece ao arrefecer. Passar por água fria e escorrer bem.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "massa-penne",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cortar os legumes",
+      "text": "Tudo do tamanho de um penne, para caber na mesma garfada.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "tomate-cereja",
+        "pepino",
+        "pimento-vermelho",
+        "cebola-roxa"
+      ]
+    },
+    {
+      "title": "Temperar a massa ainda morna",
+      "text": "Azeite, vinagre, orégãos e sal envolvidos na massa antes de os legumes entrarem.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "azeite",
+        "vinagre-balsamico",
+        "oregaos"
+      ]
+    },
+    {
+      "title": "Juntar legumes, feta e manjericão",
+      "text": "Feta por último, a envolver com cuidado para não virar creme.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "queijo-feta",
+        "azeitona",
+        "manjericao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 470,
+    "proteinGrams": 15,
+    "carbsGrams": 58,
+    "fatGrams": 20,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 5,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

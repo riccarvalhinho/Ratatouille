@@ -1,0 +1,147 @@
+{
+  "id": "roupa-velha",
+  "name": "Roupa velha",
+  "description": "O bacalhau cozido do dia anterior, com as batatas e as couves, salteado em azeite e alho.",
+  "narrative": "É a receita que existe porque sobrou consoada, e é das poucas em que a sobra sai melhor do que o original. Tudo o que estava cozido — bacalhau, batata, couve, grelos — vai para a frigideira com muito azeite e muito alho, e desfaz-se de propósito: a roupa velha não tem pedaços inteiros, tem tudo misturado e embebido em azeite. Nunca leva lume forte, senão a batata agarra; lume médio e uma espátula a virar de baixo para cima. Sem sobras, coze-se tudo de véspera — e aí deixa de ser roupa velha, mas sabe ao mesmo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "sobras",
+    "conforto",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "espatula",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bacalhau-salgado",
+      "quantity": 500,
+      "unit": "g",
+      "note": "já demolhado e cozido, lascado"
+    },
+    {
+      "ref": "batata",
+      "quantity": 700,
+      "unit": "g",
+      "note": "já cozida, em pedaços"
+    },
+    {
+      "ref": "couve-galega",
+      "quantity": 300,
+      "unit": "g",
+      "note": "já cozida, picada grosseiramente"
+    },
+    {
+      "ref": "grelos",
+      "quantity": 200,
+      "unit": "g",
+      "note": "já cozidos"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "cozidos, em quartos"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o alho no azeite",
+      "text": "Muito azeite e lume médio, até o alho ficar dourado nas bordas.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Saltear o bacalhau com as couves",
+      "text": "Bacalhau lascado e as couves, a envolver no azeite.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "bacalhau-salgado",
+        "couve-galega",
+        "grelos"
+      ]
+    },
+    {
+      "title": "Juntar a batata e desfazer",
+      "text": "Lume médio e espátula a virar de baixo para cima, até a batata se desfazer em parte e absorver o azeite. Não mexer depressa nem com lume forte.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "batata",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Servir com ovo e azeitona",
+      "text": "Ovo em quartos e azeitona por cima, fio de vinagre para quem quiser.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "ovo",
+        "azeitona",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 690,
+    "proteinGrams": 45,
+    "carbsGrams": 42,
+    "fatGrams": 38,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 8,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "gnocchi-com-tomate-e-manjericao",
+  "name": "Gnocchi com tomate e manjericão",
+  "description": "Molho de tomate feito no tempo que a água leva a ferver, e o gnocchi cozido em dois minutos.",
+  "narrative": "O gnocchi de compra tem uma vantagem que a massa não tem: coze em dois minutos e avisa quando está pronto, porque sobe à superfície. Isso muda a ordem da cozinha — o molho tem de estar feito antes de o gnocchi entrar na água, não ao contrário. O molho é o mínimo honesto: alho em azeite, tomate pelado esmagado à mão, e tempo. Vinte minutos de lume brando transformam tomate de lata em molho; dez deixam-no a saber a lata. O manjericão entra fora do lume e o parmesão no prato.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "vegetariano",
+    "conforto"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 22
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escumadeira",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "gnocchi",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 60,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Alourar o alho e juntar o tomate",
+      "text": "Alho em azeite morno até perfumar, depois o tomate esmagado à mão, o açúcar e sal.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "azeite",
+        "tomate-pelado",
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Apurar o molho",
+      "text": "Lume brando e destapado, até engrossar e o azeite subir à superfície.",
+      "durationMinutes": 18
+    },
+    {
+      "title": "Cozer o gnocchi",
+      "text": "Água a ferver com sal. Retirar com escumadeira assim que subirem.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "gnocchi",
+        "agua"
+      ]
+    },
+    {
+      "title": "Envolver e servir",
+      "text": "Gnocchi no molho com uma concha da água da cozedura, manjericão fora do lume e parmesão no prato.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "manjericao",
+        "queijo-parmesao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 16,
+    "carbsGrams": 82,
+    "fatGrams": 14,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 6,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

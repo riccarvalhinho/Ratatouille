@@ -1,0 +1,172 @@
+{
+  "id": "rissois-de-camarao",
+  "name": "Rissóis de camarão",
+  "description": "Massa cozida de leite e farinha, recheio de camarão em bechamel, fritos.",
+  "narrative": "A massa de rissol faz-se ao lume e não à mão: leite, água, manteiga e sal a ferver, farinha de uma vez só, e mexer com força até formar uma bola que se despega do tacho. A partir daí amassa-se morna sobre a bancada e estende-se fina — massa grossa dá rissóis pesados e crus por dentro. O recheio quer ficar mais espesso do que parece necessário, porque arrefece e ainda assenta; líquido de mais, escorre pelo selo. Selar com um garfo depois de cortar com um copo é o que segura tudo no óleo.",
+  "servings": 6,
+  "yield": "cerca de 24 rissóis",
+  "labels": [
+    "snack",
+    "marisco",
+    "portuguesa",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 50,
+    "cookMinutes": 25,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "O recheio tem de arrefecer antes de se enrolarem os rissóis."
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "rolo-da-massa",
+    "taca",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "camarao",
+      "quantity": 400,
+      "unit": "g",
+      "note": "cozido e picado"
+    },
+    {
+      "ref": "leite",
+      "quantity": 700,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 450,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 70,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada muito fina"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un",
+      "note": "batidos, para panar"
+    },
+    {
+      "ref": "pao-ralado",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 1,
+      "unit": "l",
+      "note": "para fritar"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fazer o recheio de camarão",
+      "text": "Cebola em metade da manteiga, 40 g de farinha a cozinhar, 300 ml de leite aos poucos. Camarão, salsa, limão e noz-moscada. Espesso ao ponto de a colher deixar rasto.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "manteiga",
+        "farinha-de-trigo",
+        "leite",
+        "camarao",
+        "salsa",
+        "limao",
+        "noz-moscada",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Arrefecer o recheio",
+      "text": "Taça rasa e película em contacto, até ficar frio.",
+      "durationMinutes": 60,
+      "passive": true
+    },
+    {
+      "title": "Fazer a massa ao lume",
+      "text": "Restante leite, a água, o resto da manteiga e sal a ferver. Restante farinha de uma vez, a mexer com força até formar bola que se despega do tacho.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "agua"
+      ]
+    },
+    {
+      "title": "Estender e rechear",
+      "text": "Amassar morna, estender fina, cortar círculos com um copo. Recheio a meio, dobrar e selar bem com o garfo.",
+      "durationMinutes": 25
+    },
+    {
+      "title": "Panar e fritar",
+      "text": "Ovo batido e pão ralado. Óleo bem quente e poucos de cada vez, até dourados.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "ovo",
+        "pao-ralado",
+        "oleo-alimentar"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 580,
+    "proteinGrams": 28,
+    "carbsGrams": 68,
+    "fatGrams": 22,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 3,
+    "saltGrams": 1.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

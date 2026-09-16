@@ -1,0 +1,165 @@
+{
+  "id": "wok-de-vaca-com-pimentos",
+  "name": "Wok de vaca com pimentos",
+  "description": "Tiras finas de vaca seladas em lume máximo, pimentos estaladiços e arroz jasmim ao lado.",
+  "narrative": "Um salteado falha quando a frigideira não está suficientemente quente ou quando leva comida a mais de uma vez — em qualquer dos casos a carne coze no próprio suco em vez de selar. Por isso a carne vai em duas fornadas e sai antes de estar feita, para voltar no fim. Cortar a vaca contra o sentido das fibras e fininha é o que a mantém tenra; deixá-la vinte minutos com molho de soja e amido de milho é o truque que os restaurantes chineses usam e que custa nada. O arroz começa primeiro, porque leva o dobro do tempo de tudo o resto.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "asiatica",
+    "dia-a-dia",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 18
+  },
+  "equipment": [
+    "placa",
+    "wok",
+    "tacho",
+    "faca-de-chef",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-vaca",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras finas, contra as fibras"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "pimento-verde",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "amido-de-milho",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-de-sesamo",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz e temperar a carne",
+      "text": "Arroz lavado com a água e sal, tapado em lume baixo. A carne fica em metade do molho de soja com o amido, enquanto se corta o resto.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua",
+        "sal",
+        "bife-de-vaca",
+        "molho-de-soja",
+        "amido-de-milho"
+      ]
+    },
+    {
+      "title": "Selar a carne em duas fornadas",
+      "text": "Wok a fumegar com o óleo, carne em camada única, um minuto de cada lado. Retirar ainda rosada.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Saltear os pimentos e a cebola",
+      "text": "Lume máximo, a mexer. Têm de ficar com os bordos tostados e o centro estaladiço.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pimento-vermelho",
+        "pimento-verde",
+        "cebola"
+      ]
+    },
+    {
+      "title": "Juntar tudo e ligar o molho",
+      "text": "Alho e gengibre meio minuto, carne de volta, o resto do molho de soja e o óleo de sésamo. Servir sobre o arroz com sésamo por cima.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "dente-de-alho",
+        "gengibre",
+        "oleo-de-sesamo",
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 42,
+    "carbsGrams": 66,
+    "fatGrams": 19,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 4,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "pao-de-lo",
+  "name": "Pão de ló",
+  "description": "Ovos, açúcar e farinha. Sem fermento: o volume vem todo de bater os ovos.",
+  "narrative": "Três ingredientes e nenhum sítio onde esconder erros. O volume não vem de fermento nenhum — vem do ar que se bate para dentro dos ovos, e por isso os oito a dez minutos de batedeira não são exagero, são a receita. Os ovos devem estar à temperatura ambiente, que bate mais volume do que ovos frios. A farinha entra peneirada e envolve-se com uma espátula de baixo para cima, nunca com a batedeira. O forno não se abre antes dos vinte minutos. Húmido ao centro é como o pão de ló de Ovar é suposto ser; quem o quiser seco deixa mais cinco minutos.",
+  "servings": 10,
+  "labels": [
+    "sobremesa",
+    "pao-e-bolos",
+    "portuguesa",
+    "festa",
+    "vegetariano",
+    "sem-lactose"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "forno",
+    "batedeira",
+    "forma-de-bolo",
+    "peneira",
+    "espatula",
+    "papel-vegetal"
+  ],
+  "ingredients": [
+    {
+      "ref": "ovo",
+      "quantity": 8,
+      "unit": "un",
+      "note": "à temperatura ambiente"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 180,
+      "unit": "g",
+      "note": "peneirada"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a raspa"
+    },
+    {
+      "ref": "sal",
+      "quantity": 1,
+      "unit": "pitada"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater os ovos com o açúcar",
+      "text": "Batedeira na velocidade máxima até triplicar de volume e ficar quase branco. Oito a dez minutos.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "ovo",
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Envolver a farinha à mão",
+      "text": "Peneirada, em três vezes, com espátula e movimentos de baixo para cima. A raspa de limão na última.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "limao"
+      ]
+    },
+    {
+      "title": "Cozer sem abrir o forno",
+      "text": "Forno a 180 °C, forma forrada. Não abrir antes dos vinte minutos. O palito ao centro sai com migalhas húmidas agarradas.",
+      "durationMinutes": 30
+    },
+    {
+      "title": "Arrefecer na forma",
+      "text": "Desenformar só depois de morno.",
+      "durationMinutes": 20,
+      "passive": true
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 270,
+    "proteinGrams": 7,
+    "carbsGrams": 47,
+    "fatGrams": 5,
+    "saturatedFatGrams": 1.5,
+    "fibreGrams": 0.6,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

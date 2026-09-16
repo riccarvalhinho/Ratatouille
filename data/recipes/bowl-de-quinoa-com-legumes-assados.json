@@ -1,0 +1,156 @@
+{
+  "id": "bowl-de-quinoa-com-legumes-assados",
+  "name": "Bowl de quinoa com legumes assados",
+  "description": "Legumes no tabuleiro, quinoa ao lado e molho de tahini por cima. Come-se morno ou frio.",
+  "narrative": "A quinoa tem duas regras e nenhuma é intuitiva: lava-se antes de cozer, porque a saponina que a reveste é amarga, e coze em quinze minutos com o dobro do volume de água. O resto é tabuleiro. Os legumes vão todos ao forno ao mesmo tempo cortados do mesmo tamanho — é isso, e não o tempo, que faz com que fiquem prontos juntos. O molho de tahini com limão e água separa esta receita de uma tigela de legumes: sem ele fica seco, e é a colher de água a mais que o transforma de pasta em molho.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "leguminosas",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "forno",
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "tacho",
+    "taca",
+    "peneira"
+  ],
+  "ingredients": [
+    {
+      "ref": "quinoa",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em gomos"
+    },
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 400,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "abacate",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em fatias"
+    },
+    {
+      "ref": "tahini",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "cominhos",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Assar os legumes com o grão",
+      "text": "Forno a 220 °C. Legumes e grão no tabuleiro com azeite, cominhos e sal, em camada única. Mexer a meio.",
+      "durationMinutes": 30,
+      "ingredientRefs": [
+        "courgette",
+        "pimento-vermelho",
+        "cebola-roxa",
+        "grao-de-bico-cozido",
+        "azeite",
+        "cominhos",
+        "sal"
+      ]
+    },
+    {
+      "title": "Lavar e cozer a quinoa",
+      "text": "Passar por água fria numa peneira até sair limpa, depois cozer com o dobro do volume de água e sal, tapada.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "quinoa",
+        "agua"
+      ]
+    },
+    {
+      "title": "Bater o molho de tahini",
+      "text": "Tahini, sumo de limão e sal, com água a fio até virar molho corrente.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "tahini",
+        "limao"
+      ]
+    },
+    {
+      "title": "Montar as taças",
+      "text": "Quinoa em baixo, legumes por cima, abacate em fatias e o molho a fio.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "abacate"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 20,
+    "carbsGrams": 62,
+    "fatGrams": 31,
+    "saturatedFatGrams": 4.5,
+    "fibreGrams": 15,
+    "saltGrams": 1.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

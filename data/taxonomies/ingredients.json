@@ -2,15 +2,201 @@
   "kind": "ingredients",
   "items": [
     {
-      "id": "vinho-branco",
-      "name": "Vinho branco",
-      "aisle": "bebidas",
-      "density": 0.99
+      "id": "abacate",
+      "name": "Abacate",
+      "plural": "Abacates",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 200
     },
     {
-      "id": "ervilhas-congeladas",
-      "name": "Ervilhas congeladas",
-      "aisle": "congelados"
+      "id": "abobora",
+      "name": "Abóbora",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "acafrao",
+      "name": "Açafrão",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "acucar",
+      "name": "Açúcar",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "acucar-em-po",
+      "name": "Açúcar em pó",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "agriao",
+      "name": "Agrião",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "agua",
+      "name": "Água",
+      "aisle": "outros",
+      "staple": true,
+      "density": 1
+    },
+    {
+      "id": "aipo",
+      "name": "Aipo",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 60
+    },
+    {
+      "id": "alcaparras",
+      "name": "Alcaparras",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "alecrim",
+      "name": "Alecrim",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "aletria",
+      "name": "Aletria",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "alface",
+      "name": "Alface",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 300
+    },
+    {
+      "id": "alga-nori",
+      "name": "Alga nori",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "alga-wakame",
+      "name": "Alga wakame",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "alho-em-po",
+      "name": "Alho em pó",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "alho-frances",
+      "name": "Alho-francês",
+      "plural": "Alhos-franceses",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 250
+    },
+    {
+      "id": "ameijoa",
+      "name": "Amêijoa",
+      "plural": "Amêijoas",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 10
+    },
+    {
+      "id": "amendoa",
+      "name": "Amêndoa",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "amendoim",
+      "name": "Amendoim",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "amido-de-milho",
+      "name": "Amido de milho",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "ananas",
+      "name": "Ananás",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "anchova",
+      "name": "Anchova",
+      "plural": "Anchovas",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 5
+    },
+    {
+      "id": "anis-estrelado",
+      "name": "Anis-estrelado",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "arroz-agulha",
+      "name": "Arroz agulha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "arroz-arboreo",
+      "name": "Arroz arbóreo",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "arroz-basmati",
+      "name": "Arroz basmati",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "arroz-carolino",
+      "name": "Arroz carolino",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "arroz-jasmim",
+      "name": "Arroz jasmim",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "atum-em-conserva",
+      "name": "Atum em conserva",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "aveia",
+      "name": "Flocos de aveia",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "azeite",
+      "name": "Azeite",
+      "aisle": "mercearia",
+      "staple": true,
+      "density": 0.92
+    },
+    {
+      "id": "azeitona",
+      "name": "Azeitona",
+      "plural": "Azeitonas",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "bacalhau-salgado",
+      "name": "Bacalhau salgado",
+      "aisle": "peixaria"
+    },
+    {
+      "id": "bacon",
+      "name": "Bacon",
+      "aisle": "talho"
+    },
+    {
+      "id": "banana",
+      "name": "Banana",
+      "plural": "Bananas",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 120
     },
     {
       "id": "batata",
@@ -18,6 +204,152 @@
       "plural": "Batatas",
       "aisle": "frutas-e-legumes",
       "unitGramsPerUnit": 150
+    },
+    {
+      "id": "batata-doce",
+      "name": "Batata-doce",
+      "plural": "Batatas-doces",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 200
+    },
+    {
+      "id": "batata-palha",
+      "name": "Batata palha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "baunilha",
+      "name": "Baunilha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "beringela",
+      "name": "Beringela",
+      "plural": "Beringelas",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 300
+    },
+    {
+      "id": "beterraba",
+      "name": "Beterraba",
+      "plural": "Beterrabas",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 150
+    },
+    {
+      "id": "bife-de-peru",
+      "name": "Bife de peru",
+      "plural": "Bifes de peru",
+      "aisle": "talho",
+      "unitGramsPerUnit": 150
+    },
+    {
+      "id": "bife-de-vaca",
+      "name": "Bife de vaca",
+      "plural": "Bifes de vaca",
+      "aisle": "talho",
+      "unitGramsPerUnit": 180
+    },
+    {
+      "id": "bolacha-maria",
+      "name": "Bolacha Maria",
+      "plural": "Bolachas Maria",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 5
+    },
+    {
+      "id": "broa-de-milho",
+      "name": "Broa de milho",
+      "aisle": "padaria"
+    },
+    {
+      "id": "brocolos",
+      "name": "Brócolos",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 400
+    },
+    {
+      "id": "bulgur",
+      "name": "Bulgur",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "cabrito",
+      "name": "Cabrito",
+      "aisle": "talho"
+    },
+    {
+      "id": "cacau-em-po",
+      "name": "Cacau em pó",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "cafe",
+      "name": "Café",
+      "aisle": "bebidas"
+    },
+    {
+      "id": "caldo-de-galinha",
+      "name": "Caldo de galinha",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "caldo-de-legumes",
+      "name": "Caldo de legumes",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "camarao",
+      "name": "Camarão",
+      "plural": "Camarões",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 15
+    },
+    {
+      "id": "canela-em-po",
+      "name": "Canela em pó",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "carapau",
+      "name": "Carapau",
+      "plural": "Carapaus",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 180
+    },
+    {
+      "id": "caril-em-po",
+      "name": "Caril em pó",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "carne-de-porco-para-guisar",
+      "name": "Carne de porco para guisar",
+      "aisle": "talho"
+    },
+    {
+      "id": "carne-de-vaca-para-guisar",
+      "name": "Carne de vaca para guisar",
+      "aisle": "talho"
+    },
+    {
+      "id": "carne-picada-de-borrego",
+      "name": "Carne picada de borrego",
+      "aisle": "talho"
+    },
+    {
+      "id": "carne-picada-de-porco",
+      "name": "Carne picada de porco",
+      "aisle": "talho"
+    },
+    {
+      "id": "carne-picada-de-vaca",
+      "name": "Carne picada de vaca",
+      "aisle": "talho"
     },
     {
       "id": "cebola",
@@ -34,6 +366,11 @@
       "unitGramsPerUnit": 110
     },
     {
+      "id": "cebolinho",
+      "name": "Cebolinho",
+      "aisle": "frutas-e-legumes"
+    },
+    {
       "id": "cenoura",
       "name": "Cenoura",
       "plural": "Cenouras",
@@ -41,198 +378,30 @@
       "unitGramsPerUnit": 90
     },
     {
-      "id": "couve-galega",
-      "name": "Couve galega",
-      "aisle": "frutas-e-legumes"
+      "id": "cerveja",
+      "name": "Cerveja",
+      "aisle": "bebidas",
+      "density": 1.0
     },
     {
-      "id": "dente-de-alho",
-      "name": "Dente de alho",
-      "plural": "Dentes de alho",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 5
+      "id": "chambao-com-osso",
+      "name": "Chambão com osso",
+      "aisle": "talho"
     },
     {
-      "id": "limao",
-      "name": "Limão",
-      "plural": "Limões",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 100
+      "id": "chispe",
+      "name": "Chispe",
+      "aisle": "talho"
     },
     {
-      "id": "salsa",
-      "name": "Salsa",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "tomate",
-      "name": "Tomate",
-      "plural": "Tomates",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 130
-    },
-    {
-      "id": "leite",
-      "name": "Leite",
-      "aisle": "laticinios-e-ovos",
-      "staple": true,
-      "density": 1.03
-    },
-    {
-      "id": "manteiga",
-      "name": "Manteiga",
-      "aisle": "laticinios-e-ovos",
-      "staple": true
-    },
-    {
-      "id": "natas",
-      "name": "Natas",
-      "aisle": "laticinios-e-ovos",
-      "density": 1
-    },
-    {
-      "id": "ovo",
-      "name": "Ovo",
-      "plural": "Ovos",
-      "aisle": "laticinios-e-ovos",
-      "staple": true,
-      "unitGramsPerUnit": 60
-    },
-    {
-      "id": "queijo-creme",
-      "name": "Queijo creme",
-      "aisle": "laticinios-e-ovos"
-    },
-    {
-      "id": "queijo-mozzarella",
-      "name": "Queijo mozzarella",
-      "aisle": "laticinios-e-ovos"
-    },
-    {
-      "id": "queijo-ralado",
-      "name": "Queijo ralado",
-      "aisle": "laticinios-e-ovos"
-    },
-    {
-      "id": "acucar",
-      "name": "Açúcar",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "alho-em-po",
-      "name": "Alho em pó",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "arroz-agulha",
-      "name": "Arroz agulha",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "arroz-carolino",
-      "name": "Arroz carolino",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "atum-em-conserva",
-      "name": "Atum em conserva",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "azeite",
-      "name": "Azeite",
-      "aisle": "mercearia",
-      "staple": true,
-      "density": 0.92
-    },
-    {
-      "id": "canela-em-po",
-      "name": "Canela em pó",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "farinha-de-trigo",
-      "name": "Farinha de trigo",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "folha-de-louro",
-      "name": "Folha de louro",
-      "plural": "Folhas de louro",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "grao-de-bico-cozido",
-      "name": "Grão-de-bico cozido",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "maionese",
-      "name": "Maionese",
-      "aisle": "mercearia",
-      "density": 0.94
-    },
-    {
-      "id": "noz-moscada",
-      "name": "Noz-moscada",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "oregaos",
-      "name": "Orégãos",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "pau-de-canela",
-      "name": "Pau de canela",
-      "plural": "Paus de canela",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "pimenta-preta",
-      "name": "Pimenta preta",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "sal",
-      "name": "Sal",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "vinagre-de-vinho",
-      "name": "Vinagre de vinho",
-      "aisle": "mercearia",
-      "staple": true,
-      "density": 1.01
-    },
-    {
-      "id": "agua",
-      "name": "Água",
-      "aisle": "outros",
-      "staple": true,
-      "density": 1
-    },
-    {
-      "id": "pao-rustico",
-      "name": "Pão rústico",
-      "plural": "Pães rústicos",
-      "aisle": "padaria",
-      "unitGramsPerUnit": 400
-    },
-    {
-      "id": "bacalhau-salgado",
-      "name": "Bacalhau salgado",
+      "id": "choco",
+      "name": "Choco",
       "aisle": "peixaria"
+    },
+    {
+      "id": "chocolate-preto",
+      "name": "Chocolate preto",
+      "aisle": "mercearia"
     },
     {
       "id": "chourico",
@@ -240,17 +409,24 @@
       "aisle": "talho"
     },
     {
-      "id": "coxa-de-frango",
-      "name": "Coxa de frango",
-      "plural": "Coxas de frango",
-      "aisle": "talho",
-      "unitGramsPerUnit": 200
+      "id": "coco-ralado",
+      "name": "Coco ralado",
+      "aisle": "mercearia"
     },
     {
-      "id": "costela-de-porco",
-      "name": "Costela de porco",
-      "plural": "Costelas de porco",
+      "id": "coelho",
+      "name": "Coelho",
       "aisle": "talho"
+    },
+    {
+      "id": "coentros",
+      "name": "Coentros",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "cogumelos",
+      "name": "Cogumelos",
+      "aisle": "frutas-e-legumes"
     },
     {
       "id": "colorau",
@@ -259,159 +435,8 @@
       "staple": true
     },
     {
-      "id": "alecrim",
-      "name": "Alecrim",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "alface",
-      "name": "Alface",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 300
-    },
-    {
-      "id": "courgette",
-      "name": "Courgette",
-      "plural": "Courgettes",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 200
-    },
-    {
-      "id": "pimento-vermelho",
-      "name": "Pimento vermelho",
-      "plural": "Pimentos vermelhos",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 150
-    },
-    {
-      "id": "brocolos",
-      "name": "Brócolos",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 400
-    },
-    {
-      "id": "aipo",
-      "name": "Aipo",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 60
-    },
-    {
-      "id": "gengibre",
-      "name": "Gengibre",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "coentros",
-      "name": "Coentros",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "manjericao",
-      "name": "Manjericão",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "hortela",
-      "name": "Hortelã",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "melancia",
-      "name": "Melancia",
-      "aisle": "frutas-e-legumes"
-    },
-    {
-      "id": "lima",
-      "name": "Lima",
-      "plural": "Limas",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 70
-    },
-    {
-      "id": "bife-de-vaca",
-      "name": "Bife de vaca",
-      "plural": "Bifes de vaca",
-      "aisle": "talho",
-      "unitGramsPerUnit": 180
-    },
-    {
-      "id": "peito-de-frango",
-      "name": "Peito de frango",
-      "plural": "Peitos de frango",
-      "aisle": "talho",
-      "unitGramsPerUnit": 180
-    },
-    {
-      "id": "bacon",
-      "name": "Bacon",
-      "aisle": "talho"
-    },
-    {
-      "id": "lombo-de-salmao",
-      "name": "Lombo de salmão",
-      "plural": "Lombos de salmão",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 150
-    },
-    {
-      "id": "iogurte-natural",
-      "name": "Iogurte natural",
-      "aisle": "laticinios-e-ovos",
-      "unitGramsPerUnit": 125
-    },
-    {
-      "id": "queijo-parmesao",
-      "name": "Queijo parmesão",
-      "aisle": "laticinios-e-ovos"
-    },
-    {
-      "id": "oleo-alimentar",
-      "name": "Óleo alimentar",
-      "aisle": "mercearia",
-      "staple": true,
-      "density": 0.92
-    },
-    {
-      "id": "fermento-em-po",
-      "name": "Fermento em pó",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "esparguete",
-      "name": "Esparguete",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "massa-cotovelo",
-      "name": "Massa cotovelo",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "arroz-basmati",
-      "name": "Arroz basmati",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "tomate-pelado",
-      "name": "Tomate pelado em lata",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "feijao-encarnado-cozido",
-      "name": "Feijão encarnado cozido",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "leite-de-coco",
-      "name": "Leite de coco",
-      "aisle": "mercearia",
-      "density": 0.98
-    },
-    {
-      "id": "caril-em-po",
-      "name": "Caril em pó",
+      "id": "colorau-fumado",
+      "name": "Colorau fumado",
       "aisle": "mercearia",
       "staple": true
     },
@@ -422,51 +447,14 @@
       "staple": true
     },
     {
-      "id": "molho-de-soja",
-      "name": "Molho de soja",
-      "aisle": "mercearia",
-      "density": 1.1
-    },
-    {
-      "id": "mirim",
-      "name": "Mirim",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "sementes-de-sesamo",
-      "name": "Sementes de sésamo",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "entremeada",
-      "name": "Entremeada",
+      "id": "costela-de-porco",
+      "name": "Costela de porco",
+      "plural": "Costelas de porco",
       "aisle": "talho"
     },
     {
-      "id": "febra-de-porco",
-      "name": "Febra de porco",
-      "plural": "Febras de porco",
-      "aisle": "talho",
-      "unitGramsPerUnit": 120
-    },
-    {
-      "id": "carne-picada-de-vaca",
-      "name": "Carne picada de vaca",
-      "aisle": "talho"
-    },
-    {
-      "id": "carne-picada-de-porco",
-      "name": "Carne picada de porco",
-      "aisle": "talho"
-    },
-    {
-      "id": "carne-de-vaca-para-guisar",
-      "name": "Carne de vaca para guisar",
-      "aisle": "talho"
-    },
-    {
-      "id": "carne-de-porco-para-guisar",
-      "name": "Carne de porco para guisar",
+      "id": "costela-de-vaca",
+      "name": "Costela de vaca",
       "aisle": "talho"
     },
     {
@@ -477,132 +465,57 @@
       "unitGramsPerUnit": 200
     },
     {
-      "id": "perna-de-porco",
-      "name": "Perna de porco",
-      "aisle": "talho"
+      "id": "courgette",
+      "name": "Courgette",
+      "plural": "Courgettes",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 200
     },
     {
-      "id": "lombo-de-vaca",
-      "name": "Lombo de vaca",
-      "aisle": "talho"
+      "id": "couve-branca",
+      "name": "Couve branca",
+      "aisle": "frutas-e-legumes"
     },
     {
-      "id": "naco-de-vaca",
-      "name": "Naco de vaca",
-      "plural": "Nacos de vaca",
+      "id": "couve-galega",
+      "name": "Couve galega",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "couve-lombarda",
+      "name": "Couve lombarda",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "coxa-de-frango",
+      "name": "Coxa de frango",
+      "plural": "Coxas de frango",
       "aisle": "talho",
-      "unitGramsPerUnit": 250
+      "unitGramsPerUnit": 200
     },
     {
-      "id": "chambao-com-osso",
-      "name": "Chambão com osso",
-      "aisle": "talho"
+      "id": "cravinho",
+      "name": "Cravinho",
+      "aisle": "mercearia",
+      "staple": true
     },
     {
-      "id": "costela-de-vaca",
-      "name": "Costela de vaca",
-      "aisle": "talho"
+      "id": "curcuma",
+      "name": "Curcuma",
+      "aisle": "mercearia",
+      "staple": true
     },
     {
-      "id": "bife-de-peru",
-      "name": "Bife de peru",
-      "plural": "Bifes de peru",
-      "aisle": "talho",
-      "unitGramsPerUnit": 150
+      "id": "cuscuz",
+      "name": "Cuscuz",
+      "aisle": "mercearia"
     },
     {
-      "id": "coelho",
-      "name": "Coelho",
-      "aisle": "talho"
-    },
-    {
-      "id": "perna-de-pato",
-      "name": "Perna de pato",
-      "plural": "Pernas de pato",
-      "aisle": "talho",
-      "unitGramsPerUnit": 250
-    },
-    {
-      "id": "galinha",
-      "name": "Galinha",
-      "aisle": "talho"
-    },
-    {
-      "id": "frango-inteiro",
-      "name": "Frango inteiro",
-      "aisle": "talho",
-      "unitGramsPerUnit": 1400
-    },
-    {
-      "id": "perna-de-borrego",
-      "name": "Perna de borrego",
-      "aisle": "talho"
-    },
-    {
-      "id": "cabrito",
-      "name": "Cabrito",
-      "aisle": "talho"
-    },
-    {
-      "id": "peito-de-vitela",
-      "name": "Peito de vitela",
-      "aisle": "talho"
-    },
-    {
-      "id": "leitao",
-      "name": "Leitão",
-      "aisle": "talho"
-    },
-    {
-      "id": "salsicha-fresca",
-      "name": "Salsicha fresca",
-      "plural": "Salsichas frescas",
-      "aisle": "talho",
-      "unitGramsPerUnit": 80
-    },
-    {
-      "id": "fiambre",
-      "name": "Fiambre",
-      "aisle": "talho"
-    },
-    {
-      "id": "presunto",
-      "name": "Presunto",
-      "aisle": "talho"
-    },
-    {
-      "id": "morcela",
-      "name": "Morcela",
-      "aisle": "talho"
-    },
-    {
-      "id": "linguica",
-      "name": "Linguiça",
-      "aisle": "talho"
-    },
-    {
-      "id": "chispe",
-      "name": "Chispe",
-      "aisle": "talho"
-    },
-    {
-      "id": "pescada",
-      "name": "Pescada",
-      "aisle": "peixaria"
-    },
-    {
-      "id": "carapau",
-      "name": "Carapau",
-      "plural": "Carapaus",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 180
-    },
-    {
-      "id": "sardinha",
-      "name": "Sardinha",
-      "plural": "Sardinhas",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 80
+      "id": "dente-de-alho",
+      "name": "Dente de alho",
+      "plural": "Dentes de alho",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 5
     },
     {
       "id": "dourada",
@@ -612,74 +525,277 @@
       "unitGramsPerUnit": 400
     },
     {
+      "id": "edamame",
+      "name": "Edamame",
+      "aisle": "congelados"
+    },
+    {
+      "id": "entremeada",
+      "name": "Entremeada",
+      "aisle": "talho"
+    },
+    {
+      "id": "erva-principe",
+      "name": "Erva-príncipe",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "ervilhas-congeladas",
+      "name": "Ervilhas congeladas",
+      "aisle": "congelados"
+    },
+    {
+      "id": "espargos",
+      "name": "Espargos",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "esparguete",
+      "name": "Esparguete",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "espinafres",
+      "name": "Espinafres",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "farinha-de-arroz",
+      "name": "Farinha de arroz",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "farinha-de-milho",
+      "name": "Farinha de milho",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "farinha-de-trigo",
+      "name": "Farinha de trigo",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "favas",
+      "name": "Favas",
+      "aisle": "congelados"
+    },
+    {
+      "id": "febra-de-porco",
+      "name": "Febra de porco",
+      "plural": "Febras de porco",
+      "aisle": "talho",
+      "unitGramsPerUnit": 120
+    },
+    {
+      "id": "feijao-branco-cozido",
+      "name": "Feijão branco cozido",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "feijao-encarnado-cozido",
+      "name": "Feijão encarnado cozido",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "feijao-frade-cozido",
+      "name": "Feijão frade cozido",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "feijao-preto-cozido",
+      "name": "Feijão preto cozido",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "feijao-verde",
+      "name": "Feijão-verde",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "fermento-de-padeiro",
+      "name": "Fermento de padeiro",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "fermento-em-po",
+      "name": "Fermento em pó",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "fiambre",
+      "name": "Fiambre",
+      "aisle": "talho"
+    },
+    {
+      "id": "folha-de-louro",
+      "name": "Folha de louro",
+      "plural": "Folhas de louro",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "frango-inteiro",
+      "name": "Frango inteiro",
+      "aisle": "talho",
+      "unitGramsPerUnit": 1400
+    },
+    {
+      "id": "frutas-cristalizadas",
+      "name": "Frutas cristalizadas",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "frutos-vermelhos-congelados",
+      "name": "Frutos vermelhos congelados",
+      "aisle": "congelados"
+    },
+    {
+      "id": "galinha",
+      "name": "Galinha",
+      "aisle": "talho"
+    },
+    {
+      "id": "garam-masala",
+      "name": "Garam masala",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "gelatina-em-folhas",
+      "name": "Gelatina em folhas",
+      "plural": "Folhas de gelatina",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 2
+    },
+    {
+      "id": "gengibre",
+      "name": "Gengibre",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "gnocchi",
+      "name": "Gnocchi",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "gochujang",
+      "name": "Gochujang",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "grao-de-bico-cozido",
+      "name": "Grão-de-bico cozido",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "grao-de-bico-seco",
+      "name": "Grão-de-bico seco",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "grelos",
+      "name": "Grelos",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "hortela",
+      "name": "Hortelã",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "iogurte-grego",
+      "name": "Iogurte grego",
+      "aisle": "laticinios-e-ovos"
+    },
+    {
+      "id": "iogurte-natural",
+      "name": "Iogurte natural",
+      "aisle": "laticinios-e-ovos",
+      "unitGramsPerUnit": 125
+    },
+    {
+      "id": "laranja",
+      "name": "Laranja",
+      "plural": "Laranjas",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 200
+    },
+    {
+      "id": "leitao",
+      "name": "Leitão",
+      "aisle": "talho"
+    },
+    {
+      "id": "leite",
+      "name": "Leite",
+      "aisle": "laticinios-e-ovos",
+      "staple": true,
+      "density": 1.03
+    },
+    {
+      "id": "leite-condensado",
+      "name": "Leite condensado",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "leite-de-coco",
+      "name": "Leite de coco",
+      "aisle": "mercearia",
+      "density": 0.98
+    },
+    {
+      "id": "lentilha-castanha",
+      "name": "Lentilha castanha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "lentilha-vermelha",
+      "name": "Lentilha vermelha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "plural": "Limas",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 70
+    },
+    {
+      "id": "limao",
+      "name": "Limão",
+      "plural": "Limões",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 100
+    },
+    {
+      "id": "linguica",
+      "name": "Linguiça",
+      "aisle": "talho"
+    },
+    {
+      "id": "lombo-de-salmao",
+      "name": "Lombo de salmão",
+      "plural": "Lombos de salmão",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 150
+    },
+    {
+      "id": "lombo-de-vaca",
+      "name": "Lombo de vaca",
+      "aisle": "talho"
+    },
+    {
       "id": "lula",
       "name": "Lula",
       "plural": "Lulas",
       "aisle": "peixaria",
-      "unitGramsPerUnit": 150
-    },
-    {
-      "id": "choco",
-      "name": "Choco",
-      "aisle": "peixaria"
-    },
-    {
-      "id": "polvo",
-      "name": "Polvo",
-      "aisle": "peixaria"
-    },
-    {
-      "id": "camarao",
-      "name": "Camarão",
-      "plural": "Camarões",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 15
-    },
-    {
-      "id": "ameijoa",
-      "name": "Amêijoa",
-      "plural": "Amêijoas",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 10
-    },
-    {
-      "id": "mexilhao",
-      "name": "Mexilhão",
-      "plural": "Mexilhões",
-      "aisle": "peixaria",
-      "unitGramsPerUnit": 20
-    },
-    {
-      "id": "tamboril",
-      "name": "Tamboril",
-      "aisle": "peixaria"
-    },
-    {
-      "id": "beringela",
-      "name": "Beringela",
-      "plural": "Beringelas",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 300
-    },
-    {
-      "id": "pimento-verde",
-      "name": "Pimento verde",
-      "plural": "Pimentos verdes",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 150
-    },
-    {
-      "id": "pepino",
-      "name": "Pepino",
-      "plural": "Pepinos",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 300
-    },
-    {
-      "id": "beterraba",
-      "name": "Beterraba",
-      "plural": "Beterrabas",
-      "aisle": "frutas-e-legumes",
       "unitGramsPerUnit": 150
     },
     {
@@ -690,32 +806,10 @@
       "unitGramsPerUnit": 180
     },
     {
-      "id": "laranja",
-      "name": "Laranja",
-      "plural": "Laranjas",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 200
-    },
-    {
-      "id": "banana",
-      "name": "Banana",
-      "plural": "Bananas",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 120
-    },
-    {
-      "id": "abacate",
-      "name": "Abacate",
-      "plural": "Abacates",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 200
-    },
-    {
-      "id": "alho-frances",
-      "name": "Alho-francês",
-      "plural": "Alhos-franceses",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 250
+      "id": "maionese",
+      "name": "Maionese",
+      "aisle": "mercearia",
+      "density": 0.94
     },
     {
       "id": "malagueta",
@@ -725,11 +819,95 @@
       "unitGramsPerUnit": 5
     },
     {
-      "id": "batata-doce",
-      "name": "Batata-doce",
-      "plural": "Batatas-doces",
-      "aisle": "frutas-e-legumes",
-      "unitGramsPerUnit": 200
+      "id": "manjericao",
+      "name": "Manjericão",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "manteiga",
+      "name": "Manteiga",
+      "aisle": "laticinios-e-ovos",
+      "staple": true
+    },
+    {
+      "id": "massa-cotovelo",
+      "name": "Massa cotovelo",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "massa-folhada",
+      "name": "Massa folhada",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "massa-lasanha",
+      "name": "Placas de lasanha",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "massa-penne",
+      "name": "Massa penne",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "massa-quebrada",
+      "name": "Massa quebrada",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "mel",
+      "name": "Mel",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "melancia",
+      "name": "Melancia",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "mexilhao",
+      "name": "Mexilhão",
+      "plural": "Mexilhões",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 20
+    },
+    {
+      "id": "mirim",
+      "name": "Mirim",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "molho-de-peixe",
+      "name": "Molho de peixe",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "molho-de-soja",
+      "name": "Molho de soja",
+      "aisle": "mercearia",
+      "density": 1.1
+    },
+    {
+      "id": "molho-worcestershire",
+      "name": "Molho inglês",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "morango",
+      "name": "Morangos",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "morcela",
+      "name": "Morcela",
+      "aisle": "talho"
+    },
+    {
+      "id": "mostarda",
+      "name": "Mostarda",
+      "aisle": "mercearia",
+      "staple": true
     },
     {
       "id": "nabo",
@@ -739,74 +917,246 @@
       "unitGramsPerUnit": 150
     },
     {
-      "id": "espinafres",
-      "name": "Espinafres",
-      "aisle": "frutas-e-legumes"
+      "id": "naco-de-vaca",
+      "name": "Naco de vaca",
+      "plural": "Nacos de vaca",
+      "aisle": "talho",
+      "unitGramsPerUnit": 250
     },
     {
-      "id": "grelos",
-      "name": "Grelos",
-      "aisle": "frutas-e-legumes"
+      "id": "natas",
+      "name": "Natas",
+      "aisle": "laticinios-e-ovos",
+      "density": 1
     },
     {
-      "id": "agriao",
-      "name": "Agrião",
-      "aisle": "frutas-e-legumes"
+      "id": "natas-azedas",
+      "name": "Natas azedas",
+      "aisle": "laticinios-e-ovos"
     },
     {
-      "id": "abobora",
-      "name": "Abóbora",
-      "aisle": "frutas-e-legumes"
+      "id": "noodles-de-arroz",
+      "name": "Noodles de arroz",
+      "aisle": "mercearia"
     },
     {
-      "id": "cogumelos",
-      "name": "Cogumelos",
-      "aisle": "frutas-e-legumes"
+      "id": "noodles-de-trigo",
+      "name": "Noodles de trigo",
+      "aisle": "mercearia"
     },
     {
-      "id": "feijao-verde",
-      "name": "Feijão-verde",
-      "aisle": "frutas-e-legumes"
+      "id": "noz",
+      "name": "Noz",
+      "plural": "Nozes",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 5
     },
     {
-      "id": "couve-branca",
-      "name": "Couve branca",
-      "aisle": "frutas-e-legumes"
+      "id": "noz-moscada",
+      "name": "Noz-moscada",
+      "aisle": "mercearia",
+      "staple": true
     },
     {
-      "id": "tomate-cereja",
-      "name": "Tomate cereja",
-      "aisle": "frutas-e-legumes"
+      "id": "oleo-alimentar",
+      "name": "Óleo alimentar",
+      "aisle": "mercearia",
+      "staple": true,
+      "density": 0.92
     },
     {
-      "id": "cebolinho",
-      "name": "Cebolinho",
-      "aisle": "frutas-e-legumes"
+      "id": "oleo-de-sesamo",
+      "name": "Óleo de sésamo",
+      "aisle": "mercearia",
+      "staple": true,
+      "density": 0.92
     },
     {
-      "id": "tomilho",
-      "name": "Tomilho",
-      "aisle": "frutas-e-legumes"
+      "id": "oregaos",
+      "name": "Orégãos",
+      "aisle": "mercearia",
+      "staple": true
     },
     {
-      "id": "espargos",
-      "name": "Espargos",
-      "aisle": "frutas-e-legumes"
+      "id": "ovo",
+      "name": "Ovo",
+      "plural": "Ovos",
+      "aisle": "laticinios-e-ovos",
+      "staple": true,
+      "unitGramsPerUnit": 60
     },
     {
-      "id": "ananas",
-      "name": "Ananás",
-      "aisle": "frutas-e-legumes"
+      "id": "panko",
+      "name": "Panko",
+      "aisle": "mercearia"
     },
     {
-      "id": "morango",
-      "name": "Morangos",
-      "aisle": "frutas-e-legumes"
+      "id": "pao-de-forma",
+      "name": "Pão de forma",
+      "aisle": "padaria"
     },
     {
-      "id": "erva-principe",
-      "name": "Erva-príncipe",
-      "aisle": "frutas-e-legumes"
+      "id": "pao-naan",
+      "name": "Pão naan",
+      "aisle": "padaria"
+    },
+    {
+      "id": "pao-para-hamburguer",
+      "name": "Pão para hambúrguer",
+      "plural": "Pães para hambúrguer",
+      "aisle": "padaria",
+      "unitGramsPerUnit": 80
+    },
+    {
+      "id": "pao-pita",
+      "name": "Pão pita",
+      "plural": "Pães pita",
+      "aisle": "padaria",
+      "unitGramsPerUnit": 60
+    },
+    {
+      "id": "pao-ralado",
+      "name": "Pão ralado",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "pao-rustico",
+      "name": "Pão rústico",
+      "plural": "Pães rústicos",
+      "aisle": "padaria",
+      "unitGramsPerUnit": 400
+    },
+    {
+      "id": "passas",
+      "name": "Passas",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "pasta-de-caril-verde",
+      "name": "Pasta de caril verde",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "pasta-de-miso",
+      "name": "Pasta de miso",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "pau-de-canela",
+      "name": "Pau de canela",
+      "plural": "Paus de canela",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "peito-de-frango",
+      "name": "Peito de frango",
+      "plural": "Peitos de frango",
+      "aisle": "talho",
+      "unitGramsPerUnit": 180
+    },
+    {
+      "id": "peito-de-vitela",
+      "name": "Peito de vitela",
+      "aisle": "talho"
+    },
+    {
+      "id": "pepino",
+      "name": "Pepino",
+      "plural": "Pepinos",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 300
+    },
+    {
+      "id": "perna-de-borrego",
+      "name": "Perna de borrego",
+      "aisle": "talho"
+    },
+    {
+      "id": "perna-de-pato",
+      "name": "Perna de pato",
+      "plural": "Pernas de pato",
+      "aisle": "talho",
+      "unitGramsPerUnit": 250
+    },
+    {
+      "id": "perna-de-porco",
+      "name": "Perna de porco",
+      "aisle": "talho"
+    },
+    {
+      "id": "pescada",
+      "name": "Pescada",
+      "aisle": "peixaria"
+    },
+    {
+      "id": "pimenta-preta",
+      "name": "Pimenta preta",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "pimento-verde",
+      "name": "Pimento verde",
+      "plural": "Pimentos verdes",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 150
+    },
+    {
+      "id": "pimento-vermelho",
+      "name": "Pimento vermelho",
+      "plural": "Pimentos vermelhos",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 150
+    },
+    {
+      "id": "pinhoes",
+      "name": "Pinhões",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "piri-piri",
+      "name": "Piri-piri",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "polenta",
+      "name": "Polenta",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "polvo",
+      "name": "Polvo",
+      "aisle": "peixaria"
+    },
+    {
+      "id": "posta-de-atum",
+      "name": "Posta de atum",
+      "plural": "Postas de atum",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 180
+    },
+    {
+      "id": "presunto",
+      "name": "Presunto",
+      "aisle": "talho"
+    },
+    {
+      "id": "queijo-cheddar",
+      "name": "Queijo cheddar",
+      "aisle": "laticinios-e-ovos"
+    },
+    {
+      "id": "queijo-creme",
+      "name": "Queijo creme",
+      "aisle": "laticinios-e-ovos"
+    },
+    {
+      "id": "queijo-de-cabra",
+      "name": "Queijo de cabra",
+      "aisle": "laticinios-e-ovos"
     },
     {
       "id": "queijo-feta",
@@ -824,138 +1174,64 @@
       "aisle": "laticinios-e-ovos"
     },
     {
-      "id": "natas-azedas",
-      "name": "Natas azedas",
+      "id": "queijo-mozzarella",
+      "name": "Queijo mozzarella",
       "aisle": "laticinios-e-ovos"
     },
     {
-      "id": "edamame",
-      "name": "Edamame",
-      "aisle": "congelados"
+      "id": "queijo-parmesao",
+      "name": "Queijo parmesão",
+      "aisle": "laticinios-e-ovos"
     },
     {
-      "id": "frutos-vermelhos-congelados",
-      "name": "Frutos vermelhos congelados",
-      "aisle": "congelados"
+      "id": "queijo-ralado",
+      "name": "Queijo ralado",
+      "aisle": "laticinios-e-ovos"
     },
     {
-      "id": "broa-de-milho",
-      "name": "Broa de milho",
-      "aisle": "padaria"
+      "id": "quinoa",
+      "name": "Quinoa",
+      "aisle": "mercearia"
     },
     {
-      "id": "pao-para-hamburguer",
-      "name": "Pão para hambúrguer",
-      "plural": "Pães para hambúrguer",
-      "aisle": "padaria",
+      "id": "rebentos-de-soja",
+      "name": "Rebentos de soja",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "rucula",
+      "name": "Rúcula",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "sal",
+      "name": "Sal",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
+      "id": "salsa",
+      "name": "Salsa",
+      "aisle": "frutas-e-legumes"
+    },
+    {
+      "id": "salsicha-fresca",
+      "name": "Salsicha fresca",
+      "plural": "Salsichas frescas",
+      "aisle": "talho",
       "unitGramsPerUnit": 80
     },
     {
-      "id": "pao-de-forma",
-      "name": "Pão de forma",
-      "aisle": "padaria"
+      "id": "sangue-de-galinha",
+      "name": "Sangue de galinha",
+      "aisle": "talho"
     },
     {
-      "id": "pao-pita",
-      "name": "Pão pita",
-      "plural": "Pães pita",
-      "aisle": "padaria",
-      "unitGramsPerUnit": 60
-    },
-    {
-      "id": "vinho-tinto",
-      "name": "Vinho tinto",
-      "aisle": "bebidas",
-      "density": 0.99
-    },
-    {
-      "id": "vinho-do-porto",
-      "name": "Vinho do Porto",
-      "aisle": "bebidas",
-      "density": 1.02
-    },
-    {
-      "id": "cerveja",
-      "name": "Cerveja",
-      "aisle": "bebidas",
-      "density": 1.0
-    },
-    {
-      "id": "cafe",
-      "name": "Café",
-      "aisle": "bebidas"
-    },
-    {
-      "id": "azeitona",
-      "name": "Azeitona",
-      "plural": "Azeitonas",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "batata-palha",
-      "name": "Batata palha",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "massa-folhada",
-      "name": "Massa folhada",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "massa-quebrada",
-      "name": "Massa quebrada",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "tortilha-de-trigo",
-      "name": "Tortilha de trigo",
-      "plural": "Tortilhas de trigo",
-      "aisle": "mercearia",
-      "unitGramsPerUnit": 40
-    },
-    {
-      "id": "pao-ralado",
-      "name": "Pão ralado",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "bolacha-maria",
-      "name": "Bolacha Maria",
-      "plural": "Bolachas Maria",
-      "aisle": "mercearia",
-      "unitGramsPerUnit": 5
-    },
-    {
-      "id": "chocolate-preto",
-      "name": "Chocolate preto",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "cacau-em-po",
-      "name": "Cacau em pó",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "leite-condensado",
-      "name": "Leite condensado",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "mel",
-      "name": "Mel",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "aveia",
-      "name": "Flocos de aveia",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "granola",
-      "name": "Granola",
-      "aisle": "mercearia"
+      "id": "sardinha",
+      "name": "Sardinha",
+      "plural": "Sardinhas",
+      "aisle": "peixaria",
+      "unitGramsPerUnit": 80
     },
     {
       "id": "sementes-de-chia",
@@ -963,127 +1239,8 @@
       "aisle": "mercearia"
     },
     {
-      "id": "gelatina-em-folhas",
-      "name": "Gelatina em folhas",
-      "plural": "Folhas de gelatina",
-      "aisle": "mercearia",
-      "unitGramsPerUnit": 2
-    },
-    {
-      "id": "amendoim",
-      "name": "Amendoim",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "noz",
-      "name": "Noz",
-      "plural": "Nozes",
-      "aisle": "mercearia",
-      "unitGramsPerUnit": 5
-    },
-    {
-      "id": "passas",
-      "name": "Passas",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "frutas-cristalizadas",
-      "name": "Frutas cristalizadas",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "fermento-de-padeiro",
-      "name": "Fermento de padeiro",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "farinha-de-milho",
-      "name": "Farinha de milho",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "polenta",
-      "name": "Polenta",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "bulgur",
-      "name": "Bulgur",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "cuscuz",
-      "name": "Cuscuz",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "lentilha-vermelha",
-      "name": "Lentilha vermelha",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "lentilha-castanha",
-      "name": "Lentilha castanha",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "feijao-branco-cozido",
-      "name": "Feijão branco cozido",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "feijao-frade-cozido",
-      "name": "Feijão frade cozido",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "grao-de-bico-seco",
-      "name": "Grão-de-bico seco",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "arroz-arboreo",
-      "name": "Arroz arbóreo",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "arroz-jasmim",
-      "name": "Arroz jasmim",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "massa-penne",
-      "name": "Massa penne",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "massa-lasanha",
-      "name": "Placas de lasanha",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "noodles-de-trigo",
-      "name": "Noodles de trigo",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "noodles-de-arroz",
-      "name": "Noodles de arroz",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "molho-de-peixe",
-      "name": "Molho de peixe",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "pasta-de-miso",
-      "name": "Pasta de miso",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "alga-wakame",
-      "name": "Alga wakame",
+      "id": "sementes-de-sesamo",
+      "name": "Sementes de sésamo",
       "aisle": "mercearia"
     },
     {
@@ -1097,31 +1254,26 @@
       "aisle": "mercearia"
     },
     {
-      "id": "vinagre-de-arroz",
-      "name": "Vinagre de arroz",
+      "id": "tamboril",
+      "name": "Tamboril",
+      "aisle": "peixaria"
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
       "aisle": "mercearia"
     },
     {
-      "id": "vinagre-balsamico",
-      "name": "Vinagre balsâmico",
-      "aisle": "mercearia"
+      "id": "tomate",
+      "name": "Tomate",
+      "plural": "Tomates",
+      "aisle": "frutas-e-legumes",
+      "unitGramsPerUnit": 130
     },
     {
-      "id": "mostarda",
-      "name": "Mostarda",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "molho-worcestershire",
-      "name": "Molho inglês",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "caldo-de-galinha",
-      "name": "Caldo de galinha",
-      "aisle": "mercearia",
-      "staple": true
+      "id": "tomate-cereja",
+      "name": "Tomate cereja",
+      "aisle": "frutas-e-legumes"
     },
     {
       "id": "tomate-concentrado",
@@ -1130,94 +1282,68 @@
       "staple": true
     },
     {
-      "id": "piri-piri",
-      "name": "Piri-piri",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "curcuma",
-      "name": "Curcuma",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "garam-masala",
-      "name": "Garam masala",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "cravinho",
-      "name": "Cravinho",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "baunilha",
-      "name": "Baunilha",
+      "id": "tomate-pelado",
+      "name": "Tomate pelado em lata",
       "aisle": "mercearia"
     },
     {
-      "id": "acucar-em-po",
-      "name": "Açúcar em pó",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "amido-de-milho",
-      "name": "Amido de milho",
-      "aisle": "mercearia",
-      "staple": true
-    },
-    {
-      "id": "tofu",
-      "name": "Tofu",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "amendoa",
-      "name": "Amêndoa",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "coco-ralado",
-      "name": "Coco ralado",
-      "aisle": "mercearia"
-    },
-    {
-      "id": "sangue-de-galinha",
-      "name": "Sangue de galinha",
-      "aisle": "talho"
-    },
-    {
-      "id": "favas",
-      "name": "Favas",
-      "aisle": "congelados"
-    },
-    {
-      "id": "couve-lombarda",
-      "name": "Couve lombarda",
+      "id": "tomilho",
+      "name": "Tomilho",
       "aisle": "frutas-e-legumes"
     },
     {
-      "id": "pinhoes",
-      "name": "Pinhões",
+      "id": "tortilha-chips",
+      "name": "Tortilha chips",
       "aisle": "mercearia"
     },
     {
-      "id": "alcaparras",
-      "name": "Alcaparras",
+      "id": "tortilha-de-milho",
+      "name": "Tortilha de milho",
+      "plural": "Tortilhas de milho",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 30
+    },
+    {
+      "id": "tortilha-de-trigo",
+      "name": "Tortilha de trigo",
+      "plural": "Tortilhas de trigo",
+      "aisle": "mercearia",
+      "unitGramsPerUnit": 40
+    },
+    {
+      "id": "vinagre-balsamico",
+      "name": "Vinagre balsâmico",
       "aisle": "mercearia"
     },
     {
-      "id": "acafrao",
-      "name": "Açafrão",
+      "id": "vinagre-de-arroz",
+      "name": "Vinagre de arroz",
       "aisle": "mercearia"
     },
     {
-      "id": "pao-naan",
-      "name": "Pão naan",
-      "aisle": "padaria"
+      "id": "vinagre-de-vinho",
+      "name": "Vinagre de vinho",
+      "aisle": "mercearia",
+      "staple": true,
+      "density": 1.01
+    },
+    {
+      "id": "vinho-branco",
+      "name": "Vinho branco",
+      "aisle": "bebidas",
+      "density": 0.99
+    },
+    {
+      "id": "vinho-do-porto",
+      "name": "Vinho do Porto",
+      "aisle": "bebidas",
+      "density": 1.02
+    },
+    {
+      "id": "vinho-tinto",
+      "name": "Vinho tinto",
+      "aisle": "bebidas",
+      "density": 0.99
     }
   ]
 }

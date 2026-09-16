@@ -1,0 +1,130 @@
+{
+  "id": "sandes-quente-de-frango-desfiado",
+  "name": "Sandes quente de frango desfiado",
+  "description": "Sobras de frango assado desfiadas com molho, queijo derretido e pão tostado na frigideira.",
+  "narrative": "Nasce de haver frango assado a mais no frigorífico, que é o problema mais comum de um domingo. O frango desfia-se à mão — com dois garfos ou com os dedos —, nunca se corta, porque as tiras irregulares agarram o molho e os cubos não. O molho é maionese com mostarda e um pouco de sumo de limão, e serve para voltar a dar humidade a carne que já arrefeceu uma vez. Tostar a sandes na frigideira com a tampa posta derrete o queijo antes de o pão queimar; sem tampa, o pão fica pronto e o queijo não.",
+  "servings": 2,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "dia-a-dia",
+    "sobras",
+    "conforto",
+    "americana"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 8
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "faca-de-pao"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 300,
+      "unit": "g",
+      "note": "já cozinhado, de sobras"
+    },
+    {
+      "ref": "pao-de-forma",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 4,
+      "unit": "un",
+      "note": "folhas"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Desfiar o frango e ligar com o molho",
+      "text": "À mão, em tiras irregulares. Maionese, mostarda, sumo de meio limão, sal e pimenta a envolver.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "maionese",
+        "mostarda",
+        "limao",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Montar as sandes",
+      "text": "Frango sobre uma fatia, queijo por cima, alface e a segunda fatia. Manteiga por fora, nos dois lados.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "pao-de-forma",
+        "queijo-flamengo",
+        "alface",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Tostar com a tampa posta",
+      "text": "Lume médio-baixo, a tampa a segurar o calor. Virar quando o pão estiver dourado e o queijo a escorrer.",
+      "durationMinutes": 6
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 48,
+    "carbsGrams": 42,
+    "fatGrams": 40,
+    "saturatedFatGrams": 14,
+    "fibreGrams": 3,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

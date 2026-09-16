@@ -1,0 +1,140 @@
+{
+  "id": "esparguete-com-camarao",
+  "name": "Esparguete com camarão",
+  "description": "Alho, piri-piri e vinho branco, com o camarão a entrar nos últimos três minutos.",
+  "narrative": "Camarão em massa dá errado quase sempre pela mesma razão: fica no lume o tempo da massa toda e vira borracha. Três minutos chegam — encolhe e fica opaco, e a partir daí só piora. O molho monta-se com a água da cozedura, que traz amido e liga o azeite ao vinho sem precisar de natas. Tomate-cereja aberto ao meio acrescenta acidez e cor; a salsa entra fora do lume para não escurecer.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "festa",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 8,
+    "cookMinutes": 17
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escorredor",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "esparguete",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "camarao",
+      "quantity": 500,
+      "unit": "g",
+      "note": "descascado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "tomate-cereja",
+      "quantity": 250,
+      "unit": "g",
+      "note": "ao meio"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr a água e alourar o alho",
+      "text": "Água com sal ao lume. Na frigideira, alho laminado em azeite morno com piri-piri, até começar a dourar nas pontas.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "agua",
+        "sal",
+        "dente-de-alho",
+        "azeite",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Abrir o tomate com o vinho",
+      "text": "Tomate-cereja a rebentar no azeite, depois o vinho a evaporar até metade.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "tomate-cereja",
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Cozer o esparguete",
+      "text": "Um minuto a menos do que diz o pacote. Guardar uma caneca da água.",
+      "durationMinutes": 9,
+      "ingredientRefs": [
+        "esparguete"
+      ]
+    },
+    {
+      "title": "Selar o camarão e ligar",
+      "text": "Camarão no molho até ficar opaco, massa por cima e água da cozedura aos poucos. Salsa fora do lume.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "camarao",
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 640,
+    "proteinGrams": 40,
+    "carbsGrams": 76,
+    "fatGrams": 18,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 5,
+    "saltGrams": 1.7
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

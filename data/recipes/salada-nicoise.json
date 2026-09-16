@@ -1,0 +1,178 @@
+{
+  "id": "salada-nicoise",
+  "name": "Salada niçoise",
+  "description": "Atum, ovo, feijão verde e batata, cada coisa no seu lugar em vez de misturada.",
+  "narrative": "Uma niçoise não se mexe. Os ingredientes dispõem-se em montes separados na travessa e cada um leva o seu tempero — mexida, vira salada de atum e perde a graça. Batata e feijão verde cozem na mesma água, um a seguir ao outro, e ainda mornos absorvem o vinagrete muito melhor do que frios. O ovo quer gema cremosa e não seca: nove minutos a contar do momento em que a água ferve, depois água fria para travar. A anchova divide opiniões e é o que dá o fundo salgado; quem não a quiser, mais azeitona.",
+  "servings": 4,
+  "labels": [
+    "salada",
+    "peixe",
+    "ovos",
+    "francesa",
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "sem-confecao"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 18
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "taca",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "atum-em-conserva",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em azeite, escorrido"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "feijao-verde",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 500,
+      "unit": "g",
+      "note": "pequenas"
+    },
+    {
+      "ref": "tomate-cereja",
+      "quantity": 300,
+      "unit": "g",
+      "note": "ao meio"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 100,
+      "unit": "g",
+      "note": "pretas, sem caroço"
+    },
+    {
+      "ref": "anchova",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as batatas e os ovos",
+      "text": "Batatas com casca em água e sal. Os ovos entram nos últimos nove minutos e passam por água fria ao sair.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "batata",
+        "ovo",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Escaldar o feijão verde",
+      "text": "Dois minutos na mesma água a ferver, depois água gelada para travar. Tem de ficar verde vivo e a estalar.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "feijao-verde"
+      ]
+    },
+    {
+      "title": "Bater o vinagrete",
+      "text": "Mostarda, vinagre e sal batidos primeiro, azeite a fio depois, até ligar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "mostarda",
+        "vinagre-de-vinho",
+        "azeite",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Temperar a batata ainda morna",
+      "text": "Batatas cortadas ao meio, com metade do vinagrete. Mornas absorvem; frias não.",
+      "durationMinutes": 3
+    },
+    {
+      "title": "Dispor sem misturar",
+      "text": "Alface a forrar a travessa, cada ingrediente no seu monte, ovo em quartos e anchovas por cima. Resto do vinagrete a fio.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "alface",
+        "atum-em-conserva",
+        "tomate-cereja",
+        "azeitona",
+        "anchova",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 32,
+    "carbsGrams": 32,
+    "fatGrams": 29,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 8,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

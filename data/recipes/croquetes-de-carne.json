@@ -1,0 +1,170 @@
+{
+  "id": "croquetes-de-carne",
+  "name": "Croquetes de carne",
+  "description": "Carne de cozido desfiada em bechamel espesso, panados e fritos. Dão cerca de vinte.",
+  "narrative": "Os croquetes são a resposta clássica a carne que sobrou de um cozido ou de um assado, e todo o trabalho está no bechamel: tem de ficar espesso ao ponto de se despegar do tacho num bloco, senão a massa não enrola. A massa vai ao frigorífico pelo menos duas horas — quente ou morna é impossível de moldar, e esse é o único motivo pelo qual as pessoas desistem a meio. Panar duas vezes, com passagem pelo ovo entre as duas, é o que impede que abram no óleo. Fritar poucos de cada vez para o óleo não arrefecer.",
+  "servings": 6,
+  "yield": "cerca de 20 croquetes",
+  "labels": [
+    "snack",
+    "carne",
+    "portuguesa",
+    "sobras",
+    "festa",
+    "conforto"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 40,
+    "cookMinutes": 25,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "A massa tem de arrefecer no frigorífico antes de se enrolar."
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "frigorifico",
+    "taca",
+    "vara-de-arames"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-de-vaca-para-guisar",
+      "quantity": 500,
+      "unit": "g",
+      "note": "já cozida, desfiada fina"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada muito fina"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "noz-moscada",
+      "unit": "qb"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un",
+      "note": "batidos, para panar"
+    },
+    {
+      "ref": "pao-ralado",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 1,
+      "unit": "l",
+      "note": "para fritar"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Suar a cebola e fazer o roux",
+      "text": "Cebola na manteiga até translúcida, farinha por cima a cozinhar dois minutos sem ganhar cor.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cebola",
+        "manteiga",
+        "farinha-de-trigo"
+      ]
+    },
+    {
+      "title": "Fazer o bechamel espesso",
+      "text": "Leite morno aos poucos, a bater sem parar. Está pronto quando se despegar do fundo do tacho num bloco.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "leite",
+        "noz-moscada",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Envolver a carne",
+      "text": "Carne desfiada e salsa, a mexer até ficar uma massa uniforme. Provar e acertar o sal agora.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "carne-de-vaca-para-guisar",
+        "salsa"
+      ]
+    },
+    {
+      "title": "Arrefecer a massa",
+      "text": "Tabuleiro forrado, massa espalhada, película em contacto. Duas horas no frigorífico, no mínimo.",
+      "durationMinutes": 120,
+      "passive": true
+    },
+    {
+      "title": "Moldar e panar duas vezes",
+      "text": "Cilindros com as mãos húmidas. Pão ralado, ovo, pão ralado outra vez — a dupla camada é o que os impede de abrir.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "ovo",
+        "pao-ralado"
+      ]
+    },
+    {
+      "title": "Fritar em óleo bem quente",
+      "text": "Poucos de cada vez, até dourados de todos os lados. Escorrer em papel.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 32,
+    "carbsGrams": 48,
+    "fatGrams": 33,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 2,
+    "saltGrams": 1.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

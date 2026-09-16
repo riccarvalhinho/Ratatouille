@@ -1,0 +1,145 @@
+{
+  "id": "massa-com-atum",
+  "name": "Massa com atum",
+  "description": "Tomate, atum de lata e azeitona em vinte minutos, com a massa a cozer ao lado.",
+  "narrative": "A receita de despensa por excelência: tudo o que leva está em casa sem se ter planeado nada. O molho faz-se no tempo da massa cozer, o que obriga a começar pela água — é o passo que toda a gente adia e depois fica a olhar para a panela. O atum entra no fim e só aquece; cozido dez minutos desfaz-se em farelo seco. A azeitona e os orégãos são o que impede isto de saber a comida de emergência, e uma malagueta no refogado não é obrigatória mas é boa ideia.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "massa-e-arroz",
+    "italiana",
+    "dia-a-dia",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 15
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escorredor",
+    "abre-latas"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-penne",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "atum-em-conserva",
+      "quantity": 320,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeitona",
+      "quantity": 80,
+      "unit": "g",
+      "note": "sem caroço, às rodelas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Água ao lume e refogado a começar",
+      "text": "Água com sal a aquecer. Na frigideira, cebola e alho em azeite a lume médio.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "agua",
+        "sal",
+        "cebola",
+        "dente-de-alho",
+        "azeite"
+      ]
+    },
+    {
+      "title": "Apurar o tomate",
+      "text": "Tomate esmagado com a colher, orégãos e piri-piri. Deixar reduzir até deixar de estar aguado.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "tomate-pelado",
+        "oregaos",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Cozer a massa",
+      "text": "Segundo o pacote, menos um minuto. Guardar uma caneca da água antes de escorrer.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "massa-penne"
+      ]
+    },
+    {
+      "title": "Juntar o atum e a azeitona fora do lume",
+      "text": "Atum aos pedaços grandes e azeitona, só a envolver. Massa por cima e água da cozedura até ligar.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "atum-em-conserva",
+        "azeitona"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 32,
+    "carbsGrams": 80,
+    "fatGrams": 16,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 6,
+    "saltGrams": 1.9
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

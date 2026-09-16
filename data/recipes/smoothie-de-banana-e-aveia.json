@@ -1,0 +1,101 @@
+{
+  "id": "smoothie-de-banana-e-aveia",
+  "name": "Smoothie de banana e aveia",
+  "description": "Banana, aveia e iogurte batidos com frutos vermelhos. Cinco minutos e um copo.",
+  "narrative": "A aveia é o que separa isto de um batido de fruta que deixa fome uma hora depois: duas colheres bastam para dar corpo e aguentar a manhã. Com banana congelada sai espesso como gelado e dispensa gelo, que só o aguava; com banana à temperatura ambiente sai mais líquido e pode levar um cubo. O mel é opcional e depende da banana — quanto mais escura a casca, mais doce a fruta e menos mel é preciso.",
+  "servings": 2,
+  "labels": [
+    "pequeno-almoco",
+    "dia-a-dia",
+    "vegetariano",
+    "sem-gluten"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "liquidificadora",
+    "copo-medidor"
+  ],
+  "ingredients": [
+    {
+      "ref": "banana",
+      "quantity": 2,
+      "unit": "un",
+      "note": "maduras, de preferência congeladas"
+    },
+    {
+      "ref": "aveia",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "frutos-vermelhos-congelados",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ref": "mel",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Bater tudo",
+      "text": "Um minuto na potência máxima, até não se sentirem grãos de aveia. Se ficar espesso de mais, mais leite a fio.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "banana",
+        "aveia",
+        "iogurte-natural",
+        "leite",
+        "frutos-vermelhos-congelados",
+        "mel"
+      ]
+    },
+    {
+      "title": "Provar e servir",
+      "text": "Provar antes de adoçar mais. Canela por cima no copo.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 330,
+    "proteinGrams": 13,
+    "carbsGrams": 55,
+    "fatGrams": 6,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 6,
+    "saltGrams": 0.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

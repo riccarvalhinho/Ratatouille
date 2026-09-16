@@ -1,0 +1,94 @@
+{
+  "id": "tosta-mista",
+  "name": "Tosta mista",
+  "description": "Fiambre e queijo entre pão de forma, tostada com manteiga por fora até o queijo escorrer.",
+  "narrative": "Não tem segredo nenhum e mesmo assim sai mal em metade dos cafés: pão queimado e queijo intacto. A causa é sempre lume a mais. Em lume médio-baixo e com a tampa posta, o calor fica preso e derrete o queijo pelo vapor enquanto o pão vai tostando devagar. A manteiga vai por fora, na face que toca a frigideira — por dentro só encharca. Duas fatias de queijo em vez de uma, com o fiambre no meio, e o queijo derrete dos dois lados e cola a sandes.",
+  "servings": 2,
+  "labels": [
+    "snack",
+    "carne",
+    "dia-a-dia",
+    "conforto",
+    "portuguesa"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 3,
+    "cookMinutes": 8
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "espatula"
+  ],
+  "ingredients": [
+    {
+      "ref": "pao-de-forma",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "fiambre",
+      "quantity": 4,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "queijo-flamengo",
+      "quantity": 8,
+      "unit": "un",
+      "note": "fatias"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 25,
+      "unit": "g",
+      "note": "amolecida"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Montar as tostas",
+      "text": "Queijo, fiambre, queijo outra vez — o fiambre fica no meio. Manteiga por fora, nas duas faces exteriores.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "pao-de-forma",
+        "fiambre",
+        "queijo-flamengo",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Tostar tapado",
+      "text": "Lume médio-baixo com a tampa posta. Virar quando o pão estiver dourado e o queijo tiver começado a escorrer pelos lados.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "oregaos"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 34,
+    "carbsGrams": 38,
+    "fatGrams": 36,
+    "saturatedFatGrams": 20,
+    "fibreGrams": 2,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

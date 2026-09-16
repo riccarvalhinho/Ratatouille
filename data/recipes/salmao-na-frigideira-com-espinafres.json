@@ -1,0 +1,133 @@
+{
+  "id": "salmao-na-frigideira-com-espinafres",
+  "name": "Salmão na frigideira com espinafres",
+  "description": "Pele estaladiça de um lado só, espinafres com alho na mesma frigideira, batata cozida ao lado.",
+  "narrative": "A pele do salmão fica estaladiça com duas condições: frigideira quente antes de o peixe entrar, e não lhe mexer. Quatro ou cinco minutos com a pele para baixo fazem quase toda a cozedura; o lado da carne precisa de um minuto, e mais do que isso resseca. Os espinafres vão para a mesma frigideira depois de o peixe sair — aproveitam a gordura e o fundo — e desfazem-se em nada, portanto a montanha inicial não engana. A batata começa primeiro porque é o que demora.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "dia-a-dia",
+    "mediterranica",
+    "sem-gluten"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 8,
+    "cookMinutes": 22
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "pinca-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "lombo-de-salmao",
+      "quantity": 4,
+      "unit": "un",
+      "note": "com pele"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as batatas",
+      "text": "Água a ferver com sal, com casca, até um garfo entrar sem resistência.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "batata",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Selar o salmão pela pele",
+      "text": "Frigideira quente com azeite, pele para baixo e sem lhe tocar, até a pele soltar-se sozinha. Virar um minuto e retirar.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "lombo-de-salmao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Saltear os espinafres no mesmo fundo",
+      "text": "Alho laminado primeiro, espinafres por cima aos punhados à medida que murcham.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "espinafres",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Servir com limão",
+      "text": "Salmão sobre os espinafres, batatas ao lado, limão espremido na hora.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "limao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 42,
+    "carbsGrams": 40,
+    "fatGrams": 32,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 7,
+    "saltGrams": 1.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}
