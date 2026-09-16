@@ -1,0 +1,180 @@
+{
+  "id": "hamburguer-de-grao",
+  "name": "Hambúrguer de grão",
+  "description": "Grão esmagado com aveia e especiarias, moldado e frito, no pão com alface e tomate.",
+  "narrative": "O hambúrguer vegetariano desfaz-se quando a massa tem água a mais e nada que a segure. O grão esmaga-se com um garfo e não na máquina — puré fica pastoso e não agarra —, e a aveia absorve a humidade que sobra. Meia hora no frigorífico é o que firma tudo antes de ir à frigideira. Não se mexe nos primeiros quatro minutos: a crosta que se forma é o que impede que o hambúrguer se parta ao virar. Sem ovo, funciona na mesma se a aveia for moída mais fina.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "leguminosas",
+    "americana",
+    "dia-a-dia",
+    "conforto",
+    "vegetariano",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 15,
+    "prepAhead": {
+      "minutes": 30,
+      "description": "A massa firma no frigorífico antes de ir à frigideira."
+    }
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "taca",
+    "frigorifico",
+    "espatula"
+  ],
+  "ingredients": [
+    {
+      "ref": "grao-de-bico-cozido",
+      "quantity": 480,
+      "unit": "g",
+      "note": "escorrido e bem seco"
+    },
+    {
+      "ref": "aveia",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada muito fina"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-para-hamburguer",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "alface",
+      "quantity": 4,
+      "unit": "un",
+      "note": "folhas"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "maionese",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Esmagar o grão com os temperos",
+      "text": "Garfo e não máquina — deixar pedaços. Cebola, alho, especiarias, salsa, ovo, sal e pimenta a envolver.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "grao-de-bico-cozido",
+        "cebola",
+        "dente-de-alho",
+        "cominhos",
+        "colorau",
+        "salsa",
+        "ovo",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Juntar a aveia e moldar",
+      "text": "Aveia a absorver a humidade, depois quatro discos achatados e mais largos do que o pão.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "aveia"
+      ]
+    },
+    {
+      "title": "Firmar no frio",
+      "text": "Prato tapado no frigorífico.",
+      "durationMinutes": 30,
+      "passive": true
+    },
+    {
+      "title": "Fritar sem mexer",
+      "text": "Azeite em lume médio, quatro minutos de um lado sem lhes tocar, depois virar. Mexer cedo parte-os.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Montar",
+      "text": "Pão tostado com maionese, alface, hambúrguer e tomate.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pao-para-hamburguer",
+        "maionese",
+        "alface",
+        "tomate"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 560,
+    "proteinGrams": 21,
+    "carbsGrams": 66,
+    "fatGrams": 23,
+    "saturatedFatGrams": 3.5,
+    "fibreGrams": 13,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

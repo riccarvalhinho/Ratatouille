@@ -16,7 +16,9 @@
     "carne",
     "marisco",
     "portuguesa",
-    "festa"
+    "festa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira",

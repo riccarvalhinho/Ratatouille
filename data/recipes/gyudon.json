@@ -1,0 +1,144 @@
+{
+  "id": "gyudon",
+  "name": "Gyudon",
+  "description": "Tiras finas de vaca e cebola cozidas em caldo doce de soja, sobre arroz.",
+  "narrative": "O prato mais rápido do Japão de rua, e depende quase todo do corte: a carne tem de vir em tiras finíssimas, quase transparentes, que cozem em noventa segundos. Meia hora no congelador antes de cortar torna isso possível com uma faca normal. O caldo é uma proporção simples de soja, mirim e açúcar com água, e a cebola coze nele até ficar translúcida e doce antes de a carne entrar. Se a carne entrar cedo, coze de mais e endurece. O ovo é opcional na versão de casa e obrigatório na de rua.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "asiatica",
+    "dia-a-dia",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 20
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "bife-de-vaca",
+      "quantity": 500,
+      "unit": "g",
+      "note": "em tiras finíssimas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "mirim",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 15,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "agua",
+      "quantity": 600,
+      "unit": "ml"
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 320,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "cebolinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Lavado, com o dobro do volume em água, tapado em lume baixo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua"
+      ]
+    },
+    {
+      "title": "Cozer a cebola no caldo",
+      "text": "Soja, mirim, açúcar, gengibre e 200 ml de água a ferver com a cebola, até ficar translúcida.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "cebola",
+        "molho-de-soja",
+        "mirim",
+        "acucar",
+        "gengibre"
+      ]
+    },
+    {
+      "title": "Escaldar a carne no caldo",
+      "text": "Tiras espalhadas pelo caldo a ferver, separadas com hashis ou garfo. Prontas assim que perderem o vermelho.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "bife-de-vaca"
+      ]
+    },
+    {
+      "title": "Escalfar os ovos e montar",
+      "text": "Ovos escalfados à parte. Arroz na taça, carne com caldo por cima, ovo, cebolinho e sésamo.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "ovo",
+        "cebolinho",
+        "sementes-de-sesamo"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 680,
+    "proteinGrams": 42,
+    "carbsGrams": 82,
+    "fatGrams": 19,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 3,
+    "saltGrams": 3.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

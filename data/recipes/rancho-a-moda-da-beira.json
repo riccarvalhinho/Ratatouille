@@ -6,11 +6,12 @@
   "servings": 6,
   "labels": [
     "prato-principal",
-    "leguminosas",
     "carne",
+    "leguminosas",
     "massa-e-arroz",
     "portuguesa",
-    "conforto"
+    "conforto",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

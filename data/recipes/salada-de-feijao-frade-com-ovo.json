@@ -12,13 +12,15 @@
   "narrative": "Come-se morna ou fria, e morna é melhor — o feijão ainda tépido absorve o tempero de outra maneira. A cebola pica-se muito fina e a salsa entra em quantidade, não como enfeite. Um fio de vinagre de vinho é obrigatório: sem ele a salada é plana.",
   "servings": 4,
   "labels": [
-    "acompanhamento",
     "salada",
-    "leguminosas",
+    "acompanhamento",
     "ovos",
+    "leguminosas",
     "portuguesa",
     "dia-a-dia",
-    "vegetariano"
+    "vegetariano",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

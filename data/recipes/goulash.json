@@ -14,7 +14,8 @@
   "labels": [
     "prato-principal",
     "carne",
-    "conforto"
+    "conforto",
+    "sem-gluten"
   ],
   "methods": [
     "tacho"

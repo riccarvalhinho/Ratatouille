@@ -1,0 +1,177 @@
+{
+  "id": "aloo-matar",
+  "name": "Aloo matar",
+  "description": "Caril de batata e ervilhas, com tomate e garam masala, sobre arroz basmati.",
+  "narrative": "É um caril de despensa e dos poucos que fica pronto em meia hora, porque não há carne para cozinhar. O passo que decide tudo é o refogado de cebola: tem de ir além de translúcida, até ficar castanha nas bordas, e isso leva dez minutos que parecem de mais. As especiarias em pó entram depois, no óleo quente, e fritam-se trinta segundos antes de o tomate entrar — queimadas, ficam amargas. O garam masala é a exceção e entra no fim, com o lume desligado, porque o seu perfume evapora.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "indiana",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 12,
+    "cookMinutes": 28
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em cubos de 2 cm"
+    },
+    {
+      "ref": "ervilhas-congeladas",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "picadas"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un",
+      "note": "ralados"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 20,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "garam-masala",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "ref": "arroz-basmati",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 900,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Basmati lavado, com o dobro do volume em água e sal, tapado em lume baixo.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "arroz-basmati",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Alourar bem a cebola",
+      "text": "Óleo em lume médio, até a cebola ficar castanha nas bordas. Dez minutos, não cinco. Gengibre e alho no fim.",
+      "durationMinutes": 11,
+      "ingredientRefs": [
+        "cebola",
+        "oleo-alimentar",
+        "gengibre",
+        "dente-de-alho"
+      ]
+    },
+    {
+      "title": "Fritar as especiarias e juntar o tomate",
+      "text": "Cominhos, curcuma e colorau meio minuto no óleo, depois o tomate ralado a apurar até o óleo se separar.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "cominhos",
+        "curcuma",
+        "colorau",
+        "tomate"
+      ]
+    },
+    {
+      "title": "Cozer a batata com as ervilhas",
+      "text": "Batata, água a cobrir a meio e sal, tapado. Ervilhas nos últimos cinco minutos.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "batata",
+        "ervilhas-congeladas"
+      ]
+    },
+    {
+      "title": "Garam masala com o lume apagado",
+      "text": "Garam masala e coentros a envolver fora do lume.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "garam-masala",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 610,
+    "proteinGrams": 16,
+    "carbsGrams": 108,
+    "fatGrams": 13,
+    "saturatedFatGrams": 1.8,
+    "fibreGrams": 12,
+    "saltGrams": 1.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

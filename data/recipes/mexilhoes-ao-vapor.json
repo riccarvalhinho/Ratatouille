@@ -1,0 +1,136 @@
+{
+  "id": "mexilhoes-ao-vapor",
+  "name": "Mexilhões ao vapor",
+  "description": "Mexilhões abertos em vinho branco com alho e salsa, num tacho tapado.",
+  "narrative": "Os mexilhões cozem no próprio vapor e na água que largam, e por isso o vinho é meio copo e não mais: o que enche o tacho de molho são eles. Antes disso há um trabalho aborrecido e obrigatório — puxar as barbas, raspar o que estiver agarrado, e descartar todos os que estejam abertos e não fechem com uma pancada. Depois são cinco minutos tapados, a abanar o tacho uma ou duas vezes em vez de mexer. Abertos, estão feitos; mais lume só os encolhe.",
+  "servings": 4,
+  "needsSide": true,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "portuguesa",
+    "festa",
+    "dia-a-dia",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "mexilhao",
+      "quantity": 2,
+      "unit": "kg"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada fina"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Limpar e escolher os mexilhões",
+      "text": "Puxar as barbas e raspar as conchas sob água corrente. Deitar fora os que estiverem abertos e não fecharem com uma pancada.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "mexilhao"
+      ]
+    },
+    {
+      "title": "Refogar cebola e alho",
+      "text": "Azeite, cebola e alho em lume médio, com piri-piri, até a cebola ficar translúcida.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "cebola",
+        "dente-de-alho",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Abrir tapado em lume forte",
+      "text": "Mexilhões e vinho, tampa posta. Abanar o tacho uma ou duas vezes em vez de mexer. Prontos quando estiverem abertos.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Salsa, limão e pão",
+      "text": "Salsa picada e sumo de limão fora do lume, pimenta. Pão à mesa para o molho.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "salsa",
+        "limao",
+        "pimenta-preta",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 420,
+    "proteinGrams": 34,
+    "carbsGrams": 20,
+    "fatGrams": 20,
+    "saturatedFatGrams": 3,
+    "fibreGrams": 1,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

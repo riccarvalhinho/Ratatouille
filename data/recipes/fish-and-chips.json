@@ -1,0 +1,158 @@
+{
+  "id": "fish-and-chips",
+  "name": "Fish and chips",
+  "description": "Pescada em polme de cerveja e batatas fritas duas vezes, com puré de ervilhas.",
+  "narrative": "Duas coisas fazem o polme estalar: cerveja bem gelada e não o bater demasiado. O gás faz bolhas que se expandem no óleo, e grumos no polme não são defeito — polme batido até ficar liso desenvolve glúten e fica duro. As batatas fritam-se duas vezes, a primeira a temperatura baixa para cozerem por dentro, a segunda em óleo bem quente para a crosta. Entre as duas têm de arrefecer, e esse intervalo é exatamente quando se frita o peixe. O puré de ervilhas é o acompanhamento inglês e faz-se em cinco minutos.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "americana",
+    "conforto",
+    "festa"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "taca",
+    "escumadeira",
+    "varinha-magica"
+  ],
+  "ingredients": [
+    {
+      "ref": "pescada",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em lombos"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "cerveja",
+      "quantity": 330,
+      "unit": "ml",
+      "note": "bem gelada"
+    },
+    {
+      "ref": "batata",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em palitos grossos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 1.5,
+      "unit": "l",
+      "note": "para fritar"
+    },
+    {
+      "ref": "ervilhas-congeladas",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Primeira fritura das batatas",
+      "text": "Óleo a 150 °C, palitos até ficarem cozidos mas pálidos. Escorrer e deixar arrefecer sobre grelha.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "batata",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Fazer o polme",
+      "text": "Farinha com sal, cerveja gelada a fio, batido o mínimo. Grumos ficam.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "cerveja",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fritar o peixe",
+      "text": "Óleo a 180 °C. Lombos secos e passados por farinha antes do polme, mergulhados e escorridos. Dourados e a estalar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "pescada",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Puré de ervilhas",
+      "text": "Ervilhas cozidas cinco minutos, escorridas e esmagadas com a manteiga e a hortelã. Grosseiro, não liso.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ervilhas-congeladas",
+        "manteiga",
+        "hortela"
+      ]
+    },
+    {
+      "title": "Segunda fritura e servir",
+      "text": "Batatas de volta ao óleo a 190 °C até douradas. Sal a sair, limão e vinagre à mesa.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "limao",
+        "vinagre-de-vinho"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 920,
+    "proteinGrams": 48,
+    "carbsGrams": 96,
+    "fatGrams": 38,
+    "saturatedFatGrams": 8,
+    "fibreGrams": 11,
+    "saltGrams": 2.0
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

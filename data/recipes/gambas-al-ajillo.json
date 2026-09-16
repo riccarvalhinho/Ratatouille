@@ -1,0 +1,118 @@
+{
+  "id": "gambas-al-ajillo",
+  "name": "Gambas al ajillo",
+  "description": "Camarão em azeite com muito alho e malagueta, servido a ferver com pão para molhar.",
+  "narrative": "É um prato de três ingredientes em que o azeite é o principal — não é gordura para cozinhar, é o molho, e por isso a quantidade parece exagerada e não é. O alho vai laminado e entra em azeite morno, nunca quente: em azeite quente queima em segundos e fica amargo, e aí não há volta a dar. O camarão precisa de dois minutos e nada mais. Serve-se na própria caçarola ainda a borbulhar, e o pão não é acompanhamento, é o utensílio.",
+  "servings": 4,
+  "needsSide": true,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "mediterranica",
+    "festa",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "cacarola-de-ferro",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "camarao",
+      "quantity": 800,
+      "unit": "g",
+      "note": "descascados, com rabo"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 8,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "piri-piri",
+      "quantity": 2,
+      "unit": "un",
+      "note": "secos, partidos"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Infundir o azeite com alho e piri-piri",
+      "text": "Azeite morno, nunca a fumegar, com o alho laminado e o piri-piri. Até o alho ficar dourado-claro nas bordas.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Selar o camarão",
+      "text": "Lume forte, camarão em camada única, um minuto de cada lado. Vinho branco a evaporar no fim.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "camarao",
+        "vinho-branco",
+        "sal"
+      ]
+    },
+    {
+      "title": "Servir a ferver",
+      "text": "Salsa picada fora do lume e à mesa na própria caçarola, com o pão ao lado.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "salsa",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 560,
+    "proteinGrams": 38,
+    "carbsGrams": 18,
+    "fatGrams": 38,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 1,
+    "saltGrams": 1.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

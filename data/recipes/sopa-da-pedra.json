@@ -13,10 +13,12 @@
   "servings": 6,
   "labels": [
     "sopa",
-    "leguminosas",
     "carne",
+    "leguminosas",
     "portuguesa",
-    "conforto"
+    "conforto",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

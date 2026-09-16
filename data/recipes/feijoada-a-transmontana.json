@@ -13,11 +13,13 @@
   "servings": 6,
   "labels": [
     "prato-principal",
-    "leguminosas",
     "carne",
+    "leguminosas",
     "portuguesa",
     "conforto",
-    "festa"
+    "festa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

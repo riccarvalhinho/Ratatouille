@@ -15,7 +15,9 @@
     "prato-principal",
     "carne",
     "mediterranica",
-    "festa"
+    "festa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "forno"

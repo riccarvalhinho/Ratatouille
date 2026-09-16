@@ -14,8 +14,10 @@
     "prato-principal",
     "carne",
     "portuguesa",
+    "conforto",
     "festa",
-    "conforto"
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho",

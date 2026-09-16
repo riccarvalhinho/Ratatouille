@@ -7,9 +7,10 @@
   "labels": [
     "prato-principal",
     "peixe",
-    "dia-a-dia",
     "mediterranica",
-    "sem-gluten"
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho",

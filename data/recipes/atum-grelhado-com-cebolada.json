@@ -1,0 +1,158 @@
+{
+  "id": "atum-grelhado-com-cebolada",
+  "name": "Atum grelhado com cebolada",
+  "description": "Posta de atum selada por fora e rosada ao centro, sobre cebolada com pimento e batata a murro.",
+  "narrative": "Atum é carne e não peixe branco: passado do ponto fica seco e com textura de conserva. Uma posta grossa quer lume forte e dois minutos de cada lado, para ficar tostada por fora e ainda rosada ao meio — quem o quiser bem passado deve saber que o está a fazer, não descobri-lo no prato. A cebolada açoriana faz-se devagar, vinte minutos de cebola e pimento em azeite até adoçarem, e é o que dá humidade ao peixe. As batatas cozem ao mesmo tempo e levam um murro antes de irem para o prato.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "peixe",
+    "portuguesa",
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 12,
+    "cookMinutes": 30
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "pinca-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "posta-de-atum",
+      "quantity": 4,
+      "unit": "un",
+      "note": "grossas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em meias-luas"
+    },
+    {
+      "ref": "pimento-vermelho",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "batata",
+      "quantity": 800,
+      "unit": "g",
+      "note": "pequenas, com casca"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "folha-de-louro",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinagre-de-vinho",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer as batatas",
+      "text": "Com casca, em água a ferver com sal, até um garfo entrar sem resistência.",
+      "durationMinutes": 25,
+      "ingredientRefs": [
+        "batata",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer a cebolada devagar",
+      "text": "Cebola, pimento, alho e louro em azeite, lume médio-baixo. Vinte minutos até adoçarem e ficarem douradas. Tomate e vinagre no fim.",
+      "durationMinutes": 22,
+      "ingredientRefs": [
+        "cebola",
+        "pimento-vermelho",
+        "dente-de-alho",
+        "folha-de-louro",
+        "azeite",
+        "tomate",
+        "vinagre-de-vinho"
+      ]
+    },
+    {
+      "title": "Selar o atum",
+      "text": "Frigideira muito quente, postas temperadas, dois minutos de cada lado. Rosadas ao centro.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "posta-de-atum",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Dar o murro e servir",
+      "text": "Batatas esmagadas com a mão ou um copo, sem se desfazerem. Atum sobre a cebolada, salsa por cima.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "salsa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 620,
+    "proteinGrams": 50,
+    "carbsGrams": 42,
+    "fatGrams": 26,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 6,
+    "saltGrams": 1.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -13,11 +13,12 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "massa-e-arroz",
     "legumes",
+    "massa-e-arroz",
     "italiana",
     "conforto",
-    "vegetariano"
+    "vegetariano",
+    "sem-gluten"
   ],
   "methods": [
     "tacho",

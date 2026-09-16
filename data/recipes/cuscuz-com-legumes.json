@@ -13,11 +13,12 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "legumes",
     "leguminosas",
+    "legumes",
+    "dia-a-dia",
     "vegetariano",
     "vegan",
-    "dia-a-dia"
+    "sem-lactose"
   ],
   "methods": [
     "forno"

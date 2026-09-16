@@ -1,0 +1,181 @@
+{
+  "id": "bibimbap",
+  "name": "Bibimbap",
+  "description": "Arroz com legumes temperados um a um, carne picada e ovo estrelado, com gochujang.",
+  "narrative": "Bibimbap quer dizer arroz misturado, e a graça está em ele chegar à mesa por misturar: cada legume é temperado à parte, com o seu próprio sal e sésamo, e só se junta tudo no prato. Isso parece trabalho a mais e é o que faz o prato — se se salteasse tudo junto, ficaria um salteado castanho. Os legumes fazem-se depressa e podem partilhar a mesma frigideira, um a seguir ao outro, sem lavar entre eles. O gochujang é indispensável e não se substitui por piri-piri: é pasta de pimento fermentada, doce e salgada ao mesmo tempo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "legumes",
+    "asiatica",
+    "dia-a-dia",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 320,
+      "unit": "g"
+    },
+    {
+      "ref": "carne-picada-de-vaca",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "cenoura",
+      "quantity": 2,
+      "unit": "un",
+      "note": "em juliana"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "cogumelos",
+      "quantity": 200,
+      "unit": "g",
+      "note": "laminados"
+    },
+    {
+      "ref": "rebentos-de-soja",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "courgette",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em juliana"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "gochujang",
+      "quantity": 4,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "oleo-de-sesamo",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sementes-de-sesamo",
+      "unit": "qb"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "agua",
+      "quantity": 550,
+      "unit": "ml"
+    },
+    {
+      "ref": "alga-nori",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Lavado, com a água e sal, tapado em lume baixo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Saltear os legumes um a um",
+      "text": "Mesma frigideira sem lavar, por ordem do mais claro ao mais escuro: rebentos, courgette, cenoura, cogumelos, espinafres. Cada um com um pouco de alho, sal e óleo de sésamo, e reservado à parte.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "rebentos-de-soja",
+        "courgette",
+        "cenoura",
+        "cogumelos",
+        "espinafres",
+        "dente-de-alho",
+        "oleo-de-sesamo",
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Fritar a carne com soja",
+      "text": "Lume forte, a desfazer com a colher, até tostar. Molho de soja no fim a evaporar.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "carne-picada-de-vaca",
+        "molho-de-soja"
+      ]
+    },
+    {
+      "title": "Estrelar os ovos e montar",
+      "text": "Gema mole. Arroz na taça, legumes em montes separados à volta, carne ao centro, ovo por cima, gochujang, sésamo e nori.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ovo",
+        "gochujang",
+        "sementes-de-sesamo",
+        "alga-nori"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 40,
+    "carbsGrams": 82,
+    "fatGrams": 26,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 8,
+    "saltGrams": 3.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

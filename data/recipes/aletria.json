@@ -1,0 +1,132 @@
+{
+  "id": "aletria",
+  "name": "Aletria",
+  "description": "Massa fina cozida em leite com casca de limão e canela, ligada com gemas.",
+  "narrative": "É o arroz doce da consoada para quem não gosta de arroz doce, e leva menos tempo porque a aletria coze em cinco minutos. O leite infunde-se primeiro com casca de limão, pau de canela e sal, e só depois entra a massa — infundir com a massa dentro dá o mesmo trabalho e menos sabor. As gemas ligam-se fora do lume e com uma concha do leite quente batida nelas primeiro; postas diretamente no tacho, coalham e ficam com fios de ovo cozido. Os desenhos de canela fazem-se com a aletria ainda morna, que é quando a superfície ainda assenta.",
+  "servings": 8,
+  "labels": [
+    "sobremesa",
+    "portuguesa",
+    "festa",
+    "conforto",
+    "vegetariano"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca",
+    "vara-de-arames",
+    "colher-de-pau"
+  ],
+  "ingredients": [
+    {
+      "ref": "aletria",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "leite",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 4,
+      "unit": "un",
+      "note": "só as gemas, sem as claras"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un",
+      "note": "só a casca, em tiras largas"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "canela-em-po",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "quantity": 1,
+      "unit": "pitada"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Infundir o leite",
+      "text": "Leite com casca de limão, pau de canela, manteiga e sal, em lume brando, sem deixar ferver.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "leite",
+        "limao",
+        "pau-de-canela",
+        "manteiga",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer a aletria no leite",
+      "text": "Aletria partida e o açúcar, a mexer para não pegar ao fundo. Cinco a sete minutos, até ficar tenra.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "aletria",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Ligar as gemas fora do lume",
+      "text": "Gemas batidas numa taça com uma concha do leite quente, e só depois de volta ao tacho. Mexer até engrossar, sem ferver.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "ovo"
+      ]
+    },
+    {
+      "title": "Estender e decorar",
+      "text": "Travessa rasa, superfície alisada. Desenhos de canela enquanto ainda está morna.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "canela-em-po"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 340,
+    "proteinGrams": 9,
+    "carbsGrams": 55,
+    "fatGrams": 9,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 0.7,
+    "saltGrams": 0.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

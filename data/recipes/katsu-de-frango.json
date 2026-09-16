@@ -1,0 +1,176 @@
+{
+  "id": "katsu-de-frango",
+  "name": "Katsu de frango",
+  "description": "Frango panado em panko, frito, cortado em tiras, com arroz e couve fininha.",
+  "narrative": "O panko é o que separa isto de um escalope panado normal: os flocos são maiores e mais secos, e por isso absorvem menos gordura e ficam com aquela crosta irregular que estala. O peito abre-se em borboleta e achata-se, para cozinhar por dentro no tempo que a crosta leva a dourar. O molho é a versão caseira do tonkatsu — ketchup não, mas concentrado de tomate com worcestershire, mostarda e açúcar dá o mesmo agridoce escuro. A couve corta-se aos fios com faca afiada e serve-se crua, que é o contraponto fresco à fritura.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "asiatica",
+    "dia-a-dia",
+    "conforto",
+    "sem-lactose"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "frigideira",
+    "tacho",
+    "taca",
+    "faca-de-chef",
+    "pinca-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "panko",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 2,
+      "unit": "un",
+      "note": "batidos"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 500,
+      "unit": "ml",
+      "note": "para fritar"
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "couve-branca",
+      "quantity": 300,
+      "unit": "g",
+      "note": "em fios muito finos"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-worcestershire",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "molho-de-soja",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "mostarda",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz e cortar a couve",
+      "text": "Arroz lavado com a água e sal, tapado em lume baixo. Couve aos fios mais finos que a faca permitir.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua",
+        "sal",
+        "couve-branca"
+      ]
+    },
+    {
+      "title": "Misturar o molho katsu",
+      "text": "Concentrado de tomate, worcestershire, soja, mostarda e açúcar, batidos até liso.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "tomate-concentrado",
+        "molho-worcestershire",
+        "molho-de-soja",
+        "mostarda",
+        "acucar"
+      ]
+    },
+    {
+      "title": "Abrir e panar os peitos",
+      "text": "Abertos em borboleta e achatados até ficarem com a mesma espessura. Farinha, ovo, panko, pressionando o panko com a mão.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "farinha-de-trigo",
+        "ovo",
+        "panko",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fritar",
+      "text": "Óleo a meia altura e bem quente, dois de cada vez, até dourados dos dois lados. Escorrer em grelha e não em papel, para o fundo não amolecer.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "oleo-alimentar"
+      ]
+    },
+    {
+      "title": "Cortar e montar",
+      "text": "Cortar em tiras largas antes de servir. Arroz, couve crua ao lado, molho por cima das tiras.",
+      "durationMinutes": 4
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 52,
+    "carbsGrams": 86,
+    "fatGrams": 22,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 5,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

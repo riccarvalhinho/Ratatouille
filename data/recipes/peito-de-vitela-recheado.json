@@ -14,8 +14,10 @@
   "labels": [
     "prato-principal",
     "carne",
+    "conforto",
     "festa",
-    "conforto"
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "forno",

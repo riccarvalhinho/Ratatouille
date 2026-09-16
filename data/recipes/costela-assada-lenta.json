@@ -15,8 +15,10 @@
     "prato-principal",
     "carne",
     "americana",
+    "conforto",
     "festa",
-    "conforto"
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "forno"

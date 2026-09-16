@@ -17,7 +17,9 @@
     "portuguesa",
     "dia-a-dia",
     "vegetariano",
-    "vegan"
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

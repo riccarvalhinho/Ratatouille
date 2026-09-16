@@ -1,0 +1,148 @@
+{
+  "id": "beringela-recheada",
+  "name": "Beringela recheada",
+  "description": "Meias beringelas assadas, recheadas com a própria polpa, tomate e mozarela gratinada.",
+  "narrative": "A beringela assa-se primeiro vazia e só depois se recheia — é a única forma de a polpa ficar cremosa em vez de esponjosa e crua ao centro. Riscar a polpa em xadrez antes de a levar ao forno faz o calor entrar e o azeite também. A polpa que se retira vai para o recheio, portanto nada se perde; salgá-la e deixá-la escorrer dez minutos tira o amargo e a água, que de outra forma encharcam tudo. A mozarela entra nos últimos dez minutos, senão liberta água e volta a encharcar.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "legumes",
+    "italiana",
+    "vegetariano",
+    "conforto"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 45
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "frigideira",
+    "faca-de-chef",
+    "colher-de-pau"
+  ],
+  "ingredients": [
+    {
+      "ref": "beringela",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 4,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "queijo-mozzarella",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 50,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "pao-ralado",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "oregaos",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 70,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Riscar, salgar e assar as beringelas",
+      "text": "Ao meio ao comprido, polpa riscada em xadrez, sal e dez minutos a escorrer de face para baixo. Azeite por cima e forno a 200 °C até a polpa ceder.",
+      "durationMinutes": 30,
+      "ingredientRefs": [
+        "beringela",
+        "azeite",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o recheio com a polpa",
+      "text": "Polpa retirada com a colher e picada. Cebola e alho em azeite, polpa, tomate e orégãos a apurar até secar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "tomate",
+        "oregaos",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Rechear e gratinar",
+      "text": "Cascas cheias, mozarela em pedaços, parmesão e pão ralado por cima. Forno até borbulhar e dourar.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "queijo-mozzarella",
+        "queijo-parmesao",
+        "pao-ralado"
+      ]
+    },
+    {
+      "title": "Manjericão fora do forno",
+      "text": "Folhas rasgadas à mão sobre as beringelas ainda quentes.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "manjericao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 480,
+    "proteinGrams": 22,
+    "carbsGrams": 32,
+    "fatGrams": 30,
+    "saturatedFatGrams": 12,
+    "fibreGrams": 11,
+    "saltGrams": 1.7
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

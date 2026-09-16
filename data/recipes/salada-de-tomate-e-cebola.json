@@ -12,13 +12,15 @@
   "narrative": "Depende inteiramente do tomate: maduro, de época, e nunca do frigorífico, porque o frio mata-lhe o aroma e não volta. Salga-se o tomate cinco minutos antes de temperar, para largar um pouco de água e concentrar. A cebola fica em água fria dez minutos se for muito forte.",
   "servings": 4,
   "labels": [
-    "acompanhamento",
     "salada",
+    "acompanhamento",
     "legumes",
     "portuguesa",
     "dia-a-dia",
     "vegetariano",
-    "vegan"
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "sem-confecao"

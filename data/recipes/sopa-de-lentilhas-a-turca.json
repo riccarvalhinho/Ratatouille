@@ -14,9 +14,10 @@
   "labels": [
     "sopa",
     "leguminosas",
-    "vegetariano",
     "dia-a-dia",
-    "conforto"
+    "conforto",
+    "vegetariano",
+    "sem-gluten"
   ],
   "methods": [
     "tacho"

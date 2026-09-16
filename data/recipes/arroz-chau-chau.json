@@ -13,11 +13,12 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "massa-e-arroz",
     "ovos",
+    "massa-e-arroz",
     "asiatica",
     "dia-a-dia",
-    "sobras"
+    "sobras",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira"

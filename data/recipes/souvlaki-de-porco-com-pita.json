@@ -1,0 +1,159 @@
+{
+  "id": "souvlaki-de-porco-com-pita",
+  "name": "Souvlaki de porco com pita",
+  "description": "Porco marinado em limão e orégãos, grelhado em espetada, com tzatziki e pita quente.",
+  "narrative": "A marinada grega é sempre a mesma e resolve-se com o que há: azeite, limão, alho e orégãos secos. Uma hora chega para dar sabor, mas de véspera o limão já começou a desfazer a carne pela superfície — e por isso oito horas é o limite útil, não um mínimo. O tzatziki depende de se espremer o pepino: ralado e deixado em sal dez minutos, larga metade do peso em água, e é essa água que arruína o molho se ficar. As pitas aquecem trinta segundos por lado numa frigideira seca, e só quando tudo o resto estiver pronto.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "mediterranica",
+    "festa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador",
+    "frigideira"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 15,
+    "prepAhead": {
+      "minutes": 60,
+      "description": "A carne fica na marinada pelo menos uma hora, e até oito."
+    }
+  },
+  "equipment": [
+    "grelhador",
+    "frigideira",
+    "taca",
+    "ralador",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "febra-de-porco",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em cubos de 3 cm"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 5,
+      "unit": "un"
+    },
+    {
+      "ref": "oregaos",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "ref": "iogurte-grego",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ref": "pepino",
+      "quantity": 1,
+      "unit": "un",
+      "note": "ralado"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-pita",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o porco",
+      "text": "Cubos com sumo de um limão, metade do alho picado, orégãos, azeite, sal e pimenta. No frigorífico, tapado.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "febra-de-porco",
+        "limao",
+        "dente-de-alho",
+        "oregaos",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Fazer o tzatziki",
+      "text": "Pepino ralado com sal a escorrer dez minutos, depois espremido com as mãos. Iogurte, resto do alho, hortelã e o outro limão.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "pepino",
+        "iogurte-grego",
+        "hortela"
+      ]
+    },
+    {
+      "title": "Grelhar as espetadas",
+      "text": "Grelhador bem quente, a virar de quarto em quarto. Tostado por fora e ainda suculento ao corte.",
+      "durationMinutes": 12
+    },
+    {
+      "title": "Aquecer as pitas e montar",
+      "text": "Trinta segundos por lado numa frigideira seca. Tzatziki, carne, tomate e cebola dentro.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pao-pita",
+        "tomate",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 760,
+    "proteinGrams": 56,
+    "carbsGrams": 62,
+    "fatGrams": 32,
+    "saturatedFatGrams": 9,
+    "fibreGrams": 5,
+    "saltGrams": 2.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

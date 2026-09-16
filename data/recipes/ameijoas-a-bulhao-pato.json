@@ -1,0 +1,134 @@
+{
+  "id": "ameijoas-a-bulhao-pato",
+  "name": "Amêijoas à Bulhão Pato",
+  "description": "Amêijoas abertas em azeite, alho, coentros e limão. Pão ao lado para o molho.",
+  "narrative": "São quatro ingredientes e o difícil é a areia. As amêijoas ficam em água com sal grosso pelo menos duas horas — em água doce morrem e não largam nada; em água salgada respiram e cospem a areia para o fundo. Tirar com as mãos e nunca despejar a água, senão volta tudo para dentro. Na panela abrem em três ou quatro minutos e a partir daí endurecem, portanto retiram-se à medida que abrem em vez de se esperar pelas últimas. As que não abrirem deitam-se fora.",
+  "servings": 4,
+  "needsSide": true,
+  "labels": [
+    "prato-principal",
+    "marisco",
+    "portuguesa",
+    "festa",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 10,
+    "cookMinutes": 12,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "As amêijoas ficam em água com sal grosso a largar a areia."
+    }
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "taca",
+    "escumadeira"
+  ],
+  "ingredients": [
+    {
+      "ref": "ameijoa",
+      "quantity": 1.5,
+      "unit": "kg"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 6,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "vinho-branco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ref": "piri-piri",
+      "unit": "qb"
+    },
+    {
+      "ref": "pao-rustico",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Purgar as amêijoas em água salgada",
+      "text": "Água fria com sal grosso a cobrir. Retirar com as mãos no fim, sem despejar a água.",
+      "durationMinutes": 120,
+      "passive": true,
+      "ingredientRefs": [
+        "ameijoa",
+        "sal"
+      ]
+    },
+    {
+      "title": "Alourar o alho",
+      "text": "Azeite morno com alho laminado e piri-piri, até dourar nas bordas.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "azeite",
+        "dente-de-alho",
+        "piri-piri"
+      ]
+    },
+    {
+      "title": "Abrir as amêijoas",
+      "text": "Amêijoas e vinho branco, tapado e em lume forte. Retirar à medida que vão abrindo; as que não abrirem deitam-se fora.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "vinho-branco"
+      ]
+    },
+    {
+      "title": "Coentros e limão fora do lume",
+      "text": "Coentros picados e sumo de limão, a envolver. Pão à mesa.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "coentros",
+        "limao",
+        "pao-rustico"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 390,
+    "proteinGrams": 26,
+    "carbsGrams": 14,
+    "fatGrams": 25,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 1,
+    "saltGrams": 2.4
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,178 @@
+{
+  "id": "pho-de-frango",
+  "name": "Pho de frango",
+  "description": "Caldo de galinha aromatizado com gengibre e anis-estrelado, noodles de arroz e ervas frescas.",
+  "narrative": "O caldo é a receita inteira, e o que o distingue de canja é a tosta: gengibre e cebola queimados na frigideira seca antes de entrarem na água, até ficarem manchados de preto. Esse amargo tostado é o fundo de tudo. As especiarias inteiras — anis-estrelado, canela, cravinho — entram no fim da fervura e não no princípio, senão o caldo fica medicinal. Os noodles de arroz cozem à parte e só se juntam no prato; dentro do caldo continuam a inchar e bebem-no todo. As ervas e a lima vão cruas à mesa, para cada um montar a sua taça.",
+  "servings": 4,
+  "labels": [
+    "sopa",
+    "aves",
+    "asiatica",
+    "conforto",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 50
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "coador",
+    "escorredor"
+  ],
+  "ingredients": [
+    {
+      "ref": "galinha",
+      "quantity": 1.2,
+      "unit": "kg",
+      "note": "em pedaços"
+    },
+    {
+      "ref": "gengibre",
+      "quantity": 60,
+      "unit": "g",
+      "note": "em lascas grossas"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "ao meio"
+    },
+    {
+      "ref": "anis-estrelado",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "pau-de-canela",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "cravinho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "molho-de-peixe",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "noodles-de-arroz",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "rebentos-de-soja",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "agua",
+      "quantity": 3,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Tostar o gengibre e a cebola",
+      "text": "Frigideira seca e lume forte, cortados de face para baixo, até ficarem manchados de preto.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "gengibre",
+        "cebola"
+      ]
+    },
+    {
+      "title": "Fazer o caldo",
+      "text": "Galinha, gengibre e cebola tostados e a água, em lume brando e destapado. Escumar a espuma nos primeiros minutos.",
+      "durationMinutes": 35,
+      "ingredientRefs": [
+        "galinha",
+        "agua"
+      ]
+    },
+    {
+      "title": "Aromatizar e coar",
+      "text": "Especiarias inteiras nos últimos dez minutos. Coar, temperar com molho de peixe, açúcar e sal, e desfiar a carne.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "anis-estrelado",
+        "pau-de-canela",
+        "cravinho",
+        "molho-de-peixe",
+        "acucar",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer os noodles à parte",
+      "text": "Segundo o pacote e escorridos logo. Dentro do caldo continuam a inchar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "noodles-de-arroz"
+      ]
+    },
+    {
+      "title": "Montar as taças",
+      "text": "Noodles, frango desfiado, caldo a ferver por cima. Rebentos, coentros, lima e malagueta à mesa.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "rebentos-de-soja",
+        "coentros",
+        "lima",
+        "malagueta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 42,
+    "carbsGrams": 66,
+    "fatGrams": 9,
+    "saturatedFatGrams": 2.5,
+    "fibreGrams": 4,
+    "saltGrams": 2.8
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

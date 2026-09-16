@@ -1,0 +1,167 @@
+{
+  "id": "kofta-de-borrego",
+  "name": "Kofta de borrego",
+  "description": "Borrego picado com cebola, hortelã e especiarias, moldado em rolos e grelhado.",
+  "narrative": "A kofta abre na grelha por uma razão só: a massa não foi trabalhada o suficiente. Amassar com as mãos durante três ou quatro minutos, até a mistura ficar pegajosa e uniforme, desenvolve a proteína e é o que a segura inteira. A cebola tem de ser ralada e espremida — ralada solta água que amacia, espremida evita que a massa fique mole demais para moldar. Descansar no frigorífico meia hora firma a gordura e ajuda outra vez. Serve-se com iogurte e pita, e é aí que os cominhos e a hortelã se explicam.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "carne",
+    "mediterranica",
+    "festa",
+    "dia-a-dia"
+  ],
+  "methods": [
+    "grelhador"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 15,
+    "prepAhead": {
+      "minutes": 30,
+      "description": "A massa firma no frigorífico antes de ir à grelha."
+    }
+  },
+  "equipment": [
+    "grelhador",
+    "taca",
+    "ralador",
+    "frigorifico"
+  ],
+  "ingredients": [
+    {
+      "ref": "carne-picada-de-borrego",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "ralada e espremida"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "hortela",
+      "unit": "qb"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "canela-em-po",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "iogurte-grego",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "pao-pita",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em rodelas"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Amassar a carne com os temperos",
+      "text": "Cebola espremida, alho, ervas picadas, especiarias, sal e pimenta. Amassar com as mãos até a massa ficar pegajosa e agarrar-se a si própria.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "carne-picada-de-borrego",
+        "cebola",
+        "dente-de-alho",
+        "salsa",
+        "hortela",
+        "cominhos",
+        "canela-em-po",
+        "colorau",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Moldar e firmar no frio",
+      "text": "Rolos alongados do tamanho de um dedo grosso. Tabuleiro ao frigorífico.",
+      "durationMinutes": 30,
+      "passive": true
+    },
+    {
+      "title": "Grelhar",
+      "text": "Grelhador quente com um fio de azeite, a virar de quarto em quarto. Escuros por fora e rosados ao centro.",
+      "durationMinutes": 12,
+      "ingredientRefs": [
+        "azeite"
+      ]
+    },
+    {
+      "title": "Servir com iogurte e pita",
+      "text": "Iogurte com limão e sal numa taça, pitas aquecidas, tomate em rodelas.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "iogurte-grego",
+        "limao",
+        "pao-pita",
+        "tomate"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 790,
+    "proteinGrams": 48,
+    "carbsGrams": 58,
+    "fatGrams": 40,
+    "saturatedFatGrams": 16,
+    "fibreGrams": 5,
+    "saltGrams": 2.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

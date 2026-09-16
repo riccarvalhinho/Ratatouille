@@ -13,12 +13,14 @@
   "servings": 4,
   "labels": [
     "acompanhamento",
-    "massa-e-arroz",
     "legumes",
+    "massa-e-arroz",
     "portuguesa",
     "dia-a-dia",
     "vegetariano",
-    "vegan"
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

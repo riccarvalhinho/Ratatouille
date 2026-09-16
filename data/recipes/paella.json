@@ -13,11 +13,13 @@
   "servings": 5,
   "labels": [
     "prato-principal",
-    "marisco",
     "aves",
+    "marisco",
     "massa-e-arroz",
     "mediterranica",
-    "festa"
+    "festa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira"

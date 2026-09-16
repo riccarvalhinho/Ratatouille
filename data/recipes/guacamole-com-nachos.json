@@ -1,0 +1,121 @@
+{
+  "id": "guacamole-com-nachos",
+  "name": "Guacamole com nachos",
+  "description": "Abacate esmagado à mão com lima, cebola e coentros. Nunca na varinha.",
+  "narrative": "Guacamole na varinha vira sopa de abacate. Esmaga-se com um garfo e deixam-se pedaços, que é o que dá textura e o que distingue isto do que vem em embalagem. O abacate tem de estar mesmo maduro — cede à pressão do polegar na base — e a lima entra logo no primeiro minuto, antes de qualquer outra coisa, porque é o que trava o escurecimento. Sal a sério e mais lima do que parece necessário: a gordura do abacate abafa o tempero e o que sabe certo na taça sabe a pouco no nacho.",
+  "servings": 6,
+  "labels": [
+    "snack",
+    "legumes",
+    "mexicana",
+    "dia-a-dia",
+    "vegetariano",
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "sem-confecao"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 0
+  },
+  "equipment": [
+    "taca",
+    "faca-de-chef",
+    "tabua-de-cozinha"
+  ],
+  "ingredients": [
+    {
+      "ref": "abacate",
+      "quantity": 4,
+      "unit": "un",
+      "note": "bem maduros"
+    },
+    {
+      "ref": "lima",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "picada muito fina"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 2,
+      "unit": "un",
+      "note": "sem sementes, em cubos pequenos"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "malagueta",
+      "quantity": 1,
+      "unit": "un",
+      "note": "sem sementes, picada"
+    },
+    {
+      "ref": "tortilha-chips",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Esmagar o abacate com a lima",
+      "text": "Garfo, nunca varinha — deixar pedaços. Sumo das limas e sal logo no início.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "abacate",
+        "lima",
+        "sal"
+      ]
+    },
+    {
+      "title": "Juntar o resto picado fino",
+      "text": "Cebola, tomate sem sementes, malagueta e coentros, a envolver sem esmagar mais.",
+      "durationMinutes": 7,
+      "ingredientRefs": [
+        "cebola-roxa",
+        "tomate",
+        "malagueta",
+        "coentros"
+      ]
+    },
+    {
+      "title": "Provar e servir",
+      "text": "Provar com um nacho e não com a colher — o sal certo na colher sabe a pouco no nacho.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "tortilha-chips"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 390,
+    "proteinGrams": 6,
+    "carbsGrams": 34,
+    "fatGrams": 27,
+    "saturatedFatGrams": 4,
+    "fibreGrams": 10,
+    "saltGrams": 1.1
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

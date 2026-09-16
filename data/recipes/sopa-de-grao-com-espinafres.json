@@ -13,12 +13,14 @@
   "servings": 5,
   "labels": [
     "sopa",
+    "ovos",
     "leguminosas",
     "legumes",
-    "ovos",
     "portuguesa",
     "dia-a-dia",
-    "vegetariano"
+    "vegetariano",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

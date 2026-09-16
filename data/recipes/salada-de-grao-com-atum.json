@@ -14,11 +14,13 @@
   "labels": [
     "salada",
     "prato-principal",
-    "leguminosas",
     "peixe",
     "ovos",
+    "leguminosas",
     "portuguesa",
-    "dia-a-dia"
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "sem-confecao",

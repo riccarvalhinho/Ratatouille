@@ -15,7 +15,9 @@
     "prato-principal",
     "peixe",
     "portuguesa",
-    "festa"
+    "festa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "forno",

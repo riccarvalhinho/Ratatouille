@@ -1,0 +1,149 @@
+{
+  "id": "caril-verde-tailandes",
+  "name": "Caril verde tailandês",
+  "description": "Pasta de caril frita no leite de coco, frango e beringela, com arroz jasmim.",
+  "narrative": "O passo que quase todas as versões caseiras saltam é fritar a pasta de caril na parte gorda do leite de coco antes de juntar o resto — dois minutos que transformam uma pasta crua e agressiva num fundo perfumado. Para isso, a lata de leite de coco não se agita: abre-se e tira-se a nata do topo. O equilíbrio tailandês é salgado, doce e ácido ao mesmo tempo, e prova-se no fim com molho de peixe, açúcar e lima até os três se sentirem. O manjericão entra com o lume já apagado.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "asiatica",
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 600,
+      "unit": "g",
+      "note": "em tiras"
+    },
+    {
+      "ref": "pasta-de-caril-verde",
+      "quantity": 3,
+      "unit": "csopa"
+    },
+    {
+      "ref": "leite-de-coco",
+      "quantity": 800,
+      "unit": "ml"
+    },
+    {
+      "ref": "beringela",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "pimento-verde",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "molho-de-peixe",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "lima",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb"
+    },
+    {
+      "ref": "arroz-jasmim",
+      "quantity": 320,
+      "unit": "g"
+    },
+    {
+      "ref": "agua",
+      "quantity": 550,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr o arroz ao lume",
+      "text": "Lavado, com a água e sal, tapado em lume baixo.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "arroz-jasmim",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fritar a pasta na nata de coco",
+      "text": "Nata do topo da lata, sem agitar, a ferver até separar o óleo. Pasta de caril a fritar aí dois minutos, a mexer.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "leite-de-coco",
+        "pasta-de-caril-verde"
+      ]
+    },
+    {
+      "title": "Cozinhar o frango e os legumes",
+      "text": "Frango a selar na pasta, depois o resto do leite de coco, a beringela e o pimento. Lume brando, até a beringela ceder ao garfo.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "beringela",
+        "pimento-verde"
+      ]
+    },
+    {
+      "title": "Acertar o tempero e servir",
+      "text": "Molho de peixe, açúcar e sumo de lima, a provar entre cada um até se sentirem os três. Manjericão com o lume apagado.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "molho-de-peixe",
+        "acucar",
+        "lima",
+        "manjericao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 44,
+    "carbsGrams": 76,
+    "fatGrams": 34,
+    "saturatedFatGrams": 24,
+    "fibreGrams": 6,
+    "saltGrams": 2.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

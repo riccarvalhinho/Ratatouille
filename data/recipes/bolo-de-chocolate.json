@@ -1,0 +1,156 @@
+{
+  "id": "bolo-de-chocolate",
+  "name": "Bolo de chocolate",
+  "description": "Bolo húmido de cacau com cobertura de chocolate derretido em natas.",
+  "narrative": "O óleo em vez de manteiga é o que mantém este bolo húmido três dias — a manteiga solidifica no frio e o bolo endurece, o óleo não. O cacau abre-se com líquido quente antes de entrar na massa: é um gesto de um minuto que aprofunda a cor e o sabor, e sem ele o bolo sabe a pó. A massa fica muito líquida e isso é o correto — a farinha justa é a razão do miolo fofo. A cobertura é a mais simples que existe: natas quentes sobre chocolate partido, esperar dois minutos e mexer do centro para fora até ficar lisa e brilhante.",
+  "servings": 10,
+  "labels": [
+    "sobremesa",
+    "pao-e-bolos",
+    "conforto",
+    "festa",
+    "vegetariano",
+    "americana"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "forma-de-bolo",
+    "taca",
+    "vara-de-arames",
+    "peneira",
+    "grelha-de-arrefecimento"
+  ],
+  "ingredients": [
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ref": "cacau-em-po",
+      "quantity": 75,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ref": "ovo",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "oleo-alimentar",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "ref": "leite",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "cafe",
+      "quantity": 150,
+      "unit": "ml",
+      "note": "quente"
+    },
+    {
+      "ref": "fermento-em-po",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "chocolate-preto",
+      "quantity": 200,
+      "unit": "g",
+      "note": "partido"
+    },
+    {
+      "ref": "natas",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "baunilha",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "quantity": 1,
+      "unit": "pitada"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Abrir o cacau no café quente",
+      "text": "Cacau peneirado com o café a ferver, batido até virar pasta lisa e brilhante.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "cacau-em-po",
+        "cafe"
+      ]
+    },
+    {
+      "title": "Bater os húmidos e juntar os secos",
+      "text": "Ovos, açúcar, óleo, leite e baunilha batidos. Farinha, fermento e sal peneirados por cima, e a pasta de cacau. A massa fica líquida.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "ovo",
+        "acucar",
+        "oleo-alimentar",
+        "leite",
+        "baunilha",
+        "farinha-de-trigo",
+        "fermento-em-po",
+        "sal"
+      ]
+    },
+    {
+      "title": "Cozer",
+      "text": "Forno a 175 °C, forma untada. O palito ao centro sai com migalhas húmidas, não limpo.",
+      "durationMinutes": 35
+    },
+    {
+      "title": "Arrefecer por completo",
+      "text": "Dez minutos na forma, depois sobre a grelha. Cobertura em bolo quente derrete e escorre.",
+      "durationMinutes": 45,
+      "passive": true
+    },
+    {
+      "title": "Fazer a cobertura e cobrir",
+      "text": "Natas quentes sobre o chocolate partido, dois minutos parados, e mexer do centro para fora até ficar lisa. Espalhar sobre o bolo frio.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "chocolate-preto",
+        "natas"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 520,
+    "proteinGrams": 8,
+    "carbsGrams": 62,
+    "fatGrams": 28,
+    "saturatedFatGrams": 10,
+    "fibreGrams": 4,
+    "saltGrams": 0.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

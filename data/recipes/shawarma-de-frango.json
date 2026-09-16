@@ -1,0 +1,187 @@
+{
+  "id": "shawarma-de-frango",
+  "name": "Shawarma de frango",
+  "description": "Coxas marinadas em especiarias e iogurte, assadas no forno e desfiadas, em pita com tahini.",
+  "narrative": "A versão de casa não tem espeto vertical e não precisa dele: o que faz o shawarma é a marinada e a carne ficar empilhada de modo a assar por fora e vaporizar por dentro. Coxa desossada em vez de peito, porque tem gordura suficiente para aguentar o forno sem secar. O iogurte na marinada amacia sem desfazer, ao contrário do limão sozinho. Depois do forno, a carne corta-se em tiras e volta cinco minutos ao tabuleiro em lume alto — é esse segundo passe que dá as pontas tostadas que se reconhecem.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "mediterranica",
+    "dia-a-dia",
+    "festa"
+  ],
+  "methods": [
+    "forno"
+  ],
+  "weight": "equilibrado",
+  "timing": {
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "prepAhead": {
+      "minutes": 120,
+      "description": "O frango marina pelo menos duas horas, e melhora de um dia para o outro."
+    }
+  },
+  "equipment": [
+    "forno",
+    "tabuleiro-de-forno",
+    "taca",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "coxa-de-frango",
+      "quantity": 900,
+      "unit": "g",
+      "note": "desossadas, sem pele"
+    },
+    {
+      "ref": "iogurte-natural",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "curcuma",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "colorau",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "canela-em-po",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un"
+    },
+    {
+      "ref": "limao",
+      "quantity": 2,
+      "unit": "un"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ref": "pao-pita",
+      "quantity": 8,
+      "unit": "un"
+    },
+    {
+      "ref": "tahini",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ref": "tomate",
+      "quantity": 3,
+      "unit": "un",
+      "note": "em cubos"
+    },
+    {
+      "ref": "alface",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em tiras"
+    },
+    {
+      "ref": "cebola-roxa",
+      "quantity": 1,
+      "unit": "un",
+      "note": "em meias-luas finas"
+    },
+    {
+      "ref": "agua",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Marinar o frango nas especiarias",
+      "text": "Iogurte, cominhos, curcuma, colorau, canela, alho picado, sumo de um limão, azeite, sal e pimenta a envolver as coxas. Frigorífico.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "coxa-de-frango",
+        "iogurte-natural",
+        "cominhos",
+        "curcuma",
+        "colorau",
+        "canela-em-po",
+        "dente-de-alho",
+        "limao",
+        "azeite",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Assar empilhado",
+      "text": "Forno a 220 °C, coxas sobrepostas no tabuleiro e não espalhadas. Viradas a meio.",
+      "durationMinutes": 30
+    },
+    {
+      "title": "Cortar e tostar outra vez",
+      "text": "Tiras finas de volta ao tabuleiro, no calor máximo, até as pontas ficarem escuras.",
+      "durationMinutes": 8
+    },
+    {
+      "title": "Bater o molho de tahini",
+      "text": "Tahini com o sumo do outro limão, sal e água a fio até ficar corrente.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "tahini",
+        "agua"
+      ]
+    },
+    {
+      "title": "Montar nas pitas",
+      "text": "Pitas aquecidas, alface, tomate, cebola, carne e molho por cima.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "pao-pita",
+        "alface",
+        "tomate",
+        "cebola-roxa"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 780,
+    "proteinGrams": 58,
+    "carbsGrams": 64,
+    "fatGrams": 32,
+    "saturatedFatGrams": 7,
+    "fibreGrams": 6,
+    "saltGrams": 2.2
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

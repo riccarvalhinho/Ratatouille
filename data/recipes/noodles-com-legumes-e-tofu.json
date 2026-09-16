@@ -13,12 +13,13 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "massa-e-arroz",
     "legumes",
+    "massa-e-arroz",
     "asiatica",
     "dia-a-dia",
     "vegetariano",
-    "vegan"
+    "vegan",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira",

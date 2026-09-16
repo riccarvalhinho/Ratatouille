@@ -1,0 +1,108 @@
+{
+  "id": "cenouras-glaceadas",
+  "name": "Cenouras glaceadas",
+  "description": "Cozidas em água com manteiga e açúcar até a água evaporar e sobrar um xarope que as cobre.",
+  "narrative": "O glaceado não se acrescenta no fim — forma-se sozinho. As cenouras cozem em pouca água com manteiga e açúcar, destapadas, e à medida que a água evapora o que sobra é um xarope que as cobre e brilha. Se a água acabar antes de as cenouras estarem tenras, junta-se mais um pouco; se as cenouras ficarem prontas com água a sobrar, sobe-se o lume. Cortá-las todas da mesma grossura é o que faz com que fiquem prontas ao mesmo tempo.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "francesa",
+    "dia-a-dia",
+    "vegetariano",
+    "sem-gluten"
+  ],
+  "methods": [
+    "tacho"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 8,
+    "cookMinutes": 18
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "descascador",
+    "faca-de-chef"
+  ],
+  "ingredients": [
+    {
+      "ref": "cenoura",
+      "quantity": 800,
+      "unit": "g",
+      "note": "em rodelas grossas, todas iguais"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "acucar",
+      "quantity": 1,
+      "unit": "csopa"
+    },
+    {
+      "ref": "agua",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "ref": "salsa",
+      "unit": "qb"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pôr tudo ao lume destapado",
+      "text": "Cenouras, manteiga, açúcar, sal e a água a cobrir até meio. Lume médio e sem tampa.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "cenoura",
+        "manteiga",
+        "acucar",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Deixar evaporar até ao xarope",
+      "text": "Quinze minutos a abanar o tacho de vez em quando. Se a água acabar antes de as cenouras cederem, juntar mais um pouco.",
+      "durationMinutes": 15
+    },
+    {
+      "title": "Envolver no glaceado",
+      "text": "Abanar o tacho até todas ficarem brilhantes. Salsa e pimenta no fim.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "salsa",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 150,
+    "proteinGrams": 2,
+    "carbsGrams": 18,
+    "fatGrams": 8,
+    "saturatedFatGrams": 5,
+    "fibreGrams": 5,
+    "saltGrams": 0.5
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

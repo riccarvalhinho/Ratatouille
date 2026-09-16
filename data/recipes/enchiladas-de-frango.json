@@ -1,0 +1,172 @@
+{
+  "id": "enchiladas-de-frango",
+  "name": "Enchiladas de frango",
+  "description": "Tortilhas de milho enroladas com frango e feijão preto, cobertas de molho de tomate e queijo.",
+  "narrative": "O erro clássico é enrolar as tortilhas frias: partem-se todas. Aquecidas trinta segundos na frigideira seca ficam flexíveis e enrolam sem uma única fenda. O molho faz-se com tomate, cebola e colorau fumado, que é o que dá o travo a pimento seco sem se ter de arranjar chiles. Parte do molho vai para o fundo do pirex antes de as enchiladas entrarem — sem isso colam ao vidro e não saem inteiras. Vinte minutos de forno chegam: o recheio já está cozinhado e o que falta é derreter o queijo.",
+  "servings": 4,
+  "labels": [
+    "prato-principal",
+    "aves",
+    "mexicana",
+    "conforto",
+    "festa",
+    "sem-gluten"
+  ],
+  "methods": [
+    "forno",
+    "frigideira"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 25,
+    "cookMinutes": 35
+  },
+  "equipment": [
+    "forno",
+    "frigideira",
+    "pirex",
+    "faca-de-chef",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "peito-de-frango",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "ref": "tortilha-de-milho",
+      "quantity": 12,
+      "unit": "un"
+    },
+    {
+      "ref": "feijao-preto-cozido",
+      "quantity": 240,
+      "unit": "g",
+      "note": "escorrido"
+    },
+    {
+      "ref": "tomate-pelado",
+      "quantity": 800,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 2,
+      "unit": "un",
+      "note": "picadas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un"
+    },
+    {
+      "ref": "colorau-fumado",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "cominhos",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "queijo-cheddar",
+      "quantity": 200,
+      "unit": "g",
+      "note": "ralado"
+    },
+    {
+      "ref": "natas-azedas",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ref": "coentros",
+      "unit": "qb"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer e desfiar o frango",
+      "text": "Peitos em água a ferver com sal, até deixarem de estar rosados ao centro. Desfiar à mão ainda mornos.",
+      "durationMinutes": 18,
+      "ingredientRefs": [
+        "peito-de-frango",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Metade da cebola e o alho em azeite, colorau fumado e cominhos, tomate esmagado. Apurar até engrossar.",
+      "durationMinutes": 15,
+      "ingredientRefs": [
+        "cebola",
+        "dente-de-alho",
+        "azeite",
+        "colorau-fumado",
+        "cominhos",
+        "tomate-pelado"
+      ]
+    },
+    {
+      "title": "Ligar o recheio",
+      "text": "Frango desfiado com o feijão preto, a restante cebola crua e duas conchas do molho.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "feijao-preto-cozido"
+      ]
+    },
+    {
+      "title": "Aquecer e enrolar as tortilhas",
+      "text": "Trinta segundos por lado numa frigideira seca. Frias partem-se ao enrolar. Molho no fundo do pirex antes de as pousar.",
+      "durationMinutes": 10,
+      "ingredientRefs": [
+        "tortilha-de-milho"
+      ]
+    },
+    {
+      "title": "Cobrir e gratinar",
+      "text": "Resto do molho por cima, queijo ralado. Forno a 200 °C até borbulhar e a superfície ficar manchada de castanho.",
+      "durationMinutes": 20,
+      "ingredientRefs": [
+        "queijo-cheddar"
+      ]
+    },
+    {
+      "title": "Servir",
+      "text": "Natas azedas às colheradas e coentros por cima, já fora do forno.",
+      "durationMinutes": 2,
+      "ingredientRefs": [
+        "natas-azedas",
+        "coentros"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 720,
+    "proteinGrams": 52,
+    "carbsGrams": 62,
+    "fatGrams": 28,
+    "saturatedFatGrams": 13,
+    "fibreGrams": 11,
+    "saltGrams": 2.3
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

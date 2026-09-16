@@ -8,7 +8,9 @@
   "labels": [
     "prato-principal",
     "carne",
-    "portuguesa"
+    "portuguesa",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "forno"

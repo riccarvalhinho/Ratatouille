@@ -13,9 +13,10 @@
   "servings": 6,
   "labels": [
     "sopa",
-    "legumes",
     "carne",
-    "conforto"
+    "legumes",
+    "conforto",
+    "sem-gluten"
   ],
   "methods": [
     "tacho"

@@ -15,7 +15,9 @@
     "prato-principal",
     "massa-e-arroz",
     "asiatica",
-    "dia-a-dia"
+    "dia-a-dia",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira"

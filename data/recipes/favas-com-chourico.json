@@ -13,11 +13,12 @@
   "servings": 4,
   "labels": [
     "prato-principal",
-    "leguminosas",
     "carne",
+    "leguminosas",
     "portuguesa",
     "dia-a-dia",
-    "conforto"
+    "conforto",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"

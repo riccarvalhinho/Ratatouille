@@ -1,0 +1,121 @@
+{
+  "id": "feijao-verde-salteado",
+  "name": "Feijão verde salteado com amêndoa",
+  "description": "Escaldado em água a ferver e salteado em manteiga com alho e amêndoa laminada.",
+  "narrative": "Feijão verde cozido até ficar mole perdeu tudo o que tinha para dar. Escalda-se três minutos em água a ferver com muito sal e vai imediatamente para água gelada — é esse choque que trava a cozedura e fixa o verde. A partir daí pode esperar horas no frigorífico, o que torna este acompanhamento útil para um jantar com visitas. O salteado final são dois minutos em manteiga com alho e amêndoa, já na hora de servir.",
+  "servings": 4,
+  "labels": [
+    "acompanhamento",
+    "legumes",
+    "francesa",
+    "dia-a-dia",
+    "vegetariano",
+    "sem-gluten"
+  ],
+  "methods": [
+    "tacho",
+    "frigideira"
+  ],
+  "weight": "leve",
+  "timing": {
+    "prepMinutes": 5,
+    "cookMinutes": 10
+  },
+  "equipment": [
+    "placa",
+    "tacho",
+    "frigideira",
+    "escorredor",
+    "taca"
+  ],
+  "ingredients": [
+    {
+      "ref": "feijao-verde",
+      "quantity": 600,
+      "unit": "g",
+      "note": "sem pontas"
+    },
+    {
+      "ref": "amendoa",
+      "quantity": 60,
+      "unit": "g",
+      "note": "laminadas"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 3,
+      "unit": "un",
+      "note": "laminados"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ref": "limao",
+      "quantity": 1,
+      "unit": "un"
+    },
+    {
+      "ref": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "unit": "qb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Escaldar e travar em água gelada",
+      "text": "Três minutos em água a ferver com muito sal, depois direto para uma taça de água com gelo. Escorrer bem.",
+      "durationMinutes": 6,
+      "ingredientRefs": [
+        "feijao-verde",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "title": "Tostar a amêndoa com o alho",
+      "text": "Manteiga em lume médio, amêndoa laminada e alho até dourarem. A amêndoa passa de tostada a queimada em segundos.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "amendoa",
+        "dente-de-alho",
+        "manteiga"
+      ]
+    },
+    {
+      "title": "Saltear e servir",
+      "text": "Feijão verde a envolver dois minutos, limão espremido e pimenta fora do lume.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "limao",
+        "pimenta-preta"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 220,
+    "proteinGrams": 7,
+    "carbsGrams": 11,
+    "fatGrams": 17,
+    "saturatedFatGrams": 6,
+    "fibreGrams": 6,
+    "saltGrams": 0.6
+  },
+  "source": {
+    "kind": "gerada",
+    "author": "Claude"
+  },
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16"
+}

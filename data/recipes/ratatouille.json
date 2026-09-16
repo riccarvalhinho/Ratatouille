@@ -16,10 +16,12 @@
     "prato-principal",
     "acompanhamento",
     "legumes",
-    "francesa",
     "mediterranica",
+    "francesa",
     "vegetariano",
-    "vegan"
+    "vegan",
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "frigideira",

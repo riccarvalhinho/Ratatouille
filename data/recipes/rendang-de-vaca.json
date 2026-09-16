@@ -15,8 +15,10 @@
     "prato-principal",
     "carne",
     "asiatica",
+    "conforto",
     "festa",
-    "conforto"
+    "sem-gluten",
+    "sem-lactose"
   ],
   "methods": [
     "tacho"
