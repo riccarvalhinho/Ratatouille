@@ -55,7 +55,7 @@ function termosPara(recipe: RecipeFile, override?: string): string[] {
 }
 
 /** Acima disto a imagem não vale o peso no repositório nem no bundle. Ver `media/README.md`. */
-const MAX_BYTES = 300 * 1024;
+export const MAX_BYTES = 300 * 1024;
 
 const USER_AGENT = 'RatatouilleImporter/1.0 (https://github.com/riccarvalhinho/Ratatouille)';
 
@@ -116,7 +116,7 @@ export function scoreCandidate(
 }
 
 /** Descarrega, confirma que é mesmo uma imagem, e recusa o que for grande de mais. */
-async function download(candidate: ImageCandidate, target: string): Promise<number> {
+export async function download(candidate: ImageCandidate, target: string): Promise<number> {
   const response = await fetch(candidate.url, { headers: { 'User-Agent': USER_AGENT } });
   if (!response.ok) throw new Error(`${response.status} ao descarregar`);
 

@@ -9,3 +9,7 @@ dist/
 # Gerados por tools/build-bundle.ts a partir de data/ e media/. Nunca editar à mão.
 app/public/data/
 app/public/media/
+
+# Material de trabalho da escolha de imagens: miniaturas e folhas de contacto. Vive no ramo
+# imagens/colheita, onde o workflow o força a entrar, e nunca no main. Ver tools/colher-imagens.ts.
+colheita/
