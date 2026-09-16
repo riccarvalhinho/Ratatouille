@@ -2,6 +2,13 @@
   "id": "enchiladas-de-frango",
   "name": "Enchiladas de frango",
   "description": "Tortilhas de milho enroladas com frango e feijão preto, cobertas de molho de tomate e queijo.",
+  "image": "media/recipes/enchiladas-de-frango.jpg",
+  "imageCredit": {
+    "author": "mdid",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58246614@N00/724169925"
+  },
   "narrative": "O erro clássico é enrolar as tortilhas frias: partem-se todas. Aquecidas trinta segundos na frigideira seca ficam flexíveis e enrolam sem uma única fenda. O molho faz-se com tomate, cebola e colorau fumado, que é o que dá o travo a pimento seco sem se ter de arranjar chiles. Parte do molho vai para o fundo do pirex antes de as enchiladas entrarem — sem isso colam ao vidro e não saem inteiras. Vinte minutos de forno chegam: o recheio já está cozinhado e o que falta é derreter o queijo.",
   "servings": 4,
   "labels": [

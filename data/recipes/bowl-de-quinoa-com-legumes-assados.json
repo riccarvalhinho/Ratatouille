@@ -2,6 +2,13 @@
   "id": "bowl-de-quinoa-com-legumes-assados",
   "name": "Bowl de quinoa com legumes assados",
   "description": "Legumes no tabuleiro, quinoa ao lado e molho de tahini por cima. Come-se morno ou frio.",
+  "image": "media/recipes/bowl-de-quinoa-com-legumes-assados.jpg",
+  "imageCredit": {
+    "author": "Piersey",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/201676878@N03/54491103681"
+  },
   "narrative": "A quinoa tem duas regras e nenhuma é intuitiva: lava-se antes de cozer, porque a saponina que a reveste é amarga, e coze em quinze minutos com o dobro do volume de água. O resto é tabuleiro. Os legumes vão todos ao forno ao mesmo tempo cortados do mesmo tamanho — é isso, e não o tempo, que faz com que fiquem prontos juntos. O molho de tahini com limão e água separa esta receita de uma tigela de legumes: sem ele fica seco, e é a colher de água a mais que o transforma de pasta em molho.",
   "servings": 4,
   "labels": [

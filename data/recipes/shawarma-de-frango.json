@@ -2,6 +2,13 @@
   "id": "shawarma-de-frango",
   "name": "Shawarma de frango",
   "description": "Coxas marinadas em especiarias e iogurte, assadas no forno e desfiadas, em pita com tahini.",
+  "image": "media/recipes/shawarma-de-frango.jpg",
+  "imageCredit": {
+    "author": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handmade_Chicken_Shawarma_Wrap_-_Lavash.jpg"
+  },
   "narrative": "A versão de casa não tem espeto vertical e não precisa dele: o que faz o shawarma é a marinada e a carne ficar empilhada de modo a assar por fora e vaporizar por dentro. Coxa desossada em vez de peito, porque tem gordura suficiente para aguentar o forno sem secar. O iogurte na marinada amacia sem desfazer, ao contrário do limão sozinho. Depois do forno, a carne corta-se em tiras e volta cinco minutos ao tabuleiro em lume alto — é esse segundo passe que dá as pontas tostadas que se reconhecem.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "pao-de-lo",
   "name": "Pão de ló",
   "description": "Ovos, açúcar e farinha. Sem fermento: o volume vem todo de bater os ovos.",
+  "image": "media/recipes/pao-de-lo.jpg",
+  "imageCredit": {
+    "author": "Adriao",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:P%C3%A3o-de-l%C3%B3.jpg"
+  },
   "narrative": "Três ingredientes e nenhum sítio onde esconder erros. O volume não vem de fermento nenhum — vem do ar que se bate para dentro dos ovos, e por isso os oito a dez minutos de batedeira não são exagero, são a receita. Os ovos devem estar à temperatura ambiente, que bate mais volume do que ovos frios. A farinha entra peneirada e envolve-se com uma espátula de baixo para cima, nunca com a batedeira. O forno não se abre antes dos vinte minutos. Húmido ao centro é como o pão de ló de Ovar é suposto ser; quem o quiser seco deixa mais cinco minutos.",
   "servings": 10,
   "labels": [

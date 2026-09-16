@@ -2,6 +2,13 @@
   "id": "cenouras-glaceadas",
   "name": "Cenouras glaceadas",
   "description": "Cozidas em água com manteiga e açúcar até a água evaporar e sobrar um xarope que as cobre.",
+  "image": "media/recipes/cenouras-glaceadas.jpg",
+  "imageCredit": {
+    "author": "Thriving Vegetarian",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/90155432@N02/8624681400"
+  },
   "narrative": "O glaceado não se acrescenta no fim — forma-se sozinho. As cenouras cozem em pouca água com manteiga e açúcar, destapadas, e à medida que a água evapora o que sobra é um xarope que as cobre e brilha. Se a água acabar antes de as cenouras estarem tenras, junta-se mais um pouco; se as cenouras ficarem prontas com água a sobrar, sobe-se o lume. Cortá-las todas da mesma grossura é o que faz com que fiquem prontas ao mesmo tempo.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "beringela-recheada",
   "name": "Beringela recheada",
   "description": "Meias beringelas assadas, recheadas com a própria polpa, tomate e mozarela gratinada.",
+  "image": "media/recipes/beringela-recheada.jpg",
+  "imageCredit": {
+    "author": "Diana ✨",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/cooked-food-on-gray-ceramic-plate-13214151/"
+  },
   "narrative": "A beringela assa-se primeiro vazia e só depois se recheia — é a única forma de a polpa ficar cremosa em vez de esponjosa e crua ao centro. Riscar a polpa em xadrez antes de a levar ao forno faz o calor entrar e o azeite também. A polpa que se retira vai para o recheio, portanto nada se perde; salgá-la e deixá-la escorrer dez minutos tira o amargo e a água, que de outra forma encharcam tudo. A mozarela entra nos últimos dez minutos, senão liberta água e volta a encharcar.",
   "servings": 4,
   "labels": [

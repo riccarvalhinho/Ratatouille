@@ -2,6 +2,13 @@
   "id": "ameijoas-a-bulhao-pato",
   "name": "Amêijoas à Bulhão Pato",
   "description": "Amêijoas abertas em azeite, alho, coentros e limão. Pão ao lado para o molho.",
+  "image": "media/recipes/ameijoas-a-bulhao-pato.jpg",
+  "imageCredit": {
+    "author": "Sanjorgepinho",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Am%C3%AAijoas_de_Set%C3%BAbal.jpg"
+  },
   "narrative": "São quatro ingredientes e o difícil é a areia. As amêijoas ficam em água com sal grosso pelo menos duas horas — em água doce morrem e não largam nada; em água salgada respiram e cospem a areia para o fundo. Tirar com as mãos e nunca despejar a água, senão volta tudo para dentro. Na panela abrem em três ou quatro minutos e a partir daí endurecem, portanto retiram-se à medida que abrem em vez de se esperar pelas últimas. As que não abrirem deitam-se fora.",
   "servings": 4,
   "needsSide": true,

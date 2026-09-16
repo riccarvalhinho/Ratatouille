@@ -2,6 +2,13 @@
   "id": "caril-verde-tailandes",
   "name": "Caril verde tailandês",
   "description": "Pasta de caril frita no leite de coco, frango e beringela, com arroz jasmim.",
+  "image": "media/recipes/caril-verde-tailandes.jpg",
+  "imageCredit": {
+    "author": "Shameel mukkath",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-meat-and-soup-and-white-rice-on-a-tray-10296231/"
+  },
   "narrative": "O passo que quase todas as versões caseiras saltam é fritar a pasta de caril na parte gorda do leite de coco antes de juntar o resto — dois minutos que transformam uma pasta crua e agressiva num fundo perfumado. Para isso, a lata de leite de coco não se agita: abre-se e tira-se a nata do topo. O equilíbrio tailandês é salgado, doce e ácido ao mesmo tempo, e prova-se no fim com molho de peixe, açúcar e lima até os três se sentirem. O manjericão entra com o lume já apagado.",
   "servings": 4,
   "labels": [

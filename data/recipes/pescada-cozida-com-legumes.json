@@ -2,6 +2,13 @@
   "id": "pescada-cozida-com-legumes",
   "name": "Pescada cozida com legumes",
   "description": "Peixe e legumes no mesmo tacho, por ordem de tempo, com molho de azeite e alho por cima.",
+  "image": "media/recipes/pescada-cozida-com-legumes.jpg",
+  "imageCredit": {
+    "author": "Fernanda da Silva Lopes",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/gourmet-dish-with-poached-egg-and-vegetables-29478467/"
+  },
   "narrative": "O jantar de terça-feira que ninguém escreve porque parece óbvio, e depois sai mal na mesma: ou o peixe cozeu de mais ou a batata ficou crua. A ordem resolve — batata e cenoura primeiro, feijão verde a meio, peixe nos últimos oito minutos, e tudo no mesmo tacho para não haver três lumes. O molho é o que faz a diferença entre isto e comida de hospital: azeite morno com alho laminado, vinagre e salsa, batido com um garfo e deitado por cima na hora de servir. Um ovo cozido acrescenta-se se a refeição tiver de aguentar até à noite.",
   "servings": 4,
   "labels": [

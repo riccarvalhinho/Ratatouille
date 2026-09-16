@@ -2,6 +2,13 @@
   "id": "gnocchi-com-tomate-e-manjericao",
   "name": "Gnocchi com tomate e manjericão",
   "description": "Molho de tomate feito no tempo que a água leva a ferver, e o gnocchi cozido em dois minutos.",
+  "image": "media/recipes/gnocchi-com-tomate-e-manjericao.jpg",
+  "imageCredit": {
+    "author": "cotterillmike",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Description_needed._(26812384931).jpg"
+  },
   "narrative": "O gnocchi de compra tem uma vantagem que a massa não tem: coze em dois minutos e avisa quando está pronto, porque sobe à superfície. Isso muda a ordem da cozinha — o molho tem de estar feito antes de o gnocchi entrar na água, não ao contrário. O molho é o mínimo honesto: alho em azeite, tomate pelado esmagado à mão, e tempo. Vinte minutos de lume brando transformam tomate de lata em molho; dez deixam-no a saber a lata. O manjericão entra fora do lume e o parmesão no prato.",
   "servings": 4,
   "labels": [

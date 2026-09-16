@@ -2,6 +2,13 @@
   "id": "ovos-mexidos-com-cogumelos",
   "name": "Ovos mexidos com cogumelos",
   "description": "Cogumelos salteados a sério e ovos mexidos em lume brando, sobre pão torrado.",
+  "image": "media/recipes/ovos-mexidos-com-cogumelos.jpg",
+  "imageCredit": {
+    "author": "ultrakml",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/34948727@N00/8121597563"
+  },
   "narrative": "Os ovos mexidos falham sempre pela mesma razão: lume alto e pressa. Em lume brando e a mexer, levam cinco minutos e saem em creme; em lume alto levam um e saem em grumos secos. Os cogumelos são o contrário — precisam de lume forte e de espaço na frigideira, senão largam água e cozem em vez de alourar, e por isso vão primeiro e saem antes de os ovos entrarem. Tirar do lume com os ovos ainda a parecer pouco feitos é o único gesto que conta: o calor da frigideira acaba o trabalho no prato.",
   "servings": 2,
   "labels": [

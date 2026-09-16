@@ -2,6 +2,13 @@
   "id": "ovos-escalfados-com-tosta-e-abacate",
   "name": "Ovos escalfados com tosta e abacate",
   "description": "Ovo escalfado em água com vinagre, sobre pão torrado com abacate esmagado.",
+  "image": "media/recipes/ovos-escalfados-com-tosta-e-abacate.jpg",
+  "imageCredit": {
+    "author": "Ekaterinna Popgeorgieva",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/a-close-up-shot-of-an-avocado-toast-with-egg-11719758/"
+  },
   "narrative": "Escalfar assusta e não devia. Três coisas resolvem: água a tremer e não a ferver, uma colher de vinagre para a clara coagular depressa, e ovos o mais frescos possível — num ovo velho a clara já está líquida e espalha-se por toda a panela. Fazer um redemoinho com a colher antes de deixar cair o ovo enrola a clara à volta da gema. O abacate esmaga-se com um garfo e leva limão logo, que é o que o impede de escurecer enquanto se faz o resto.",
   "servings": 2,
   "labels": [

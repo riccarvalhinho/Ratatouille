@@ -2,6 +2,13 @@
   "id": "pimentos-recheados-com-arroz",
   "name": "Pimentos recheados com arroz",
   "description": "Pimentos cheios de arroz, cogumelos e feta, assados até cederem.",
+  "image": "media/recipes/pimentos-recheados-com-arroz.jpg",
+  "imageCredit": {
+    "author": "andrusdevelopment",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/9020344@N02/5697759851"
+  },
   "narrative": "O recheio entra com o arroz meio cozido e não cru nem pronto: cru não acaba de cozer dentro do pimento, pronto fica empapado ao fim de quarenta minutos de forno. Meio cozido acaba a cozedura no vapor do próprio pimento e absorve-lhe o sabor. Cobrir o tabuleiro com folha de alumínio durante a primeira meia hora é o que faz os pimentos amaciarem em vez de secarem; os últimos dez minutos destapados dão-lhes cor. Pimentos vermelhos ou amarelos, nunca verdes — estes ficam amargos assados.",
   "servings": 4,
   "labels": [

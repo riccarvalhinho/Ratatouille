@@ -2,6 +2,13 @@
   "id": "kofta-de-borrego",
   "name": "Kofta de borrego",
   "description": "Borrego picado com cebola, hortelã e especiarias, moldado em rolos e grelhado.",
+  "image": "media/recipes/kofta-de-borrego.jpg",
+  "imageCredit": {
+    "author": "Roland Unger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EgFoodKofta.jpg"
+  },
   "narrative": "A kofta abre na grelha por uma razão só: a massa não foi trabalhada o suficiente. Amassar com as mãos durante três ou quatro minutos, até a mistura ficar pegajosa e uniforme, desenvolve a proteína e é o que a segura inteira. A cebola tem de ser ralada e espremida — ralada solta água que amacia, espremida evita que a massa fique mole demais para moldar. Descansar no frigorífico meia hora firma a gordura e ajuda outra vez. Serve-se com iogurte e pita, e é aí que os cominhos e a hortelã se explicam.",
   "servings": 4,
   "labels": [

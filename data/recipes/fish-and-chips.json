@@ -2,6 +2,13 @@
   "id": "fish-and-chips",
   "name": "Fish and chips",
   "description": "Pescada em polme de cerveja e batatas fritas duas vezes, com puré de ervilhas.",
+  "image": "media/recipes/fish-and-chips.jpg",
+  "imageCredit": {
+    "author": "LearningLark from United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Modern_fish_and_chips_(8368723726).jpg"
+  },
   "narrative": "Duas coisas fazem o polme estalar: cerveja bem gelada e não o bater demasiado. O gás faz bolhas que se expandem no óleo, e grumos no polme não são defeito — polme batido até ficar liso desenvolve glúten e fica duro. As batatas fritam-se duas vezes, a primeira a temperatura baixa para cozerem por dentro, a segunda em óleo bem quente para a crosta. Entre as duas têm de arrefecer, e esse intervalo é exatamente quando se frita o peixe. O puré de ervilhas é o acompanhamento inglês e faz-se em cinco minutos.",
   "servings": 4,
   "labels": [
@@ -147,7 +154,7 @@
     "fatGrams": 38,
     "saturatedFatGrams": 8,
     "fibreGrams": 11,
-    "saltGrams": 2.0
+    "saltGrams": 2
   },
   "source": {
     "kind": "gerada",

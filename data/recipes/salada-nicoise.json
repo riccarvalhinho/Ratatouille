@@ -2,6 +2,13 @@
   "id": "salada-nicoise",
   "name": "Salada niçoise",
   "description": "Atum, ovo, feijão verde e batata, cada coisa no seu lugar em vez de misturada.",
+  "image": "media/recipes/salada-nicoise.jpg",
+  "imageCredit": {
+    "author": "Paul Goyette",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salade_ni%C3%A7oise_ingredients.jpg"
+  },
   "narrative": "Uma niçoise não se mexe. Os ingredientes dispõem-se em montes separados na travessa e cada um leva o seu tempero — mexida, vira salada de atum e perde a graça. Batata e feijão verde cozem na mesma água, um a seguir ao outro, e ainda mornos absorvem o vinagrete muito melhor do que frios. O ovo quer gema cremosa e não seca: nove minutos a contar do momento em que a água ferve, depois água fria para travar. A anchova divide opiniões e é o que dá o fundo salgado; quem não a quiser, mais azeitona.",
   "servings": 4,
   "labels": [

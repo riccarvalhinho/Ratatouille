@@ -2,6 +2,13 @@
   "id": "feijao-verde-salteado",
   "name": "Feijão verde salteado com amêndoa",
   "description": "Escaldado em água a ferver e salteado em manteiga com alho e amêndoa laminada.",
+  "image": "media/recipes/feijao-verde-salteado.jpg",
+  "imageCredit": {
+    "author": "Kathy Maister",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_beans_almondine.jpg"
+  },
   "narrative": "Feijão verde cozido até ficar mole perdeu tudo o que tinha para dar. Escalda-se três minutos em água a ferver com muito sal e vai imediatamente para água gelada — é esse choque que trava a cozedura e fixa o verde. A partir daí pode esperar horas no frigorífico, o que torna este acompanhamento útil para um jantar com visitas. O salteado final são dois minutos em manteiga com alho e amêndoa, já na hora de servir.",
   "servings": 4,
   "labels": [

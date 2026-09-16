@@ -2,6 +2,13 @@
   "id": "souvlaki-de-porco-com-pita",
   "name": "Souvlaki de porco com pita",
   "description": "Porco marinado em limão e orégãos, grelhado em espetada, com tzatziki e pita quente.",
+  "image": "media/recipes/souvlaki-de-porco-com-pita.jpg",
+  "imageCredit": {
+    "author": "Pham Ngoc Anh",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/meal-on-a-plate-in-a-restaurant-13900667/"
+  },
   "narrative": "A marinada grega é sempre a mesma e resolve-se com o que há: azeite, limão, alho e orégãos secos. Uma hora chega para dar sabor, mas de véspera o limão já começou a desfazer a carne pela superfície — e por isso oito horas é o limite útil, não um mínimo. O tzatziki depende de se espremer o pepino: ralado e deixado em sal dez minutos, larga metade do peso em água, e é essa água que arruína o molho se ficar. As pitas aquecem trinta segundos por lado numa frigideira seca, e só quando tudo o resto estiver pronto.",
   "servings": 4,
   "labels": [
