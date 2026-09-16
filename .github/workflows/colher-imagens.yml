@@ -80,7 +80,11 @@ jobs:
 
           git checkout --orphan imagens-colheita
           git rm -rf --cached . >/dev/null
-          git add -f colheita
+
+          # Só a folha e o manifesto. As miniaturas serviram para compor a folha e não servem para
+          # mais nada — o aplicar-escolhas.ts descarrega a escolhida em tamanho real a partir do
+          # url que está no manifesto. Publicá-las multiplicava o peso do ramo por dez.
+          git add -f colheita/*/folha.jpg colheita/*/candidatas.json
           git commit -q -m "Colheita de candidatas a imagem
 
           Miniaturas e folhas de contacto compostas por .github/workflows/colher-imagens.yml.
