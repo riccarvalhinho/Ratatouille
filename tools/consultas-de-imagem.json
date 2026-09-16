@@ -9,13 +9,33 @@
     "acorda de camarao",
     "portuguese shrimp bread stew"
   ],
+  "aletria": [
+    "aletria",
+    "aletria doce",
+    "portuguese vermicelli pudding cinnamon"
+  ],
   "almondegas-com-esparguete": [
     "spaghetti and meatballs",
     "meatballs tomato sauce"
   ],
+  "aloo-matar": [
+    "aloo matar",
+    "आलू मटर",
+    "potato pea curry indian bowl"
+  ],
+  "ameijoas-a-bulhao-pato": [
+    "amêijoas à Bulhão Pato",
+    "ameijoas a bulhao pato",
+    "clams garlic coriander olive oil"
+  ],
   "ananas-grelhado": [
     "grilled pineapple",
     "pineapple slices"
+  ],
+  "arroz-branco": [
+    "arroz branco",
+    "arroz cozido",
+    "steamed white rice bowl"
   ],
   "arroz-chau-chau": [
     "egg fried rice",
@@ -58,6 +78,11 @@
     "arroz doce",
     "arroz doce cinnamon",
     "portuguese rice pudding cinnamon"
+  ],
+  "atum-grelhado-com-cebolada": [
+    "atum grelhado com cebolada",
+    "bife de atum grelhado",
+    "grilled tuna steak onions"
   ],
   "baba-de-camelo": [
     "baba de camelo",
@@ -107,6 +132,16 @@
     "oven baked potato wedges",
     "baked french fries"
   ],
+  "beringela-recheada": [
+    "beringela recheada",
+    "melanzane ripiene",
+    "stuffed eggplant baked cheese"
+  ],
+  "bibimbap": [
+    "비빔밥",
+    "bibimbap",
+    "bibimbap bowl vegetables egg"
+  ],
   "bifanas": [
     "pork sandwich",
     "pork steak sandwich"
@@ -139,6 +174,11 @@
     "boeuf bourguignon",
     "beef burgundy stew"
   ],
+  "bolo-de-arroz": [
+    "bolo de arroz",
+    "bolos de arroz portugueses",
+    "portuguese rice flour muffin"
+  ],
   "bolo-de-bolacha": [
     "biscuit cake",
     "icebox cake"
@@ -147,6 +187,11 @@
     "bolo de cenoura",
     "carrot cake chocolate glaze",
     "carrot cake slice frosting"
+  ],
+  "bolo-de-chocolate": [
+    "bolo de chocolate",
+    "chocolate cake ganache",
+    "chocolate layer cake slice"
   ],
   "bolo-de-iogurte": [
     "bolo de iogurte",
@@ -170,6 +215,11 @@
   "borscht": [
     "borscht",
     "beetroot soup"
+  ],
+  "bowl-de-quinoa-com-legumes-assados": [
+    "quinoa bowl roasted vegetables",
+    "quinoa salad bowl",
+    "roasted vegetable quinoa bowl tahini"
   ],
   "broa-de-milho": [
     "cornbread loaf",
@@ -219,10 +269,20 @@
     "chickpea spinach curry",
     "chickpea spinach curry bowl"
   ],
+  "caril-verde-tailandes": [
+    "แกงเขียวหวาน",
+    "green curry thai",
+    "thai green curry chicken rice"
+  ],
   "carne-de-porco-a-alentejana": [
     "carne de porco à alentejana",
     "carne de porco a alentejana",
     "pork clams cubed potatoes"
+  ],
+  "cenouras-glaceadas": [
+    "cenouras glaceadas",
+    "glazed carrots",
+    "glazed carrots butter parsley"
   ],
   "chili-con-carne": [
     "chili con carne",
@@ -271,6 +331,11 @@
     "cream of mushroom soup",
     "mushroom soup bowl"
   ],
+  "croquetes-de-carne": [
+    "croquetes de carne",
+    "croquetes",
+    "fried meat croquettes plate"
+  ],
   "cuscuz-com-legumes": [
     "couscous aux légumes",
     "vegetable couscous",
@@ -289,6 +354,11 @@
     "cottage pie",
     "shepherds pie"
   ],
+  "enchiladas-de-frango": [
+    "enchiladas de pollo",
+    "chicken enchiladas",
+    "chicken enchiladas baked cheese"
+  ],
   "escalopes-de-peru-panados": [
     "breaded turkey schnitzel",
     "schnitzel"
@@ -300,6 +370,11 @@
   "esparguete-aglio-e-olio": [
     "spaghetti aglio e olio",
     "garlic spaghetti"
+  ],
+  "esparguete-com-camarao": [
+    "esparguete com camarão",
+    "spaghetti ai gamberi",
+    "shrimp spaghetti garlic chilli"
   ],
   "esparregado": [
     "creamed spinach",
@@ -324,6 +399,11 @@
     "favas à portuguesa",
     "broad beans chorizo stew"
   ],
+  "feijao-verde-salteado": [
+    "feijão verde salteado",
+    "green beans almondine",
+    "sauteed green beans almonds"
+  ],
   "feijoada-a-transmontana": [
     "feijoada à transmontana",
     "feijoada transmontana",
@@ -343,6 +423,11 @@
     "filhós",
     "filhoses",
     "portuguese fried dough sugar cinnamon"
+  ],
+  "fish-and-chips": [
+    "fish and chips",
+    "fish and chips mushy peas",
+    "battered fish chips plate"
   ],
   "francesinha": [
     "francesinha",
@@ -378,6 +463,11 @@
     "chicken tikka masala",
     "tikka masala"
   ],
+  "gambas-al-ajillo": [
+    "gambas al ajillo",
+    "camarão al ajillo",
+    "garlic shrimp skillet olive oil"
+  ],
   "gaspacho-alentejano": [
     "gazpacho",
     "cold tomato soup"
@@ -390,6 +480,11 @@
     "gelatina de fruta",
     "fruit jelly dessert",
     "fruit gelatin cups fresh fruit"
+  ],
+  "gnocchi-com-tomate-e-manjericao": [
+    "gnocchi al pomodoro",
+    "gnocchi tomato basil",
+    "gnocchi tomato sauce basil bowl"
   ],
   "goulash": [
     "gulyás",
@@ -409,6 +504,11 @@
     "watermelon granita",
     "granita"
   ],
+  "granola-caseira": [
+    "granola caseira",
+    "homemade granola",
+    "granola tray oats nuts"
+  ],
   "gratinado-de-batata": [
     "gratin dauphinois",
     "potato gratin",
@@ -419,18 +519,38 @@
     "grelos com alho",
     "sauteed turnip greens garlic"
   ],
+  "guacamole-com-nachos": [
+    "guacamole",
+    "guacamole con totopos",
+    "guacamole bowl tortilla chips"
+  ],
   "gyros-de-frango": [
     "chicken gyros",
     "gyros"
+  ],
+  "gyudon": [
+    "牛丼",
+    "gyudon",
+    "gyudon beef rice bowl"
   ],
   "hamburguer-caseiro": [
     "cheeseburger",
     "hamburger"
   ],
+  "hamburguer-de-grao": [
+    "hambúrguer de grão",
+    "chickpea burger",
+    "chickpea veggie burger bun"
+  ],
   "harira": [
     "harira",
     "harira soupe marocaine",
     "moroccan harira soup bowl"
+  ],
+  "hummus-com-legumes": [
+    "hummus",
+    "houmous com legumes",
+    "hummus bowl olive oil paprika"
   ],
   "iogurte-com-fruta-e-granola": [
     "yogurt granola parfait",
@@ -439,6 +559,16 @@
   "jardineira": [
     "beef stew vegetables",
     "beef stew"
+  ],
+  "katsu-de-frango": [
+    "chicken katsu",
+    "チキンカツ",
+    "chicken katsu curry rice cabbage"
+  ],
+  "kofta-de-borrego": [
+    "kofta",
+    "kofta kebab",
+    "lamb kofta grilled yogurt"
   ],
   "lasanha-de-carne": [
     "lasagne",
@@ -479,6 +609,11 @@
     "tuna pasta bake",
     "pasta bake"
   ],
+  "massa-com-atum": [
+    "massa com atum",
+    "esparguete com atum e tomate",
+    "tuna tomato pasta bowl"
+  ],
   "massa-com-pesto": [
     "pasta pesto",
     "pesto"
@@ -487,6 +622,11 @@
     "massada de peixe",
     "massa de peixe portuguesa",
     "portuguese fish pasta stew"
+  ],
+  "mexilhoes-ao-vapor": [
+    "mexilhões ao vapor",
+    "moules marinières",
+    "steamed mussels white wine pot"
   ],
   "migas-a-alentejana": [
     "migas à alentejana",
@@ -527,6 +667,16 @@
     "ossobuco",
     "braised veal shank"
   ],
+  "ovos-escalfados-com-tosta-e-abacate": [
+    "ovos escalfados com abacate",
+    "avocado toast poached egg",
+    "poached egg avocado toast"
+  ],
+  "ovos-mexidos-com-cogumelos": [
+    "ovos mexidos com cogumelos",
+    "scrambled eggs mushrooms toast",
+    "creamy scrambled eggs mushrooms"
+  ],
   "pad-thai": [
     "pad thai",
     "thai noodles"
@@ -543,6 +693,11 @@
     "pão caseiro",
     "pão alentejano",
     "rustic homemade bread loaf sliced"
+  ],
+  "pao-de-lo": [
+    "pão de ló",
+    "pao de lo de Ovar",
+    "portuguese sponge cake"
   ],
   "pao-recheado-com-chourico-e-queijo": [
     "pão recheado",
@@ -594,6 +749,21 @@
     "pernil de borrego",
     "perna de borrego assada",
     "roast leg of lamb sliced plate"
+  ],
+  "pescada-cozida-com-legumes": [
+    "pescada cozida",
+    "peixe cozido com batata e legumes",
+    "boiled hake potatoes vegetables plate"
+  ],
+  "pho-de-frango": [
+    "phở gà",
+    "pho ga",
+    "vietnamese chicken pho bowl herbs"
+  ],
+  "pimentos-recheados-com-arroz": [
+    "pimentos recheados",
+    "stuffed peppers rice",
+    "baked stuffed peppers rice cheese"
   ],
   "pizza-caseira": [
     "pizza margherita caseira",
@@ -657,14 +827,29 @@
     "mushroom risotto",
     "risotto"
   ],
+  "rissois-de-camarao": [
+    "rissóis de camarão",
+    "rissois",
+    "portuguese shrimp turnovers fried"
+  ],
   "rojoes": [
     "rojões à moda do Minho",
     "rojões",
     "portuguese fried pork cubes plate"
   ],
+  "roupa-velha": [
+    "roupa velha bacalhau",
+    "roupa velha",
+    "portuguese cod potato cabbage hash"
+  ],
   "salada-cesar-com-frango": [
     "caesar salad chicken",
     "caesar salad"
+  ],
+  "salada-de-atum-e-feijao-branco": [
+    "salada de atum com feijão branco",
+    "tuna white bean salad",
+    "tuna cannellini bean salad"
   ],
   "salada-de-feijao-frade-com-ovo": [
     "salada de feijão frade",
@@ -679,6 +864,16 @@
     "chickpea tuna salad",
     "chickpea salad"
   ],
+  "salada-de-lentilhas-com-queijo-de-cabra": [
+    "salada de lentilhas",
+    "lentil goat cheese salad",
+    "lentil salad beetroot goat cheese"
+  ],
+  "salada-de-massa-com-legumes": [
+    "salada de massa",
+    "pasta salad feta",
+    "pasta salad tomato feta olives"
+  ],
   "salada-de-polvo": [
     "octopus salad",
     "octopus"
@@ -692,10 +887,20 @@
     "greek salad",
     "feta salad"
   ],
+  "salada-nicoise": [
+    "salade niçoise",
+    "salada nicoise",
+    "nicoise salad tuna egg green beans"
+  ],
   "salame-de-chocolate": [
     "salame de chocolate",
     "salame de chocolate fatias",
     "chocolate salami slices"
+  ],
+  "salmao-na-frigideira-com-espinafres": [
+    "salmão grelhado com espinafres",
+    "pan seared salmon spinach",
+    "crispy skin salmon spinach plate"
   ],
   "salmao-no-forno-com-legumes": [
     "baked salmon vegetables",
@@ -714,6 +919,11 @@
     "chicken stir fry",
     "stir fry"
   ],
+  "sandes-quente-de-frango-desfiado": [
+    "chicken melt sandwich",
+    "pulled chicken sandwich toasted",
+    "grilled chicken cheese sandwich"
+  ],
   "sardinhas-assadas": [
     "grilled sardines",
     "sardines"
@@ -721,6 +931,16 @@
   "shakshuka": [
     "shakshuka",
     "eggs tomato sauce"
+  ],
+  "shawarma-de-frango": [
+    "shawarma de frango",
+    "chicken shawarma",
+    "chicken shawarma pita tahini"
+  ],
+  "smoothie-de-banana-e-aveia": [
+    "banana oat smoothie",
+    "smoothie de banana",
+    "banana smoothie glass oats"
   ],
   "sopa-da-pedra": [
     "stone soup bean",
@@ -782,6 +1002,11 @@
     "tortilla soup",
     "mexican soup"
   ],
+  "souvlaki-de-porco-com-pita": [
+    "σουβλάκι",
+    "souvlaki pita",
+    "pork souvlaki pita tzatziki"
+  ],
   "tabule": [
     "tabbouleh",
     "parsley bulgur salad"
@@ -817,6 +1042,11 @@
     "spanish omelette",
     "tortilla de patatas"
   ],
+  "tosta-mista": [
+    "tosta mista",
+    "toasted ham and cheese sandwich",
+    "ham cheese toastie melted"
+  ],
   "vichyssoise": [
     "vichyssoise",
     "vichyssoise soup",
@@ -826,6 +1056,11 @@
     "beef wellington",
     "filet de boeuf en croute",
     "beef wellington sliced plate"
+  ],
+  "wok-de-vaca-com-pimentos": [
+    "beef and pepper stir fry",
+    "wok de vaca com pimentos",
+    "stir fried beef peppers rice"
   ],
   "wraps-de-frango": [
     "chicken wrap tortilla",
