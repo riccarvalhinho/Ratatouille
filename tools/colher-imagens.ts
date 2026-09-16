@@ -157,6 +157,8 @@ async function colher(receita: Receita): Promise<number> {
     if (!(await descarregarMiniatura(candidata, ficheiro))) continue;
     celulas.push({
       ficheiro,
+      // O mesmo número que vai para o manifesto, e não a posição na folha. Ver `Celula.numero`.
+      numero,
       legenda: `${candidata.provider ?? '?'} · ${candidata.title ?? 'sem título'}`,
     });
     manifesto.push({ ...candidata, numero });

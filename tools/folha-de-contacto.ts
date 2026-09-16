@@ -56,6 +56,15 @@ function procurarNoPlaywright(): string | undefined {
 export interface Celula {
   /** Caminho absoluto da miniatura já descarregada. */
   ficheiro: string;
+  /**
+   * O número desenhado no canto, e **tem de ser o do manifesto**.
+   *
+   * Numerar as células por ordem parecia inofensivo e não é: uma miniatura que não descarregue sai
+   * das duas listas, e a partir daí a folha diz 6 onde o manifesto diz 7. Quem escolhe está a ler
+   * a folha, portanto é a folha que tem de falar a língua do manifesto. Aconteceu em 30 das 101
+   * receitas da primeira colheita.
+   */
+  numero?: number;
   /** Uma linha por baixo do número: serve para saber de que banco veio sem abrir o manifesto. */
   legenda?: string;
 }
@@ -81,7 +90,9 @@ export function comporFolha(celulas: Celula[], opcoes: Opcoes = {}): Buffer {
   const qualidade = opcoes.qualidade ?? 0.72;
 
   const pagina = `<!doctype html><html><body><script>
-const celulas = ${JSON.stringify(celulas.map((c) => ({ src: `file://${c.ficheiro}`, legenda: c.legenda ?? '' })))};
+const celulas = ${JSON.stringify(
+    celulas.map((c, i) => ({ src: `file://${c.ficheiro}`, numero: c.numero ?? i + 1, legenda: c.legenda ?? '' })),
+  )};
 const COLS = ${colunas}, W = ${largura}, H = ${altura};
 const tela = document.createElement('canvas');
 tela.width = W * COLS;
@@ -99,7 +110,7 @@ function desenhar(celula, indice) {
       ctx.fillRect(x0, y0, 46, 36);
       ctx.fillStyle = '#fff';
       ctx.font = 'bold 22px sans-serif';
-      ctx.fillText(String(indice + 1), x0 + 13, y0 + 26);
+      ctx.fillText(String(celula.numero), x0 + 13, y0 + 26);
       if (celula.legenda) {
         ctx.fillStyle = 'rgba(0,0,0,.72)';
         ctx.fillRect(x0, y0 + H - 22, W, 22);
