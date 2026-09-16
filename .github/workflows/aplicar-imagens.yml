@@ -1,0 +1,87 @@
+name: Aplicar imagens escolhidas
+
+# Segunda metade do par com "Colher candidatas a imagem". Lê o colheita/escolhas.json do ramo
+# imagens/colheita — que é o registo de quem olhou para as folhas de contacto e decidiu — e
+# descarrega só as imagens escolhidas, em tamanho real.
+on:
+  workflow_dispatch:
+    inputs:
+      ramo:
+        description: 'Ramo onde commitar as imagens'
+        required: false
+        type: string
+        default: claude/bold-hawking-ta6f66
+
+permissions:
+  contents: write
+
+concurrency:
+  group: imagens
+  cancel-in-progress: false
+
+jobs:
+  aplicar:
+    name: Descarregar as escolhidas e commitar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ramo }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+
+      # A pasta colheita/ está no .gitignore para nunca entrar no main por engano; aqui é trazida
+      # à mão do ramo onde o workflow anterior a deixou.
+      - name: Trazer a colheita
+        run: |
+          git fetch origin imagens/colheita
+          git checkout origin/imagens/colheita -- colheita
+          test -f colheita/escolhas.json || {
+            echo "Não há colheita/escolhas.json no ramo imagens/colheita. Escolher primeiro."
+            exit 1
+          }
+          echo "$(python3 -c 'import json,sys;print(len(json.load(open("colheita/escolhas.json"))))') escolha(s) a aplicar."
+
+      - name: Aplicar
+        run: npx tsx tools/aplicar-escolhas.ts
+
+      # Se a atribuição ficar mal formada, o schema apanha isso aqui e não depois de estar no main.
+      - name: Validar os dados
+        run: npm run validate
+
+      - name: Commitar
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # A colheita foi trazida só para ser lida: não pode seguir no commit.
+          git reset -q -- colheita
+          rm -rf colheita
+
+          if [ -z "$(git status --porcelain media/recipes data/recipes)" ]; then
+            echo "Nenhuma imagem nova."
+            exit 0
+          fi
+
+          git add media/recipes data/recipes
+          git commit -m "Imagens escolhidas a partir das folhas de contacto
+
+          Cada uma foi escolhida de entre uma dúzia de candidatas, a olhar, e não
+          aceite por ser a primeira que um classificador devolveu. A atribuição
+          de cada uma ficou em imageCredit, como o schema exige."
+          git push origin HEAD:${{ inputs.ramo }}
+
+      - name: Resumo
+        if: always()
+        run: |
+          echo '### Imagens em `media/recipes/`' >> "$GITHUB_STEP_SUMMARY"
+          echo '' >> "$GITHUB_STEP_SUMMARY"
+          total=$(ls media/recipes/*.jpg 2>/dev/null | wc -l)
+          peso=$(du -sh media/recipes 2>/dev/null | cut -f1)
+          echo "$total imagem(ns), $peso." >> "$GITHUB_STEP_SUMMARY"

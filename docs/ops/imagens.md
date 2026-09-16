@@ -63,6 +63,46 @@ pessoa com o nome da família por cima.
 
 ---
 
+## Como se procura hoje: colher primeiro, escolher depois
+
+O `buscar-imagens.ts` pedia uma dúzia de candidatas a cada um dos quatro bancos, commitava a
+primeira e deitava fora as outras quarenta. Os 45% são a taxa de **acertar à primeira, às cegas** —
+não a de haver uma boa fotografia no monte. O monte nunca foi visto.
+
+O par que o substitui separa as duas coisas:
+
+```bash
+npm run imagens:colher      # junta tudo o que os bancos têm, não escolhe nada
+npm run imagens:aplicar     # descarrega só as escolhidas, em tamanho real
+```
+
+A colheita guarda até doze candidatas por receita — **intercaladas por banco**, para a folha não
+ser doze variações do mesmo engano — descarrega as miniaturas e compõe uma `folha.jpg`: uma grelha
+de 4×3, numerada, com o banco e o título de cada uma por baixo. Doze candidatas passam a custar uma
+só olhadela.
+
+Quem olha escreve `colheita/escolhas.json`:
+
+```json
+{ "arroz-de-pato": 3, "rojoes": 7, "vichyssoise": null }
+```
+
+`null` é uma resposta legítima e não uma desistência: vi as doze, nenhuma serve.
+
+Tudo isto vive em `colheita/`, que está no `.gitignore` e é publicado num ramo **órfão**
+(`imagens/colheita`) pelo workflow — sem história do `main`, para quando for apagado não deixar
+peso no que interessa. As miniaturas nunca entram em `media/`; só a escolhida é descarregada em
+tamanho real.
+
+**As consultas mudaram de idioma.** Pediam-se descrições em inglês — `duck rice`, `chicken rice` —
+e uma descrição genérica em inglês acerta no prato famoso de outra cultura: vieram char siu e
+Hainanese chicken rice. Agora pede-se o prato pelo nome que ele tem: `arroz de pato`,
+`carapaus grelhados`, `μουσακάς`, `ต้มข่าไก่`. A descrição em inglês fica para último termo, porque
+é o que os bancos curados percebem. É a leitura das 23 do Commons que ficaram: **as 23 tinham
+título com nome próprio**, nenhuma tinha título descritivo.
+
+---
+
 ## A ordem
 
 ### 1. Fotografia própria — a única que é fiel

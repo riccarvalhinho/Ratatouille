@@ -23,7 +23,9 @@
     "import:preview": "tsx tools/import/preview.ts",
     "import:sanidade": "tsx tools/import/sanidade.ts",
     "import:video": "tsx tools/import/fetch-source.ts",
-    "imagens": "tsx tools/buscar-imagens.ts"
+    "imagens": "tsx tools/buscar-imagens.ts",
+    "imagens:colher": "tsx tools/colher-imagens.ts",
+    "imagens:aplicar": "tsx tools/aplicar-escolhas.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

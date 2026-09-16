@@ -1,0 +1,102 @@
+name: Colher candidatas a imagem
+
+# A corrida anterior commitou a primeira candidata de cada receita sem ninguém a ver: 45% de
+# acerto, e 102 fotografias apagadas dois dias depois. Esta não escolhe nada — junta o que os
+# bancos têm, compõe uma folha de contacto por receita, e deixa a escolha para quem olha.
+#
+# O resultado vive no ramo `imagens/colheita`, que é material de trabalho e nunca vai ao main.
+# Depois de aplicadas as escolhas, esse ramo apaga-se.
+on:
+  workflow_dispatch:
+    inputs:
+      receitas:
+        description: 'Ids separados por espaços, ou vazio para todas as que não têm imagem'
+        required: false
+        type: string
+      ramo:
+        description: 'Ramo de onde vêm as receitas e as consultas'
+        required: false
+        type: string
+        default: claude/bold-hawking-ta6f66
+
+permissions:
+  contents: write
+
+concurrency:
+  group: imagens
+  cancel-in-progress: false
+
+jobs:
+  colher:
+    name: Procurar, descarregar miniaturas e compor folhas
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ramo }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+
+      # A folha de contacto é composta por um Chromium headless a desenhar num canvas. O runner já
+      # traz o Chrome; isto só confirma, para a corrida não morrer a meio depois de 20 minutos de
+      # pedidos aos bancos.
+      - name: Confirmar que há Chromium
+        run: |
+          for caminho in "$CHROME_PATH" /usr/bin/google-chrome /usr/bin/chromium /usr/bin/chromium-browser; do
+            if [ -n "$caminho" ] && [ -x "$caminho" ]; then
+              echo "CHROME_PATH=$caminho" >> "$GITHUB_ENV"
+              echo "Encontrado: $caminho"
+              exit 0
+            fi
+          done
+          echo "Nenhum encontrado — a instalar."
+          sudo apt-get update -qq && sudo apt-get install -y -qq chromium-browser
+          echo "CHROME_PATH=/usr/bin/chromium-browser" >> "$GITHUB_ENV"
+
+      - name: Colher as candidatas
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: npx tsx tools/colher-imagens.ts ${{ inputs.receitas }}
+
+      # O ramo da colheita é órfão de propósito: não tem nada da história do main, portanto quando
+      # for apagado não deixa objetos pendurados no que interessa. Ver "O peso no repositório" em
+      # docs/ops/imagens.md.
+      - name: Publicar a colheita no ramo imagens/colheita
+        run: |
+          if [ -z "$(ls -A colheita 2>/dev/null)" ]; then
+            echo "Nada colhido — nada para publicar."
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git checkout --orphan imagens-colheita
+          git rm -rf --cached . >/dev/null
+          git add -f colheita
+          git commit -q -m "Colheita de candidatas a imagem
+
+          Miniaturas e folhas de contacto compostas por .github/workflows/colher-imagens.yml.
+          Nada aqui foi escolhido: escrever colheita/escolhas.json e correr o workflow
+          'Aplicar imagens escolhidas'."
+          git push -f origin HEAD:imagens/colheita
+
+      - name: Resumo
+        if: always()
+        run: |
+          echo '### Folhas de contacto' >> "$GITHUB_STEP_SUMMARY"
+          echo '' >> "$GITHUB_STEP_SUMMARY"
+          if [ -d colheita ]; then
+            total=$(find colheita -name folha.jpg | wc -l)
+            peso=$(du -sh colheita | cut -f1)
+            echo "$total folha(s), $peso no total, no ramo \`imagens/colheita\`." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo '_Nada colhido._' >> "$GITHUB_STEP_SUMMARY"
+          fi
