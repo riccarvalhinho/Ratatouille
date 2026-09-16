@@ -2,6 +2,13 @@
   "id": "peixe-em-leite-de-coco",
   "name": "Peixe em leite de coco",
   "description": "Postas de peixe branco pochadas num caldo de coco com gengibre e lima. Com arroz jasmim.",
+  "image": "media/recipes/peixe-em-leite-de-coco.jpg",
+  "imageCredit": {
+    "author": "BR",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moqueca.jpg"
+  },
   "narrative": "Caril tailandês suave e de vinte minutos. A base faz-se com cebola, alho, gengibre e um pouco de pasta de caril, e depois entra o leite de coco, que nunca deve ferver com força — a gordura separa-se e o molho fica granuloso. O peixe pocha lá dentro em lume brando, cinco a seis minutos, e está quando abrir em lascas. Lima e coentros só no fim, fora do lume.",
   "servings": 4,
   "labels": [

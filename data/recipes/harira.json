@@ -2,6 +2,13 @@
   "id": "harira",
   "name": "Harira",
   "description": "Sopa marroquina de grão, lentilha e tomate, com coentros e limão.",
+  "image": "media/recipes/harira.jpg",
+  "imageCredit": {
+    "author": "Shameel mukkath",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-soup-with-carrots-celery-and-lemon-15108369/"
+  },
   "narrative": "Sopa espessa de dois legumes secos e muitas ervas. Leva coentros e salsa em quantidade, picados, e entram metade ao princípio e metade no fim — os primeiros dão fundo, os últimos dão frescura. Engrossa-se com farinha dissolvida em água fria, vertida em fio e a mexer, senão faz grumos. Limão à mesa.",
   "servings": 6,
   "labels": [

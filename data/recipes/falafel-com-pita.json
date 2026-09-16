@@ -2,6 +2,13 @@
   "id": "falafel-com-pita",
   "name": "Falafel com pita",
   "description": "Bolinhos de grão cru demolhado, fritos, com pita, salada e molho de iogurte.",
+  "image": "media/recipes/falafel-com-pita.jpg",
+  "imageCredit": {
+    "author": "Nadin Sh",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/pita-bread-and-falafels-on-tray-with-vegetables-12814859/"
+  },
   "narrative": "O grão tem de ser seco e demolhado de véspera, nunca cozido nem de lata — grão cozido não agarra e os falafel desfazem-se no óleo. Tritura-se cru com cebola, alho, salsa, coentros e especiarias, até ficar uma areia húmida que se aperta na mão. Repousa no frio meia hora. Fritam-se em óleo a 170 graus, dourados por fora. O molho de iogurte e a salada fazem-se enquanto a massa repousa.",
   "servings": 4,
   "labels": [

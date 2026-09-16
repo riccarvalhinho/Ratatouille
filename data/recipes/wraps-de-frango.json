@@ -2,6 +2,13 @@
   "id": "wraps-de-frango",
   "name": "Wraps de frango",
   "description": "Tortilhas com frango salteado, alface e molho de iogurte. Almoço de sobras.",
+  "image": "media/recipes/wraps-de-frango.jpg",
+  "imageCredit": {
+    "author": "Viktorija N. Ivanov",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D1%80%D0%B0%D0%BF_%D1%81%D0%BE_%D0%BF%D0%B8%D0%BB%D0%B5%D1%88%D0%BA%D0%BE_%D0%B7%D0%B5%D0%BB%D0%B5%D1%87%D1%83%D0%BA_%D0%B8_%D0%BA%D0%B0%D1%98%D0%B3%D0%B0%D0%BD%D0%B0.jpg"
+  },
   "narrative": "Feito para sobras e para pressa: se houver frango assado de ontem, salta-se o primeiro passo e o almoço faz-se em dez minutos. O molho é iogurte com mostarda, limão e alho. As tortilhas aquecem-se numa frigideira seca, porque frias racham ao enrolar. Enrola-se apertado com o recheio numa faixa a dois terços, dobrando as pontas para dentro.",
   "servings": 4,
   "labels": [

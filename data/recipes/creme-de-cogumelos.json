@@ -2,6 +2,13 @@
   "id": "creme-de-cogumelos",
   "name": "Creme de cogumelos",
   "description": "Cogumelos salteados em lume forte, passados em creme com natas e pão torrado.",
+  "image": "media/recipes/creme-de-cogumelos.jpg",
+  "imageCredit": {
+    "author": "Anna Pyshniuk",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/white-ceramic-bowl-with-mushroom-soup-4103375/"
+  },
   "narrative": "Os cogumelos saltam-se primeiro em lume muito forte e aos poucos, até dourarem — postos a cozer diretamente no caldo, ficam pálidos e a sopa sabe a água de cogumelo. Guarda-se um punhado para servir por cima. O resto passa-se com a batata e o caldo, e as natas entram fora do lume. Pão torrado em cubos a rematar.",
   "servings": 6,
   "labels": [

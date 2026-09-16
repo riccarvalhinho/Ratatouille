@@ -2,6 +2,13 @@
   "id": "carne-de-porco-a-alentejana",
   "name": "Carne de porco à alentejana",
   "description": "Porco marinado em massa de pimentão e vinho branco, salteado com amêijoas e batata aos cubos.",
+  "image": "media/recipes/carne-de-porco-a-alentejana.jpg",
+  "imageCredit": {
+    "author": "Rui Ornelas",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carne_de_porco_%C3%A0_Alentejana.jpg"
+  },
   "narrative": "A carne corta-se em cubos e marina de véspera em colorau, alho, vinho branco e louro. As batatas fritam-se em cubos pequenos e ficam à espera. A carne escorre-se da marinada e aloura-se em lume forte, aos poucos — molhada ou amontoada, coze em vez de tostar. A marinada vai a seguir para o tacho a apurar, e só então entram as amêijoas, tapadas, até abrirem. As que não abrirem deitam-se fora. No fim junta-se a batata, coentros e limão.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "tarte-de-alho-frances",
   "name": "Tarte de alho-francês",
   "description": "Alho-francês estufado em manteiga sobre massa quebrada, com creme de ovo. Com salada.",
+  "image": "media/recipes/tarte-de-alho-frances.jpg",
+  "imageCredit": {
+    "author": "Daria Andrievskaya",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/rustic-savory-pie-on-white-plate-11066833/"
+  },
   "narrative": "O alho-francês corta-se em rodelas finas e lava-se bem entre as camadas, onde se esconde areia. Estufa-se em manteiga com uma pitada de sal, tapado e em lume brando, vinte minutos, até ficar macio e doce — não se procura cor aqui. A massa coze em branco primeiro. Junta-se o alho-francês frio ao creme de ovos e natas, e vai ao forno até firmar.",
   "servings": 6,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "goulash",
   "name": "Goulash",
   "description": "Guisado de vaca com muito colorau e pimento, longo e escuro. Com puré de batata.",
+  "image": "media/recipes/goulash.jpg",
+  "imageCredit": {
+    "author": "kirpiklipencere",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/traditional-hungarian-goulash-in-pot-38441087/"
+  },
   "narrative": "O colorau é o prato e não um tempero: entra em quantidade, e sempre fora do lume forte, porque queima e amarga em segundos. A cebola aloura devagar até quase desfazer, a carne sela à parte, e junta-se tudo com pimento, tomate e água a cobrir. Depois é duas horas em lume muito brando, destapado na última meia hora para o molho reduzir. O puré faz-se no fim.",
   "servings": 5,
   "labels": [

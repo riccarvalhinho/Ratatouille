@@ -2,6 +2,13 @@
   "id": "carapaus-grelhados",
   "name": "Carapaus grelhados",
   "description": "Carapaus na grelha com batata cozida e molho de vinagrete com cebola e salsa.",
+  "image": "media/recipes/carapaus-grelhados.jpg",
+  "imageCredit": {
+    "author": "casa lalla takerkoust",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/grilled-fish-with-lemon-on-a-metal-platter-30946356/"
+  },
   "narrative": "Os carapaus temperam-se só com sal grosso, meia hora antes, e vão à grelha bem quente sem gordura nenhuma. Não se mexem até se soltarem sozinhos da grelha — puxados antes disso, deixam a pele para trás. A batata coze com casca no mesmo tempo. O vinagrete faz-se cru, com cebola picada muito fina, salsa, azeite e vinagre, e leva-se à mesa à parte.",
   "servings": 4,
   "labels": [

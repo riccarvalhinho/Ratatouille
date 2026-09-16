@@ -2,6 +2,13 @@
   "id": "vichyssoise",
   "name": "Vichyssoise",
   "description": "Creme frio de alho-francês e batata, com natas e cebolinho.",
+  "image": "media/recipes/vichyssoise.jpg",
+  "imageCredit": {
+    "author": "aghrivaine",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/67406704@N00/5857808613"
+  },
   "narrative": "Serve-se frio, e é isso que muda a receita: o frio anestesia o paladar, por isso tempera-se mais do que pareceria certo quando ainda está quente. O alho-francês estufa em manteiga sem ganhar cor — corado, muda o sabor e a cor fica suja. Passa-se, coa-se por um passador fino para ficar de veludo, e vai ao frio pelo menos quatro horas.",
   "servings": 6,
   "labels": [

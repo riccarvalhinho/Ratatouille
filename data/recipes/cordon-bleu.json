@@ -2,6 +2,13 @@
   "id": "cordon-bleu",
   "name": "Cordon bleu",
   "description": "Peito de frango recheado com fiambre e queijo, panado e frito. Com puré e feijão-verde.",
+  "image": "media/recipes/cordon-bleu.jpg",
+  "imageCredit": {
+    "author": "Shameel mukkath",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/fried-food-on-white-ceramic-plate-5175612/"
+  },
   "narrative": "O peito abre-se em livro e achata-se, recheia-se com fiambre e queijo deixando uma margem livre em toda a volta, e fecha-se apertado — recheio até à borda derrete para fora na frigideira. Fecha-se com palitos e passa por farinha, ovo e pão ralado. Frita-se em lume médio, não forte, porque precisa de tempo para o interior cozer sem o pão queimar. O puré e o feijão-verde fazem-se ao mesmo tempo.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "omelete-de-legumes",
   "name": "Omelete de legumes",
   "description": "Omelete grande de frigideira com courgette, pimento e cebola, com salada e pão.",
+  "image": "media/recipes/omelete-de-legumes.jpg",
+  "imageCredit": {
+    "author": "Shameel mukkath",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/close-up-of-egg-dish-in-pan-5639202/"
+  },
   "narrative": "Os legumes saltam-se primeiro, sozinhos, até perderem a água — postos crus no ovo, largam líquido e a omelete fica mole e cinzenta. Batem-se os ovos com sal, pimenta e um pouco de queijo ralado, e vertem-se sobre os legumes na frigideira em lume brando. Puxa-se a borda com a espátula e inclina-se a frigideira para o ovo cru escorrer para baixo. Dobra-se ao meio quando o centro ainda estiver húmido.",
   "servings": 4,
   "labels": [

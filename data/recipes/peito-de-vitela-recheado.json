@@ -2,6 +2,13 @@
   "id": "peito-de-vitela-recheado",
   "name": "Peito de vitela recheado",
   "description": "Peito aberto e recheado com fiambre, espinafres e ovo, enrolado e assado devagar.",
+  "image": "media/recipes/peito-de-vitela-recheado.jpg",
+  "imageCredit": {
+    "author": "José Antonio Otegui Auzmendi",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/rustic-gourmet-meal-with-sauce-and-bread-31372333/"
+  },
   "narrative": "O peito abre-se em bolsa ou em manta — pede-se ao talho — e recheia-se com espinafres salteados, fiambre e ovo cozido alinhado ao centro, para o corte ficar bonito. Ata-se com fio de cozinha de dois em dois dedos, senão o recheio sai todo no forno. Assa tapado hora e meia e destapa-se no fim. Corta-se só depois de descansar vinte minutos, ou desfaz-se.",
   "servings": 6,
   "labels": [

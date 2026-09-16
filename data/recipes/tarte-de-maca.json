@@ -2,6 +2,13 @@
   "id": "tarte-de-maca",
   "name": "Tarte de maçã",
   "description": "Massa quebrada com maçã laminada fina e brilho de geleia.",
+  "image": "media/recipes/tarte-de-maca.jpg",
+  "imageCredit": {
+    "author": "pom'.",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/146832554@N06/31683313361"
+  },
   "narrative": "A massa coze em branco vinte minutos antes de levar a maçã, senão o fundo fica cru. A maçã lamina-se muito fina e dispõe-se sobreposta, porque fatias grossas ficam cruas no centro enquanto os bordos queimam. O brilho faz-se com doce de fruta aquecido e pincelado à saída do forno.",
   "servings": 8,
   "yield": "1 tarte de 26 cm",

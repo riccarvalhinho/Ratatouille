@@ -2,6 +2,13 @@
   "id": "wellington-de-vaca",
   "name": "Wellington de vaca",
   "description": "Lombo selado, coberto de duxelles e presunto, embrulhado em massa folhada.",
+  "image": "media/recipes/wellington-de-vaca.jpg",
+  "imageCredit": {
+    "author": "Parkerman & Christie from San Diego, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Wellington_-_Crosscut.jpg"
+  },
   "narrative": "Três inimigos da humidade, e é toda a receita: o lombo sela-se e arrefece, a duxelles de cogumelos cozinha-se até ficar seca ao ponto de se agarrar à colher, e o presunto forma uma barreira entre as duas. Embrulha-se apertado em película e vai ao frio meia hora antes de entrar na massa. Assa-se a 200 graus vinte e cinco minutos para mal passado — com termómetro, 52 graus ao centro.",
   "servings": 6,
   "labels": [

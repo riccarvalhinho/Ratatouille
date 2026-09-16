@@ -2,6 +2,13 @@
   "id": "maca-assada-com-canela",
   "name": "Maçã assada com canela",
   "description": "Maçãs descaroçadas e assadas com canela e limão, sem açúcar adicionado.",
+  "image": "media/recipes/maca-assada-com-canela.jpg",
+  "imageCredit": {
+    "author": "Tim Douglas",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/crop-chef-preparing-stuffed-apples-in-house-6210968/"
+  },
   "narrative": "Escolhe-se maçã que aguente o forno — reineta ou bravo — porque as de comer desfazem-se em puré. Descaroçam-se sem atravessar o fundo, para o recheio não escorrer, e faz-se um golpe na casca a toda a volta, que impede a maçã de rebentar. Assam com um pouco de água no fundo do tabuleiro, que faz vapor e as mantém húmidas.",
   "servings": 6,
   "labels": [

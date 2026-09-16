@@ -2,6 +2,13 @@
   "id": "cuscuz-com-legumes",
   "name": "Cuscuz com legumes",
   "description": "Cuscuz hidratado em caldo quente, com legumes assados e grão. Prato único.",
+  "image": "media/recipes/cuscuz-com-legumes.jpg",
+  "imageCredit": {
+    "author": "abdellatif jellab",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/traditional-moroccan-vegetable-tagine-36984667/"
+  },
   "narrative": "O cuscuz não se coze: hidrata-se. Põe-se numa taça, cobre-se com caldo a ferver na proporção de um para um, tapa-se cinco minutos e solta-se com o garfo — mexido antes do tempo fica pastoso. Os legumes assam no forno em cubos grandes, com azeite e especiarias, até ganharem cor nos bordos. Junta-se o grão, limão e ervas frescas no fim, e come-se morno ou frio.",
   "servings": 4,
   "labels": [
