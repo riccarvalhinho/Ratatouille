@@ -2,6 +2,13 @@
   "id": "bacalhau-assado-com-todos",
   "name": "Bacalhau assado com todos",
   "description": "Bacalhau cozido com couve, batata, cenoura e ovo, regado com azeite e alho.",
+  "image": "media/recipes/bacalhau-assado-com-todos.jpg",
+  "imageCredit": {
+    "author": "José Antonio Otegui Auzmendi",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/grilled-fish-with-lemon-on-rustic-table-31372386/"
+  },
   "narrative": "Prato de uma panela e de nenhuma técnica, e é essa a sua graça. Cada coisa entra por ordem de tempo: batata e cenoura primeiro, couve depois, bacalhau por último, cinco minutos, porque fervido a sério desfaz-se. Os ovos cozem à parte. O molho é azeite bem quente com alho laminado, despejado por cima à mesa, a crepitar.",
   "servings": 4,
   "labels": [

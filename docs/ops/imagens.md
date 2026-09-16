@@ -96,12 +96,18 @@ tamanho real.
 
 ### O que a primeira colheita deu
 
-101 receitas sem imagem, 101 folhas, e **97 escolhidas contra 4 sem nada** — a passar o catálogo de
-83 para 180 fotografias em 185 receitas. As quatro que ficaram de fora ficaram por uma razão que se
-vê na folha: a *açorda de camarão* só trouxe risottos de camarão; o *bacalhau assado com todos*
-bateu num restaurante chamado assim, e vieram logótipos; o *pão recheado com chouriço e queijo*
-trouxe pão de queijo brasileiro; o *rancho à moda da Beira* trouxe ranchos folclóricos com guitarra
-portuguesa.
+101 receitas sem imagem, 101 folhas, e **98 escolhidas contra 3 sem nada** — a passar o catálogo de
+83 para 181 fotografias em 185 receitas.
+
+Três não têm, e a razão vê-se na folha: a *açorda de camarão* só trouxe risottos de camarão; o *pão
+recheado com chouriço e queijo* trouxe pão de queijo brasileiro e, à segunda tentativa, **seis
+lâminas de histologia de joelho de rato**; o *rancho à moda da Beira* trouxe ranchos folclóricos e,
+à segunda, Rancho Cucamonga, Rio Rancho e um Matra Rancho.
+
+**Pedir menos resolve algumas.** O *bacalhau assado com todos* batia num restaurante com esse nome;
+procurar só "bacalhau assado" resolveu à primeira. Vale sempre a pena tentar o nome curto antes de
+desistir — mas não é magia: "rancho" sozinho é pior do que "rancho à moda da Beira", porque a
+palavra sozinha pertence à Califórnia.
 
 Duas armadilhas que só aparecem à escala, e que estão corrigidas no código:
 
@@ -203,7 +209,7 @@ verificar.
 
 `media/recipes/` vive no Git para sempre — **e o que sai continua lá dentro**, na história. As 169
 imagens da primeira corrida pesavam 34 MB e as 185 da segunda 27 MB; das segundas ficaram 83. Com
-as 97 da colheita por cima, o catálogo está em **180 imagens e 26 MB, a uma média de 144 KB** — e
+as 98 da colheita por cima, o catálogo está em **181 imagens e 26 MB, a uma média de 144 KB** — e
 o teto por ficheiro é 300 KB, garantido pelo encolhimento e não pela sorte. O que a app serve são
 esses 26 MB; o que o repositório carrega é a soma de tudo o que já entrou.
 
