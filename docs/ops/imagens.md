@@ -94,6 +94,27 @@ Tudo isto vive em `colheita/`, que está no `.gitignore` e é publicado num ramo
 peso no que interessa. As miniaturas nunca entram em `media/`; só a escolhida é descarregada em
 tamanho real.
 
+### O que a primeira colheita deu
+
+101 receitas sem imagem, 101 folhas, e **97 escolhidas contra 4 sem nada** — a passar o catálogo de
+83 para 180 fotografias em 185 receitas. As quatro que ficaram de fora ficaram por uma razão que se
+vê na folha: a *açorda de camarão* só trouxe risottos de camarão; o *bacalhau assado com todos*
+bateu num restaurante chamado assim, e vieram logótipos; o *pão recheado com chouriço e queijo*
+trouxe pão de queijo brasileiro; o *rancho à moda da Beira* trouxe ranchos folclóricos com guitarra
+portuguesa.
+
+Duas armadilhas que só aparecem à escala, e que estão corrigidas no código:
+
+1. **A folha numerava por ordem e o manifesto numera antes de descarregar.** Uma miniatura que
+   falhe sai das duas listas, e a partir daí a folha diz 6 onde o manifesto diz 7 — aconteceu em
+   **30 das 101**. Quem escolhe lê a folha, portanto é a folha que tem de falar a língua do
+   manifesto.
+2. **Recusar uma fotografia por ser grande é deitar fora trabalho bom.** Oito das escolhidas
+   passavam os 300 KB e foram recusadas — as favas com chouriço, os peixinhos da horta, o cabrito.
+   Agora encolhem-se para 1200px e descem de qualidade por degraus até caberem, que são as mesmas
+   medidas desta página para as fotografias próprias. O que o repositório precisa é que o ficheiro
+   **fique** pequeno, não que já tenha nascido pequeno.
+
 **As consultas mudaram de idioma.** Pediam-se descrições em inglês — `duck rice`, `chicken rice` —
 e uma descrição genérica em inglês acerta no prato famoso de outra cultura: vieram char siu e
 Hainanese chicken rice. Agora pede-se o prato pelo nome que ele tem: `arroz de pato`,
@@ -181,8 +202,10 @@ verificar.
 ## O peso no repositório
 
 `media/recipes/` vive no Git para sempre — **e o que sai continua lá dentro**, na história. As 169
-imagens da primeira corrida pesavam 34 MB e as 185 da segunda 27 MB; das segundas ficaram 83, a
-**13 MB**. O que a app serve é 13 MB; o que o repositório carrega é a soma de tudo o que já entrou.
+imagens da primeira corrida pesavam 34 MB e as 185 da segunda 27 MB; das segundas ficaram 83. Com
+as 97 da colheita por cima, o catálogo está em **180 imagens e 26 MB, a uma média de 144 KB** — e
+o teto por ficheiro é 300 KB, garantido pelo encolhimento e não pela sorte. O que a app serve são
+esses 26 MB; o que o repositório carrega é a soma de tudo o que já entrou.
 
 Continua confortável — o GitHub só avisa perto de 1 GB — mas é o número a recordar quando se falar
 de Git LFS (questão Q8), e é a razão para não repetir corridas de 185 imagens sem as ver primeiro.
