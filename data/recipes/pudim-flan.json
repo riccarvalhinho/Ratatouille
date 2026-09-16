@@ -2,6 +2,13 @@
   "id": "pudim-flan",
   "name": "Pudim flan",
   "description": "Pudim de ovos e leite cozido em banho-maria, com caramelo no fundo.",
+  "image": "media/recipes/pudim-flan.jpg",
+  "imageCredit": {
+    "author": "marcelo träsel",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/69064207@N00/3544235183"
+  },
   "narrative": "O caramelo faz-se a seco ou com pouca água e não se mexe com a colher — abana-se a forma, porque mexer cristaliza o açúcar. O creme bate-se sem fazer espuma, senão o pudim sai com buracos. Coze em banho-maria, no forno, com a água a chegar a meio da forma — é o banho-maria que impede o ovo de coalhar. Desenforma-se frio, no dia seguinte.",
   "servings": 8,
   "labels": [

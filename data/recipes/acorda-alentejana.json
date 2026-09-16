@@ -2,6 +2,13 @@
   "id": "acorda-alentejana",
   "name": "Açorda alentejana",
   "description": "Pasta de alho e coentros escaldada com água a ferver, sobre pão, com ovo escalfado.",
+  "image": "media/recipes/acorda-alentejana.jpg",
+  "imageCredit": {
+    "author": "fortes",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/44124371264@N01/4193274633"
+  },
   "narrative": "Não leva refogado nem tacho a apurar: a pasta de alho, coentros e sal faz-se no almofariz, põe-se no fundo da terrina com o azeite, e escalda-se com a água a ferver onde escalfaram os ovos. O pão duro fica dentro a amolecer. Se a água não estiver mesmo a ferver, o alho fica cru e agressivo em vez de perfumado.",
   "servings": 4,
   "labels": [

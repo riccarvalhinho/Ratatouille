@@ -2,6 +2,13 @@
   "id": "costela-assada-lenta",
   "name": "Costela assada lenta",
   "description": "Costela de vaca esfregada com especiarias e assada horas a baixo calor. Com batata e coleslaw.",
+  "image": "media/recipes/costela-assada-lenta.jpg",
+  "imageCredit": {
+    "author": "Geancarlo Peruzzolo",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-roasted-beef-ribs-with-seasoned-potatoes-29030333/"
+  },
   "narrative": "A costela esfrega-se de véspera com uma mistura seca de colorau, açúcar amarelo, alho em pó, sal e pimenta. Assa embrulhada em alumínio a 140 graus durante cinco horas — a temperatura baixa é o que derrete o colagénio sem secar a carne. Abre-se no fim, pincela-se com o molho e sobe-se o forno para tostar. O coleslaw faz-se de manhã e melhora à espera.",
   "servings": 6,
   "labels": [

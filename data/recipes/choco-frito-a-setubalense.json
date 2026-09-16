@@ -2,6 +2,13 @@
   "id": "choco-frito-a-setubalense",
   "name": "Choco frito à setubalense",
   "description": "Tiras de choco panadas e fritas, com batata frita e limão.",
+  "image": "media/recipes/choco-frito-a-setubalense.jpg",
+  "imageCredit": {
+    "author": "Jazmin azul2",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tapa_de_Chocos_fritos.jpg"
+  },
   "narrative": "O choco corta-se em tiras largas e marina duas horas em alho, limão, sal e pimenta. Passa-se por farinha e ovo — farinha, ovo, e nada mais, sem pão ralado — e frita-se em óleo bem quente, poucas tiras de cada vez. Sai dourado e macio; frito de mais fica rijo. As batatas fritam-se primeiro e mantêm-se quentes no forno enquanto o choco vai à frigideira.",
   "servings": 4,
   "labels": [

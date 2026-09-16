@@ -2,6 +2,13 @@
   "id": "pao-caseiro",
   "name": "Pão caseiro",
   "description": "Pão de forno de casa, com levedação longa e crosta estaladiça.",
+  "image": "media/recipes/pao-caseiro.jpg",
+  "imageCredit": {
+    "author": "User:Therobotking",
+    "license": "CC BY-SA 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_Bread.jpg"
+  },
   "narrative": "Massa de quatro ingredientes e muito tempo. A primeira levedação é de hora e meia até duplicar, e a segunda de quarenta minutos já moldado. O forno vai no máximo com um tabuleiro vazio lá dentro; despeja-se um copo de água nesse tabuleiro ao meter o pão, e é esse vapor que dá a crosta. Deixa-se arrefecer por completo antes de cortar.",
   "servings": 10,
   "yield": "1 pão de 900 g",

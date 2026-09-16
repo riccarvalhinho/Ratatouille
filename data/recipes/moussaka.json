@@ -2,6 +2,13 @@
   "id": "moussaka",
   "name": "Moussaka",
   "description": "Beringela, carne de borrego e bechamel em camadas, gratinadas. Com salada grega.",
+  "image": "media/recipes/moussaka.jpg",
+  "imageCredit": {
+    "author": "topsyntages.gr",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/47943919@N07/6487850057"
+  },
   "narrative": "As beringelas cortam-se em fatias, salgam-se e ficam meia hora a escorrer — é o que lhes tira o amargo e a água, e sem isso a moussaka fica aguada por baixo. Assam-se no forno em vez de fritas, com azeite. A carne apura com tomate, canela e orégãos. Monta-se em camadas, acaba em bechamel com queijo, e vai ao forno quarenta minutos. Repousa antes de cortar.",
   "servings": 6,
   "labels": [

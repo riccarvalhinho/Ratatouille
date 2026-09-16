@@ -2,6 +2,13 @@
   "id": "frango-a-cacadora",
   "name": "Frango à caçadora",
   "description": "Frango estufado com tomate, azeitonas e alecrim, com polenta cremosa.",
+  "image": "media/recipes/frango-a-cacadora.jpg",
+  "imageCredit": {
+    "author": "Evan Joshua Swigart (TheCulinaryGeek)",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_cacciatore_(cropped).jpg"
+  },
   "narrative": "As coxas alouram-se com a pele para baixo em lume médio, sem se mexerem, até a pele soltar-se sozinha e ficar dourada. Retira-se quase toda a gordura, refoga-se cebola e alho, desglaça-se com vinho branco e junta-se tomate, alecrim e azeitonas. O frango volta e estufa tapado quarenta minutos. A polenta faz-se nos últimos dez, mexida sem parar com caldo quente.",
   "servings": 4,
   "labels": [

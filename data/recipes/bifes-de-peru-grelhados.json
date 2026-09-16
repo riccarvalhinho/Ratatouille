@@ -2,6 +2,13 @@
   "id": "bifes-de-peru-grelhados",
   "name": "Bifes de peru grelhados",
   "description": "Peru grelhado com alho e limão, salada de tomate e batata a murro. O jantar de vinte minutos.",
+  "image": "media/recipes/bifes-de-peru-grelhados.jpg",
+  "imageCredit": {
+    "author": "Juan Carlos Tamayo",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-grilled-chicken-with-rice-and-fries-34487536/"
+  },
   "narrative": "Prato para dias em que não se quer cozinhar. As batatas pequenas cozem-se com casca em água bem salgada e depois esmagam-se com a palma da mão, para abrirem sem se desfazerem — é essa superfície rachada que agarra o azeite e o alho. Os bifes de peru grelham-se dois minutos de cada lado, não mais, porque peru passado fica seco e não há molho que o salve. O tomate tempera-se cru enquanto a batata coze.",
   "servings": 4,
   "labels": [

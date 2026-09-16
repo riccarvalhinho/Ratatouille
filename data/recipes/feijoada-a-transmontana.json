@@ -2,6 +2,13 @@
   "id": "feijoada-a-transmontana",
   "name": "Feijoada à transmontana",
   "description": "Feijão encarnado com carnes de porco e enchidos, com couve e arroz branco.",
+  "image": "media/recipes/feijoada-a-transmontana.jpg",
+  "imageCredit": {
+    "author": "Laura oliveira",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/brazilian-feijoada-with-rice-on-wooden-table-34442361/"
+  },
   "narrative": "As carnes salgadas e o chispe cozem primeiro em água com louro, e é esse caldo que coze o feijão — não se deita fora. Faz-se um refogado de cebola, alho e colorau, junta-se o feijão, as carnes cortadas e caldo a cobrir, e deixa-se apurar meia hora em lume brando. A couve entra nos últimos dez minutos, para não desfazer. O arroz branco faz-se à parte e serve-se ao lado.",
   "servings": 6,
   "labels": [

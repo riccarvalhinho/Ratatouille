@@ -2,6 +2,13 @@
   "id": "risotto-de-camarao",
   "name": "Risotto de camarão",
   "description": "O mesmo método do risotto, com caldo feito das cascas dos camarões.",
+  "image": "media/recipes/risotto-de-camarao.jpg",
+  "imageCredit": {
+    "author": "Adriano Bragi",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-shrimp-risotto-with-cherry-tomatoes-31779537/"
+  },
   "narrative": "As cascas e cabeças dos camarões cozem em água com cebola e louro e dão o caldo — é isso que faz este risotto saber a marisco e não a arroz com camarões por cima. Os camarões saltam-se à parte em trinta segundos e só voltam no fim, porque cozidos vinte minutos ficam borracha. O resto é o método de sempre: torrar o arroz, vinho branco, e caldo quente concha a concha.",
   "servings": 4,
   "labels": [

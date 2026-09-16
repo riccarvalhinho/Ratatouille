@@ -2,6 +2,13 @@
   "id": "favas-com-chourico",
   "name": "Favas com chouriço",
   "description": "Favas guisadas com chouriço e entremeada, num refogado de cebola e coentros. Com pão.",
+  "image": "media/recipes/favas-com-chourico.jpg",
+  "imageCredit": {
+    "author": "Melroross",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Favas_%C3%A0_Portuguesa_.png"
+  },
   "narrative": "Refogado demorado de cebola e alho em azeite, com o chouriço e a entremeada às rodelas a largar gordura e cor. Junta-se um pouco de água e deixa-se apurar antes de entrarem as favas — postas cedo de mais no refogado seco, queimam. Cozem tapadas vinte minutos, com coentros no fim. Come-se com pão, que é o que apanha o molho.",
   "servings": 4,
   "labels": [

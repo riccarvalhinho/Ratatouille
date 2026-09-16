@@ -2,6 +2,13 @@
   "id": "tom-kha-gai",
   "name": "Tom kha gai",
   "description": "Sopa tailandesa de leite de coco com frango, gengibre e lima. Azeda, salgada e cremosa.",
+  "image": "media/recipes/tom-kha-gai.jpg",
+  "imageCredit": {
+    "author": "UNDO KIM",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-thai-tom-kha-gai-soup-in-decorative-bowl-35049882/"
+  },
   "narrative": "O caldo de coco nunca deve ferver com força, ou a gordura separa-se. A erva-príncipe e o gengibre esmagam-se com as costas da faca e cozem inteiros, para dar aroma e saírem no fim — não se comem. O sumo de lima entra sempre fora do lume, porque cozido fica amargo. Prova-se no fim e acerta-se o equilíbrio entre lima, molho de peixe e açúcar.",
   "servings": 4,
   "labels": [
