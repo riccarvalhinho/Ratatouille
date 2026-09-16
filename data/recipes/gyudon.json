@@ -2,6 +2,13 @@
   "id": "gyudon",
   "name": "Gyudon",
   "description": "Tiras finas de vaca e cebola cozidas em caldo doce de soja, sobre arroz.",
+  "image": "media/recipes/gyudon.jpg",
+  "imageCredit": {
+    "author": "Cohesion Singapore",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/bowl-of-food-16569555/"
+  },
   "narrative": "O prato mais rápido do Japão de rua, e depende quase todo do corte: a carne tem de vir em tiras finíssimas, quase transparentes, que cozem em noventa segundos. Meia hora no congelador antes de cortar torna isso possível com uma faca normal. O caldo é uma proporção simples de soja, mirim e açúcar com água, e a cebola coze nele até ficar translúcida e doce antes de a carne entrar. Se a carne entrar cedo, coze de mais e endurece. O ovo é opcional na versão de casa e obrigatório na de rua.",
   "servings": 4,
   "labels": [

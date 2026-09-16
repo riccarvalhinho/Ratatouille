@@ -2,6 +2,13 @@
   "id": "bolo-de-chocolate",
   "name": "Bolo de chocolate",
   "description": "Bolo húmido de cacau com cobertura de chocolate derretido em natas.",
+  "image": "media/recipes/bolo-de-chocolate.jpg",
+  "imageCredit": {
+    "author": "Lais  Queiroz",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/chocolate-cake-on-white-plate-10849887/"
+  },
   "narrative": "O óleo em vez de manteiga é o que mantém este bolo húmido três dias — a manteiga solidifica no frio e o bolo endurece, o óleo não. O cacau abre-se com líquido quente antes de entrar na massa: é um gesto de um minuto que aprofunda a cor e o sabor, e sem ele o bolo sabe a pó. A massa fica muito líquida e isso é o correto — a farinha justa é a razão do miolo fofo. A cobertura é a mais simples que existe: natas quentes sobre chocolate partido, esperar dois minutos e mexer do centro para fora até ficar lisa e brilhante.",
   "servings": 10,
   "labels": [

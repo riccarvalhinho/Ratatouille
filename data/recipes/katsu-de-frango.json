@@ -2,6 +2,13 @@
   "id": "katsu-de-frango",
   "name": "Katsu de frango",
   "description": "Frango panado em panko, frito, cortado em tiras, com arroz e couve fininha.",
+  "image": "media/recipes/katsu-de-frango.jpg",
+  "imageCredit": {
+    "author": "Ocdp",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Cutlet_001_(cropped).jpg"
+  },
   "narrative": "O panko é o que separa isto de um escalope panado normal: os flocos são maiores e mais secos, e por isso absorvem menos gordura e ficam com aquela crosta irregular que estala. O peito abre-se em borboleta e achata-se, para cozinhar por dentro no tempo que a crosta leva a dourar. O molho é a versão caseira do tonkatsu — ketchup não, mas concentrado de tomate com worcestershire, mostarda e açúcar dá o mesmo agridoce escuro. A couve corta-se aos fios com faca afiada e serve-se crua, que é o contraponto fresco à fritura.",
   "servings": 4,
   "labels": [

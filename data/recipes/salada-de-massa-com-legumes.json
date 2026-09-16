@@ -2,6 +2,13 @@
   "id": "salada-de-massa-com-legumes",
   "name": "Salada de massa com legumes",
   "description": "Massa curta fria com tomate, pepino e feta. Faz-se de véspera e sabe melhor no dia seguinte.",
+  "image": "media/recipes/salada-de-massa-com-legumes.jpg",
+  "imageCredit": {
+    "author": "Ayrat",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/fusilli-pasta-with-feta-and-olives-12354402/"
+  },
   "narrative": "É a salada que se leva para a praia e para o trabalho, e a que aguenta. A massa coze um minuto a mais do que para servir quente — fria endurece, e massa al dente que arrefece fica a saber a crua. Passar por água fria trava a cozedura e tira o amido que colaria tudo. O tempero vai ainda morno, que é quando a massa absorve, e o queijo feta entra no fim para não se desfazer. Um dia no frigorífico melhora-a, porque é o tempo que o tomate leva a largar sumo e a temperar o resto.",
   "servings": 6,
   "labels": [

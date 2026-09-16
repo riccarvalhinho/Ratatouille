@@ -2,6 +2,13 @@
   "id": "atum-grelhado-com-cebolada",
   "name": "Atum grelhado com cebolada",
   "description": "Posta de atum selada por fora e rosada ao centro, sobre cebolada com pimento e batata a murro.",
+  "image": "media/recipes/atum-grelhado-com-cebolada.jpg",
+  "imageCredit": {
+    "author": "Adriano Bragi",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/grilled-tuna-steak-with-fresh-salad-31779503/"
+  },
   "narrative": "Atum é carne e não peixe branco: passado do ponto fica seco e com textura de conserva. Uma posta grossa quer lume forte e dois minutos de cada lado, para ficar tostada por fora e ainda rosada ao meio — quem o quiser bem passado deve saber que o está a fazer, não descobri-lo no prato. A cebolada açoriana faz-se devagar, vinte minutos de cebola e pimento em azeite até adoçarem, e é o que dá humidade ao peixe. As batatas cozem ao mesmo tempo e levam um murro antes de irem para o prato.",
   "servings": 4,
   "labels": [

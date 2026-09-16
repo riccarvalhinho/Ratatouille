@@ -2,6 +2,13 @@
   "id": "gambas-al-ajillo",
   "name": "Gambas al ajillo",
   "description": "Camarão em azeite com muito alho e malagueta, servido a ferver com pão para molhar.",
+  "image": "media/recipes/gambas-al-ajillo.jpg",
+  "imageCredit": {
+    "author": "Javier Lastras from España/Spain",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gambas_al_ajillo.jpg"
+  },
   "narrative": "É um prato de três ingredientes em que o azeite é o principal — não é gordura para cozinhar, é o molho, e por isso a quantidade parece exagerada e não é. O alho vai laminado e entra em azeite morno, nunca quente: em azeite quente queima em segundos e fica amargo, e aí não há volta a dar. O camarão precisa de dois minutos e nada mais. Serve-se na própria caçarola ainda a borbulhar, e o pão não é acompanhamento, é o utensílio.",
   "servings": 4,
   "needsSide": true,

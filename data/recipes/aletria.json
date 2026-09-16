@@ -2,6 +2,13 @@
   "id": "aletria",
   "name": "Aletria",
   "description": "Massa fina cozida em leite com casca de limão e canela, ligada com gemas.",
+  "image": "media/recipes/aletria.jpg",
+  "imageCredit": {
+    "author": "Joseolgon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletria.jpg"
+  },
   "narrative": "É o arroz doce da consoada para quem não gosta de arroz doce, e leva menos tempo porque a aletria coze em cinco minutos. O leite infunde-se primeiro com casca de limão, pau de canela e sal, e só depois entra a massa — infundir com a massa dentro dá o mesmo trabalho e menos sabor. As gemas ligam-se fora do lume e com uma concha do leite quente batida nelas primeiro; postas diretamente no tacho, coalham e ficam com fios de ovo cozido. Os desenhos de canela fazem-se com a aletria ainda morna, que é quando a superfície ainda assenta.",
   "servings": 8,
   "labels": [

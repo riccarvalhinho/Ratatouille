@@ -2,6 +2,13 @@
   "id": "salada-de-lentilhas-com-queijo-de-cabra",
   "name": "Salada de lentilhas com queijo de cabra",
   "description": "Lentilha castanha morna, beterraba assada, queijo de cabra e noz, com vinagrete de mel.",
+  "image": "media/recipes/salada-de-lentilhas-com-queijo-de-cabra.jpg",
+  "imageCredit": {
+    "author": "jules:stonesoup",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58367355@N00/15335428329"
+  },
   "narrative": "A lentilha castanha é a que aguenta uma salada: mantém a forma onde a vermelha se desfaz em puré. Coze em vinte minutos sem demolha nenhuma, em água sem sal — sal a meio da cozedura endurece a pele — e escorre-se logo, senão continua a inchar. Serve-se morna, que é quando absorve o vinagrete. A beterraba pode ser cozida de compra para poupar quarenta minutos, e ninguém dá pela diferença debaixo do queijo de cabra. O mel no vinagrete equilibra a acidez da beterraba e a acidez do queijo.",
   "servings": 4,
   "labels": [

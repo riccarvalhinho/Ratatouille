@@ -2,6 +2,13 @@
   "id": "wok-de-vaca-com-pimentos",
   "name": "Wok de vaca com pimentos",
   "description": "Tiras finas de vaca seladas em lume máximo, pimentos estaladiços e arroz jasmim ao lado.",
+  "image": "media/recipes/wok-de-vaca-com-pimentos.jpg",
+  "imageCredit": {
+    "author": "DΛVΞ GΛRCIΛ",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/savory-beef-stir-fry-with-vegetables-on-white-plate-37743272/"
+  },
   "narrative": "Um salteado falha quando a frigideira não está suficientemente quente ou quando leva comida a mais de uma vez — em qualquer dos casos a carne coze no próprio suco em vez de selar. Por isso a carne vai em duas fornadas e sai antes de estar feita, para voltar no fim. Cortar a vaca contra o sentido das fibras e fininha é o que a mantém tenra; deixá-la vinte minutos com molho de soja e amido de milho é o truque que os restaurantes chineses usam e que custa nada. O arroz começa primeiro, porque leva o dobro do tempo de tudo o resto.",
   "servings": 4,
   "labels": [

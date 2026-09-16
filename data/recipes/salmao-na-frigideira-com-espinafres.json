@@ -2,6 +2,13 @@
   "id": "salmao-na-frigideira-com-espinafres",
   "name": "Salmão na frigideira com espinafres",
   "description": "Pele estaladiça de um lado só, espinafres com alho na mesma frigideira, batata cozida ao lado.",
+  "image": "media/recipes/salmao-na-frigideira-com-espinafres.jpg",
+  "imageCredit": {
+    "author": "dailyfood",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/28970677@N04/2704981106"
+  },
   "narrative": "A pele do salmão fica estaladiça com duas condições: frigideira quente antes de o peixe entrar, e não lhe mexer. Quatro ou cinco minutos com a pele para baixo fazem quase toda a cozedura; o lado da carne precisa de um minuto, e mais do que isso resseca. Os espinafres vão para a mesma frigideira depois de o peixe sair — aproveitam a gordura e o fundo — e desfazem-se em nada, portanto a montanha inicial não engana. A batata começa primeiro porque é o que demora.",
   "servings": 4,
   "labels": [

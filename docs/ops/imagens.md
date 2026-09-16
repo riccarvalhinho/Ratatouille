@@ -94,6 +94,21 @@ Tudo isto vive em `colheita/`, que está no `.gitignore` e é publicado num ramo
 peso no que interessa. As miniaturas nunca entram em `media/`; só a escolhida é descarregada em
 tamanho real.
 
+### O que a expansão do catálogo deu
+
+Segunda corrida do par, sobre as 47 receitas novas mais as três que tinham ficado sem nada:
+**46 escolhidas em 50 folhas**. O catálogo passou a **227 imagens em 232 receitas**.
+
+A correção da numeração provou-se em campo: três destas folhas tinham buracos — a do katsu começa
+no 2, as do souvlaki e das amêijoas saltam o 4 — e os números batiam certo com o manifesto, sem
+remapeamento nenhum.
+
+Ficam quatro sem imagem, e o padrão é sempre o mesmo: **o nome do prato em português quer dizer
+outra coisa em qualquer arquivo do mundo.** "Roupa velha" trouxe um cartaz de cinema mudo chamado
+*Old Clothes* e uma mola da roupa; "pão recheado" trouxe seis lâminas de histologia de joelho de
+rato; "rancho" trouxe Rancho Cucamonga e um Matra Rancho; e a açorda de camarão, à terceira, só traz
+risottos — que têm grão de arroz à vista onde a açorda tem pão desfeito.
+
 ### O que a primeira colheita deu
 
 101 receitas sem imagem, 101 folhas, e **98 escolhidas contra 3 sem nada** — a passar o catálogo de
@@ -209,7 +224,8 @@ verificar.
 
 `media/recipes/` vive no Git para sempre — **e o que sai continua lá dentro**, na história. As 169
 imagens da primeira corrida pesavam 34 MB e as 185 da segunda 27 MB; das segundas ficaram 83. Com
-as 98 da colheita por cima, o catálogo está em **181 imagens e 26 MB, a uma média de 144 KB** — e
+as 98 da primeira colheita e as 46 da expansão por cima, o catálogo está em **227 imagens e 32 MB,
+a uma média de 145 KB** — e
 o teto por ficheiro é 300 KB, garantido pelo encolhimento e não pela sorte. O que a app serve são
 esses 26 MB; o que o repositório carrega é a soma de tudo o que já entrou.
 

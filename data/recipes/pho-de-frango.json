@@ -2,6 +2,13 @@
   "id": "pho-de-frango",
   "name": "Pho de frango",
   "description": "Caldo de galinha aromatizado com gengibre e anis-estrelado, noodles de arroz e ervas frescas.",
+  "image": "media/recipes/pho-de-frango.jpg",
+  "imageCredit": {
+    "author": "sfllaw",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/50642338@N00/509307356"
+  },
   "narrative": "O caldo é a receita inteira, e o que o distingue de canja é a tosta: gengibre e cebola queimados na frigideira seca antes de entrarem na água, até ficarem manchados de preto. Esse amargo tostado é o fundo de tudo. As especiarias inteiras — anis-estrelado, canela, cravinho — entram no fim da fervura e não no princípio, senão o caldo fica medicinal. Os noodles de arroz cozem à parte e só se juntam no prato; dentro do caldo continuam a inchar e bebem-no todo. As ervas e a lima vão cruas à mesa, para cada um montar a sua taça.",
   "servings": 4,
   "labels": [

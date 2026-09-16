@@ -2,6 +2,13 @@
   "id": "esparguete-com-camarao",
   "name": "Esparguete com camarão",
   "description": "Alho, piri-piri e vinho branco, com o camarão a entrar nos últimos três minutos.",
+  "image": "media/recipes/esparguete-com-camarao.jpg",
+  "imageCredit": {
+    "author": "Dominik Gryzbon",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-shrimp-spaghetti-with-fresh-herbs-30579195/"
+  },
   "narrative": "Camarão em massa dá errado quase sempre pela mesma razão: fica no lume o tempo da massa toda e vira borracha. Três minutos chegam — encolhe e fica opaco, e a partir daí só piora. O molho monta-se com a água da cozedura, que traz amido e liga o azeite ao vinho sem precisar de natas. Tomate-cereja aberto ao meio acrescenta acidez e cor; a salsa entra fora do lume para não escurecer.",
   "servings": 4,
   "labels": [

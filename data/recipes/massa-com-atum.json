@@ -2,6 +2,13 @@
   "id": "massa-com-atum",
   "name": "Massa com atum",
   "description": "Tomate, atum de lata e azeitona em vinte minutos, com a massa a cozer ao lado.",
+  "image": "media/recipes/massa-com-atum.jpg",
+  "imageCredit": {
+    "author": "Julien Seguinot from Lille, France",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasta_with_tomato_sauce,_capers_and_tuna_(50540741211).jpg"
+  },
   "narrative": "A receita de despensa por excelência: tudo o que leva está em casa sem se ter planeado nada. O molho faz-se no tempo da massa cozer, o que obriga a começar pela água — é o passo que toda a gente adia e depois fica a olhar para a panela. O atum entra no fim e só aquece; cozido dez minutos desfaz-se em farelo seco. A azeitona e os orégãos são o que impede isto de saber a comida de emergência, e uma malagueta no refogado não é obrigatória mas é boa ideia.",
   "servings": 4,
   "labels": [

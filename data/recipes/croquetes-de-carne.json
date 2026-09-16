@@ -2,6 +2,13 @@
   "id": "croquetes-de-carne",
   "name": "Croquetes de carne",
   "description": "Carne de cozido desfiada em bechamel espesso, panados e fritos. Dão cerca de vinte.",
+  "image": "media/recipes/croquetes-de-carne.jpg",
+  "imageCredit": {
+    "author": "Juan Emilio Prades Bel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Croquetas_caseras_de_carne_de_cocido_con_allioli.jpg"
+  },
   "narrative": "Os croquetes são a resposta clássica a carne que sobrou de um cozido ou de um assado, e todo o trabalho está no bechamel: tem de ficar espesso ao ponto de se despegar do tacho num bloco, senão a massa não enrola. A massa vai ao frigorífico pelo menos duas horas — quente ou morna é impossível de moldar, e esse é o único motivo pelo qual as pessoas desistem a meio. Panar duas vezes, com passagem pelo ovo entre as duas, é o que impede que abram no óleo. Fritar poucos de cada vez para o óleo não arrefecer.",
   "servings": 6,
   "yield": "cerca de 20 croquetes",

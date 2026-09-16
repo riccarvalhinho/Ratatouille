@@ -2,6 +2,13 @@
   "id": "bibimbap",
   "name": "Bibimbap",
   "description": "Arroz com legumes temperados um a um, carne picada e ovo estrelado, com gochujang.",
+  "image": "media/recipes/bibimbap.jpg",
+  "imageCredit": {
+    "author": "abex (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.food-Bibimbap-02.jpg"
+  },
   "narrative": "Bibimbap quer dizer arroz misturado, e a graça está em ele chegar à mesa por misturar: cada legume é temperado à parte, com o seu próprio sal e sésamo, e só se junta tudo no prato. Isso parece trabalho a mais e é o que faz o prato — se se salteasse tudo junto, ficaria um salteado castanho. Os legumes fazem-se depressa e podem partilhar a mesma frigideira, um a seguir ao outro, sem lavar entre eles. O gochujang é indispensável e não se substitui por piri-piri: é pasta de pimento fermentada, doce e salgada ao mesmo tempo.",
   "servings": 4,
   "labels": [

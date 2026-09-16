@@ -2,6 +2,13 @@
   "id": "tosta-mista",
   "name": "Tosta mista",
   "description": "Fiambre e queijo entre pão de forma, tostada com manteiga por fora até o queijo escorrer.",
+  "image": "media/recipes/tosta-mista.jpg",
+  "imageCredit": {
+    "author": "mikelo",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58922703@N00/6153655233"
+  },
   "narrative": "Não tem segredo nenhum e mesmo assim sai mal em metade dos cafés: pão queimado e queijo intacto. A causa é sempre lume a mais. Em lume médio-baixo e com a tampa posta, o calor fica preso e derrete o queijo pelo vapor enquanto o pão vai tostando devagar. A manteiga vai por fora, na face que toca a frigideira — por dentro só encharca. Duas fatias de queijo em vez de uma, com o fiambre no meio, e o queijo derrete dos dois lados e cola a sandes.",
   "servings": 2,
   "labels": [

@@ -2,6 +2,12 @@
   "id": "arroz-branco",
   "name": "Arroz branco",
   "description": "O acompanhamento que falta em metade das receitas do catálogo. Refogado curto, dois de água para um de arroz.",
+  "image": "media/recipes/arroz-branco.jpg",
+  "imageCredit": {
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://www.rawpixel.com/image/5904594/photo-image-public-domain-sunlight-summer"
+  },
   "narrative": "É a coisa mais cozinhada desta casa e a que menos gente escreve. A proporção é o que importa: duas medidas de água para uma de arroz carolino, e a partir daí é só não mexer. O refogado de cebola em azeite antes do arroz não é obrigatório — água, sal e arroz dão arroz —, mas é o que separa um acompanhamento de um enchimento. Deixar o arroz a fritar meio minuto no azeite antes de entrar a água mantém o grão solto em vez de empapado. E os cinco minutos de repouso fora do lume, com a tampa, acabam a cozedura sem pegar ao fundo.",
   "servings": 4,
   "labels": [

@@ -2,6 +2,13 @@
   "id": "bolo-de-arroz",
   "name": "Bolo de arroz",
   "description": "Os queques de pastelaria, com farinha de arroz e açúcar por cima. Dão doze.",
+  "image": "media/recipes/bolo-de-arroz.jpg",
+  "imageCredit": {
+    "author": "scalleja",
+    "license": "BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/24899877@N00/2372334224"
+  },
   "narrative": "O que faz o bolo de arroz não é levar arroz — é a farinha de arroz misturada com a de trigo, que lhe dá o miolo seco e areento que se reconhece à dentada. A proporção habitual é um terço de farinha de arroz para dois de trigo; mais do que isso e fica quebradiço. A tira de papel à volta não é decoração: segura a massa a subir a direito e é o que dá a forma de torre. O açúcar polvilhado antes de entrar no forno caramelza e faz a crosta de cima.",
   "servings": 12,
   "yield": "12 bolos de arroz",

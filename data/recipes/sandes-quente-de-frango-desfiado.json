@@ -2,6 +2,13 @@
   "id": "sandes-quente-de-frango-desfiado",
   "name": "Sandes quente de frango desfiado",
   "description": "Sobras de frango assado desfiadas com molho, queijo derretido e pão tostado na frigideira.",
+  "image": "media/recipes/sandes-quente-de-frango-desfiado.jpg",
+  "imageCredit": {
+    "author": "Jack Baghel",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/toasts-with-fries-on-plate-20422166/"
+  },
   "narrative": "Nasce de haver frango assado a mais no frigorífico, que é o problema mais comum de um domingo. O frango desfia-se à mão — com dois garfos ou com os dedos —, nunca se corta, porque as tiras irregulares agarram o molho e os cubos não. O molho é maionese com mostarda e um pouco de sumo de limão, e serve para voltar a dar humidade a carne que já arrefeceu uma vez. Tostar a sandes na frigideira com a tampa posta derrete o queijo antes de o pão queimar; sem tampa, o pão fica pronto e o queijo não.",
   "servings": 2,
   "labels": [

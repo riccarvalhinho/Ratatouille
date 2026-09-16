@@ -2,6 +2,13 @@
   "id": "hummus-com-legumes",
   "name": "Hummus com palitos de legumes",
   "description": "Grão, tahini e limão batidos até ficarem lisos, com cenoura e pepino para molhar.",
+  "image": "media/recipes/hummus-com-legumes.jpg",
+  "imageCredit": {
+    "author": "Pixabay",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/sliced-tomato-with-cucumber-and-taco-221057/"
+  },
   "narrative": "O hummus fica granuloso por dois motivos: pouco líquido e pressa. A água gelada batida no fim é o que o torna claro e aveludado — parece contraintuitivo juntar água a uma pasta, e é exatamente isso que faz a diferença. Tirar a pele ao grão de bico melhora ainda mais a textura e leva cinco minutos de paciência; quem não os tiver, bate mais tempo. O tahini tem de ser mexido no frasco antes de se medir, porque separa e o que está à superfície é só óleo.",
   "servings": 6,
   "labels": [

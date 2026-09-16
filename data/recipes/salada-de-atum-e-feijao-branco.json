@@ -2,6 +2,13 @@
   "id": "salada-de-atum-e-feijao-branco",
   "name": "Salada de atum e feijão branco",
   "description": "Três latas, uma cebola e quinze minutos. Não leva lume nenhum.",
+  "image": "media/recipes/salada-de-atum-e-feijao-branco.jpg",
+  "imageCredit": {
+    "author": "jules:stonesoup",
+    "license": "BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://www.flickr.com/photos/58367355@N00/10585910504"
+  },
   "narrative": "É a refeição de dia de calor em que ninguém quer acender nada, e sai da despensa inteira. O passo que quase toda a gente salta é passar o feijão por água corrente: o líquido da conserva sabe a lata e turva o tempero. A cebola roxa fica dez minutos no sumo de limão antes de entrar — perde o ardor e fica rosa, e é a diferença entre uma salada equilibrada e uma que sabe a cebola crua a tarde toda. O atum entra aos pedaços grandes e mexe-se o mínimo.",
   "servings": 4,
   "labels": [

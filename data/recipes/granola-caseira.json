@@ -2,6 +2,13 @@
   "id": "granola-caseira",
   "name": "Granola caseira",
   "description": "Aveia, frutos secos e mel no forno, mexidos de dez em dez minutos até ficarem tostados.",
+  "image": "media/recipes/granola-caseira.jpg",
+  "imageCredit": {
+    "author": "Jess Loiterton",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/top-view-of-cereal-on-a-table-5505465/"
+  },
   "narrative": "A granola de compra custa quatro vezes mais e leva metade do açúcar em xarope. Esta leva mel e óleo, que é o que faz os grumos: o mel cola, o óleo tosta. A parte que se faz mal é mexer de mais — quem mexe de dois em dois minutos acaba com aveia solta, e quem mexe de dez em dez fica com placas que se partem à mão, que é o que se quer. O arrefecimento é parte da receita e não sobra dela: quente está mole, e só ao arrefecer no tabuleiro é que fica estaladiça. As passas entram depois do forno, senão queimam.",
   "servings": 10,
   "yield": "cerca de 600 g",

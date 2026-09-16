@@ -2,6 +2,13 @@
   "id": "hamburguer-de-grao",
   "name": "Hambúrguer de grão",
   "description": "Grão esmagado com aveia e especiarias, moldado e frito, no pão com alface e tomate.",
+  "image": "media/recipes/hamburguer-de-grao.jpg",
+  "imageCredit": {
+    "author": "Denis Liendo ✅",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/close-up-shot-of-cooked-food-on-brown-wooden-chopping-board-12336021/"
+  },
   "narrative": "O hambúrguer vegetariano desfaz-se quando a massa tem água a mais e nada que a segure. O grão esmaga-se com um garfo e não na máquina — puré fica pastoso e não agarra —, e a aveia absorve a humidade que sobra. Meia hora no frigorífico é o que firma tudo antes de ir à frigideira. Não se mexe nos primeiros quatro minutos: a crosta que se forma é o que impede que o hambúrguer se parta ao virar. Sem ovo, funciona na mesma se a aveia for moída mais fina.",
   "servings": 4,
   "labels": [

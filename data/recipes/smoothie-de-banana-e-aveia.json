@@ -2,6 +2,13 @@
   "id": "smoothie-de-banana-e-aveia",
   "name": "Smoothie de banana e aveia",
   "description": "Banana, aveia e iogurte batidos com frutos vermelhos. Cinco minutos e um copo.",
+  "image": "media/recipes/smoothie-de-banana-e-aveia.jpg",
+  "imageCredit": {
+    "author": "chispita_666 from Seattle, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Batido_-_pl%C3%A1tano_%2B_fresas.jpg"
+  },
   "narrative": "A aveia é o que separa isto de um batido de fruta que deixa fome uma hora depois: duas colheres bastam para dar corpo e aguentar a manhã. Com banana congelada sai espesso como gelado e dispensa gelo, que só o aguava; com banana à temperatura ambiente sai mais líquido e pode levar um cubo. O mel é opcional e depende da banana — quanto mais escura a casca, mais doce a fruta e menos mel é preciso.",
   "servings": 2,
   "labels": [

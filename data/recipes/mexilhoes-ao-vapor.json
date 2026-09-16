@@ -2,6 +2,13 @@
   "id": "mexilhoes-ao-vapor",
   "name": "Mexilhões ao vapor",
   "description": "Mexilhões abertos em vinho branco com alho e salsa, num tacho tapado.",
+  "image": "media/recipes/mexilhoes-ao-vapor.jpg",
+  "imageCredit": {
+    "author": "Rama",
+    "license": "CC BY-SA 2.0 fr",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moules-marinieres-p1010564.jpg"
+  },
   "narrative": "Os mexilhões cozem no próprio vapor e na água que largam, e por isso o vinho é meio copo e não mais: o que enche o tacho de molho são eles. Antes disso há um trabalho aborrecido e obrigatório — puxar as barbas, raspar o que estiver agarrado, e descartar todos os que estejam abertos e não fechem com uma pancada. Depois são cinco minutos tapados, a abanar o tacho uma ou duas vezes em vez de mexer. Abertos, estão feitos; mais lume só os encolhe.",
   "servings": 4,
   "needsSide": true,

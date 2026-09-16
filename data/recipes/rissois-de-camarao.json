@@ -2,6 +2,13 @@
   "id": "rissois-de-camarao",
   "name": "Rissóis de camarão",
   "description": "Massa cozida de leite e farinha, recheio de camarão em bechamel, fritos.",
+  "image": "media/recipes/rissois-de-camarao.jpg",
+  "imageCredit": {
+    "author": "basunga visual",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sourceUrl": "https://www.pexels.com/photo/delicious-angolan-pastries-on-decorative-platter-37382214/"
+  },
   "narrative": "A massa de rissol faz-se ao lume e não à mão: leite, água, manteiga e sal a ferver, farinha de uma vez só, e mexer com força até formar uma bola que se despega do tacho. A partir daí amassa-se morna sobre a bancada e estende-se fina — massa grossa dá rissóis pesados e crus por dentro. O recheio quer ficar mais espesso do que parece necessário, porque arrefece e ainda assenta; líquido de mais, escorre pelo selo. Selar com um garfo depois de cortar com um copo é o que segura tudo no óleo.",
   "servings": 6,
   "yield": "cerca de 24 rissóis",
