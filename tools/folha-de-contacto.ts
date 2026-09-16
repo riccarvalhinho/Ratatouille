@@ -11,51 +11,20 @@
  * pela saída normal. JPEG e não PNG porque uma folha destas em PNG pesa dez vezes mais, e isto
  * vive num ramo de trabalho que ninguém quer ver crescer.
  */
-import { execFileSync } from 'node:child_process';
-import fs from 'node:fs';
-import os from 'node:os';
-import path from 'node:path';
-
-/**
- * Onde procurar um Chromium, por ordem.
- *
- * Nas sessões de Claude Code o binário do Playwright já cá está; nos runners do GitHub está o
- * Chrome do sistema. Nenhum dos dois precisa de ser instalado, e é por isso que esta lista existe
- * em vez de uma dependência nova no `package.json`.
- */
-const CANDIDATOS = [
-  process.env.CHROME_PATH,
-  '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
-  '/usr/bin/google-chrome',
-  '/usr/bin/chromium',
-  '/usr/bin/chromium-browser',
-].filter((caminho): caminho is string => Boolean(caminho));
-
-export function encontrarChromium(): string {
-  for (const caminho of CANDIDATOS) {
-    if (fs.existsSync(caminho)) return caminho;
-  }
-  const doPlaywright = procurarNoPlaywright();
-  if (doPlaywright) return doPlaywright;
-  throw new Error(
-    'Não encontrei nenhum Chromium. Define CHROME_PATH com o caminho do binário.',
-  );
-}
-
-/** O Playwright põe a versão no nome da pasta, portanto não dá para a escrever à mão. */
-function procurarNoPlaywright(): string | undefined {
-  const raiz = process.env.PLAYWRIGHT_BROWSERS_PATH ?? '/opt/pw-browsers';
-  if (!fs.existsSync(raiz)) return undefined;
-  for (const entrada of fs.readdirSync(raiz)) {
-    const caminho = path.join(raiz, entrada, 'chrome-linux', 'chrome');
-    if (fs.existsSync(caminho)) return caminho;
-  }
-  return undefined;
-}
+import { correrEExtrairImagem } from './chromium.ts';
 
 export interface Celula {
   /** Caminho absoluto da miniatura já descarregada. */
   ficheiro: string;
+  /**
+   * O número desenhado no canto, e **tem de ser o do manifesto**.
+   *
+   * Numerar as células por ordem parecia inofensivo e não é: uma miniatura que não descarregue sai
+   * das duas listas, e a partir daí a folha diz 6 onde o manifesto diz 7. Quem escolhe está a ler
+   * a folha, portanto é a folha que tem de falar a língua do manifesto. Aconteceu em 30 das 101
+   * receitas da primeira colheita.
+   */
+  numero?: number;
   /** Uma linha por baixo do número: serve para saber de que banco veio sem abrir o manifesto. */
   legenda?: string;
 }
@@ -81,7 +50,9 @@ export function comporFolha(celulas: Celula[], opcoes: Opcoes = {}): Buffer {
   const qualidade = opcoes.qualidade ?? 0.72;
 
   const pagina = `<!doctype html><html><body><script>
-const celulas = ${JSON.stringify(celulas.map((c) => ({ src: `file://${c.ficheiro}`, legenda: c.legenda ?? '' })))};
+const celulas = ${JSON.stringify(
+    celulas.map((c, i) => ({ src: `file://${c.ficheiro}`, numero: c.numero ?? i + 1, legenda: c.legenda ?? '' })),
+  )};
 const COLS = ${colunas}, W = ${largura}, H = ${altura};
 const tela = document.createElement('canvas');
 tela.width = W * COLS;
@@ -99,7 +70,7 @@ function desenhar(celula, indice) {
       ctx.fillRect(x0, y0, 46, 36);
       ctx.fillStyle = '#fff';
       ctx.font = 'bold 22px sans-serif';
-      ctx.fillText(String(indice + 1), x0 + 13, y0 + 26);
+      ctx.fillText(String(celula.numero), x0 + 13, y0 + 26);
       if (celula.legenda) {
         ctx.fillStyle = 'rgba(0,0,0,.72)';
         ctx.fillRect(x0, y0 + H - 22, W, 22);
@@ -133,34 +104,5 @@ Promise.all(celulas.map(desenhar)).then(() => {
 });
 </script></body></html>`;
 
-  const temporario = fs.mkdtempSync(path.join(os.tmpdir(), 'folha-'));
-  const html = path.join(temporario, 'folha.html');
-  fs.writeFileSync(html, pagina);
-
-  try {
-    const saida = execFileSync(
-      encontrarChromium(),
-      [
-        '--headless',
-        '--no-sandbox',
-        '--disable-gpu',
-        // Sem isto o canvas fica "tainted" pelas imagens em file:// e o toDataURL rebenta.
-        '--allow-file-access-from-files',
-        // Faz o Chromium esperar que as imagens carreguem antes de despejar o DOM, sem sleep.
-        '--virtual-time-budget=30000',
-        '--dump-dom',
-        `file://${html}`,
-      ],
-      { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] },
-    );
-
-    const marca = 'data:image/jpeg;base64,';
-    const inicio = saida.indexOf(marca);
-    if (inicio === -1) throw new Error('o Chromium não devolveu nenhuma imagem');
-    const base64 = saida.slice(inicio + marca.length).match(/^[A-Za-z0-9+/=]+/)?.[0];
-    if (!base64) throw new Error('a imagem devolvida veio truncada');
-    return Buffer.from(base64, 'base64');
-  } finally {
-    fs.rmSync(temporario, { recursive: true, force: true });
-  }
+  return correrEExtrairImagem(pagina);
 }

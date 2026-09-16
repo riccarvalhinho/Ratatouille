@@ -23,12 +23,48 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { download, withImage } from './buscar-imagens.ts';
+import { MAX_BYTES, withImage } from './buscar-imagens.ts';
+import { encolher } from './encolher-imagem.ts';
 import { toCredit, type ImageCandidate } from './import/images.ts';
 import { paths, repoRoot, rel } from './paths.ts';
 
 const COLHEITA = path.join(repoRoot, 'colheita');
 const ESCOLHAS = path.join(COLHEITA, 'escolhas.json');
+
+/**
+ * Teto do que se descarrega antes de encolher.
+ *
+ * O limite que interessa é o do repositório (`MAX_BYTES`), e esse aplica-se ao que fica em disco.
+ * Este é só para não puxar um TIFF de 40 MB de um arquivo por engano.
+ */
+const MAX_DESCARGA = 12 * 1024 * 1024;
+
+const USER_AGENT = 'RatatouilleImporter/1.0 (https://github.com/riccarvalhinho/Ratatouille)';
+
+/**
+ * Descarrega a escolhida e, se for grande de mais, encolhe-a em vez de a recusar.
+ *
+ * Recusar foi o que se fez à primeira, e deitou fora oito fotografias certas por terem 350 KB. O
+ * que o repositório precisa é que o ficheiro seja pequeno, não que já tenha nascido pequeno.
+ */
+async function guardar(candidata: ImageCandidate, destino: string): Promise<[number, boolean]> {
+  const resposta = await fetch(candidata.url, { headers: { 'User-Agent': USER_AGENT } });
+  if (!resposta.ok) throw new Error(`${resposta.status} ao descarregar`);
+
+  const tipo = resposta.headers.get('content-type') ?? '';
+  if (!tipo.startsWith('image/')) throw new Error(`respondeu ${tipo}, não uma imagem`);
+
+  const bytes = Buffer.from(await resposta.arrayBuffer());
+  if (bytes.byteLength > MAX_DESCARGA) {
+    throw new Error(`${(bytes.byteLength / 1024 / 1024).toFixed(1)} MB, grande de mais para tratar`);
+  }
+
+  const encolhida = bytes.byteLength > MAX_BYTES;
+  const final = encolhida ? encolher(bytes, MAX_BYTES) : bytes;
+  fs.mkdirSync(path.dirname(destino), { recursive: true });
+  fs.writeFileSync(destino, final);
+  return [final.byteLength, encolhida];
+}
 
 interface Manifesto {
   id: string;
@@ -84,7 +120,7 @@ for (const [id, numero] of Object.entries(escolhas)) {
 
   const destino = path.join(paths.media, 'recipes', `${id}.jpg`);
   try {
-    const bytes = await download(candidata, destino);
+    const [bytes, encolhida] = await guardar(candidata, destino);
     const receita = JSON.parse(fs.readFileSync(ficheiroReceita, 'utf8')) as Receita;
     fs.writeFileSync(
       ficheiroReceita,
@@ -92,11 +128,10 @@ for (const [id, numero] of Object.entries(escolhas)) {
       'utf8',
     );
     const credito = toCredit(candidata);
-    console.log(`✓ ${id}: #${numero} · ${(bytes / 1024).toFixed(0)} KB · ${credito.license}`);
+    const nota = encolhida ? ' (encolhida)' : '';
+    console.log(`✓ ${id}: #${numero} · ${(bytes / 1024).toFixed(0)} KB${nota} · ${credito.license}`);
     aplicadas += 1;
   } catch (erro) {
-    // A imagem em tamanho real pode ser grande de mais quando a miniatura não era: aí a escolha
-    // não se perde, escolhe-se outra na mesma folha.
     falhas.push(`${id}: #${numero} não entrou — ${String(erro)}`);
   }
 }

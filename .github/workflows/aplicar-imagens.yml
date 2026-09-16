@@ -48,6 +48,21 @@ jobs:
           }
           echo "$(python3 -c 'import json,sys;print(len(json.load(open("colheita/escolhas.json"))))') escolha(s) a aplicar."
 
+      # Uma fotografia acima do limite do repositório é encolhida em vez de recusada, e quem a
+      # encolhe é o Chromium a desenhar num canvas — ver tools/encolher-imagem.ts.
+      - name: Confirmar que há Chromium
+        run: |
+          for caminho in "$CHROME_PATH" /usr/bin/google-chrome /usr/bin/chromium /usr/bin/chromium-browser; do
+            if [ -n "$caminho" ] && [ -x "$caminho" ]; then
+              echo "CHROME_PATH=$caminho" >> "$GITHUB_ENV"
+              echo "Encontrado: $caminho"
+              exit 0
+            fi
+          done
+          echo "Nenhum encontrado — a instalar."
+          sudo apt-get update -qq && sudo apt-get install -y -qq chromium-browser
+          echo "CHROME_PATH=/usr/bin/chromium-browser" >> "$GITHUB_ENV"
+
       - name: Aplicar
         run: npx tsx tools/aplicar-escolhas.ts
 
