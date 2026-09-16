@@ -1,6 +1,6 @@
 # Lista de receitas
 
-O backlog do catálogo. **As 184 linhas estão feitas** — cada uma tem o seu ficheiro em
+O backlog do catálogo. **As 184 linhas estão feitas**, e a expansão de setembro juntou-lhes mais 47 — cada uma tem o seu ficheiro em
 `data/recipes/`, validado, e o id na coluna da direita.
 
 **Estado de uma linha:** `proposta` · `aceite` · `rejeitada` · `feita`
@@ -401,3 +401,62 @@ fica aqui para as ir juntando.
 | Prato | Com | Quem faz | Estado | id |
 |---|---|---|---|---|
 | | | | | |
+
+## Expansão de setembro de 2026 — as lacunas da distribuição
+
+Escritas de uma vez, a partir de uma leitura da distribuição das 185 anteriores. O critério não foi
+"que pratos faltam" mas "que **buracos** tem o catálogo": jantar rápido de semana eram 37 em 185 e
+quase todos sobremesas; pequeno-almoço e snacks eram 8; saladas de refeição eram 3; sobras eram 4;
+`sem-lactose` era zero. E faltavam coisas que davam nas vistas — **não havia arroz branco**, que é
+o acompanhamento mais cozinhado de uma casa portuguesa.
+
+| Prato | Lacuna que tapa | Estado | id |
+|---|---|---|---|
+| Arroz branco | acompanhamento em falta | feita | `arroz-branco` |
+| Pescada cozida com legumes | jantar rápido | feita | `pescada-cozida-com-legumes` |
+| Massa com atum | jantar rápido | feita | `massa-com-atum` |
+| Ovos mexidos com cogumelos | jantar rápido, ovos | feita | `ovos-mexidos-com-cogumelos` |
+| Esparguete com camarão | jantar rápido, marisco | feita | `esparguete-com-camarao` |
+| Gnocchi com tomate e manjericão | jantar rápido | feita | `gnocchi-com-tomate-e-manjericao` |
+| Wok de vaca com pimentos | jantar rápido | feita | `wok-de-vaca-com-pimentos` |
+| Salmão na frigideira com espinafres | jantar rápido, peixe | feita | `salmao-na-frigideira-com-espinafres` |
+| Bowl de quinoa com legumes assados | jantar rápido, vegan | feita | `bowl-de-quinoa-com-legumes-assados` |
+| Sandes quente de frango desfiado | sobras, rápido | feita | `sandes-quente-de-frango-desfiado` |
+| Ovos escalfados com tosta e abacate | pequeno-almoço | feita | `ovos-escalfados-com-tosta-e-abacate` |
+| Tosta mista | snack | feita | `tosta-mista` |
+| Smoothie de banana e aveia | pequeno-almoço | feita | `smoothie-de-banana-e-aveia` |
+| Granola caseira | pequeno-almoço | feita | `granola-caseira` |
+| Pão de ló | pão e bolos | feita | `pao-de-lo` |
+| Bolo de arroz | pão e bolos | feita | `bolo-de-arroz` |
+| Hummus com palitos de legumes | snack | feita | `hummus-com-legumes` |
+| Salada niçoise | salada de refeição | feita | `salada-nicoise` |
+| Salada de massa com legumes | salada de refeição | feita | `salada-de-massa-com-legumes` |
+| Salada de lentilhas com queijo de cabra | salada de refeição | feita | `salada-de-lentilhas-com-queijo-de-cabra` |
+| Salada de atum e feijão branco | salada de refeição | feita | `salada-de-atum-e-feijao-branco` |
+| Roupa velha | sobras | feita | `roupa-velha` |
+| Croquetes de carne | sobras | feita | `croquetes-de-carne` |
+| Rissóis de camarão | snack, festa | feita | `rissois-de-camarao` |
+| Enchiladas de frango | mexicana | feita | `enchiladas-de-frango` |
+| Guacamole com nachos | mexicana, snack | feita | `guacamole-com-nachos` |
+| Katsu de frango | japonesa | feita | `katsu-de-frango` |
+| Gyudon | japonesa | feita | `gyudon` |
+| Bibimbap | coreana | feita | `bibimbap` |
+| Souvlaki de porco com pita | grega | feita | `souvlaki-de-porco-com-pita` |
+| Shawarma de frango | levantina | feita | `shawarma-de-frango` |
+| Kofta de borrego | levantina | feita | `kofta-de-borrego` |
+| Gambas al ajillo | espanhola, marisco | feita | `gambas-al-ajillo` |
+| Fish and chips | britânica | feita | `fish-and-chips` |
+| Caril verde tailandês | tailandesa | feita | `caril-verde-tailandes` |
+| Pho de frango | vietnamita, sopa | feita | `pho-de-frango` |
+| Amêijoas à Bulhão Pato | marisco português | feita | `ameijoas-a-bulhao-pato` |
+| Atum grelhado com cebolada | peixe que não é bacalhau | feita | `atum-grelhado-com-cebolada` |
+| Mexilhões ao vapor | marisco português | feita | `mexilhoes-ao-vapor` |
+| Hambúrguer de grão | vegetariano de prato principal | feita | `hamburguer-de-grao` |
+| Pimentos recheados com arroz | vegetariano de prato principal | feita | `pimentos-recheados-com-arroz` |
+| Aloo matar | indiana, vegan | feita | `aloo-matar` |
+| Beringela recheada | vegetariano de prato principal | feita | `beringela-recheada` |
+| Feijão verde salteado com amêndoa | acompanhamento | feita | `feijao-verde-salteado` |
+| Cenouras glaceadas | acompanhamento | feita | `cenouras-glaceadas` |
+| Aletria | sobremesa portuguesa | feita | `aletria` |
+| Bolo de chocolate | sobremesa | feita | `bolo-de-chocolate` |
+
