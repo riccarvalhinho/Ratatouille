@@ -211,6 +211,27 @@ Fora disso, a receita segue os passos 1 a 3. **A legenda e os ingredientes de um
 podem ser usados; a imagem é obra e não pode.** É a mesma distinção que já governa o texto das
 instruções.
 
+#### A regra foi aberta uma vez, com conhecimento de causa
+
+A **massa "Marry Me" de camarão** leva um frame do reel de onde veio, sem licença que o permita. Não
+foi engano nem esquecimento: a regra acima foi lida, a alternativa foi posta, e a decisão foi usar a
+imagem à mesma. Fica escrito aqui porque uma exceção não documentada é indistinguível de um erro, e
+a próxima sessão que abrir este ficheiro tem de saber qual das duas coisas está a olhar.
+
+O que pesou: os bancos de licença livre foram consultados duas vezes, com `shrimp pasta` e com
+`creamy shrimp pasta`, e as duas candidatas eram massa com camarão que não era este prato —
+esparguete em alho e azeite, e linguine com molho branco por cima. O frame é o prato, e é o único
+que é.
+
+O `imageCredit` diz o que a imagem é: autoria de The Golden Grace Kitchen, **todos os direitos
+reservados**, com o link para o reel. Não há aqui licença nenhuma a ser cumprida — o campo serve
+para nomear quem fez a fotografia, não para fingir que havia permissão.
+
+**Isto não abre a porta às seguintes.** Uma exceção que se repete deixa de ser exceção e passa a ser
+a regra por outro nome, e nesse dia vale mais reescrever a secção do que continuar a acrescentar
+parágrafos como este. A saída limpa continua a ser a de sempre: cozinhar o prato e fotografá-lo,
+e aí a imagem passa a `{ "license": "própria" }` e este parágrafo perde o objeto.
+
 ---
 
 ## Sem imagem é um resultado aceitável
