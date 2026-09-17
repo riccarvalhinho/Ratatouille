@@ -39,7 +39,8 @@ const USER_AGENT =
   'Mozilla/5.0 (compatible; RatatouilleImporter/1.0; +https://github.com/riccarvalhinho/Ratatouille)';
 
 /** Plataformas onde vale a pena tentar o yt-dlp antes de tratar a página como HTML. */
-const VIDEO = /(?:youtube\.com|youtu\.be|tiktok\.com|instagram\.com\/(?:reel|p|tv))/i;
+const VIDEO =
+  /(?:youtube\.com|youtu\.be|tiktok\.com|instagram\.com\/(?:reel|p|tv)|facebook\.com|fb\.watch)/i;
 
 /** Plataformas de vídeo com oEmbed público, usado como rede de segurança se o yt-dlp falhar. */
 const OEMBED: { test: RegExp; endpoint: (url: string) => string }[] = [
@@ -176,6 +177,12 @@ export async function fetchSource(url: string): Promise<FetchedSource> {
     } catch (error) {
       result.notes.push(`oEmbed falhou: ${(error as Error).message}`);
     }
+  }
+
+  if (/facebook\.com|fb\.watch/i.test(url)) {
+    result.notes.push(
+      'O Facebook serve uma parede de login a pedidos anónimos. Sem o yt-dlp a apanhar a legenda, a receita tem de vir da legenda copiada à mão, ou ditada.',
+    );
   }
 
   if (/instagram\.com/i.test(url)) {
