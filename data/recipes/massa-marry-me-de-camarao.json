@@ -1,14 +1,7 @@
 {
-  "id": "massa-cremosa-de-camarao-com-tomate-seco",
-  "name": "Massa cremosa de camarão com tomate seco",
-  "description": "Penne num molho de natas e tomate seco, com camarão temperado à parte e selado antes do molho.",
-  "image": "media/recipes/massa-cremosa-de-camarao-com-tomate-seco.jpg",
-  "imageCredit": {
-    "author": "Keren_",
-    "license": "BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "sourceUrl": "https://www.flickr.com/photos/48889122885@N01/2875037009"
-  },
+  "id": "massa-marry-me-de-camarao",
+  "name": "Massa \"Marry Me\" de camarão",
+  "description": "Penne num molho cremoso de natas e tomate seco, com camarão temperado à parte e selado antes do molho. O nome é da internet americana, onde o prato se tornou conhecido.",
   "narrative": "O que faz esta massa não é o molho, é o camarão ser temperado e selado sozinho antes de tudo — colorau fumado, orégãos, sal e pimenta, dois minutos de cada lado na gordura do frasco do tomate seco, e sai da frigideira antes de cozer de mais. O molho faz-se por cima do que ficou no fundo. A farinha é o que o segura: sem ela as natas e o caldo ficam líquidos e escorrem da massa em vez de a vestirem. Os camarões só voltam no fim, fora do lume, porque um camarão que dá uma segunda fervura fica borracha. O ponto está na forma: em C está bom, em O passou. O original é de uma cozinha americana e leva uma mistura de ervas italianas; aqui fica com orégãos e manjericão seco, que é o que se tem em casa e dá no mesmo. Leva massa sem glúten na fonte, por opção de quem a escreveu — com penne normal faz-se igual.",
   "servings": 6,
   "labels": [
