@@ -304,3 +304,19 @@
 }
 
 .credit a { color: inherit; }
+
+/*
+  Rodapé de crédito da receita. Discreto de propósito — não compete com o conteúdo — mas legível
+  a um braço de distância, que é a distância a que o tablet está na parede. Acima do .pending, que
+  é andaime e há de sair.
+*/
+.creditoReceita {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.creditoReceita a { color: inherit; }

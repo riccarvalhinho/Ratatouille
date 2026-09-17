@@ -10,6 +10,7 @@ import type { Catalogue } from '../../data/catalogue.ts';
 import type { LocalStore } from '../../data/local-store.ts';
 import { describeIngredient, formatMinutes, formatYield, notableEquipment } from '../../data/catalogue.ts';
 import { activeMinutes } from '../../domain/filters.ts';
+import { creditoDaReceita } from '../../domain/creditos.ts';
 import { formatLastCooked } from '../../domain/planning.ts';
 import { COOKING_METHOD_NAMES, WEIGHT_NAMES, type Recipe } from '../../domain/types.ts';
 import { formatPrepAhead } from '../../data/catalogue.ts';
@@ -44,6 +45,7 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
   const lastCooked = store.lastCooked.get(recipe.id);
   const cookedToday = store.wasCookedOn(recipe.id, today);
   const favourite = store.isFavourite(recipe.id);
+  const credito = creditoDaReceita(recipe.source);
 
   return (
     <div className={styles.backdrop} onClick={onClose} role="presentation">
@@ -247,6 +249,26 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
               <h3 className={styles.sectionTitle}>A receita seguida</h3>
               <p className={styles.narrative}>{recipe.narrative}</p>
             </div>
+          )}
+
+          {/*
+            O crédito de quem escreveu a receita, em rodapé. Pequeno mas presente: o ADR 0006 deixou
+            a fotografia da fonte entrar, e a contrapartida é a fonte ser nomeada onde se lê a
+            receita. Diz sempre que foi adaptada, porque as instruções são reescritas e as medidas
+            convertidas — sem isso, atribuía-se à fonte um texto que não é dela.
+          */}
+          {credito && (
+            <p className={styles.creditoReceita}>
+              {credito.texto}
+              {credito.url && (
+                <>
+                  {' '}
+                  <a href={credito.url} target="_blank" rel="noreferrer noopener">
+                    Ver original
+                  </a>
+                </>
+              )}
+            </p>
           )}
 
           <p className={styles.pending}>
