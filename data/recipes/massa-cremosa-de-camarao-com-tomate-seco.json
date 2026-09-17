@@ -1,0 +1,222 @@
+{
+  "id": "massa-cremosa-de-camarao-com-tomate-seco",
+  "name": "Massa cremosa de camarão com tomate seco",
+  "description": "Penne num molho de natas e tomate seco, com camarão temperado à parte e selado antes do molho.",
+  "narrative": "O que faz esta massa não é o molho, é o camarão ser temperado e selado sozinho antes de tudo — colorau fumado, orégãos, sal e pimenta, dois minutos de cada lado na gordura do frasco do tomate seco, e sai da frigideira antes de cozer de mais. O molho faz-se por cima do que ficou no fundo. A farinha é o que o segura: sem ela as natas e o caldo ficam líquidos e escorrem da massa em vez de a vestirem. Os camarões só voltam no fim, fora do lume, porque um camarão que dá uma segunda fervura fica borracha. O ponto está na forma: em C está bom, em O passou. O original é de uma cozinha americana e leva uma mistura de ervas italianas; aqui fica com orégãos e manjericão seco, que é o que se tem em casa e dá no mesmo. Leva massa sem glúten na fonte, por opção de quem a escreveu — com penne normal faz-se igual.",
+  "servings": 6,
+  "labels": [
+    "prato-principal",
+    "massa-e-arroz",
+    "marisco",
+    "americana",
+    "conforto"
+  ],
+  "methods": [
+    "frigideira",
+    "tacho"
+  ],
+  "weight": "substancial",
+  "timing": {
+    "prepMinutes": 15,
+    "cookMinutes": 25
+  },
+  "equipment": [
+    "placa",
+    "panela-grande",
+    "frigideira",
+    "escorredor",
+    "ralador"
+  ],
+  "ingredients": [
+    {
+      "ref": "massa-penne",
+      "quantity": 340,
+      "unit": "g"
+    },
+    {
+      "ref": "camarao",
+      "quantity": 450,
+      "unit": "g",
+      "note": "descascado e limpo"
+    },
+    {
+      "ref": "azeite",
+      "quantity": 1.5,
+      "unit": "csopa",
+      "note": "do frasco do tomate seco"
+    },
+    {
+      "ref": "manteiga",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ref": "cebola",
+      "quantity": 1,
+      "unit": "un",
+      "note": "pequena, picada fina"
+    },
+    {
+      "ref": "dente-de-alho",
+      "quantity": 4,
+      "unit": "un",
+      "note": "picados"
+    },
+    {
+      "ref": "tomate-seco",
+      "quantity": 60,
+      "unit": "g",
+      "note": "em cubos"
+    },
+    {
+      "ref": "tomate-concentrado",
+      "quantity": 2.5,
+      "unit": "csopa"
+    },
+    {
+      "ref": "farinha-de-trigo",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "caldo-de-legumes",
+      "quantity": 500,
+      "unit": "ml"
+    },
+    {
+      "ref": "natas",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "ref": "espinafres",
+      "quantity": 60,
+      "unit": "g",
+      "note": "grosseiramente picados"
+    },
+    {
+      "ref": "queijo-parmesao",
+      "quantity": 80,
+      "unit": "g",
+      "note": "ralado na hora"
+    },
+    {
+      "ref": "oregaos",
+      "quantity": 2,
+      "unit": "csopa"
+    },
+    {
+      "ref": "colorau-fumado",
+      "quantity": 2,
+      "unit": "ccha"
+    },
+    {
+      "ref": "manjericao-seco",
+      "quantity": 1,
+      "unit": "ccha"
+    },
+    {
+      "ref": "manjericao",
+      "unit": "qb",
+      "note": "fresco, para servir"
+    },
+    {
+      "ref": "sal",
+      "unit": "qb"
+    },
+    {
+      "ref": "pimenta-preta",
+      "quantity": 1,
+      "unit": "pitada"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cozer a massa",
+      "text": "Penne em água a ferver bem salgada, al dente pelo tempo do pacote. Escorrer e reservar com um pouco da água da cozedura.",
+      "durationMinutes": 11,
+      "ingredientRefs": [
+        "massa-penne",
+        "sal"
+      ]
+    },
+    {
+      "title": "Temperar os camarões",
+      "text": "Camarões secos com papel, envolvidos em metade do colorau fumado, metade dos orégãos, sal e pimenta, até ficarem cobertos por igual.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "camarao",
+        "colorau-fumado",
+        "oregaos",
+        "sal",
+        "pimenta-preta"
+      ]
+    },
+    {
+      "title": "Selar os camarões",
+      "text": "Azeite do frasco do tomate seco bem quente na frigideira, camarões dois minutos de cada lado. Saem quando estiverem rosados e em C; em O passaram do ponto. Retirar e reservar.",
+      "durationMinutes": 5,
+      "ingredientRefs": [
+        "azeite",
+        "camarao"
+      ]
+    },
+    {
+      "title": "Puxar os aromáticos",
+      "text": "Na mesma frigideira, manteiga em lume brando com a cebola, o alho, o tomate seco, o concentrado, o resto do colorau e dos orégãos, o manjericão seco e sal. Dois minutos, até libertar cheiro.",
+      "durationMinutes": 4,
+      "ingredientRefs": [
+        "manteiga",
+        "cebola",
+        "dente-de-alho",
+        "tomate-seco",
+        "tomate-concentrado",
+        "colorau-fumado",
+        "oregaos",
+        "manjericao-seco",
+        "sal"
+      ]
+    },
+    {
+      "title": "Fazer o molho",
+      "text": "Farinha envolvida nos aromáticos, depois o caldo, as natas e os espinafres. A mexer sempre até engrossar e os espinafres murcharem, cerca de cinco minutos. Baixar o lume e juntar o parmesão até derreter.",
+      "durationMinutes": 8,
+      "ingredientRefs": [
+        "farinha-de-trigo",
+        "caldo-de-legumes",
+        "natas",
+        "espinafres",
+        "queijo-parmesao"
+      ]
+    },
+    {
+      "title": "Envolver e servir",
+      "text": "Massa no molho, envolvida com cuidado, e os camarões por último fora do lume. Manjericão fresco picado por cima, à mesa de seguida.",
+      "durationMinutes": 3,
+      "ingredientRefs": [
+        "massa-penne",
+        "camarao",
+        "manjericao"
+      ]
+    }
+  ],
+  "nutrition": {
+    "method": "estimado",
+    "calories": 590,
+    "proteinGrams": 27,
+    "carbsGrams": 47,
+    "fatGrams": 27,
+    "saturatedFatGrams": 15,
+    "fibreGrams": 3,
+    "saltGrams": 2
+  },
+  "source": {
+    "kind": "web",
+    "title": "Marry Me Shrimp Pasta",
+    "author": "The Golden Grace Kitchen",
+    "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/"
+  },
+  "notes": "Chegou por um reel do Facebook (https://www.facebook.com/share/r/19VE2V35qi/), que tem 12 segundos e nenhuma legenda: a receita veio do site que a descrição do vídeo indica.",
+  "createdAt": "2026-09-17",
+  "updatedAt": "2026-09-17"
+}
