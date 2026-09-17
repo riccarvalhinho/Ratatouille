@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        description: 'Link da receita (site, YouTube ou TikTok)'
+        description: 'Link da receita (site, YouTube, TikTok ou Facebook)'
         required: true
         type: string
 

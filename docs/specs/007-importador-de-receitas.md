@@ -186,8 +186,9 @@ registada em `source`, agora com `kind: "video"` e `author` para dar crédito ao
 - [ ] Responder a todas grava com `status: "revisto"`
 - [ ] O ficheiro gerado passa em `npm run validate`
 - [ ] O preview em texto é mostrado ao utilizador antes do commit, com os formatadores da app
-- [ ] A fotografia procura-se nos bancos de licença livre e nunca se copia da fonte
-- [ ] A fonte fica registada, com autor no caso de vídeo
+- [ ] A fotografia segue a ordem do ADR 0006: própria, depois a da fonte com `imageCredit` a
+      creditar o autor, depois os bancos de licença livre, depois nenhuma
+- [ ] A fonte fica registada, com autor no caso de vídeo, e é creditada no rodapé do detalhe
 - [ ] Nada é inventado em silêncio
 
 ## Fora de âmbito

@@ -1,0 +1,247 @@
+{
+  "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/",
+  "fetchedAt": "2026-09-17T13:15:04.356Z",
+  "via": "json-ld",
+  "notes": [
+    "Encontrado schema.org/Recipe — ingredientes e passos vêm estruturados."
+  ],
+  "title": "Marry Me Shrimp Pasta - Golden Grace Kitchen",
+  "description": "Marry Me shrimp pasta takes the classic, creamy Marr Me dish and replaces chicken with tender, perfectly cooked shrimp.",
+  "imageUrl": "https://goldengracekitchen.com/wp-content/uploads/2024/09/Marry-Me-Shrimp-Pasta-Featured-Image.jpg",
+  "author": "https://www.facebook.com/profile.php?id=61568279116516",
+  "recipe": {
+    "@type": "Recipe",
+    "name": "Marry Me Shrimp Pasta",
+    "author": {
+      "@id": "https://goldengracekitchen.com/#/schema/person/868881133c8db877dc3bdc7ee01bb07d"
+    },
+    "description": "This Marry Me shrimp pasta is filled with tender, seasoned shrimp, a rich, creamy sun-dried tomato sauce, and al dente penne pasta.",
+    "datePublished": "2024-09-26T18:29:19+00:00",
+    "image": [
+      "https://goldengracekitchen.com/wp-content/uploads/2024/09/Marry-Me-Shrimp-Pasta-Featured-Image.jpg",
+      "https://goldengracekitchen.com/wp-content/uploads/2024/09/Marry-Me-Shrimp-Pasta-Featured-Image-500x500.jpg",
+      "https://goldengracekitchen.com/wp-content/uploads/2024/09/Marry-Me-Shrimp-Pasta-Featured-Image-500x375.jpg",
+      "https://goldengracekitchen.com/wp-content/uploads/2024/09/Marry-Me-Shrimp-Pasta-Featured-Image-480x270.jpg"
+    ],
+    "video": {
+      "name": "Marry Me Shrimp Pasta",
+      "description": "Marry Me shrimp pasta takes the classic, creamy Marr Me dish and replaces chicken with tender, perfectly cooked shrimp.",
+      "thumbnailUrl": "https://content.jwplatform.com/thumbs/FSiZflcB-720.jpg",
+      "contentUrl": "https://content.jwplatform.com/videos/FSiZflcB.mp4",
+      "uploadDate": "2025-06-04T16:26:49+00:00",
+      "@type": "VideoObject"
+    },
+    "recipeYield": [
+      "6"
+    ],
+    "prepTime": "PT5M",
+    "cookTime": "PT30M",
+    "totalTime": "PT35M",
+    "recipeIngredient": [
+      "1 pound extra large shrimp (peeled/deveined)",
+      "1/2 tbsp smoked paprika",
+      "3/4  tbsp Italian seasoning",
+      "1/4  tsp black pepper",
+      "3/4 tsp salt",
+      "1 1/2 tbsp sun-dried tomato oil (from the sun-dried tomato jar)",
+      "2 1/2 tbsp Cento tomato paste",
+      "1/2 cup Cento sun-dried tomatoes (diced)",
+      "1 tbsp Italian seasoning",
+      "1/3 tsp sweet smoked paprika",
+      "1/2 tsp salt",
+      "3/4 tsp dried basil",
+      "2 tbsp Gluten free 1:1 flour",
+      "2  cups diced spinach",
+      "2 tbsp butter",
+      "2 tbsp minced onion",
+      "2 tbsp minced garlic",
+      "2 cups vegetable broth",
+      "1  cup heavy cream",
+      "1 cup parmesan cheese",
+      "Fresh basil (chopped for garnish)",
+      "12 oz gluten free penne"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToSection",
+        "name": "For the Shrimp",
+        "itemListElement": [
+          {
+            "@type": "HowToStep",
+            "text": "Boil the pasta according to the package directions for al dente while you cook the shrimp.",
+            "name": "Boil",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-0-0"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Toss the shrimp with the paprika, Italian seasoning, salt, and pepper in a medium bowl until they&#39;re evenly coated.",
+            "name": "Season",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-0-1"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Heat the sun-dried tomato oil in a large skillet over medium heat. Then, cook the shrimp for two minutes on both sides until they are pink, opaque, and C-shaped. If they&#39;re O-shaped, you&#39;ve cooked them too long.",
+            "name": "Cook",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-0-2"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Set the cooked shrimp aside to cool.",
+            "name": "Cool",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-0-3"
+          }
+        ]
+      },
+      {
+        "@type": "HowToSection",
+        "name": "For the Sauce",
+        "itemListElement": [
+          {
+            "@type": "HowToStep",
+            "text": "Melt the butter in the same pan over medium-low heat. Then, add the garlic, onion, sun-dried tomatoes, tomato paste, Italian seasoning, paprika, salt, and dried basil. Cook the mixture for about two minutes until fragrant.",
+            "name": "Saute",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-1-0"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Add the flour to the aromatics and stir well. Then, add the broth, heavy cream, and spinach. Stir and cook until the sauce thickens and the spinach starts to wilt - about 5 minutes. Then, add the parmesan cheese and stir until melted.",
+            "name": "Make the Sauce",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-1-1"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Carefully mix the pasta into the sauce. Then, add the shrimp and gently stir again. Garnish with fresh basil, and enjoy.",
+            "name": "Mix",
+            "url": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#wprm-recipe-14773-step-1-2"
+          }
+        ]
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "120",
+      "reviewCount": "7"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Das Rezept haben wir heute ausprobiert und sind begeistert \r\nMachen sicher gerne wieder",
+        "author": {
+          "@type": "Person",
+          "name": "Chita"
+        },
+        "datePublished": "2026-09-15"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Wow wow wow when i tell you i tried this recipe and everyone was in love im looking forward to actually making this again",
+        "author": {
+          "@type": "Person",
+          "name": "Bebo"
+        },
+        "datePublished": "2026-09-11"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "This is amazing, I added some pan seared chicken and wow. My family absolutely loved it. My son said it was better than the pasta we get from his restaurant. It will definitely be added to the dinner rotation. It’s packed full of flavor and very easy to make…just follow the tutorial!!😊",
+        "author": {
+          "@type": "Person",
+          "name": "Sciacca"
+        },
+        "datePublished": "2026-09-06"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "It came out so good! I added 2 cups Italian blend cheese to my sauce instead of the 1 cup of Parmesan. My Very picky 7 year old ate it all up, so that is the for sure stamp of approval 😁",
+        "author": {
+          "@type": "Person",
+          "name": "Jessica"
+        },
+        "datePublished": "2026-08-25"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "This recipe was a huge hit with my family of six which in general is a feat on it's own.  I only made one adjustment.  Instead of prawns I used a marinara mix as one child doesn't eat prawns.  We loved the flavours.  Thank you for this recipe and it will be added to the meal rotation. 😋",
+        "author": {
+          "@type": "Person",
+          "name": "Ted Shannon"
+        },
+        "datePublished": "2026-08-25"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "This worked exactly as written, and my family loved it so much. I did pop it in the oven for 5 minutes after topping with Parmesan cheese however it was amazing before that ✨💚💪🏽",
+        "author": {
+          "@type": "Person",
+          "name": "Love Tia"
+        },
+        "datePublished": "2026-08-25"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Sooo delicious! Me and my household love it! It’s definitely been added into my dinner rotation ❤️❤️❤️❤️",
+        "author": {
+          "@type": "Person",
+          "name": "Key B"
+        },
+        "datePublished": "2026-08-13"
+      }
+    ],
+    "recipeCategory": [
+      "dinner"
+    ],
+    "recipeCuisine": [
+      "Italian"
+    ],
+    "keywords": "creamy shrimp pasta, creamy tomato sauce, marry me pasta, marry me shrimp, shrimp pasta, tomato alfredo sauce",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "321 kcal",
+      "carbohydrateContent": "9 g",
+      "proteinContent": "19 g",
+      "fatContent": "24 g",
+      "saturatedFatContent": "14 g",
+      "transFatContent": "0.2 g",
+      "cholesterolContent": "161 mg",
+      "sodiumContent": "1553 mg",
+      "fiberContent": "2 g",
+      "sugarContent": "2 g",
+      "unsaturatedFatContent": "7 g",
+      "servingSize": "1 serving"
+    },
+    "@id": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#recipe",
+    "isPartOf": {
+      "@id": "https://goldengracekitchen.com/marry-me-shrimp-pasta/#article"
+    },
+    "mainEntityOfPage": "https://goldengracekitchen.com/marry-me-shrimp-pasta/"
+  }
+}

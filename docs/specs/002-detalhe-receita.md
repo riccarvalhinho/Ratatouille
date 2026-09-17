@@ -54,6 +54,13 @@ ao topo.
 11. Informação nutricional por dose: energia, proteína, gordura, gordura saturada, hidratos, fibra e
     sal — marcada como estimada quando `nutrition.method` for `estimado`. O mínimo aceitável são só
     as calorias
+12. **Crédito da receita, em rodapé**, quando a receita vem de fora (`source.kind` em `livro`,
+    `web`, `video` ou `importada`): "Receita original de X, «Y», aqui reescrita e adaptada", com
+    link para o original. Pequeno e no fim — não compete com o conteúdo, mas está lá sempre.
+    A nota de adaptação é parte do crédito e não um acrescento: as instruções são sempre reescritas
+    e as medidas convertidas, portanto dizer só "receita de X" atribuiria a X um texto que não é
+    dele. Uma receita `propria`, de `familia` ou `gerada` não leva rodapé — não há dono de fora a
+    nomear, e creditar a casa a si própria é ruído. Ver ADR 0006
 
 ### Planear a partir do detalhe
 
@@ -72,6 +79,8 @@ e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a
 - [ ] A nota de um ingrediente aparece subordinada ao nome, não a competir com ele
 - [ ] Cada passo mostra o título a negrito e o detalhe por baixo, e nenhum dos dois repete o outro
 - [ ] Nutrição estimada aparece marcada como aproximada
+- [ ] Uma receita de proveniência externa credita a fonte em rodapé, com a nota de adaptação
+- [ ] Uma receita própria, de família ou gerada não mostra rodapé de crédito nenhum
 - [ ] O "+" permite escolher dia e bloco, e adiciona ao plano
 - [ ] Planear dá confirmação visível sem fechar o pop-up
 - [ ] Todo o conteúdo é legível a cerca de 70cm de distância

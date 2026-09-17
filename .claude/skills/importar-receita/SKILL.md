@@ -106,17 +106,25 @@ escrita à mão vale pouco; numa leva de vinte é a diferença entre rever e fin
 ### 5. Procurar a fotografia
 
 **A estratégia completa, por ordem de preferência, está em `docs/ops/imagens.md`** — ler antes de
-procurar seja o que for. O resumo: fotografia própria primeiro, bancos curados depois, arquivos a
-seguir, e frame de vídeo só com licença CC.
+procurar seja o que for. O resumo: fotografia própria primeiro, **fotografia da fonte a seguir**,
+bancos curados e arquivos depois, e sem imagem como resultado aceitável.
 
-**Nunca copiar a fotografia da fonte.** Uma foto de receita num site é obra protegida como o texto, e
-este repositório é público. O `imageUrl` do que foi recolhido serve de referência, não de origem.
-O mesmo vale para um frame de um vídeo de Instagram ou de YouTube: a legenda e os ingredientes são
-factos e usam-se, a imagem é obra e não se usa — **a única exceção é um vídeo publicado em CC BY**,
-que o YouTube identifica, e aí credita-se o canal.
+**A fotografia da fonte usa-se, e credita-se** — foi o ADR 0006 que o decidiu, e inverteu o que esta
+secção dizia antes. A razão é medida e não é de gosto: os bancos acertam em pratos com nome próprio
+e falham em descrições genéricas, portanto para uma receita vinda de um vídeo ou de um blogue a
+alternativa aos bancos não era uma foto pior, era a foto de outro prato.
 
-A melhor via é fotografia própria, tirada quando se cozinha — aí `imageCredit` leva
-`{ "license": "própria" }`. Não havendo, procura-se nos bancos de licença livre.
+O `imageCredit` de uma foto da fonte leva `author`, `license` exatamente
+`"Todos os direitos reservados"`, e `sourceUrl` para o original. A string da licença é fixa para que
+um `grep` encontre todas as imagens sem licença de uma vez.
+
+**Creditar não é ter licença**, e isso está escrito no ADR para não se perder: o crédito aqui é
+cortesia, não permissão. A melhor via continua a ser fotografia própria, tirada quando se cozinha —
+aí `imageCredit` leva `{ "license": "própria" }` e mais nada, e o empréstimo acaba.
+
+**O que continua a não se poder fazer é reescrever as instruções a copiar.** A distinção entre facto
+e obra não caiu: os ingredientes e as quantidades são factos e usam-se; o texto das instruções de
+outra pessoa é obra e reescreve-se sempre. Mudou a política da imagem, não a do texto.
 
 **O proxy da sessão bloqueia os bancos todos**, tal como bloqueia os sites de receitas — Commons e
 Openverse respondem 403 a um `curl` daqui. Portanto o caminho é o mesmo do passo 1:
@@ -346,7 +354,8 @@ espera que talvez seja duas — **perguntar**, em vez de decidir sozinho. É bar
 
 ## O que já é decidido e não se volta a discutir
 
-- A fotografia procura-se sempre (passo 5) e nunca se copia da fonte. Sem imagem é resultado
+- A fotografia procura-se sempre (passo 5). Própria primeiro, da fonte a seguir — creditada, com
+  `license: "Todos os direitos reservados"` (ADR 0006) —, bancos depois. Sem imagem é resultado
   aceitável; sem `imageCredit` numa imagem que não é nossa, não é
 - O preview do passo 6 mostra-se ao utilizador antes do commit, não depois
 

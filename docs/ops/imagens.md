@@ -166,7 +166,39 @@ Como entra, hoje: o ficheiro vai para `media/recipes/<id>.jpg`, e a receita ganh
 Antes de commitar: **1200px de largura no máximo e à volta de 200 KB**. Uma foto de telemóvel tem
 3 a 5 MB e não pode entrar assim — ficam no Git para sempre.
 
-### 2. Bancos curados: Pexels e Pixabay
+### 2. Fotografia da fonte da receita — decidida no ADR 0006
+
+Quando a receita vem de um site, de um vídeo ou de um livro, **a fotografia da fonte é a única que
+mostra este prato**. Passa à frente dos bancos por isso, e não por ser mais bonita.
+
+```json
+"image": "media/recipes/massa-marry-me-de-camarao.jpg",
+"imageCredit": {
+  "author": "The Golden Grace Kitchen",
+  "license": "Todos os direitos reservados",
+  "sourceUrl": "https://www.facebook.com/share/r/19VE2V35qi/"
+}
+```
+
+Três coisas que têm de estar certas, e nenhuma é opcional:
+
+1. **`author` com o nome de quem fez a fotografia**, como ele se apresenta. Sem isto o crédito não
+   credita ninguém.
+2. **`license` exatamente `"Todos os direitos reservados"`**, que é o que a imagem é. A string é
+   fixa de propósito: é o que permite listar num `grep` todas as imagens sem licença do repositório,
+   e tirá-las em bloco se alguma vez for preciso.
+3. **`sourceUrl` para o original**, não para a imagem. O ecrã de detalhe mostra-o como "fonte".
+
+**Creditar não é ter licença.** O ADR 0006 tem a secção "O que esta decisão não é" escrita
+precisamente para isto: numa CC BY o crédito é a condição da licença, aqui é cortesia e não cria
+permissão. É um risco assumido, com a saída conhecida — cozinhar o prato e fotografá-lo faz a
+imagem passar a `própria` e o empréstimo acaba.
+
+E continua a valer a regra que governa tudo nesta página: **a imagem abre-se e vê-se antes de
+entrar**, venha de onde vier. Uma foto da fonte também pode ser o frame errado — um passo a meio,
+a embalagem, a pessoa a falar para a câmara.
+
+### 3. Bancos curados: Pexels e Pixabay
 
 Fotografia de estúdio, bem iluminada, com o prato ao centro. É o que resolve o problema da
 qualidade — e **não resolve o da identidade**: são bancos onde se confia na consulta sem verificar,
@@ -189,7 +221,7 @@ Sem as chaves o programa salta estes dois bancos em silêncio. **Confirmar que f
 o `imageCredit.license` de uma foto do Pexels diz "Pexels License". Se depois de configurar as
 chaves não aparecer nenhuma, as chaves não estão a ser lidas.
 
-### 3. Commons e Openverse
+### 4. Commons e Openverse
 
 O que já cá está. Ganham quando o prato tem **nome próprio** que exista em arquivo — caldo verde e
 pastéis de nata saíram certos por isso. Perdem em tudo o que só tem descrição genérica em inglês.
@@ -197,19 +229,21 @@ pastéis de nata saíram certos por isso. Perdem em tudo o que só tem descriç�
 O classificador prefere-os aos bancos curados quando o título bate certo (25 pontos contra 20), e
 isso está certo: um caldo verde verdadeiro vale mais do que uma sopa verde bonita.
 
-### 4. Frame de um vídeo — só com licença, e quase nunca há
+### O que esta lista dizia antes, e porque mudou
 
-Uma receita importada de um link de Instagram ou de YouTube **não dá direito a usar a imagem**. Um
-frame é obra derivada, e o conteúdo dessas plataformas é, por omissão, todos os direitos reservados.
-Este repositório é público, portanto não há aqui zona cinzenta.
+**Esta secção dizia o contrário até 2026-09-17.** Dizia que um frame de vídeo ou a foto do site de
+origem não entravam, por serem obra de outra pessoa num repositório público. O ADR 0006 inverteu a
+política, e a fotografia da fonte passou a estar **em segundo lugar nesta lista, à frente dos
+bancos** — está descrita no ponto 2, acima.
 
-**A única exceção verificável:** um vídeo do YouTube publicado sob **Creative Commons BY** — o
-YouTube expõe isso na descrição, e dá para filtrar a pesquisa por licença CC. Aí o frame é
-utilizável, com `imageCredit` a creditar o canal e a licença, como em qualquer CC BY.
+Fica aqui o porquê, em duas linhas, porque é a pergunta que qualquer pessoa faz ao ler a ordem: os
+bancos acertam em pratos com nome próprio e falham em descrições genéricas, e uma receita vinda de
+um vídeo ou de um blogue moderno é sempre do segundo tipo. Na prática a regra antiga estava a
+recusar a fotografia do prato certo para publicar a de um estranho de um prato errado — que é obra
+de outra pessoa na mesma, e ainda por cima mente ao cartão.
 
-Fora disso, a receita segue os passos 1 a 3. **A legenda e os ingredientes de um vídeo são factos e
-podem ser usados; a imagem é obra e não pode.** É a mesma distinção que já governa o texto das
-instruções.
+**O que não mudou:** creditar não é ter licença, e o ADR 0006 diz isso à letra. Uma foto de fonte é
+um empréstimo até alguém cozinhar o prato e o fotografar.
 
 ---
 

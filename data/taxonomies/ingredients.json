@@ -824,6 +824,12 @@
       "aisle": "frutas-e-legumes"
     },
     {
+      "id": "manjericao-seco",
+      "name": "Manjericão seco",
+      "aisle": "mercearia",
+      "staple": true
+    },
+    {
       "id": "manteiga",
       "name": "Manteiga",
       "aisle": "laticinios-e-ovos",
@@ -1284,6 +1290,11 @@
     {
       "id": "tomate-pelado",
       "name": "Tomate pelado em lata",
+      "aisle": "mercearia"
+    },
+    {
+      "id": "tomate-seco",
+      "name": "Tomate seco",
       "aisle": "mercearia"
     },
     {

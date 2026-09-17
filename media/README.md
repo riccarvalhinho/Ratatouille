@@ -17,6 +17,14 @@ ao commitar 169 imagens erradas de uma vez, e porque é que nenhuma imagem entra
 
 ## De onde vêm
 
+**Desde o ADR 0006 há duas origens, não uma.** A fotografia da fonte da receita passou à frente dos
+bancos, porque para uma receita vinda de um vídeo ou de um blogue os bancos não davam fotografia
+pior — davam fotografia de outro prato. Essa entra à mão, com `imageCredit` a creditar o autor e
+`license` exatamente `"Todos os direitos reservados"`; a string é fixa para se poderem listar todas
+num `grep`. Creditar não é ter licença, e o ADR diz porque é que se aceitou o risco na mesma.
+
+Os bancos continuam a servir tudo o resto:
+
 `.github/workflows/buscar-imagens.yml` procura em quatro bancos. Corre no GitHub Actions e não numa
 sessão de Claude Code, porque o proxy dessas sessões bloqueia os bancos todos.
 
