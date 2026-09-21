@@ -11,18 +11,23 @@ import {
 } from '../../domain/filters.ts';
 import { criteriosDeTriagem } from '../../domain/triagem.ts';
 import { TriagemPanel } from '../triagem/TriagemPanel.tsx';
+import { PlanearReceita } from '../planeamento/PlanearReceita.tsx';
 import { IconDismiss, IconHeart, IconSearch } from '../../ui/icons.tsx';
 import { icones } from '../../ui/icones-triagem.tsx';
 import { RecipeCard } from '../../ui/RecipeCard.tsx';
+import type { Recipe } from '../../domain/types.ts';
 import styles from './CatalogoScreen.module.css';
 
 interface CatalogoScreenProps {
   catalogue: Catalogue;
   /**
-   * Para os favoritos. Vem do `local-store` e não do catálogo porque o catálogo é o bundle: favoritar
-   * uma receita no tablet tem de se ver no filtro antes de o commit chegar ao GitHub.
+   * Para os favoritos e para planear. Vem do `local-store` e não do catálogo porque o catálogo é o
+   * bundle: favoritar ou planear uma receita no tablet tem de se ver antes de o commit chegar ao
+   * GitHub.
    */
   store: LocalStore;
+  /** Data de hoje em ISO, para o painel de planear abrir na semana certa. */
+  today: string;
   /** Aberto pela rota `#/apetece`, para a navegação lhe poder chegar com um link. */
   abrirTriagem?: boolean;
 }
@@ -54,13 +59,19 @@ function hasOutrosFiltros(filters: CatalogueFilters): boolean {
   return hasActiveFilters({ ...filters, favouritos: false });
 }
 
-export function CatalogoScreen({ catalogue, store, abrirTriagem }: CatalogoScreenProps) {
+export function CatalogoScreen({ catalogue, store, today, abrirTriagem }: CatalogoScreenProps) {
   /*
    * Os filtros vivem aqui, e o painel de triagem escreve neste mesmo estado. É a regra que a
    * conversa 2 fixou: duas entradas para o mesmo estado não fazem mal, dois estados fariam.
    */
   const [filters, setFilters] = useState<CatalogueFilters>(EMPTY_FILTERS);
   const [painelAberto, setPainelAberto] = useState(abrirTriagem ?? false);
+  /*
+   * A receita que está a ser planeada. Fica aqui e não na rota, ao contrário do detalhe e da
+   * triagem: é uma decisão de segundos, e um recarregamento a meio não tem nada que valha a pena
+   * recuperar.
+   */
+  const [aPlanear, setAPlanear] = useState<Recipe | undefined>();
 
   const favoritas = store.favourites;
 
@@ -163,10 +174,25 @@ export function CatalogoScreen({ catalogue, store, abrirTriagem }: CatalogoScree
                 recipe={recipe}
                 catalogue={catalogue}
                 onOpen={() => navigate({ screen: 'receitas', recipeId: recipe.id })}
+                /*
+                  Só depois do estado local estar lido: planear antes disso escreveria a semana por
+                  cima do que ainda não tinha vindo do IndexedDB. São milissegundos, mas são os
+                  milissegundos em que se perdia o plano da semana.
+                */
+                onPlan={store.ready ? () => setAPlanear(recipe) : undefined}
               />
             </li>
           ))}
         </ul>
+      )}
+
+      {aPlanear && (
+        <PlanearReceita
+          recipe={aPlanear}
+          store={store}
+          today={today}
+          onClose={() => setAPlanear(undefined)}
+        />
       )}
 
       {painelAberto && (

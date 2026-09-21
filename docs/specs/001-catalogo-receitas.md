@@ -43,6 +43,19 @@ pratos que se comem com coisas diferentes conforme o dia, e as costelas no forno
 Também **não filtra**: não há filtro de "só refeições completas". Um filtro obrigaria a decidir por
 quem planeia, e o valor aqui é só não ser surpreendido.
 
+#### Planear a partir do cartão
+
+O cartão tem um **"+" no canto da imagem** que abre a escolha de dia e bloco — a mesma do detalhe
+(spec 002). Navegar a lista e decidir ali que aquilo é o jantar de quinta é o gesto normal de quem
+está a montar a semana, e obrigá-lo a ir ao planeamento abrir o seletor por bloco é trocar a lista
+inteira, com filtros e ao tamanho de ler, por uma grelha curta dentro de um painel.
+
+É permanente e não revelado ao toque: num tablet não há hover, e uma ação escondida obrigaria a um
+toque só para descobrir que existe. Fica por cima da fotografia, que é a única zona do cartão sem
+informação — o nome, o tempo e as labels não perdem largura nenhuma.
+
+Abrir o detalhe continua a ser o resto do cartão.
+
 ### Filtros
 
 Barra de filtros no topo, sempre visível:
@@ -133,6 +146,7 @@ posição do scroll — mantém-se, para que fechar o pop-up devolva exatamente 
 - [ ] O coração conta para a contagem do painel "Apetece-me algo"
 - [ ] O "Limpar" do painel não desliga o coração
 - [x] O histórico tem destino próprio e ordena por data mais recente — ver spec 008
+- [x] O "+" do cartão planeia a receita sem abrir o detalhe nem sair da lista
 - [ ] Fechar o detalhe devolve à mesma posição de scroll e aos mesmos filtros
 - [ ] Todos os alvos de toque têm pelo menos 56×56px
 - [ ] A grelha funciona offline depois da primeira carga

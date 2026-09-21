@@ -102,3 +102,27 @@ export function emptyBlocksOfWeek(plan: WeekPlan | undefined): Set<MealBlock> {
   }
   return new Set(MEAL_BLOCKS.filter((block) => !used.has(block)));
 }
+
+/** As receitas de um bloco de um dia. Vazio quando o dia, o bloco ou o plano não existem. */
+export function entriesOfBlock(
+  plan: WeekPlan | undefined,
+  date: string,
+  block: MealBlock,
+): PlanEntry[] {
+  return plan?.days.find((day) => day.date === date)?.blocks[block] ?? [];
+}
+
+/**
+ * Onde está uma receita dentro de um bloco, ou -1 se não estiver.
+ *
+ * Devolve a **primeira** ocorrência de propósito: um bloco pode ter a mesma receita duas vezes para
+ * dobrar a quantidade, e quem tira uma tira a que se vê primeiro.
+ */
+export function indexOfRecipe(
+  plan: WeekPlan | undefined,
+  date: string,
+  block: MealBlock,
+  recipeId: string,
+): number {
+  return entriesOfBlock(plan, date, block).findIndex((entry) => entry.recipeId === recipeId);
+}
