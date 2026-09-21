@@ -1,5 +1,5 @@
 /**
- * Ícones do painel "Apetece-me algo" — 46 desenhos para as 52 posições dos oito critérios.
+ * Ícones do painel "Apetece-me algo" — 54 desenhos para as 61 posições dos nove critérios.
  *
  * Vêm do Claude Design, a partir do handover em `docs/design/icones-triagem.md`. **A geometria não
  * se edita aqui**: a folha de desenho é `docs/design/icones-triagem.dc.html` e é de lá que se
@@ -464,6 +464,79 @@ export const IconSemLactose: IconeTriagem = (props) => (
   </svg>
 );
 
+// ── Proveniência ──────────────────────────────────────────────
+/*
+ * Oito peças desenhadas aqui e não no Claude Design, ao contrário das 46 primeiras — o critério
+ * nasceu depois do handover. A geometria segue as mesmas regras (grelha 24, traço 2.5, um só nível
+ * de abstração) e ficou registada em `icones-triagem.dc.html` com as outras, para a folha continuar
+ * a ser a folha. Ver a adenda em `docs/design/icones-triagem.md`.
+ *
+ * O balão do "Amigos" é o único que não é um objeto de cozinha nem uma pessoa. Ganhou o lugar por
+ * eliminação: duas figuras já dizem "Família", e uma figura sozinha ao lado delas lia-se como "a
+ * mesma coisa mas menos". Uma receita de um amigo chega quase sempre dita ou escrita num recado, e
+ * é isso que o balão mostra.
+ */
+export const IconPropria: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M3.5 10.5 12 3.5l8.5 7" />
+    <path d="M5.5 9.5V20h13V9.5" />
+    <path d="M10 20v-5.5h4V20" />
+  </svg>
+);
+
+export const IconFamilia: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M8 4.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+    <path d="M2.5 19.5a5.5 5.5 0 0 1 11 0" />
+    <path d="M17.5 8a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5z" />
+    <path d="M13.5 19.5a4 4 0 0 1 8 0" />
+  </svg>
+);
+
+export const IconAmigo: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M5.5 4h13A2.5 2.5 0 0 1 21 6.5v8a2.5 2.5 0 0 1-2.5 2.5H5.5A2.5 2.5 0 0 1 3 14.5v-8A2.5 2.5 0 0 1 5.5 4z" />
+    <path d="M8.5 17v3.5L13 17" />
+  </svg>
+);
+
+export const IconLivro: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M12 7v12.5" />
+    <path d="M12 7c-1.8-1.6-4.3-2-8-2v12.5c3.7 0 6.2.4 8 2" />
+    <path d="M12 7c1.8-1.6 4.3-2 8-2v12.5c-3.7 0-6.2.4-8 2" />
+  </svg>
+);
+
+export const IconWeb: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" />
+    <path d="M3 12h18" />
+    <path d="M12 3a3.75 9 0 0 1 0 18 3.75 9 0 0 1 0-18z" />
+  </svg>
+);
+
+export const IconVideo: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M5 4.5h14A2.5 2.5 0 0 1 21.5 7v10a2.5 2.5 0 0 1-2.5 2.5H5A2.5 2.5 0 0 1 2.5 17V7A2.5 2.5 0 0 1 5 4.5z" />
+    <path d="m10 9 5.5 3-5.5 3z" />
+  </svg>
+);
+
+export const IconImportada: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M5 3.5h7.5L19 10v10.5H5z" />
+    <path d="M12.5 3.5V10H19" />
+  </svg>
+);
+
+export const IconGerada: IconeTriagem = (props) => (
+  <svg {...base} {...props}>
+    <path d="M12 3c0 4.5 2.5 7 7 7-4.5 0-7 2.5-7 7 0-4.5-2.5-7-7-7 4.5 0 7-2.5 7-7z" />
+    <path d="M18.5 16.5c0 1.7 1 2.5 2.5 2.5-1.5 0-2.5.8-2.5 2.5 0-1.7-1-2.5-2.5-2.5 1.5 0 2.5-.8 2.5-2.5z" />
+  </svg>
+);
+
 // ── Mapa por chave de opção ───────────────────────────────
 export const icones = {
   "frigideira": IconFrigideira,
@@ -512,12 +585,20 @@ export const icones = {
   "vegan": IconVegan,
   "sem-gluten": IconSemGluten,
   "sem-lactose": IconSemLactose,
+  "propria": IconPropria,
+  "familia": IconFamilia,
+  "amigo": IconAmigo,
+  "livro": IconLivro,
+  "web": IconWeb,
+  "video": IconVideo,
+  "importada": IconImportada,
+  "gerada": IconGerada,
 } satisfies Record<string, IconeTriagem>;
 
 export type ChaveIcone = keyof typeof icones;
 
 // ── Ícone de cada critério ────────────────────────────────
-// Cinco critérios reutilizam uma das suas opções; o Tempo usa um relógio próprio,
+// Seis critérios reutilizam uma das suas opções; o Tempo usa um relógio próprio,
 // partilhado pelos escalões (que são numerais em texto, não ícones).
 export const iconesCriterio = {
   "tipo-refeicao": IconTipoRefeicao,
@@ -527,5 +608,6 @@ export const iconesCriterio = {
   "cultura": IconCultura,
   "apetite": IconEquilibrado,
   "ocasiao": IconFesta,
+  "proveniencia": IconFamilia,
   "regime": IconVegetariano,
 } satisfies Record<string, IconeTriagem>;

@@ -36,7 +36,7 @@ const criterios = criteriosDeTriagem(catalogue);
 const todasAsOpcoes = criterios.flatMap((c) => c.opcoes.map((o) => ({ criterio: c.nome, ...o })));
 
 describe('os critérios de triagem', () => {
-  it('são oito, e nenhum vem vazio', () => {
+  it('são nove, e nenhum vem vazio', () => {
     expect(criterios.map((c) => c.nome)).toEqual([
       'Tipo de refeição',
       'Ingrediente principal',
@@ -45,9 +45,24 @@ describe('os critérios de triagem', () => {
       'Cultura',
       'Apetite',
       'Ocasião',
+      'Proveniência',
       'Regime',
     ]);
     expect(criterios.filter((c) => c.opcoes.length === 0)).toEqual([]);
+  });
+
+  it('a proveniência cobre o enum inteiro do schema', () => {
+    /*
+     * O que isto guarda: um `kind` novo no schema sem mosaico no painel não dá erro nenhum — dá
+     * receitas que nenhum filtro alcança. Lê-se o schema e não a lista de tipos, porque o schema é
+     * o contrato e os tipos são o espelho dele.
+     */
+    const schema = JSON.parse(
+      readFileSync(path.join(repoRoot, 'data/schema/recipe.schema.json'), 'utf8'),
+    ) as { properties: { source: { properties: { kind: { enum: string[] } } } } };
+
+    const noPainel = criterios.find((c) => c.id === 'proveniencia')?.opcoes.map((o) => o.id);
+    expect(noPainel).toEqual(schema.properties.source.properties.kind.enum);
   });
 
   it('nenhuma opção aponta para um ícone que não existe', () => {
@@ -88,6 +103,7 @@ describe('limparApetencias', () => {
       ...EMPTY_FILTERS,
       methods: ['forno' as const],
       semVespera: true,
+      sources: ['familia' as const],
       labels: { cultura: ['portuguesa'], regime: ['sem-gluten'] },
     };
     expect(limparApetencias(cheio)).toEqual({
@@ -99,6 +115,13 @@ describe('limparApetencias', () => {
   it('sem regime escolhido, limpa tudo', () => {
     const cheio = { ...EMPTY_FILTERS, labels: { cultura: ['portuguesa'] } };
     expect(limparApetencias(cheio)).toEqual(EMPTY_FILTERS);
+  });
+
+  it('não desliga o coração, que está noutro ecrã', () => {
+    // O "Limpar" do painel limpa o painel. Apagar uma escolha que quem carregou não está sequer a
+    // ver seria o painel a mexer no catálogo pelas costas.
+    const cheio = { ...EMPTY_FILTERS, favouritos: true, methods: ['forno' as const] };
+    expect(limparApetencias(cheio)).toEqual({ ...EMPTY_FILTERS, favouritos: true });
   });
 });
 
@@ -115,5 +138,11 @@ describe('contagemSe', () => {
     expect(contagemSe(receitas, EMPTY_FILTERS, opcaoSopa!)).toBe(1);
     // e os filtros de entrada ficam intactos — a contagem é uma pergunta, não uma escolha
     expect(EMPTY_FILTERS.labels).toEqual({});
+  });
+
+  it('conta com o coração que está ligado lá fora', () => {
+    const soFavoritos = { ...EMPTY_FILTERS, favouritos: true };
+    expect(contagemSe(receitas, soFavoritos, opcaoSopa!, new Set(['a']))).toBe(1);
+    expect(contagemSe(receitas, soFavoritos, opcaoSopa!, new Set(['b']))).toBe(0);
   });
 });

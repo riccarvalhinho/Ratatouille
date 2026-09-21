@@ -26,6 +26,35 @@
 }
 
 /*
+ * O coração dos favoritos. É um interruptor da lista e não um critério do painel: um favorito é um
+ * juízo já feito, não uma apetência de hoje — ver a spec 001.
+ *
+ * Quadrado e do tamanho do alvo mínimo, ao lado do "Apetece-me algo": é ele que empurra os dois para
+ * a direita, e por isso é ele que leva o `margin-left: auto`. Sem texto, porque o coração cheio ou
+ * vazio já diz em que estado está, e porque a etiqueta mudaria de largura ao ligar e desligar — o
+ * botão do lado saltava de sítio a cada toque.
+ */
+.favoritos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--touch-target);
+  min-height: var(--touch-target);
+  margin-left: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+}
+
+.favoritos.ligado {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+/*
  * A porta lateral para o "Apetece-me algo". No topo da lista e não na navegação: a lista completa
  * continua a ser o ecrã principal — ver a conversa 2.
  */
@@ -34,7 +63,6 @@
   align-items: center;
   gap: var(--space-3);
   min-height: var(--touch-target);
-  margin-left: auto;
   padding: 0 var(--space-5);
   border: 1px solid var(--color-accent);
   border-radius: var(--radius-md);

@@ -1,5 +1,5 @@
 /**
- * Os oito critérios do painel "Apetece-me algo". Ver `docs/conversas/07-vocabulario-labels.md`.
+ * Os nove critérios do painel "Apetece-me algo". Ver `docs/conversas/07-vocabulario-labels.md`.
  *
  * Este ficheiro é só a **descrição** dos critérios: que opções tem cada um, de onde vêm, e como cada
  * escolha mexe nos filtros do catálogo. Não sabe desenhar nada.
@@ -8,9 +8,13 @@
  * entradas para o mesmo estado não fazem mal nenhum; dois estados fariam. É por isso que aqui não há
  * estado próprio — cada opção é uma função que devolve os filtros com aquilo dentro ou fora.
  *
- * Cinco dos oito são labels e saem da taxonomia em tempo de execução, para uma label nova aparecer no
- * painel sem passar por aqui. Os outros três não são labels: o método sai de `methods`, o tempo de
- * `timing`, e o apetite de `weight`.
+ * Cinco dos nove são labels e saem da taxonomia em tempo de execução, para uma label nova aparecer no
+ * painel sem passar por aqui. Os outros quatro não são labels: o método sai de `methods`, o tempo de
+ * `timing`, o apetite de `weight`, e a proveniência de `source.kind`.
+ *
+ * **O coração dos favoritos não está aqui**, e é de propósito: escolhe-se uma vez por receita e não
+ * por apetência, e vive na barra do catálogo. Escreve no mesmo `CatalogueFilters` na mesma — ver
+ * `filters.favouritos`.
  */
 import type { Catalogue } from '../data/catalogue.ts';
 import {
@@ -22,7 +26,13 @@ import {
   toggleFilter,
   toggleLabel,
 } from './filters.ts';
-import type { CookingMethod, Recipe, Weight } from './types.ts';
+import {
+  SOURCE_KIND_NAMES,
+  type CookingMethod,
+  type Recipe,
+  type RecipeSourceKind,
+  type Weight,
+} from './types.ts';
 
 /** A chave do ícone. Tem de existir em `app/src/ui/icones-triagem.tsx`. */
 export type ChaveIcone = string;
@@ -70,12 +80,21 @@ const APETITES: { id: Weight; nome: string }[] = [
   { id: 'substancial', nome: 'Substancial' },
 ];
 
+/**
+ * De quem é a receita. A ordem vai **de dentro de casa para fora** — nossa, família, amigos, e só
+ * depois o que veio de um livro ou de um ecrã — porque é essa a ordem por que se pensa nelas.
+ *
+ * A `gerada` fica no fim por ser hoje a esmagadora maioria do catálogo: pô-la à frente fazia o
+ * critério parecer que só tem uma resposta.
+ */
+const PROVENIENCIAS = Object.keys(SOURCE_KIND_NAMES) as RecipeSourceKind[];
+
 const TEMPOS = Object.keys(DURATION_BAND_NAMES) as DurationBand[];
 
 function opcaoDeLista<T extends string>(
   id: T,
   nome: string,
-  campo: 'methods' | 'weights' | 'durations',
+  campo: 'methods' | 'weights' | 'durations' | 'sources',
 ): OpcaoTriagem {
   return {
     id,
@@ -87,7 +106,7 @@ function opcaoDeLista<T extends string>(
 }
 
 /**
- * Monta os oito critérios a partir do catálogo carregado.
+ * Monta os nove critérios a partir do catálogo carregado.
  *
  * Os grupos de labels saem da taxonomia e não de uma lista escrita aqui: acrescentar uma cultura ao
  * `labels.json` põe-na no painel sem tocar em código. A ordem dentro de cada grupo é a do ficheiro,
@@ -156,6 +175,21 @@ export function criteriosDeTriagem(catalogue: Catalogue): CriterioTriagem[] {
       opcoes: APETITES.map((a) => opcaoDeLista(a.id, a.nome, 'weights')),
     },
     deLabels('ocasiao', 'Ocasião', 'festa'),
+    {
+      /*
+       * "De quem é a receita" — o critério que o Cookidoo não tem porque lá as receitas são todas
+       * da casa. Aqui não são: há o que veio dos sogros, o que veio de um amigo, o que se viu num
+       * vídeo, e as que foram geradas. Chamar-lhe "Origem" colidia com a Cultura, que é a origem
+       * da *cozinha* e não da *receita* — e foi exatamente essa colisão que a conversa 7 desfez ao
+       * renomear o grupo `origem` para `cultura`. Não vale a pena voltar a criá-la.
+       *
+       * Fica depois da Ocasião e antes do Regime: decide-se tarde, quando já se sabe o que apetece.
+       */
+      id: 'proveniencia',
+      nome: 'Proveniência',
+      icone: 'familia',
+      opcoes: PROVENIENCIAS.map((k) => opcaoDeLista(k, SOURCE_KIND_NAMES[k], 'sources')),
+    },
     deLabels('regime', 'Regime', 'vegetariano', true),
   ];
 }
@@ -172,12 +206,19 @@ export function contagemSe(
   recipes: Recipe[],
   filters: CatalogueFilters,
   opcao: OpcaoTriagem,
+  favouritas?: ReadonlySet<string>,
 ): number {
   const comEsta = opcao.escolhida(filters) ? filters : opcao.alternar(filters);
-  return recipes.filter((r) => matchesFilters(r, comEsta)).length;
+  return recipes.filter((r) => matchesFilters(r, comEsta, favouritas)).length;
 }
 
-/** Tira tudo o que é apetência e deixa o regime, que é pegajoso entre sessões. */
+/**
+ * Tira tudo o que é apetência e deixa o que não é.
+ *
+ * Ficam duas coisas. O **regime**, que corta por regra e é pegajoso entre sessões. E o **coração
+ * dos favoritos**, por uma razão diferente: não está neste painel, e um botão que limpa o que está
+ * noutro ecrã apaga uma escolha que quem carregou não está sequer a ver.
+ */
 export function limparApetencias(filters: CatalogueFilters): CatalogueFilters {
   return {
     durations: [],
@@ -185,5 +226,7 @@ export function limparApetencias(filters: CatalogueFilters): CatalogueFilters {
     weights: [],
     labels: filters.labels.regime ? { regime: filters.labels.regime } : {},
     semVespera: false,
+    sources: [],
+    favouritos: filters.favouritos,
   };
 }

@@ -1,7 +1,7 @@
 # Conversa 7 — Vocabulário das labels
 
 **Estado:** **Aplicada** — os oito critérios estão no `labels.json`, as seis receitas reetiquetadas,
-e o painel construído a usá-los
+e o painel construído a usá-los. **Um nono entrou depois — ver a adenda no fim**
 **Conduz:** Claude
 **Destino das decisões:** `data/taxonomies/labels.json`
 **Vem de:** conversa 1, que fechou tudo o resto da metadata
@@ -233,3 +233,45 @@ _(por começar)_
 
 | Decisão | Onde ficou registada |
 |---|---|
+
+---
+
+## Adenda — 2026-09-21: o nono critério
+
+Esta conversa fechou os oito quadrantes e a regra que os escolheu: *um eixo só entra se já houver
+dados ou vocabulário para ele*. Entrou um nono, **Proveniência** — de quem é a receita — e entrou
+por essa mesma regra, não contra ela.
+
+**O que mudou não foi a regra, foi o catálogo.** Na altura desta conversa as receitas eram seis; hoje
+são 233 e praticamente todas `gerada`. Isso vai deixar de ser verdade: começam a entrar receitas de
+sítios diferentes — dos sogros, de um amigo, de um site, de um vídeo do Instagram — e sem um eixo que
+as separe não há forma de pedir "uma das nossas".
+
+O vocabulário já existia e não é uma família de labels: sai de `source.kind`, que está no schema
+desde o início e nunca chegava a lado nenhum a não ser ao crédito de rodapé. Oito valores, que é
+dentro da regra dos 4 a 8. Só faltava um: **`amigo`**, acrescentado ao schema — *sogros* já cabia em
+`familia`, mas uma receita que um amigo dá não cabia em nada.
+
+Três notas, porque cada uma é uma decisão a contrariar se estiver errada:
+
+**Chama-se Proveniência e não Origem.** Esta conversa renomeou o grupo `origem` para `cultura`
+precisamente para a palavra deixar de ser ambígua. Voltar a usá-la para outra coisa recriava a
+colisão que se desfez aqui: a Cultura é a origem da *cozinha*, a Proveniência é a origem da
+*receita*. São perguntas diferentes e o painel mostra-as lado a lado.
+
+**Filtra-se pelo `kind` e não pelo `author`.** O autor é texto livre, e um filtro sobre texto livre
+tem tantas opções quantas as receitas. "Sogros" chega ao ecrã de detalhe pelo crédito; no painel o
+que se pergunta é de que lado veio.
+
+**Nove mosaicos não cabem num 4×2.** A grelha dos critérios passou a 3×3 e o espaçamento apertou —
+a 1280×800 três linhas com as medidas do handover ficavam com a última meia escondida atrás do
+rodapé. O alvo não encolheu: o mosaico passou de 280×168 para uns 346×152, que é mais área de toque.
+As oito peças novas estão em `docs/design/icones-triagem.md`, secção 12, com as duas que merecem uma
+ronda de design a sério assinaladas.
+
+### E um filtro que não é um critério: os favoritos
+
+Ao mesmo tempo entrou o **coração na barra do catálogo** — ligado, só as favoritas; desligado, todas.
+Fica fora deste painel de propósito, e a razão é a mesma que separa o favorito do histórico na
+conversa 2: **um favorito é um juízo que não caduca, não uma apetência de hoje.** O painel pergunta
+"o que te apetece agora"; o coração responde "aquelas de que já gostas". Está registado na spec 001.

@@ -254,8 +254,8 @@
       "additionalProperties": false,
       "properties": {
         "kind": {
-          "description": "gerada = escrita por AI a partir do nome do prato, sem fonte externa. Revista por um humano no papel, mas nunca cozinhada — é o que a distingue de uma receita da família.",
-          "enum": ["propria", "familia", "livro", "web", "video", "importada", "gerada"]
+          "description": "De quem é a receita. Alimenta o critério \"Proveniência\" do painel \"Apetece-me algo\" — ver docs/specs/001-catalogo-receitas.md — e por isso o vocabulário é fechado: propria = inventada ou afinada cá em casa; familia = veio de alguém da família (sogros, avós, pais); amigo = veio de alguém de fora da família; livro; web = site, blogue, receita online; video = YouTube, Instagram, TikTok; importada = entrou por outro caminho que nenhum dos anteriores descreve; gerada = escrita por AI a partir do nome do prato, sem fonte externa. Revista por um humano no papel, mas nunca cozinhada — é o que a distingue de uma receita da família.",
+          "enum": ["propria", "familia", "amigo", "livro", "web", "video", "importada", "gerada"]
         },
         "title": { "type": "string" },
         "author": {

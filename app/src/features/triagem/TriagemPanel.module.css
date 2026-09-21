@@ -55,13 +55,33 @@
 .grelhaOpcoes {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-5);
   margin: 0;
   padding: var(--space-6);
   list-style: none;
   overflow-y: auto;
 }
+
+/*
+ * Nove critérios desde que a Proveniência entrou, e por isso 3×3 e não 4×2 com um órfão na última
+ * linha.
+ *
+ * Três linhas obrigaram a apertar o espaçamento **desta** grelha, e a conta é esta: a 1280×800 sobram
+ * 550px depois do cabeçalho e do rodapé, e três linhas com o espaçamento do handover pediam 615 — a
+ * terceira ficava meia escondida atrás do rodapé. Num painel que existe para se ver de relance,
+ * rolar é a falha; o handover fazia a conta para duas linhas.
+ *
+ * O que se apertou foi o ar à volta, não o alvo: **o ícone fica nos 48px do handover** e o mosaico
+ * passa de 280×168 para uns 346×152, que é mais área de toque do que antes.
+ */
+.grelhaCriterios {
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-5);
+}
+
+/* As opções continuam a quatro e com o espaçamento original: são oito, e fecham duas linhas certas. */
+.grelhaOpcoes { grid-template-columns: repeat(4, 1fr); }
 
 /* Um mosaico é um botão inteiro: o alvo é o cartão, não o ícone lá dentro. */
 .criterio,
@@ -82,7 +102,8 @@
   text-align: center;
 }
 
-.criterio { min-height: 168px; }
+/* Piso, não medida: com espaço a mais as linhas esticam, e com pouco não descem daqui. */
+.criterio { min-height: 144px; padding: var(--space-4); }
 .opcao { min-height: 196px; gap: var(--space-3); }
 
 .nomeCriterio,

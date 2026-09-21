@@ -149,11 +149,48 @@ export interface Nutrition {
   saltGrams?: number;
 }
 
+/**
+ * De quem é a receita — o que o painel chama **Proveniência**.
+ *
+ * Vocabulário fechado, e é isso que o torna filtrável: o `author` é texto livre e serve para
+ * creditar, não para agrupar. "Sogros" e "Instagram" são o mesmo campo escrito à mão em dois
+ * sítios diferentes; `kind` é o que permite pedir "as da família" sem adivinhar nomes.
+ *
+ * `gerada` = escrita por AI, revista no papel, nunca cozinhada. `importada` é o resto — o que
+ * entrou por um caminho que nenhum dos outros descreve.
+ */
+export type RecipeSourceKind =
+  | 'propria'
+  | 'familia'
+  | 'amigo'
+  | 'livro'
+  | 'web'
+  | 'video'
+  | 'importada'
+  | 'gerada';
+
+/**
+ * Como cada proveniência se diz no ecrã.
+ *
+ * Nomes do ponto de vista de quem está na cozinha e não do schema: `web` é um *site*, `video` é um
+ * *vídeo* venha ele do YouTube, do Instagram ou do TikTok, e `propria` é *nossa*. A ordem é a que o
+ * painel usa, e vai de dentro de casa para fora.
+ */
+export const SOURCE_KIND_NAMES: Record<RecipeSourceKind, string> = {
+  propria: 'Nossa',
+  familia: 'Família',
+  amigo: 'Amigos',
+  livro: 'Livro',
+  web: 'Site',
+  video: 'Vídeo',
+  importada: 'Outra',
+  gerada: 'Gerada',
+};
+
 export interface RecipeSource {
-  /** `gerada` = escrita por AI, revista no papel, nunca cozinhada. */
-  kind?: 'propria' | 'familia' | 'livro' | 'web' | 'video' | 'importada' | 'gerada';
+  kind?: RecipeSourceKind;
   title?: string;
-  /** Autor, canal ou publicação de origem. */
+  /** Autor, canal ou publicação de origem. Texto livre: credita, não filtra. Ver `kind`. */
   author?: string;
   url?: string;
 }
