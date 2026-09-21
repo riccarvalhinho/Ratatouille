@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { EMPTY_FILTERS, applyFilters, durationBandOf, toggleFilter } from './filters.ts';
+import {
+  EMPTY_FILTERS,
+  applyFilters,
+  durationBandOf,
+  hasActiveFilters,
+  toggleFilter,
+} from './filters.ts';
 import type { Recipe } from './types.ts';
 
 function make(id: string, over: Partial<Recipe>): Recipe {
@@ -142,6 +148,57 @@ describe('applyFilters', () => {
   it('"hoje não me apetece ligar o forno" — o caso que motivou o campo', () => {
     const semForno = all.filter((r) => !r.methods.includes('forno'));
     expect(ids(semForno)).toEqual(['salada', 'sopa']);
+  });
+});
+
+describe('proveniência', () => {
+  const daSogra = make('da-sogra', { source: { kind: 'familia', author: 'Sogros' } });
+  const doInstagram = make('do-instagram', { source: { kind: 'video', author: 'alguém' } });
+  const semFonte = make('sem-fonte', {});
+  const comFonte = [daSogra, doInstagram, semFonte];
+
+  it('filtra pelo tipo de fonte e não pelo autor', () => {
+    const f = { ...EMPTY_FILTERS, sources: ['familia' as const] };
+    expect(ids(applyFilters(comFonte, f))).toEqual(['da-sogra']);
+  });
+
+  it('várias proveniências somam-se', () => {
+    const f = { ...EMPTY_FILTERS, sources: ['familia' as const, 'video' as const] };
+    expect(ids(applyFilters(comFonte, f))).toEqual(['da-sogra', 'do-instagram']);
+  });
+
+  it('uma receita sem fonte não responde a nenhuma proveniência', () => {
+    // Mesma regra do peso: não se sabe de onde veio, e um filtro que adivinha é pior do que um
+    // filtro que não encontra.
+    const f = { ...EMPTY_FILTERS, sources: ['propria' as const] };
+    expect(applyFilters(comFonte, f)).toEqual([]);
+  });
+});
+
+describe('favoritos', () => {
+  it('ligado, só passam as que estão na lista', () => {
+    const f = { ...EMPTY_FILTERS, favouritos: true };
+    expect(ids(applyFilters(all, f, new Set(['sopa', 'assado'])))).toEqual(['assado', 'sopa']);
+  });
+
+  it('cruza-se com os outros filtros como tudo o resto', () => {
+    const f = { ...EMPTY_FILTERS, favouritos: true, methods: ['forno' as const] };
+    expect(ids(applyFilters(all, f, new Set(['sopa', 'assado'])))).toEqual(['assado']);
+  });
+
+  it('desligado, a lista de favoritas é irrelevante', () => {
+    expect(applyFilters(all, EMPTY_FILTERS, new Set(['sopa']))).toHaveLength(4);
+  });
+
+  it('ligado sem lista nenhuma devolve zero, não o catálogo todo', () => {
+    // Falhar a mostrar nada vê-se; falhar a filtrar não — e passaria por o filtro estar a funcionar.
+    expect(applyFilters(all, { ...EMPTY_FILTERS, favouritos: true })).toEqual([]);
+  });
+
+  it('conta como filtro ativo, para o cabeçalho dizer "X de Y"', () => {
+    expect(hasActiveFilters({ ...EMPTY_FILTERS, favouritos: true })).toBe(true);
+    expect(hasActiveFilters({ ...EMPTY_FILTERS, sources: ['livro'] })).toBe(true);
+    expect(hasActiveFilters(EMPTY_FILTERS)).toBe(false);
   });
 });
 

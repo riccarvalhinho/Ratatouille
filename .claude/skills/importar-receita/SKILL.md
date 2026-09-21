@@ -45,6 +45,24 @@ O Instagram é o caso mais difícil: bloqueia leitura anónima. Se falhar, pedir
 Da fonte, tirar: nome, ingredientes com quantidades, passos, tempos, doses ou rendimento,
 equipamento, e origem de cozinha.
 
+**E `source.kind`, que agora é um filtro e não só um crédito.** É o que alimenta o critério
+"Proveniência" do painel "Apetece-me algo" — uma receita com o `kind` errado fica fora do filtro
+certo, e uma sem `kind` nenhum não aparece em nenhum. O vocabulário:
+
+| `kind` | Quando |
+|---|---|
+| `propria` | Inventada ou afinada cá em casa |
+| `familia` | Veio de alguém da família — sogros, avós, pais. O nome vai em `author` |
+| `amigo` | Veio de alguém de fora da família |
+| `livro` | Livro de receitas. O título vai em `title` |
+| `web` | Site, blogue, receita online |
+| `video` | YouTube, Instagram, TikTok |
+| `gerada` | Escrita por AI a partir do nome do prato, sem fonte externa |
+| `importada` | Nenhum dos anteriores descreve. Último recurso, não omissão |
+
+Na dúvida entre dois, **perguntar** — o `kind` não se adivinha do formato do ficheiro. Um print de
+um Instagram que a mãe mandou pode ser `familia` ou `video`, e quem sabe é quem a deu.
+
 **As instruções são sempre reescritas, nunca copiadas.** Uma lista de ingredientes é facto e não tem
 direitos de autor; o texto das instruções de outra pessoa tem, e este repositório é público.
 

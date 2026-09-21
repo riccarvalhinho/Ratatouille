@@ -5,7 +5,7 @@
  * Escolher "forno" e "tacho" mostra receitas de forno ou de tacho; escolher "forno" e "leve" mostra
  * só as que são as duas coisas.
  */
-import type { CookingMethod, Recipe, Weight } from './types.ts';
+import type { CookingMethod, Recipe, RecipeSourceKind, Weight } from './types.ts';
 
 /**
  * Escalões de duração. São quatro e não três desde a conversa 2: o painel "Apetece-me algo" mostra-os
@@ -55,6 +55,26 @@ export interface CatalogueFilters {
    * vinte e quatro horas de molho é o pior momento possível.
    */
   semVespera: boolean;
+  /**
+   * De quem é a receita: `source.kind`. Sai do schema como os métodos, sem passar por labels.
+   *
+   * Filtra-se pelo `kind` e não pelo `author` de propósito — o autor é texto livre, e um filtro
+   * sobre texto livre tem tantas opções quantas as receitas. "Sogros" e "Instagram" chegam ao
+   * ecrã de detalhe pelo crédito; aqui o que se pergunta é *de que lado* veio.
+   */
+  sources: RecipeSourceKind[];
+  /**
+   * Só as favoritas. **Não é um critério do "Apetece-me algo"** — é um coração na barra do
+   * catálogo, ligado ou desligado.
+   *
+   * Está nos filtros na mesma, e não num estado ao lado, porque a regra da conversa 2 é um estado
+   * só: com o coração à parte, a contagem do painel dizia um número e a lista mostrava outro.
+   *
+   * O que ele *não* traz é a lista de favoritas — essa vive no `local-store` e chega às funções
+   * daqui como argumento. Um filtro que carregasse consigo o estado da app deixava de ser uma
+   * pergunta e passava a ser uma cópia.
+   */
+  favouritos: boolean;
 }
 
 export const EMPTY_FILTERS: CatalogueFilters = {
@@ -63,7 +83,17 @@ export const EMPTY_FILTERS: CatalogueFilters = {
   weights: [],
   labels: {},
   semVespera: false,
+  sources: [],
+  favouritos: false,
 };
+
+/**
+ * O que vale quando ninguém passa a lista de favoritas.
+ *
+ * Vazio e não "todas": com o coração ligado e sem lista, o ecrã mostra zero — que se vê — em vez de
+ * mostrar o catálogo inteiro a fingir que o filtro está a funcionar.
+ */
+const SEM_FAVORITAS: ReadonlySet<string> = new Set();
 
 /** Tempo ativo: preparação mais confeção. A antecedência não conta — não é tempo na cozinha. */
 export function activeMinutes(recipe: Recipe): number {
@@ -92,7 +122,16 @@ export function needsPrepAhead(recipe: Recipe): boolean {
   return recipe.timing.prepAhead !== undefined;
 }
 
-export function matchesFilters(recipe: Recipe, filters: CatalogueFilters): boolean {
+/**
+ * As favoritas chegam por argumento e não dentro dos filtros: os filtros dizem o que se quer, o
+ * `local-store` sabe o que está marcado. Omitir a lista com o coração ligado devolve zero.
+ */
+export function matchesFilters(
+  recipe: Recipe,
+  filters: CatalogueFilters,
+  favouritas: ReadonlySet<string> = SEM_FAVORITAS,
+): boolean {
+  if (filters.favouritos && !favouritas.has(recipe.id)) return false;
   if (filters.durations.length > 0 && !fitsDurationBands(recipe, filters.durations)) {
     return false;
   }
@@ -104,6 +143,15 @@ export function matchesFilters(recipe: Recipe, filters: CatalogueFilters): boole
   if (filters.weights.length > 0) {
     if (!recipe.weight || !filters.weights.includes(recipe.weight)) return false;
   }
+  /*
+   * Uma receita sem `source.kind` não é "de todas as proveniências": não se sabe de onde veio, e
+   * por isso não responde a nenhuma. Mesma regra do `weight`, que também deixa de fora quem não
+   * declara — um filtro que adivinha é pior do que um filtro que não encontra.
+   */
+  if (filters.sources.length > 0) {
+    const kind = recipe.source?.kind;
+    if (!kind || !filters.sources.includes(kind)) return false;
+  }
   // Um grupo de cada vez: dentro dele basta uma, mas todos os grupos escolhidos têm de acertar.
   for (const escolhidas of Object.values(filters.labels)) {
     if (escolhidas.length > 0 && !recipe.labels.some((l) => escolhidas.includes(l))) return false;
@@ -111,8 +159,12 @@ export function matchesFilters(recipe: Recipe, filters: CatalogueFilters): boole
   return true;
 }
 
-export function applyFilters(recipes: Recipe[], filters: CatalogueFilters): Recipe[] {
-  return recipes.filter((recipe) => matchesFilters(recipe, filters));
+export function applyFilters(
+  recipes: Recipe[],
+  filters: CatalogueFilters,
+  favouritas?: ReadonlySet<string>,
+): Recipe[] {
+  return recipes.filter((recipe) => matchesFilters(recipe, filters, favouritas));
 }
 
 export function hasActiveFilters(filters: CatalogueFilters): boolean {
@@ -120,8 +172,10 @@ export function hasActiveFilters(filters: CatalogueFilters): boolean {
     filters.durations.length > 0 ||
     filters.methods.length > 0 ||
     filters.weights.length > 0 ||
+    filters.sources.length > 0 ||
     Object.values(filters.labels).some((ids) => ids.length > 0) ||
-    filters.semVespera
+    filters.semVespera ||
+    filters.favouritos
   );
 }
 

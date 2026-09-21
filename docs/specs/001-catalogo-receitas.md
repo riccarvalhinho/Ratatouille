@@ -51,22 +51,63 @@ Barra de filtros no topo, sempre visível:
 - **Método** — forno, tacho, frigideira, grelhador, air fryer, micro-ondas, sem confeção.
   "Hoje não me apetece ligar o forno" é uma coisa que se pensa mesmo
 - **Peso** — leve, equilibrado, substancial
+- **Proveniência** — de quem é a receita: nossa, família, amigos, livro, site, vídeo, outra, gerada
 - **Labels** — seleção múltipla a partir de `data/taxonomies/labels.json`
 
 Os filtros combinam-se entre si: dentro do mesmo tipo somam-se (OU), entre tipos restringem-se (E).
 Um estado de "sem resultados" explica que filtros estão ativos e oferece limpá-los.
 
-### Subtabs
+#### A proveniência filtra pelo tipo de fonte, não pelo autor
 
-- **Todas** — o catálogo completo
-- **Favoritos** — só as receitas marcadas com coração, à mão, no detalhe
+Sai de `source.kind`, que é vocabulário fechado. **Não sai de `source.author`**, que é texto livre:
+um filtro sobre texto livre tem tantas opções quantas as receitas, e "Sogros", "sogros" e "Casa dos
+sogros" seriam três. O autor continua a ver-se onde interessa — no crédito do ecrã de detalhe
+(spec 002).
 
-Os filtros aplicam-se dentro de qualquer subtab.
+Enquanto o catálogo era todo gerado isto não tinha uso. Passa a ter à medida que entram receitas de
+origens diferentes, e é aí que "apetece-me uma das nossas" ou "aquela que os sogros deram" deixa de
+se responder a percorrer a grelha.
 
-**O histórico esteve aqui, como terceira subtab, e saiu** — é hoje um destino próprio da navegação
-(spec 008). Como subtab era uma lista de receitas filtrada por "já fiz", e aí seria de facto uma
-vista do catálogo. Com datas e contagens deixou de ser: cada linha é uma refeição, a mesma receita
-aparece cinco vezes, e a ordem é cronológica e não alfabética. Fechou a pergunta 3 da conversa 8.
+Uma receita **sem** `source.kind` não responde a nenhuma proveniência — mesma regra do peso. Um
+filtro que adivinha de onde veio uma receita é pior do que um filtro que não a encontra.
+
+### Favoritos: um coração na barra, não uma subtab
+
+Interruptor no topo do catálogo, ao lado do "Apetece-me algo": ligado, mostra só as favoritas;
+desligado, mostra tudo. Cruza-se com os outros filtros como qualquer um deles — ligado com "forno"
+escolhido dá as favoritas de forno.
+
+**Não está no painel "Apetece-me algo"**, e é a diferença que a conversa 2 já tinha apontado: um
+favorito é um **juízo** que não caduca, não uma apetência de hoje. Um critério de painel pergunta
+"o que te apetece agora"; o coração responde "aquelas de que já gostas". São duas perguntas
+diferentes e só uma delas se faz em dois níveis de mosaicos.
+
+Consequências, todas pequenas e todas deliberadas:
+
+- Escreve nos **mesmos filtros** que o painel, e não num estado ao lado: senão a contagem do painel
+  prometia dezassete receitas para mostrar duas.
+- O **"Limpar" do painel não o desliga.** Limpar o que está noutro ecrã apaga uma escolha que quem
+  carregou não está sequer a ver. O "Limpar tudo" da barra de pastilhas, esse, limpa mesmo tudo.
+- O vazio tem **duas mensagens**: "ainda não há favoritos" quando o coração está sozinho, e "nenhum
+  favorito com estes filtros" quando há mais alguma coisa ligada. Mandar tirar um filtro a quem só
+  carregou no coração é mandar procurar um filtro que não existe.
+
+### Subtabs: não há nenhuma
+
+Esta secção listava três — **Todas**, **Favoritos** e **Histórico** — e ficaram zero. Não foi uma
+decisão sobre subtabs; foi cada uma das outras duas descobrir que não era uma vista do catálogo.
+
+**O histórico saiu para um destino próprio da navegação** (spec 008). Como subtab era uma lista de
+receitas filtrada por "já fiz", e aí seria de facto uma vista do catálogo. Com datas e contagens
+deixou de ser: cada linha é uma refeição, a mesma receita aparece cinco vezes, e a ordem é
+cronológica e não alfabética. Fechou a pergunta 3 da conversa 8.
+
+**Os favoritos passaram a um coração na barra de filtros**, na secção anterior. Pelo motivo oposto:
+não são *demasiado* diferentes do catálogo, são a mesma vista mais estreita. Uma subtab é um sítio
+onde se entra e de onde se sai; um favorito é um estreitamento do que já se está a ver, como
+qualquer outro filtro.
+
+Sobra o catálogo, que nunca precisou de se chamar "Todas" para ser o que é.
 
 **Favoritos e histórico não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
 caduca. O histórico é um **facto** — "fiz isto a 12 de agosto", e acumula-se. Um existe sem o outro:
@@ -76,18 +117,21 @@ lista com um sinalizador.
 
 ### Abrir uma receita
 
-Tocar num cartão abre o pop-up de detalhe (spec 002). O estado do catálogo — subtab, filtros, posição
-do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo sítio.
+Tocar num cartão abre o pop-up de detalhe (spec 002). O estado do catálogo — filtros, coração,
+posição do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo sítio.
 
 ## Critérios de aceitação
 
 - [ ] A grelha mostra todas as receitas de `data/recipes/` sem alterações de código
 - [ ] Um cartão mostra thumbnail, nome, duração, rendimento e até 3 labels
 - [ ] Uma receita com antecedência de preparação mostra-o no cartão; uma sem, não mostra nada
-- [ ] Filtrar por duração, método, peso e labels devolve o subconjunto correto
+- [ ] Filtrar por duração, método, peso, proveniência e labels devolve o subconjunto correto
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
+- [ ] Uma receita sem `source.kind` não aparece sob nenhuma proveniência
 - [ ] Existe estado de "sem resultados" com ação de limpar filtros
-- [ ] A subtab de favoritos mostra só receitas marcadas
+- [ ] O coração mostra só as favoritas, e cruza-se com os outros filtros
+- [ ] O coração conta para a contagem do painel "Apetece-me algo"
+- [ ] O "Limpar" do painel não desliga o coração
 - [x] O histórico tem destino próprio e ordena por data mais recente — ver spec 008
 - [ ] Fechar o detalhe devolve à mesma posição de scroll e aos mesmos filtros
 - [ ] Todos os alvos de toque têm pelo menos 56×56px

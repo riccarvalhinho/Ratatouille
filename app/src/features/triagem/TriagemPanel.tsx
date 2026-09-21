@@ -3,7 +3,7 @@
  *
  * Um assistente de filtro, não um questionário: dois níveis de mosaicos onde se toca no critério, ele
  * abre as opções em ícones, e volta-se. **Nada é obrigatório** — um toque num critério, uma opção, e
- * pode ir-se embora sem passar pelos outros sete.
+ * pode ir-se embora sem passar pelos outros oito.
  *
  * Não substitui os filtros à mão e não é o ponto de entrada da app: a lista completa continua a ser o
  * ecrã principal e isto é uma porta lateral. E escreve **nos mesmos filtros** que o catálogo já usa —
@@ -28,6 +28,11 @@ import styles from './TriagemPanel.module.css';
 interface TriagemPanelProps {
   catalogue: Catalogue;
   filters: CatalogueFilters;
+  /**
+   * As favoritas, para as contagens. O coração não está neste painel, mas pode estar ligado lá
+   * fora — e um painel que contasse sem ele prometia dezassete receitas para mostrar duas.
+   */
+  favoritas: ReadonlySet<string>;
   onChange: (filters: CatalogueFilters) => void;
   onClose: () => void;
 }
@@ -39,10 +44,16 @@ function Icone({ chave, size }: { chave: string; size: number }) {
   return <Desenho style={{ fontSize: size }} aria-hidden="true" />;
 }
 
-export function TriagemPanel({ catalogue, filters, onChange, onClose }: TriagemPanelProps) {
+export function TriagemPanel({
+  catalogue,
+  filters,
+  favoritas,
+  onChange,
+  onClose,
+}: TriagemPanelProps) {
   const [aberto, setAberto] = useState<CriterioTriagem | undefined>();
   const criterios = criteriosDeTriagem(catalogue);
-  const resultado = applyFilters(catalogue.recipes, filters).length;
+  const resultado = applyFilters(catalogue.recipes, filters, favoritas).length;
 
   // Sair com Escape: o painel cobre o ecrã e não há botão de retroceder num tablet em modo app.
   useEffect(() => {
@@ -78,7 +89,7 @@ export function TriagemPanel({ catalogue, filters, onChange, onClose }: TriagemP
           <ul className={styles.grelhaOpcoes}>
             {aberto.opcoes.map((opcao) => {
               const escolhida = opcao.escolhida(filters);
-              const quantas = contagemSe(catalogue.recipes, filters, opcao);
+              const quantas = contagemSe(catalogue.recipes, filters, opcao, favoritas);
               return (
                 <li key={opcao.id}>
                   <button
@@ -110,7 +121,7 @@ export function TriagemPanel({ catalogue, filters, onChange, onClose }: TriagemP
             })}
           </ul>
         ) : (
-          /* Nível 1 — os oito critérios. */
+          /* Nível 1 — os nove critérios. */
           <ul className={styles.grelhaCriterios}>
             {criterios.map((criterio) => {
               const escolhido = escolhidas(criterio);
