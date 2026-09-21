@@ -6,6 +6,7 @@ describe('parseHash', () => {
     expect(parseHash('#/receitas')).toEqual({ screen: 'receitas' });
     expect(parseHash('#/planeamento')).toEqual({ screen: 'planeamento' });
     expect(parseHash('#/compras')).toEqual({ screen: 'compras' });
+    expect(parseHash('#/historico')).toEqual({ screen: 'historico' });
   });
 
   it('abre nas receitas quando não há rota — é o ecrã que tem conteúdo', () => {
@@ -54,6 +55,9 @@ describe('toHash', () => {
       { screen: 'receitas' as const },
       { screen: 'receitas' as const, recipeId: 'caldo-verde' },
       { screen: 'receitas' as const, triagem: true },
+      { screen: 'historico' as const },
+      // O detalhe abre a partir do histórico e tem de saber voltar para lá, e não para o catálogo.
+      { screen: 'historico' as const, recipeId: 'caldo-verde' },
     ]) {
       expect(parseHash(toHash(route))).toEqual(route);
     }

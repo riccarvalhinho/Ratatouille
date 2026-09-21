@@ -28,6 +28,19 @@ const DESTINATIONS: Destination[] = [
     path: 'M4 6h16v14H4zM4 10h16M8 3v4M16 3v4M9 14h2M14 14h2',
   },
   { screen: 'compras', label: 'Compras', path: 'M4 5h2l2.5 10h9L20 8H7M9 19h.01M17 19h.01' },
+  /*
+   * O histórico entra como destino e não como subtab do catálogo, fechando a pergunta 3 da conversa
+   * 8. A razão é a da própria spec 001: favoritos e histórico não são duas vistas da mesma lista —
+   * o histórico é um facto com data, e vai-se lá ver o que se comeu, não procurar uma receita.
+   *
+   * Fica no fim dos destinos de produto e não ao lado das Receitas de propósito: os quatro que já lá
+   * estavam mantêm a posição que o dedo aprendeu.
+   */
+  {
+    screen: 'historico',
+    label: 'Histórico',
+    path: 'M12 8v4l3 2M3 9a9 9 0 1 1 1 6M3 4.5V9h4.5',
+  },
 ];
 
 /*

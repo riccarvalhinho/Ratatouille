@@ -139,6 +139,22 @@ export function dayOfMonth(isoDate: string): string {
 }
 
 /**
+ * A data por extenso, sem o ano quando é o corrente: "19 de agosto", "19 de agosto de 2025".
+ *
+ * O ano só quando não é o de hoje porque no histórico ele é ruído em noventa por cento das linhas e
+ * informação nas outras — e "19 de agosto de 2026" lido vinte vezes seguidas não se lê, percorre-se.
+ */
+export function formatDayMonth(isoDate: string, today: string): string {
+  const date = new Date(`${isoDate}T00:00:00Z`);
+  const day = date.getUTCDate();
+  const month = MONTHS[date.getUTCMonth()]!;
+  const year = date.getUTCFullYear();
+  return year === Number(today.slice(0, 4))
+    ? `${day} de ${month}`
+    : `${day} de ${month} de ${year}`;
+}
+
+/**
  * O intervalo de uma semana em linguagem corrente: "24 a 30 de agosto".
  * Quando a semana atravessa meses ou anos, ambos aparecem — senão lê-se mal.
  */

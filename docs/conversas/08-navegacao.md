@@ -1,6 +1,6 @@
 # Conversa 8 — Navegação entre ecrãs
 
-**Estado:** Por começar
+**Estado:** Em curso — a pergunta 3 foi decidida fora da conversa
 **Conduz:** Claude
 **Destino das decisões:** `docs/design/design-system.md`, specs dos ecrãs
 **Em movimento:** sim — é sobre como se chega a cada sítio, não sobre aspeto
@@ -31,8 +31,15 @@ Do benchmark do Cookidoo, e agora implementado:
    navega. Isso quer dizer que há um estado da app onde a navegação desaparece. Vale a pena, ou é
    desconcertante?
 
-3. **Favoritos e histórico: destinos ou subtabs?** A spec 001 põe-nos como subtabs dentro das
-   receitas. Podiam ser destinos próprios. Depende de com que frequência se vai lá diretamente.
+3. ~~**Favoritos e histórico: destinos ou subtabs?**~~ **Decidido, fora da conversa:** o histórico é
+   um **destino próprio**; os favoritos ficam como subtab do catálogo.
+
+   A razão acabou por não ser a frequência com que se vai lá, que era o critério que esta pergunta
+   propunha, mas a **forma da lista**. Um histórico com datas e contagens não é o catálogo com um
+   filtro: cada linha é uma refeição e não uma receita, a mesma receita aparece cinco vezes, e a
+   ordem é cronológica. Os favoritos são mesmo o catálogo com um filtro, e por isso ficam lá dentro.
+
+   Ver `docs/specs/008-historico.md`. Restam as perguntas 1, 2 e 4.
 
 4. **Como se volta atrás?** Numa PWA instalada no ecrã inicial não há botão de retroceder do browser.
    Tudo o que abre tem de ter forma explícita de fechar — hoje só o detalhe tem.
@@ -62,3 +69,6 @@ _(por começar)_
 
 | Decisão | Onde ficou registada |
 |---|---|
+| O histórico é um destino da navegação, e não uma subtab do catálogo | `docs/specs/008-historico.md`, `docs/specs/001-catalogo-receitas.md` |
+| Os favoritos ficam subtab do catálogo | `docs/specs/001-catalogo-receitas.md` |
+| Cinco destinos de produto: Hoje, Receitas, Semana, Compras, Histórico | já construído (`app/src/ui/NavRail.tsx`) |

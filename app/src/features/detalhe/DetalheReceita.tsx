@@ -140,9 +140,10 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
               </ul>
 
               {/*
-                O modo cozinha marca sozinho ao terminar. Isto é para o resto: o que se cozinha de
-                cabeça, sem sequer acender o tablet, e que sem este botão nunca entrava no histórico —
-                deixando o "última vez" a mentir precisamente nas receitas que se sabem de cor.
+                A segunda porta para o histórico, e a que serve o que se cozinha de cabeça, sem
+                sequer acender o tablet — sem ela o "última vez" mentia precisamente nas receitas que
+                se sabem de cor. A outra é o fim do modo cozinha, que também pede o toque: nenhuma
+                das duas marca sozinha.
               */}
               <button
                 type="button"
