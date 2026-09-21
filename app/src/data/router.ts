@@ -9,7 +9,7 @@
  */
 import { useEffect, useState } from 'react';
 
-export type Screen = 'home' | 'receitas' | 'planeamento' | 'compras' | 'definicoes';
+export type Screen = 'home' | 'receitas' | 'historico' | 'planeamento' | 'compras' | 'definicoes';
 
 export interface Route {
   screen: Screen;
@@ -25,7 +25,7 @@ export interface Route {
   triagem?: boolean;
 }
 
-const SCREENS: Screen[] = ['home', 'receitas', 'planeamento', 'compras', 'definicoes'];
+const SCREENS: Screen[] = ['home', 'receitas', 'historico', 'planeamento', 'compras', 'definicoes'];
 
 /**
  * Onde a app abre quando não há rota no URL.

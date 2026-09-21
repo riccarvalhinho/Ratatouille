@@ -12,6 +12,7 @@ import { ModoCozinha } from './features/cozinha/ModoCozinha.tsx';
 import { DetalheReceita } from './features/detalhe/DetalheReceita.tsx';
 import { ComprasScreen } from './features/compras/ComprasScreen.tsx';
 import { DefinicoesScreen } from './features/definicoes/DefinicoesScreen.tsx';
+import { HistoricoScreen } from './features/historico/HistoricoScreen.tsx';
 import { PlaneamentoScreen } from './features/planeamento/PlaneamentoScreen.tsx';
 import { NavRail } from './ui/NavRail.tsx';
 import { PorConstruir } from './ui/PorConstruir.tsx';
@@ -134,6 +135,10 @@ export function App() {
               Vai mostrar as refeições de hoje por bloco do dia, o resto da semana em resumo, e o que
               se cozinhou nos últimos dias. Sem plano, um convite a planear.
             </PorConstruir>
+          )}
+
+          {route.screen === 'historico' && catalogue && store.ready && (
+            <HistoricoScreen catalogue={catalogue} store={store} today={today} />
           )}
 
           {route.screen === 'planeamento' && catalogue && store.ready && (

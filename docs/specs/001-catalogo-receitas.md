@@ -73,11 +73,15 @@ Um estado de "sem resultados" explica que filtros estão ativos e oferece limpá
 
 - **Todas** — o catálogo completo
 - **Favoritos** — só as receitas marcadas com coração, à mão, no detalhe
-- **Histórico** — receitas já cozinhadas, mais recentes primeiro, com a data
 
 Os filtros aplicam-se dentro de qualquer subtab.
 
-**Não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
+**O histórico esteve aqui, como terceira subtab, e saiu** — é hoje um destino próprio da navegação
+(spec 008). Como subtab era uma lista de receitas filtrada por "já fiz", e aí seria de facto uma
+vista do catálogo. Com datas e contagens deixou de ser: cada linha é uma refeição, a mesma receita
+aparece cinco vezes, e a ordem é cronológica e não alfabética. Fechou a pergunta 3 da conversa 8.
+
+**Favoritos e histórico não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
 caduca. O histórico é um **facto** — "fiz isto a 12 de agosto", e acumula-se. Um existe sem o outro:
 há receitas que se adoram e nunca se fizeram, e coisas que se fazem todas as semanas por hábito sem
 gostar particularmente delas. Por isso são ficheiros separados, com formas diferentes, e não uma
@@ -97,7 +101,7 @@ do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo s
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
 - [ ] Existe estado de "sem resultados" com ação de limpar filtros
 - [ ] A subtab de favoritos mostra só receitas marcadas
-- [ ] A subtab de histórico ordena por data mais recente
+- [x] O histórico tem destino próprio e ordena por data mais recente — ver spec 008
 - [x] O "+" do cartão planeia a receita sem abrir o detalhe nem sair da lista
 - [ ] Fechar o detalhe devolve à mesma posição de scroll e aos mesmos filtros
 - [ ] Todos os alvos de toque têm pelo menos 56×56px

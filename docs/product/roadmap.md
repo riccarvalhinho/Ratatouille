@@ -67,7 +67,7 @@ imagens — que continua à espera da Q13.
 - Grelha de receitas com thumbnails, tempos e labels
 - Filtros por duração, dificuldade e labels
 - Pop-up de detalhe completo: ingredientes, passo a passo, utensílios, nutrição
-- Subtabs de favoritos e histórico (só leitura nesta fase)
+- Subtab de favoritos (só leitura nesta fase). O histórico saiu daqui e é um destino — spec 008
 
 **Feito quando:** dá para descobrir e ler uma receita no tablet sem tocar num teclado, e o catálogo
 tem receitas que chegue para isso ser útil.
@@ -123,8 +123,13 @@ aplicada a um ecrã com a forma oposta.
 - Timers por passo
 - Manter o ecrã ligado durante a confeção
 - Escalar doses para o número de pessoas
+- [x] Ecrã de histórico, com destino próprio na navegação (spec 008)
 
 **Feito quando:** dá para cozinhar uma receita do início ao fim sem tocar noutra coisa.
+
+O histórico entrou aqui e não no M1 por ter deixado de ser uma subtab do catálogo: só faz sentido
+como ecrã depois de haver quem o escreva, e quem o escreve é o fim do modo cozinha. Entrou com ele a
+revisão da Q5 — o "Terminar" deixou de marcar sozinho, e passou a haver um "Marcar como cozinhada".
 
 ---
 

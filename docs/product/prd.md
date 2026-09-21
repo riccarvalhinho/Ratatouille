@@ -33,7 +33,7 @@ Requisitos:
 
 - Filtrar por duração, dificuldade e labels.
 - Guardar receitas nos favoritos, com uma subtab de favoritos.
-- Subtab de histórico.
+- O histórico tem destino próprio na navegação, e não uma subtab — ver `docs/specs/008-historico.md`.
 - Clicar numa receita abre o pop-up de detalhe.
 
 Spec: `docs/specs/001-catalogo-receitas.md`.
