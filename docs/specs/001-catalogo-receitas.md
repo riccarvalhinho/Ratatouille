@@ -92,20 +92,24 @@ Consequências, todas pequenas e todas deliberadas:
   favorito com estes filtros" quando há mais alguma coisa ligada. Mandar tirar um filtro a quem só
   carregou no coração é mandar procurar um filtro que não existe.
 
-### Subtabs
+### Subtabs: não há nenhuma
 
-- **Todas** — o catálogo completo
-- **Histórico** — receitas já cozinhadas, mais recentes primeiro, com a data
+Esta secção listava três — **Todas**, **Favoritos** e **Histórico** — e ficaram zero. Não foi uma
+decisão sobre subtabs; foi cada uma das outras duas descobrir que não era uma vista do catálogo.
 
-Os filtros aplicam-se dentro de qualquer subtab.
+**O histórico saiu para um destino próprio da navegação** (spec 008). Como subtab era uma lista de
+receitas filtrada por "já fiz", e aí seria de facto uma vista do catálogo. Com datas e contagens
+deixou de ser: cada linha é uma refeição, a mesma receita aparece cinco vezes, e a ordem é
+cronológica e não alfabética. Fechou a pergunta 3 da conversa 8.
 
-> **Os favoritos deixaram de ser uma subtab.** Estavam aqui como terceira vista; passaram a ser o
-> coração da secção anterior. Uma subtab é um sítio onde se entra e de onde se sai, e os favoritos
-> não são um sítio — são um estreitamento do que já se está a ver, como os outros filtros. O
-> histórico continua a ser uma subtab a sério, porque mostra outra coisa: datas, e a mesma receita
-> mais do que uma vez.
+**Os favoritos passaram a um coração na barra de filtros**, na secção anterior. Pelo motivo oposto:
+não são *demasiado* diferentes do catálogo, são a mesma vista mais estreita. Uma subtab é um sítio
+onde se entra e de onde se sai; um favorito é um estreitamento do que já se está a ver, como
+qualquer outro filtro.
 
-**O favorito e o histórico não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
+Sobra o catálogo, que nunca precisou de se chamar "Todas" para ser o que é.
+
+**Favoritos e histórico não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
 caduca. O histórico é um **facto** — "fiz isto a 12 de agosto", e acumula-se. Um existe sem o outro:
 há receitas que se adoram e nunca se fizeram, e coisas que se fazem todas as semanas por hábito sem
 gostar particularmente delas. Por isso são ficheiros separados, com formas diferentes, e não uma
@@ -113,8 +117,8 @@ lista com um sinalizador.
 
 ### Abrir uma receita
 
-Tocar num cartão abre o pop-up de detalhe (spec 002). O estado do catálogo — subtab, filtros, posição
-do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo sítio.
+Tocar num cartão abre o pop-up de detalhe (spec 002). O estado do catálogo — filtros, coração,
+posição do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo sítio.
 
 ## Critérios de aceitação
 
@@ -128,7 +132,7 @@ do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo s
 - [ ] O coração mostra só as favoritas, e cruza-se com os outros filtros
 - [ ] O coração conta para a contagem do painel "Apetece-me algo"
 - [ ] O "Limpar" do painel não desliga o coração
-- [ ] A subtab de histórico ordena por data mais recente
+- [x] O histórico tem destino próprio e ordena por data mais recente — ver spec 008
 - [ ] Fechar o detalhe devolve à mesma posição de scroll e aos mesmos filtros
 - [ ] Todos os alvos de toque têm pelo menos 56×56px
 - [ ] A grelha funciona offline depois da primeira carga

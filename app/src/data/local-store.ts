@@ -102,14 +102,16 @@ export interface LocalStore {
   isFavourite: (recipeId: string) => boolean;
   toggleFavourite: (recipeId: string) => void;
 
+  /**
+   * O histórico inteiro, já com o que ainda não saiu do tablet. Mais recentes primeiro.
+   * É o que o ecrã de histórico lê — ver docs/specs/008-historico.md.
+   */
+  history: HistoryEntry[];
   /** Data mais recente em que cada receita foi cozinhada, já com o histórico local. */
   lastCooked: Map<string, string>;
   /** Regista que uma receita foi mesmo cozinhada. Sem duplicar o mesmo prato no mesmo dia. */
   markCooked: (recipeId: string, date: string, block?: MealBlock) => void;
-  /**
-   * Tira do histórico. Existe porque o modo cozinha passou a marcar sozinho ao terminar: sem forma
-   * de desfazer, um passeio pelos passos até ao fim ficava registado como uma refeição que não houve.
-   */
+  /** Tira do histórico. É o desfazer de um toque enganado no "marcar como cozinhada". */
   unmarkCooked: (recipeId: string, date: string) => void;
   wasCookedOn: (recipeId: string, date: string) => boolean;
 
@@ -219,7 +221,7 @@ export function useLocalStore(bundle: DataBundle | undefined, outbox: Outbox): L
   // --- histórico ---
 
   const history = useMemo(
-    () => edits.history ?? bundle?.history ?? [],
+    () => sortHistory(edits.history ?? bundle?.history ?? []),
     [edits.history, bundle],
   );
 
@@ -276,6 +278,7 @@ export function useLocalStore(bundle: DataBundle | undefined, outbox: Outbox): L
     favourites,
     isFavourite,
     toggleFavourite,
+    history,
     lastCooked,
     markCooked,
     unmarkCooked,

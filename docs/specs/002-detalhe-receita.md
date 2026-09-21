@@ -15,7 +15,7 @@ Ver tudo sobre uma receita antes de decidir cozinhá-la ou planeá-la, sem sair 
 
 ## Comportamento
 
-Pop-up sobre o ecrã atual. Abre a partir do catálogo, do histórico ou da vista de planeamento semanal,
+Pop-up sobre o ecrã atual. Abre a partir do catálogo, do histórico (spec 008) ou da vista de planeamento semanal,
 e ao fechar devolve sempre ao sítio de onde foi aberto, com o estado intacto.
 
 ### Estrutura
@@ -36,10 +36,11 @@ ao topo.
 3. Método de confeção, peso, tempo de preparação, tempo de confeção e antecedência necessária
 4. Última vez que foi feita — a data mais recente do **histórico**, não do plano. Se nunca foi, di-lo
    explicitamente ("nunca cozinhada")
-5. **"Já fiz isto hoje"**, um botão discreto ao lado. O modo cozinha escreve o histórico sozinho ao
-   terminar; isto é para o resto — o que se cozinha de cabeça, sem sequer acender o tablet. Sem ele,
-   o "última vez" mentia precisamente nas receitas que se sabem de cor. Marcado, muda de cor e não só
-   de texto, e volta a tocar-se para desfazer
+5. **"Já fiz isto hoje"**, um botão discreto ao lado. É uma das duas portas do histórico — a outra é
+   o "Marcar como cozinhada" no fim do modo cozinha (spec 005), e **nenhuma das duas marca sozinha**.
+   Esta serve o que se cozinha de cabeça, sem sequer acender o tablet; sem ela, o "última vez" mentia
+   precisamente nas receitas que se sabem de cor. Marcado, muda de cor e não só de texto, e volta a
+   tocar-se para desfazer
 6. Rendimento — para quantas pessoas dá, ou quantas unidades rende, ou ambos
 6b. **Acompanhamento: "não vem na receita"**, quando `needsSide` (Q14). Mais uma linha da mesma
     lista de factos, com o mesmo aspeto das outras — não é aviso nem bloco próprio. Só aparece na

@@ -340,7 +340,7 @@ _(por começar)_
 | A pesquisa por texto entra — mas não como primeira coisa do ecrã | `docs/specs/001-catalogo-receitas.md` |
 | Favoritos e histórico são duas coisas: um é um juízo, o outro é um facto | `docs/specs/001-catalogo-receitas.md` |
 | Os favoritos marcam-se à mão, pelo coração do detalhe | já construído |
-| O histórico escreve-se no "Terminar" do modo cozinha, com desfazer | `docs/product/open-questions.md` (Q5), `docs/specs/005-modo-cozinha.md` |
+| ~~O histórico escreve-se no "Terminar" do modo cozinha, com desfazer~~ — **revista com o uso**: o "Terminar" não marca nada, o ecrã do fim pede o toque | `docs/product/open-questions.md` (Q5), `docs/specs/005-modo-cozinha.md`, `docs/specs/008-historico.md` |
 | O detalhe tem um "Já fiz isto hoje" para o que se cozinha sem o tablet | `docs/specs/002-detalhe-receita.md` |
 | O plano da semana nunca escreve histórico sozinho | `docs/product/open-questions.md` (Q5) |
 | O orçamento das imagens fica como está, a rever antes da primeira importação em série | nota neste ficheiro |

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   datesOfIsoWeek,
   dayOfMonth,
+  formatDayMonth,
   formatLastCooked,
   formatWeekRange,
   fullWeek,
@@ -162,5 +163,16 @@ describe('formatadores de data', () => {
     // Construída em hora local: às 23h30 de 24 de agosto, o dia continua a ser 24 seja qual for o
     // fuso. Com `toISOString()` directo, num fuso a leste do meridiano já seria dia 25.
     expect(todayIso(new Date(2026, 7, 24, 23, 30))).toBe('2026-08-24');
+  });
+});
+
+describe('formatDayMonth', () => {
+  it('escreve a data por extenso, sem o ano quando é o corrente', () => {
+    expect(formatDayMonth('2026-08-19', '2026-09-21')).toBe('19 de agosto');
+    expect(formatDayMonth('2026-03-01', '2026-03-01')).toBe('1 de março');
+  });
+
+  it('põe o ano quando não é o de hoje — aí deixa de ser ruído', () => {
+    expect(formatDayMonth('2025-12-31', '2026-09-21')).toBe('31 de dezembro de 2025');
   });
 });

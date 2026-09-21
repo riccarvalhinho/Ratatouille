@@ -49,4 +49,5 @@ Como este ecrã fica horas ligado:
 
 ## Questões em aberto
 
-- Q5 — o que conta como histórico
+- Q5 — o que conta como histórico: fechada e revista. Só conta o que for marcado à mão, no fim do
+  modo cozinha ou no detalhe. A secção de histórico recente deste ecrã lê o mesmo que a spec 008.

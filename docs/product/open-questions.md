@@ -92,7 +92,7 @@ decidir depois; decidir *depois* não é impossível, é só trabalho a dobrar.
 
 ## Q5 — O histórico é automático ou manual?
 
-**Estado:** **Fechada** na conversa 2, ronda 1 · aplicada
+**Estado:** **Fechada** na conversa 2, ronda 1 · **revista com o uso** · aplicada
 
 Quando uma refeição planeada passa a estar no passado, entra automaticamente no histórico? Ou é
 preciso marcar "feito"?
@@ -107,7 +107,7 @@ cozinha**. Planear não é cozinhar — uma semana em que se foi jantar fora nã
 registo — mas chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de
 que alguém cozinhou mesmo.
 
-Fica assim:
+Ficou assim:
 
 - **O "Terminar" do modo cozinha escreve o histórico**, sem pedir nada. O ecrã do fim confirma o que
   ficou registado e oferece "Afinal não cozinhei".
@@ -115,8 +115,26 @@ Fica assim:
   tablet. Sem ele, o "última vez" mentia precisamente nas receitas que se sabem de cor.
 - **O plano da semana nunca escreve histórico sozinho.**
 
-Isto resolve o trade-off em vez de escolher um dos lados: não dá trabalho no caminho normal, e é
-fiel porque só regista o que teve um gesto por trás.
+### A revisão, com o tablet a ser usado
+
+O primeiro ponto caiu. **O "Terminar" deixou de escrever o histórico**; o ecrã do fim passou a
+oferecer um "Marcar como cozinhada", e só esse toque regista. Os outros dois pontos ficam como
+estavam.
+
+O que o desmentiu foi o uso: os passos percorrem-se muitas vezes **só para ver a receita inteira** —
+é a forma mais confortável de a ler no tablet — e cada um desses passeios ficava registado como uma
+refeição que não houve. O "chegar ao fim é o sinal mais honesto" só vale se chegar ao fim quiser
+sempre dizer cozinhar, e não quer.
+
+E a troca não é simétrica, que é o que decide isto. Uma refeição **a mais** mente no "última vez" e
+no "quantas vezes" — as duas perguntas para que o histórico existe — e só se descobre semanas
+depois, quando já ninguém se lembra. Uma refeição **a menos** corrige-se no próprio dia, no botão do
+detalhe. O desfazer no ecrã do fim protegia do erro barato e deixava passar o caro.
+
+O trade-off original continua resolvido do mesmo lado: o histórico é manual, e só regista o que teve
+um gesto por trás. O gesto passou a ser um toque em vez de zero.
+
+**Onde ficou:** `docs/specs/005-modo-cozinha.md`, `docs/specs/008-historico.md`.
 
 ---
 
