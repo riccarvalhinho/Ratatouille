@@ -193,10 +193,10 @@ pronto.
 reescritas, nunca copiadas.
 
 **O `kind` deixou de ser só crédito e passou a ser filtro** (2026-09-21): é ele que alimenta o
-critério "Proveniência" do painel "Apetece-me algo" — ver `docs/specs/001-catalogo-receitas.md`.
+critério **Autor** do painel "Apetece-me algo" — ver `docs/specs/001-catalogo-receitas.md`.
 Ganhou por isso um valor novo, `amigo`: *sogros* já cabia em `familia`, mas uma receita que um amigo
 dá não cabia em lado nenhum. E ganhou uma consequência: uma receita sem `kind` não aparece sob
-nenhuma proveniência, o que faz do campo em branco uma omissão visível em vez de um detalhe.
+nenhum autor, o que faz do campo em branco uma omissão visível em vez de um detalhe.
 
 O filtro é pelo `kind` e **não pelo `author`**, que continua a ser texto livre para creditar. Um
 filtro sobre texto livre tem tantas opções quantas as receitas, e "Sogros", "sogros" e "Casa dos

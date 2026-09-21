@@ -10,7 +10,7 @@
  *
  * Cinco dos nove são labels e saem da taxonomia em tempo de execução, para uma label nova aparecer no
  * painel sem passar por aqui. Os outros quatro não são labels: o método sai de `methods`, o tempo de
- * `timing`, o apetite de `weight`, e a proveniência de `source.kind`.
+ * `timing`, o apetite de `weight`, e o autor de `source.kind`.
  *
  * **O coração dos favoritos não está aqui**, e é de propósito: escolhe-se uma vez por receita e não
  * por apetência, e vive na barra do catálogo. Escreve no mesmo `CatalogueFilters` na mesma — ver
@@ -179,14 +179,21 @@ export function criteriosDeTriagem(catalogue: Catalogue): CriterioTriagem[] {
       /*
        * "De quem é a receita" — o critério que o Cookidoo não tem porque lá as receitas são todas
        * da casa. Aqui não são: há o que veio dos sogros, o que veio de um amigo, o que se viu num
-       * vídeo, e as que foram geradas. Chamar-lhe "Origem" colidia com a Cultura, que é a origem
-       * da *cozinha* e não da *receita* — e foi exatamente essa colisão que a conversa 7 desfez ao
-       * renomear o grupo `origem` para `cultura`. Não vale a pena voltar a criá-la.
+       * vídeo, e as que foram geradas.
+       *
+       * **No ecrã chama-se "Autor" e no código `proveniencia`, e a diferença é de propósito.** Na
+       * cozinha diz-se "de quem é esta receita", e *autor* é a palavra dessa pergunta; no código
+       * `author` já está ocupado por outra coisa — o campo de texto livre que credita a fonte no
+       * ecrã de detalhe. Este critério não filtra por esse campo, filtra pelo `kind`. Dar-lhe aqui
+       * o nome `autor` punha duas coisas diferentes com o mesmo nome a dois ficheiros de distância.
+       *
+       * "Origem" também não serve: colidia com a Cultura, que é a origem da *cozinha* e não da
+       * *receita* — e foi essa colisão que a conversa 7 desfez ao renomear `origem` para `cultura`.
        *
        * Fica depois da Ocasião e antes do Regime: decide-se tarde, quando já se sabe o que apetece.
        */
       id: 'proveniencia',
-      nome: 'Proveniência',
+      nome: 'Autor',
       icone: 'familia',
       opcoes: PROVENIENCIAS.map((k) => opcaoDeLista(k, SOURCE_KIND_NAMES[k], 'sources')),
     },

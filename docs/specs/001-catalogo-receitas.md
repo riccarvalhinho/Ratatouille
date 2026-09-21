@@ -64,25 +64,32 @@ Barra de filtros no topo, sempre visível:
 - **Método** — forno, tacho, frigideira, grelhador, air fryer, micro-ondas, sem confeção.
   "Hoje não me apetece ligar o forno" é uma coisa que se pensa mesmo
 - **Peso** — leve, equilibrado, substancial
-- **Proveniência** — de quem é a receita: nossa, família, amigos, livro, site, vídeo, outra, gerada
+- **Autor** — de quem é a receita: nossa, família, amigos, livro, site, vídeo, outra, gerada
 - **Labels** — seleção múltipla a partir de `data/taxonomies/labels.json`
 
 Os filtros combinam-se entre si: dentro do mesmo tipo somam-se (OU), entre tipos restringem-se (E).
 Um estado de "sem resultados" explica que filtros estão ativos e oferece limpá-los.
 
-#### A proveniência filtra pelo tipo de fonte, não pelo autor
+#### O filtro de autor agrupa por tipo de fonte, não pelo nome escrito
 
-Sai de `source.kind`, que é vocabulário fechado. **Não sai de `source.author`**, que é texto livre:
-um filtro sobre texto livre tem tantas opções quantas as receitas, e "Sogros", "sogros" e "Casa dos
-sogros" seriam três. O autor continua a ver-se onde interessa — no crédito do ecrã de detalhe
-(spec 002).
+Chama-se **Autor** porque é a palavra da pergunta que se faz na cozinha — "de quem é esta receita?".
+Mas há duas coisas no schema que respondem a essa pergunta, e só uma delas serve para filtrar:
+
+- **`source.kind`** é vocabulário fechado — oito valores — e é **este** que o filtro usa.
+- **`source.author`** é texto livre e serve para creditar a fonte no rodapé do detalhe (spec 002).
+  Não filtra: um filtro sobre texto livre tem tantas opções quantas as receitas, e "Sogros",
+  "sogros" e "Casa dos sogros" seriam três coisas diferentes.
+
+No ecrã isto não se nota — o painel diz *Autor* e por baixo estão *Família*, *Livro*, *Site*. No
+código nota-se, e por isso o critério lá dentro chama-se `proveniencia` e não `autor`: a palavra
+precisa fica onde é precisa, e `author` continua a ser só o campo do crédito.
 
 Enquanto o catálogo era todo gerado isto não tinha uso. Passa a ter à medida que entram receitas de
 origens diferentes, e é aí que "apetece-me uma das nossas" ou "aquela que os sogros deram" deixa de
 se responder a percorrer a grelha.
 
-Uma receita **sem** `source.kind` não responde a nenhuma proveniência — mesma regra do peso. Um
-filtro que adivinha de onde veio uma receita é pior do que um filtro que não a encontra.
+Uma receita **sem** `source.kind` não responde a nenhum autor — mesma regra do peso. Um filtro que
+adivinha de onde veio uma receita é pior do que um filtro que não a encontra.
 
 ### Favoritos: um coração na barra, não uma subtab
 
@@ -138,9 +145,9 @@ posição do scroll — mantém-se, para que fechar o pop-up devolva exatamente 
 - [ ] A grelha mostra todas as receitas de `data/recipes/` sem alterações de código
 - [ ] Um cartão mostra thumbnail, nome, duração, rendimento e até 3 labels
 - [ ] Uma receita com antecedência de preparação mostra-o no cartão; uma sem, não mostra nada
-- [ ] Filtrar por duração, método, peso, proveniência e labels devolve o subconjunto correto
+- [ ] Filtrar por duração, método, peso, autor e labels devolve o subconjunto correto
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
-- [ ] Uma receita sem `source.kind` não aparece sob nenhuma proveniência
+- [ ] Uma receita sem `source.kind` não aparece sob nenhum autor
 - [ ] Existe estado de "sem resultados" com ação de limpar filtros
 - [ ] O coração mostra só as favoritas, e cruza-se com os outros filtros
 - [ ] O coração conta para a contagem do painel "Apetece-me algo"

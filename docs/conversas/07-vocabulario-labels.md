@@ -239,7 +239,7 @@ _(por começar)_
 ## Adenda — 2026-09-21: o nono critério
 
 Esta conversa fechou os oito quadrantes e a regra que os escolheu: *um eixo só entra se já houver
-dados ou vocabulário para ele*. Entrou um nono, **Proveniência** — de quem é a receita — e entrou
+dados ou vocabulário para ele*. Entrou um nono, **Autor** — de quem é a receita — e entrou
 por essa mesma regra, não contra ela.
 
 **O que mudou não foi a regra, foi o catálogo.** Na altura desta conversa as receitas eram seis; hoje
@@ -254,10 +254,16 @@ dentro da regra dos 4 a 8. Só faltava um: **`amigo`**, acrescentado ao schema �
 
 Três notas, porque cada uma é uma decisão a contrariar se estiver errada:
 
-**Chama-se Proveniência e não Origem.** Esta conversa renomeou o grupo `origem` para `cultura`
-precisamente para a palavra deixar de ser ambígua. Voltar a usá-la para outra coisa recriava a
-colisão que se desfez aqui: a Cultura é a origem da *cozinha*, a Proveniência é a origem da
-*receita*. São perguntas diferentes e o painel mostra-as lado a lado.
+**Chama-se Autor, e não Origem nem Proveniência.** Nasceu *Proveniência*, que é a palavra precisa,
+e durou um dia: na cozinha ninguém pergunta pela proveniência de um prato, pergunta de quem é. A
+palavra precisa não se perdeu — ficou no código, onde o critério continua a chamar-se
+`proveniencia`, porque lá `author` já é outra coisa: o campo de texto livre que credita a fonte.
+Filtrar por texto livre daria tantas opções quantas as receitas.
+
+*Origem* nunca esteve em cima da mesa: esta conversa renomeou o grupo `origem` para `cultura`
+precisamente para a palavra deixar de ser ambígua, e voltar a usá-la recriava a colisão que se
+desfez aqui. A Cultura é a origem da *cozinha*, o Autor é quem escreveu a *receita*. São perguntas
+diferentes e o painel mostra-as lado a lado.
 
 **Filtra-se pelo `kind` e não pelo `author`.** O autor é texto livre, e um filtro sobre texto livre
 tem tantas opções quantas as receitas. "Sogros" chega ao ecrã de detalhe pelo crédito; no painel o

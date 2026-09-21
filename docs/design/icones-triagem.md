@@ -431,7 +431,7 @@ já esperava.
 
 ## 12. Adenda: o nono critério, desenhado fora do Claude Design
 
-**2026-09-21.** O painel ganhou um nono critério — **Proveniência**, "de quem é a receita" — e com
+**2026-09-21.** O painel ganhou um nono critério — **Autor**, "de quem é a receita" — e com
 ele oito peças novas. As 46 primeiras vieram do Claude Design a partir deste handover; estas oito
 não, e vale a pena dizer porquê e o que isso implica.
 
@@ -445,7 +445,10 @@ só nível de abstração — e estão no `.dc.html` com as outras, para a folha
 **Não são intocáveis:** foram desenhadas a par do código e não escolhidas entre alternativas, que é o
 que as outras 46 tiveram. Se houver uma próxima ronda de design, esta secção é a encomenda.
 
-### 12.1 Proveniência — 1 + 8
+### 12.1 Autor — 1 + 8
+
+> No código o critério chama-se `proveniencia`: `author` já está ocupado pelo campo de crédito.
+> Ver `app/src/domain/triagem.ts`.
 
 **Ícone do critério:** as duas figuras do `familia`, como o Ingrediente principal usa a coxa.
 
@@ -478,5 +481,5 @@ medidas da secção 3 pediam 615 — a terceira ficava meia escondida atrás do 
 
 O que se apertou foi o ar à volta e **não o alvo**: o ícone do critério fica nos 48px desta
 especificação, e o mosaico passa de 280×168 para uns 346×152 — mais área de toque do que antes. A
-grelha das opções não mexeu: continua a quatro colunas, e os oito da Proveniência fecham duas linhas
+grelha das opções não mexeu: continua a quatro colunas, e os oito do Autor fecham duas linhas
 certas.

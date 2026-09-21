@@ -464,7 +464,7 @@ export const IconSemLactose: IconeTriagem = (props) => (
   </svg>
 );
 
-// ── Proveniência ──────────────────────────────────────────────
+// ── Autor (`proveniencia` no código — ver `triagem.ts`) ───────
 /*
  * Oito peças desenhadas aqui e não no Claude Design, ao contrário das 46 primeiras — o critério
  * nasceu depois do handover. A geometria segue as mesmas regras (grelha 24, traço 2.5, um só nível

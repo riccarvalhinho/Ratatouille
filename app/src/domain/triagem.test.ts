@@ -45,13 +45,13 @@ describe('os critérios de triagem', () => {
       'Cultura',
       'Apetite',
       'Ocasião',
-      'Proveniência',
+      'Autor',
       'Regime',
     ]);
     expect(criterios.filter((c) => c.opcoes.length === 0)).toEqual([]);
   });
 
-  it('a proveniência cobre o enum inteiro do schema', () => {
+  it('o autor cobre o enum inteiro do schema', () => {
     /*
      * O que isto guarda: um `kind` novo no schema sem mosaico no painel não dá erro nenhum — dá
      * receitas que nenhum filtro alcança. Lê-se o schema e não a lista de tipos, porque o schema é
