@@ -124,19 +124,25 @@ Ao ser iniciado:
 
 ### Saída
 
-**Terminar escreve o histórico**, sem pedir nada. É o sinal de conclusão da app inteira — decisão da
-conversa 2, que fechou a Q5 — e alimenta o "última vez que fiz isto" do detalhe.
+**Terminar fecha os passos e mais nada.** O ecrã do fim oferece **"Marcar como cozinhada"** e
+"Voltar à receita"; só o primeiro escreve o histórico, que é o que alimenta o "última vez que fiz
+isto" do detalhe e o ecrã de histórico (spec 008).
 
-Chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de que alguém
-cozinhou mesmo: ao contrário do plano da semana, não é uma intenção. **O plano nunca escreve
-histórico sozinho**, precisamente por isso.
+Isto esteve ao contrário, e mudou com o uso. O "Terminar" escrevia o histórico sozinho, com o
+argumento de que chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem
+de que alguém cozinhou — e com um "Afinal não cozinhei" para o erro raro.
 
-O ecrã do fim **confirma** o que ficou registado e oferece **"Afinal não cozinhei"**.
+O erro não era raro. **Os passos percorrem-se muitas vezes só para ver a receita inteira**, e cada
+um desses passeios ficava registado como uma refeição que não houve. E a troca não é simétrica: um
+histórico com refeições a mais mente no "última vez" e no "quantas vezes" — as duas perguntas para
+que ele existe — e o erro só se descobre semanas depois, quando já ninguém se lembra se cozinhou
+mesmo naquele dia. Uma refeição a menos não tem esse problema: marca-se no detalhe, no próprio dia.
 
-Isto esteve ao contrário — um botão a pedir a marcação — com o argumento de que chegar ao fim não
-prova que se comeu. O argumento não caiu, mudou de sítio: em vez de um toque em cada refeição para
-evitar um erro raro, há um desfazer para quando o erro acontece. É a mesma troca que este ecrã já
-fez ao decidir não confirmar cada mudança de passo.
+O custo é um toque por refeição, no fim, num ecrã onde já não se está a cozinhar. É aceite. E **não
+contradiz a regra de não confirmar cada mudança de passo**: essa evitava um toque em cada um dos
+doze passos para proteger de um toque acidental; este é um toque só, e o que protege é o dado.
+
+**O plano nunca escreve histórico sozinho**, e isso não mudou: planear não é cozinhar.
 
 Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas refeições.
 
@@ -156,7 +162,8 @@ Marcar duas vezes o mesmo prato no mesmo dia não faz nada: é engano, não duas
 - [x] Passos passivos avisam ao terminar; passos ativos não interrompem
 - [x] Vários temporizadores podem correr ao mesmo tempo, e continuam visíveis ao mudar de passo
 - [x] O fim de um temporizador avisa visual e sonoramente
-- [x] Terminar escreve o histórico, e o ecrã do fim oferece desfazer
+- [x] Terminar não escreve o histórico: percorrer os passos até ao fim não conta como cozinhar
+- [x] O ecrã do fim oferece "Marcar como cozinhada", e desfazer depois de marcada
 - [x] Tudo funciona offline
 - [x] Sair a meio e voltar não perde o sítio: o passo vive no URL
 

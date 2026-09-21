@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.count {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+/*
+ * Retângulos largos e baixos, não a grelha de cartões do catálogo.
+ *
+ * O catálogo é uma montra — escolhe-se pela fotografia, e por isso os cartões são altos com a imagem
+ * grande. Aqui já se sabe o que se comeu: o que se procura é a data, e uma linha larga põe nome e
+ * data lado a lado em vez de os empilhar. A 1280px dão duas colunas; num telemóvel, uma.
+ */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cartao {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  /* Bem acima dos 56px do mínimo de toque: a miniatura sozinha já tem 72px. */
+  min-height: 88px;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+}
+
+.cartao:active {
+  transform: scale(0.99);
+}
+
+/* A entrada sem receita não abre nada, e portanto também não se finge premível. */
+.cartaoMorto {
+  box-shadow: none;
+  background: var(--color-surface-raised);
+}
+
+.thumb {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: var(--color-surface-raised);
+}
+
+.thumbFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-xl);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.nome {
+  font-size: var(--text-base);
+  font-weight: 600;
+  /* Um nome comprido corta em vez de empurrar a data para fora do cartão. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+ * O relativo e a data em linhas próprias, e não lado a lado a quebrar quando não cabem.
+ *
+ * Lado a lado, "ontem · Dom, 20 de setembro" cabia numa linha e "há 1 semana · Seg, 14 de setembro"
+ * não — e numa grelha duas alturas de cartão lêem-se como desalinhamento, não como conteúdo
+ * diferente. Empilhados, todos os cartões têm a mesma altura seja qual for a data.
+ */
+.quando {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+/* "ontem", "há 3 semanas" — é a primeira coisa que se lê, e por isso é a que tem cor. */
+.relativo {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
+.semReceita {
+  color: var(--color-danger);
+  font-size: var(--text-xs);
+}
+
+.vazio {
+  max-width: 52ch;
+  color: var(--color-text-muted);
+}

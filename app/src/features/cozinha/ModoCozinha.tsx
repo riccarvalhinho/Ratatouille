@@ -110,14 +110,17 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           <h2 className={styles.doneTitle}>Feito.</h2>
 
           {/*
-            O histórico escreve-se sozinho ao terminar — decisão da conversa 2, que fechou a Q5.
-            Chegar ao último passo com o tablet na parede é o sinal mais honesto que a app tem de que
-            alguém cozinhou mesmo: não é uma intenção, como o plano da semana é.
+            O histórico **não** se escreve sozinho. Esteve o contrário — o "Terminar" marcava, e este
+            ecrã oferecia o desfazer — com o argumento de que chegar ao último passo com o tablet na
+            parede é o sinal mais honesto que a app tem de que alguém cozinhou.
 
-            Isto tinha aqui antes um botão "Marcar como cozinhada", com o argumento de que chegar ao
-            fim não prova que se comeu. O argumento não caiu, mudou de sítio: em vez de um toque em
-            cada refeição para evitar um erro raro, há um desfazer para quando o erro acontece. É a
-            mesma troca que a spec 005 já fez ao decidir não confirmar cada mudança de passo.
+            O que se viu no uso desmente-o: os passos percorrem-se muitas vezes só para ver a receita
+            inteira, e cada um desses passeios ficava registado como uma refeição que não houve. Um
+            histórico com refeições a mais é pior do que um com refeições a menos — mente no "última
+            vez" e no "quantas vezes", que são as duas perguntas para que ele existe, e o erro só se
+            descobre semanas depois, quando já ninguém se lembra.
+
+            O custo é um toque por refeição, e é aceite. Ver docs/specs/005-modo-cozinha.md.
           */}
           {registada ? (
             <>
@@ -133,7 +136,8 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           ) : (
             <>
               <p className={styles.doneNote}>
-                Não ficou no histórico. Marca aqui se a tiveres mesmo feito.
+                Cozinhaste mesmo, ou estavas só a ver a receita? Só o que for marcado entra no
+                histórico.
               </p>
               <button
                 type="button"
@@ -319,11 +323,8 @@ export function ModoCozinha({ recipe, catalogue, store, today, onLeave }: ModoCo
           <button
             type="button"
             className={`${styles.navButton} ${styles.primary} ${styles.finish}`}
-            onClick={() => {
-              // Terminar é o sinal de conclusão: escreve o histórico e só depois mostra o fim.
-              store.markCooked(recipe.id, today);
-              setFinished(true);
-            }}
+            // Terminar fecha os passos e mais nada. Quem marca o histórico é o ecrã do fim.
+            onClick={() => setFinished(true)}
           >
             Terminar
           </button>
