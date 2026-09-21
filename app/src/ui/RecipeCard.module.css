@@ -98,6 +98,28 @@
   font-weight: 600;
 }
 
+/*
+ * De quem é a receita. Herda a cor e o tamanho da linha dos factos — não tem estilo próprio nenhum
+ * além de encostar o ícone à palavra.
+ *
+ * **O tamanho vai no ícone e não no contentor**, e a distinção não é picuinhice: estes SVG medem
+ * 1em, portanto dimensionar o contentor por `font-size` aumentava o desenho *e* a palavra, e o
+ * "Família" saía maior do que o "3h55" ao lado. Uma marca que se quer discreta a chamar mais a
+ * atenção do que o tempo de confeção é o contrário do que esta opção existe para ser.
+ *
+ * 20px e não os 24px da pastilha de filtro: aqui o ícone acompanha texto de 16px, e aos 24 ficava
+ * maior do que a linha em que vive.
+ */
+.fonte {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.fonte svg {
+  font-size: 20px;
+}
+
 .labels {
   display: flex;
   flex-wrap: wrap;
