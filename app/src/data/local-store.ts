@@ -92,6 +92,13 @@ export interface LocalStore {
   addRecipe: (week: string, date: string, block: MealBlock, entry: PlanEntry) => void;
   removeRecipe: (week: string, date: string, block: MealBlock, index: number) => void;
 
+  /**
+   * As favoritas todas, já com as edições locais por cima do bundle.
+   *
+   * Existe além do `isFavourite` porque o catálogo não pergunta por uma receita de cada vez —
+   * filtra o catálogo inteiro, e para isso precisa do conjunto.
+   */
+  favourites: ReadonlySet<string>;
   isFavourite: (recipeId: string) => boolean;
   toggleFavourite: (recipeId: string) => void;
 
@@ -266,6 +273,7 @@ export function useLocalStore(bundle: DataBundle | undefined, outbox: Outbox): L
     weekPlan,
     addRecipe,
     removeRecipe,
+    favourites,
     isFavourite,
     toggleFavourite,
     lastCooked,

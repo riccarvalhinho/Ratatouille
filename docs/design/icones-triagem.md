@@ -426,3 +426,57 @@ fixture — uma fixture inventada passaria sempre. Apanhou logo o primeiro caso:
 tempo apontavam para ícones que nunca existiram. A ausência era certa, a maneira de a escrever é que
 não era; agora `icone` é opcional e os escalões dizem `undefined`, que é o que o mosaico do número
 já esperava.
+
+---
+
+## 12. Adenda: o nono critério, desenhado fora do Claude Design
+
+**2026-09-21.** O painel ganhou um nono critério — **Proveniência**, "de quem é a receita" — e com
+ele oito peças novas. As 46 primeiras vieram do Claude Design a partir deste handover; estas oito
+não, e vale a pena dizer porquê e o que isso implica.
+
+O critério nasceu de uma necessidade dos dados e não de uma ronda de design: o catálogo é hoje quase
+todo gerado, mas vai passar a receber receitas de sítios diferentes — dos sogros, de um amigo, de um
+site, de um vídeo do Instagram — e sem um eixo que separe isso não há maneira de pedir "uma das
+nossas". O campo já existia no schema (`source.kind`); faltava-lhe o mosaico.
+
+As peças seguem as mesmas regras do conjunto — grelha 24, traço 2.5, `fill none`, `currentColor`, um
+só nível de abstração — e estão no `.dc.html` com as outras, para a folha continuar a ser a folha.
+**Não são intocáveis:** foram desenhadas a par do código e não escolhidas entre alternativas, que é o
+que as outras 46 tiveram. Se houver uma próxima ronda de design, esta secção é a encomenda.
+
+### 12.1 Proveniência — 1 + 8
+
+**Ícone do critério:** as duas figuras do `familia`, como o Ingrediente principal usa a coxa.
+
+| id | Nome | O ícone comunica |
+|---|---|---|
+| `propria` | Nossa | Casa com porta. Inventada ou afinada cá dentro |
+| `familia` | Família | **Duas figuras**, uma maior e uma menor |
+| `amigo` | Amigos | **Balão de fala.** Ver a nota abaixo |
+| `livro` | Livro | Livro aberto, lombada ao centro |
+| `web` | Site | Globo com equador e meridiano |
+| `video` | Vídeo | Ecrã com triângulo de reprodução. Cobre YouTube, Instagram e TikTok |
+| `importada` | Outra | Folha com o canto dobrado, o genérico do conjunto |
+| `gerada` | Gerada | Faísca de quatro pontas, grande e pequena |
+
+> **O balão do `amigo` é a peça a contrariar primeiro.** É a única do critério que não é nem um
+> objeto de cozinha nem uma pessoa, e ganhou o lugar por eliminação: duas figuras já dizem *Família*,
+> e uma figura sozinha ao lado delas lia-se como "a mesma coisa mas menos". Uma receita de um amigo
+> chega quase sempre dita ou escrita num recado, e é isso que o balão mostra — mas é uma convenção e
+> não um objeto, o que é exatamente o que a regra 1 da secção 5 desaconselha.
+
+> **A faísca do `gerada` é a segunda.** Mesma objeção: é a convenção de "AI" e não uma coisa que
+> exista. A defesa é que não há objeto nenhum para "escrita por um modelo", e que a alternativa
+> — deixar o mosaico sem desenho — era pior num painel onde o ícone *é* o alvo.
+
+### 12.2 O que a nona peça mudou no ecrã
+
+Nove mosaicos não cabem num 4×2. Passaram a **3×3**, e isso obrigou a apertar o espaçamento da
+grelha dos critérios: a 1280×800 sobram 550px depois do cabeçalho e do rodapé, e três linhas com as
+medidas da secção 3 pediam 615 — a terceira ficava meia escondida atrás do rodapé.
+
+O que se apertou foi o ar à volta e **não o alvo**: o ícone do critério fica nos 48px desta
+especificação, e o mosaico passa de 280×168 para uns 346×152 — mais área de toque do que antes. A
+grelha das opções não mexeu: continua a quatro colunas, e os oito da Proveniência fecham duas linhas
+certas.

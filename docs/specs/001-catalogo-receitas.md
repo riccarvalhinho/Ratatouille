@@ -51,20 +51,61 @@ Barra de filtros no topo, sempre visível:
 - **Método** — forno, tacho, frigideira, grelhador, air fryer, micro-ondas, sem confeção.
   "Hoje não me apetece ligar o forno" é uma coisa que se pensa mesmo
 - **Peso** — leve, equilibrado, substancial
+- **Proveniência** — de quem é a receita: nossa, família, amigos, livro, site, vídeo, outra, gerada
 - **Labels** — seleção múltipla a partir de `data/taxonomies/labels.json`
 
 Os filtros combinam-se entre si: dentro do mesmo tipo somam-se (OU), entre tipos restringem-se (E).
 Um estado de "sem resultados" explica que filtros estão ativos e oferece limpá-los.
 
+#### A proveniência filtra pelo tipo de fonte, não pelo autor
+
+Sai de `source.kind`, que é vocabulário fechado. **Não sai de `source.author`**, que é texto livre:
+um filtro sobre texto livre tem tantas opções quantas as receitas, e "Sogros", "sogros" e "Casa dos
+sogros" seriam três. O autor continua a ver-se onde interessa — no crédito do ecrã de detalhe
+(spec 002).
+
+Enquanto o catálogo era todo gerado isto não tinha uso. Passa a ter à medida que entram receitas de
+origens diferentes, e é aí que "apetece-me uma das nossas" ou "aquela que os sogros deram" deixa de
+se responder a percorrer a grelha.
+
+Uma receita **sem** `source.kind` não responde a nenhuma proveniência — mesma regra do peso. Um
+filtro que adivinha de onde veio uma receita é pior do que um filtro que não a encontra.
+
+### Favoritos: um coração na barra, não uma subtab
+
+Interruptor no topo do catálogo, ao lado do "Apetece-me algo": ligado, mostra só as favoritas;
+desligado, mostra tudo. Cruza-se com os outros filtros como qualquer um deles — ligado com "forno"
+escolhido dá as favoritas de forno.
+
+**Não está no painel "Apetece-me algo"**, e é a diferença que a conversa 2 já tinha apontado: um
+favorito é um **juízo** que não caduca, não uma apetência de hoje. Um critério de painel pergunta
+"o que te apetece agora"; o coração responde "aquelas de que já gostas". São duas perguntas
+diferentes e só uma delas se faz em dois níveis de mosaicos.
+
+Consequências, todas pequenas e todas deliberadas:
+
+- Escreve nos **mesmos filtros** que o painel, e não num estado ao lado: senão a contagem do painel
+  prometia dezassete receitas para mostrar duas.
+- O **"Limpar" do painel não o desliga.** Limpar o que está noutro ecrã apaga uma escolha que quem
+  carregou não está sequer a ver. O "Limpar tudo" da barra de pastilhas, esse, limpa mesmo tudo.
+- O vazio tem **duas mensagens**: "ainda não há favoritos" quando o coração está sozinho, e "nenhum
+  favorito com estes filtros" quando há mais alguma coisa ligada. Mandar tirar um filtro a quem só
+  carregou no coração é mandar procurar um filtro que não existe.
+
 ### Subtabs
 
 - **Todas** — o catálogo completo
-- **Favoritos** — só as receitas marcadas com coração, à mão, no detalhe
 - **Histórico** — receitas já cozinhadas, mais recentes primeiro, com a data
 
 Os filtros aplicam-se dentro de qualquer subtab.
 
-**Não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
+> **Os favoritos deixaram de ser uma subtab.** Estavam aqui como terceira vista; passaram a ser o
+> coração da secção anterior. Uma subtab é um sítio onde se entra e de onde se sai, e os favoritos
+> não são um sítio — são um estreitamento do que já se está a ver, como os outros filtros. O
+> histórico continua a ser uma subtab a sério, porque mostra outra coisa: datas, e a mesma receita
+> mais do que uma vez.
+
+**O favorito e o histórico não são duas vistas da mesma coisa** (conversa 2). O favorito é um **juízo** — "gosto disto", e não
 caduca. O histórico é um **facto** — "fiz isto a 12 de agosto", e acumula-se. Um existe sem o outro:
 há receitas que se adoram e nunca se fizeram, e coisas que se fazem todas as semanas por hábito sem
 gostar particularmente delas. Por isso são ficheiros separados, com formas diferentes, e não uma
@@ -80,10 +121,13 @@ do scroll — mantém-se, para que fechar o pop-up devolva exatamente ao mesmo s
 - [ ] A grelha mostra todas as receitas de `data/recipes/` sem alterações de código
 - [ ] Um cartão mostra thumbnail, nome, duração, rendimento e até 3 labels
 - [ ] Uma receita com antecedência de preparação mostra-o no cartão; uma sem, não mostra nada
-- [ ] Filtrar por duração, método, peso e labels devolve o subconjunto correto
+- [ ] Filtrar por duração, método, peso, proveniência e labels devolve o subconjunto correto
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
+- [ ] Uma receita sem `source.kind` não aparece sob nenhuma proveniência
 - [ ] Existe estado de "sem resultados" com ação de limpar filtros
-- [ ] A subtab de favoritos mostra só receitas marcadas
+- [ ] O coração mostra só as favoritas, e cruza-se com os outros filtros
+- [ ] O coração conta para a contagem do painel "Apetece-me algo"
+- [ ] O "Limpar" do painel não desliga o coração
 - [ ] A subtab de histórico ordena por data mais recente
 - [ ] Fechar o detalhe devolve à mesma posição de scroll e aos mesmos filtros
 - [ ] Todos os alvos de toque têm pelo menos 56×56px

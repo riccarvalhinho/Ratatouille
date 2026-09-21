@@ -1,6 +1,7 @@
 /** Catálogo de receitas. Ver docs/specs/001-catalogo-receitas.md. */
 import { useMemo, useState } from 'react';
 import type { Catalogue } from '../../data/catalogue.ts';
+import type { LocalStore } from '../../data/local-store.ts';
 import { navigate } from '../../data/router.ts';
 import {
   EMPTY_FILTERS,
@@ -10,13 +11,18 @@ import {
 } from '../../domain/filters.ts';
 import { criteriosDeTriagem } from '../../domain/triagem.ts';
 import { TriagemPanel } from '../triagem/TriagemPanel.tsx';
-import { IconDismiss, IconSearch } from '../../ui/icons.tsx';
+import { IconDismiss, IconHeart, IconSearch } from '../../ui/icons.tsx';
 import { icones } from '../../ui/icones-triagem.tsx';
 import { RecipeCard } from '../../ui/RecipeCard.tsx';
 import styles from './CatalogoScreen.module.css';
 
 interface CatalogoScreenProps {
   catalogue: Catalogue;
+  /**
+   * Para os favoritos. Vem do `local-store` e não do catálogo porque o catálogo é o bundle: favoritar
+   * uma receita no tablet tem de se ver no filtro antes de o commit chegar ao GitHub.
+   */
+  store: LocalStore;
   /** Aberto pela rota `#/apetece`, para a navegação lhe poder chegar com um link. */
   abrirTriagem?: boolean;
 }
@@ -43,7 +49,12 @@ function pastilhasAtivas(catalogue: Catalogue, filters: CatalogueFilters): Pasti
   );
 }
 
-export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps) {
+/** O coração está ligado sozinho? Muda o que o estado vazio diz. */
+function hasOutrosFiltros(filters: CatalogueFilters): boolean {
+  return hasActiveFilters({ ...filters, favouritos: false });
+}
+
+export function CatalogoScreen({ catalogue, store, abrirTriagem }: CatalogoScreenProps) {
   /*
    * Os filtros vivem aqui, e o painel de triagem escreve neste mesmo estado. É a regra que a
    * conversa 2 fixou: duas entradas para o mesmo estado não fazem mal, dois estados fariam.
@@ -51,9 +62,11 @@ export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps)
   const [filters, setFilters] = useState<CatalogueFilters>(EMPTY_FILTERS);
   const [painelAberto, setPainelAberto] = useState(abrirTriagem ?? false);
 
+  const favoritas = store.favourites;
+
   const receitas = useMemo(
-    () => applyFilters(catalogue.recipes, filters),
-    [catalogue.recipes, filters],
+    () => applyFilters(catalogue.recipes, filters, favoritas),
+    [catalogue.recipes, filters, favoritas],
   );
   const pastilhas = useMemo(() => pastilhasAtivas(catalogue, filters), [catalogue, filters]);
 
@@ -66,6 +79,26 @@ export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps)
             ? `${receitas.length} de ${catalogue.recipes.length}`
             : catalogue.recipes.length}
         </span>
+
+        {/*
+          O coração é um interruptor e não um critério do painel: os favoritos não são uma apetência
+          de hoje, são um juízo que já foi feito — "gosto disto" (spec 001). Por isso fica aqui, à
+          vista, a um toque, e não atrás de dois níveis de mosaicos.
+
+          Escreve nos mesmos filtros que tudo o resto: ligado com "forno" escolhido, dá as favoritas
+          de forno, e a contagem do painel já conta com ele.
+        */}
+        <button
+          type="button"
+          className={
+            filters.favouritos ? `${styles.favoritos} ${styles.ligado}` : styles.favoritos
+          }
+          onClick={() => setFilters({ ...filters, favouritos: !filters.favouritos })}
+          aria-pressed={filters.favouritos}
+          aria-label={filters.favouritos ? 'Mostrar todas as receitas' : 'Mostrar só os favoritos'}
+        >
+          <IconHeart filled={filters.favouritos} />
+        </button>
 
         {/*
           A porta lateral para o painel de triagem. Fica no topo da lista e não na navegação: a lista
@@ -111,8 +144,16 @@ export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps)
 
       {receitas.length === 0 ? (
         <p className={styles.vazio}>
-          Nada com estes filtros. Tira um e volta a ver — ou abre o "Apetece-me algo" outra vez, que
-          mostra a contagem de cada escolha antes de a fazeres.
+          {/*
+            Com o coração ligado o vazio quase nunca é dos filtros — é de ainda não haver favoritos,
+            ou de os que há não serem disto. Dizer "tira um filtro" a quem só carregou no coração
+            manda procurar um filtro que não existe.
+          */}
+          {filters.favouritos && !hasOutrosFiltros(filters)
+            ? 'Ainda não há favoritos. O coração está no canto de cada receita, no ecrã de detalhe.'
+            : filters.favouritos
+              ? 'Nenhum favorito com estes filtros. Tira um, ou desliga o coração para ver o catálogo todo.'
+              : 'Nada com estes filtros. Tira um e volta a ver — ou abre o "Apetece-me algo" outra vez, que mostra a contagem de cada escolha antes de a fazeres.'}
         </p>
       ) : (
         <ul className={styles.grid}>
@@ -132,6 +173,7 @@ export function CatalogoScreen({ catalogue, abrirTriagem }: CatalogoScreenProps)
         <TriagemPanel
           catalogue={catalogue}
           filters={filters}
+          favoritas={favoritas}
           onChange={setFilters}
           onClose={() => {
             setPainelAberto(false);
