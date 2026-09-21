@@ -5,7 +5,7 @@
  * como o Cookidoo faz — está em revisão na conversa 3. As secções estão separadas de propósito, para
  * que passar a abas seja mudar o invólucro e não reescrever o conteúdo.
  */
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import type { Catalogue } from '../../data/catalogue.ts';
 import type { LocalStore } from '../../data/local-store.ts';
 import { describeIngredient, formatMinutes, formatYield, notableEquipment } from '../../data/catalogue.ts';
@@ -15,8 +15,9 @@ import { formatLastCooked } from '../../domain/planning.ts';
 import { COOKING_METHOD_NAMES, WEIGHT_NAMES, type Recipe } from '../../domain/types.ts';
 import { formatPrepAhead } from '../../data/catalogue.ts';
 import { navigate } from '../../data/router.ts';
+import { PlanearReceita } from '../planeamento/PlanearReceita.tsx';
 import { LabelChip } from '../../ui/LabelChip.tsx';
-import { IconHeart } from '../../ui/icons.tsx';
+import { IconHeart, IconPlus } from '../../ui/icons.tsx';
 import styles from './DetalheReceita.module.css';
 
 interface DetalheReceitaProps {
@@ -29,14 +30,17 @@ interface DetalheReceitaProps {
 }
 
 export function DetalheReceita({ recipe, catalogue, store, today, onClose }: DetalheReceitaProps) {
+  const [aPlanear, setAPlanear] = useState(false);
+
   // Escape fecha. Não é para o tablet — é para quem estiver a mexer nisto de um computador.
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
+      // Com o "quando" aberto por cima, o Escape é dele: fecha uma camada de cada vez.
+      if (event.key === 'Escape' && !aPlanear) onClose();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  }, [onClose, aPlanear]);
 
   const equipment = notableEquipment(recipe, catalogue);
   const appliances = equipment.filter((item) => item.kind === 'eletrodomestico');
@@ -66,6 +70,21 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
           >
             <IconHeart filled={favourite} />
           </button>
+          {/*
+            O "+" da spec 002: escolher o dia e o bloco sem sair daqui. Só depois do estado local
+            estar lido — antes disso, gravar a semana escreveria por cima do que ainda vinha do
+            IndexedDB.
+          */}
+          {store.ready && (
+            <button
+              type="button"
+              className={styles.action}
+              onClick={() => setAPlanear(true)}
+              aria-label={`Planear ${recipe.name}`}
+            >
+              <IconPlus />
+            </button>
+          )}
           <button
             type="button"
             className={styles.cook}
@@ -272,11 +291,20 @@ export function DetalheReceita({ recipe, catalogue, store, today, onClose }: Det
           )}
 
           <p className={styles.pending}>
-            Favoritos, planear e o modo cozinha ainda não estão ligados. E falta decidir se este ecrã
-            fica assim, com scroll, ou passa a abas como o Cookidoo — conversa 3.
+            Falta decidir se este ecrã fica assim, com scroll, ou passa a abas como o Cookidoo —
+            conversa 3.
           </p>
         </div>
       </div>
+
+      {aPlanear && (
+        <PlanearReceita
+          recipe={recipe}
+          store={store}
+          today={today}
+          onClose={() => setAPlanear(false)}
+        />
+      )}
     </div>
   );
 }

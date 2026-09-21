@@ -1,9 +1,13 @@
 /**
  * Seletor de receitas para um bloco do plano. Ver docs/specs/003-planeamento-semanal.md.
  *
- * A spec pede "os mesmos filtros do catálogo". Esses filtros ainda não existem — dependem da
- * conversa 2 — portanto por agora isto é a grelha do catálogo tal como ela está. Quando os filtros
- * chegarem à spec 001, entram aqui pelo mesmo componente e não por uma segunda cópia.
+ * A spec pede "os mesmos filtros do catálogo". Eles já existem no catálogo — a triagem da conversa 2
+ * — mas ainda não aqui dentro: isto continua a ser a grelha toda, num painel mais curto.
+ *
+ * Quem precisa de filtrar tem agora o caminho inverso, que é o melhor dos dois de qualquer maneira:
+ * filtra na lista, que é onde a triagem vive e onde os cartões têm tamanho de ler, e planeia dali
+ * pelo "+" do cartão (`PlanearReceita`). Ligar a triagem também aqui é trabalho a fazer uma vez que
+ * se saiba que este caminho se usa mesmo — ver "O que falta" na spec 003.
  */
 import type { Catalogue } from '../../data/catalogue.ts';
 import { dayOfMonth, weekdayShort } from '../../domain/planning.ts';

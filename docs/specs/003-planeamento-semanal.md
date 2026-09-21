@@ -74,8 +74,17 @@ Um bloco com mais de duas receitas faz scroll dentro da própria célula.
 
 ### Adicionar
 
-Tocar num bloco vazio, ou no "+" de um bloco com receitas, abre um seletor de receitas com os mesmos
-filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
+Há dois caminhos, e são inversos um do outro. Nenhum substitui o outro porque não se está a fazer a
+mesma coisa nos dois.
+
+**Do bloco para a receita.** Tocar num bloco vazio, ou no "+" de um bloco com receitas, abre um
+seletor de receitas com os mesmos filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
+É o caminho de quem está a olhar para um buraco na semana e quer tapá-lo.
+
+**Da receita para o bloco.** O "+" do cartão do catálogo (spec 001) e o "+" do detalhe (spec 002)
+abrem a semana inteira e perguntam só "quando". É o caminho de quem anda a navegar as receitas sem
+destino e reconhece uma: planear dali não devia obrigar a decorar o nome, vir ao planeamento, abrir o
+seletor e procurá-la outra vez numa grelha mais curta e sem filtros.
 
 ## Critérios de aceitação
 
@@ -86,8 +95,11 @@ filtros do catálogo (spec 001). Escolher uma adiciona-a ao bloco.
 - [x] Um cartão no plano mostra thumbnail e nome — sem labels, ver acima
 - [x] Tocar num cartão revela as ações, e a lupa abre o detalhe
 - [x] A cruz desplaneia, e não está sempre à vista
-- [x] Adicionar abre o seletor de receitas
-- [ ] O seletor tem os filtros do catálogo — dependem da spec 001, que também ainda não os tem
+- [x] Adicionar a partir de um bloco abre o seletor de receitas
+- [x] Adicionar a partir de uma receita — do cartão do catálogo ou do detalhe — abre a semana e
+      pergunta só o dia e o bloco
+- [ ] O seletor por bloco tem os filtros do catálogo — a triagem já existe na spec 001, falta ligá-la
+      aqui dentro
 - [x] Um bloco vazio na semana toda encolhe e dá o espaço aos outros
 - [x] Cada semana persiste em `data/planning/<AAAA-Www>.json`
 - [x] Planear offline funciona, e sincroniza quando houver rede
@@ -112,6 +124,14 @@ e deixa a outbox juntar várias alterações à mesma semana num commit só.
 
 Falta pôr o token nas Definições para a sincronização arrancar; sem ele a app avisa, no cabeçalho e
 nas Definições, que o que se planeia fica só no tablet.
+
+## O que falta
+
+O seletor por bloco continua a ser a grelha do catálogo sem filtros nem pesquisa, dentro de um painel
+mais curto. Com 233 receitas isso já é pouco — e é por isso que o caminho inverso existe: quem quer
+filtrar, filtra na lista, que é onde a triagem vive, e planeia dali. Ligar a triagem também ao
+seletor fica para quando o "do bloco para a receita" for mesmo o caminho escolhido com o tablet na
+parede, e não uma suposição.
 
 ## Fora de âmbito
 

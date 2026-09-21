@@ -1,9 +1,8 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  text-align: left;
   width: 100%;
-  padding: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -12,8 +11,48 @@
   min-height: var(--touch-target);
 }
 
-.card:active {
+/* Abrir o detalhe é o cartão todo menos o canto do "+". */
+.open {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.open:active {
   transform: scale(0.99);
+}
+
+/*
+ * Planear a partir da lista, sem abrir o detalhe.
+ *
+ * Permanente e não revelado por hover: num tablet não há hover, e uma ação que só aparece ao tocar
+ * obrigaria a um toque só para descobrir que ela existe. Fica no canto da imagem, em cima do prato e
+ * nunca do nome — é a única zona do cartão que não carrega informação.
+ */
+.plan {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-accent);
+  font-size: var(--text-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.plan:active {
+  transform: scale(0.94);
 }
 
 .thumb {

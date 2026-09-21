@@ -67,11 +67,26 @@ ao topo.
 O botão "+" abre a seleção de dia e bloco do dia. Escolhido o destino, a receita é adicionada ao plano
 e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a mesma receita para dois dias.
 
+**O painel mostra a semana inteira**, sete dias em colunas e os blocos em linhas, como o ecrã de
+planeamento: decidir "quando" é comparar os dias uns com os outros, e uma lista de dias um a um
+obrigava a lembrar o que já lá estava. Setas para outras semanas e um atalho para a atual.
+
+Cada célula diz o que já sabe: um visto quando esta receita já lá está, e o número das outras
+receitas do bloco quando as há — sem nomes, que a esta largura não cabiam, mas o suficiente para não
+se planear às cegas por cima de um bloco cheio.
+
+**Um segundo toque na mesma célula desfaz.** Tirar é a leitura óbvia de voltar a tocar no que se
+acabou de planear, e sem isto um engano obrigava a ir ao planeamento corrigir. Quem quer mesmo a
+receita duas vezes no mesmo bloco — que é como se dobra a quantidade — faz isso no planeamento, pelo
+"+" do bloco, onde a repetição é explícita.
+
+É o mesmo painel que o "+" do cartão do catálogo abre (spec 001): uma receita, escolher quando.
+
 ## Critérios de aceitação
 
 - [ ] Abre a partir do catálogo, do histórico e da vista de planeamento
 - [ ] Fechar no "x" devolve ao ecrã de origem com o estado preservado
-- [ ] Coração, "+" e "x" ficam visíveis durante o scroll
+- [x] Coração, "+" e "x" ficam visíveis durante o scroll
 - [ ] Marcar favorito reflete-se de imediato no catálogo
 - [ ] Mostra "última vez feita" com data, ou "nunca cozinhada"
 - [ ] Mostra aparelhos e utensílios em blocos separados
@@ -81,8 +96,9 @@ e o pop-up dá confirmação visível sem se fechar — pode querer-se planear a
 - [ ] Nutrição estimada aparece marcada como aproximada
 - [ ] Uma receita de proveniência externa credita a fonte em rodapé, com a nota de adaptação
 - [ ] Uma receita própria, de família ou gerada não mostra rodapé de crédito nenhum
-- [ ] O "+" permite escolher dia e bloco, e adiciona ao plano
-- [ ] Planear dá confirmação visível sem fechar o pop-up
+- [x] O "+" permite escolher dia e bloco, e adiciona ao plano
+- [x] Planear dá confirmação visível sem fechar o pop-up
+- [x] Um segundo toque na mesma célula tira a receita de lá
 - [ ] Todo o conteúdo é legível a cerca de 70cm de distância
 
 ## Fora de âmbito

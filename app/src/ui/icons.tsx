@@ -109,6 +109,15 @@ export function IconPlus(props: IconProps) {
   );
 }
 
+/** O visto de "isto já está" — no planeamento de uma receita, o bloco onde ela já está. */
+export function IconCheck(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M5 12.5l4.5 4.5L19 7" />
+    </Svg>
+  );
+}
+
 export function IconDismiss(props: IconProps) {
   return (
     <Svg {...props}>

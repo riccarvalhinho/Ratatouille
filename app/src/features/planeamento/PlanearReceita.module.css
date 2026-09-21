@@ -1,0 +1,217 @@
+/*
+ * O painel de "quando" de uma receita. Ver PlanearReceita.tsx.
+ *
+ * Fica por cima de tudo o que possa estar aberto — do catálogo (z-index nenhum), do detalhe (10) e
+ * do seletor do planeamento (15) — porque é sempre o último a abrir e o primeiro a fechar.
+ */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background: rgb(0 0 0 / 45%);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: min(880px, 100%);
+  max-height: 100%;
+  padding: var(--space-5) var(--space-6) var(--space-6);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-raised);
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.eyebrow {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.title {
+  font-size: var(--text-xl);
+  margin: 0;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin-left: auto;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+}
+
+.weekBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-xl);
+}
+
+.weekRange {
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.todayButton {
+  min-height: var(--touch-target);
+  margin-left: auto;
+  padding: 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.todayButton:disabled { opacity: 0.4; }
+
+/*
+ * Sete dias em colunas iguais, como no ecrã de planeamento — a comparação entre dias é o que se está
+ * a fazer aqui. A 880px de painel, cada dia fica com ~95px, que chega para um alvo de toque.
+ */
+.grid {
+  display: grid;
+  grid-template-columns: 88px repeat(7, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.dayHead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+}
+
+.dayName { font-size: var(--text-sm); }
+.dayNumber { font-size: var(--text-lg); font-weight: 700; color: var(--color-text); }
+
+/* Hoje: sublinhado com o acento, como no planeamento. Só a cor não chega com o ecrã ao sol. */
+.dayToday {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.dayToday .dayNumber { color: var(--color-accent); }
+
+.blockName {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* O alvo é a célula toda: é o maior que este layout permite, e planeia-se com o dedo. */
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: 72px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+}
+
+.slot:active { transform: scale(0.98); }
+
+.slotMark {
+  display: flex;
+  font-size: 28px;
+}
+
+/* Um bloco vazio não grita: o "+" fica esbatido até haver razão para olhar para ele. */
+.slot .slotMark { opacity: 0.35; }
+
+.slotCount {
+  font-size: var(--text-xs);
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* A coluna de hoje, para não se contar dias a partir do cabeçalho. */
+.slotToday { background: var(--color-accent-soft); border-color: var(--color-accent); }
+
+/*
+ * Planeada: preenchido com o acento. É a confirmação que a spec 002 pede — vê-se sem ler o rodapé,
+ * e diz também o que já lá estava antes de se abrir o painel.
+ */
+.slotPlaneada {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+.slotPlaneada .slotMark { opacity: 1; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.status {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+/* Planeado, que é o que se veio cá fazer. Tirar fica com o tom neutro do resto. */
+.statusFeito {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.done {
+  min-height: var(--touch-target);
+  margin-left: auto;
+  padding: 0 var(--space-6);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-size: var(--text-base);
+  font-weight: 600;
+}

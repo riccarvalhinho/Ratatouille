@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { addToBlock, countEntries, emptyBlocksOfWeek, removeFromBlock } from './plan-edit.ts';
+import {
+  addToBlock,
+  countEntries,
+  emptyBlocksOfWeek,
+  entriesOfBlock,
+  indexOfRecipe,
+  removeFromBlock,
+} from './plan-edit.ts';
 import { MEAL_BLOCKS, type WeekPlan } from './types.ts';
 
 const WEEK = '2026-W35';
@@ -97,5 +104,33 @@ describe('emptyBlocksOfWeek', () => {
 
   it('numa semana por planear, estão todos vazios', () => {
     expect(emptyBlocksOfWeek(undefined).size).toBe(MEAL_BLOCKS.length);
+  });
+});
+
+describe('entriesOfBlock', () => {
+  it('devolve as receitas do bloco', () => {
+    expect(entriesOfBlock(plan, '2026-08-24', 'jantar')).toEqual([{ recipeId: 'caldo-verde' }]);
+  });
+
+  it('um dia, um bloco ou um plano que não existem dão lista vazia e não um erro', () => {
+    expect(entriesOfBlock(plan, '2026-08-25', 'jantar')).toEqual([]);
+    expect(entriesOfBlock(plan, '2026-08-24', 'almoco')).toEqual([]);
+    expect(entriesOfBlock(undefined, '2026-08-24', 'jantar')).toEqual([]);
+  });
+});
+
+describe('indexOfRecipe', () => {
+  it('encontra a receita no bloco', () => {
+    expect(indexOfRecipe(plan, '2026-08-24', 'jantar', 'caldo-verde')).toBe(0);
+  });
+
+  it('devolve -1 quando a receita não está lá', () => {
+    expect(indexOfRecipe(plan, '2026-08-24', 'jantar', 'arroz-doce')).toBe(-1);
+    expect(indexOfRecipe(undefined, '2026-08-24', 'jantar', 'caldo-verde')).toBe(-1);
+  });
+
+  it('com a receita repetida, aponta para a primeira', () => {
+    const twice = addToBlock(plan, WEEK, '2026-08-24', 'jantar', { recipeId: 'caldo-verde' });
+    expect(indexOfRecipe(twice, '2026-08-24', 'jantar', 'caldo-verde')).toBe(0);
   });
 });

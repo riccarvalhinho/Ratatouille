@@ -116,7 +116,12 @@ export function App() {
 
         <main className={styles.content}>
           {route.screen === 'receitas' && catalogue && (
-            <CatalogoScreen catalogue={catalogue} abrirTriagem={route.triagem} />
+            <CatalogoScreen
+              catalogue={catalogue}
+              store={store}
+              today={today}
+              abrirTriagem={route.triagem}
+            />
           )}
 
           {route.screen === 'home' && (
