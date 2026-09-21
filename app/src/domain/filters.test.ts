@@ -151,7 +151,7 @@ describe('applyFilters', () => {
   });
 });
 
-describe('proveniência', () => {
+describe('autor', () => {
   const daSogra = make('da-sogra', { source: { kind: 'familia', author: 'Sogros' } });
   const doInstagram = make('do-instagram', { source: { kind: 'video', author: 'alguém' } });
   const semFonte = make('sem-fonte', {});
@@ -162,12 +162,12 @@ describe('proveniência', () => {
     expect(ids(applyFilters(comFonte, f))).toEqual(['da-sogra']);
   });
 
-  it('várias proveniências somam-se', () => {
+  it('vários autores somam-se', () => {
     const f = { ...EMPTY_FILTERS, sources: ['familia' as const, 'video' as const] };
     expect(ids(applyFilters(comFonte, f))).toEqual(['da-sogra', 'do-instagram']);
   });
 
-  it('uma receita sem fonte não responde a nenhuma proveniência', () => {
+  it('uma receita sem fonte não responde a nenhum autor', () => {
     // Mesma regra do peso: não se sabe de onde veio, e um filtro que adivinha é pior do que um
     // filtro que não encontra.
     const f = { ...EMPTY_FILTERS, sources: ['propria' as const] };

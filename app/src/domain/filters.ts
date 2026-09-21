@@ -144,7 +144,7 @@ export function matchesFilters(
     if (!recipe.weight || !filters.weights.includes(recipe.weight)) return false;
   }
   /*
-   * Uma receita sem `source.kind` não é "de todas as proveniências": não se sabe de onde veio, e
+   * Uma receita sem `source.kind` não é "de todos os autores": não se sabe de onde veio, e
    * por isso não responde a nenhuma. Mesma regra do `weight`, que também deixa de fora quem não
    * declara — um filtro que adivinha é pior do que um filtro que não encontra.
    */

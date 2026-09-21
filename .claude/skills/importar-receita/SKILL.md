@@ -46,7 +46,7 @@ Da fonte, tirar: nome, ingredientes com quantidades, passos, tempos, doses ou re
 equipamento, e origem de cozinha.
 
 **E `source.kind`, que agora é um filtro e não só um crédito.** É o que alimenta o critério
-"Proveniência" do painel "Apetece-me algo" — uma receita com o `kind` errado fica fora do filtro
+**Autor** do painel "Apetece-me algo" — uma receita com o `kind` errado fica fora do filtro
 certo, e uma sem `kind` nenhum não aparece em nenhum. O vocabulário:
 
 | `kind` | Quando |

@@ -150,11 +150,12 @@ export interface Nutrition {
 }
 
 /**
- * De quem é a receita — o que o painel chama **Proveniência**.
+ * De quem é a receita — o que o painel chama **Autor**.
  *
- * Vocabulário fechado, e é isso que o torna filtrável: o `author` é texto livre e serve para
- * creditar, não para agrupar. "Sogros" e "Instagram" são o mesmo campo escrito à mão em dois
- * sítios diferentes; `kind` é o que permite pedir "as da família" sem adivinhar nomes.
+ * **Não confundir com o `author` aqui ao lado.** São os dois "de quem é", mas só este agrupa: o
+ * `author` é texto livre e serve para creditar uma fonte no ecrã de detalhe, e "Sogros" e
+ * "Instagram" são o mesmo campo escrito à mão em dois sítios diferentes. É o `kind` que permite
+ * pedir "as da família" sem adivinhar nomes, e é por isso que é ele que está no painel.
  *
  * `gerada` = escrita por AI, revista no papel, nunca cozinhada. `importada` é o resto — o que
  * entrou por um caminho que nenhum dos outros descreve.
@@ -170,7 +171,7 @@ export type RecipeSourceKind =
   | 'gerada';
 
 /**
- * Como cada proveniência se diz no ecrã.
+ * Como cada autoria se diz no ecrã.
  *
  * Nomes do ponto de vista de quem está na cozinha e não do schema: `web` é um *site*, `video` é um
  * *vídeo* venha ele do YouTube, do Instagram ou do TikTok, e `propria` é *nossa*. A ordem é a que o
