@@ -1,8 +1,10 @@
 import type { Recipe } from '../domain/types.ts';
 import type { Catalogue } from '../data/catalogue.ts';
 import { activeMinutes, formatMinutes, formatPrepAhead, formatYield } from '../data/catalogue.ts';
+import { fonteDoCartao } from '../domain/creditos.ts';
 import { LabelChip } from './LabelChip.tsx';
 import { IconPlus } from './icons.tsx';
+import { icones } from './icones-triagem.tsx';
 import styles from './RecipeCard.module.css';
 
 /** Máximo de labels no cartão, conforme a spec 001. No detalhe aparecem todas. */
@@ -27,6 +29,10 @@ export function RecipeCard({ recipe, catalogue, onOpen, onPlan }: RecipeCardProp
   const labels = recipe.labels
     .slice(0, MAX_LABELS)
     .map((id) => catalogue.labelsById.get(id)?.name ?? id);
+
+  // Só o que não foi gerado leva marca — ver `fonteDoCartao`. O ícone é o mesmo do painel.
+  const fonte = fonteDoCartao(recipe.source);
+  const IconeFonte = fonte ? icones[fonte.kind] : undefined;
 
   return (
     /*
@@ -59,6 +65,21 @@ export function RecipeCard({ recipe, catalogue, onOpen, onPlan }: RecipeCardProp
               véspera. Isto não muda: diz-se, e quem planeia decide.
             */}
             {recipe.needsSide && <span>pede acompanhamento</span>}
+            {/*
+              De quem é a receita, quando não foi gerada. Fica em último porque é o único facto
+              desta linha que não é sobre cozinhar — os outros respondem a "quanto tempo, para
+              quantos, preciso de mais alguma coisa"; este responde a "de onde veio".
+
+              Mesmo peso e mesma cor dos outros, sem destaque: é informação e não aviso, que é a
+              regra que a spec 001 fixou para o "pede acompanhamento". O ícone é o do painel de
+              triagem de propósito — quem escolheu "Autor › Site" no filtro reconhece o globo aqui.
+            */}
+            {fonte && IconeFonte && (
+              <span className={styles.fonte}>
+                <IconeFonte aria-hidden="true" />
+                {fonte.nome}
+              </span>
+            )}
           </span>
 
           <span className={styles.labels}>

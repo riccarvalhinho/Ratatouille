@@ -22,7 +22,7 @@ Cada receita aparece como um cartão com:
 - duração de confeção
 - indicação de antecedência de preparação, quando existe (ex.: "de véspera", "+2h")
 - **"pede acompanhamento", quando `needsSide`** — ver abaixo
-- label de dificuldade
+- **de quem é a receita, quando não foi gerada** — ver abaixo
 - até 3 labels de tipo de prato (carne, peixe, sopa, sobremesa, …)
 
 Se a receita não tiver imagem, o cartão mostra um marcador neutro em vez de partir o alinhamento
@@ -42,6 +42,27 @@ pratos que se comem com coisas diferentes conforme o dia, e as costelas no forno
 
 Também **não filtra**: não há filtro de "só refeições completas". Um filtro obrigaria a decidir por
 quem planeia, e o valor aqui é só não ser surpreendido.
+
+#### A marca de autor aparece por ausência
+
+O cartão diz de quem é a receita — *Família*, *Site*, *Nossa* — com o ícone do painel e a palavra do
+critério, **na mesma linha e com o mesmo peso dos outros factos**. Mesma regra do "pede
+acompanhamento", e pela mesma razão: é informação e não aviso.
+
+**Não aparece no que foi gerado**, e é isso que a torna útil. Hoje 231 das 233 receitas são
+`gerada`; marcá-las seria escrever a mesma palavra em todo o lado e não distinguir nada. Marcada
+fica a exceção — a que veio dos sogros, a que se tirou de um site, a que é nossa. **A ausência da
+marca passa a ser a informação:** um cartão limpo quer dizer "escrita por um modelo, nunca cozinhada
+por ninguém desta casa".
+
+Fica **em último** na linha dos factos porque é o único que não é sobre cozinhar. Os outros
+respondem a "quanto tempo, para quantos, preciso de mais alguma coisa"; este responde a "de onde
+veio", e essa pergunta faz-se depois.
+
+Mostra o **nome do critério e não o `source.author`**. O autor é texto livre: "Sogros" cabe,
+"The Golden Grace Kitchen" parte o cartão em duas linhas. O nome completo está no crédito do ecrã
+de detalhe (spec 002), que é onde há espaço para ele. E o ícone é o mesmo do painel de triagem de
+propósito — quem escolheu *Autor › Site* no filtro reconhece o globo no cartão.
 
 #### Planear a partir do cartão
 
@@ -144,6 +165,7 @@ posição do scroll — mantém-se, para que fechar o pop-up devolva exatamente 
 
 - [ ] A grelha mostra todas as receitas de `data/recipes/` sem alterações de código
 - [ ] Um cartão mostra thumbnail, nome, duração, rendimento e até 3 labels
+- [ ] Um cartão de receita não gerada mostra de quem é; um de receita gerada não mostra nada
 - [ ] Uma receita com antecedência de preparação mostra-o no cartão; uma sem, não mostra nada
 - [ ] Filtrar por duração, método, peso, autor e labels devolve o subconjunto correto
 - [ ] Filtros de tipos diferentes combinam-se com E; do mesmo tipo, com OU
